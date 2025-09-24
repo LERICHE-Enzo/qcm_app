@@ -10,6 +10,7 @@ APP_TITLE = "Révise tes QCM"
 DATA_FILE = Path(__file__).with_name("questions.csv")
 ERRORS_FILE = Path(__file__).with_name("erreurs.json")
 
+
 # --------- Utilitaires ---------
 @st.cache_data
 def load_questions(path: Path) -> pd.DataFrame:
@@ -41,7 +42,11 @@ def load_questions(path: Path) -> pd.DataFrame:
     # 5) Colonnes requises
     required_cols = {"question", "choices", "answer"}
     if not required_cols.issubset(df.columns):
-        st.error(f"Colonnes manquantes. Requis: {required_cols}. Trouvé: {set(df.columns)}")
+        st.error(
+                f"Colonnes manquantes.\n"
+                f"Requis: {required_cols}.\n"
+                f"Trouvé: {set(df.columns)}"
+            )
         st.stop()
 
     # 6) Dé-quotage léger si nécessaire
@@ -92,7 +97,8 @@ def load_errors(path: Path) -> list:
 
 def save_errors(path: Path, errors: list) -> None:
     try:
-        path.write_text(json.dumps(errors, ensure_ascii=False, indent=2), encoding="utf-8")
+        path.write_text(json.dumps(errors, ensure_ascii=False, indent=2),
+                        encoding="utf-8")
     except Exception as e:
         st.warning(f"Impossible d'enregistrer les erreurs : {e}")
 
@@ -138,6 +144,7 @@ if selected_tags:
     )
     df = df[mask].reset_index(drop=True)
 
+
 # --------- Ordre des questions FIGÉ ---------
 def _freeze_order(df_: pd.DataFrame, shuffle_flag: bool):
     base_key = tuple(df_.index)
@@ -155,6 +162,7 @@ def _freeze_order(df_: pd.DataFrame, shuffle_flag: bool):
         st.session_state.indices_base = base_key
         st.session_state.shuffle_q = shuffle_flag
         st.session_state.nb_rows = len(df_)
+
 
 _freeze_order(df, shuffle_q)
 indices = st.session_state.indices
@@ -180,6 +188,7 @@ if df.empty:
     st.warning("Aucune question ne correspond au filtre.")
     st.stop()
 
+
 # --------- Helpers ---------
 def _map_true_answer(row_i: int, row_series: pd.Series):
     """Retourne (choices_shuffled_text, true_ans_in_shuffled_index)"""
@@ -194,6 +203,7 @@ def _map_true_answer(row_i: int, row_series: pd.Series):
     else:
         true_shuf = map_old_to_new[true_orig]
     return choices, true_shuf
+
 
 def _compute_score(df_: pd.DataFrame):
     """Score basé sur les questions répondues (pour 'Terminer maintenant')."""
@@ -212,6 +222,7 @@ def _compute_score(df_: pd.DataFrame):
         if ok:
             correct += 1
     return correct, answered
+
 
 # --------- Affichage principal ---------
 current_pos = st.session_state.idx_ptr
