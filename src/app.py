@@ -43,10 +43,10 @@ def load_questions(path: Path) -> pd.DataFrame:
     required_cols = {"question", "choices", "answer"}
     if not required_cols.issubset(df.columns):
         st.error(
-                f"Colonnes manquantes.\n"
-                f"Requis: {required_cols}.\n"
-                f"Trouvé: {set(df.columns)}"
-            )
+            f"Colonnes manquantes.\n"
+            f"Requis: {required_cols}.\n"
+            f"Trouvé: {set(df.columns)}"
+        )
         st.stop()
 
     # 6) Dé-quotage léger si nécessaire
@@ -57,6 +57,7 @@ def load_questions(path: Path) -> pd.DataFrame:
         if len(s) >= 2 and s[0] == '"' and s[-1] == '"':
             s = s[1:-1]
         return s.replace('""', '"')
+
     for col in ["question", "choices", "explanation", "tags"]:
         if col in df.columns:
             df[col] = df[col].apply(_dequote)
@@ -103,49 +104,75 @@ def save_errors(path: Path, errors: list) -> None:
         st.warning(f"Impossible d'enregistrer les erreurs : {e}")
 
 
-# --------- UI ---------
-st.set_page_config(page_title=APP_TITLE, page_icon="📝", layout="centered")
-st.title(APP_TITLE)
+# --------- Diagnostiqueur CSV ---------
+def validate_answers_and_choices(df_: pd.DataFrame):
+    """Retourne une liste d'erreurs: dict(row_idx, issue, detail)."""
+    errors = []
+    for i, row in df_.iterrows():
+        q = str(row.get("question", "")).strip()
+        ch_list = row.get("choices_list", [])
+        ans = row.get("answer_parsed", None)
 
-with st.sidebar:
-    st.header("Paramètres")
-    mode = st.selectbox("Mode", ["Entraînement", "Examen blanc", "Révisions ciblées"])
-    df = load_questions(DATA_FILE)
+        # 1) Question vide
+        if not q:
+            errors.append({"row_idx": i, "issue": "question vide", "detail": ""})
 
-    # Tags
-    all_tags = sorted({
-        t.strip()
-        for ts in df.get("tags", pd.Series(dtype=str)).fillna("")
-        for t in str(ts).split(",")
-        if t.strip()
-    })
-    selected_tags = st.multiselect("Filtrer par tags (optionnel)", all_tags)
-
-    show_timer = st.toggle("Afficher un minuteur (indicatif)", value=False)
-    shuffle_q = st.toggle("Mélanger l'ordre des questions", value=True)
-
-    if st.button("Exporter les erreurs en CSV"):
-        errors = load_errors(ERRORS_FILE)
-        if not errors:
-            st.info("Aucune erreur enregistrée.")
+        # 2) Choix vides ou séparateurs en trop
+        if not isinstance(ch_list, list) or len(ch_list) == 0:
+            errors.append({"row_idx": i, "issue": "choices_list vide", "detail": ""})
         else:
-            err_df = pd.DataFrame(errors)
-            st.download_button(
-                "Télécharger erreurs.csv",
-                err_df.to_csv(index=False).encode("utf-8"),
-                file_name="erreurs.csv",
-                mime="text/csv",
-            )
+            empty_opts = [j for j, c in enumerate(ch_list) if str(c).strip() == ""]
+            if empty_opts:
+                errors.append({
+                    "row_idx": i,
+                    "issue": "options vides",
+                    "detail": (
+                        f"indices: {empty_opts} (souvent dû à '||' en trop, ex: 'A||B||')"
+                    )
+                })
 
-# Filtrage par tags
-if selected_tags:
-    mask = df.get("tags", "").fillna("").apply(
-        lambda s: any(t.strip() in [x.strip() for x in str(s).split(",")] for t in selected_tags)
-    )
-    df = df[mask].reset_index(drop=True)
+        # 3) Réponse manquante / illisible
+        if ans is None and pd.notna(row.get("answer", None)):
+            errors.append({
+                "row_idx": i,
+                "issue": "answer illisible",
+                "detail": f"value={row.get('answer')!r} (attendu: entier ou liste [i,j])"
+            })
+
+        # 4) Indices hors plage
+        n = len(ch_list) if isinstance(ch_list, list) else 0
+
+        def _bad_index(a):
+            return not (isinstance(a, int) and 0 <= a < n)
+
+        if isinstance(ans, list):
+            bad = [a for a in ans if _bad_index(a)]
+            if bad:
+                errors.append({
+                    "row_idx": i,
+                    "issue": "indices hors plage (liste)",
+                    "detail": f"indices invalides {bad} ; nb_options={n} (valides: 0..{max(n-1,0)})"
+                })
+        elif isinstance(ans, int):
+            if _bad_index(ans):
+                errors.append({
+                    "row_idx": i,
+                    "issue": "indice hors plage (entier)",
+                    "detail": f"index={ans} ; nb_options={n} (valides: 0..{max(n-1,0)})"
+                })
+        else:
+            if "answer" not in row or pd.isna(row.get("answer", None)):
+                errors.append({"row_idx": i, "issue": "answer manquant", "detail": ""})
+
+    return errors
 
 
-# --------- Ordre des questions FIGÉ ---------
+# --------- Helpers divers ---------
+def tag_match(cell, selected):
+    cell_tags = [x.strip() for x in str(cell).split(",")]
+    return any(t.strip() in cell_tags for t in selected)
+
+
 def _freeze_order(df_: pd.DataFrame, shuffle_flag: bool):
     base_key = tuple(df_.index)
     need_init = (
@@ -162,36 +189,12 @@ def _freeze_order(df_: pd.DataFrame, shuffle_flag: bool):
         st.session_state.indices_base = base_key
         st.session_state.shuffle_q = shuffle_flag
         st.session_state.nb_rows = len(df_)
+        # ✅ on invalide les permutations d’options devenues obsolètes
+        st.session_state.choice_shuffle = {}
 
 
-_freeze_order(df, shuffle_q)
-indices = st.session_state.indices
-
-# --------- État de session ---------
-if "idx_ptr" not in st.session_state:
-    st.session_state.idx_ptr = 0
-if "answers" not in st.session_state:
-    # map: row_index -> int | list[int]
-    st.session_state.answers = {}
-if "choice_shuffle" not in st.session_state:
-    # map: row_index -> list of original indices in the NEW order (e.g., [2,0,1,3])
-    st.session_state.choice_shuffle = {}
-st.session_state.exam_mode = (mode == "Examen blanc")
-
-# --------- Minuteur indicatif ---------
-if show_timer:
-    st.caption("⏱️ Le minuteur est indicatif (ne bloque rien).")
-    timer_placeholder = st.empty()
-
-# Aucune question ?
-if df.empty:
-    st.warning("Aucune question ne correspond au filtre.")
-    st.stop()
-
-
-# --------- Helpers ---------
 def _map_true_answer(row_i: int, row_series: pd.Series):
-    """Retourne (choices_shuffled_text, true_ans_in_shuffled_index)"""
+    """Retourne (choices_shuffled_text, true_ans_in_shuffled_index)."""
     shuffle_order = st.session_state.choice_shuffle.get(
         row_i, list(range(len(row_series["choices_list"])))
     )
@@ -223,6 +226,94 @@ def _compute_score(df_: pd.DataFrame):
             correct += 1
     return correct, answered
 
+
+# --------- UI ---------
+st.set_page_config(page_title=APP_TITLE, page_icon="📝", layout="centered")
+st.title(APP_TITLE)
+
+with st.sidebar:
+    st.header("Paramètres")
+    mode = st.selectbox("Mode", ["Entraînement", "Examen blanc", "Révisions ciblées"])
+
+    df = load_questions(DATA_FILE)
+
+    # Bouton de diagnostic CSV
+    if st.button("🔎 Diagnostiquer le CSV"):
+        diag_once = validate_answers_and_choices(df)
+        if diag_once:
+            st.error(f"{len(diag_once)} problème(s) détecté(s). Voir ci-dessous.")
+            st.session_state["_diag_errors"] = diag_once
+        else:
+            st.success("Aucun problème détecté ✅")
+            st.session_state["_diag_errors"] = []
+
+    # Tags
+    all_tags = sorted({
+        t.strip()
+        for ts in df.get("tags", pd.Series(dtype=str)).fillna("")
+        for t in str(ts).split(",")
+        if t.strip()
+    })
+    selected_tags = st.multiselect("Filtrer par tags (optionnel)", all_tags)
+
+    show_timer = st.toggle("Afficher un minuteur (indicatif)", value=False)
+    shuffle_q = st.toggle("Mélanger l'ordre des questions", value=True)
+
+    if st.button("Exporter les erreurs en CSV"):
+        errors = load_errors(ERRORS_FILE)
+        if not errors:
+            st.info("Aucune erreur enregistrée.")
+        else:
+            err_df = pd.DataFrame(errors)
+            st.download_button(
+                "Télécharger erreurs.csv",
+                err_df.to_csv(index=False).encode("utf-8"),
+                file_name="erreurs.csv",
+                mime="text/csv",
+            )
+
+# Diagnostic bloquant au chargement (affiche les problèmes et stop si besoin)
+diag = validate_answers_and_choices(df)
+if diag:
+    st.error(f"{len(diag)} problème(s) détecté(s) dans le CSV — corrige-les puis relance.")
+    for e in diag[:50]:
+        st.markdown(
+            f"- **Ligne {e['row_idx']}** — {e['issue']}  \n"
+            f"  {e['detail']}"
+        )
+    if len(diag) > 50:
+        st.caption(f"... et {len(diag)-50} autres.")
+    st.stop()
+
+# Filtrage par tags
+if selected_tags:
+    mask = df.get("tags", "").fillna("").apply(lambda s: tag_match(s, selected_tags))
+    df = df[mask].reset_index(drop=True)
+
+# --------- Ordre des questions FIGÉ ---------
+_freeze_order(df, shuffle_q)
+indices = st.session_state.indices
+
+# --------- État de session ---------
+if "idx_ptr" not in st.session_state:
+    st.session_state.idx_ptr = 0
+if "answers" not in st.session_state:
+    # map: row_index -> int | list[int]
+    st.session_state.answers = {}
+if "choice_shuffle" not in st.session_state:
+    # map: row_index -> list of original indices in the NEW order (e.g., [2,0,1,3])
+    st.session_state.choice_shuffle = {}
+st.session_state.exam_mode = (mode == "Examen blanc")
+
+# --------- Minuteur indicatif ---------
+if show_timer:
+    st.caption("⏱️ Le minuteur est indicatif (ne bloque rien).")
+    timer_placeholder = st.empty()
+
+# Aucune question ?
+if df.empty:
+    st.warning("Aucune question ne correspond au filtre.")
+    st.stop()
 
 # --------- Affichage principal ---------
 current_pos = st.session_state.idx_ptr
@@ -331,9 +422,33 @@ else:
     options = [row["choices_list"][k] for k in shuffle_order]
     map_old_to_new = {old: new for new, old in enumerate(shuffle_order)}
     true_ans_orig = row["answer_parsed"]
+
+    # ✅ Validation des indices de réponse (évite KeyError si CSV mal indexé)
+    n_opts = len(row["choices_list"])
+
+    def _valid_idx(a: int) -> bool:
+        return isinstance(a, int) and 0 <= a < n_opts
+
     if isinstance(true_ans_orig, list):
+        bad = [a for a in true_ans_orig if not _valid_idx(a)]
+        if bad:
+            st.error(
+                f"Indice(s) de réponse invalide(s) {bad} pour la question :\n\n"
+                f"« {row['question']} »\n\n"
+                f"Nombre d'options = {n_opts} → indices valides: 0..{n_opts-1}\n\n"
+                f"Corrige la colonne 'answer' dans le CSV."
+            )
+            st.stop()
         shuffled_answer = [map_old_to_new[a] for a in true_ans_orig]
     else:
+        if not _valid_idx(true_ans_orig):
+            st.error(
+                f"Indice de réponse invalide ({true_ans_orig}) pour la question :\n\n"
+                f"« {row['question']} »\n\n"
+                f"Nombre d'options = {n_opts} → indices valides: 0..{n_opts-1}\n\n"
+                f"Corrige la colonne 'answer' dans le CSV."
+            )
+            st.stop()
         shuffled_answer = map_old_to_new[true_ans_orig]
 
     # --- Badge "Choix unique / Choix multiples" bien visible ---
@@ -440,4 +555,8 @@ else:
         if str(row.get("explanation", "")).strip():
             st.info(row.get("explanation"))
 
-st.caption("Astuce : tu peux coller du LaTeX ($\\LaTeX$). Le séparateur CSV est auto-détecté (',' ou ';'). Les réponses sont mélangées par question et mémorisées.")
+st.caption(
+    "Astuce : tu peux coller du LaTeX ($\\LaTeX$). "
+    "Le séparateur CSV est auto-détecté (',' ou ';'). "
+    "Les réponses sont mélangées par question et mémorisées."
+)
