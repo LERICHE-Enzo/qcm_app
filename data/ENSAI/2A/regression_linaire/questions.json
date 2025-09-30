@@ -1,0 +1,665 @@
+{
+  "questions": [
+    {
+      "id": "ols-q001",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "On se place dans le modèle $Y=X\\beta+\\varepsilon$ (\\operatorname{rg}(X)=p)). Quelles hypothèses fait-on sur $\\varepsilon$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "Sa variance vaut $\\sigma^2(XX')^{-1}$",
+        "Sa moyenne empirique est nulle",
+        "Sa variance vaut $\\sigma^2(X'X)^{-1}$",
+        "Son espérance est nulle",
+        "Il est non-corrélé à $Y$",
+        "Sa variance vaut $\\sigma^2 I_n$"
+      ],
+      "answer": [3, 5],
+      "explanation": "Hypothèses usuelles : $\\mathbb E[\\varepsilon]=0$ et $\\operatorname{Var}(\\varepsilon)=\\sigma^2 I_n$. En revanche $\\varepsilon$ n’est pas non-corrélé à $Y$ puisque $Y=X\\beta+\\varepsilon$.",
+      "tags": ["OLS", "hypothèses", "Gauss–Markov"]
+    },
+    {
+      "id": "ols-q002",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "Que vaut l’estimateur MCO (OLS) de $\\beta$ ?",
+      "choices": [
+        "$\\mathbb E\\big((XX')^{-1}XY\\big)$",
+        "$(X'X)^{-1}X'Y$",
+        "$(XX')^{-1}XY$",
+        "$\\mathbb E\\big((X'X)^{-1}XY\\big)$"
+      ],
+      "answer": 1,
+      "explanation": "Formule classique des MCO : $\\hat\\beta=(X'X)^{-1}X'Y$.",
+      "tags": ["OLS", "estimateur", "formule"]
+    },
+    {
+      "id": "linalg-q003",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "Que signifie $\\operatorname{rg}(X)=p$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "$p\\le n$",
+        "La matrice $X'X$ est inversible",
+        "La corrélation entre les variables explicatives est nulle",
+        "Les colonnes de $X$ sont linéairement indépendantes",
+        "La matrice $X$ est inversible"
+      ],
+      "answer": [0, 1, 3],
+      "explanation": "Rang colonne plein : colonnes linéairement indépendantes, donc $X'X$ inversible et nécessairement $p\\le n$. $X$ n’est pas forcément carrée, et l’absence de colinéarité n’implique pas corrélation nulle.",
+      "tags": ["plein rang", "algèbre linéaire", "régression"]
+    },
+    {
+      "id": "test-q004",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "Si la p-valeur du test de Student pour le coefficient de $X^{(j)}$ vaut 0,023, que concluez-vous ?",
+      "choices": [
+        "Le modèle de régression est inadéquat.",
+        "Ce coefficient de régression est nul.",
+        "Le modèle est surajusté.",
+        "Il y a une relation statistiquement significative entre $X^{(j)}$ et $Y$."
+      ],
+      "answer": 3,
+      "explanation": "Avec un seuil usuel $\\alpha=5\\%$, $p=0,023 < 0,05$ : on rejette $H_0$ (« coefficient nul »). Donc le coefficient est significatif.",
+      "tags": ["test de Student", "p-value", "significativité"]
+    },
+    {
+      "id": "res-q005",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "Comment sont définis les résidus $\\hat\\varepsilon$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "$\\hat\\varepsilon = P[X]Y$",
+        "$\\hat\\varepsilon = \\hat Y - X\\beta$",
+        "$\\hat\\varepsilon = Y - X\\hat\\beta$",
+        "$\\hat\\varepsilon = P[X]\\varepsilon$",
+        "$\\hat\\varepsilon = P[X]^\\perp \\varepsilon$",
+        "$\\hat\\varepsilon = P[X]^\\perp Y$",
+        "$\\hat\\varepsilon = Y - X\\beta$"
+      ],
+      "answer": [2, 4, 5],
+      "explanation": "Par définition $\\hat\\varepsilon = Y - X\\hat\\beta = (I-P[X])Y = P[X]^\\perp Y$. Comme $Y = X\\beta + \\varepsilon$, on a aussi $P[X]^\\perp Y = P[X]^\\perp \\varepsilon$.",
+      "tags": ["résidus", "projections", "OLS"]
+    },
+    {
+      "id": "test-q006",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "Supposons que pour un test statistique donné, la région critique associée au risque de première espèce $\\alpha = 5\\%$ est $\\{|T| > 3.1\\}$, où $T$ désigne la statistique de test. On observe $T = -4$. Que peut-on conclure ? (plusieurs réponses possibles)",
+      "choices": [
+        "Pour un risque de première espèce de 1%, on rejette l’hypothèse nulle du test.",
+        "Pour un risque de première espèce de 5%, on ne peut pas conclure au test.",
+        "Pour un risque de première espèce de 10%, on ne peut pas conclure au test.",
+        "Pour un risque de première espèce de 5%, on rejette l’hypothèse nulle du test.",
+        "Pour un risque de première espèce de 1%, on ne peut pas conclure au test.",
+        "Pour un risque de première espèce de 10%, on rejette l’hypothèse nulle du test."
+      ],
+      "answer": [4, 3, 5],
+      "explanation": "Comme $|T|=4 > 3.1$, on est dans la région critique pour $\\alpha=5\\%$ et $\\alpha=10\\%$ donc on rejette $H_0$. Mais $|T|$ n’est pas assez extrême pour rejeter à $\\alpha=1\\%$.",
+      "tags": ["tests statistiques", "valeur critique", "p-value"]
+    },
+    {
+      "id": "test-q007",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "Pour le même test qu’à la question précédente, on note $F$ la fonction de répartition de $T$ sous $H_0$. On observe toujours $T=-4$. Que vaut alors la p-value ?",
+      "choices": [
+        "$1 - F(-4)$",
+        "$F(-4)$",
+        "$2F(-4)$",
+        "$2(1 - F(-4))$"
+      ],
+      "answer": 2,
+      "explanation": "La p-value bilatérale est $2\\times F(-4)$.",
+      "tags": ["tests statistiques", "p-value", "loi de test"]
+    },
+    {
+      "id": "var-q008",
+      "qcm": "QCM1",
+      "theme": "Statistiques descriptives",
+      "question": "Lors d’une étude statistique effectuée auprès d’étudiants, on relève la mention obtenue au BAC. Cette variable peut être considérée comme :",
+      "choices": [
+        "qualitative ordinale",
+        "quantitative continue",
+        "qualitative nominale",
+        "quantitative discrète"
+      ],
+      "answer": 0,
+      "explanation": "Les mentions (« passable », « bien », « très bien ») ont un ordre naturel → qualitative ordinale.",
+      "tags": ["nature des variables", "qualitative", "ordinale"]
+    },
+    {
+      "id": "test-q009",
+      "qcm": "QCM1",
+      "theme": "Statistiques descriptives",
+      "question": "Lors d’une étude statistique, on souhaite étudier le lien entre le pays d’origine des individus observés et leur souscription (ou non) à une assurance vie. Quel outil vous semble adapté ?",
+      "choices": [
+        "La mise en place d’un test du chi-deux",
+        "La représentation d’un nuage de points",
+        "Une représentation graphique à l’aide de boxplots",
+        "Le calcul de la corrélation de Pearson"
+      ],
+      "answer": 0,
+      "explanation": "Deux variables qualitatives → test du chi² d’indépendance.",
+      "tags": ["test du chi²", "indépendance", "qualitative"]
+    },
+    {
+      "id": "ols-q010",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "Dans l’écriture classique d’un modèle de régression linéaire concernant $n$ individus, $Y = X\\beta + \\varepsilon$, (plusieurs réponses possibles)",
+      "choices": [
+        "$Y$ et $X$ sont des vecteurs de taille $n$",
+        "$Y$ est toujours considéré comme aléatoire",
+        "$\\varepsilon$ est toujours considéré comme aléatoire",
+        "$Y$ et $\\beta$ sont des vecteurs de taille $n$",
+        "$X$ est une matrice"
+      ],
+      "answer": [1, 2, 4],
+      "explanation": "$Y$ est un vecteur aléatoire ($n\\times 1$), $\\varepsilon$ aussi. $X$ est une matrice ($n\\times p$). $\\beta$ est un vecteur $p\\times 1$, donc pas de taille $n$.",
+      "tags": ["OLS", "modèle de régression", "dimensions"]
+    },
+    {
+      "id": "test-q011",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "Supposons que lors de l’application d’un test statistique, on observe une p-value de 0,037. Que peut-on conclure ? (plusieurs réponses possibles)",
+      "choices": [
+        "Pour un risque de première espèce de 1%, on ne peut pas conclure au test.",
+        "Pour un risque de première espèce de 1%, on rejette l’hypothèse nulle du test.",
+        "Pour un risque de première espèce de 5%, on rejette l’hypothèse nulle du test.",
+        "Pour un risque de première espèce de 5%, on ne peut pas conclure au test.",
+        "Pour un risque de première espèce de 10%, on rejette l’hypothèse nulle du test.",
+        "Pour un risque de première espèce de 10%, on ne peut pas conclure au test."
+      ],
+      "answer": [2, 4],
+      "explanation": "Comme $p = 0,037 < 0,05$, on rejette l’hypothèse nulle au seuil 5% et 10%. En revanche, $p > 0,01$ donc pas de rejet au seuil 1%.",
+      "tags": ["tests statistiques", "p-value", "seuil de risque"]
+    },
+    {
+      "id": "test-q012",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "Pour un test donné, la région critique associée à un risque de première espèce $\\alpha$ est $\\{|T| > a\\}$, où $T$ suit une loi continue. On a observé $T=-2$ et une p-value de 0,037. Que peut-on conclure ? (plusieurs réponses possibles)",
+      "choices": [
+        "Pour $\\alpha=5\\%$, $a < 2$",
+        "Pour $\\alpha=3,7\\%$, $a > 2$",
+        "Pour $\\alpha=3,7\\%$, $a < 2$",
+        "Pour $\\alpha=3,7\\%$, $a = 2$",
+        "Pour $\\alpha=5\\%$, $a > 2$",
+        "Pour $\\alpha=5\\%$, $a = 2$"
+      ],
+      "answer": [0, 3],
+      "explanation": "La p-value est $0,037$, ce qui correspond à un seuil critique $\\alpha \\approx 3,7\\%$. Donc pour $\\alpha=5\\%$, on rejette l’hypothèse nulle et $a < 2$. Pour $\\alpha=3,7\\%$, $T$ est exactement sur la frontière, donc on a $a = 2$.",
+      "tags": ["tests statistiques", "valeur critique", "p-value"]
+    },
+    {
+      "id": "var-q013",
+      "qcm": "QCM1",
+      "theme": "Statistiques descriptives",
+      "question": "Lors d’une étude statistique effectuée auprès d’étudiants, on relève le code postal du lycée dont ils proviennent. Cette variable peut être considérée comme :",
+      "choices": [
+        "qualitative nominale",
+        "quantitative continue",
+        "qualitative ordinale",
+        "quantitative discrète"
+      ],
+      "answer": 0,
+      "explanation": "Le code postal est une simple étiquette servant à identifier une zone géographique, sans ordre naturel ni signification métrique → variable qualitative nominale.",
+      "tags": ["nature des variables", "qualitative", "nominale"]
+    },
+    {
+      "id": "visu-q014",
+      "qcm": "QCM1",
+      "theme": "Statistiques descriptives",
+      "question": "Lors d’une étude statistique, on souhaite étudier le lien entre le pays d’origine des individus observés et leur revenu annuel. Quel outil vous semble adapté ?",
+      "choices": [
+        "La mise en place d’un test du chi-deux",
+        "Le calcul de la corrélation de Pearson",
+        "La représentation d’un nuage de points",
+        "Une représentation graphique à l’aide de boxplots"
+      ],
+      "answer": 3,
+      "explanation": "Le pays d’origine est une variable qualitative et le revenu une variable quantitative → on compare les distributions avec des boxplots.",
+      "tags": ["visualisation", "qualitative vs quantitative", "boxplots"]
+    },
+    {
+      "id": "ols-q015",
+      "qcm": "QCM1",
+      "theme": "Régression linéaire",
+      "question": "En pratique, lorsqu’on met en place un modèle de régression linéaire $Y = X\\beta + \\varepsilon$, quelles quantités sont connues (observées) ?",
+      "choices": [
+        "$Y$ et $X\\beta$",
+        "$X\\beta$",
+        "$X, Y$ et $\\varepsilon$",
+        "$X$ et $Y$"
+      ],
+      "answer": 3,
+      "explanation": "En pratique, on observe $X$ (variables explicatives) et $Y$ (variable dépendante). Les paramètres $\\beta$ et les erreurs $\\varepsilon$ sont inconnus.",
+      "tags": ["OLS", "régression linéaire", "observables"]
+    },
+    {
+      "id": "var-q016",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "Si $\\mathbb E(\\varepsilon)=0$ et $\\operatorname{Var}(\\varepsilon)=\\sigma^2 I_n$, que vaut la variance du vecteur $Y$ ?",
+      "choices": [
+        "$\\sigma^2(X'X)^{-1}$",
+        "$\\sigma^2X\\beta$",
+        "$\\sigma^2 I_n$",
+        "$\\sigma^2(XX')^{-1}$"
+      ],
+      "answer": 2,
+      "explanation": "En effet, $\\operatorname{Var}(Y) = \\operatorname{Var}(X\\beta + \\varepsilon) = \\sigma^2 I_n$.",
+      "tags": ["variance", "régression", "OLS"]
+    },
+    {
+      "id": "res-q017",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "Comment sont définis les résidus $\\hat\\varepsilon$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "$\\hat\\varepsilon = P[X]Y$",
+        "$\\hat\\varepsilon = \\hat Y - X\\beta$",
+        "$\\hat\\varepsilon = Y - X\\hat\\beta$",
+        "$\\hat\\varepsilon = P[X]\\varepsilon$",
+        "$\\hat\\varepsilon = P[X]^\\perp \\varepsilon$",
+        "$\\hat\\varepsilon = P[X]^\\perp Y$",
+        "$\\hat\\varepsilon = Y - X\\beta$"
+      ],
+      "answer": [2, 4, 5],
+      "explanation": "Par définition $\\hat\\varepsilon = Y - X\\hat\\beta = (I-P[X])Y = P[X]^\\perp Y$. Comme $Y = X\\beta + \\varepsilon$, on a aussi $P[X]^\\perp Y = P[X]^\\perp \\varepsilon$.",
+      "tags": ["résidus", "projections", "OLS"]
+    },
+    {
+      "id": "var-q018",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "Quelle statistique constitue un estimateur sans biais de $\\sigma^2$ ?",
+      "choices": [
+        "$\\tfrac{1}{n-p}\\sum_{i=1}^n \\hat\\varepsilon_i^2$",
+        "$\\tfrac{1}{n}\\sum_{i=1}^n \\varepsilon_i^2$",
+        "$\\tfrac{1}{n}\\sum_{i=1}^n \\hat\\varepsilon_i^2$",
+        "$\\tfrac{1}{n-p}\\sum_{i=1}^n \\varepsilon_i^2$"
+      ],
+      "answer": 0,
+      "explanation": "L’estimateur sans biais de la variance est $\\hat\\sigma^2 = \\tfrac{1}{n-p}\\sum_{i=1}^n \\hat\\varepsilon_i^2$.",
+      "tags": ["variance", "estimateur sans biais", "OLS"]
+    },
+    {
+      "id": "test-q019",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "La statistique du test de Student associée au coefficient de régression de la variable $X^{(j)}$ vaut $-23$, que concluez-vous ?",
+      "choices": [
+        "Le modèle de régression est inadéquat.",
+        "Ce coefficient de régression est nul.",
+        "Le modèle est surajusté.",
+        "Relation statistiquement significative entre $X^{(j)}$ et $Y$."
+      ],
+      "answer": 3,
+      "explanation": "Avec une statistique $t = -23$ (valeur absolue extrêmement élevée), on rejette l’hypothèse nulle $H_0$. Il existe donc une relation statistiquement significative entre $X^{(j)}$ et $Y$.",
+      "tags": ["test de Student", "significativité", "régression"]
+    },
+    {
+      "id": "ols-q020",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "Que peut-on dire de l’estimateur MCO de $\\beta$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "Sa variance vaut $\\sigma^2$",
+        "C’est le meilleur estimateur parmi tous les estimateurs sans biais",
+        "C’est un estimateur sans biais",
+        "Son espérance est nulle",
+        "Sa variance vaut $\\hat\\sigma^2/(n-p)$",
+        "Sa variance vaut $\\sigma^2(X'X)^{-1}$",
+        "C’est le meilleur estimateur parmi tous les estimateurs linéaires et sans biais",
+        "C’est le meilleur estimateur parmi tous les estimateurs",
+        "C’est le meilleur estimateur parmi tous les estimateurs consistants"
+      ],
+      "answer": [2, 5, 6],
+      "explanation": "Théorème de Gauss–Markov : l’estimateur MCO est sans biais, sa variance est $\\sigma^2(X'X)^{-1}$ et il est le meilleur estimateur linéaire sans biais (BLUE).",
+      "tags": ["OLS", "Gauss–Markov", "BLUE", "estimateur"]
+    },
+    {
+      "id": "test-q021",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "Supposons que lors de l’application d’un test statistique, on observe une p-value de 0,037. Que peut-on conclure ? (plusieurs réponses possibles)",
+      "choices": [
+        "Pour un risque de première espèce de 1%, on ne peut pas conclure au test.",
+        "Pour un risque de première espèce de 1%, on rejette l’hypothèse nulle du test.",
+        "Pour un risque de première espèce de 5%, on rejette l’hypothèse nulle du test.",
+        "Pour un risque de première espèce de 5%, on ne peut pas conclure au test.",
+        "Pour un risque de première espèce de 10%, on rejette l’hypothèse nulle du test.",
+        "Pour un risque de première espèce de 10%, on ne peut pas conclure au test."
+      ],
+      "answer": [2, 4],
+      "explanation": "Comme $p = 0,037 < 0,05$, on rejette $H_0$ au seuil de 5% et de 10%. En revanche, $p > 0,01$ donc pas de rejet au seuil de 1%.",
+      "tags": ["tests statistiques", "p-value", "seuil de risque"]
+    },
+    {
+      "id": "ols-q022",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "On se place dans le modèle $Y = X\\beta + \\varepsilon$ (rang($X$) = $p$). Quelles hypothèses fait-on sur $\\varepsilon$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "Sa variance vaut $\\sigma^2(XX')^{-1}$",
+        "Sa moyenne empirique est nulle",
+        "Sa variance vaut $\\sigma^2(X'X)^{-1}$",
+        "Son espérance est nulle",
+        "Il est non-corrélé à $Y$",
+        "Sa variance vaut $\\sigma^2 I_n$"
+      ],
+      "answer": [3, 5],
+      "explanation": "Hypothèses usuelles : $\\mathbb E[\\varepsilon] = 0$ et $\\operatorname{Var}(\\varepsilon) = \\sigma^2 I_n$. En revanche, $\\varepsilon$ n’est pas non-corrélé à $Y$ puisque $Y = X\\beta + \\varepsilon$.",
+      "tags": ["OLS", "hypothèses", "Gauss–Markov"]
+    },
+    {
+      "id": "linalg-q023",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "Qu’implique l’hypothèse $\\operatorname{rg}(X) = p$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "$p \\le n$",
+        "La matrice $X'X$ est inversible",
+        "La corrélation entre les variables explicatives est nulle",
+        "Les colonnes de $X$ sont linéairement indépendantes",
+        "La matrice $X$ est inversible"
+      ],
+      "answer": [0, 1, 3],
+      "explanation": "Rang colonne plein : les colonnes sont linéairement indépendantes, donc $X'X$ est inversible et nécessairement $p \\le n$. La matrice $X$ n’est pas forcément carrée, et l’absence de colinéarité n’implique pas corrélation nulle.",
+      "tags": ["plein rang", "algèbre linéaire", "régression"]
+    },
+    {
+      "id": "ols-q024",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "Que vaut l’estimateur MCO de $\\beta$ ?",
+      "choices": [
+        "$\\mathbb E\\big((XX')^{-1}XY\\big)$",
+        "$(X'X)^{-1}X'Y$",
+        "$(XX')^{-1}XY$",
+        "$\\mathbb E\\big((X'X)^{-1}XY\\big)$"
+      ],
+      "answer": 1,
+      "explanation": "Formule classique des MCO : $\\hat\\beta = (X'X)^{-1}X'Y$.",
+      "tags": ["OLS", "estimateur", "formule"]
+    },
+    {
+      "id": "res-q025",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "On note $\\hat\\varepsilon$ le vecteur des résidus de la régression. Quelles relations sont vraies ? (plusieurs réponses possibles)",
+      "choices": [
+        "$\\hat\\varepsilon = P[X]Y$",
+        "$\\hat\\varepsilon = \\hat Y - X\\beta$",
+        "$\\hat\\varepsilon = Y - X\\hat\\beta$",
+        "$\\hat\\varepsilon = P[X]\\varepsilon$",
+        "$\\hat\\varepsilon = P[X]^\\perp \\varepsilon$",
+        "$\\hat\\varepsilon = P[X]^\\perp Y$",
+        "$\\hat\\varepsilon = Y - X\\beta$"
+      ],
+      "answer": [2, 4, 5],
+      "explanation": "Par définition $\\hat\\varepsilon = Y - X\\hat\\beta = (I-P[X])Y = P[X]^\\perp Y$. Comme $Y = X\\beta + \\varepsilon$, on a aussi $P[X]^\\perp Y = P[X]^\\perp \\varepsilon$.",
+      "tags": ["résidus", "projections", "OLS"]
+    },
+    {
+      "id": "test-q026",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "Supposons que pour un test statistique donné, la région critique associée au risque de première espèce $\\alpha = 5\\%$ est $\\{|T| > 3.1\\}$, où $T$ désigne la statistique de test. On observe $T = -4$. Que peut-on conclure ? (plusieurs réponses possibles)",
+      "choices": [
+        "Pour un risque de première espèce de 1%, on rejette l’hypothèse nulle du test.",
+        "Pour un risque de première espèce de 5%, on ne peut pas conclure au test.",
+        "Pour un risque de première espèce de 10%, on ne peut pas conclure au test.",
+        "Pour un risque de première espèce de 5%, on rejette l’hypothèse nulle du test.",
+        "Pour un risque de première espèce de 1%, on ne peut pas conclure au test.",
+        "Pour un risque de première espèce de 10%, on rejette l’hypothèse nulle du test."
+      ],
+      "answer": [4, 3, 5],
+      "explanation": "Comme $|T| = 4 > 3.1$, on est dans la région critique pour $\\alpha = 5\\%$ et $\\alpha = 10\\%$ donc on rejette $H_0$. Mais la valeur n’est pas assez extrême pour conclure au seuil $\\alpha = 1\\%$.",
+      "tags": ["tests statistiques", "valeur critique", "régression"]
+    },
+    {
+      "id": "ols-q027",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "On se place dans un modèle de régression linéaire standard $Y = X\\beta + \\varepsilon$, où $\\beta \\in \\mathbb{R}^p$, $X$ est une matrice déterministe de taille $n \\times p$ de rang $p$, et $\\varepsilon$ est un vecteur aléatoire de taille $n$. Quelles hypothèses fait-on sur $\\varepsilon = (\\varepsilon_1,\\dots,\\varepsilon_n)$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "$E[\\varepsilon_i \\varepsilon_j] = 0$ pour $i \\neq j$",
+        "$E[\\varepsilon_i] = 0$",
+        "$E[\\varepsilon_i Y_i] = 0$",
+        "$Var(\\varepsilon_i) = \\sigma^2(XX')^{-1}_{ii}$",
+        "$Var(\\varepsilon_i) = 0$",
+        "$\\tfrac{1}{n} \\sum_i \\varepsilon_i = 0$"
+      ],
+      "answer": [0, 1],
+      "explanation": "On suppose : espérance nulle ($E[\\varepsilon_i]=0$), non-corrélation des erreurs entre elles ($E[\\varepsilon_i \\varepsilon_j]=0$ pour $i\\neq j$), et variance homogène $Var(\\varepsilon_i) = \\sigma^2$. Les autres propositions sont fausses.",
+      "tags": ["OLS", "hypothèses", "indépendance", "homoscédasticité"]
+    },
+    {
+      "id": "ols-q028",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "Que peut-on dire de l’estimateur MCO de $\\beta$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "Sa variance vaut $\\sigma^2$",
+        "C’est le meilleur estimateur parmi tous les estimateurs sans biais",
+        "Il s'agit d'un estimateur sans biais",
+        "Son espérance est nulle",
+        "Sa variance vaut $\\hat\\sigma^2/(n-p)$",
+        "Sa variance vaut $\\sigma^2(X'X)^{-1}$",
+        "C’est le meilleur estimateur parmi tous les estimateurs linéaires et sans biais",
+        "C’est le meilleur estimateur parmi tous les estimateurs",
+        "C’est le meilleur estimateur parmi tous les estimateurs consistants"
+      ],
+      "answer": [2, 5, 6],
+      "explanation": "D’après le théorème de Gauss–Markov : l’estimateur MCO est sans biais, sa variance est $\\sigma^2(X'X)^{-1}$ et il est le meilleur estimateur linéaire sans biais (BLUE).",
+      "tags": ["OLS", "Gauss–Markov", "BLUE", "estimateur"]
+    },
+    {
+      "id": "res-q029",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "On note $\\hat\\varepsilon$ le vecteur des résidus de la régression. Quelles relations sont vraies ? (plusieurs réponses possibles)",
+      "choices": [
+        "$\\hat\\varepsilon = P[X]Y$",
+        "$\\hat\\varepsilon = \\hat Y - X\\beta$",
+        "$\\hat\\varepsilon = Y - X\\hat\\beta$",
+        "$\\hat\\varepsilon = P[X]\\varepsilon$",
+        "$\\hat\\varepsilon = P[X]^\\perp \\varepsilon$",
+        "$\\hat\\varepsilon = P[X]^\\perp Y$",
+        "$\\hat\\varepsilon = Y - X\\beta$"
+      ],
+      "answer": [2, 4, 5],
+      "explanation": "Par définition $\\hat\\varepsilon = Y - X\\hat\\beta = (I - P[X])Y = P[X]^\\perp Y$. Comme $Y = X\\beta + \\varepsilon$, on a aussi $P[X]^\\perp Y = P[X]^\\perp \\varepsilon$.",
+      "tags": ["résidus", "projections", "OLS"]
+    },
+    {
+      "id": "var-q030",
+      "qcm": "QCM2",
+      "theme": "Régression linéaire",
+      "question": "On note $\\hat\\varepsilon$ le vecteur des résidus de la régression. Quelle statistique donne un estimateur sans biais de $\\sigma^2$ ?",
+      "choices": [
+        "$\\tfrac{1}{n-p}\\sum \\hat\\varepsilon_i^2$",
+        "$\\tfrac{1}{n}\\sum \\varepsilon_i^2$",
+        "$\\tfrac{1}{n-p}\\sum \\varepsilon_i^2$",
+        "$\\tfrac{1}{n}\\sum \\hat\\varepsilon_i^2$"
+      ],
+      "answer": 0,
+      "explanation": "L’estimateur sans biais de la variance est $s^2 = \\tfrac{1}{n-p}\\sum \\hat\\varepsilon_i^2$.",
+      "tags": ["variance", "estimateur sans biais", "résidus"]
+    },
+    {
+      "id": "var-q031",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "Que vaut la variance du vecteur $Y$ ?",
+      "choices": [
+        "$\\sigma^2(X'X)^{-1}$",
+        "$\\sigma^2 X\\beta$",
+        "$\\sigma^2 I_n$",
+        "$\\sigma^2(XX')^{-1}$"
+      ],
+      "answer": 2,
+      "explanation": "Puisque $Y = X\\beta + \\varepsilon$ avec $\\operatorname{Var}(\\varepsilon) = \\sigma^2 I_n$, on a $\\operatorname{Var}(Y) = \\sigma^2 I_n$.",
+      "tags": ["variance", "régression", "moments"]
+    },
+    {
+      "id": "multi-q032",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "Qu’est-ce que la multicolinéarité dans un modèle de régression multiple ?",
+      "choices": [
+        "L’erreur dans l’estimation des coefficients de régression",
+        "L’interaction entre $Y$ et les variables explicatives",
+        "L’influence excessive d’une seule observation sur l'estimation du modèle",
+        "La forte corrélation entre deux ou plusieurs variables explicatives"
+      ],
+      "answer": 3,
+      "explanation": "La multicolinéarité correspond à une forte corrélation linéaire entre deux ou plusieurs variables explicatives, ce qui rend $X'X$ proche de la singularité.",
+      "tags": ["régression multiple", "multicolinéarité", "colinéarité"]
+    },
+    {
+      "id": "fisher-q033",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "On note SCR la somme des carrés des résidus du modèle initial, et $SCR_c$ celle d’un sous-modèle contenant $p'$ variables ($p'<p$). Avec quelle statistique peut-on comparer les deux modèles ?",
+      "choices": [
+        "$\\dfrac{n-p}{p'}\\dfrac{SCR_c - SCR}{SCR}$",
+        "$\\dfrac{n-p}{p'}\\dfrac{SCR - SCR_c}{SCR}$",
+        "$\\dfrac{n-p}{p-p'}\\dfrac{SCR_c - SCR}{SCR}$",
+        "$\\dfrac{n-p}{p-p'}\\dfrac{SCR - SCR_c}{SCR}$"
+      ],
+      "answer": 2,
+      "explanation": "La statistique de Fisher utilisée est $F = \\dfrac{(SCR_c - SCR)/(p - p')}{SCR/(n - p)} = \\dfrac{n - p}{p - p'}\\dfrac{SCR_c - SCR}{SCR}$.",
+      "tags": ["tests de Fisher", "comparaison de modèles", "régression multiple"]
+    },
+    {
+      "id": "r2-q034",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "On effectue une nouvelle régression en ajoutant une variable au modèle initial. Que se passe-t-il forcément ? (plusieurs réponses possibles)",
+      "choices": [
+        "Le $R^2$ augmente",
+        "Le $R^2_a$ diminue",
+        "La SCR diminue",
+        "Le $R^2$ diminue",
+        "La SCR augmente",
+        "Le $R^2_a$ augmente"
+      ],
+      "answer": [0, 2],
+      "explanation": "L’ajout d’une variable explique au moins autant la variance, donc $R^2$ ne peut qu’augmenter et la SCR diminuer. En revanche, $R^2_a$ peut augmenter ou baisser selon la pertinence de la variable.",
+      "tags": ["régression multiple", "$R^2$", "SCR"]
+    },
+    {
+      "id": "hetero-q035",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "Dans le contexte d’une régression multiple, qu’est-ce que l’hétéroscédasticité ?",
+      "choices": [
+        "Le fait que la variance des $\\varepsilon_i$ n’est pas constante",
+        "Le fait que les $\\varepsilon_i$ ne sont pas corrélés entre eux",
+        "Le fait que la relation entre $Y$ et les explicatives n’est pas linéaire",
+        "Le fait que les coefficients du modèle sont biaisés"
+      ],
+      "answer": 0,
+      "explanation": "L’hétéroscédasticité correspond à une variance non constante des erreurs : $\\operatorname{Var}(\\varepsilon_i) = \\sigma_i^2$ dépend de $i$.",
+      "tags": ["régression multiple", "hétéroscédasticité", "hypothèses"]
+    },
+    {
+      "id": "res-q036",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Supposons qu’une constante est incluse dans le modèle. Quelle(s) propriété(s) vérifie(nt) le vecteur des résidus $\\hat\\varepsilon$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "Sa variance vaut $\\sigma^2 I_n$",
+        "Il est non corrélé à $Y$",
+        "Sa variance vaut $\\sigma^2(X'X)^{-1}$",
+        "Sa moyenne est nulle",
+        "Il est de taille $p$",
+        "Il est non corrélé à $\\hat Y$"
+      ],
+      "answer": [3, 5],
+      "explanation": "Les résidus vérifient $\\mathbb E[\\hat\\varepsilon] = 0$ (si constante incluse) et sont orthogonaux aux valeurs ajustées ($\\hat Y$).",
+      "tags": ["résidus", "régression multiple", "propriétés"]
+    },
+    {
+      "id": "linalg-q037",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Qu’implique l’hypothèse $\\operatorname{rg}(X) = p$ ? (plusieurs réponses possibles)",
+      "choices": [
+        "$p \\le n$",
+        "La matrice $X'X$ est inversible",
+        "La corrélation entre les variables explicatives est nulle",
+        "Les colonnes de $X$ sont linéairement indépendantes",
+        "La matrice $X$ est inversible"
+      ],
+      "answer": [0, 1, 3],
+      "explanation": "Rang colonne plein : les colonnes de $X$ sont linéairement indépendantes, donc $X'X$ est inversible et nécessairement $p \\le n$. $X$ n’est pas forcément carrée, et l’absence de colinéarité n’implique pas corrélation nulle.",
+      "tags": ["plein rang", "algèbre linéaire", "régression"]
+    },
+    {
+      "id": "r2-q038",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Quelle est la formule du $R^2$ ?",
+      "choices": [
+        "$\\dfrac{\\sum_{i=1}^n (Y_i - \\bar Y)^2}{\\sum_{i=1}^n (\\hat Y_i - \\bar Y)^2}$",
+        "$\\dfrac{\\sum_{i=1}^n (Y_i - \\hat Y_i)^2}{\\sum_{i=1}^n (Y_i - \\bar Y)^2}$",
+        "$\\dfrac{\\sum_{i=1}^n (\\hat Y_i - \\bar Y)^2}{\\sum_{i=1}^n (Y_i - \\bar Y)^2}$",
+        "$\\dfrac{\\sum_{i=1}^n (Y_i - \\bar Y)^2}{\\sum_{i=1}^n (Y_i - \\hat Y_i)^2}$"
+      ],
+      "answer": 2,
+      "explanation": "Définition : $R^2 = \\dfrac{\\text{Somme des carrés expliquée}}{\\text{Somme totale des carrés}} = \\dfrac{\\sum (\\hat Y_i - \\bar Y)^2}{\\sum (Y_i - \\bar Y)^2}$.",
+      "tags": ["$R^2$", "qualité d’ajustement", "régression"]
+    },
+    {
+      "id": "fisher-q039",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "La statistique du test de Fisher de significativité globale du modèle vaut 41, que concluez-vous ?",
+      "choices": [
+        "Toutes les variables explicatives sont significatives.",
+        "Aucune variable explicative, autre que la constante, n’est significative dans le modèle.",
+        "Toutes les variables explicatives, autre que la constante, sont significatives.",
+        "Au moins une variable autre que la constante est significative."
+      ],
+      "answer": 3,
+      "explanation": "Un test de Fisher global très significatif ($F=41$) permet de rejeter $H_0$ et de conclure qu’au moins une variable explicative influence $Y$.",
+      "tags": ["tests de Fisher", "significativité globale", "régression multiple"]
+    },
+    {
+      "id": "homo-q040",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Dans le contexte d’une régression multiple, qu’est-ce que l’homoscedasticité ?",
+      "choices": [
+        "Le fait que les $\\varepsilon_i$ ne sont pas corrélés entre eux",
+        "Le fait que la relation entre $Y$ et les variables explicatives est linéaire",
+        "Le fait que l’estimateur MCO $\\hat\\beta$ est sans biais",
+        "Le fait que la variance des $\\varepsilon_i$ est constante"
+      ],
+      "answer": 3,
+      "explanation": "Homoscedasticité : $\\operatorname{Var}(\\varepsilon_i) = \\sigma^2$ pour tout $i$. Cela signifie que la variance est constante mais pas nécessairement que les erreurs soient indépendantes.",
+      "tags": ["régression multiple", "homoscédasticité", "hypothèses"]
+    },
+    {
+      "id": "r2a-q041",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "Quelle est la formule du $R^2_a$ lorsqu’une constante est incluse dans le modèle ?",
+      "choices": [
+        "$\\dfrac{n-p}{n-1}\\dfrac{\\sum_{i=1}^n (Y_i-\\hat Y_i)^2}{\\sum_{i=1}^n (Y_i-\\bar Y)^2}$",
+        "$\\dfrac{n-1}{n-p}\\dfrac{\\sum_{i=1}^n (Y_i-\\hat Y_i)^2}{\\sum_{i=1}^n (Y_i-\\bar Y)^2}$",
+        "$1-\\dfrac{n-p}{n-1}\\dfrac{\\sum_{i=1}^n (Y_i-\\hat Y_i)^2}{\\sum_{i=1}^n (Y_i-\\bar Y)^2}$",
+        "$1-\\dfrac{n-1}{n-p}\\dfrac{\\sum_{i=1}^n (Y_i-\\hat Y_i)^2}{\\sum_{i=1}^n (Y_i-\\bar Y)^2}$"
+      ],
+      "answer": 3,
+      "explanation": "Le $R^2_a$ corrige le $R^2$ en tenant compte du nombre de variables explicatives $p$. La bonne formule est $R^2_a = 1 - \\dfrac{n-1}{n-p}\\dfrac{SCR}{SCT}$.",
+      "tags": ["$R^2_a$", "qualité d’ajustement", "régression multiple"]
+    }
+  ]
+}

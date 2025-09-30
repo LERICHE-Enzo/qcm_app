@@ -7,70 +7,60 @@ import pandas as pd
 import streamlit as st
 
 APP_TITLE = "Révise tes QCM"
-DATA_FILE = Path(__file__).with_name("questions.csv")
-ERRORS_FILE = Path(__file__).with_name("erreurs.json")
+
+# ====== Répertoires ======
+BASE_DIR = Path(__file__).resolve().parent.parent   # src/.. -> racine projet
+DATA_DIR = BASE_DIR / "data"                        # data/<Ecole>/<Année>/<Matière>/questions.json
 
 
-# --------- Utilitaires ---------
-@st.cache_data
-def load_questions(path: Path) -> pd.DataFrame:
-    if not path.exists():
-        st.error(f"Fichier introuvable : {path}")
-        st.stop()
-
-    # 1) Lecture permissive (auto-détection du séparateur) + UTF-8
-    df = pd.read_csv(path, sep=None, engine="python", encoding="utf-8")
-
-    # 2) Normalisation des noms d'en-têtes (trim, minuscules, retrait BOM)
+# ========================================================================
+#                               UTILITAIRES
+# ========================================================================
+def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
     df.columns = [str(c).replace("\ufeff", "").strip().lower() for c in df.columns]
-
-    # 3) Si tout est dans une seule colonne (souvent CSV FR), retente en ';'
-    if len(df.columns) == 1:
-        df = pd.read_csv(path, sep=";", engine="python", encoding="utf-8")
-        df.columns = [str(c).replace("\ufeff", "").strip().lower() for c in df.columns]
-
-    # 4) Alias tolérants
     alias = {
         "question": "question", "questions": "question",
-        "choices": "choices", "propositions": "choices", "choix": "choices",
-        "answer": "answer", "reponse": "answer", "réponse": "answer",
+        "choices": "choices", "choix": "choices", "propositions": "choices",
+        "answer": "answer", "réponse": "answer", "reponse": "answer",
         "explanation": "explanation", "explication": "explanation",
+        # on tolère ces champs mais on ne les utilise pas forcément
         "tags": "tags", "tag": "tags",
+        "qcm": "qcm", "theme": "theme", "thème": "theme", "id": "id",
     }
     df.rename(columns={c: alias.get(c, c) for c in df.columns}, inplace=True)
 
-    # 5) Colonnes requises
-    required_cols = {"question", "choices", "answer"}
-    if not required_cols.issubset(df.columns):
+    # colonnes minimales
+    required = {"question", "choices", "answer"}
+    missing = [c for c in required if c not in df.columns]
+    if missing:
         st.error(
-            f"Colonnes manquantes.\n"
-            f"Requis: {required_cols}.\n"
+            "Colonnes manquantes dans questions.json.\n"
+            f"Requis: {required}.\n"
             f"Trouvé: {set(df.columns)}"
         )
         st.stop()
 
-    # 6) Dé-quotage léger si nécessaire
-    def _dequote(s):
-        if pd.isna(s):
-            return s
-        s = str(s)
-        if len(s) >= 2 and s[0] == '"' and s[-1] == '"':
-            s = s[1:-1]
-        return s.replace('""', '"')
+    # choices -> liste propre
+    def _fix_choices(x):
+        if isinstance(x, list):
+            return [str(c).strip() for c in x]
+        # fallback si ancien format CSV "A||B||C"
+        return [c.strip() for c in str(x).split("||")]
 
-    for col in ["question", "choices", "explanation", "tags"]:
-        if col in df.columns:
-            df[col] = df[col].apply(_dequote)
+    df["choices_list"] = df["choices"].apply(_fix_choices)
 
-    # 7) Split des choix sur '||'
-    df["choices_list"] = df["choices"].astype(str).apply(
-        lambda s: [c.strip() for c in s.split("||")]
-    )
-
-    # 8) Parse de la colonne answer : entier ou liste [i,j]
+    # answer_parsed : int ou [int,...]
     def parse_answer(x):
-        if pd.isna(x):
+        if x is None or (isinstance(x, float) and pd.isna(x)):
             return None
+        if isinstance(x, list):
+            try:
+                return [int(v) for v in x]
+            except Exception:
+                return None
+        if isinstance(x, (int, float)) and not isinstance(x, bool):
+            return int(x)
         s = str(x).strip()
         if s.startswith("[") and s.endswith("]"):
             try:
@@ -84,7 +74,37 @@ def load_questions(path: Path) -> pd.DataFrame:
             return None
 
     df["answer_parsed"] = df["answer"].apply(parse_answer)
-    return df
+
+    # colonnes optionnelles
+    for col in ["explanation", "tags", "qcm", "theme", "id"]:
+        if col not in df.columns:
+            df[col] = None
+
+    return df.reset_index(drop=True)
+
+
+@st.cache_data
+def load_questions_json(path: Path) -> pd.DataFrame:
+    """Charge data/.../questions.json (liste ou {'questions': [...]}) en DataFrame normalisée."""
+    if not path.exists():
+        st.error(f"Fichier introuvable : {path}")
+        st.stop()
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        st.error(f"JSON invalide dans {path.name} : {e}")
+        st.stop()
+
+    if isinstance(data, dict) and "questions" in data:
+        items = data["questions"]
+    elif isinstance(data, list):
+        items = data
+    else:
+        st.error(f"Format JSON non reconnu dans {path.name}. Attendu liste ou {{'questions':[...]}}.")
+        st.stop()
+
+    df = pd.DataFrame(items)
+    return _normalize_columns(df)
 
 
 def load_errors(path: Path) -> list:
@@ -104,20 +124,17 @@ def save_errors(path: Path, errors: list) -> None:
         st.warning(f"Impossible d'enregistrer les erreurs : {e}")
 
 
-# --------- Diagnostiqueur CSV ---------
+# ===== Diagnostiqueur =====
 def validate_answers_and_choices(df_: pd.DataFrame):
-    """Retourne une liste d'erreurs: dict(row_idx, issue, detail)."""
     errors = []
     for i, row in df_.iterrows():
         q = str(row.get("question", "")).strip()
         ch_list = row.get("choices_list", [])
         ans = row.get("answer_parsed", None)
 
-        # 1) Question vide
         if not q:
             errors.append({"row_idx": i, "issue": "question vide", "detail": ""})
 
-        # 2) Choix vides ou séparateurs en trop
         if not isinstance(ch_list, list) or len(ch_list) == 0:
             errors.append({"row_idx": i, "issue": "choices_list vide", "detail": ""})
         else:
@@ -126,20 +143,16 @@ def validate_answers_and_choices(df_: pd.DataFrame):
                 errors.append({
                     "row_idx": i,
                     "issue": "options vides",
-                    "detail": (
-                        f"indices: {empty_opts} (souvent dû à '||' en trop, ex: 'A||B||')"
-                    )
+                    "detail": f"indices: {empty_opts} (souvent '||' final en trop)"
                 })
 
-        # 3) Réponse manquante / illisible
-        if ans is None and pd.notna(row.get("answer", None)):
+        if ans is None and row.get("answer", None) is not None:
             errors.append({
                 "row_idx": i,
                 "issue": "answer illisible",
                 "detail": f"value={row.get('answer')!r} (attendu: entier ou liste [i,j])"
             })
 
-        # 4) Indices hors plage
         n = len(ch_list) if isinstance(ch_list, list) else 0
 
         def _bad_index(a):
@@ -151,29 +164,26 @@ def validate_answers_and_choices(df_: pd.DataFrame):
                 errors.append({
                     "row_idx": i,
                     "issue": "indices hors plage (liste)",
-                    "detail": f"indices invalides {bad} ; nb_options={n} (valides: 0..{max(n-1,0)})"
+                    "detail": f"indices invalides {bad} ; nb_options={n} (0..{max(n-1,0)})"
                 })
         elif isinstance(ans, int):
             if _bad_index(ans):
                 errors.append({
                     "row_idx": i,
                     "issue": "indice hors plage (entier)",
-                    "detail": f"index={ans} ; nb_options={n} (valides: 0..{max(n-1,0)})"
+                    "detail": f"index={ans} ; nb_options={n} (0..{max(n-1,0)})"
                 })
         else:
-            if "answer" not in row or pd.isna(row.get("answer", None)):
+            if row.get("answer", None) in (None, ""):
                 errors.append({"row_idx": i, "issue": "answer manquant", "detail": ""})
 
     return errors
 
 
-# --------- Helpers divers ---------
-def tag_match(cell, selected):
-    cell_tags = [x.strip() for x in str(cell).split(",")]
-    return any(t.strip() in cell_tags for t in selected)
-
-
 def _freeze_order(df_: pd.DataFrame, shuffle_flag: bool):
+    # Si on a généré un sous-ensemble aléatoire, on ne touche pas à l'ordre
+    if st.session_state.get("custom_subset", False):
+        return
     base_key = tuple(df_.index)
     need_init = (
         "indices" not in st.session_state
@@ -189,12 +199,10 @@ def _freeze_order(df_: pd.DataFrame, shuffle_flag: bool):
         st.session_state.indices_base = base_key
         st.session_state.shuffle_q = shuffle_flag
         st.session_state.nb_rows = len(df_)
-        # ✅ on invalide les permutations d’options devenues obsolètes
-        st.session_state.choice_shuffle = {}
+        st.session_state.choice_shuffle = {}  # reset permutations options
 
 
 def _map_true_answer(row_i: int, row_series: pd.Series):
-    """Retourne (choices_shuffled_text, true_ans_in_shuffled_index)."""
     shuffle_order = st.session_state.choice_shuffle.get(
         row_i, list(range(len(row_series["choices_list"])))
     )
@@ -209,7 +217,6 @@ def _map_true_answer(row_i: int, row_series: pd.Series):
 
 
 def _compute_score(df_: pd.DataFrame):
-    """Score basé sur les questions répondues (pour 'Terminer maintenant')."""
     answered = 0
     correct = 0
     for i, row in df_.iterrows():
@@ -227,38 +234,125 @@ def _compute_score(df_: pd.DataFrame):
     return correct, answered
 
 
-# --------- UI ---------
-st.set_page_config(page_title=APP_TITLE, page_icon="📝", layout="centered")
+def _score_on_indices(df_: pd.DataFrame, indices_: list[int]):
+    """Score uniquement sur le sous-ensemble présenté (st.session_state.indices)."""
+    answered = 0
+    correct = 0
+    for i in indices_:
+        if i not in st.session_state.answers:
+            continue
+        row = df_.loc[i]
+        _, true_ans = _map_true_answer(i, row)
+        given = st.session_state.answers.get(i)
+        if isinstance(true_ans, list):
+            ok = isinstance(given, list) and sorted(given) == sorted(true_ans)
+        else:
+            ok = (given == true_ans)
+        if ok:
+            correct += 1
+        answered += 1
+    return correct, answered
+
+
+# ========================================================================
+#                                   UI
+# ========================================================================
+st.set_page_config(page_title=APP_TITLE, page_icon="📝", layout="wide")
 st.title(APP_TITLE)
 
+# ===== Sélection hiérarchique =====
 with st.sidebar:
+    st.header("📚 Choix du dataset")
+
+    if not DATA_DIR.exists():
+        st.error(f"Dossier des données introuvable : {DATA_DIR}")
+        st.stop()
+
+    schools = sorted([d.name for d in DATA_DIR.iterdir() if d.is_dir()])
+    if not schools:
+        st.error("Aucune école trouvée dans data/.")
+        st.stop()
+    school = st.selectbox("École", schools)
+
+    school_dir = DATA_DIR / school
+    years = sorted([d.name for d in school_dir.iterdir() if d.is_dir()])
+    if not years:
+        st.error("Aucune année trouvée pour cette école.")
+        st.stop()
+    year = st.selectbox("Année (1A, 2A, 3A, L3GE…)", years)
+
+    year_dir = school_dir / year
+    subjects = sorted([d.name for d in year_dir.iterdir() if d.is_dir()])
+    if not subjects:
+        st.error("Aucune matière trouvée pour cette année.")
+        st.stop()
+    subject = st.selectbox("Matière", subjects)
+    subject_dir = year_dir / subject
+
+    # Unique fichier requis
+    QUESTIONS_FILE = subject_dir / "questions.json"
+    ERRORS_FILE = subject_dir / "erreurs.json"
+
+    # Paramètres
     st.header("Paramètres")
     mode = st.selectbox("Mode", ["Entraînement", "Examen blanc", "Révisions ciblées"])
-
-    df = load_questions(DATA_FILE)
-
-    # Bouton de diagnostic CSV
-    if st.button("🔎 Diagnostiquer le CSV"):
-        diag_once = validate_answers_and_choices(df)
-        if diag_once:
-            st.error(f"{len(diag_once)} problème(s) détecté(s). Voir ci-dessous.")
-            st.session_state["_diag_errors"] = diag_once
-        else:
-            st.success("Aucun problème détecté ✅")
-            st.session_state["_diag_errors"] = []
-
-    # Tags
-    all_tags = sorted({
-        t.strip()
-        for ts in df.get("tags", pd.Series(dtype=str)).fillna("")
-        for t in str(ts).split(",")
-        if t.strip()
-    })
-    selected_tags = st.multiselect("Filtrer par tags (optionnel)", all_tags)
-
     show_timer = st.toggle("Afficher un minuteur (indicatif)", value=False)
     shuffle_q = st.toggle("Mélanger l'ordre des questions", value=True)
 
+# ===== Chargement du JSON unique =====
+df = load_questions_json(QUESTIONS_FILE)
+
+# Filtre QCM (si des champs 'qcm' existent)
+available_qcms = sorted({q for q in df.get("qcm", pd.Series()).dropna().unique()})
+if available_qcms:
+    with st.sidebar:
+        selected_qcm = st.selectbox("Filtrer par QCM", ["(Tous)"] + available_qcms)
+
+    # reset si changement de QCM pour éviter indices décalés après un sous-ensemble
+    prev_qcm = st.session_state.get("selected_qcm")
+    if prev_qcm is not None and prev_qcm != selected_qcm:
+        st.session_state.custom_subset = False
+        st.session_state.indices = []
+        st.session_state.idx_ptr = 0
+        st.session_state.answers = {}
+        st.session_state.choice_shuffle = {}
+    st.session_state.selected_qcm = selected_qcm
+
+    if selected_qcm != "(Tous)":
+        df = df[df["qcm"] == selected_qcm].reset_index(drop=True)
+
+# ===== QCM aléatoire =====
+with st.sidebar:
+    st.header("🎯 QCM aléatoire")
+    k = st.number_input("Nombre de questions", min_value=1, max_value=50, value=5, step=1)
+    if st.button("Générer ce QCM"):
+        pop_indices = list(df.index)  # df est déjà filtré par QCM si sélectionné
+        if len(pop_indices) == 0:
+            st.warning("Aucune question disponible pour ce filtre.")
+            st.stop()
+        k = min(int(k), len(pop_indices))
+        order = random.sample(pop_indices, k)
+
+        # on fige ce sous-ensemble
+        st.session_state.indices = order
+        st.session_state.idx_ptr = 0
+        st.session_state.answers = {}
+        st.session_state.choice_shuffle = {}
+        st.session_state.custom_subset = True
+        st.rerun()
+
+# ===== Diagnostic =====
+diag = validate_answers_and_choices(df)
+if diag:
+    st.error(f"{len(diag)} problème(s) détecté(s) — corrige le JSON puis relance.")
+    for e in diag[:50]:
+        st.markdown(f"- **Ligne {e['row_idx']}** — {e['issue']}  \n  {e['detail']}")
+    if len(diag) > 50:
+        st.caption(f"... et {len(diag)-50} autres.")
+    st.stop()
+
+# ===== (Tags retirés de l'UI) =====
+with st.sidebar:
     if st.button("Exporter les erreurs en CSV"):
         errors = load_errors(ERRORS_FILE)
         if not errors:
@@ -272,113 +366,97 @@ with st.sidebar:
                 mime="text/csv",
             )
 
-# Diagnostic bloquant au chargement (affiche les problèmes et stop si besoin)
-diag = validate_answers_and_choices(df)
-if diag:
-    st.error(f"{len(diag)} problème(s) détecté(s) dans le CSV — corrige-les puis relance.")
-    for e in diag[:50]:
-        st.markdown(
-            f"- **Ligne {e['row_idx']}** — {e['issue']}  \n"
-            f"  {e['detail']}"
-        )
-    if len(diag) > 50:
-        st.caption(f"... et {len(diag)-50} autres.")
-    st.stop()
-
-# Filtrage par tags
-if selected_tags:
-    mask = df.get("tags", "").fillna("").apply(lambda s: tag_match(s, selected_tags))
-    df = df[mask].reset_index(drop=True)
-
-# --------- Ordre des questions FIGÉ ---------
+# ===== Ordre figé =====
 _freeze_order(df, shuffle_q)
 indices = st.session_state.indices
 
-# --------- État de session ---------
+# ===== États =====
 if "idx_ptr" not in st.session_state:
     st.session_state.idx_ptr = 0
 if "answers" not in st.session_state:
-    # map: row_index -> int | list[int]
-    st.session_state.answers = {}
+    st.session_state.answers = {}  # row_index -> int | list[int]
 if "choice_shuffle" not in st.session_state:
-    # map: row_index -> list of original indices in the NEW order (e.g., [2,0,1,3])
-    st.session_state.choice_shuffle = {}
+    st.session_state.choice_shuffle = {}  # row_index -> permutation
 st.session_state.exam_mode = (mode == "Examen blanc")
 
-# --------- Minuteur indicatif ---------
 if show_timer:
     st.caption("⏱️ Le minuteur est indicatif (ne bloque rien).")
     timer_placeholder = st.empty()
 
-# Aucune question ?
 if df.empty:
-    st.warning("Aucune question ne correspond au filtre.")
+    st.warning("Aucune question à afficher (filtres trop restrictifs ?).")
     st.stop()
 
-# --------- Affichage principal ---------
-current_pos = st.session_state.idx_ptr
-
-if current_pos >= len(indices):
-    # ================= FIN DE SESSION =================
-    correct, answered = _compute_score(df)
-    # Si fin anticipée, affiche score sur répondues; sinon, sur tout
-    total = answered if 0 < answered < len(df) else len(df)
-    score_pct = 100 * correct / total if total > 0 else 0.0
-
-    st.success(f"Terminé ✅ — Score: {correct}/{total} ({score_pct:.1f}%)")
-    if answered < len(df):
-        st.caption(f"Questions répondues : {answered}/{len(df)} — {len(df) - answered} non répondues.")
-
-    # ===== Récapitulatif =====
-    st.subheader("Récapitulatif")
-
-    # ordre exactement comme présenté pendant le test
-    presented_order = st.session_state.indices
-    order_map = {idx: pos for pos, idx in enumerate(presented_order)}  # idx -> position 0-based
-
-    recap_rows = []
-    answered_set = set(st.session_state.answers.keys())
-
-    # fin anticipée -> seulement répondues, sinon -> toutes, dans l'ordre présenté
-    if answered < len(df):
-        iter_indices = [i for i in presented_order if i in answered_set]
-        st.caption("Affichage des **questions répondues uniquement** (fin anticipée).")
-    else:
-        iter_indices = list(presented_order)
-
-    for i in iter_indices:
-        row = df.loc[i]
-        # Respecte le mélange des options de cette question
-        choices, true_ans = _map_true_answer(i, row)
-        given = st.session_state.answers.get(i, None)
-
-        # Évaluation
+# ========================================================================
+#                           AFFICHAGE PRINCIPAL
+# ========================================================================
+def _score(df_):
+    answered = 0
+    correct = 0
+    for i, row in df_.iterrows():
+        if i not in st.session_state.answers:
+            continue
+        answered += 1
+        _, true_ans = _map_true_answer(i, row)
+        given = st.session_state.answers.get(i)
         if isinstance(true_ans, list):
             ok = isinstance(given, list) and sorted(given) == sorted(true_ans)
         else:
             ok = (given == true_ans)
-        status = "Correct" if ok else "Faux"
+        if ok:
+            correct += 1
+    return correct, answered
 
-        # En-tête avec numéro vu pendant le test
+
+current_pos = st.session_state.idx_ptr
+total_questions = len(indices) if indices else 0
+
+if current_pos >= total_questions:
+    # ===== FIN =====
+    correct, answered = _score_on_indices(df, indices)
+    total = total_questions
+    score_pct = 100 * correct / total if total > 0 else 0.0
+
+    st.success(f"Terminé ✅ — Score: {correct}/{total} ({score_pct:.1f}%)")
+    if answered < total:
+        st.caption(f"Répondues : {answered}/{total} — {total - answered} non répondues.")
+
+    st.subheader("Récapitulatif")
+    presented_order = st.session_state.indices
+    order_map = {idx: pos for pos, idx in enumerate(presented_order)}
+
+    recap_rows = []
+    answered_set = set(st.session_state.answers.keys())
+    iter_indices = [i for i in presented_order if i in answered_set] if answered < total else list(presented_order)
+
+    for i in iter_indices:
+        row = df.loc[i]
+        choices, true_ans = _map_true_answer(i, row)
+        given = st.session_state.answers.get(i, None)
+
+        if isinstance(true_ans, list):
+            ok = isinstance(given, list) and sorted(given) == sorted(true_ans)
+        else:
+            ok = (given == true_ans)
+
         n = order_map[i] + 1
-        badge = "🟩 Correct" if status == "Correct" else "🟥 Faux"
+        badge = "🟩 Correct" if ok else "🟥 Faux"
         st.markdown(f"**Q{n}.** {row['question']}  \n_{badge}_")
 
-        # Marquage des options : ✅ bonne, ❌ choisie fausse, • sinon
+        letters = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
         for j, opt in enumerate(choices):
             ok_correct = (j in true_ans) if isinstance(true_ans, list) else (j == true_ans)
             ok_given = (j in given) if isinstance(given, list) else (j == given)
             prefix = "✅" if ok_correct else ("❌" if ok_given else "•")
             st.markdown(f"{prefix} {opt}")
 
-        # Explication
-        if str(row.get("explanation", "")).strip():
+        if str(row.get("explanation", "") or "").strip():
             with st.expander("Explication"):
                 st.markdown(row["explanation"])
 
         st.divider()
 
-        # Pour export erreurs (uniquement celles non correctes affichées)
+        # on n'exporte plus les tags
         if not ok:
             recap_rows.append({
                 "question": row["question"],
@@ -386,44 +464,45 @@ if current_pos >= len(indices):
                 "correct": true_ans,
                 "given": given,
                 "explanation": str(row.get("explanation", "")),
-                "tags": str(row.get("tags", "")),
+                "qcm": row.get("qcm", None),
+                "theme": row.get("theme", None),
             })
 
-    # Export erreurs + Recommencer
     if recap_rows:
         if st.button("Enregistrer ces erreurs"):
             save_errors(ERRORS_FILE, recap_rows)
-            st.toast("Erreurs enregistrées.")
+            st.toast(f"Erreurs enregistrées → {ERRORS_FILE.name}")
 
     if st.button("Recommencer"):
         st.session_state.idx_ptr = 0
         st.session_state.answers = {}
         st.session_state.choice_shuffle = {}
+        st.session_state.custom_subset = False  # important
         order = list(df.index)
-        if shuffle_q:
+        if st.session_state.shuffle_q:
             random.shuffle(order)
         st.session_state.indices = order
         st.rerun()
 
 else:
-    # ================= QUESTION EN COURS =================
+    # ===== QUESTION EN COURS =====
     row_idx = indices[current_pos]
     row = df.loc[row_idx]
-    st.write(f"**Question {current_pos + 1}/{len(df)}**")
+    st.write(f"**Question {current_pos + 1}/{total_questions}**")
 
-    # --- MÉLANGE DES RÉPONSES (par question, mémorisé en session) ---
+    # permutation des options — mémorisée
     if row_idx not in st.session_state.choice_shuffle:
-        shuffle_order = list(range(len(row["choices_list"])))
-        random.shuffle(shuffle_order)
-        st.session_state.choice_shuffle[row_idx] = shuffle_order
+        perm = list(range(len(row["choices_list"])))
+        random.shuffle(perm)
+        st.session_state.choice_shuffle[row_idx] = perm
     else:
-        shuffle_order = st.session_state.choice_shuffle[row_idx]
+        perm = st.session_state.choice_shuffle[row_idx]
 
-    options = [row["choices_list"][k] for k in shuffle_order]
-    map_old_to_new = {old: new for new, old in enumerate(shuffle_order)}
+    options = [row["choices_list"][k] for k in perm]
+    map_old_to_new = {old: new for new, old in enumerate(perm)}
     true_ans_orig = row["answer_parsed"]
 
-    # ✅ Validation des indices de réponse (évite KeyError si CSV mal indexé)
+    # validation indices
     n_opts = len(row["choices_list"])
 
     def _valid_idx(a: int) -> bool:
@@ -433,28 +512,28 @@ else:
         bad = [a for a in true_ans_orig if not _valid_idx(a)]
         if bad:
             st.error(
-                f"Indice(s) de réponse invalide(s) {bad} pour la question :\n\n"
+                f"Indice(s) de réponse invalide(s) {bad} pour :\n\n"
                 f"« {row['question']} »\n\n"
-                f"Nombre d'options = {n_opts} → indices valides: 0..{n_opts-1}\n\n"
-                f"Corrige la colonne 'answer' dans le CSV."
+                f"Nb d'options = {n_opts} → indices valides: 0..{n_opts-1}.\n"
+                f"Corrige 'answer' dans questions.json."
             )
             st.stop()
         shuffled_answer = [map_old_to_new[a] for a in true_ans_orig]
     else:
         if not _valid_idx(true_ans_orig):
             st.error(
-                f"Indice de réponse invalide ({true_ans_orig}) pour la question :\n\n"
+                f"Indice de réponse invalide ({true_ans_orig}) pour :\n\n"
                 f"« {row['question']} »\n\n"
-                f"Nombre d'options = {n_opts} → indices valides: 0..{n_opts-1}\n\n"
-                f"Corrige la colonne 'answer' dans le CSV."
+                f"Nb d'options = {n_opts} → indices valides: 0..{n_opts-1}.\n"
+                f"Corrige 'answer' dans questions.json."
             )
             st.stop()
         shuffled_answer = map_old_to_new[true_ans_orig]
 
-    # --- Badge "Choix unique / Choix multiples" bien visible ---
-    is_multi = isinstance(shuffled_answer, list)  # (on le calcule ici)
+    # Badge multi/unique
+    is_multi = isinstance(shuffled_answer, list)
     label = "Choix multiples" if is_multi else "Choix unique"
-    color = "#9333EA" if is_multi else "#2563EB"  # violet pour multi, bleu pour unique
+    color = "#9333EA" if is_multi else "#2563EB"
     st.markdown(
         f"""
         <div style="
@@ -477,6 +556,7 @@ else:
     letters = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     st.markdown("\n".join([f"- **{letters[i]}**. {opt}" for i, opt in enumerate(options)]))
 
+    # UI réponses
     if is_multi:
         prev = st.session_state.answers.get(row_idx, [])
         if not isinstance(prev, list):
@@ -493,40 +573,46 @@ else:
         choice_indexes = [i for i, checked in enumerate(checks) if checked]
     else:
         prev = st.session_state.answers.get(row_idx, None)
-        chosen_letter = st.radio(
-            "Ta réponse :",
-            options=[letters[i] for i in range(len(options))],
-            index=(prev if isinstance(prev, int) else None),
-        )
+        # Attention: selon la version de Streamlit, index=None peut être problématique.
+        # Si tu préfères éviter tout risque, remplace par index=prev si int, sinon ne passe pas index.
+        if isinstance(prev, int):
+            chosen_letter = st.radio(
+                "Ta réponse :",
+                options=[letters[i] for i in range(len(options))],
+                index=prev,
+            )
+        else:
+            chosen_letter = st.radio(
+                "Ta réponse :",
+                options=[letters[i] for i in range(len(options))],
+                index=None,
+            )
         choice_indexes = letters.index(chosen_letter) if chosen_letter is not None else None
 
     col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
-
     with col1:
         if st.button("Valider"):
             st.session_state.answers[row_idx] = choice_indexes
-
     with col2:
         if st.button("Question suivante ➜"):
             if choice_indexes is not None:
                 st.session_state.answers[row_idx] = choice_indexes
             st.session_state.idx_ptr += 1
             st.rerun()
-
     with col3:
         if st.button("Terminer maintenant"):
             if choice_indexes is not None:
                 st.session_state.answers[row_idx] = choice_indexes
-            st.session_state.idx_ptr = len(indices)  # saute à l'écran de fin (récap sur répondues)
+            st.session_state.idx_ptr = len(indices)
             st.rerun()
-
     with col4:
         if st.button("⟲ Réinitialiser"):
             st.session_state.idx_ptr = 0
             st.session_state.answers = {}
             st.session_state.choice_shuffle = {}
+            st.session_state.custom_subset = False  # important
             order = list(df.index)
-            if shuffle_q:
+            if st.session_state.shuffle_q:
                 random.shuffle(order)
             st.session_state.indices = order
             st.rerun()
@@ -534,10 +620,9 @@ else:
     if show_timer:
         timer_placeholder.write("⏳ Temps indicatif en cours…")
 
-    # --------- Feedback persistant (unique)
+    # Feedback persistant
     if not st.session_state.exam_mode and row_idx in st.session_state.answers:
         given = st.session_state.answers[row_idx]
-        ok = False
         if isinstance(shuffled_answer, list):
             ok = isinstance(given, list) and sorted(given) == sorted(shuffled_answer)
             correct_letters = ", ".join(letters[i] for i in shuffled_answer)
@@ -545,18 +630,12 @@ else:
             ok = (given == shuffled_answer)
             correct_letters = letters[shuffled_answer]
 
-        if ok:
-            st.success("Bonne réponse ✅")
-        else:
-            st.error("Mauvaise réponse ❌")
-
+        _ = st.success("Bonne réponse ✅") if ok else st.error("Mauvaise réponse ❌")
         st.info(f"Bonne(s) réponse(s) : **{correct_letters}**")
-
         if str(row.get("explanation", "")).strip():
             st.info(row.get("explanation"))
 
 st.caption(
-    "Astuce : tu peux coller du LaTeX ($\\LaTeX$). "
-    "Le séparateur CSV est auto-détecté (',' ou ';'). "
-    "Les réponses sont mélangées par question et mémorisées."
+    "Astuce : LaTeX accepté. Un JSON par matière → data/École/Année/Matière/questions.json. "
+    "Champs 'qcm' et 'tags' sont tolérés dans le JSON, mais seuls 'qcm' est filtrable ici."
 )
