@@ -553,6 +553,23 @@ else:
     )
 
     st.markdown(f"### {row['question']}")
+
+    # ---- Affichage de l'image si présente ----
+    img_field = str(row.get("image", "") or "").strip()
+    if img_field:
+        # On essaye plusieurs emplacements plausibles
+        rel = img_field.lstrip("/")                           # ex: "Images/2023-q030.png"
+        candidates = [
+            BASE_DIR / rel,                                   # racine du projet
+            BASE_DIR / "public" / rel,                        # si tu as mis public/Images/...
+            subject_dir / rel,                                # data/.../Matière/Images/...
+            DATA_DIR / rel                                    # data/... à la racine data/
+        ]
+        img_path = next((p for p in candidates if p.exists()), None)
+
+        if img_path:
+            st.image(str(img_path), caption=None, use_container_width=True)
+
     letters = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     st.markdown("\n".join([f"- **{letters[i]}**. {opt}" for i, opt in enumerate(options)]))
 

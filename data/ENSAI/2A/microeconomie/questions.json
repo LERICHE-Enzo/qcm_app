@@ -1,0 +1,598 @@
+{
+    "questions": [
+        {
+            "id": "2023-q001",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Dans une étude observationnelle, un biais de sélection survient lorsque :",
+            "choices": [
+                "l’échantillon est choisi aléatoirement dans la population.",
+                "les groupes de traitement et de contrôle ont des caractéristiques similaires.",
+                "il existe des différences systématiques entre les groupes de traitement et de contrôle qui affectent les résultats observés.",
+                "le chercheur manipule les variables pour établir une relation de causalité."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le biais de sélection survient lorsque les groupes de traitement et de contrôle diffèrent systématiquement d’une manière qui influence les résultats observés. Cela compromet la validité de l’étude.",
+            "tags": [
+                "biais de sélection",
+                "étude observationnelle",
+                "causalité"
+            ]
+        },
+        {
+            "id": "2023-q002",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Un pari équitable est :",
+            "choices": [
+                "un pari qui rend le joueur mieux loti.",
+                "un pari perçu comme équitable.",
+                "un pari avec une espérance de gain positive.",
+                "un pari avec une espérance de gain nulle."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un pari est dit équitable lorsqu’il a une espérance mathématique nulle, c’est-à-dire que sur le long terme, le joueur ne gagne ni ne perd en moyenne.",
+            "tags": [
+                "pari équitable",
+                "espérance",
+                "théorie des jeux"
+            ]
+        },
+        {
+            "id": "2023-q003",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Parmi les axiomes suivants utilisés dans la démonstration de l’utilité espérée de Von Neumann-Morgenstern, lequel n’en fait pas partie ?",
+            "choices": [
+                "Transitivité.",
+                "Monotonicité.",
+                "Complétude.",
+                "Substitution.",
+                "Archimédien."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les axiomes de la théorie de l’utilité espérée de Von Neumann-Morgenstern sont la complétude, la transitivité, la continuité (Archimédien) et l’indépendance (ou substitution). La monotonicité n’en fait pas partie.",
+            "tags": [
+                "Von Neumann-Morgenstern",
+                "axiomes",
+                "utilité espérée"
+            ]
+        },
+        {
+            "id": "2023-q004",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Une personne averse au risque :",
+            "choices": [
+                "a une fonction d’utilité convexe.",
+                "a une prime de risque nulle.",
+                "acceptera volontairement des paris équitables.",
+                "n’acceptera pas volontairement de participer à des paris équitables."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Une personne averse au risque a une fonction d’utilité concave, exige une prime de risque positive et refuse de participer volontairement à des paris équitables.",
+            "tags": [
+                "aversion au risque",
+                "utilité concave",
+                "pari équitable"
+            ]
+        },
+        {
+            "id": "2023-q005",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Pour deux loteries A et B avec F_A et F_B leurs fonctions de répartition respectives, B domine stochastiquement A au premier ordre si :",
+            "choices": [
+                "$F_A(x) \\leq F_B(x) \\; \\forall x$ avec inégalité stricte pour au moins un $x$.",
+                "$F_A(x) \\geq F_B(x) \\; \\forall x$ avec inégalité stricte pour au moins un $x$.",
+                "$E_A[U(X)] \\leq E_B[U(X)]$ pour toute fonction $U(\\cdot)$ croissante.",
+                "La fonction de répartition de B est toujours en dessous de celle de A."
+            ],
+            "answer": [
+                1,
+                2,
+                3
+            ],
+            "explanation": "B FOSD A ssi $F_B(x) \\le F_A(x)$ pour tout $x$ (strict pour au moins un $x$), ce qui équivaut à $F_A(x) \\ge F_B(x)$ (B). Alors, pour toute utilité croissante, $\\mathbb{E}_B[U(X)] \\ge \\mathbb{E}_A[U(X)]$ (C), et graphiquement la CDF de B est en dessous de celle de A (D).",
+            "tags": [
+                "domination stochastique (ordre 1)",
+                "loteries",
+                "CDF",
+                "espérance sous utilité croissante"
+            ]
+        },
+        {
+            "id": "2023-q006",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Trouver l’(les) affirmation(s) fausse(s) :",
+            "choices": [
+                "La loterie B domine stochastiquement au second ordre la loterie A si B est moins risquée que A.",
+                "La loterie B domine stochastiquement au second ordre la loterie A si B a une probabilité plus faible pour les valeurs extrêmes à espérance égale.",
+                "Tous les agents (averses au risque) préféreront une loterie qui domine au second ordre.",
+                "B domine stochastiquement A au premier ordre (FOSD) ⇔ E(B) > E(A).",
+                "B domine stochastiquement A au second ordre (SOSD) ⇒ E(A) = E(B) et σ_B < σ_A (où σ est l’écart-type)."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L’énoncé (D) est faux : FOSD implique seulement E(B) ≥ E(A) (en prenant U(x)=x), et ce n’est pas une équivalence ; il n’est pas nécessaire que l’inégalité soit stricte et la réciproque est fausse. Les autres énoncés décrivent correctement des propriétés usuelles de la domination stochastique d’ordre 2 (intuition de 'moins de masse dans les extrêmes' à espérance égale et préférence des agents averses au risque).",
+            "tags": [
+                "FOSD",
+                "SOSD",
+                "domination stochastique",
+                "espérance",
+                "risque"
+            ]
+        },
+        {
+            "id": "2023-q007",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Les biens d’état-contingent en économie désignent des biens ou services dont :",
+            "choices": [
+                "les prix sont fixes indépendamment des conditions de marché.",
+                "la consommation dépend de l’état du monde ou de la survenue d’événements spécifiques.",
+                "la disponibilité dépend de la réglementation gouvernementale.",
+                "l’utilité est la même quel que soit l’environnement économique."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un bien d’état-contingent (Arrow-Debreu) est défini par la consommation qui dépend de l’état du monde. Par exemple, une assurance paie uniquement si un certain événement survient.",
+            "tags": [
+                "Arrow-Debreu",
+                "biens contingents",
+                "état du monde",
+                "incertitude"
+            ]
+        },
+        {
+            "id": "2023-q008",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Le problème de sélection adverse :",
+            "choices": [
+                "renvoie aussi à un problème d’aléa moral (moral hazard).",
+                "peut entraîner une augmentation des gains d’échange.",
+                "apparaît, par exemple, lorsque les vendeurs qui connaissent la qualité d’un produit mieux que les acheteurs choisissent délibérément de vendre des produits de moindre qualité.",
+                "apparaît lorsqu’un employeur licencie la mauvaise personne.",
+                "n’apparaît que dans les cas d’assurance."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La sélection adverse se produit lorsqu’une asymétrie d’information pousse les agents mieux informés à sélectionner stratégiquement les produits de moindre qualité (exemple : le marché des 'lemons' d’Akerlof). Elle ne se limite pas à l’assurance et réduit les gains d’échange.",
+            "tags": [
+                "sélection adverse",
+                "asymétrie d’information",
+                "Akerlof",
+                "lemons"
+            ]
+        },
+        {
+            "id": "2023-q009",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "L’aléa moral (moral hazard) :",
+            "choices": [
+                "est un terme utilisé pour décrire des primes versées pour des métiers particulièrement dangereux (comme les pompiers).",
+                "est un terme utilisé comme synonyme de jugement de valeur.",
+                "renvoie à la moralité douteuse de la hausse des prix en période de crise (par exemple lors de famines ou d’inondations).",
+                "apparaît lorsque les incitations sont biaisées parce qu’un individu en sait plus sur ses propres actions que les autres."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L’aléa moral survient après la signature d’un contrat lorsque l’agent a plus d’information sur ses propres actions que les autres et modifie son comportement de manière opportuniste (exemple : un assuré qui prend plus de risques car il sait qu’il est couvert).",
+            "tags": [
+                "aléa moral",
+                "moral hazard",
+                "asymétrie d’information",
+                "incitations"
+            ]
+        },
+        {
+            "id": "2023-q010",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "En théorie des jeux, un équilibre de Nash est une situation dans laquelle :",
+            "choices": [
+                "les joueurs prennent des décisions irrationnelles pour maximiser leur utilité.",
+                "un joueur domine l’autre, conduisant à un résultat inégal.",
+                "chaque joueur prend la meilleure décision possible compte tenu des décisions des autres joueurs.",
+                "les joueurs collaborent pour atteindre un objectif commun en ignorant leurs intérêts individuels."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un équilibre de Nash correspond à une situation où chaque joueur choisit sa meilleure stratégie étant donné les stratégies des autres. Aucun joueur n’a intérêt à dévier unilatéralement.",
+            "tags": [
+                "théorie des jeux",
+                "équilibre de Nash",
+                "stratégie"
+            ]
+        },
+        {
+            "id": "2023-q011",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "En théorie des jeux, une stratégie dominée pour un joueur est une stratégie :",
+            "choices": [
+                "où le joueur gagne toujours la partie.",
+                "où le joueur a plus de chances de gagner comparé aux autres stratégies.",
+                "où le joueur a une stratégie qui est toujours pire qu’une autre, quel que soit le choix des autres joueurs.",
+                "où le joueur collabore avec les autres pour obtenir un résultat mutuellement bénéfique."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Une stratégie dominée est une stratégie qui donne toujours un résultat inférieur à une autre stratégie, quel que soit le choix des autres joueurs. Les joueurs rationnels n’ont donc aucun intérêt à la jouer.",
+            "tags": [
+                "théorie des jeux",
+                "stratégie dominée",
+                "rationalité"
+            ]
+        },
+        {
+            "id": "2023-q012",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Dans le dilemme du prisonnier, la situation où aucun joueur ne trahit est :",
+            "choices": [
+                "Pareto-optimale mais instable.",
+                "Pareto-optimale et stable.",
+                "Non Pareto-optimale et instable.",
+                "Le seul équilibre."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La coopération mutuelle (aucun joueur ne trahit) est Pareto-optimale car les deux joueurs obtiennent un meilleur résultat que dans l’équilibre de Nash. Mais elle est instable car chaque joueur a une incitation à trahir, ce qui la rend non soutenable comme équilibre.",
+            "tags": [
+                "dilemme du prisonnier",
+                "Pareto-optimalité",
+                "équilibre instable",
+                "théorie des jeux"
+            ]
+        },
+        {
+            "id": "2023-q013",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Une meilleure réponse (Best Response) pour le joueur i aux stratégies du joueur j est une situation telle que :",
+            "choices": [
+                "la meilleure réponse donne toujours le gain maximal pour i contre toutes les stratégies de j.",
+                "la meilleure réponse donne le gain maximal pour i contre les stratégies optimales de j.",
+                "la meilleure réponse est la stratégie qui répond le mieux à une stratégie donnée de j.",
+                "le joueur i collabore avec le joueur j pour atteindre une stratégie optimale commune."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Selon la correction du professeur, la meilleure réponse (Best Response) correspond à la stratégie qui maximise toujours le gain de i contre toutes les stratégies de j. Cette définition est proche de celle d’une stratégie dominante.",
+            "tags": [
+                "théorie des jeux",
+                "meilleure réponse",
+                "stratégie",
+                "stratégie dominante"
+            ]
+        },
+        {
+            "id": "2023-q014",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Dans les jeux en forme extensive, un équilibre parfait en sous-jeux (SPNE) est un profil de stratégies qui :",
+            "choices": [
+                "maximise les gains de tous les joueurs dans chaque sous-jeu.",
+                "garantit qu’aucun joueur n’a intérêt à dévier de la stratégie d’équilibre à aucun moment du jeu, y compris hors du chemin d’équilibre.",
+                "assure que le jeu atteindra toujours un équilibre de Nash en un nombre fini de coups.",
+                "exige que les joueurs révisent leurs stratégies après chaque sous-jeu pour atteindre un équilibre dynamique."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un SPNE est un profil de stratégies qui constitue un équilibre de Nash dans **chaque sous-jeu** ; autrement dit, aucun joueur n’a d’incitation à dévier en quelque point que ce soit, y compris hors du chemin d’équilibre (crédibilité des menaces).",
+            "tags": [
+                "théorie des jeux",
+                "forme extensive",
+                "SPNE",
+                "équilibre parfait en sous-jeux"
+            ]
+        },
+        {
+            "id": "2023-q015",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Dans un équilibre de Nash bayésien :",
+            "choices": [
+                "les croyances n’ont pas d’importance.",
+                "le joueur informé joue une meilleure réponse en espérance.",
+                "le joueur non informé joue une meilleure réponse en espérance.",
+                "les types sont partiellement résolus."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Dans un équilibre de Nash bayésien, chaque joueur maximise son utilité attendue en fonction de ses croyances sur les types des autres. Le joueur non informé joue ainsi une meilleure réponse en espérance. Les croyances sont donc cruciales et les types ne sont pas directement révélés.",
+            "tags": [
+                "théorie des jeux",
+                "équilibre de Nash bayésien",
+                "information incomplète",
+                "croyances"
+            ]
+        },
+        {
+            "id": "2023-q016",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Selon le modèle de Diamond-Dybvig, dans un monde où les agents font face à un possible choc de liquidité :",
+            "choices": [
+                "les banques, en tant qu’institutions transformant liquidité et maturité, assurent toujours la meilleure situation.",
+                "les banques profitent des agents et s’enrichissent.",
+                "les banques offrent une bonne solution, mais sont toujours exposées à une demande irrationnelle de retraits.",
+                "les banques peuvent améliorer la situation mais il existe un rôle pour une intervention publique afin de prévenir les paniques bancaires."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Dans Diamond–Dybvig, les banques réalisent la transformation de maturité et fournissent de la liquidité, mais des paniques (bank runs) peuvent survenir. Des politiques publiques — assurance-dépôts, prêteur en dernier ressort ou suspension de convertibilité — peuvent prévenir ces paniques. D est donc correcte.",
+            "tags": [
+                "Diamond-Dybvig",
+                "liquidité",
+                "paniques bancaires",
+                "assurance-dépôts",
+                "prêteur en dernier ressort"
+            ]
+        },
+        {
+            "id": "2023-q017",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Dans le modèle de Diamond-Dybvig, une politique de suspension de la convertibilité :",
+            "choices": [
+                "permet à l’économie d’atteindre l’équilibre de premier rang lorsque la part de retraits précoces est stochastique.",
+                "permet d’éviter les paniques bancaires mais ne permet pas d’atteindre l’issue à information complète lorsque la part de retraits précoces est stochastique.",
+                "est sans conteste meilleure que l’assurance-dépôts.",
+                "est moins bonne que l’assurance-dépôts, mais l’assurance-dépôts est infaisable car elle nécessite d’énormes réserves."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La suspension de convertibilité stoppe une ruée bancaire en limitant/gelant les retraits, mais lorsque la fraction d’agents impatients est aléatoire, elle n’implémente pas l’optimum à information complète. L’assurance-dépôts, sous engagement public crédible, peut atteindre (ou approcher) le premier-rang dans ce cadre.",
+            "tags": [
+                "Diamond-Dybvig",
+                "suspension de convertibilité",
+                "assurance-dépôts",
+                "bank run",
+                "liquidité"
+            ]
+        },
+        {
+            "id": "2023-q018",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "En économie, la dispersion des salaires désigne :",
+            "choices": [
+                "le fait qu’on observe beaucoup d’inégalités salariales.",
+                "le fait que les salaires varient au cours du temps.",
+                "le fait que des travailleurs apparemment identiques travaillant dans des entreprises similaires puissent être payés différemment.",
+                "le fait que la plupart des gens ne prêtent pas attention à leur salaire."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La dispersion des salaires renvoie à des différences de rémunération entre des travailleurs comparables (même qualifications, même type d’entreprise), ce qui va au-delà de la simple inégalité globale ou de la variation temporelle des salaires.",
+            "tags": [
+                "marché du travail",
+                "salaires",
+                "dispersion salariale",
+                "inégalités"
+            ]
+        },
+        {
+            "id": "2023-q019",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Dans un modèle de recherche d’emploi, le fait que les travailleurs soient connectés via un réseau social :",
+            "choices": [
+                "est toujours bénéfique pour les travailleurs.",
+                "est bénéfique pour les travailleurs lorsque cela les aide à cibler leur recherche.",
+                "est une distraction pour les travailleurs : ils passent trop de temps sur leur réseau.",
+                "permet aux travailleurs de dépenser une grande partie de leurs salaires variables dans des événements après le travail."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les réseaux sociaux professionnels peuvent être bénéfiques en améliorant l’efficacité de la recherche d’emploi et en facilitant l’accès à l’information, mais leur effet positif dépend de leur capacité à orienter la recherche plutôt qu’à la disperser.",
+            "tags": [
+                "recherche d’emploi",
+                "réseaux sociaux",
+                "marché du travail"
+            ]
+        },
+{
+  "id": "2023-q020",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "Une situation dans laquelle des individus discutent de la manière appropriée de partager une tartiflette peut être modélisée comme :",
+  "choices": [
+    "un jeu coopératif avec utilité transférable.",
+    "un jeu coopératif avec utilité non transférable.",
+    "un jeu non coopératif avec utilité transférable.",
+    "un jeu non coopératif avec utilité non transférable.",
+    "autre chose mais pas un jeu."
+  ],
+  "answer": [1],
+  "explanation": "La discussion sur la manière de partager une tartiflette illustre un jeu coopératif où les préférences des individus ne peuvent pas être représentées par un transfert monétaire équivalent, donc il s’agit d’un jeu coopératif avec utilité non transférable.",
+  "tags": ["théorie des jeux", "coopératif", "utilité non transférable"]
+},
+{
+  "id": "2023-q021",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "Quelles affirmations concernant les jeux coopératifs sont correctes :",
+  "choices": [
+    "un jeu superadditif est toujours monotone.",
+    "un jeu convexe est superadditif.",
+    "le Cœur d’un jeu superadditif est toujours vide.",
+    "si le Cœur du jeu est vide, il n’existe aucune imputation.",
+    "si le Cœur du jeu est non vide, il contient toujours un grand nombre d’allocations."
+  ],
+  "answer": [1],
+  "explanation": "La seule affirmation correcte est qu’un jeu convexe est nécessairement superadditif. Les autres propositions sont fausses ou trop générales.",
+  "tags": ["théorie des jeux", "jeux coopératifs", "superadditivité"]
+},
+{
+  "id": "2023-q022",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "La fonction caractéristique d’un jeu coopératif est :",
+  "choices": [
+    "une fonction qui attribue une valeur uniquement à la grande coalition.",
+    "une fonction qui décrit les axiomes caractérisant le jeu.",
+    "une fonction qui attribue une valeur, en termes d’utilité ou autre, à toutes les coalitions du jeu.",
+    "une fonction qui nous informe sur les contributions marginales de chaque coalition."
+  ],
+  "answer": [2],
+  "explanation": "La fonction caractéristique est l’élément central des jeux coopératifs : elle associe à chaque coalition possible un gain ou une utilité totale qu’elle peut générer.",
+  "tags": ["théorie des jeux", "jeux coopératifs", "fonction caractéristique"]
+},
+{
+  "id": "2023-q023",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "La valeur de Shapley est :",
+  "choices": [
+    "une des nombreuses règles d’allocation qui satisfont les axiomes d’efficacité, de traitement égal des égaux, de joueur nul et d’additivité.",
+    "une des allocations du Cœur.",
+    "la seule règle d’allocation qui satisfait les axiomes d’efficacité, de traitement égal des égaux, de rationalité individuelle, de joueur nul et d’additivité.",
+    "une règle d’allocation qui produit toujours une allocation efficace."
+  ],
+  "answer": [3],
+  "explanation": "La valeur de Shapley est une règle d’allocation qui garantit toujours une allocation efficace en répartissant exactement la valeur totale du jeu entre les joueurs. Théoriquement, elle est aussi la seule règle qui satisfait l’ensemble des axiomes classiques (efficacité, égalité, joueur nul, additivité).",
+  "tags": ["théorie des jeux", "valeur de Shapley", "allocation efficace"]
+},
+{
+  "id": "2023-q024",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. Les issues possibles sous chaque stratégie sont :",
+  "choices": [
+    "Stratégie (1) : 0 ou 12 ; Stratégie (2) : 0 ou 6 ou 12.",
+    "Stratégie (1) : 0 ou 6 ; Stratégie (2) : 0 ou 6 ou 12.",
+    "Stratégie (1) : 0 ou 6 ou 12 ; Stratégie (2) : 0 ou 6.",
+    "Stratégie (1) : 0 ou 6 ou 12 ; Stratégie (2) : 0 ou 12."
+  ],
+  "answer": [0],
+  "explanation": "Chaque trajet a 50 % de chances de casser tous les œufs transportés. En un seul trajet (12 œufs), l’issue est donc 0 ou 12. En deux trajets de 6 œufs indépendants, on peut obtenir 0 (les deux cassent), 6 (un seul casse) ou 12 (aucun ne casse).",
+  "tags": ["risque", "espérance", "indépendance des événements"]
+},
+{
+  "id": "2023-q025",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. En moyenne, combien d’œufs chaque stratégie permet-elle de rapporter ?",
+  "choices": [
+    "Stratégie (1) : 6 ; Stratégie (2) : 3.",
+    "Stratégie (1) : 3 ; Stratégie (2) : 6.",
+    "Stratégie (1) : 6 ; Stratégie (2) : 6.",
+    "Stratégie (1) : 6 ; Stratégie (2) : 9.",
+    "Stratégie (1) : 9 ; Stratégie (2) : 9."
+  ],
+  "answer": [2],
+  "explanation": "En stratégie (1), on transporte 12 œufs d’un seul coup : 50 % de chances de tout casser, 50 % de chances de tout garder → espérance = 0,5×0 + 0,5×12 = 6. En stratégie (2), on fait deux trajets de 6 œufs : chaque trajet rapporte en moyenne 0,5×0 + 0,5×6 = 3 œufs, soit 3 + 3 = 6 au total en moyenne.",
+  "tags": ["risque", "espérance", "indépendance des événements"]
+},
+{
+  "id": "2023-q026",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. Si l’individu est averse au risque, quelle stratégie préfère-t-il ?",
+  "choices": [
+    "S’il est averse au risque, il préfère la stratégie (1).",
+    "S’il est averse au risque, il préfère la stratégie (2).",
+    "S’il est averse au risque, il est indifférent entre les deux stratégies.",
+    "On ne dispose pas d’assez d’informations pour répondre."
+  ],
+  "answer": [0],
+  "explanation": "Selon la correction du professeur, l’individu averse au risque préfère la stratégie (1), bien que l’interprétation classique de l’aversion au risque conduirait plutôt à choisir la stratégie (2) qui réduit la variance des résultats.",
+  "tags": ["aversion au risque", "espérance", "variance", "choix sous incertitude"]
+},
+{
+  "id": "2023-q027",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "En reprenant le scénario des œufs (12 œufs à transporter, avec 50% de chance de les perdre à chaque trajet), l’utilité de l’individu augmenterait-elle en multipliant le nombre de trajets ?",
+  "choices": [
+    "Il n’y a pas assez d’informations pour répondre.",
+    "Oui.",
+    "Non.",
+    "Cela dépend du niveau d’aversion au risque."
+  ],
+  "answer": [1],
+  "explanation": "En multipliant les trajets, on réduit le risque de tout perdre en une seule fois, ce qui augmente l’utilité espérée (surtout pour un individu averse au risque).",
+  "tags": ["incertitude", "aversion au risque", "espérance", "variance", "choix sous risque"]
+},
+{
+  "id": "2023-q028",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "Sophia participe à un jeu télévisé. Elle a choisi la porte n°3. L’animateur annonce qu’il y a 50 % de chances qu’un diamant de 16 000 $ soit derrière la porte et 50 % de chances qu’il y ait une chèvre (valeur nulle pour Sophia). Avant l’ouverture, quelqu’un dans le public lui propose : « Je te donne l’option de me vendre ce qu’il y a derrière la porte pour 9 000 $ si tu me paies 4 500 $ pour cette option. » Si Sophia ne se soucie que des valeurs monétaires **espérées**, va-t-elle acheter cette option ?",
+  "choices": [
+    "Non, l’option de certitude vaut 4 500 alors que le pari vaut 8 000, et elle est neutre au risque.",
+    "Oui, même si l’option vaut moins en espérance que le pari, elle est averse au risque et veut éviter le risque.",
+    "Non, bien qu’elle soit averse au risque, elle ne l’est pas assez pour acheter l’option.",
+    "Il n’y a pas assez d’informations pour répondre."
+  ],
+  "answer": [0],
+  "explanation": "Correction du professeur : l’offre est interprétée comme donnant un montant certain net de 9 000 − 4 500 = 4 500. Le pari initial a une espérance de 0,5×16 000 + 0,5×0 = 8 000. Une personne neutre au risque choisit l’option à plus forte espérance, donc n’achète pas l’option.",
+  "tags": ["espérance", "neutralité au risque", "options", "choix sous risque"]
+},
+{
+  "id": "2023-q029",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "Sophia participe à un jeu télévisé. Derrière la porte n°3, il y a 50 % de chances d’avoir un diamant de 16 000 $ et 50 % une chèvre (valeur nulle pour elle). Avant l’ouverture, quelqu’un lui propose : « Je t’achète ce qu’il y a derrière la porte 9 000 $ si tu me paies X $ pour cette option. » Sachant que l’utilité de Sophia sur la richesse est U(x) = x^{0,5}, existe-t-il une valeur de X pour laquelle elle voudra acheter l’option ?",
+  "choices": [
+    "Non.",
+    "Oui, X doit être inférieur à 1000.",
+    "Oui, X doit être inférieur à 1500.",
+    "Oui, X doit être inférieur à 2000.",
+    "Il n’y a pas assez d’informations pour répondre."
+  ],
+  "answer": [4],
+  "explanation": "Avec l’option, le gain certain est 9000 − X, donc utilité √(9000 − X). Sans l’option, utilité espérée = 0,5√16000 = √4000. Sophia achète si √(9000 − X) ≥ √4000 ⇔ 9000 − X ≥ 4000 ⇔ X ≤ 5000. Aucune des bornes proposées (1000, 1500, 2000) n’est correcte ; d’où, selon la note du professeur, (E) a été acceptée (la bonne borne aurait été 5000).",
+  "tags": ["utilité espérée", "aversion au risque", "option", "choix sous risque"]
+},
+{
+  "id": "2023-q030",
+  "qcm": "Partiel-2023",
+  "theme": "Microéconomie",
+  "question": "Deux éleveurs, Farmer A et Farmer B, partagent un pré où leurs vaches peuvent paître. Chaque fermier possède deux vaches et veut maximiser ses gains. Plus la vache est grosse, plus le prix est élevé, et le poids dépend de la quantité d’herbe disponible, qui diminue avec le nombre de vaches dans le pré. Une vache qui ne broute rien ne rapporte rien. Le tableau des gains est donné ci-dessous :",
+  "image": "/Images/microeconomie-2023-q030.png",
+  "choices": [
+    "Il n’y a pas d’équilibre.",
+    "Il y a un seul équilibre : (2,2).",
+    "Il y a trois équilibres : (1,2), (2,1), (2,2).",
+    "Il y a trois équilibres, deux en stratégies pures et un en stratégies mixtes : (1,2), (2,1), et (0,1/3,2/3),(0,1/3,2/3)."
+  ],
+  "answer": [1],
+  "explanation": "L’unique équilibre de Nash est (2,2), car chaque joueur a intérêt à ajouter toujours une vache supplémentaire étant donné le gain marginal positif. Cela illustre la tragédie des communs : chaque fermier surcharge le pré, ce qui réduit le bien-être collectif.",
+  "tags": ["Nash", "tragédie des communs", "équilibre", "jeu"]
+}
+
+
+
+
+
+    ]
+}
