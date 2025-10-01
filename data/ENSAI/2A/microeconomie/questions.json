@@ -419,180 +419,1263 @@
                 "marché du travail"
             ]
         },
-{
-  "id": "2023-q020",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "Une situation dans laquelle des individus discutent de la manière appropriée de partager une tartiflette peut être modélisée comme :",
-  "choices": [
-    "un jeu coopératif avec utilité transférable.",
-    "un jeu coopératif avec utilité non transférable.",
-    "un jeu non coopératif avec utilité transférable.",
-    "un jeu non coopératif avec utilité non transférable.",
-    "autre chose mais pas un jeu."
-  ],
-  "answer": [1],
-  "explanation": "La discussion sur la manière de partager une tartiflette illustre un jeu coopératif où les préférences des individus ne peuvent pas être représentées par un transfert monétaire équivalent, donc il s’agit d’un jeu coopératif avec utilité non transférable.",
-  "tags": ["théorie des jeux", "coopératif", "utilité non transférable"]
-},
-{
-  "id": "2023-q021",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "Quelles affirmations concernant les jeux coopératifs sont correctes :",
-  "choices": [
-    "un jeu superadditif est toujours monotone.",
-    "un jeu convexe est superadditif.",
-    "le Cœur d’un jeu superadditif est toujours vide.",
-    "si le Cœur du jeu est vide, il n’existe aucune imputation.",
-    "si le Cœur du jeu est non vide, il contient toujours un grand nombre d’allocations."
-  ],
-  "answer": [1],
-  "explanation": "La seule affirmation correcte est qu’un jeu convexe est nécessairement superadditif. Les autres propositions sont fausses ou trop générales.",
-  "tags": ["théorie des jeux", "jeux coopératifs", "superadditivité"]
-},
-{
-  "id": "2023-q022",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "La fonction caractéristique d’un jeu coopératif est :",
-  "choices": [
-    "une fonction qui attribue une valeur uniquement à la grande coalition.",
-    "une fonction qui décrit les axiomes caractérisant le jeu.",
-    "une fonction qui attribue une valeur, en termes d’utilité ou autre, à toutes les coalitions du jeu.",
-    "une fonction qui nous informe sur les contributions marginales de chaque coalition."
-  ],
-  "answer": [2],
-  "explanation": "La fonction caractéristique est l’élément central des jeux coopératifs : elle associe à chaque coalition possible un gain ou une utilité totale qu’elle peut générer.",
-  "tags": ["théorie des jeux", "jeux coopératifs", "fonction caractéristique"]
-},
-{
-  "id": "2023-q023",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "La valeur de Shapley est :",
-  "choices": [
-    "une des nombreuses règles d’allocation qui satisfont les axiomes d’efficacité, de traitement égal des égaux, de joueur nul et d’additivité.",
-    "une des allocations du Cœur.",
-    "la seule règle d’allocation qui satisfait les axiomes d’efficacité, de traitement égal des égaux, de rationalité individuelle, de joueur nul et d’additivité.",
-    "une règle d’allocation qui produit toujours une allocation efficace."
-  ],
-  "answer": [3],
-  "explanation": "La valeur de Shapley est une règle d’allocation qui garantit toujours une allocation efficace en répartissant exactement la valeur totale du jeu entre les joueurs. Théoriquement, elle est aussi la seule règle qui satisfait l’ensemble des axiomes classiques (efficacité, égalité, joueur nul, additivité).",
-  "tags": ["théorie des jeux", "valeur de Shapley", "allocation efficace"]
-},
-{
-  "id": "2023-q024",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. Les issues possibles sous chaque stratégie sont :",
-  "choices": [
-    "Stratégie (1) : 0 ou 12 ; Stratégie (2) : 0 ou 6 ou 12.",
-    "Stratégie (1) : 0 ou 6 ; Stratégie (2) : 0 ou 6 ou 12.",
-    "Stratégie (1) : 0 ou 6 ou 12 ; Stratégie (2) : 0 ou 6.",
-    "Stratégie (1) : 0 ou 6 ou 12 ; Stratégie (2) : 0 ou 12."
-  ],
-  "answer": [0],
-  "explanation": "Chaque trajet a 50 % de chances de casser tous les œufs transportés. En un seul trajet (12 œufs), l’issue est donc 0 ou 12. En deux trajets de 6 œufs indépendants, on peut obtenir 0 (les deux cassent), 6 (un seul casse) ou 12 (aucun ne casse).",
-  "tags": ["risque", "espérance", "indépendance des événements"]
-},
-{
-  "id": "2023-q025",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. En moyenne, combien d’œufs chaque stratégie permet-elle de rapporter ?",
-  "choices": [
-    "Stratégie (1) : 6 ; Stratégie (2) : 3.",
-    "Stratégie (1) : 3 ; Stratégie (2) : 6.",
-    "Stratégie (1) : 6 ; Stratégie (2) : 6.",
-    "Stratégie (1) : 6 ; Stratégie (2) : 9.",
-    "Stratégie (1) : 9 ; Stratégie (2) : 9."
-  ],
-  "answer": [2],
-  "explanation": "En stratégie (1), on transporte 12 œufs d’un seul coup : 50 % de chances de tout casser, 50 % de chances de tout garder → espérance = 0,5×0 + 0,5×12 = 6. En stratégie (2), on fait deux trajets de 6 œufs : chaque trajet rapporte en moyenne 0,5×0 + 0,5×6 = 3 œufs, soit 3 + 3 = 6 au total en moyenne.",
-  "tags": ["risque", "espérance", "indépendance des événements"]
-},
-{
-  "id": "2023-q026",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. Si l’individu est averse au risque, quelle stratégie préfère-t-il ?",
-  "choices": [
-    "S’il est averse au risque, il préfère la stratégie (1).",
-    "S’il est averse au risque, il préfère la stratégie (2).",
-    "S’il est averse au risque, il est indifférent entre les deux stratégies.",
-    "On ne dispose pas d’assez d’informations pour répondre."
-  ],
-  "answer": [0],
-  "explanation": "Selon la correction du professeur, l’individu averse au risque préfère la stratégie (1), bien que l’interprétation classique de l’aversion au risque conduirait plutôt à choisir la stratégie (2) qui réduit la variance des résultats.",
-  "tags": ["aversion au risque", "espérance", "variance", "choix sous incertitude"]
-},
-{
-  "id": "2023-q027",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "En reprenant le scénario des œufs (12 œufs à transporter, avec 50% de chance de les perdre à chaque trajet), l’utilité de l’individu augmenterait-elle en multipliant le nombre de trajets ?",
-  "choices": [
-    "Il n’y a pas assez d’informations pour répondre.",
-    "Oui.",
-    "Non.",
-    "Cela dépend du niveau d’aversion au risque."
-  ],
-  "answer": [1],
-  "explanation": "En multipliant les trajets, on réduit le risque de tout perdre en une seule fois, ce qui augmente l’utilité espérée (surtout pour un individu averse au risque).",
-  "tags": ["incertitude", "aversion au risque", "espérance", "variance", "choix sous risque"]
-},
-{
-  "id": "2023-q028",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "Sophia participe à un jeu télévisé. Elle a choisi la porte n°3. L’animateur annonce qu’il y a 50 % de chances qu’un diamant de 16 000 $ soit derrière la porte et 50 % de chances qu’il y ait une chèvre (valeur nulle pour Sophia). Avant l’ouverture, quelqu’un dans le public lui propose : « Je te donne l’option de me vendre ce qu’il y a derrière la porte pour 9 000 $ si tu me paies 4 500 $ pour cette option. » Si Sophia ne se soucie que des valeurs monétaires **espérées**, va-t-elle acheter cette option ?",
-  "choices": [
-    "Non, l’option de certitude vaut 4 500 alors que le pari vaut 8 000, et elle est neutre au risque.",
-    "Oui, même si l’option vaut moins en espérance que le pari, elle est averse au risque et veut éviter le risque.",
-    "Non, bien qu’elle soit averse au risque, elle ne l’est pas assez pour acheter l’option.",
-    "Il n’y a pas assez d’informations pour répondre."
-  ],
-  "answer": [0],
-  "explanation": "Correction du professeur : l’offre est interprétée comme donnant un montant certain net de 9 000 − 4 500 = 4 500. Le pari initial a une espérance de 0,5×16 000 + 0,5×0 = 8 000. Une personne neutre au risque choisit l’option à plus forte espérance, donc n’achète pas l’option.",
-  "tags": ["espérance", "neutralité au risque", "options", "choix sous risque"]
-},
-{
-  "id": "2023-q029",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "Sophia participe à un jeu télévisé. Derrière la porte n°3, il y a 50 % de chances d’avoir un diamant de 16 000 $ et 50 % une chèvre (valeur nulle pour elle). Avant l’ouverture, quelqu’un lui propose : « Je t’achète ce qu’il y a derrière la porte 9 000 $ si tu me paies X $ pour cette option. » Sachant que l’utilité de Sophia sur la richesse est U(x) = x^{0,5}, existe-t-il une valeur de X pour laquelle elle voudra acheter l’option ?",
-  "choices": [
-    "Non.",
-    "Oui, X doit être inférieur à 1000.",
-    "Oui, X doit être inférieur à 1500.",
-    "Oui, X doit être inférieur à 2000.",
-    "Il n’y a pas assez d’informations pour répondre."
-  ],
-  "answer": [4],
-  "explanation": "Avec l’option, le gain certain est 9000 − X, donc utilité √(9000 − X). Sans l’option, utilité espérée = 0,5√16000 = √4000. Sophia achète si √(9000 − X) ≥ √4000 ⇔ 9000 − X ≥ 4000 ⇔ X ≤ 5000. Aucune des bornes proposées (1000, 1500, 2000) n’est correcte ; d’où, selon la note du professeur, (E) a été acceptée (la bonne borne aurait été 5000).",
-  "tags": ["utilité espérée", "aversion au risque", "option", "choix sous risque"]
-},
-{
-  "id": "2023-q030",
-  "qcm": "Partiel-2023",
-  "theme": "Microéconomie",
-  "question": "Deux éleveurs, Farmer A et Farmer B, partagent un pré où leurs vaches peuvent paître. Chaque fermier possède deux vaches et veut maximiser ses gains. Plus la vache est grosse, plus le prix est élevé, et le poids dépend de la quantité d’herbe disponible, qui diminue avec le nombre de vaches dans le pré. Une vache qui ne broute rien ne rapporte rien. Le tableau des gains est donné ci-dessous :",
-  "image": "/Images/microeconomie-2023-q030.png",
-  "choices": [
-    "Il n’y a pas d’équilibre.",
-    "Il y a un seul équilibre : (2,2).",
-    "Il y a trois équilibres : (1,2), (2,1), (2,2).",
-    "Il y a trois équilibres, deux en stratégies pures et un en stratégies mixtes : (1,2), (2,1), et (0,1/3,2/3),(0,1/3,2/3)."
-  ],
-  "answer": [1],
-  "explanation": "L’unique équilibre de Nash est (2,2), car chaque joueur a intérêt à ajouter toujours une vache supplémentaire étant donné le gain marginal positif. Cela illustre la tragédie des communs : chaque fermier surcharge le pré, ce qui réduit le bien-être collectif.",
-  "tags": ["Nash", "tragédie des communs", "équilibre", "jeu"]
-}
-
-
-
-
-
+        {
+            "id": "2023-q020",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Une situation dans laquelle des individus discutent de la manière appropriée de partager une tartiflette peut être modélisée comme :",
+            "choices": [
+                "un jeu coopératif avec utilité transférable.",
+                "un jeu coopératif avec utilité non transférable.",
+                "un jeu non coopératif avec utilité transférable.",
+                "un jeu non coopératif avec utilité non transférable.",
+                "autre chose mais pas un jeu."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La discussion sur la manière de partager une tartiflette illustre un jeu coopératif où les préférences des individus ne peuvent pas être représentées par un transfert monétaire équivalent, donc il s’agit d’un jeu coopératif avec utilité non transférable.",
+            "tags": [
+                "théorie des jeux",
+                "coopératif",
+                "utilité non transférable"
+            ]
+        },
+        {
+            "id": "2023-q021",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Quelles affirmations concernant les jeux coopératifs sont correctes :",
+            "choices": [
+                "un jeu superadditif est toujours monotone.",
+                "un jeu convexe est superadditif.",
+                "le Cœur d’un jeu superadditif est toujours vide.",
+                "si le Cœur du jeu est vide, il n’existe aucune imputation.",
+                "si le Cœur du jeu est non vide, il contient toujours un grand nombre d’allocations."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La seule affirmation correcte est qu’un jeu convexe est nécessairement superadditif. Les autres propositions sont fausses ou trop générales.",
+            "tags": [
+                "théorie des jeux",
+                "jeux coopératifs",
+                "superadditivité"
+            ]
+        },
+        {
+            "id": "2023-q022",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "La fonction caractéristique d’un jeu coopératif est :",
+            "choices": [
+                "une fonction qui attribue une valeur uniquement à la grande coalition.",
+                "une fonction qui décrit les axiomes caractérisant le jeu.",
+                "une fonction qui attribue une valeur, en termes d’utilité ou autre, à toutes les coalitions du jeu.",
+                "une fonction qui nous informe sur les contributions marginales de chaque coalition."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La fonction caractéristique est l’élément central des jeux coopératifs : elle associe à chaque coalition possible un gain ou une utilité totale qu’elle peut générer.",
+            "tags": [
+                "théorie des jeux",
+                "jeux coopératifs",
+                "fonction caractéristique"
+            ]
+        },
+        {
+            "id": "2023-q023",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "La valeur de Shapley est :",
+            "choices": [
+                "une des nombreuses règles d’allocation qui satisfont les axiomes d’efficacité, de traitement égal des égaux, de joueur nul et d’additivité.",
+                "une des allocations du Cœur.",
+                "la seule règle d’allocation qui satisfait les axiomes d’efficacité, de traitement égal des égaux, de rationalité individuelle, de joueur nul et d’additivité.",
+                "une règle d’allocation qui produit toujours une allocation efficace."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La valeur de Shapley est une règle d’allocation qui garantit toujours une allocation efficace en répartissant exactement la valeur totale du jeu entre les joueurs. Théoriquement, elle est aussi la seule règle qui satisfait l’ensemble des axiomes classiques (efficacité, égalité, joueur nul, additivité).",
+            "tags": [
+                "théorie des jeux",
+                "valeur de Shapley",
+                "allocation efficace"
+            ]
+        },
+        {
+            "id": "2023-q024",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. Les issues possibles sous chaque stratégie sont :",
+            "choices": [
+                "Stratégie (1) : 0 ou 12 ; Stratégie (2) : 0 ou 6 ou 12.",
+                "Stratégie (1) : 0 ou 6 ; Stratégie (2) : 0 ou 6 ou 12.",
+                "Stratégie (1) : 0 ou 6 ou 12 ; Stratégie (2) : 0 ou 6.",
+                "Stratégie (1) : 0 ou 6 ou 12 ; Stratégie (2) : 0 ou 12."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Chaque trajet a 50 % de chances de casser tous les œufs transportés. En un seul trajet (12 œufs), l’issue est donc 0 ou 12. En deux trajets de 6 œufs indépendants, on peut obtenir 0 (les deux cassent), 6 (un seul casse) ou 12 (aucun ne casse).",
+            "tags": [
+                "risque",
+                "espérance",
+                "indépendance des événements"
+            ]
+        },
+        {
+            "id": "2023-q025",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. En moyenne, combien d’œufs chaque stratégie permet-elle de rapporter ?",
+            "choices": [
+                "Stratégie (1) : 6 ; Stratégie (2) : 3.",
+                "Stratégie (1) : 3 ; Stratégie (2) : 6.",
+                "Stratégie (1) : 6 ; Stratégie (2) : 6.",
+                "Stratégie (1) : 6 ; Stratégie (2) : 9.",
+                "Stratégie (1) : 9 ; Stratégie (2) : 9."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "En stratégie (1), on transporte 12 œufs d’un seul coup : 50 % de chances de tout casser, 50 % de chances de tout garder → espérance = 0,5×0 + 0,5×12 = 6. En stratégie (2), on fait deux trajets de 6 œufs : chaque trajet rapporte en moyenne 0,5×0 + 0,5×6 = 3 œufs, soit 3 + 3 = 6 au total en moyenne.",
+            "tags": [
+                "risque",
+                "espérance",
+                "indépendance des événements"
+            ]
+        },
+        {
+            "id": "2023-q026",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. Si l’individu est averse au risque, quelle stratégie préfère-t-il ?",
+            "choices": [
+                "S’il est averse au risque, il préfère la stratégie (1).",
+                "S’il est averse au risque, il préfère la stratégie (2).",
+                "S’il est averse au risque, il est indifférent entre les deux stratégies.",
+                "On ne dispose pas d’assez d’informations pour répondre."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Selon la correction du professeur, l’individu averse au risque préfère la stratégie (1), bien que l’interprétation classique de l’aversion au risque conduirait plutôt à choisir la stratégie (2) qui réduit la variance des résultats.",
+            "tags": [
+                "aversion au risque",
+                "espérance",
+                "variance",
+                "choix sous incertitude"
+            ]
+        },
+        {
+            "id": "2023-q027",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "En reprenant le scénario des œufs (12 œufs à transporter, avec 50% de chance de les perdre à chaque trajet), l’utilité de l’individu augmenterait-elle en multipliant le nombre de trajets ?",
+            "choices": [
+                "Il n’y a pas assez d’informations pour répondre.",
+                "Oui.",
+                "Non.",
+                "Cela dépend du niveau d’aversion au risque."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "En multipliant les trajets, on réduit le risque de tout perdre en une seule fois, ce qui augmente l’utilité espérée (surtout pour un individu averse au risque).",
+            "tags": [
+                "incertitude",
+                "aversion au risque",
+                "espérance",
+                "variance",
+                "choix sous risque"
+            ]
+        },
+        {
+            "id": "2023-q028",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Sophia participe à un jeu télévisé. Elle a choisi la porte n°3. L’animateur annonce qu’il y a 50 % de chances qu’un diamant de 16 000 $ soit derrière la porte et 50 % de chances qu’il y ait une chèvre (valeur nulle pour Sophia). Avant l’ouverture, quelqu’un dans le public lui propose : « Je te donne l’option de me vendre ce qu’il y a derrière la porte pour 9 000 $ si tu me paies 4 500 $ pour cette option. » Si Sophia ne se soucie que des valeurs monétaires **espérées**, va-t-elle acheter cette option ?",
+            "choices": [
+                "Non, l’option de certitude vaut 4 500 alors que le pari vaut 8 000, et elle est neutre au risque.",
+                "Oui, même si l’option vaut moins en espérance que le pari, elle est averse au risque et veut éviter le risque.",
+                "Non, bien qu’elle soit averse au risque, elle ne l’est pas assez pour acheter l’option.",
+                "Il n’y a pas assez d’informations pour répondre."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Correction du professeur : l’offre est interprétée comme donnant un montant certain net de 9 000 − 4 500 = 4 500. Le pari initial a une espérance de 0,5×16 000 + 0,5×0 = 8 000. Une personne neutre au risque choisit l’option à plus forte espérance, donc n’achète pas l’option.",
+            "tags": [
+                "espérance",
+                "neutralité au risque",
+                "options",
+                "choix sous risque"
+            ]
+        },
+        {
+            "id": "2023-q029",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Sophia participe à un jeu télévisé. Derrière la porte n°3, il y a 50 % de chances d’avoir un diamant de 16 000 $ et 50 % une chèvre (valeur nulle pour elle). Avant l’ouverture, quelqu’un lui propose : « Je t’achète ce qu’il y a derrière la porte 9 000 $ si tu me paies X $ pour cette option. » Sachant que l’utilité de Sophia sur la richesse est U(x) = x^{0,5}, existe-t-il une valeur de X pour laquelle elle voudra acheter l’option ?",
+            "choices": [
+                "Non.",
+                "Oui, X doit être inférieur à 1000.",
+                "Oui, X doit être inférieur à 1500.",
+                "Oui, X doit être inférieur à 2000.",
+                "Il n’y a pas assez d’informations pour répondre."
+            ],
+            "answer": [
+                4
+            ],
+            "explanation": "Avec l’option, le gain certain est 9000 − X, donc utilité √(9000 − X). Sans l’option, utilité espérée = 0,5√16000 = √4000. Sophia achète si √(9000 − X) ≥ √4000 ⇔ 9000 − X ≥ 4000 ⇔ X ≤ 5000. Aucune des bornes proposées (1000, 1500, 2000) n’est correcte ; d’où, selon la note du professeur, (E) a été acceptée (la bonne borne aurait été 5000).",
+            "tags": [
+                "utilité espérée",
+                "aversion au risque",
+                "option",
+                "choix sous risque"
+            ]
+        },
+        {
+            "id": "2023-q030",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Deux éleveurs, Farmer A et Farmer B, partagent un pré où leurs vaches peuvent paître. Chaque fermier possède deux vaches et veut maximiser ses gains. Plus la vache est grosse, plus le prix est élevé, et le poids dépend de la quantité d’herbe disponible, qui diminue avec le nombre de vaches dans le pré. Une vache qui ne broute rien ne rapporte rien. Le tableau des gains est donné ci-dessous : (Image ci-dessous). Quelles sont les stratégies d'équilibre de Nash pour ce jeu ?",
+            "image": "/Images/microeconomie-2023-q030.png",
+            "choices": [
+                "Il n’y a pas d’équilibre.",
+                "Il y a un seul équilibre : (2,2).",
+                "Il y a trois équilibres : (1,2), (2,1), (2,2).",
+                "Il y a trois équilibres, deux en stratégies pures et un en stratégies mixtes : (1,2), (2,1), et (0,1/3,2/3),(0,1/3,2/3)."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’unique équilibre de Nash est (2,2), car chaque joueur a intérêt à ajouter toujours une vache supplémentaire étant donné le gain marginal positif. Cela illustre la tragédie des communs : chaque fermier surcharge le pré, ce qui réduit le bien-être collectif.",
+            "tags": [
+                "Nash",
+                "tragédie des communs",
+                "équilibre",
+                "jeu"
+            ]
+        },
+        {
+            "id": "2023-q031",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "Le conseil municipal remarque que (1,1) domine tous les équilibres précédents du point de vue de Pareto, et décide de réguler l’utilisation du pré : il ne souhaite pas avoir plus de deux vaches dans le champ. Il infligera une amende f si plus de deux vaches sont présentes. Le tableau des gains est donné ci-dessous : (Image ci-dessous). Peut-on trouver un niveau de f tel que la situation de Pareto optimale (1,1) soit le seul équilibre de Nash ?",
+            "image": "/Images/microeconomie-2023-q031.png",
+            "choices": [
+                "Non, (1,1) peut être atteint si f ≥ 1, mais (2,2) reste un équilibre.",
+                "Oui, avec f > 4, (1,1) est un équilibre de Nash et (2,2) ne l’est pas.",
+                "Oui, avec f > 4.5, (1,1) est le seul équilibre de Nash.",
+                "Il n’y a pas d’équilibre si f > 0."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Même avec une amende, la stratégie (2,2) reste un équilibre pour certaines valeurs de f. Ainsi (1,1) n’est pas le seul équilibre possible, sauf à des conditions irréalistes. La bonne réponse est donc (A).",
+            "tags": [
+                "Nash",
+                "Pareto",
+                "équilibre",
+                "jeu",
+                "amende"
+            ]
+        },
+        {
+            "id": "2023-q032",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "On considère le jeu coopératif (N, v) avec N = {1,2,3} et la fonction caractéristique ci-dessous : (Image ci-dessous). Quelle est l’expression du Noyau (Core) de ce jeu ?",
+            "image": "/Images/microeconomie-2023-q032.png",
+            "choices": [
+                "C(N,v) = { x ∈ ℝ^3_+ : x1 + x2 + x3 = 6, x1 ≤ 4, x2 ≤ 2, x3 ≤ 1 }.",
+                "C(N,v) = { x ∈ ℝ^3_+ : x1 + x2 + x3 = 6, x1 ≤ 5, x2 ≤ 1, x3 ≤ 2 }.",
+                "C(N,v) = { x ∈ ℝ^3_+ : x1 + x2 + x3 = 6, x1 ≤ 5, x2 ≤ 1, x3 ≤ 1 }.",
+                "C(N,v) = ∅."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le Core est l’ensemble des allocations x ≥ 0 telles que x1 + x2 + x3 = v(N) = 6 et x(S) ≥ v(S) pour tout S. Ici : v({1})=v({2})=v({3})=0, v({1,2})=5, v({1,3})=5, v({2,3})=1. Des contraintes de coalition on déduit : x1 + x2 ≥ 5 ⇒ x3 ≤ 1 ; x1 + x3 ≥ 5 ⇒ x2 ≤ 1 ; x2 + x3 ≥ 1 ⇒ x1 ≤ 5. D’où C(N,v) = { x ∈ ℝ^3_+ : x1 + x2 + x3 = 6, x1 ≤ 5, x2 ≤ 1, x3 ≤ 1 }.",
+            "tags": [
+                "jeux coopératifs",
+                "Core (noyau)",
+                "fonction caractéristique"
+            ]
+        },
+        {
+            "id": "2023-q033",
+            "qcm": "Partiel-2023",
+            "theme": "Microéconomie",
+            "question": "On considère le jeu coopératif (N, v) avec N = {1,2,3} et la fonction caractéristique ci-dessous : (Image ci-dessous). Quelle est la valeur de Shapley de ce jeu ?",
+            "image": "/Images/microeconomie-2023-q033.png",
+            "choices": [
+                "Sh(N, v) = (8/3, 5/3, 5/3).",
+                "Sh(N, v) = (10/3, 5/3, 4/3).",
+                "Sh(N, v) = (10/3, 4/3, 5/3).",
+                "Sh(N, v) = (8/3, 4/3, 4/3).",
+                "Sh(N, v) = (10/3, 4/3, 4/3)."
+            ],
+            "answer": [
+                4
+            ],
+            "explanation": "Les contributions marginales sur les 6 permutations donnent (pour v({1,2})=5, v({1,3})=5, v({2,3})=1, v(N)=6) : φ1 = (0+0+5+5+5+5)/6 = 10/3, φ2 = (5+1+0+0+1+1)/6 = 4/3, φ3 = (1+5+1+1+0+0)/6 = 4/3. Donc Sh(N, v) = (10/3, 4/3, 4/3).",
+            "tags": [
+                "jeux coopératifs",
+                "Shapley",
+                "fonction caractéristique"
+            ]
+        },
+        {
+            "id": "2024-q001",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Quel est le principal défi empirique dans la détermination de l’effet causal de l’assurance santé sur les résultats de santé ? (Image ci-dessous)",
+            "choices": [
+                "L’impossibilité d’observer le même individu à la fois avec et sans assurance.",
+                "La difficulté à collecter de grandes quantités de données.",
+                "La complexité de compréhension des politiques gouvernementales.",
+                "Le refus des individus de participer aux enquêtes."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le défi central est le problème contrefactuel : on ne peut pas observer simultanément le même individu assuré et non assuré. C’est pourquoi on utilise des méthodes comme les expériences naturelles, les essais randomisés ou les méthodes d’appariement pour estimer l’effet causal.",
+            "tags": [
+                "santé",
+                "causalité",
+                "assurance",
+                "contrefactuel"
+            ]
+        },
+        {
+            "id": "2024-q002",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Quel énoncé décrit le mieux le problème de biais de sélection dans la détermination de l’effet causal de l’assurance santé ?",
+            "choices": [
+                "Le biais de sélection apparaît car seuls les individus en meilleure santé choisissent de s’assurer.",
+                "Le biais de sélection provient des différences, observables et non observables, entre les individus assurés et non assurés.",
+                "Le biais de sélection peut être entièrement éliminé avec une taille d’échantillon suffisamment grande.",
+                "Le biais de sélection correspond à une erreur de classification entre individus assurés et non assurés dans les données."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le biais de sélection résulte du fait que les assurés et les non-assurés diffèrent non seulement sur des caractéristiques observables (âge, revenu, emploi, etc.), mais aussi sur des caractéristiques non observables (préférences de santé, comportements à risque). Cela fausse l’estimation de l’effet causal de l’assurance.",
+            "tags": [
+                "santé",
+                "causalité",
+                "biais de sélection",
+                "assurance"
+            ]
+        },
+        {
+            "id": "2024-q003",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Lequel des énoncés suivants est un exemple de pari équitable (fair gamble) ?",
+            "choices": [
+                "Un pari dont l’espérance mathématique est supérieure à zéro.",
+                "Un pari dont l’espérance mathématique est égale à zéro.",
+                "Un pari où la probabilité de gagner est 0,75.",
+                "Un pari où la perte potentielle est supérieure au gain potentiel."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un pari est dit équitable si son espérance de gain est nulle. Autrement dit, le gain attendu est exactement compensé par la perte attendue.",
+            "tags": [
+                "espérance",
+                "pari",
+                "fair gamble",
+                "microéconomie"
+            ]
+        },
+        {
+            "id": "2024-q004",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans le paradoxe de Saint-Pétersbourg, l’espérance mathématique du jeu est infinie. Quel concept explique pourquoi les individus peuvent quand même refuser d’y participer ?",
+            "choices": [
+                "Aversion au risque et utilité marginale décroissante de la richesse.",
+                "La peur de pertes extrêmes à court terme.",
+                "L’incapacité à calculer correctement les probabilités.",
+                "L’utilité marginale croissante des gains importants."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le paradoxe de Saint-Pétersbourg s’explique par l’aversion au risque et l’utilité marginale décroissante : bien que l’espérance soit infinie, les individus attribuent de moins en moins de valeur aux gains supplémentaires, ce qui limite leur disposition à jouer.",
+            "tags": [
+                "paradoxe de Saint-Pétersbourg",
+                "aversion au risque",
+                "utilité marginale décroissante"
+            ]
+        },
+        {
+            "id": "2024-q005",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Que mesure le coefficient d’aversion absolue au risque d’Arrow-Pratt ?",
+            "choices": [
+                "Le rendement espéré des investissements risqués.",
+                "La courbure de la fonction d’utilité, indiquant la sensibilité d’un individu au risque.",
+                "La différence de niveaux de richesse entre deux agents.",
+                "La probabilité de prendre une décision en situation d’incertitude."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le coefficient d’Arrow-Pratt mesure la courbure de la fonction d’utilité, donc la sensibilité d’un individu face au risque. Plus la courbure est forte, plus l’individu est averse au risque.",
+            "tags": [
+                "aversion au risque",
+                "Arrow-Pratt",
+                "théorie de l’utilité"
+            ]
+        },
+        {
+            "id": "2024-q006",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "D’après l’inégalité de Jensen, qu’est-ce qui est vrai pour une fonction d’utilité strictement concave U en relation avec l’espérance d’utilité ?",
+            "choices": [
+                "EU(W) > U(E(W)).",
+                "EU(W) = U(E(W)).",
+                "EU(W) < U(E(W)).",
+                "L’espérance d’utilité et l’utilité de la richesse espérée sont égales."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Avec une fonction d’utilité strictement concave, l’inégalité de Jensen implique que l’espérance d’utilité est inférieure à l’utilité de l’espérance de la richesse : EU(W) < U(E(W)).",
+            "tags": [
+                "Jensen",
+                "concavité",
+                "utilité espérée",
+                "risque"
+            ]
+        },
+        {
+            "id": "2024-q007",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Selon la distinction de Knight entre risque et incertitude, laquelle des propositions décrit le mieux l’incertitude ?",
+            "choices": [
+                "Une situation où des probabilités peuvent être attribuées à tous les résultats possibles.",
+                "Une situation où les probabilités des résultats sont inconnues ou ne peuvent pas être calculées.",
+                "Une situation où les résultats sont connus mais leur ampleur est incertaine.",
+                "Une situation où les décisions sont prises sans aucune conséquence économique."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "D’après la distinction de Knight, le risque correspond à des situations où les probabilités sont connues, tandis que l’incertitude désigne celles où elles sont inconnues ou impossibles à déterminer.",
+            "tags": [
+                "Knight",
+                "risque",
+                "incertitude",
+                "théorie économique"
+            ]
+        },
+        {
+            "id": "2024-q008",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans le cadre du marché équitable des biens contingents, que représente le ratio des prix $\\tfrac{p_g}{p_b}$ ?",
+            "choices": [
+                "L’utilité obtenue des biens contingents en période défavorable.",
+                "Le compromis entre la richesse en période favorable et défavorable.",
+                "La valeur espérée de la richesse totale.",
+                "La probabilité subjective que la période favorable se réalise."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le ratio des prix pg/pb exprime le taux marginal de substitution entre consommation dans les bons états et consommation dans les mauvais états, autrement dit le compromis entre richesse dans les périodes favorables et défavorables.",
+            "tags": [
+                "marché des biens contingents",
+                "ratio des prix",
+                "richesse",
+                "états de la nature"
+            ]
+        },
+        {
+            "id": "2024-q009",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Laquelle des propositions suivantes décrit le mieux le Théorème d’utilité de Von Neumann-Morgenstern ?",
+            "choices": [
+                "Il affirme que tout décideur préférera toujours la certitude au risque.",
+                "Il fournit un moyen de représenter les préférences d’un décideur sur des issues incertaines sous forme d’une fonction d’utilité, à condition que ces préférences respectent certains axiomes.",
+                "Il montre que tous les décideurs rationnels doivent attribuer la même utilité à chaque issue possible.",
+                "Il affirme que dans tout jeu, il existera toujours un équilibre où tous les joueurs maximisent leur utilité espérée."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le théorème de Von Neumann-Morgenstern permet de représenter les préférences d’un agent face à l’incertitude par une fonction d’utilité espérée, à condition que ses préférences respectent les axiomes de complétude, transitivité, indépendance et continuité.",
+            "tags": [
+                "Von Neumann-Morgenstern",
+                "utilité espérée",
+                "axiomes",
+                "théorie du choix"
+            ]
+        },
+        {
+            "id": "2024-q010",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Pour deux loteries A et B de fonctions de répartition respectives F_A et F_B, on dit que B domine A au premier ordre (FOSD) si :",
+            "choices": [
+                "$F_A(x)\\le F_B(x)$ pour tout $x$, avec stricte inégalité pour au moins un $x$.",
+                "$F_A(x)\\ge F_B(x)$ pour tout $x$, avec stricte inégalité pour au moins un $x$.",
+                "$\\mathbb E_A[U(x)]\\le \\mathbb E_B[U(x)]$ pour toute fonction $U(\\cdot)$ croissante.",
+                "La CDF de $B$ est partout en dessous de celle de $A$."
+            ],
+            "answer": [
+                1,
+                2,
+                3
+            ],
+            "explanation": "Si $B$ FOSD $A$, alors la fonction de répartition de $B$ est partout inférieure (ou égale) à celle de $A$ et strictement inférieure en au moins un point : $F_B(x)\\le F_A(x)$, d’où $F_A(x)\\ge F_B(x)$ (B) et « la CDF de $B$ est sous celle de $A$ » (D). Cela équivaut aussi à dire que toute fonction d’utilité croissante donne une utilité espérée au moins aussi grande sous $B$ que sous $A$ (C). L’option (A) inverse l’inégalité et est donc fausse.",
+            "tags": [
+                "FOSD",
+                "dominance stochastique",
+                "fonction de répartition",
+                "utilité croissante"
+            ]
+        },
+        {
+            "id": "2024-q011",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "En économie, les biens contingents aux états du monde (state-contingent commodities) désignent des biens ou services dont :",
+            "choices": [
+                "les prix sont fixes indépendamment des conditions du marché.",
+                "la consommation dépend de l’état du monde ou de la réalisation d’événements spécifiques.",
+                "la disponibilité dépend des régulations gouvernementales.",
+                "l’utilité est identique quel que soit l’environnement économique."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les biens contingents aux états du monde sont définis par Arrow-Debreu : il s’agit de biens dont la consommation (et donc la valeur) dépend de l’état de la nature qui se réalise. Par exemple, une assurance paie seulement dans l’état du monde 'accident'.",
+            "tags": [
+                "Arrow-Debreu",
+                "biens contingents",
+                "états du monde",
+                "assurance"
+            ]
+        },
+        {
+            "id": "2024-q011",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "En économie, les biens contingents aux états du monde (state-contingent commodities) désignent des biens ou services dont :",
+            "choices": [
+                "les prix sont fixes indépendamment des conditions du marché.",
+                "la consommation dépend de l’état du monde ou de la réalisation d’événements spécifiques.",
+                "la disponibilité dépend des régulations gouvernementales.",
+                "l’utilité est identique quel que soit l’environnement économique."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les biens contingents aux états du monde sont définis par Arrow-Debreu : il s’agit de biens dont la consommation (et donc la valeur) dépend de l’état de la nature qui se réalise. Par exemple, une assurance paie seulement dans l’état du monde 'accident'.",
+            "tags": [
+                "Arrow-Debreu",
+                "biens contingents",
+                "états du monde",
+                "assurance"
+            ]
+        },
+        {
+            "id": "2024-q012",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "En théorie des jeux, que représente un profil de stratégies ?",
+            "choices": [
+                "Un ensemble de gains que chaque joueur recevra.",
+                "L’ensemble des actions choisies par chaque joueur dans un jeu.",
+                "Les coups possibles qu’un joueur peut effectuer en un seul tour.",
+                "L’information disponible à tous les joueurs à un certain moment du jeu."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un profil de stratégies décrit l’ensemble des stratégies effectivement choisies par tous les joueurs dans un jeu, ce qui permet de déterminer le résultat et les gains associés.",
+            "tags": [
+                "théorie des jeux",
+                "profil de stratégies",
+                "stratégies",
+                "équilibre"
+            ]
+        },
+        {
+            "id": "2024-q013",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Lequel des éléments suivants n’est PAS typiquement un composant d’un jeu stratégique en théorie des jeux ?",
+            "choices": [
+                "Les joueurs",
+                "Les stratégies",
+                "Les fonctions d’utilité",
+                "Les prix"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un jeu stratégique en théorie des jeux se définit par trois composantes : les joueurs, les ensembles de stratégies disponibles et les fonctions d’utilité (ou de gains). Les prix n’en font pas partie car ils sont exogènes aux jeux stratégiques standards.",
+            "tags": [
+                "théorie des jeux",
+                "jeu stratégique",
+                "composants"
+            ]
+        },
+        {
+            "id": "2024-q014",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Quel est le principal défi dans le calcul d’un équilibre en stratégies mixtes dans des jeux comme Pierre-Feuille-Ciseaux ?",
+            "choices": [
+                "Déterminer les gains de chaque joueur.",
+                "Identifier la stratégie dominante pour chaque joueur.",
+                "S’assurer que tous les joueurs soient indifférents entre leurs stratégies disponibles.",
+                "Trouver un équilibre de Nash en stratégies pures."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Dans un équilibre en stratégies mixtes, chaque joueur doit être indifférent entre les différentes stratégies qu’il peut jouer, car sinon il aurait intérêt à modifier ses probabilités. C’est cette condition d’indifférence qui permet de calculer les probabilités dans l’équilibre mixte.",
+            "tags": [
+                "théorie des jeux",
+                "équilibre mixte",
+                "Nash",
+                "Pierre-Feuille-Ciseaux"
+            ]
+        },
+        {
+            "id": "2024-q015",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans un jeu séquentiel, qu’est-ce qu’un équilibre parfait en sous-jeux (subgame perfect equilibrium) ?",
+            "choices": [
+                "Un profil de stratégies où les joueurs randomisent entre leurs actions.",
+                "Un profil de stratégies qui constitue un équilibre de Nash dans chaque sous-jeu.",
+                "Un profil de stratégies où un joueur joue après avoir observé la décision de l’autre.",
+                "Une stratégie qui maximise simultanément les gains de tous les joueurs."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un équilibre parfait en sous-jeux (SPNE) est un raffinement de l’équilibre de Nash. Il exige que les stratégies forment un équilibre de Nash dans chaque sous-jeu, garantissant ainsi une crédibilité des choix à toutes les étapes du jeu.",
+            "tags": [
+                "théorie des jeux",
+                "équilibre parfait en sous-jeux",
+                "SPNE",
+                "Nash"
+            ]
+        },
+        {
+            "id": "2024-q016",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans le jeu du Centipede, pourquoi l’induction à rebours suggère-t-elle que les joueurs s’arrêtent tôt ?",
+            "choices": [
+                "Parce que l’arrêt précoce procure toujours un gain plus élevé.",
+                "Parce que les joueurs anticipent une défection future et préfèrent s’arrêter immédiatement.",
+                "Parce que la coopération n’est possible que si les joueurs disposent d’une information symétrique.",
+                "Parce que les règles du jeu imposent un arrêt après quelques tours."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans le jeu du Centipede, l’induction à rebours conduit à l’arrêt immédiat car chaque joueur anticipe que l’autre fera défection à l’étape suivante. Ce raisonnement remonte jusqu’au premier coup, ce qui fait que les joueurs préfèrent arrêter dès le début.",
+            "tags": [
+                "théorie des jeux",
+                "Centipede game",
+                "induction à rebours",
+                "coopération"
+            ]
+        },
+        {
+            "id": "2024-q017",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans un équilibre de Nash bayésien, quel est le principe clé ?",
+            "choices": [
+                "Les croyances n’ont pas d’importance.",
+                "Le joueur informé joue une meilleure réponse en espérance.",
+                "Le joueur non informé joue une meilleure réponse en espérance.",
+                "Les types sont partiellement révélés."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Dans un équilibre de Nash bayésien, chaque joueur choisit une stratégie optimale en fonction de ses croyances sur les types des autres joueurs. En particulier, le joueur non informé joue une meilleure réponse en espérance, compte tenu des informations disponibles.",
+            "tags": [
+                "équilibre bayésien",
+                "Nash",
+                "théorie des jeux",
+                "informations incomplètes"
+            ]
+        },
+        {
+            "id": "2024-q018",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans le modèle de Diamond-Dybvig, quelle est la différence clé entre les agents de type 1 et ceux de type 2 ?",
+            "choices": [
+                "Les agents de type 1 sont neutres au risque, tandis que les agents de type 2 sont averses au risque.",
+                "Les agents de type 1 préfèrent consommer en période 1, tandis que les agents de type 2 préfèrent consommer en période 2.",
+                "Les agents de type 1 sont toujours mieux lotis que les agents de type 2.",
+                "Les agents de type 1 préfèrent l’investissement, tandis que les agents de type 2 préfèrent le stockage."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans le modèle de Diamond-Dybvig, la distinction clé repose sur le moment où les agents souhaitent consommer : les agents de type 1 préfèrent consommer tôt (période 1), tandis que les agents de type 2 préfèrent consommer plus tard (période 2).",
+            "tags": [
+                "Diamond-Dybvig",
+                "consommation intertemporelle",
+                "banques",
+                "microéconomie"
+            ]
+        },
+        {
+            "id": "2024-q019",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Quel rôle jouent les banques dans le modèle de Diamond-Dybvig ?",
+            "choices": [
+                "Les banques servent d’intermédiaires qui permettent aux agents de s’assurer contre le risque de liquidité.",
+                "Les banques investissent directement dans des projets à long terme pour le compte des agents.",
+                "Les banques éliminent tout risque pour les agents.",
+                "Les banques déterminent les types d’agents (Type 1 ou Type 2)."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Dans le modèle de Diamond-Dybvig, les banques jouent le rôle d’intermédiaires financiers permettant aux agents de mutualiser le risque de liquidité. Elles offrent une assurance en permettant aux agents impatients (type 1) de consommer tôt, tout en finançant la consommation des agents patients (type 2) grâce à des projets à long terme.",
+            "tags": [
+                "Diamond-Dybvig",
+                "banques",
+                "risque de liquidité",
+                "assurance"
+            ]
+        },
+        {
+            "id": "2024-q020",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Quel résultat est décrit comme un « mauvais équilibre » dans le contexte bancaire du modèle de Diamond-Dybvig ?",
+            "choices": [
+                "Une situation où personne ne retire tôt, conduisant à l’effondrement de la banque.",
+                "Une situation où tous les agents retirent en période 1, entraînant des paniques bancaires et une production interrompue.",
+                "Une situation où seuls quelques agents retirent, causant une allocation inefficace des ressources.",
+                "Une situation où les deux types d’agents retirent au même rythme."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le « mauvais équilibre » du modèle de Diamond-Dybvig correspond à une panique bancaire : tous les agents retirent en période 1, ce qui force la liquidation prématurée des projets d’investissement, interrompt la production et conduit à l’effondrement de la banque.",
+            "tags": [
+                "Diamond-Dybvig",
+                "équilibre multiple",
+                "panique bancaire",
+                "mauvais équilibre"
+            ]
+        },
+        {
+            "id": "2024-q021",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans le modèle de recherche sur le marché du travail, quel est l’un des principaux facteurs contribuant à la dispersion des salaires ?",
+            "choices": [
+                "Les asymétries d’information entre les travailleurs et les entreprises.",
+                "Les différences de niveaux d’éducation entre les travailleurs.",
+                "Les contrôles salariaux imposés par le gouvernement.",
+                "Le taux d’inflation dans l’économie."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Dans le modèle de recherche sur le marché du travail, la dispersion des salaires provient principalement des asymétries d’information : les travailleurs ne connaissent pas toutes les offres disponibles et les entreprises exploitent cette situation, ce qui entraîne des salaires différents pour des travailleurs similaires.",
+            "tags": [
+                "marché du travail",
+                "recherche d'emploi",
+                "dispersion salariale",
+                "asymétrie d'information"
+            ]
+        },
+        {
+            "id": "2024-q022",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Comment la présence de réseaux sociaux influence-t-elle les résultats salariaux dans le modèle du marché du travail présenté dans les slides ?",
+            "choices": [
+                "Elle réduit la dispersion salariale entre travailleurs similaires.",
+                "Elle augmente la dispersion salariale car les travailleurs avec plus de contacts disposent de meilleures informations.",
+                "Elle n’a pas d’effet significatif sur les résultats salariaux.",
+                "Elle conduit à une égalité salariale entre tous les travailleurs du marché."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La présence de réseaux sociaux accroît la dispersion salariale : les travailleurs ayant plus de contacts accèdent à une meilleure information et donc à de meilleures opportunités d’emploi, ce qui les avantage par rapport à ceux qui en ont moins.",
+            "tags": [
+                "marché du travail",
+                "réseaux sociaux",
+                "information",
+                "dispersion salariale"
+            ]
+        },
+        {
+            "id": "2024-q023",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans l’équilibre compétitif décrit dans le modèle de Diamond-Dybvig, qu’est-ce qui empêche les agents d’atteindre un optimum de premier rang (first-best) ?",
+            "choices": [
+                "L’incapacité des agents à stocker des biens.",
+                "Le fait que les types d’agents ne sont pas observables, empêchant les contrats contingents aux états.",
+                "La présence d’une intervention gouvernementale dans le secteur bancaire.",
+                "Les préférences neutres au risque des agents."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans le modèle de Diamond-Dybvig, l’impossibilité d’observer directement si un agent est de type 1 (préférant consommer tôt) ou de type 2 (préférant consommer plus tard) empêche la mise en place de contrats parfaits contingents aux états, ce qui bloque l’atteinte de l’optimum de premier rang.",
+            "tags": [
+                "Diamond-Dybvig",
+                "asymétrie d’information",
+                "optimum de premier rang",
+                "contrats contingents"
+            ]
+        },
+        {
+            "id": "2024-q024",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans le contexte des politiques bancaires, quel est le rôle d’une suspension de convertibilité ?",
+            "choices": [
+                "Augmenter la liquidité dans le système bancaire.",
+                "Prévenir les paniques bancaires en restreignant les retraits lorsque trop d’agents essaient de retirer simultanément.",
+                "Augmenter le rendement des investissements à long terme.",
+                "Éliminer le besoin de dépôts à vue."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La suspension de convertibilité permet d’éviter les paniques bancaires (bank runs) en empêchant les retraits massifs simultanés qui fragiliseraient la banque. Elle agit comme une mesure temporaire de stabilisation en limitant la liquidité disponible immédiatement.",
+            "tags": [
+                "Diamond-Dybvig",
+                "banques",
+                "suspension de convertibilité",
+                "bank run",
+                "politiques bancaires"
+            ]
+        },
+        {
+            "id": "2024-q025",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "En théorie des jeux coopératifs, que représente la fonction caractéristique v(S) d’une coalition S ?",
+            "choices": [
+                "Le nombre de joueurs dans la coalition.",
+                "L’utilité totale disponible pour la coalition.",
+                "Les contributions individuelles des joueurs à la coalition.",
+                "Le gain espéré de la coalition en situation d’incertitude."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans un jeu coopératif, la fonction caractéristique v(S) associe à chaque coalition S la valeur (ou utilité totale) que celle-ci peut obtenir en agissant de manière coordonnée. C’est la base pour analyser la répartition des gains entre les joueurs, par exemple via le Core ou la valeur de Shapley.",
+            "tags": [
+                "théorie des jeux coopératifs",
+                "fonction caractéristique",
+                "coalition",
+                "valeur de coalition"
+            ]
+        },
+        {
+            "id": "2024-q026",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Que signifie le concept de « rationalité individuelle » en théorie des jeux coopératifs ?",
+            "choices": [
+                "Chaque joueur reçoit au moins ce qu’il pourrait obtenir seul.",
+                "L’allocation maximise l’utilité totale de tous les joueurs.",
+                "Aucun joueur ne peut améliorer son utilité en changeant de stratégie.",
+                "La coalition dans son ensemble obtient le même gain indépendamment des contributions individuelles."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La rationalité individuelle garantit que chaque joueur accepte de rester dans la coalition, car il reçoit au moins autant que ce qu’il aurait pu obtenir seul (v({i})). Si ce n’était pas respecté, un joueur n’aurait aucun intérêt à coopérer.",
+            "tags": [
+                "théorie des jeux coopératifs",
+                "rationalité individuelle",
+                "coalition",
+                "allocation"
+            ]
+        },
+        {
+            "id": "2024-q027",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Comment définit-on la valeur de Shapley en théorie des jeux coopératifs ?",
+            "choices": [
+                "Le gain total de la grande coalition moins les gains individuels.",
+                "La contribution marginale moyenne de chaque joueur à toutes les coalitions possibles.",
+                "L’utilité que chaque joueur reçoit en fonction de sa fonction d’utilité.",
+                "La somme de toutes les fonctions caractéristiques possibles dans le jeu."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La valeur de Shapley mesure la contribution marginale moyenne d’un joueur à l’ensemble des coalitions dans lesquelles il peut participer. Elle assure une répartition équitable des gains de la coalition totale en tenant compte de toutes les permutations possibles.",
+            "tags": [
+                "théorie des jeux coopératifs",
+                "valeur de Shapley",
+                "coalition",
+                "allocation équitable"
+            ]
+        },
+        {
+            "id": "2024-q028",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans un jeu coopératif convexe, laquelle des propriétés suivantes est vraie ?",
+            "choices": [
+                "La valeur de Shapley appartient toujours au noyau (ou coeur).",
+                "L’utilité de la grande coalition est toujours nulle.",
+                "La fonction caractéristique est toujours additive.",
+                "Les joueurs ne peuvent pas former de coalition plus grande que la grande coalition."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Dans un jeu coopératif convexe, la valeur de Shapley est toujours contenue dans le noyau (core). Cela garantit que la répartition des gains selon la valeur de Shapley est stable et ne peut être améliorée par aucune coalition.",
+            "tags": [
+                "théorie des jeux coopératifs",
+                "convexité",
+                "valeur de Shapley",
+                "core"
+            ]
+        },
+        {
+            "id": "2024-q029",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Lequel des axiomes suivants n’est pas requis pour la valeur de Shapley ?",
+            "choices": [
+                "Efficacité.",
+                "Traitement égal des égaux.",
+                "Axiome du joueur nul.",
+                "Rationalité individuelle."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La valeur de Shapley repose sur trois axiomes principaux : l’efficacité (la somme des allocations égale la valeur de la coalition totale), le traitement égal des égaux (deux joueurs identiques reçoivent la même allocation) et l’axiome du joueur nul (un joueur qui n’apporte rien reçoit 0). La rationalité individuelle n’est pas un axiome requis pour définir la valeur de Shapley.",
+            "tags": [
+                "valeur de Shapley",
+                "axiomes",
+                "coopératif",
+                "microéconomie"
+            ]
+        },
+        {
+            "id": "2024-q030",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "La fonction caractéristique d’un jeu coopératif est :",
+            "choices": [
+                "Une fonction qui assigne une valeur uniquement à la grande coalition.",
+                "Une fonction qui décrit les axiomes caractérisant le jeu.",
+                "Une fonction qui assigne une valeur, en termes d’utilité ou autre, à toutes les coalitions du jeu.",
+                "Une fonction qui nous informe sur les contributions marginales de chaque coalition."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La fonction caractéristique associe à chaque coalition possible une valeur (généralement une utilité ou un gain total) que les membres de la coalition peuvent obtenir ensemble. Elle ne se limite pas à la grande coalition et constitue la base de l’analyse en théorie des jeux coopératifs.",
+            "tags": [
+                "coopératif",
+                "fonction caractéristique",
+                "coalition",
+                "microéconomie"
+            ]
+        },
+        {
+            "id": "2024-q031",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Un individu achète deux douzaines d’œufs (24) et doit les ramener chez lui. Les trajets sont sans coût, mais à chaque trajet il y a une chance sur trois que tous les œufs portés lors de ce trajet soient cassés. Deux stratégies sont envisagées : (1) faire deux trajets avec 12 œufs à chaque fois ; (2) faire un seul trajet avec les 24 œufs. Quels sont les résultats possibles sous chaque stratégie ?",
+            "choices": [
+                "Stratégie (1) 0 ou 24 ; Stratégie (2) 0 ou 12 ou 24.",
+                "Stratégie (1) 0 ou 12 ; Stratégie (2) 0 ou 12 ou 24.",
+                "Stratégie (1) 0 ou 12 ou 24 ; Stratégie (2) 0 ou 12.",
+                "Stratégie (1) 0 ou 12 ou 24 ; Stratégie (2) 0 ou 24."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Avec deux trajets de 12 œufs, chaque trajet a une probabilité 1/3 d’échouer (tous cassés) indépendamment de l’autre : on peut terminer avec 0 (les deux trajets cassent), 12 (un seul casse) ou 24 (aucun ne casse). Avec un seul trajet de 24 œufs, soit tout casse (0) soit rien ne casse (24).",
+            "tags": [
+                "risque",
+                "espérance",
+                "décision",
+                "probabilités"
+            ]
+        },
+        {
+            "id": "2024-q032",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Un individu achète deux douzaines d’œufs et doit les ramener chez lui. Chaque trajet comporte un risque : avec une probabilité de 1/3, tous les œufs transportés lors du trajet sont cassés ; avec une probabilité de 2/3, tous les œufs arrivent intacts. Deux stratégies sont possibles : (1) faire deux trajets de 12 œufs chacun ; (2) faire un seul trajet avec les 24 œufs. Combien d’œufs chaque stratégie rapporte-t-elle en moyenne ?",
+            "choices": [
+                "Stratégie (1) 14 ; Stratégie (2) 10.",
+                "Stratégie (1) 10 ; Stratégie (2) 14.",
+                "Stratégie (1) 16 ; Stratégie (2) 12.",
+                "Stratégie (1) 12 ; Stratégie (2) 16.",
+                "Stratégie (1) 16 ; Stratégie (2) 16."
+            ],
+            "answer": [
+                4
+            ],
+            "explanation": "Chaque trajet échoue avec probabilité 1/3 et réussit avec 2/3. \n- Stratégie (1) : 2 trajets de 12. L’espérance pour un trajet = (2/3)*12 + (1/3)*0 = 8. Pour deux trajets : 2×8 = 16 œufs attendus. \n- Stratégie (2) : 1 trajet avec 24. Espérance = (2/3)*24 + (1/3)*0 = 16. \nDonc les deux stratégies donnent 16 œufs en moyenne.",
+            "tags": [
+                "espérance",
+                "risque",
+                "probabilités",
+                "décision"
+            ]
+        },
+        {
+            "id": "2024-q033",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Un individu achète deux douzaines d’œufs et doit les ramener chez lui. Chaque trajet comporte un risque : avec une probabilité de 1/3, tous les œufs transportés lors du trajet sont cassés ; avec une probabilité de 2/3, tous les œufs arrivent intacts. Deux stratégies sont possibles : (1) faire deux trajets de 12 œufs chacun ; (2) faire un seul trajet avec les 24 œufs. Si l’individu est avers au risque, quelle stratégie préfère-t-il ?",
+            "choices": [
+                "S’il est averse au risque, il préfère la Stratégie (1).",
+                "S’il est averse au risque, il préfère la Stratégie (2).",
+                "S’il est averse au risque, il est indifférent entre les deux stratégies.",
+                "On n’a pas assez d’informations pour répondre."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les deux stratégies donnent la même espérance (16 œufs en moyenne). Toutefois, la Stratégie (1) a une variance plus faible (distribution entre 0, 12 et 24), alors que la Stratégie (2) a seulement deux issues extrêmes (0 ou 24). Comme un individu averse au risque préfère une distribution moins risquée à espérance égale, il choisit la Stratégie (1).",
+            "tags": [
+                "risque",
+                "espérance",
+                "aversion au risque",
+                "variance"
+            ]
+        },
+        {
+            "id": "2024-q034",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Un individu achète deux douzaines d’œufs et doit les ramener chez lui. Chaque trajet comporte un risque : avec une probabilité de 1/3, tous les œufs transportés lors du trajet sont cassés ; avec une probabilité de 2/3, tous les œufs arrivent intacts. Plus l’individu fait de trajets (avec moins d’œufs par trajet), plus il réduit le risque de tout perdre d’un coup. Est-ce que l’utilité de l’individu augmente en multipliant les trajets ?",
+            "choices": [
+                "Oui, toujours.",
+                "Non, jamais.",
+                "Oui, mais seulement si l’individu est averse au risque.",
+                "Oui, mais seulement si l’individu est neutre au risque."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "En multipliant les trajets, l’espérance reste la même (16 œufs en moyenne), mais la variance diminue. Cela réduit le risque de tout perdre en une fois. Un individu averse au risque valorise la réduction du risque, donc son utilité augmente. En revanche, un individu neutre au risque est indifférent puisque seule l’espérance compte pour lui.",
+            "tags": [
+                "risque",
+                "espérance",
+                "variance",
+                "aversion au risque"
+            ]
+        },
+        {
+            "id": "2024-q035",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Markus participe à un jeu télévisé. Derrière la porte n°3, il y a 50 % de chances d’avoir une bague en diamant de 24 000 $ et 50 % de chances d’avoir un vélo de 5 000 $. Avant d’ouvrir la porte, quelqu’un lui propose une **option** : « Je t’achète ce qu’il y a derrière la porte 14 000 $ si tu me paies 2 000 $ maintenant pour avoir le droit de décider après l’ouverture. » Markus ne se soucie que des valeurs monétaires **espérées**. Doit-il acheter cette option ?",
+            "choices": [
+                "Oui, car l’option a une valeur espérée plus élevée que le pari.",
+                "Oui, même si l’option a une valeur espérée plus faible, car il est averse au risque.",
+                "Non, même s’il est averse au risque, l’option ne vaut pas assez.",
+                "Non, l’option a une valeur espérée plus faible que le pari et il est neutre au risque."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sans option : EV = 0,5×24 000 + 0,5×5 000 = 14 500 $. Avec l’option (coût immédiat 2 000 $) : si c’est la bague (24 000), Markus **n’exerce pas** (garde 24 000) ; si c’est le vélo (5 000), il **exerce** et vend 14 000. EV option = −2 000 + 0,5×24 000 + 0,5×14 000 = −2 000 + 12 000 + 7 000 = 17 000 $. Comme 17 000 > 14 500 et qu’il est neutre au risque, il doit acheter l’option.",
+            "tags": [
+                "valeur espérée",
+                "options",
+                "aversion au risque",
+                "théorie des décisions"
+            ]
+        },
+        {
+            "id": "2024-q036",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Scénario (rappel) : Markus est candidat d’un jeu télévisé. Il y a 50 % de chances qu’un diamant de 24 000 $ soit derrière la porte choisie et 50 % qu’il s’agisse d’un vélo de 5 000 $. Avant l’ouverture, quelqu’un lui propose une option : contre un paiement de X dollars maintenant, Markus pourra, après révélation, vendre ce qu’il y a derrière la porte pour 14 000 $ (il exercera l’option seulement si cela l’avantage).\nSachant que l’utilité de Markus est U(w) = w^{1/10}, existe-t-il une valeur de X pour laquelle il souhaite acheter l’option ?",
+            "choices": [
+                "Non, Markus est quasiment neutre au risque.",
+                "Oui, X doit être inférieur à 304.",
+                "Oui, X doit être inférieur à 703.",
+                "Oui, X doit être supérieur à 1 000."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Sans option : EU = 0,5·U(24 000) + 0,5·U(5 000). Avec option (payée d’avance) : EU(X) = 0,5·U(24 000 − X) + 0,5·U(14 000 − X), car Markus garde le diamant (24 000 − X) et exerce pour le vélo (14 000 − X). On cherche le X* tel que EU(X*) = EU. En résolvant avec U(w) = w^{1/10}, on obtient un seuil X* ≈ 703. Donc il achète l’option si et seulement si X < 703.",
+            "tags": [
+                "aversion au risque",
+                "espérance d’utilité",
+                "option",
+                "décision sous incertitude"
+            ]
+        },
+        {
+            "id": "2024-q037",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Deux éleveurs de vaches, A et B, partagent un pré dans lequel leurs animaux peuvent paître. Chaque éleveur possède deux vaches et cherche à maximiser son revenu issu de la vente. Le poids (et donc le prix) d’une vache dépend négativement du nombre total de vaches présentes dans le pré : 1 vache → prix = 8 ; 2 vaches → prix = 5 ; 3 vaches → prix = 3 ; 4 vaches → prix = 2. Une vache non placée dans le pré ne rapporte rien. Construire la matrice des gains (paiement matrix) pour ce jeu entre les deux éleveurs.",
+            "image": "/Images/microeconomie-2024-q037.png",
+            "choices": [
+                "Choix A",
+                "Choix B",
+                "Choix C",
+                "Choix D"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La matrice des gains se construit en fonction du nombre de vaches envoyées par chaque joueur et du prix de marché correspondant.",
+            "tags": [
+                "théorie des jeux",
+                "stratégies",
+                "matrice des gains"
+            ]
+        },
+        {
+            "id": "2024-q038",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Dans le jeu précédent des deux éleveurs de vaches, quelles sont les stratégies pures en équilibre de Nash ?",
+            "choices": [
+                "Il n’y a pas d’équilibre.",
+                "Il y en a trois : (1,2), (2,1), (2,2).",
+                "Il y en a deux : (1,2), (2,1).",
+                "Il n’y en a qu’un : (2,2)."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "En examinant la matrice des gains, on constate que les meilleures réponses des deux éleveurs se rencontrent uniquement lorsque chacun envoie 2 vaches. L’unique équilibre de Nash en stratégies pures est donc (2,2).",
+            "tags": [
+                "théorie des jeux",
+                "équilibre de Nash",
+                "stratégies pures"
+            ]
+        },
+        {
+            "id": "2024-q039",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Une ville possède 3 musées {1,2,3} et propose un pass donnant accès aux trois musées pour un prix normalisé à 1. On veut répartir les recettes entre musées à l’aide de la théorie des jeux coopératifs. Six visiteurs {a,b,c,d,e,f} viennent cette semaine : a et d visitent les trois musées ; b visite 1 et 2 ; f visite 2 et 3 ; c visite 1 ; e visite 2. Les joueurs sont les musées. Pour toute coalition S de musées, la valeur v(S) est le nombre de visiteurs qui ne visitent que les musées de S (c’est-à-dire dont l’ensemble de visites est inclus dans S). Quelle est la fonction caractéristique v(S) de ce jeu ?",
+            "image": "/Images/microeconomie-2024-q039.png",
+            "choices": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "On compte, pour chaque coalition S, les visiteurs dont l’ensemble de visites est inclus dans S : v({1})=1 (c), v({2})=1 (e), v({3})=0 (personne), v({1,2})=3 (c,e,b), v({1,3})=1 (c), v({2,3})=2 (e,f), v({1,2,3})=6 (tous : a,b,c,d,e,f). On obtient donc (1,1,0,3,1,2,6), ce qui correspond à l’option A.",
+            "tags": [
+                "jeu coopératif",
+                "fonction caractéristique",
+                "répartition des recettes",
+                "Shapley (contexte)"
+            ]
+        },
+        {
+            "id": "2024-q040",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Pour le jeu des musées décrit à la question précédente, lequel des énoncés est correct ?",
+            "choices": [
+                "Monotone et super-additif, mais non convexe.",
+                "Monotone et convexe, mais non super-additif.",
+                "Convexe et super-additif, mais non monotone.",
+                "Convexe, super-additif et monotone."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La valeur v(S) compte les visiteurs dont l’ensemble de visites est inclus dans S. (i) Monotonie : si S ⊆ T, on ne peut que gagner des visiteurs ⇒ v(S) ≤ v(T). (ii) Super-additivité : pour S ∩ T = ∅, les visiteurs exclusifs à S et à T sont disjoints, donc v(S ∪ T) ≥ v(S) + v(T) (et dans ce cas, l’égalité tient). (iii) Convexité (supermodularité) : les contributions marginales augmentent avec la taille de la coalition, ce qui se vérifie numériquement sur toutes les paires de coalitions du jeu. Le jeu est donc convexe, super-additif et monotone.",
+            "tags": [
+                "jeu coopératif",
+                "monotonie",
+                "super-additivité",
+                "convexité"
+            ]
+        },
+        {
+            "id": "2024-q041",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "Déterminer la valeur de Shapley S(N,v) du jeu des musées décrit précédemment.",
+            "choices": [
+                "Sh(N,v) = (13/5, 16/5, 7/5).",
+                "Sh(N,v) = (12/6, 14/6, 7/6).",
+                "Sh(N,v) = (13/6, 16/6, 7/6).",
+                "Sh(N,v) = (13/6, 15/6, 7/6)."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Avec v({1})=1, v({2})=1, v({3})=0, v({1,2})=3, v({1,3})=1, v({2,3})=2, v({1,2,3})=6. On calcule les contributions marginales sur les 6 permutations des joueurs (1,2,3).\n(1,2,3): (1,2,3) → (1,2,3) = (1, 2, 3)\n(1,3,2): (1,3,2) → (1, 5, 0)\n(2,1,3): (2,1,3) → (2, 1, 3)\n(2,3,1): (4, 1, 1)\n(3,1,2): (1, 5, 0)\n(3,2,1): (4, 2, 0)\nSommes: joueur 1 = 13, joueur 2 = 16, joueur 3 = 7. Moyenne sur 6 permutations: Sh = (13/6, 16/6, 7/6).",
+            "tags": [
+                "jeu coopératif",
+                "valeur de Shapley",
+                "répartition",
+                "musées"
+            ]
+        },
+        {
+            "id": "2024-q042",
+            "qcm": "Partiel-2024",
+            "theme": "Microéconomie",
+            "question": "La valeur de Shapley du jeu des musées (S(N,v) = (13/6, 16/6, 7/6)) appartient-elle au core C(N,v) de ce jeu ?",
+            "choices": [
+                "Non, car le core de ce jeu est vide.",
+                "Non, elle est en dehors du core non vide du jeu.",
+                "Oui, elle appartient bien au core (coeur, noyau).",
+                "On n’a pas assez d’informations pour le déterminer."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le jeu est convexe (supermodulaire), donc son core est non vide et la valeur de Shapley appartient toujours au core pour un jeu convexe. Numériquement, Sh = (13/6,16/6,7/6) vérifie toutes les contraintes du core : somme = 6 = v(N), xi ≥ v({i}) pour chaque singleton, et xi + xj ≥ v({i,j}) pour chaque paire, donc Sh ∈ C(N,v).",
+            "tags": [
+                "jeu coopératif",
+                "valeur de Shapley",
+                "core",
+                "convexité"
+            ]
+        }
     ]
 }
