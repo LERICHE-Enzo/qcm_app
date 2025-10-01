@@ -899,6 +899,211 @@
         "qualité d’ajustement",
         "régression multiple"
       ]
+    },
+    {
+      "id": "qcm3-q01",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "On considère le cas d’un modèle de régression simple : on observe le vecteur y et le vecteur x, et on estime la droite des moindres carrés associée. Que vaut l’estimation de la pente ?",
+      "choices": [
+        "$\\dfrac{\\mathrm{cov}(x,y)}{\\mathrm{var}(x)}$",
+        "$\\dfrac{\\sqrt{\\mathrm{var}(x)\\mathrm{var}(y)}}{\\mathrm{cov}(x,y)}$",
+        "$\\dfrac{\\mathrm{var}(x)}{\\mathrm{cov}(x,y)}$",
+        "$\\dfrac{\\mathrm{cov}(x,y)}{\\sqrt{\\mathrm{var}(x)\\mathrm{var}(y)}}$"
+      ],
+      "answer": 0,
+      "explanation": "Dans un modèle de régression simple $y = \\alpha + \\beta x + \\varepsilon$, l’estimateur des moindres carrés de la pente est $\\hat{\\beta} = \\dfrac{\\mathrm{cov}(x,y)}{\\mathrm{var}(x)}$.",
+      "tags": [
+        "régression simple",
+        "moindres carrés",
+        "estimateur de pente"
+      ]
+    },
+    {
+      "id": "qcm3-q02",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "Si la p-valeur du test de Student associé au coefficient de régression de la variable $X^{(j)}$ vaut 0.003, que concluez-vous ?",
+      "choices": [
+        "Le modèle est surajusté.",
+        "Il y a une relation statistiquement significative entre $X^{(j)}$ et $Y$.",
+        "Le modèle de régression est inadéquat.",
+        "Ce coefficient de régression est nul."
+      ],
+      "answer": 1,
+      "explanation": "Une p-valeur de 0.003 est très inférieure au seuil classique de 5%. On rejette donc l’hypothèse nulle $H_0: \\beta_j = 0$ et on conclut qu’il existe une relation statistiquement significative entre $X^{(j)}$ et $Y$.",
+      "tags": [
+        "régression linéaire",
+        "test de Student",
+        "p-valeur",
+        "significativité"
+      ]
+    },
+    {
+      "id": "qcm3-q03",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "Quelle est la formule du $R^2_a$ lorsqu’une constante est incluse dans le modèle ?",
+      "choices": [
+        "$\\dfrac{n-1}{n-p}\\dfrac{\\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$",
+        "$1 - \\dfrac{n-p}{n-1}\\dfrac{\\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$",
+        "$1 - \\dfrac{n-1}{n-p}\\dfrac{\\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$",
+        "$\\dfrac{n-p}{n-1}\\dfrac{\\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$"
+      ],
+      "answer": 2,
+      "explanation": "Le $R^2_a$ corrige le $R^2$ en tenant compte du nombre de variables explicatives $p$. La bonne formule est $R^2_a = 1 - \\dfrac{n-1}{n-p}\\dfrac{SCR}{SCT}$, où $SCR = \\sum (Y_i - \\hat{Y}_i)^2$ et $SCT = \\sum (Y_i - \\bar{Y})^2$.",
+      "tags": [
+        "régression linéaire",
+        "$R^2_a$",
+        "qualité d’ajustement",
+        "régression multiple"
+      ]
+    },
+    {
+      "id": "qcm3-q04",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "La statistique du test de Fisher de significativité globale du modèle vaut -41, que concluez-vous ?",
+      "choices": [
+        "Au moins une variable autre que la constante est significative.",
+        "Toutes les variables explicatives sont significatives.",
+        "Aucune variable explicative, autre que la constante, n’est significative dans le modèle.",
+        "Toutes les variables explicatives, autre que la constante, sont significatives."
+      ],
+      "answer": 0,
+      "explanation": "Le test de Fisher global permet de tester l’hypothèse nulle $H_0 : \\beta_1 = \\beta_2 = \\dots = \\beta_p = 0$. Si la statistique est significative, on rejette $H_0$ et on conclut qu’au moins une variable explicative (autre que la constante) a un effet significatif sur $Y$.",
+      "tags": [
+        "régression linéaire",
+        "test de Fisher",
+        "significativité globale"
+      ]
+    },
+    {
+      "id": "qcm3-q05",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "On effectue une nouvelle régression en ajoutant une variable au modèle initial. Que se passe-t-il forcément ?",
+      "choices": [
+        "La SCR diminue",
+        "Le $R^2$ diminue",
+        "Le $R^2_a$ diminue",
+        "Le $R^2$ augmente",
+        "Le $R^2_a$ augmente",
+        "La SCR augmente"
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "explanation": "En ajoutant une variable explicative, la somme des carrés des résidus (SCR) ne peut qu’augmenter la qualité d’ajustement ou la laisser identique. Ainsi, la SCR diminue (ou reste identique) et le $R^2$ augmente (ou reste identique). En revanche, le $R^2_a$ peut augmenter ou diminuer selon la pertinence de la variable ajoutée.",
+      "tags": [
+        "régression linéaire",
+        "SCR",
+        "$R^2$",
+        "$R^2_a$"
+      ]
+    },
+    {
+      "id": "qcm3-q06",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "On considère le cas d’un modèle de régression simple : on observe le vecteur y et le vecteur x, et on estime la droite des moindres carrés associée. Que vaut l’estimation de l’ordonnée à l’origine ?",
+      "choices": [
+        "$\\bar{y} - \\dfrac{\\mathrm{cov}(y,x)}{\\sqrt{\\mathrm{var}(x)\\mathrm{var}(y)}}\\,\\bar{x}$",
+        "$\\dfrac{\\mathrm{cov}(y,x)}{\\sqrt{\\mathrm{var}(x)\\mathrm{var}(y)}}$",
+        "$\\dfrac{\\mathrm{cov}(x,y)}{\\mathrm{var}(x)}$",
+        "$\\bar{y} - \\dfrac{\\mathrm{cov}(x,y)}{\\mathrm{var}(x)}\\,\\bar{x}$"
+      ],
+      "answer": 3,
+      "explanation": "Dans la régression simple $y = \\alpha + \\beta x + \\varepsilon$, on a $\\hat{\\beta} = \\dfrac{\\mathrm{cov}(x,y)}{\\mathrm{var}(x)}$ et donc $\\hat{\\alpha} = \\bar{y} - \\hat{\\beta}\\,\\bar{x}$. Cela donne bien $\\hat{\\alpha} = \\bar{y} - \\dfrac{\\mathrm{cov}(x,y)}{\\mathrm{var}(x)}\\,\\bar{x}$.",
+      "tags": [
+        "régression linéaire",
+        "moindres carrés",
+        "ordonnée à l’origine"
+      ]
+    },
+    {
+      "id": "qcm3-q07",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "La statistique du test Student associé au coefficient de régression de la variable $X^{(j)}$ vaut -23, que concluez-vous ?",
+      "choices": [
+        "Il y a une relation statistiquement significative entre $X^{(j)}$ et $Y$.",
+        "Ce coefficient de régression est nul.",
+        "Le modèle de régression est inadéquat.",
+        "Le modèle est surajusté."
+      ],
+      "answer": 0,
+      "explanation": "Une statistique de Student de grande valeur absolue (ici -23) implique une p-valeur extrêmement faible. On rejette donc $H_0 : \\beta_j = 0$ et on conclut qu’il existe une relation statistiquement significative entre $X^{(j)}$ et $Y$.",
+      "tags": [
+        "régression linéaire",
+        "test de Student",
+        "significativité"
+      ]
+    },
+    {
+      "id": "qcm3-q08",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "Quelle est la formule du $R^2$ ?",
+      "choices": [
+        "$\\dfrac{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$",
+        "$\\dfrac{\\sum_{i=1}^n (\\hat{Y}_i - \\bar{Y})^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$",
+        "$\\dfrac{\\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$",
+        "$\\dfrac{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}{\\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}$"
+      ],
+      "answer": 1,
+      "explanation": "Le coefficient de détermination $R^2$ est défini par $R^2 = \\dfrac{SCE}{SCT}$, où $SCE = \\sum (\\hat{Y}_i - \\bar{Y})^2$ est la somme des carrés expliquée et $SCT = \\sum (Y_i - \\bar{Y})^2$ est la somme des carrés totale.",
+      "tags": [
+        "régression linéaire",
+        "$R^2$",
+        "qualité d’ajustement"
+      ]
+    },
+    {
+      "id": "qcm3-q09",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "On note $SCR$ la somme des carrés des résidus du modèle initial, et $SCR_c$ celle d’un sous-modèle contenant $p'$ variables ($p' < p$). Avec quelle statistique peut-on comparer les deux modèles ?",
+      "choices": [
+        "$\\dfrac{n-p}{p'}\\dfrac{SCR - SCR_c}{SCR}$",
+        "$\\dfrac{n-p}{p-p'}\\dfrac{SCR - SCR_c}{SCR}$",
+        "$\\dfrac{n-p}{p'}\\dfrac{SCR_c - SCR}{SCR}$",
+        "$\\dfrac{n-p}{p-p'}\\dfrac{SCR_c - SCR}{SCR}$"
+      ],
+      "answer": 3,
+      "explanation": "Pour comparer un modèle complet (p variables) et un sous-modèle restreint (p' variables), on utilise un test de Fisher. La statistique est $F = \\dfrac{(SCR_c - SCR)/(p - p')}{SCR/(n-p)}$. En simplifiant, le numérateur est proportionnel à $\\dfrac{n-p}{p-p'}\\dfrac{SCR_c - SCR}{SCR}$, ce qui correspond à la réponse D.",
+      "tags": [
+        "régression linéaire",
+        "test de Fisher",
+        "comparaison de modèles"
+      ]
+    },
+    {
+      "id": "qcm3-q10",
+      "qcm": "QCM3",
+      "theme": "Régression linéaire",
+      "question": "Supposons qu’une constante est incluse dans le modèle. Quelle(s) propriété(s) vérifie le vecteur des résidus $\\hat{\\varepsilon}$ ?",
+      "choices": [
+        "Sa variance vaut $\\sigma^2 (X'X)^{-1}$",
+        "Sa moyenne est nulle",
+        "Sa variance vaut $\\mathrm{Var}(\\hat{\\varepsilon}) = \\sigma^2 P_{[X]^\\perp}$ ($= \\sigma^2 \\left(I_n - X (X'X)^{-1} X'\\right)$",
+        "Son espérance est nulle",
+        "Il est de taille $p$",
+        "Sa variance vaut $\\sigma^2 I_n$"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Le vecteur des résidus est $\\hat{\\varepsilon} = M Y$ avec $M = I - P_X$, la matrice de projection sur $[X]^\\perp$. On a $\\mathbb{E}[\\hat{\\varepsilon}] = 0$, $\\mathrm{Var}(\\hat{\\varepsilon}) = \\sigma^2 M = \\sigma^2 P_{[X]^\\perp}$, et sa somme vaut 0 donc sa moyenne est nulle.",
+      "tags": [
+        "régression linéaire",
+        "résidus",
+        "espérance",
+        "variance"
+      ]
     }
   ]
 }
