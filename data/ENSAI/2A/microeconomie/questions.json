@@ -643,7 +643,7 @@
             "qcm": "Partiel-2023",
             "theme": "Microéconomie",
             "question": "Deux éleveurs, Farmer A et Farmer B, partagent un pré où leurs vaches peuvent paître. Chaque fermier possède deux vaches et veut maximiser ses gains. Plus la vache est grosse, plus le prix est élevé, et le poids dépend de la quantité d’herbe disponible, qui diminue avec le nombre de vaches dans le pré. Une vache qui ne broute rien ne rapporte rien. Le tableau des gains est donné ci-dessous : (Image ci-dessous). Quelles sont les stratégies d'équilibre de Nash pour ce jeu ?",
-            "image": "/Images/microeconomie-2023-q030.png",
+            "image": "/Images/microeconomie/microeconomie/microeconomie-2023-q030.png",
             "choices": [
                 "Il n’y a pas d’équilibre.",
                 "Il y a un seul équilibre : (2,2).",
@@ -666,7 +666,7 @@
             "qcm": "Partiel-2023",
             "theme": "Microéconomie",
             "question": "Le conseil municipal remarque que (1,1) domine tous les équilibres précédents du point de vue de Pareto, et décide de réguler l’utilisation du pré : il ne souhaite pas avoir plus de deux vaches dans le champ. Il infligera une amende f si plus de deux vaches sont présentes. Le tableau des gains est donné ci-dessous : (Image ci-dessous). Peut-on trouver un niveau de f tel que la situation de Pareto optimale (1,1) soit le seul équilibre de Nash ?",
-            "image": "/Images/microeconomie-2023-q031.png",
+            "image": "/Images/microeconomie/microeconomie-2023-q031.png",
             "choices": [
                 "Non, (1,1) peut être atteint si f ≥ 1, mais (2,2) reste un équilibre.",
                 "Oui, avec f > 4, (1,1) est un équilibre de Nash et (2,2) ne l’est pas.",
