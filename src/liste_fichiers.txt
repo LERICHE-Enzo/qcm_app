@@ -8,5 +8,6 @@ Régression linéaire :
 
 Microéconomie :
     Sujet 2023
+    Sujet 2024
 
 Apprentissage supervisé :
