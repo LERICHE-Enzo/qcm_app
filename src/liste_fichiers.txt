@@ -12,3 +12,5 @@ Microéconomie :
     Sujet 2024
 
 Apprentissage supervisé :
+    Sujet 2022
+    Sujet 2023

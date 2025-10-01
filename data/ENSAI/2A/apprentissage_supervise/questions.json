@@ -1,0 +1,522 @@
+{
+    "questions": [
+        {
+            "id": "2022-q001",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "Parmi les problématiques ci-dessous, laquelle ou lesquelles ne relèvent pas de l’apprentissage supervisé ?",
+            "choices": [
+                "Identifier des vidéos similaires parmi tout le catalogue d’un site de streaming.",
+                "Construire un algorithme de recommandation de séries pour les abonnés d’un site de streaming.",
+                "Estimer le nombre de vues des vidéos d’un type particulier dans le catalogue d’un site de streaming.",
+                "Filtrer les commentaires postés sur des vidéos qui ne respectent pas les conditions d’utilisation du site de streaming."
+            ],
+            "answer": [
+                0,
+                2
+            ],
+            "explanation": "L’identification de vidéos similaires (a) relève de l’apprentissage non supervisé (clustering, recherche de similarité). L’estimation du nombre de vues (c) correspond davantage à une tâche de modélisation descriptive ou prédictive, sans supervision explicite. En revanche, la recommandation (b) et le filtrage de commentaires (d) s’appuient sur des étiquettes (notes, exemples positifs/négatifs), et relèvent donc de l’apprentissage supervisé.",
+            "tags": [
+                "Partiel-2022",
+                "apprentissage supervisé",
+                "apprentissage non supervisé",
+                "recommandation",
+                "classification"
+            ]
+        },
+        {
+            "id": "2022-q002",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "Parmi ces fonctions de coût pour l’apprentissage supervisé, laquelle ou lesquelles sont adaptées (au regard des propriétés théoriques d’une fonction de coût) ?",
+            "choices": [
+                "$\\ell(y,y')=(y-y')^{3}$ si $y,y'\\in\\mathbb{R}$",
+                "$\\ell(y,y')=2\\,\\mathbf{1}\\{y\\neq y'\\}$ si $y,y'\\in\\{0,1\\}$",
+                "$\\ell(y,y')=-y\\log(y')-(1-y)\\log(1-y')$ si $y,y'\\in\\{0,1\\}$",
+                "$\\ell(y,y')=(2y-y')^{2}$ si $y,y'\\in\\mathbb{R}$"
+            ],
+            "answer": [
+                1,
+                2
+            ],
+            "explanation": "(a) n’est pas adaptée : la perte cubique peut être négative et n’est pas convexe. (b) est une perte 0–1 (multipliée par 2) : elle est valide pour la classification même si elle n’est pas convexe ni différentiable. (c) est l’entropie croisée binaire, perte standard et « propre » pour la classification binaire. (d) est mal spécifiée : la perte est nulle quand $y'=2y$ et non quand $y'=y$ ; elle ne cible donc pas correctement la variable à prédire.",
+            "tags": [
+                "perte",
+                "classification",
+                "régression",
+                "entropie croisée",
+                "0-1 loss"
+            ]
+        },
+        {
+            "id": "2022-q003",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "Avec lequel ou lesquels de ces échantillons peut-on estimer les hyperparamètres d’un modèle d’apprentissage supervisé ?",
+            "choices": [
+                "L’échantillon d’apprentissage sans procédure particulière.",
+                "L’échantillon de test.",
+                "L’échantillon de validation dans le cas d’une procédure de validation simple.",
+                "L’échantillon d’apprentissage avec procédure de validation croisée."
+            ],
+            "answer": [
+                2,
+                3
+            ],
+            "explanation": "Les hyperparamètres sont ajustés à partir d’un ensemble de validation (procédure simple) ou via validation croisée sur l’échantillon d’apprentissage. L’échantillon de test ne doit pas être utilisé pour ce réglage, car il sert uniquement à évaluer la performance finale du modèle.",
+            "tags": [
+                "hyperparamètres",
+                "validation",
+                "cross-validation",
+                "échantillons"
+            ]
+        },
+        {
+            "id": "2022-q004",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "On a simulé un échantillon de taille $n=1000$ selon le modèle : pour $i=1,\\dots,1000$, $X_i^1 \\sim \\mathcal{N}(0,1)$, $X_i^2 \\sim \\mathcal{N}(1,1)$ avec $X_i^1$ et $X_i^2$ indépendants, $U_i^1 \\sim \\mathcal{U}(0,1)$, $U_i^2 \\sim \\mathcal{U}(10,15)$ et $Y_i = \\text{Voir photo}$. \n\nSeules les variables $X_i^1$ et $X_i^2$ sont considérées comme variables explicatives. À quoi est égal le risque de Bayes ?",
+            "image": "/Images/apprentissage_supervise/as-2022-q004.png",
+            "choices": [
+                "2/10",
+                "5/10",
+                "7/10",
+                "3/10"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le risque de Bayes correspond au taux d’erreur minimal théorique atteignable en utilisant la règle de Bayes. Ici, après analyse des probabilités conditionnelles, ce risque vaut $3/10$.",
+            "tags": [
+                "risque de Bayes",
+                "classification",
+                "probabilités"
+            ]
+        },
+        {
+            "id": "2022-q005",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "On cherche à prédire la valeur d’une variable quantitative $Y$ en fonction de deux variables explicatives, la première quantitative $X_1$ et la seconde qualitative non ordonnée $X_2$, à partir de l’échantillon d’apprentissage suivant. On utilise l’algorithme des plus proches voisins, avec une distance entre deux individus $i$ et $j$ définie par $$d(individu_i, individu_j) = |X_i^1 - X_j^1| + 0.5 \\cdot 1(X_i^2 \\neq X_j^2).$$ Quelle est la valeur prédite pour un nouvel individu $i$ tel que $X_i^1 = 3.5$ et $X_i^2 = \\text{rouge}$ en utilisant un nombre $k=1$ de plus proches voisins ?",
+            "image": "/Images/apprentissage_supervise/as-2022-q005.png",
+            "choices": [
+                "2.5",
+                "1.5",
+                "1.1",
+                "3.7"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "On calcule les distances entre le nouvel individu $(3.5, rouge)$ et les points de l’échantillon. Le plus proche voisin est $(3, vert)$ avec $Y=1.5$ (distance $|3.5-3|+0.5=1$), plus faible que toutes les autres. Donc la valeur prédite est $1.5$.",
+            "tags": [
+                "k-plus-proches-voisins",
+                "distance",
+                "régression",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2022-q006",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "On cherche à prédire la valeur d’une variable quantitative $Y$ en fonction de deux variables explicatives, la première quantitative $X_1$ et la seconde qualitative non ordonnée $X_2$, à partir de l’échantillon d’apprentissage suivant. On utilise l’algorithme des plus proches voisins, avec une distance entre deux individus $i$ et $j$ définie par $$d(individu_i, individu_j) = |X_i^1 - X_j^1| + 0.5 \\cdot 1(X_i^2 \\neq X_j^2).$$ Quelle est la valeur prédite pour un nouvel individu $i$ tel que $X_i^1 = 3.5$ et $X_i^2 = \\text{rouge}$ en utilisant un nombre $k=3$ de plus proches voisins ?",
+            "image": "/Images/apprentissage_supervise/as-2022-q005.png",
+            "choices": [
+                "1.7",
+                "2.2",
+                "3",
+                "2.6"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "On calcule les distances entre le nouvel individu $(3.5, rouge)$ et les points de l’échantillon. Les trois plus proches voisins sont ceux associés aux valeurs $Y=1.5$, $2.5$ et $1.1$. La prédiction est leur moyenne : $(1.5 + 2.5 + 1.1)/3 = 1.7$.",
+            "tags": [
+                "k-plus-proches-voisins",
+                "distance",
+                "régression",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2022-q007",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "Pour trouver le nombre optimal de plus proches voisins sur ce problème, on a utilisé une fonction similaire à `tune.control` de la librairie `e1071` en R (utilisée dans le TP1) et on a obtenu le résultat ci-dessous. À quoi correspond l’axe des ordonnées ?",
+            "image": "/Images/apprentissage_supervise/as-2022-q007.png",
+            "choices": [
+                "L’erreur quadratique moyenne (MSE) sur l’échantillon d’apprentissage.",
+                "L’erreur quadratique moyenne (MSE) en validation croisée.",
+                "Le taux de mal classés sur l’échantillon d’apprentissage.",
+                "Le taux de mal classés en validation croisée."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le graphique représente l’évolution de l’erreur quadratique moyenne estimée par validation croisée en fonction du nombre de voisins $k$. C’est ce critère qui est utilisé pour choisir le $k$ optimal afin d’éviter le surapprentissage.",
+            "tags": [
+                "k-plus-proches-voisins",
+                "validation croisée",
+                "MSE",
+                "sélection d’hyperparamètres"
+            ]
+        },
+        {
+            "id": "2022-q008",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "Dans lequel ou lesquels des cas de types de variables peut-on utiliser l’analyse discriminante ?",
+            "choices": [
+                "Variables explicatives et variable à expliquer quantitatives.",
+                "Variables explicatives quantitatives et variable à expliquer qualitative.",
+                "Variables explicatives qualitatives et quantitatives et variable à expliquer qualitative.",
+                "Variables explicatives qualitatives et variable à expliquer qualitative."
+            ],
+            "answer": [
+                1,
+                2,
+                3
+            ],
+            "explanation": "L’analyse discriminante s’applique lorsque la variable à expliquer (variable cible) est qualitative. Elle est conçue pour traiter des variables explicatives quantitatives (cas classique), mais peut être adaptée à des mélanges qualitatif/quantitatif via des méthodes généralisées.",
+            "tags": [
+                "analyse discriminante",
+                "classification",
+                "variables explicatives"
+            ]
+        },
+        {
+            "id": "2022-q009",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "Pour un problème d’apprentissage supervisé avec une variable à expliquer $Y$ qualitative pouvant prendre trois valeurs possibles et deux variables explicatives quantitatives $X_1$ et $X_2$, on a l’échantillon d’apprentissage ci-dessous, où $g_i$ pour $i=1,\\dots,3$ est le barycentre des variables explicatives pour la i-ème catégorie de $Y$ et $g$ est le barycentre de tous les points. Quel serait l’axe discriminant construit par une analyse discriminante linéaire ?",
+            "image": "/Images/apprentissage_supervise/as-2022-q009.png",
+            "choices": [
+                "(a)",
+                "(b)",
+                "(c)",
+                "(d)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L’axe discriminant est celui qui maximise la séparation entre les classes tout en passant par le barycentre global $g$. Ici, il correspond à l’axe (d).",
+            "tags": [
+                "analyse discriminante",
+                "classification",
+                "axe discriminant",
+                "visualisation"
+            ]
+        },
+        {
+            "id": "2022-q010",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "Pour un problème d’apprentissage supervisé avec une variable à expliquer $Y$ qualitative pouvant prendre trois valeurs possibles et deux variables explicatives quantitatives $X_1$ et $X_2$, on a l’échantillon d’apprentissage ci-dessous, où $g_i$ pour $i=1,\\dots,3$ est le barycentre des variables explicatives pour la i-ème catégorie de $Y$ et $g$ est le barycentre de tous les points. \n\nDans ce cas, en utilisant laquelle ou lesquelles des méthodes ci-dessous recommanderiez-vous de choisir la règle de décision ?",
+            "image": "/Images/apprentissage_supervise/as-2022-q009.png",
+            "choices": [
+                "Analyse discriminante linéaire.",
+                "Analyse discriminante quadratique.",
+                "Analyse discriminante bayésienne.",
+                "Analyse discriminante linéaire avec ACM au préalable."
+            ],
+            "answer": [
+                1,
+                2
+            ],
+            "explanation": "Dans ce contexte avec trois classes et des distributions qui ne sont pas séparées par des frontières linéaires, l’analyse discriminante quadratique ou bayésienne est plus adaptée qu’une simple analyse discriminante linéaire.",
+            "tags": [
+                "analyse discriminante",
+                "quadratique",
+                "bayésienne",
+                "classification"
+            ]
+        },
+        {
+            "id": "2022-q011",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "Quelle est ou quelles sont les hypothèses faites pour construire le classifieur bayésien naïf ?",
+            "choices": [
+                "La formule de Bayes.",
+                "L’hypothèse d’indépendance des variables explicatives conditionnellement aux modalités prises par la variable à expliquer.",
+                "La formule des probabilités totales.",
+                "Les variables explicatives suivent une loi normale multivariée."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le classifieur bayésien naïf repose sur l’hypothèse d’indépendance conditionnelle des variables explicatives sachant la variable cible. La formule de Bayes est un outil utilisé, mais ce n’est pas une hypothèse. L’hypothèse de normalité multivariée est celle de l’analyse discriminante, pas du naïf Bayes.",
+            "tags": [
+                "bayésien naïf",
+                "indépendance conditionnelle",
+                "classification"
+            ]
+        },
+        {
+            "id": "2022-q012",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "Lors du premier TP, vous avez utilisé la validation croisée pour choisir les hyperparamètres d’un classifieur bayésien naïf, avec les résultats ci-dessous. À quoi correspond un choix d’hyperparamètre « FALSE » pour l’utilisation d’un noyau ?",
+            "image": "/Images/apprentissage_supervise/as-2022-q012.png",
+            "choices": [
+                "Une correction de Laplace égale à 1.",
+                "Une loi normale pour chaque variable explicative conditionnellement aux modalités de la variable à expliquer.",
+                "Une largeur de bande égale à 0.",
+                "Autre."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Lorsque l’option « kernel » est mise à FALSE, le classifieur bayésien naïf suppose que chaque variable explicative numérique suit une loi normale conditionnellement à la classe. Avec TRUE, une estimation par noyau est utilisée à la place.",
+            "tags": [
+                "bayésien naïf",
+                "hyperparamètres",
+                "validation croisée",
+                "loi normale"
+            ]
+        },
+        {
+            "id": "2022-q013",
+            "qcm": "Partiel-2022",
+            "theme": "Apprentissage supervisé",
+            "question": "Lors du premier TP, vous avez utilisé la validation croisée pour choisir les hyperparamètres d’un classifieur bayésien naïf, avec les résultats ci-dessous. Dans ce cas, quel choix d’hyperparamètres recommandez-vous ?",
+            "image": "/Images/apprentissage_supervise/as-2022-q012.png",
+            "choices": [
+                "Estimation gaussienne de la densité des régresseurs avec correction de Laplace égale à 0.",
+                "Estimation par noyau de la densité des régresseurs avec largeur de bande égale à 5 et correction de Laplace égale à 5.",
+                "Estimation par noyau de la densité des régresseurs avec largeur de bande égale à 5 et correction de Laplace égale à 0.",
+                "Estimation par noyau de la densité des régresseurs avec largeur de bande égale à 1 et correction de Laplace égale à 0."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Selon les résultats de la validation croisée (voir graphique), l’estimation par noyau avec une largeur de bande de 1 et correction de Laplace égale à 0 minimise l’erreur. C’est donc l’hyperparamètre recommandé.",
+            "tags": [
+                "bayésien naïf",
+                "hyperparamètres",
+                "validation croisée",
+                "Laplace",
+                "estimation par noyau"
+            ]
+        },
+        {
+            "id": "2023-q001",
+            "qcm": "Partiel-2023",
+            "theme": "Apprentissage supervisé",
+            "question": "Quel est le but de l’apprentissage supervisé en général ?",
+            "choices": [
+                "Maximiser la complexité du modèle.",
+                "Maximiser le risque empirique.",
+                "Apprendre à partir de données étiquetées pour faire des prédictions sur de nouvelles données.",
+                "Minimiser la taille de l’ensemble de test."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L’apprentissage supervisé consiste à utiliser des données étiquetées pour apprendre une fonction qui permet de prédire correctement sur de nouvelles données, c’est-à-dire de généraliser.",
+            "tags": [
+                "objectif",
+                "apprentissage supervisé",
+                "prédiction",
+                "généralisation"
+            ]
+        },
+        {
+            "id": "2023-q002",
+            "qcm": "Partiel-2023",
+            "theme": "Apprentissage supervisé",
+            "question": "Qu’est-ce qu’une fonction de perte (ou de risque) en apprentissage supervisé ?",
+            "choices": [
+                "Une fonction qui mesure la similarité entre deux ensembles de données.",
+                "Une fonction qui évalue les performances d’un modèle en comparant ses prédictions aux valeurs réelles.",
+                "Une fonction utilisée pour réduire la complexité d’un modèle.",
+                "Une fonction qui calcule la probabilité de succès d’un modèle."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La fonction de perte mesure l’écart entre les prédictions du modèle et les valeurs réelles, ce qui permet d’évaluer et d’optimiser les performances du modèle.",
+            "tags": [
+                "fonction de perte",
+                "risque",
+                "performance",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2023-q003",
+            "qcm": "Partiel-2023",
+            "theme": "Apprentissage supervisé",
+            "question": "Quelle fonction de perte (ou de risque) est souvent utilisée pour les problèmes de régression ?",
+            "choices": [
+                "Entropie croisée.",
+                "Erreur quadratique moyenne.",
+                "Perte 0-1.",
+                "Entropie de Shannon."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "En régression, la fonction de perte la plus courante est l’erreur quadratique moyenne (MSE), qui mesure l’écart quadratique entre les valeurs prédites et observées.",
+            "tags": [
+                "fonction de perte",
+                "régression",
+                "MSE",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2023-q004",
+            "qcm": "Partiel-2023",
+            "theme": "Apprentissage supervisé",
+            "question": "Qu’est-ce que le risque empirique en apprentissage supervisé ?",
+            "choices": [
+                "L’erreur de généralisation du modèle.",
+                "L’erreur de prédiction sur l’ensemble d’entraînement.",
+                "La complexité du modèle.",
+                "La courbe ROC."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le risque empirique correspond à l’erreur calculée sur l’échantillon d’apprentissage, c’est-à-dire la moyenne des pertes observées sur les données d’entraînement.",
+            "tags": [
+                "risque empirique",
+                "erreur d’entraînement",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2023-q005",
+            "qcm": "Partiel-2023",
+            "theme": "Apprentissage supervisé",
+            "question": "Comment fonctionne la méthode des forêts aléatoires ?",
+            "choices": [
+                "Elle construit un seul arbre de décision.",
+                "Elle combine les prédictions de plusieurs arbres pour améliorer la performance.",
+                "Elle attribue un poids égal à toutes les caractéristiques.",
+                "Elle utilise la méthode du plus proche voisin pour la classification."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les forêts aléatoires (random forests) reposent sur la construction de multiples arbres de décision, chacun entraîné sur des échantillons bootstrapés et avec des sous-ensembles de variables aléatoires, puis sur la combinaison de leurs prédictions (vote majoritaire ou moyenne).",
+            "tags": [
+                "forêts aléatoires",
+                "arbres de décision",
+                "bagging",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2023-q006",
+            "qcm": "Partiel-2023",
+            "theme": "Apprentissage supervisé",
+            "question": "Qu’est-ce que l’overfitting (surapprentissage) dans le contexte de l’apprentissage supervisé ?",
+            "choices": [
+                "C’est lorsque le modèle ne parvient pas à apprendre des données.",
+                "C’est lorsque le modèle s’adapte trop bien aux données d’entraînement mais ne généralise pas bien.",
+                "C’est une condition nécessaire pour un bon modèle.",
+                "C’est un synonyme de sous-apprentissage."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’overfitting survient quand un modèle apprend trop précisément les données d’entraînement (y compris le bruit), ce qui empêche une bonne généralisation sur de nouvelles données.",
+            "tags": [
+                "overfitting",
+                "surapprentissage",
+                "généralisation",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2023-q007",
+            "qcm": "Partiel-2023",
+            "theme": "Apprentissage supervisé",
+            "question": "Qu’est-ce que la matrice de confusion dans le contexte de la classification ?",
+            "choices": [
+                "Une matrice qui représente la complexité du modèle.",
+                "Une matrice qui indique combien de fois le modèle a sous-estimé les valeurs réelles.",
+                "Une matrice qui montre les vrais positifs, faux positifs, vrais négatifs et faux négatifs.",
+                "Une matrice qui mesure la complexité du modèle."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La matrice de confusion est un outil d’évaluation des performances d’un modèle de classification. Elle décompose les prédictions en quatre catégories : vrais positifs (VP), faux positifs (FP), vrais négatifs (VN) et faux négatifs (FN).",
+            "tags": [
+                "matrice de confusion",
+                "classification",
+                "évaluation",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2023-q008",
+            "qcm": "Partiel-2023",
+            "theme": "Apprentissage supervisé",
+            "question": "Quelle est la principale différence entre la régression et la classification ?",
+            "choices": [
+                "La régression consiste à prédire des catégories, tandis que la classification consiste à prédire des valeurs continues.",
+                "La régression consiste à prédire des valeurs continues, tandis que la classification consiste à prédire des catégories.",
+                "La régression est basée sur des arbres de décision, tandis que la classification est basée sur des plus proches voisins.",
+                "La régression utilise la validation croisée, tandis que la classification utilise la validation simple."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La différence fondamentale est que la régression prédit une variable quantitative continue, tandis que la classification prédit une variable qualitative (catégorielle).",
+            "tags": [
+                "régression",
+                "classification",
+                "apprentissage supervisé",
+                "prédiction"
+            ]
+        },
+        {
+            "id": "2023-q009",
+            "qcm": "Partiel-2023",
+            "theme": "Apprentissage supervisé",
+            "question": "Dans la validation croisée à B-blocs, comment les données sont-elles divisées ?",
+            "choices": [
+                "Les données sont divisées en K sous-ensembles de taille égale, et le modèle est entraîné K fois, en utilisant un sous-ensemble différent comme ensemble de test à chaque itération.",
+                "Les données sont divisées en deux ensembles, un pour l’entraînement et un pour la validation.",
+                "Les données sont divisées en un sous-ensemble d’entraînement et un sous-ensemble de test à proportions égales.",
+                "Les données ne sont pas divisées, mais le modèle est évalué sur plusieurs sous-ensembles de test distincts."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La validation croisée à K-blocs (ou K-fold cross-validation) consiste à diviser l’échantillon en K sous-ensembles de taille similaire. Le modèle est entraîné K fois, chaque fois sur K-1 blocs et évalué sur le bloc restant, ce qui permet une estimation robuste des performances.",
+            "tags": [
+                "validation croisée",
+                "évaluation modèle",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2023-q010",
+            "qcm": "Partiel-2023",
+            "theme": "Apprentissage supervisé",
+            "question": "Quel rôle joue la validation croisée ?",
+            "choices": [
+                "Elle aide à choisir le modèle le plus complexe.",
+                "Elle permet de tester différents algorithmes d’apprentissage.",
+                "Elle évalue la performance du modèle sur différentes valeurs d’hyperparamètres et aide à sélectionner les meilleurs.",
+                "Elle ne joue aucun rôle dans l’optimisation des hyperparamètres."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La validation croisée est utilisée pour estimer la performance d’un modèle et sélectionner les hyperparamètres optimaux, en évitant le surapprentissage et en favorisant la généralisation.",
+            "tags": [
+                "validation croisée",
+                "sélection d’hyperparamètres",
+                "évaluation modèle",
+                "apprentissage supervisé"
+            ]
+        }
+    ]
+}
