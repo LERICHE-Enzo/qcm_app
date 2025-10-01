@@ -643,7 +643,7 @@
             "qcm": "Partiel-2023",
             "theme": "Microéconomie",
             "question": "Deux éleveurs, Farmer A et Farmer B, partagent un pré où leurs vaches peuvent paître. Chaque fermier possède deux vaches et veut maximiser ses gains. Plus la vache est grosse, plus le prix est élevé, et le poids dépend de la quantité d’herbe disponible, qui diminue avec le nombre de vaches dans le pré. Une vache qui ne broute rien ne rapporte rien. Le tableau des gains est donné ci-dessous : (Image ci-dessous). Quelles sont les stratégies d'équilibre de Nash pour ce jeu ?",
-            "image": "/Images/microeconomie/microeconomie/microeconomie-2023-q030.png",
+            "image": "/Images/microeconomie/microeconomie-2023-q030.png",
             "choices": [
                 "Il n’y a pas d’équilibre.",
                 "Il y a un seul équilibre : (2,2).",
@@ -690,7 +690,7 @@
             "qcm": "Partiel-2023",
             "theme": "Microéconomie",
             "question": "On considère le jeu coopératif (N, v) avec N = {1,2,3} et la fonction caractéristique ci-dessous : (Image ci-dessous). Quelle est l’expression du Noyau (Core) de ce jeu ?",
-            "image": "/Images/microeconomie-2023-q032.png",
+            "image": "/Images/microeconomie/microeconomie-2023-q032.png",
             "choices": [
                 "C(N,v) = { x ∈ ℝ^3_+ : x1 + x2 + x3 = 6, x1 ≤ 4, x2 ≤ 2, x3 ≤ 1 }.",
                 "C(N,v) = { x ∈ ℝ^3_+ : x1 + x2 + x3 = 6, x1 ≤ 5, x2 ≤ 1, x3 ≤ 2 }.",
@@ -712,7 +712,7 @@
             "qcm": "Partiel-2023",
             "theme": "Microéconomie",
             "question": "On considère le jeu coopératif (N, v) avec N = {1,2,3} et la fonction caractéristique ci-dessous : (Image ci-dessous). Quelle est la valeur de Shapley de ce jeu ?",
-            "image": "/Images/microeconomie-2023-q033.png",
+            "image": "/Images/microeconomie/microeconomie-2023-q033.png",
             "choices": [
                 "Sh(N, v) = (8/3, 5/3, 5/3).",
                 "Sh(N, v) = (10/3, 5/3, 4/3).",
@@ -1550,7 +1550,7 @@
             "qcm": "Partiel-2024",
             "theme": "Microéconomie",
             "question": "Deux éleveurs de vaches, A et B, partagent un pré dans lequel leurs animaux peuvent paître. Chaque éleveur possède deux vaches et cherche à maximiser son revenu issu de la vente. Le poids (et donc le prix) d’une vache dépend négativement du nombre total de vaches présentes dans le pré : 1 vache → prix = 8 ; 2 vaches → prix = 5 ; 3 vaches → prix = 3 ; 4 vaches → prix = 2. Une vache non placée dans le pré ne rapporte rien. Construire la matrice des gains (paiement matrix) pour ce jeu entre les deux éleveurs.",
-            "image": "/Images/microeconomie-2024-q037.png",
+            "image": "/Images/microeconomie/microeconomie-2024-q037.png",
             "choices": [
                 "Choix A",
                 "Choix B",
@@ -1593,7 +1593,7 @@
             "qcm": "Partiel-2024",
             "theme": "Microéconomie",
             "question": "Une ville possède 3 musées {1,2,3} et propose un pass donnant accès aux trois musées pour un prix normalisé à 1. On veut répartir les recettes entre musées à l’aide de la théorie des jeux coopératifs. Six visiteurs {a,b,c,d,e,f} viennent cette semaine : a et d visitent les trois musées ; b visite 1 et 2 ; f visite 2 et 3 ; c visite 1 ; e visite 2. Les joueurs sont les musées. Pour toute coalition S de musées, la valeur v(S) est le nombre de visiteurs qui ne visitent que les musées de S (c’est-à-dire dont l’ensemble de visites est inclus dans S). Quelle est la fonction caractéristique v(S) de ce jeu ?",
-            "image": "/Images/microeconomie-2024-q039.png",
+            "image": "/Images/microeconomie/microeconomie-2024-q039.png",
             "choices": [
                 "A",
                 "B",
