@@ -517,6 +517,667 @@
                 "évaluation modèle",
                 "apprentissage supervisé"
             ]
+        },
+        {
+            "id": "2024-q001",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Quelle est la principale différence entre l’apprentissage supervisé et l’apprentissage non supervisé ?",
+            "choices": [
+                "L’apprentissage supervisé nécessite des données non étiquetées.",
+                "L’apprentissage supervisé utilise des données étiquetées.",
+                "L’apprentissage non supervisé prédit des étiquettes pour de nouvelles données.",
+                "L’apprentissage supervisé ne peut être utilisé que pour les problèmes de classification."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La différence fondamentale est que l’apprentissage supervisé repose sur des données étiquetées (paires entrée-sortie), alors que l’apprentissage non supervisé utilise des données non étiquetées pour découvrir des structures ou regroupements.",
+            "tags": [
+                "apprentissage supervisé",
+                "apprentissage non supervisé",
+                "étiquettes",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-q002",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Quel est un exemple de problème de régression en apprentissage supervisé ?",
+            "choices": [
+                "Classer les emails en \"spam\" ou \"non-spam\" à partir de leurs caractéristiques.",
+                "Segmenter un ensemble de clients en groupes basés sur leurs achats.",
+                "Prédire le prix de vente d’une maison à partir de ses caractéristiques.",
+                "Identifier la catégorie à laquelle appartient une image."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un problème de régression consiste à prédire une variable quantitative continue. Ici, prédire le prix d’une maison correspond à une variable continue, contrairement aux autres exemples qui relèvent de la classification ou du clustering.",
+            "tags": [
+                "régression",
+                "apprentissage supervisé",
+                "exemple"
+            ]
+        },
+        {
+            "id": "2024-q003",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Qu’est-ce que le risque empirique en apprentissage supervisé ?",
+            "choices": [
+                "La probabilité qu’un modèle échoue lors de son déploiement en production.",
+                "Le coût associé à l’utilisation d’un modèle spécifique pour une tâche de prédiction.",
+                "La moyenne des erreurs sur l’ensemble d’entraînement.",
+                "La différence entre les erreurs de prédiction sur les ensembles d’entraînement et de test."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le risque empirique correspond à la moyenne des erreurs (ou de la fonction de perte) calculée sur l’échantillon d’entraînement. Il mesure l’adéquation du modèle aux données vues pendant l’apprentissage.",
+            "tags": [
+                "risque empirique",
+                "apprentissage supervisé",
+                "erreur d’entraînement"
+            ]
+        },
+        {
+            "id": "2024-q004",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Quelle est une cause commune du sous-apprentissage ?",
+            "choices": [
+                "Un modèle trop simple incapable de capturer la complexité des données.",
+                "Un trop grand nombre de caractéristiques par rapport aux observations.",
+                "Un entraînement excessif du modèle sur les données d’entraînement.",
+                "L’utilisation de la régularisation avec un paramètre trop élevé."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le sous-apprentissage (underfitting) survient lorsque le modèle est trop simple pour capturer les relations présentes dans les données. Une des causes les plus fréquentes est l’utilisation d’un modèle trop peu complexe.",
+            "tags": [
+                "sous-apprentissage",
+                "underfitting",
+                "modèle simple",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q005",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Comment peut-on généralement résoudre le problème de sur-apprentissage ?",
+            "choices": [
+                "En augmentant le nombre de caractéristiques utilisées par le modèle.",
+                "En entraînant le modèle plus longtemps.",
+                "En utilisant des techniques de régularisation ou en réduisant la complexité du modèle.",
+                "En collectant plus de données d’entraînement."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le sur-apprentissage (overfitting) survient lorsque le modèle est trop complexe et s’adapte trop précisément aux données d’entraînement. Pour le résoudre, on utilise des techniques de régularisation (L1, L2, dropout, etc.) ou on réduit la complexité du modèle afin de favoriser la généralisation.",
+            "tags": [
+                "sur-apprentissage",
+                "overfitting",
+                "régularisation",
+                "complexité du modèle",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q006",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Quelle est une caractéristique de la validation croisée k-fold ?",
+            "choices": [
+                "Le modèle est entraîné k fois sur le même ensemble d'entraînement.",
+                "L'ensemble de données est divisé en k sous-ensembles, et le modèle est entraîné k fois, chaque fois en utilisant un sous-ensemble différent comme ensemble de test.",
+                "Elle ne peut être utilisée qu'avec des modèles de régression linéaire.",
+                "Elle requiert que les données soient divisées en k sous-ensembles de taille identique, avec un sous-ensemble pour l'entraînement et les k-1 restants pour le test."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "En validation croisée k-fold, les données sont divisées en k parties de taille similaire. Le modèle est entraîné k fois, à chaque fois sur k-1 blocs et évalué sur le bloc restant. Cela permet d'obtenir une estimation robuste de la performance du modèle.",
+            "tags": [
+                "validation croisée",
+                "k-fold",
+                "évaluation modèle",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q007",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Quel est un inconvénient de la validation croisée k-fold comparé à l’utilisation d’un simple ensemble de validation ?",
+            "choices": [
+                "Elle ne permet pas une évaluation précise de la capacité de généralisation du modèle.",
+                "Elle peut être plus coûteuse en termes de calcul, car elle nécessite d’entraîner le modèle plusieurs fois.",
+                "Elle est moins fiable dans l’évaluation de la performance du modèle.",
+                "Elle ne peut être utilisée que pour des tâches de classification."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’inconvénient principal de la validation croisée k-fold est son coût computationnel, car le modèle doit être entraîné k fois (autant que le nombre de plis). En revanche, elle fournit une estimation robuste des performances.",
+            "tags": [
+                "validation croisée",
+                "k-fold",
+                "inconvénients",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q008",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Le k dans k-NN signifie :",
+            "choices": [
+                "Le nombre de voisins les plus proches à considérer.",
+                "Le nombre de classes dans le jeu de données.",
+                "Le type de noyau utilisé pour le lissage.",
+                "La dimensionnalité des données d’entrée."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Dans l’algorithme des k plus proches voisins (k-NN), le paramètre k correspond au nombre de voisins à prendre en compte pour prédire la valeur de sortie d’une nouvelle observation.",
+            "tags": [
+                "k-NN",
+                "paramètre k",
+                "plus proches voisins",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q009",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Quelle est la conséquence d’un k très petit dans l’algorithme k-NN ?",
+            "choices": [
+                "Risque accru de sous-apprentissage.",
+                "Risque accru de sur-apprentissage.",
+                "Diminution significative du temps de calcul.",
+                "Meilleure généralisation sur les données de test."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Avec un k très petit, le modèle k-NN devient trop sensible aux points de bruit et aux particularités de l’échantillon d’apprentissage, ce qui conduit à un risque accru de sur-apprentissage (overfitting).",
+            "tags": [
+                "k-NN",
+                "sur-apprentissage",
+                "hyperparamètres",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q010",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Comment le lissage par noyau diffère-t-il du k-NN standard ?",
+            "choices": [
+                "Il ne prend en compte que le voisin le plus proche.",
+                "Il utilise une fonction de perte pour optimiser k.",
+                "Il pondère les voisins selon leur distance.",
+                "Il nécessite des données étiquetées de manière continue."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le lissage par noyau diffère du k-NN standard en attribuant un poids à chaque voisin en fonction de sa distance, plutôt que de considérer simplement les k plus proches voisins avec le même poids.",
+            "tags": [
+                "k-NN",
+                "lissage par noyau",
+                "pondération",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q011",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Le classifieur Bayésien naïf repose sur quelle hypothèse ?",
+            "choices": [
+                "Toutes les caractéristiques sont dépendantes les unes des autres.",
+                "Les caractéristiques sont indépendantes les unes des autres dans chaque classe.",
+                "Les données suivent une distribution normale.",
+                "Le nombre de caractéristiques est plus important que le nombre d’observations."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le classifieur Bayésien naïf repose sur l’hypothèse d’indépendance conditionnelle des variables explicatives, données la classe. Cela simplifie considérablement le calcul des probabilités.",
+            "tags": [
+                "classifieur bayésien naïf",
+                "indépendance conditionnelle",
+                "probabilités",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q012",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "En quoi l’analyse discriminante linéaire Bayésienne (ADL) diffère-t-elle du classifieur bayésien naïf en termes d’hypothèses sur les données ?",
+            "choices": [
+                "L’ADL ne suppose aucune distribution spécifique des données, contrairement au classifieur bayésien naïf.",
+                "L’ADL suppose que les données de chaque classe proviennent d’une distribution gaussienne avec des matrices de covariance identiques, tandis que le classifieur bayésien naïf suppose l’indépendance des caractéristiques.",
+                "Le classifieur bayésien naïf est une forme spécifique de l’ADL.",
+                "L’ADL et le classifieur bayésien naïf font tous deux l’hypothèse que les caractéristiques sont indépendantes."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’ADL repose sur l’hypothèse que les données de chaque classe suivent une distribution gaussienne avec des matrices de covariance identiques, tandis que le classifieur bayésien naïf repose sur l’hypothèse d’indépendance conditionnelle des variables explicatives.",
+            "tags": [
+                "analyse discriminante linéaire",
+                "bayésien naïf",
+                "hypothèses",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q013",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Quel est l’objectif principal de l’analyse discriminante Bayésienne ?",
+            "choices": [
+                "Classifier les données en se basant sur des probabilités a priori.",
+                "Trouver une frontière linéaire ou quadratique qui sépare au mieux les classes.",
+                "Réduire la dimensionnalité des données.",
+                "Estimer la densité de chaque classe dans l’espace des caractéristiques."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’analyse discriminante bayésienne (linéaire ou quadratique) a pour objectif principal de déterminer une frontière de décision qui sépare au mieux les classes dans l’espace des caractéristiques.",
+            "tags": [
+                "analyse discriminante",
+                "classification",
+                "apprentissage supervisé",
+                "frontière de décision"
+            ]
+        },
+        {
+            "id": "2024-q014",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Quelle est la différence entre l'analyse discriminante linéaire (ADL) et l'analyse discriminante quadratique (ADQ) ?",
+            "choices": [
+                "L'ADL est utilisée pour les problèmes de régression, tandis que l'ADQ est utilisée pour la classification.",
+                "L'ADL suppose que les données suivent une distribution normale, mais pas l'ADQ.",
+                "L'ADL suppose que toutes les classes ont la même matrice de covariance, contrairement à l'ADQ.",
+                "L'ADQ est moins sensible aux valeurs aberrantes que l'ADL."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La principale différence entre ADL et ADQ est que l’ADL suppose que toutes les classes partagent la même matrice de covariance, ce qui conduit à des frontières linéaires, tandis que l’ADQ autorise des matrices de covariance différentes par classe, ce qui donne des frontières quadratiques.",
+            "tags": [
+                "analyse discriminante",
+                "ADL",
+                "ADQ",
+                "classification",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q015",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Qu'est-ce qu'un arbre de décision CART ?",
+            "choices": [
+                "Un modèle d’apprentissage supervisé pouvant être utilisé pour des tâches de classification et de régression.",
+                "Une méthode de clustering utilisée exclusivement pour les données catégorielles.",
+                "Une méthode d’estimation de densité constante par morceaux.",
+                "Une technique de réduction de dimensionalité."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les arbres de décision CART (Classification And Regression Trees) sont des modèles d’apprentissage supervisé capables de traiter à la fois des tâches de classification et de régression, en partitionnant l’espace des données en sous-régions homogènes.",
+            "tags": [
+                "arbres de décision",
+                "CART",
+                "classification",
+                "régression",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q016",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Quel est l’avantage principal des forêts aléatoires par rapport aux arbres de décision uniques ?",
+            "choices": [
+                "Elles nécessitent moins de temps pour l’entraînement.",
+                "Elles réduisent le risque de sur-apprentissage en combinant plusieurs arbres.",
+                "Elles produisent des modèles plus simples et plus interprétables.",
+                "Elles fonctionnent mieux avec des ensembles de données de petite taille."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les forêts aléatoires (Random Forests) réduisent le risque de surapprentissage en agrégeant les prédictions de plusieurs arbres construits sur des échantillons bootstrapés et des sous-ensembles de variables. Cela améliore la robustesse et la généralisation par rapport à un arbre de décision unique.",
+            "tags": [
+                "forêts aléatoires",
+                "arbres de décision",
+                "surapprentissage",
+                "bagging",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q017",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Dans les forêts aléatoires, le caractère « aléatoire » est introduit :",
+            "choices": [
+                "En utilisant un sous-ensemble aléatoire des caractéristiques à chaque division.",
+                "En bootstrapant les données d’entraînement.",
+                "En initialisant les arbres au hasard.",
+                "En utilisant à la fois un sous-ensemble des caractéristiques à chaque division et le bootstrap des données d’entraînement."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Dans les forêts aléatoires, l’aléatoire provient de deux sources : le bootstrap des données d’entraînement (bagging) et la sélection aléatoire d’un sous-ensemble de variables à chaque division des arbres. Cela permet de réduire la corrélation entre les arbres et d’améliorer la performance globale.",
+            "tags": [
+                "forêts aléatoires",
+                "bagging",
+                "bootstrap",
+                "sélection aléatoire de variables",
+                "apprentissage supervisé"
+            ]
+        },
+        {
+            "id": "2024-q018",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Que représente un 'faux positif' dans une matrice de confusion ?",
+            "choices": [
+                "Une instance positive correctement identifiée.",
+                "Une instance négative correctement identifiée.",
+                "Une instance négative incorrectement classée comme positive.",
+                "Une instance positive incorrectement classée comme négative."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un faux positif (FP) correspond à une instance négative qui a été prédite à tort comme positive par le modèle. Par exemple, un email non-spam classé comme spam.",
+            "tags": [
+                "matrice de confusion",
+                "faux positif",
+                "évaluation",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-q019",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Si un modèle de classification a une spécificité élevée mais une sensibilité faible, quel est le problème potentiel ?",
+            "choices": [
+                "Le modèle identifie correctement la majorité des instances positives.",
+                "Le modèle manque de nombreuses instances positives, mais identifie bien les instances négatives.",
+                "Le modèle est trop complexe et sur-ajusté aux données.",
+                "Le modèle est trop simple et sous-ajusté aux données."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une spécificité élevée signifie que le modèle détecte bien les instances négatives (peu de faux positifs). Une sensibilité faible indique qu'il échoue à identifier de nombreuses instances positives (beaucoup de faux négatifs).",
+            "tags": [
+                "sensibilité",
+                "spécificité",
+                "évaluation",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-q020",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Qu'est-ce que la courbe ROC illustre dans le contexte de l'Apprentissage supervisé de classification ?",
+            "choices": [
+                "La relation entre le taux de vrais positifs et le nombre total de positifs.",
+                "La performance du modèle à tous les seuils de classification en montrant la relation entre le taux de vrais positifs et le taux de faux positifs.",
+                "La précision du modèle à différents niveaux de seuil de probabilité.",
+                "La capacité du modèle à éviter le sur-apprentissage."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La courbe ROC (Receiver Operating Characteristic) montre la performance d’un modèle en traçant le taux de vrais positifs (sensibilité) en fonction du taux de faux positifs à différents seuils de classification.",
+            "tags": [
+                "ROC",
+                "classification",
+                "évaluation",
+                "sensibilité",
+                "faux positifs"
+            ]
+        },
+        {
+            "id": "2024-q018b",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Que représente un 'faux négatif' dans une matrice de confusion ?",
+            "choices": [
+                "Une instance positive correctement identifiée.",
+                "Une instance négative correctement identifiée.",
+                "Une instance négative incorrectement classée comme positive.",
+                "Une instance positive incorrectement classée comme négative."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un faux négatif (FN) correspond à une instance positive que le modèle a classée à tort comme négative. Par exemple, un email spam classé comme non-spam.",
+            "tags": [
+                "matrice de confusion",
+                "faux négatif",
+                "évaluation",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-q018c",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Que représente un 'vrai positif' dans une matrice de confusion ?",
+            "choices": [
+                "Une instance positive correctement identifiée.",
+                "Une instance négative correctement identifiée.",
+                "Une instance négative incorrectement classée comme positive.",
+                "Une instance positive incorrectement classée comme négative."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un vrai positif (VP) correspond à une instance positive que le modèle a correctement classée comme positive. Par exemple, un email spam bien identifié comme spam.",
+            "tags": [
+                "matrice de confusion",
+                "vrai positif",
+                "évaluation",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-q018d",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Que représente un 'vrai négatif' dans une matrice de confusion ?",
+            "choices": [
+                "Une instance positive correctement identifiée.",
+                "Une instance négative correctement identifiée.",
+                "Une instance négative incorrectement classée comme positive.",
+                "Une instance positive incorrectement classée comme négative."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un vrai négatif (VN) correspond à une instance négative que le modèle a correctement classée comme négative. Par exemple, un email non-spam bien identifié comme non-spam.",
+            "tags": [
+                "matrice de confusion",
+                "vrai négatif",
+                "évaluation",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-q019b",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Si un modèle de classification a une sensibilité élevée mais une spécificité faible, quel est le problème potentiel ?",
+            "choices": [
+                "Le modèle identifie correctement la majorité des instances négatives.",
+                "Le modèle identifie bien les instances positives, mais classe à tort de nombreuses instances négatives comme positives.",
+                "Le modèle est trop complexe et sur-ajusté aux données.",
+                "Le modèle est trop simple et sous-ajusté aux données."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une sensibilité élevée signifie que le modèle détecte bien les instances positives (peu de faux négatifs). Une spécificité faible indique qu'il échoue à identifier correctement les instances négatives (beaucoup de faux positifs).",
+            "tags": [
+                "sensibilité",
+                "spécificité",
+                "faux positifs",
+                "classification",
+                "évaluation"
+            ]
+        },
+        {
+            "id": "2024-q019c",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Si un modèle de classification a à la fois une sensibilité faible et une spécificité faible, quel est le problème principal ?",
+            "choices": [
+                "Le modèle identifie correctement la majorité des instances positives et négatives.",
+                "Le modèle échoue à détecter correctement à la fois les instances positives et les instances négatives.",
+                "Le modèle est sur-ajusté aux données d'entraînement.",
+                "Le modèle est un classifieur parfait."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Faible sensibilité = beaucoup de faux négatifs ; faible spécificité = beaucoup de faux positifs. Le modèle ne discrimine donc pas bien entre les classes.",
+            "tags": [
+                "sensibilité",
+                "spécificité",
+                "erreurs",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-q019d",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Si un modèle de classification a à la fois une sensibilité élevée et une spécificité élevée, que peut-on en conclure ?",
+            "choices": [
+                "Le modèle détecte correctement la majorité des instances positives et négatives.",
+                "Le modèle échoue à détecter les instances positives.",
+                "Le modèle produit beaucoup de faux positifs.",
+                "Le modèle est sous-ajusté."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Une sensibilité élevée signifie peu de faux négatifs et une spécificité élevée signifie peu de faux positifs. Le modèle est donc performant et bien équilibré.",
+            "tags": [
+                "sensibilité",
+                "spécificité",
+                "évaluation",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-bonus-q021",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Si un modèle de classification a une sensibilité faible, quel est le problème principal ?",
+            "choices": [
+                "Le modèle identifie correctement la majorité des instances positives.",
+                "Le modèle échoue à détecter un grand nombre d’instances positives (beaucoup de faux négatifs).",
+                "Le modèle identifie mal les instances négatives (beaucoup de faux positifs).",
+                "Le modèle est sur-ajusté aux données d’entraînement."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une sensibilité faible signifie que le modèle manque de nombreuses instances positives, produisant ainsi beaucoup de faux négatifs.",
+            "tags": [
+                "sensibilité faible",
+                "faux négatifs",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-bonus-q022",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Si un modèle de classification a une sensibilité élevée, que peut-on en conclure ?",
+            "choices": [
+                "Le modèle détecte correctement la majorité des instances positives.",
+                "Le modèle échoue à détecter de nombreuses instances positives.",
+                "Le modèle identifie correctement toutes les instances négatives.",
+                "Le modèle produit beaucoup de faux positifs."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Une sensibilité élevée signifie que le modèle détecte correctement la plupart des instances positives, donc peu de faux négatifs.",
+            "tags": [
+                "sensibilité élevée",
+                "positifs détectés",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-bonus-q023",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Si un modèle de classification a une spécificité faible, quel est le problème principal ?",
+            "choices": [
+                "Le modèle identifie correctement la majorité des instances négatives.",
+                "Le modèle échoue à identifier correctement de nombreuses instances négatives (beaucoup de faux positifs).",
+                "Le modèle manque beaucoup d’instances positives.",
+                "Le modèle ne généralise pas bien sur de nouvelles données."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une spécificité faible signifie que le modèle classe à tort de nombreuses instances négatives comme positives, produisant beaucoup de faux positifs.",
+            "tags": [
+                "spécificité faible",
+                "faux positifs",
+                "classification"
+            ]
+        },
+        {
+            "id": "2024-bonus-q024",
+            "qcm": "Partiel-2024",
+            "theme": "Apprentissage supervisé",
+            "question": "Si un modèle de classification a une spécificité élevée, que peut-on en conclure ?",
+            "choices": [
+                "Le modèle identifie correctement la majorité des instances négatives.",
+                "Le modèle échoue à identifier les instances négatives.",
+                "Le modèle manque la majorité des instances positives.",
+                "Le modèle est sur-ajusté aux données d’entraînement."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Une spécificité élevée signifie que le modèle identifie correctement la plupart des instances négatives, donc peu de faux positifs.",
+            "tags": [
+                "spécificité élevée",
+                "négatifs détectés",
+                "classification"
+            ]
         }
     ]
 }
