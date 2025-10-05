@@ -2,6 +2,7 @@ import ast
 import json
 import random
 from pathlib import Path
+from typing import Optional
 
 import pandas as pd
 import streamlit as st
@@ -122,6 +123,12 @@ def save_errors(path: Path, errors: list) -> None:
                         encoding="utf-8")
     except Exception as e:
         st.warning(f"Impossible d'enregistrer les erreurs : {e}")
+
+
+def _fixed_session_key(school: str, year: str, subject: str, selected_qcm: Optional[str]) -> str:
+    # "(Tous)" si pas de filtre QCM
+    label_qcm = selected_qcm if (selected_qcm and selected_qcm != "(Tous)") else "(Tous)"
+    return f"{school}|{year}|{subject}|{label_qcm}"
 
 
 # ===== Diagnostiqueur =====
@@ -320,8 +327,10 @@ if available_qcms:
 
     if selected_qcm != "(Tous)":
         df = df[df["qcm"] == selected_qcm].reset_index(drop=True)
+else:
+    selected_qcm = None
 
-# ===== QCM aléatoire =====
+# ===== QCM aléatoire + Lot figé (5) =====
 with st.sidebar:
     st.header("🎯 QCM aléatoire")
     k = st.number_input("Nombre de questions", min_value=1, max_value=50, value=5, step=1)
@@ -340,6 +349,78 @@ with st.sidebar:
         st.session_state.choice_shuffle = {}
         st.session_state.custom_subset = True
         st.rerun()
+
+    # ===== Lot figé (5) ultra simple =====
+    st.header("🔒 Lot figé (5)")
+
+    if "fixed5" not in st.session_state:
+        st.session_state.fixed5 = {}  # dict: key -> [indices]
+
+    fixed_key = _fixed_session_key(
+        school, year, subject, selected_qcm if available_qcms else None
+    )
+
+    c1, c2, c3 = st.columns([1, 1, 1])
+
+    with c1:
+        if st.button("Utiliser/Créer (5)"):
+            pool = list(df.index)  # df déjà filtré par QCM si sélectionné
+            if len(pool) == 0:
+                st.warning("Aucune question disponible pour ce filtre.")
+                st.stop()
+            ids = st.session_state.fixed5.get(fixed_key)
+            # si absent/cassé → on (re)crée
+            if (not ids) or any((i < 0 or i >= len(df)) for i in ids) or len(ids) != min(5, len(pool)):
+                ids = random.sample(pool, min(5, len(pool)))
+                st.session_state.fixed5[fixed_key] = ids
+
+            # appliquer le lot figé
+            st.session_state.indices = ids
+            st.session_state.idx_ptr = 0
+            st.session_state.answers = {}
+            st.session_state.choice_shuffle = {}
+            st.session_state.custom_subset = True  # empêche _freeze_order de re-mélanger
+            st.rerun()
+
+    with c2:
+        if st.button("Changer (5)"):
+            pool = list(df.index)
+            if len(pool) == 0:
+                st.warning("Aucune question disponible pour ce filtre.")
+                st.stop()
+            prev = st.session_state.fixed5.get(fixed_key, [])
+            tries = 0
+            while True:
+                ids = random.sample(pool, min(5, len(pool)))
+                tries += 1
+                if set(ids) != set(prev) or tries > 10 or len(pool) < 6:
+                    break
+            st.session_state.fixed5[fixed_key] = ids
+
+            st.session_state.indices = ids
+            st.session_state.idx_ptr = 0
+            st.session_state.answers = {}
+            st.session_state.choice_shuffle = {}
+            st.session_state.custom_subset = True
+            st.rerun()
+
+    with c3:
+        if st.button("Désactiver"):
+            # enlever le lot figé pour cette clé et revenir au comportement normal
+            st.session_state.fixed5.pop(fixed_key, None)
+            st.session_state.custom_subset = False
+            order = list(df.index)
+            if shuffle_q:
+                random.shuffle(order)
+            st.session_state.indices = order
+            st.session_state.idx_ptr = 0
+            st.session_state.answers = {}
+            st.session_state.choice_shuffle = {}
+            st.rerun()
+
+    # (optionnel) affichage debug du lot courant
+    if fixed_key in st.session_state.fixed5:
+        st.caption(f"Lot courant: {st.session_state.fixed5[fixed_key]}")
 
 # ===== Diagnostic =====
 diag = validate_answers_and_choices(df)
@@ -456,7 +537,6 @@ if current_pos >= total_questions:
 
         st.divider()
 
-        # on n'exporte plus les tags
         if not ok:
             recap_rows.append({
                 "question": row["question"],
@@ -473,11 +553,28 @@ if current_pos >= total_questions:
             save_errors(ERRORS_FILE, recap_rows)
             st.toast(f"Erreurs enregistrées → {ERRORS_FILE.name}")
 
+    # === Recommencer (respecte le lot figé / sous-ensemble)
     if st.button("Recommencer"):
         st.session_state.idx_ptr = 0
         st.session_state.answers = {}
         st.session_state.choice_shuffle = {}
-        st.session_state.custom_subset = False  # important
+
+        fixed_ids = st.session_state.get("fixed5", {}).get(
+            _fixed_session_key(school, year, subject, selected_qcm if available_qcms else None),
+            []
+        )
+        fixed_ids = [i for i in fixed_ids if 0 <= i < len(df)]
+
+        if fixed_ids:
+            st.session_state.indices = fixed_ids
+            st.session_state.custom_subset = True
+            st.rerun()
+
+        if st.session_state.get("custom_subset", False) and st.session_state.get("indices"):
+            st.session_state.custom_subset = True
+            st.rerun()
+
+        st.session_state.custom_subset = False
         order = list(df.index)
         if st.session_state.shuffle_q:
             random.shuffle(order)
@@ -590,8 +687,6 @@ else:
         choice_indexes = [i for i, checked in enumerate(checks) if checked]
     else:
         prev = st.session_state.answers.get(row_idx, None)
-        # Attention: selon la version de Streamlit, index=None peut être problématique.
-        # Si tu préfères éviter tout risque, remplace par index=prev si int, sinon ne passe pas index.
         if isinstance(prev, int):
             chosen_letter = st.radio(
                 "Ta réponse :",
@@ -627,7 +722,26 @@ else:
             st.session_state.idx_ptr = 0
             st.session_state.answers = {}
             st.session_state.choice_shuffle = {}
-            st.session_state.custom_subset = False  # important
+
+            # 1) Si un lot figé existe pour ce filtre, on repart dessus
+            fixed_ids = st.session_state.get("fixed5", {}).get(
+                _fixed_session_key(school, year, subject, selected_qcm if available_qcms else None),
+                []
+            )
+            fixed_ids = [i for i in fixed_ids if 0 <= i < len(df)]  # validation
+
+            if fixed_ids:
+                st.session_state.indices = fixed_ids
+                st.session_state.custom_subset = True
+                st.rerun()
+
+            # 2) Sinon, si on était déjà sur un sous-ensemble custom (ex: aléatoire généré)
+            if st.session_state.get("custom_subset", False) and st.session_state.get("indices"):
+                st.session_state.custom_subset = True
+                st.rerun()
+
+            # 3) Fallback: pas de lot figé ni de sous-ensemble → pool complet
+            st.session_state.custom_subset = False
             order = list(df.index)
             if st.session_state.shuffle_q:
                 random.shuffle(order)

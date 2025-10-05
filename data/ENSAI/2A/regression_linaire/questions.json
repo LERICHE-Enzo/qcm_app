@@ -1104,6 +1104,341 @@
         "espérance",
         "variance"
       ]
+    },
+    {
+      "id": "qcm5-q01",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Que vaut la variance du vecteur $Y$ ?",
+      "choices": [
+        "$\\sigma^2 (X'X)^{-1}$",
+        "$\\sigma^2 X \\beta$",
+        "$\\sigma^2 I_n$",
+        "$\\sigma^2 (XX')^{-1}$"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dans le modèle $Y = X\\beta + \\varepsilon$ avec $\\varepsilon \\sim \\mathcal{N}(0, \\sigma^2 I_n)$, on a $\\mathrm{Var}(Y) = \\mathrm{Var}(\\varepsilon) = \\sigma^2 I_n$.",
+      "tags": [
+        "régression linéaire",
+        "variance",
+        "modèle linéaire"
+      ]
+    },
+    {
+      "id": "qcm5-q02",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Que vaut $\\hat{\\beta}$, l’estimateur par moindres carrés ordinaires de $\\beta$ ?",
+      "choices": [
+        "$\\mathbb{E}((X'X)^{-1} X'Y)$",
+        "$(X'X)^{-1} X'Y$",
+        "$\\mathbb{E}((XX')^{-1} XY)$",
+        "$(XX')^{-1} XY$"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Par définition de l’estimateur des moindres carrés ordinaires (MCO), on a $\\hat{\\beta} = (X'X)^{-1} X'Y$, obtenu en minimisant la somme des carrés des résidus $\\|Y - X\\beta\\|^2$.",
+      "tags": [
+        "régression linéaire",
+        "estimateur",
+        "MCO"
+      ]
+    },
+    {
+      "id": "qcm5-q03",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Comment sont définis les résidus $\\hat{\\varepsilon}$ ? (On note $P_{[X]} = X (X'X)^{-1} X'$ et $P_{[X]}^{\\perp} = I_n - P_{[X]}$.)",
+      "choices": [
+        "$\\hat\\varepsilon = P[X]Y$",
+        "$\\hat\\varepsilon = \\hat Y - X\\beta$",
+        "$\\hat\\varepsilon = Y - X\\hat\\beta$",
+        "$\\hat\\varepsilon = P[X]\\varepsilon$",
+        "$\\hat\\varepsilon = P[X]^\\perp \\varepsilon$",
+        "$\\hat\\varepsilon = P[X]^\\perp Y$",
+        "$\\hat\\varepsilon = Y - X\\beta$"
+      ],
+      "answer": [
+        2,
+        4,
+        5
+      ],
+      "explanation": "Par définition, $\\hat{\\varepsilon} = Y - X\\hat{\\beta} = (I_n - P_{[X]})Y = P_{[X]}^{\\perp} Y$. En utilisant $Y = X\\beta + \\varepsilon$, on obtient aussi $\\hat{\\varepsilon} = P_{[X]}^{\\perp} \\varepsilon$. En revanche, $P_{[X]} Y$ donne les valeurs ajustées $\\hat{Y}$, et utiliser $Y - X\\beta$ correspond à l'erreur vraie, pas aux résidus.",
+      "tags": [
+        "régression linéaire",
+        "résidus",
+        "projection",
+        "matrices de projection"
+      ]
+    },
+    {
+      "id": "qcm5-q04",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Quelle statistique constitue un estimateur sans biais de $\\sigma^2$ ?",
+      "choices": [
+        "$\\dfrac{1}{n} \\sum_{i=1}^{n} \\varepsilon_i^{2}$",
+        "$\\dfrac{1}{n} \\sum_{i=1}^{n} \\hat{\\varepsilon}_i^{2}$",
+        "$\\dfrac{1}{n-p} \\sum_{i=1}^{n} \\varepsilon_i^{2}$",
+        "$\\dfrac{1}{n-p} \\sum_{i=1}^{n} \\hat{\\varepsilon}_i^{2}$"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Avec $M = I_n - P_{[X]}$ (rang $n-p$), la somme des carr\\u00e9s des r\\u00e9sidus est $\\text{RSS} = \\hat{\\varepsilon}'\\hat{\\varepsilon} = Y' M Y$. On a $\\mathbb{E}[\\text{RSS}] = (n-p)\\sigma^2$, d'o\\u00f9 l'estimateur sans biais $\\hat{\\sigma}^2 = \\dfrac{\\text{RSS}}{n-p} = \\dfrac{1}{n-p} \\sum_{i=1}^{n} \\hat{\\varepsilon}_i^{2}$.",
+      "tags": [
+        "régression linéaire",
+        "variance",
+        "r\\u00e9sidus",
+        "degr\\u00e9s de libert\\u00e9"
+      ]
+    },
+    {
+      "id": "qcm5-q05",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Parmi les quantités suivantes, lesquelles sont observables ou calculables à partir des observations ?",
+      "choices": [
+        "$\\hat{\\beta}$",
+        "$\\hat{Y}$",
+        "$Y$",
+        "$\\hat{\\varepsilon}$",
+        "$\\beta$",
+        "$\\sigma^2$",
+        "$\\varepsilon$"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Les quantités observables ou calculables directement à partir des données $(X, Y)$ sont : $\\hat{\\beta}$ (estimateur MCO), $\\hat{Y} = X\\hat{\\beta}$ (valeurs ajustées), $Y$ (observations) et $\\hat{\\varepsilon} = Y - \\hat{Y}$ (résidus). En revanche, $\\beta$, $\\sigma^2$ et $\\varepsilon$ sont inobservables et ne peuvent être connus qu'au travers d'estimateurs.",
+      "tags": [
+        "régression linéaire",
+        "observables",
+        "paramètres",
+        "résidus"
+      ]
+    },
+    {
+      "id": "qcm5-q06",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Quelles sont les variables non corrélées ?",
+      "choices": [
+        "$\\hat{Y}_1$ et $\\hat{\\varepsilon}_1$",
+        "$\\hat{\\beta}_1$ et $\\hat{\\beta}_2$",
+        "$Y_1$ et $\\hat{Y}_1$",
+        "$\\varepsilon_1$ et $\\hat{\\varepsilon}_1$",
+        "$\\varepsilon_1$ et $\\varepsilon_2$",
+        "$Y_1$ et $Y_2$",
+        "$Y_1$ et $\\hat{\\varepsilon}_1$",
+        "$\\hat{\\varepsilon}_1$ et $\\hat{\\varepsilon}_2$"
+      ],
+      "answer": [
+        0,
+        4,
+        5
+      ],
+      "explanation": "Les valeurs ajustées et les résidus ($\\hat{Y}$ et $\\hat{\\varepsilon}$) sont orthogonaux, donc non corrélés. Les erreurs vraies $\\varepsilon_i$ sont indépendantes, donc non corrélées. Enfin, dans le cadre classique des MCO avec erreurs indépendantes, les $Y_i$ sont eux aussi non corrélés. En revanche, les autres couples sont en général corrélés.",
+      "tags": [
+        "régression linéaire",
+        "corrélation",
+        "résidus",
+        "valeurs ajustées",
+        "observations"
+      ]
+    },
+    {
+      "id": "qcm5-q07",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Qu’implique l’hypothèse $\\mathrm{rg}(X)=p$ ?",
+      "choices": [
+        "$p \\le n$",
+        "Les colonnes de $X$ sont linéairement indépendantes",
+        "La corrélation entre les variables explicatives est nulle",
+        "La matrice $X$ est inversible",
+        "La matrice $X'X$ est inversible"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "Si $\\mathrm{rg}(X)=p$, les colonnes de $X$ sont linéairement indépendantes, donc nécessairement $p \\le n$. Par ailleurs, $X'X$ est alors définie positive et inversible. En revanche, $X$ n’est pas forcément carrée (donc pas forcément inversible) et le rang plein n’implique pas l’absence de corrélation entre variables explicatives.",
+      "tags": [
+        "régression linéaire",
+        "rang",
+        "matrices",
+        "identifiabilité"
+      ]
+    },
+    {
+      "id": "qcm5-q08",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Qu’est-ce que la multicolinéarité dans un modèle de régression multiple ?",
+      "choices": [
+        "L’influence excessive d’une seule observation sur l’estimation du modèle",
+        "L’interaction entre $Y$ et les variables explicatives",
+        "L’erreur dans l’estimation des coefficients de régression",
+        "La forte corrélation entre deux ou plusieurs variables explicatives"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La multicolinéarité désigne une forte corrélation (souvent linéaire) entre deux ou plusieurs variables explicatives. Elle rend les colonnes de $X$ presque dépendantes, ce qui entraîne des problèmes numériques et une instabilité dans l’estimation de $\\hat{\\beta}$.",
+      "tags": [
+        "régression linéaire",
+        "multicolinéarité",
+        "variables explicatives"
+      ]
+    },
+    {
+      "id": "qcm5-q09",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Quelle est la formule du $R^2_a$ lorsqu’une constante est incluse dans le modèle ?",
+      "choices": [
+        "$\\dfrac{n-p}{n-1} \\dfrac{\\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$",
+        "$\\dfrac{n-1}{n-p} \\dfrac{\\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$",
+        "$1 - \\dfrac{n-p}{n-1} \\dfrac{\\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$",
+        "$1 - \\dfrac{n-1}{n-p} \\dfrac{\\sum_{i=1}^n (Y_i - \\hat{Y}_i)^2}{\\sum_{i=1}^n (Y_i - \\bar{Y})^2}$"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L’indice de détermination ajusté est défini par $R^2_a = 1 - \\dfrac{n-1}{n-p} \\cdot \\dfrac{\\text{SCR}}{\\text{SCT}}$, où $\\text{SCR} = \\sum (Y_i - \\hat{Y}_i)^2$ et $\\text{SCT} = \\sum (Y_i - \\bar{Y})^2$. Cette correction par $\\tfrac{n-1}{n-p}$ permet de compenser la tendance du $R^2$ à augmenter avec le nombre de variables explicatives.",
+      "tags": [
+        "régression linéaire",
+        "R^2 ajusté",
+        "variance expliquée",
+        "qualité d’ajustement"
+      ]
+    },
+    {
+      "id": "qcm5-q10",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "On note $R^2$ le $R^2$ obtenu après estimation du modèle initial, et $R^2_c$ celui d’un sous-modèle contenant $p'$ variables ($p' < p$) dont une constante. Avec quelle statistique peut-on comparer les deux modèles ?",
+      "choices": [
+        "$\\dfrac{n - p}{p'} \\dfrac{R^2_c - R^2}{1 - R^2}$",
+        "$\\dfrac{n - p}{p - p'} \\dfrac{R^2_c - R^2}{1 - R^2}$",
+        "$\\dfrac{n - p}{p - p'} \\dfrac{R^2 - R^2_c}{1 - R^2}$",
+        "$\\dfrac{n - p}{p'} \\dfrac{R^2 - R^2_c}{1 - R^2}$"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La statistique de Fisher utilisée pour comparer un modèle complet à un sous-modèle imbriqué est $F = \\dfrac{(R^2 - R_c^2)/(p - p')}{(1 - R^2)/(n - p)}$, ce qui équivaut à $\\dfrac{n - p}{p - p'} \\cdot \\dfrac{R^2 - R_c^2}{1 - R^2}$. Cette statistique suit une loi de Fisher à $(p - p')$ et $(n - p)$ degrés de liberté sous l’hypothèse nulle.",
+      "tags": [
+        "régression linéaire",
+        "test de Fisher",
+        "R^2",
+        "comparaison de modèles"
+      ]
+    },
+    {
+      "id": "qcm5-q11",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Quelle méthode permet de détecter une observation ayant une influence excessive sur un modèle de régression multiple ?",
+      "choices": [
+        "Le test de Durbin-Watson",
+        "Le test de Breusch-Godfrey",
+        "Le test de Shapiro-Wilk",
+        "La distance de Cook"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La distance de Cook mesure l’influence d’une observation sur l’estimation des coefficients de régression. Une valeur élevée indique qu’une seule observation exerce une influence excessive sur le modèle. Les autres tests cités concernent respectivement l’autocorrélation (Durbin-Watson, Breusch-Godfrey) et la normalité (Shapiro-Wilk).",
+      "tags": [
+        "régression linéaire",
+        "influence",
+        "diagnostic",
+        "distance de Cook"
+      ]
+    },
+    {
+      "id": "qcm5-q12",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "On effectue une nouvelle régression en ajoutant une variable au modèle initial. Que se passe-t-il forcément ?",
+      "choices": [
+        "Le $R^2$ augmente",
+        "La SCR diminue",
+        "Le $R^2_a$ diminue",
+        "Le $R^2$ diminue",
+        "La SCR augmente",
+        "Le $R^2_a$ augmente"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "L’ajout d’une variable explicative au modèle entraîne toujours une diminution (ou au pire une constance) de la somme des carrés des résidus (SCR), ce qui implique une augmentation (ou constance) du $R^2$. En revanche, le $R^2_a$ peut augmenter ou diminuer selon la pertinence de la variable ajoutée.",
+      "tags": [
+        "régression linéaire",
+        "R^2",
+        "SCR",
+        "ajout de variables"
+      ]
+    },
+    {
+      "id": "qcm5-q13",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "On compare plusieurs modèles avec les critères AIC et BIC.",
+      "choices": [
+        "Le meilleur modèle au sens du BIC ne coïncide pas forcément avec le meilleur modèle au sens de l’AIC.",
+        "Le meilleur modèle est automatiquement détecté : il s’agit de celui qui maximise l’AIC et qui maximise le BIC.",
+        "Le BIC choisira un modèle de taille plus petite ou égale à celui choisi par l’AIC",
+        "Il est possible que AIC et BIC soient tous les deux optimaux pour le plus gros modèle",
+        "Si les modèles ont des tailles différentes, AIC choisira forcément le plus petit",
+        "Si les modèles ont des tailles différentes, BIC choisira forcément le plus petit",
+        "L’AIC choisira un modèle de taille plus petite ou égale à celui choisi par le BIC",
+        "Le meilleur modèle est automatiquement détecté : il s’agit de celui qui minimise l’AIC et qui minimise le BIC."
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "AIC et BIC sont deux critères d’information qui se minimisent. Le BIC pénalise davantage la complexité, ce qui conduit souvent à choisir un modèle plus petit ou égal à celui de l’AIC. Les deux critères peuvent mener à des choix différents, mais il arrive qu’ils coïncident. En revanche, aucun ne se maximise.",
+      "tags": [
+        "régression linéaire",
+        "AIC",
+        "BIC",
+        "comparaison de modèles"
+      ]
+    },
+    {
+      "id": "qcm5-q14",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "On a supposé $V(\\varepsilon) = \\sigma^2 I_n$. Si l’erreur de modélisation $\\varepsilon$ était hétéroscédastique, que deviendrait la matrice $V(\\varepsilon)$ ?",
+      "choices": [
+        "Les valeurs sur sa diagonale seraient différentes",
+        "Elle ne serait pas inversible",
+        "Elle ne serait plus diagonale",
+        "Les valeurs sur la diagonale seraient nulles"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "En cas d’hétéroscédasticité, les erreurs ont des variances différentes mais restent supposées indépendantes. Ainsi $V(\\varepsilon) = \\mathrm{diag}(\\sigma_1^2, \\dots, \\sigma_n^2)$ : la matrice reste diagonale mais ses valeurs sur la diagonale diffèrent. Elle demeure inversible tant qu’aucune variance n’est nulle.",
+      "tags": [
+        "régression linéaire",
+        "hétéroscédasticité",
+        "variance des erreurs",
+        "matrice de variance"
+      ]
     }
   ]
 }
