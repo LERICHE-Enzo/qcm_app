@@ -57,7 +57,8 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
             return None
         if isinstance(x, list):
             try:
-                return [int(v) for v in x]
+                lst = [int(v) for v in x]
+                return lst[0] if len(lst) == 1 else lst  # 🔧 aplatit [i] -> i
             except Exception:
                 return None
         if isinstance(x, (int, float)) and not isinstance(x, bool):
@@ -66,7 +67,8 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
         if s.startswith("[") and s.endswith("]"):
             try:
                 lst = ast.literal_eval(s)
-                return [int(v) for v in lst]
+                lst = [int(v) for v in lst]
+                return lst[0] if len(lst) == 1 else lst  # 🔧 aplatit "[i]" -> i
             except Exception:
                 return None
         try:
@@ -627,8 +629,12 @@ else:
             st.stop()
         shuffled_answer = map_old_to_new[true_ans_orig]
 
-    # Badge multi/unique
-    is_multi = isinstance(shuffled_answer, list)
+    # 🔧 aplatir si une seule bonne réponse après permutation
+    if isinstance(shuffled_answer, list) and len(shuffled_answer) == 1:
+        shuffled_answer = shuffled_answer[0]
+
+    # Badge multi/unique — vrai multi seulement si >1 réponses
+    is_multi = isinstance(shuffled_answer, list) and len(shuffled_answer) > 1
     label = "Choix multiples" if is_multi else "Choix unique"
     color = "#9333EA" if is_multi else "#2563EB"
     st.markdown(
@@ -665,7 +671,11 @@ else:
         img_path = next((p for p in candidates if p.exists()), None)
 
         if img_path:
-            st.image(str(img_path), caption=None, use_container_width=True)
+            try:
+                st.image(str(img_path), caption=None, use_container_width=True)
+            except TypeError:
+                # compatibilité anciennes versions de Streamlit
+                st.image(str(img_path), caption=None, use_column_width=True)
 
     letters = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     st.markdown("\n".join([f"- **{letters[i]}**. {opt}" for i, opt in enumerate(options)]))
