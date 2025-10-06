@@ -609,7 +609,7 @@
       "id": "2023-q028",
       "qcm": "Partiel-2023",
       "theme": "Microéconomie",
-      "question": "Sophia participe à un jeu télévisé. Elle a choisi la porte n°3. L’animateur annonce qu’il y a 50 % de chances qu’un diamant de 16 000 $ soit derrière la porte et 50 % de chances qu’il y ait une chèvre (valeur nulle pour Sophia). Avant l’ouverture, quelqu’un dans le public lui propose : « Je te donne l’option de me vendre ce qu’il y a derrière la porte pour 9 000 $ si tu me paies 4 500 $ pour cette option. » Si Sophia ne se soucie que des valeurs monétaires **espérées**, va-t-elle acheter cette option ?",
+      "question": "Sophia participe à un jeu télévisé. Derrière la porte n°3, il y a 50 % de chances d’avoir un diamant de 16 000 $ et 50 % une chèvre (valeur nulle pour elle). Avant l’ouverture, quelqu’un lui propose : « Je t’achète ce qu’il y a derrière la porte 9 000 $ si tu me paies X $ pour cette option. » Sachant que l’utilité de Sophia sur la richesse est U(x) = x^{0,5}, existe-t-il une valeur de X pour laquelle elle voudra acheter l’option ?",
       "choices": [
         "Non, l’option de certitude vaut 4 500 alors que le pari vaut 8 000, et elle est neutre au risque.",
         "Oui, même si l’option vaut moins en espérance que le pari, elle est averse au risque et veut éviter le risque.",

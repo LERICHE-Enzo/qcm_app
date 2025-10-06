@@ -684,6 +684,9 @@
         "k-fold",
         "inconvénients",
         "apprentissage supervisé"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-06"
       ]
     },
     {
@@ -706,6 +709,9 @@
         "paramètre k",
         "plus proches voisins",
         "apprentissage supervisé"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-06"
       ]
     },
     {
@@ -750,6 +756,9 @@
         "lissage par noyau",
         "pondération",
         "apprentissage supervisé"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-06"
       ]
     },
     {
@@ -891,6 +900,9 @@
         "surapprentissage",
         "bagging",
         "apprentissage supervisé"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-06"
       ]
     },
     {
@@ -1003,6 +1015,9 @@
         "faux négatif",
         "évaluation",
         "classification"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-06"
       ]
     },
     {
