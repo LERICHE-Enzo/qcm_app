@@ -1572,6 +1572,7 @@
             "qcm": "Partiel-2024",
             "theme": "Microéconomie",
             "question": "Dans le jeu précédent des deux éleveurs de vaches, quelles sont les stratégies pures en équilibre de Nash ?",
+            "image": "/Images/microeconomie/microeconomie-2024-q037.png",
             "choices": [
                 "Il n’y a pas d’équilibre.",
                 "Il y en a trois : (1,2), (2,1), (2,2).",
