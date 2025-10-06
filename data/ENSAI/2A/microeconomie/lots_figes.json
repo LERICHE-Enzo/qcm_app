@@ -1,0 +1,36 @@
+{
+  "lots": [
+    {
+      "id": "qcm001_2025-10-06",
+      "created_at": "2025-10-06T10:02:08",
+      "school": "ENSAI",
+      "year": "2A",
+      "subject": "microeconomie",
+      "qcm_filter": "(Tous)",
+      "orig_indices": [
+        13,
+        55,
+        49,
+        27,
+        25
+      ],
+      "size": 5
+    },
+    {
+      "id": "qcm002_2025-10-06",
+      "created_at": "2025-10-06T10:02:21",
+      "school": "ENSAI",
+      "year": "2A",
+      "subject": "microeconomie",
+      "qcm_filter": "(Tous)",
+      "orig_indices": [
+        8,
+        32,
+        36,
+        60,
+        19
+      ],
+      "size": 5
+    }
+  ]
+}
