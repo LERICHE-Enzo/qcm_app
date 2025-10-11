@@ -26,11 +26,10 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
         "choices": "choices", "choix": "choices", "propositions": "choices",
         "answer": "answer", "réponse": "answer", "reponse": "answer",
         "explanation": "explanation", "explication": "explanation",
-        # on tolère ces champs mais on ne les utilise pas forcément
+        # tolérés
         "tags": "tags", "tag": "tags",
         "qcm": "qcm", "theme": "theme", "thème": "theme", "id": "id",
-        "id_gen": "id_gen",
-        "image": "image",
+        "id_gen": "id_gen", "image": "image",
     }
     df.rename(columns={c: alias.get(c, c) for c in df.columns}, inplace=True)
 
@@ -49,8 +48,7 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
     def _fix_choices(x):
         if isinstance(x, list):
             return [str(c).strip() for c in x]
-        # fallback si ancien format CSV "A||B||C"
-        return [c.strip() for c in str(x).split("||")]
+        return [c.strip() for c in str(x).split("||")]  # ancien format "A||B||C"
 
     df["choices_list"] = df["choices"].apply(_fix_choices)
 
@@ -61,7 +59,7 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
         if isinstance(x, list):
             try:
                 lst = [int(v) for v in x]
-                return lst[0] if len(lst) == 1 else lst  # 🔧 aplatit [i] -> i
+                return lst[0] if len(lst) == 1 else lst
             except Exception:
                 return None
         if isinstance(x, (int, float)) and not isinstance(x, bool):
@@ -71,7 +69,7 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
             try:
                 lst = ast.literal_eval(s)
                 lst = [int(v) for v in lst]
-                return lst[0] if len(lst) == 1 else lst  # 🔧 aplatit "[i]" -> i
+                return lst[0] if len(lst) == 1 else lst
             except Exception:
                 return None
         try:
@@ -81,7 +79,6 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
 
     df["answer_parsed"] = df["answer"].apply(parse_answer)
 
-    # colonnes optionnelles
     for col in ["explanation", "tags", "qcm", "theme", "id", "id_gen", "image"]:
         if col not in df.columns:
             df[col] = None
@@ -92,7 +89,7 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
 @st.cache_data
 def load_questions_json(path: Path) -> pd.DataFrame:
     """Charge data/.../questions.json (liste ou {'questions': [...]}) en DataFrame normalisée.
-       Ajoute la colonne 'orig_idx' pour référencer l'index original dans le fichier JSON, utile pour persister des lots."""
+       Ajoute 'orig_idx' (index original dans le JSON) pour persister des lots."""
     if not path.exists():
         st.error(f"Fichier introuvable : {path}")
         st.stop()
@@ -111,8 +108,7 @@ def load_questions_json(path: Path) -> pd.DataFrame:
         st.stop()
 
     df = pd.DataFrame(items)
-    # très important : mémoriser l'index d'origine dans le fichier
-    df["orig_idx"] = list(range(len(df)))
+    df["orig_idx"] = list(range(len(df)))  # mémorise l'ordre original
     df = _normalize_columns(df)
     return df
 
@@ -135,7 +131,6 @@ def save_errors(path: Path, errors: list) -> None:
 
 
 def _fixed_session_key(school: str, year: str, subject: str, selected_qcm: Optional[str]) -> str:
-    # "(Tous)" si pas de filtre QCM
     label_qcm = selected_qcm if (selected_qcm and selected_qcm != "(Tous)") else "(Tous)"
     return f"{school}|{year}|{subject}|{label_qcm}"
 
@@ -197,7 +192,7 @@ def validate_answers_and_choices(df_: pd.DataFrame):
 
 
 def _freeze_order(df_: pd.DataFrame, shuffle_flag: bool):
-    # Si on a généré un sous-ensemble aléatoire, on ne touche pas à l'ordre
+    # Si on a généré un sous-ensemble custom, on ne touche pas à l'ordre
     if st.session_state.get("custom_subset", False):
         return
     base_key = tuple(df_.index)
@@ -251,7 +246,6 @@ def _compute_score(df_: pd.DataFrame):
 
 
 def _score_on_indices(df_: pd.DataFrame, indices_: list[int]):
-    """Score uniquement sur le sous-ensemble présenté (st.session_state.indices)."""
     answered = 0
     correct = 0
     for i in indices_:
@@ -296,23 +290,19 @@ def save_fixed_lots(subject_dir: Path, payload: dict) -> None:
 def _new_lot_id(existing_ids: set[str]) -> str:
     """
     Génère un ID court du type: qcmNNN_YYYY-MM-DD
-    - NNN : compteur incrémental (001, 002, …) pour la date du jour
+    - NNN : compteur incrémental pour la date du jour
     - YYYY-MM-DD : date du jour
     """
     today = datetime.now().strftime("%Y-%m-%d")
     prefix = "qcm"
-    # On cherche les IDs déjà existants de la forme qcmNNN_YYYY-MM-DD (pour AUJOURD’HUI)
-    # afin d'incrémenter le compteur.
     max_n = 0
     for _id in existing_ids:
-        # ignore les anciens formats (fixed5_…)
         if not _id or not _id.startswith(prefix):
             continue
-        # attend un format "qcmNNN_YYYY-MM-DD"
         parts = _id.split("_")
         if len(parts) != 2:
             continue
-        num_part = parts[0][len(prefix):]  # "NNN"
+        num_part = parts[0][len(prefix):]
         date_part = parts[1]
         if date_part == today and num_part.isdigit():
             max_n = max(max_n, int(num_part))
@@ -323,7 +313,7 @@ def _new_lot_id(existing_ids: set[str]) -> str:
 def annotate_questions_with_lot(questions_file: Path, orig_indices: list[int], lot_id: str):
     """
     Ajoute 'id_gen' (liste d'IDs) sur chaque question du lot dans questions.json.
-    Les indices fournis sont des indices 'orig_idx' (ordre du fichier).
+    Les indices fournis sont des indices 'orig_idx'.
     """
     try:
         raw = json.loads(questions_file.read_text(encoding="utf-8"))
@@ -349,7 +339,6 @@ def annotate_questions_with_lot(questions_file: Path, orig_indices: list[int], l
                             cur.append(lot_id)
                             q["id_gen"] = cur
                     else:
-                        # ancien format scalaire -> liste
                         if cur != lot_id:
                             q["id_gen"] = [cur, lot_id]
                         else:
@@ -360,6 +349,21 @@ def annotate_questions_with_lot(questions_file: Path, orig_indices: list[int], l
 
     except Exception as e:
         st.warning(f"Annotation id_gen échouée : {e}")
+
+
+# ========================================================================
+#                 NOUVEAU : APPLIQUER UN SOUS-ENSEMBLE (SHUFFLE)
+# ========================================================================
+def _apply_subset(ids: list[int], *, shuffle: bool = True):
+    """Applique un sous-ensemble de questions ; si shuffle=True, l'ordre tourne."""
+    order = ids[:]  # copie
+    if shuffle:
+        random.shuffle(order)
+    st.session_state.indices = order
+    st.session_state.idx_ptr = 0
+    st.session_state.answers = {}
+    st.session_state.choice_shuffle = {}
+    st.session_state.custom_subset = True  # empêche _freeze_order de re-mélanger
 
 
 # ========================================================================
@@ -405,18 +409,20 @@ with st.sidebar:
     st.header("Paramètres")
     mode = st.selectbox("Mode", ["Entraînement", "Examen blanc", "Révisions ciblées"])
     show_timer = st.toggle("Afficher un minuteur (indicatif)", value=False)
-    shuffle_q = st.toggle("Mélanger l'ordre des questions", value=True)
+    shuffle_q = st.toggle("Mélanger l'ordre des questions (pool complet)", value=True)
+
+    # >>> NOUVEAU : toggle qui pilote l'ordre tournant des lots figés
+    shuffle_fixed_inside = st.toggle("Mélanger l'ordre des questions d'un lot figé", value=True)
 
 # ===== Chargement du JSON unique =====
 df = load_questions_json(QUESTIONS_FILE)
 
-# Filtre QCM (si des champs 'qcm' existent)
+# Filtre QCM (si champ 'qcm' existe)
 available_qcms = sorted({q for q in df.get("qcm", pd.Series()).dropna().unique()})
 if available_qcms:
     with st.sidebar:
         selected_qcm = st.selectbox("Filtrer par QCM", ["(Tous)"] + available_qcms)
 
-    # reset si changement de QCM pour éviter indices décalés après un sous-ensemble
     prev_qcm = st.session_state.get("selected_qcm")
     if prev_qcm is not None and prev_qcm != selected_qcm:
         st.session_state.custom_subset = False
@@ -428,7 +434,6 @@ if available_qcms:
     st.session_state.selected_qcm = selected_qcm
 
     if selected_qcm != "(Tous)":
-        # On filtre mais on garde 'orig_idx' qui référence le fichier d'origine
         df = df[df["qcm"] == selected_qcm].reset_index(drop=True)
 else:
     selected_qcm = None
@@ -438,23 +443,18 @@ with st.sidebar:
     st.header("🎯 QCM aléatoire")
     k = st.number_input("Nombre de questions", min_value=1, max_value=50, value=5, step=1)
     if st.button("Générer ce QCM"):
-        pop_indices = list(df.index)  # df est déjà filtré par QCM si sélectionné
+        pop_indices = list(df.index)
         if len(pop_indices) == 0:
             st.warning("Aucune question disponible pour ce filtre.")
             st.stop()
         k = min(int(k), len(pop_indices))
         order = random.sample(pop_indices, k)
 
-        # on fige ce sous-ensemble
-        st.session_state.indices = order
-        st.session_state.idx_ptr = 0
-        st.session_state.answers = {}
-        st.session_state.choice_shuffle = {}
-        st.session_state.custom_subset = True
+        _apply_subset(order, shuffle=True)  # toujours mélangé
         st.session_state.current_lot_id = None
         st.rerun()
 
-    # ===== Lot figé (5) ultra simple + PERSISTANT =====
+    # ===== Lot figé (5) PERSISTANT =====
     st.header("🔒 Lot figé (5)")
 
     if "fixed5" not in st.session_state:
@@ -464,11 +464,9 @@ with st.sidebar:
         school, year, subject, selected_qcm if available_qcms else None
     )
 
-    # ===== Chargement / persistance des lots =====
     LOTS_PAYLOAD = load_fixed_lots(subject_dir)
     EXISTING_IDS = {lot.get("id") for lot in LOTS_PAYLOAD.get("lots", []) if lot.get("id")}
 
-    # --- Sélecteur de lot existant (contexte courant) ---
     def _lot_matches_context(l):
         if l.get("school") != school or l.get("year") != year or l.get("subject") != subject:
             return False
@@ -487,18 +485,13 @@ with st.sidebar:
         picked = lots_here[labels.index(chosen)]
 
         if st.button("Charger ce lot"):
-            # On mappe les 'orig_indices' persistés vers les indices du df filtré courant
             orig_set = set(int(x) for x in picked.get("orig_indices", []))
             orig_to_df = {int(row.orig_idx): i for i, row in df.iterrows()}
             ids = [orig_to_df[oi] for oi in picked.get("orig_indices", []) if oi in orig_to_df]
             if not ids:
                 st.warning("Ce lot ne correspond plus aux indices du dataset courant (filtre différent ?).")
             else:
-                st.session_state.indices = ids
-                st.session_state.idx_ptr = 0
-                st.session_state.answers = {}
-                st.session_state.choice_shuffle = {}
-                st.session_state.custom_subset = True
+                _apply_subset(ids, shuffle=shuffle_fixed_inside)  # <<< ordre tourne
                 st.session_state.current_lot_id = picked.get("id")
                 st.toast(f"Lot {picked['id']} chargé", icon="📂")
                 st.rerun()
@@ -509,17 +502,15 @@ with st.sidebar:
 
     with c1:
         if st.button("Utiliser/Créer (5)"):
-            pool = list(df.index)  # df déjà filtré par QCM si sélectionné
+            pool = list(df.index)
             if len(pool) == 0:
                 st.warning("Aucune question disponible pour ce filtre.")
                 st.stop()
             ids = st.session_state.fixed5.get(fixed_key)
-            # si absent/cassé → on (re)crée
             if (not ids) or any((i < 0 or i >= len(df)) for i in ids) or len(ids) != min(5, len(pool)):
                 ids = random.sample(pool, min(5, len(pool)))
                 st.session_state.fixed5[fixed_key] = ids
 
-            # --- Génère un identifiant + enregistre le lot + annote questions ---
             lot_id = _new_lot_id(EXISTING_IDS)
             orig_indices = [int(df.loc[i, "orig_idx"]) for i in ids]
             lot_info = {
@@ -529,7 +520,7 @@ with st.sidebar:
                 "year": year,
                 "subject": subject,
                 "qcm_filter": selected_qcm if available_qcms else None,
-                "orig_indices": orig_indices,   # toujours en indices d'origine fichier
+                "orig_indices": orig_indices,
                 "size": len(ids),
             }
             LOTS_PAYLOAD.setdefault("lots", []).append(lot_info)
@@ -540,12 +531,7 @@ with st.sidebar:
             except Exception as e:
                 st.warning(f"Lot créé mais annotation échouée : {e}")
 
-            # appliquer le lot à la session (indices du df filtré)
-            st.session_state.indices = ids
-            st.session_state.idx_ptr = 0
-            st.session_state.answers = {}
-            st.session_state.choice_shuffle = {}
-            st.session_state.custom_subset = True  # empêche _freeze_order de re-mélanger
+            _apply_subset(ids, shuffle=shuffle_fixed_inside)  # <<< ordre tourne
             st.session_state.current_lot_id = lot_id
             st.rerun()
 
@@ -564,7 +550,6 @@ with st.sidebar:
                     break
             st.session_state.fixed5[fixed_key] = ids
 
-            # nouveau lot persistant
             lot_id = _new_lot_id(EXISTING_IDS)
             orig_indices = [int(df.loc[i, "orig_idx"]) for i in ids]
             lot_info = {
@@ -585,17 +570,12 @@ with st.sidebar:
             except Exception as e:
                 st.warning(f"Lot créé mais annotation échouée : {e}")
 
-            st.session_state.indices = ids
-            st.session_state.idx_ptr = 0
-            st.session_state.answers = {}
-            st.session_state.choice_shuffle = {}
-            st.session_state.custom_subset = True
+            _apply_subset(ids, shuffle=shuffle_fixed_inside)  # <<< ordre tourne
             st.session_state.current_lot_id = lot_id
             st.rerun()
 
     with c3:
         if st.button("Désactiver"):
-            # enlever le lot figé pour cette clé et revenir au comportement normal
             st.session_state.fixed5.pop(fixed_key, None)
             st.session_state.custom_subset = False
             order = list(df.index)
@@ -608,7 +588,6 @@ with st.sidebar:
             st.session_state.current_lot_id = None
             st.rerun()
 
-    # (optionnel) affichage debug du lot courant
     if fixed_key in st.session_state.fixed5:
         st.caption(f"Indices lot courant (session) : {st.session_state.fixed5[fixed_key]}")
     if st.session_state.get("current_lot_id"):
@@ -639,7 +618,7 @@ with st.sidebar:
                 mime="text/csv",
             )
 
-# ===== Ordre figé =====
+# ===== Ordre figé (hors sous-ensembles) =====
 _freeze_order(df, shuffle_q)
 indices = st.session_state.indices
 
@@ -647,9 +626,9 @@ indices = st.session_state.indices
 if "idx_ptr" not in st.session_state:
     st.session_state.idx_ptr = 0
 if "answers" not in st.session_state:
-    st.session_state.answers = {}  # row_index -> int | list[int]
+    st.session_state.answers = {}
 if "choice_shuffle" not in st.session_state:
-    st.session_state.choice_shuffle = {}  # row_index -> permutation
+    st.session_state.choice_shuffle = {}
 st.session_state.exam_mode = (mode == "Examen blanc")
 
 if show_timer:
@@ -758,12 +737,11 @@ if current_pos >= total_questions:
         fixed_ids = [i for i in fixed_ids if 0 <= i < len(df)]
 
         if fixed_ids:
-            st.session_state.indices = fixed_ids
-            st.session_state.custom_subset = True
+            _apply_subset(fixed_ids, shuffle=shuffle_fixed_inside)  # <<< reshuffle le lot
             st.rerun()
 
         if st.session_state.get("custom_subset", False) and st.session_state.get("indices"):
-            st.session_state.custom_subset = True
+            _apply_subset(st.session_state.indices, shuffle=True)   # reshuffle le sous-ensemble courant
             st.rerun()
 
         st.session_state.custom_subset = False
@@ -819,11 +797,9 @@ else:
             st.stop()
         shuffled_answer = map_old_to_new[true_ans_orig]
 
-    # 🔧 aplatir si une seule bonne réponse après permutation
     if isinstance(shuffled_answer, list) and len(shuffled_answer) == 1:
         shuffled_answer = shuffled_answer[0]
 
-    # Badge multi/unique — vrai multi seulement si >1 réponses
     is_multi = isinstance(shuffled_answer, list) and len(shuffled_answer) > 1
     label = "Choix multiples" if is_multi else "Choix unique"
     color = "#9333EA" if is_multi else "#2563EB"
@@ -847,24 +823,21 @@ else:
 
     st.markdown(f"### {row['question']}")
 
-    # ---- Affichage de l'image si présente ----
+    # ---- Affichage image si présente ----
     img_field = str(row.get("image", "") or "").strip()
     if img_field:
-        # On essaye plusieurs emplacements plausibles
-        rel = img_field.lstrip("/")                           # ex: "Images/2023-q030.png"
+        rel = img_field.lstrip("/")
         candidates = [
-            BASE_DIR / rel,                                   # racine du projet
-            BASE_DIR / "public" / rel,                        # si tu as mis public/Images/...
-            subject_dir / rel,                                # data/.../Matière/Images/...
-            DATA_DIR / rel                                    # data/... à la racine data/
+            BASE_DIR / rel,
+            BASE_DIR / "public" / rel,
+            subject_dir / rel,
+            DATA_DIR / rel
         ]
         img_path = next((p for p in candidates if p.exists()), None)
-
         if img_path:
             try:
                 st.image(str(img_path), caption=None, use_container_width=True)
             except TypeError:
-                # compatibilité anciennes versions de Streamlit
                 st.image(str(img_path), caption=None, use_column_width=True)
 
     letters = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -923,24 +896,20 @@ else:
             st.session_state.answers = {}
             st.session_state.choice_shuffle = {}
 
-            # 1) Si un lot figé existe pour ce filtre, on repart dessus
             fixed_ids = st.session_state.get("fixed5", {}).get(
                 _fixed_session_key(school, year, subject, selected_qcm if available_qcms else None),
                 []
             )
-            fixed_ids = [i for i in fixed_ids if 0 <= i < len(df)]  # validation
+            fixed_ids = [i for i in fixed_ids if 0 <= i < len(df)]
 
             if fixed_ids:
-                st.session_state.indices = fixed_ids
-                st.session_state.custom_subset = True
+                _apply_subset(fixed_ids, shuffle=shuffle_fixed_inside)  # <<< reshuffle du lot
                 st.rerun()
 
-            # 2) Sinon, si on était déjà sur un sous-ensemble custom (ex: aléatoire généré)
             if st.session_state.get("custom_subset", False) and st.session_state.get("indices"):
-                st.session_state.custom_subset = True
+                _apply_subset(st.session_state.indices, shuffle=True)
                 st.rerun()
 
-            # 3) Fallback: pas de lot figé ni de sous-ensemble → pool complet
             st.session_state.custom_subset = False
             order = list(df.index)
             if st.session_state.shuffle_q:
@@ -969,6 +938,6 @@ else:
 
 st.caption(
     "Astuce : LaTeX accepté. Un JSON par matière → data/École/Année/Matière/questions.json. "
-    "Champs 'qcm' et 'tags' sont tolérés dans le JSON, mais seuls 'qcm' est filtrable ici. "
+    "Champs 'qcm' et 'tags' sont tolérés dans le JSON, mais seul 'qcm' est filtrable. "
     "Les lots figés sont enregistrés dans lots_figes.json et chaque question est annotée via 'id_gen'."
 )

@@ -84,6 +84,9 @@
         "test de Student",
         "p-value",
         "significativité"
+      ],
+      "id_gen": [
+        "qcm005_2025-10-10"
       ]
     },
     {
@@ -135,6 +138,9 @@
         "tests statistiques",
         "valeur critique",
         "p-value"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-10"
       ]
     },
     {
@@ -173,6 +179,9 @@
         "nature des variables",
         "qualitative",
         "ordinale"
+      ],
+      "id_gen": [
+        "qcm005_2025-10-10"
       ]
     },
     {
@@ -240,6 +249,10 @@
         "tests statistiques",
         "p-value",
         "seuil de risque"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-10",
+        "qcm005_2025-10-10"
       ]
     },
     {
@@ -302,6 +315,9 @@
         "visualisation",
         "qualitative vs quantitative",
         "boxplots"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-10"
       ]
     },
     {
@@ -321,6 +337,9 @@
         "OLS",
         "régression linéaire",
         "observables"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-10"
       ]
     },
     {
@@ -340,6 +359,10 @@
         "variance",
         "régression",
         "OLS"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-10",
+        "qcm006_2025-10-10"
       ]
     },
     {
@@ -385,6 +408,9 @@
         "variance",
         "estimateur sans biais",
         "OLS"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-10"
       ]
     },
     {
@@ -457,6 +483,9 @@
         "tests statistiques",
         "p-value",
         "seuil de risque"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-10"
       ]
     },
     {
@@ -524,6 +553,9 @@
         "OLS",
         "estimateur",
         "formule"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-10"
       ]
     },
     {
@@ -575,6 +607,10 @@
         "tests statistiques",
         "valeur critique",
         "régression"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-10",
+        "qcm006_2025-10-10"
       ]
     },
     {
@@ -600,6 +636,9 @@
         "hypothèses",
         "indépendance",
         "homoscédasticité"
+      ],
+      "id_gen": [
+        "qcm006_2025-10-10"
       ]
     },
     {
@@ -674,6 +713,10 @@
         "variance",
         "estimateur sans biais",
         "résidus"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-10",
+        "qcm003_2025-10-10"
       ]
     },
     {
@@ -693,6 +736,9 @@
         "variance",
         "régression",
         "moments"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-10"
       ]
     },
     {
@@ -731,6 +777,9 @@
         "tests de Fisher",
         "comparaison de modèles",
         "régression multiple"
+      ],
+      "id_gen": [
+        "qcm006_2025-10-10"
       ]
     },
     {
@@ -798,6 +847,10 @@
         "résidus",
         "régression multiple",
         "propriétés"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-10",
+        "qcm007_2025-10-10"
       ]
     },
     {
@@ -822,6 +875,9 @@
         "plein rang",
         "algèbre linéaire",
         "régression"
+      ],
+      "id_gen": [
+        "qcm007_2025-10-10"
       ]
     },
     {
@@ -841,6 +897,10 @@
         "$R^2$",
         "qualité d’ajustement",
         "régression"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-10",
+        "qcm007_2025-10-10"
       ]
     },
     {
@@ -860,6 +920,9 @@
         "tests de Fisher",
         "significativité globale",
         "régression multiple"
+      ],
+      "id_gen": [
+        "qcm007_2025-10-10"
       ]
     },
     {
@@ -879,6 +942,10 @@
         "régression multiple",
         "homoscédasticité",
         "hypothèses"
+      ],
+      "id_gen": [
+        "qcm006_2025-10-10",
+        "qcm007_2025-10-10"
       ]
     },
     {
@@ -917,6 +984,9 @@
         "régression simple",
         "moindres carrés",
         "estimateur de pente"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-10"
       ]
     },
     {
@@ -937,6 +1007,9 @@
         "test de Student",
         "p-valeur",
         "significativité"
+      ],
+      "id_gen": [
+        "qcm005_2025-10-10"
       ]
     },
     {
@@ -1124,6 +1197,9 @@
         "régression linéaire",
         "variance",
         "modèle linéaire"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-10"
       ]
     },
     {
@@ -1145,6 +1221,10 @@
         "régression linéaire",
         "estimateur",
         "MCO"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-10",
+        "qcm005_2025-10-10"
       ]
     },
     {
@@ -1172,6 +1252,9 @@
         "résidus",
         "projection",
         "matrices de projection"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-10"
       ]
     },
     {
@@ -1297,6 +1380,10 @@
         "régression linéaire",
         "multicolinéarité",
         "variables explicatives"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-10",
+        "qcm003_2025-10-10"
       ]
     },
     {

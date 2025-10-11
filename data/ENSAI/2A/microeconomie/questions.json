@@ -19,6 +19,9 @@
         "biais de sélection",
         "étude observationnelle",
         "causalité"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-11"
       ]
     },
     {
@@ -40,6 +43,11 @@
         "pari équitable",
         "espérance",
         "théorie des jeux"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-11",
+        "qcm002_2025-10-11",
+        "qcm003_2025-10-11"
       ]
     },
     {
@@ -83,6 +91,10 @@
         "aversion au risque",
         "utilité concave",
         "pari équitable"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-11",
+        "qcm002_2025-10-11"
       ]
     },
     {
@@ -153,6 +165,10 @@
         "biens contingents",
         "état du monde",
         "incertitude"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-11",
+        "qcm004_2025-10-11"
       ]
     },
     {
@@ -176,6 +192,11 @@
         "asymétrie d’information",
         "Akerlof",
         "lemons"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-11",
+        "qcm002_2025-10-11",
+        "qcm003_2025-10-11"
       ]
     },
     {
@@ -243,6 +264,9 @@
         "théorie des jeux",
         "stratégie dominée",
         "rationalité"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-11"
       ]
     },
     {
@@ -287,6 +311,9 @@
         "meilleure réponse",
         "stratégie",
         "stratégie dominante"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-11"
       ]
     },
     {
@@ -311,7 +338,8 @@
         "équilibre parfait en sous-jeux"
       ],
       "id_gen": [
-        "qcm001_2025-10-06"
+        "qcm001_2025-10-06",
+        "qcm004_2025-10-11"
       ]
     },
     {
@@ -334,6 +362,10 @@
         "équilibre de Nash bayésien",
         "information incomplète",
         "croyances"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-11",
+        "qcm002_2025-10-11"
       ]
     },
     {
@@ -447,7 +479,8 @@
         "utilité non transférable"
       ],
       "id_gen": [
-        "qcm002_2025-10-06"
+        "qcm002_2025-10-06",
+        "qcm004_2025-10-11"
       ]
     },
     {
@@ -515,6 +548,11 @@
         "théorie des jeux",
         "valeur de Shapley",
         "allocation efficace"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-11",
+        "qcm002_2025-10-11",
+        "qcm004_2025-10-11"
       ]
     },
     {
