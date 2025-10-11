@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": "2023-q001",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Dans une étude observationnelle, un biais de sélection survient lorsque :",
       "choices": [
@@ -23,7 +23,7 @@
     },
     {
       "id": "2023-q002",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Un pari équitable est :",
       "choices": [
@@ -44,7 +44,7 @@
     },
     {
       "id": "2023-q003",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Parmi les axiomes suivants utilisés dans la démonstration de l’utilité espérée de Von Neumann-Morgenstern, lequel n’en fait pas partie ?",
       "choices": [
@@ -66,7 +66,7 @@
     },
     {
       "id": "2023-q004",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Une personne averse au risque :",
       "choices": [
@@ -87,7 +87,7 @@
     },
     {
       "id": "2023-q005",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Pour deux loteries A et B avec F_A et F_B leurs fonctions de répartition respectives, B domine stochastiquement A au premier ordre si :",
       "choices": [
@@ -111,7 +111,7 @@
     },
     {
       "id": "2023-q006",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Trouver l’(les) affirmation(s) fausse(s) :",
       "choices": [
@@ -135,7 +135,7 @@
     },
     {
       "id": "2023-q007",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Les biens d’état-contingent en économie désignent des biens ou services dont :",
       "choices": [
@@ -157,7 +157,7 @@
     },
     {
       "id": "2023-q008",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Le problème de sélection adverse :",
       "choices": [
@@ -180,7 +180,7 @@
     },
     {
       "id": "2023-q009",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "L’aléa moral (moral hazard) :",
       "choices": [
@@ -205,7 +205,7 @@
     },
     {
       "id": "2023-q010",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "En théorie des jeux, un équilibre de Nash est une situation dans laquelle :",
       "choices": [
@@ -226,7 +226,7 @@
     },
     {
       "id": "2023-q011",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "En théorie des jeux, une stratégie dominée pour un joueur est une stratégie :",
       "choices": [
@@ -247,7 +247,7 @@
     },
     {
       "id": "2023-q012",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Dans le dilemme du prisonnier, la situation où aucun joueur ne trahit est :",
       "choices": [
@@ -269,7 +269,7 @@
     },
     {
       "id": "2023-q013",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Une meilleure réponse (Best Response) pour le joueur i aux stratégies du joueur j est une situation telle que :",
       "choices": [
@@ -291,7 +291,7 @@
     },
     {
       "id": "2023-q014",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Dans les jeux en forme extensive, un équilibre parfait en sous-jeux (SPNE) est un profil de stratégies qui :",
       "choices": [
@@ -316,7 +316,7 @@
     },
     {
       "id": "2023-q015",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Dans un équilibre de Nash bayésien :",
       "choices": [
@@ -338,7 +338,7 @@
     },
     {
       "id": "2023-q016",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Selon le modèle de Diamond-Dybvig, dans un monde où les agents font face à un possible choc de liquidité :",
       "choices": [
@@ -361,7 +361,7 @@
     },
     {
       "id": "2023-q017",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Dans le modèle de Diamond-Dybvig, une politique de suspension de la convertibilité :",
       "choices": [
@@ -384,7 +384,7 @@
     },
     {
       "id": "2023-q018",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "En économie, la dispersion des salaires désigne :",
       "choices": [
@@ -406,7 +406,7 @@
     },
     {
       "id": "2023-q019",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Dans un modèle de recherche d’emploi, le fait que les travailleurs soient connectés via un réseau social :",
       "choices": [
@@ -427,7 +427,7 @@
     },
     {
       "id": "2023-q020",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Une situation dans laquelle des individus discutent de la manière appropriée de partager une tartiflette peut être modélisée comme :",
       "choices": [
@@ -452,7 +452,7 @@
     },
     {
       "id": "2023-q021",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "Quelles affirmations concernant les jeux coopératifs sont correctes :",
       "choices": [
@@ -470,11 +470,14 @@
         "théorie des jeux",
         "jeux coopératifs",
         "superadditivité"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-06"
       ]
     },
     {
       "id": "2023-q022",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "La fonction caractéristique d’un jeu coopératif est :",
       "choices": [
@@ -495,7 +498,7 @@
     },
     {
       "id": "2023-q023",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-cours",
       "theme": "Microéconomie",
       "question": "La valeur de Shapley est :",
       "choices": [
@@ -750,7 +753,7 @@
     },
     {
       "id": "2024-q001",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Quel est le principal défi empirique dans la détermination de l’effet causal de l’assurance santé sur les résultats de santé ? (Image ci-dessous)",
       "choices": [
@@ -772,7 +775,7 @@
     },
     {
       "id": "2024-q002",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Quel énoncé décrit le mieux le problème de biais de sélection dans la détermination de l’effet causal de l’assurance santé ?",
       "choices": [
@@ -790,11 +793,14 @@
         "causalité",
         "biais de sélection",
         "assurance"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-06"
       ]
     },
     {
       "id": "2024-q003",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Lequel des énoncés suivants est un exemple de pari équitable (fair gamble) ?",
       "choices": [
@@ -816,7 +822,7 @@
     },
     {
       "id": "2024-q004",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Dans le paradoxe de Saint-Pétersbourg, l’espérance mathématique du jeu est infinie. Quel concept explique pourquoi les individus peuvent quand même refuser d’y participer ?",
       "choices": [
@@ -840,7 +846,7 @@
     },
     {
       "id": "2024-q005",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Que mesure le coefficient d’aversion absolue au risque d’Arrow-Pratt ?",
       "choices": [
@@ -861,7 +867,7 @@
     },
     {
       "id": "2024-q006",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "D’après l’inégalité de Jensen, qu’est-ce qui est vrai pour une fonction d’utilité strictement concave U en relation avec l’espérance d’utilité ?",
       "choices": [
@@ -879,11 +885,14 @@
         "concavité",
         "utilité espérée",
         "risque"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-06"
       ]
     },
     {
       "id": "2024-q007",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Selon la distinction de Knight entre risque et incertitude, laquelle des propositions décrit le mieux l’incertitude ?",
       "choices": [
@@ -905,7 +914,7 @@
     },
     {
       "id": "2024-q008",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Dans le cadre du marché équitable des biens contingents, que représente le ratio des prix $\\tfrac{p_g}{p_b}$ ?",
       "choices": [
@@ -927,7 +936,7 @@
     },
     {
       "id": "2024-q009",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Laquelle des propositions suivantes décrit le mieux le Théorème d’utilité de Von Neumann-Morgenstern ?",
       "choices": [
@@ -949,7 +958,7 @@
     },
     {
       "id": "2024-q010",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Pour deux loteries A et B de fonctions de répartition respectives F_A et F_B, on dit que B domine A au premier ordre (FOSD) si :",
       "choices": [
@@ -973,7 +982,7 @@
     },
     {
       "id": "2024-q011",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "En économie, les biens contingents aux états du monde (state-contingent commodities) désignent des biens ou services dont :",
       "choices": [
@@ -995,7 +1004,7 @@
     },
     {
       "id": "2024-q011",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "En économie, les biens contingents aux états du monde (state-contingent commodities) désignent des biens ou services dont :",
       "choices": [
@@ -1017,7 +1026,7 @@
     },
     {
       "id": "2024-q012",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "En théorie des jeux, que représente un profil de stratégies ?",
       "choices": [
@@ -1039,7 +1048,7 @@
     },
     {
       "id": "2024-q013",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Lequel des éléments suivants n’est PAS typiquement un composant d’un jeu stratégique en théorie des jeux ?",
       "choices": [
@@ -1060,7 +1069,7 @@
     },
     {
       "id": "2024-q014",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Quel est le principal défi dans le calcul d’un équilibre en stratégies mixtes dans des jeux comme Pierre-Feuille-Ciseaux ?",
       "choices": [
@@ -1082,7 +1091,7 @@
     },
     {
       "id": "2024-q015",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Dans un jeu séquentiel, qu’est-ce qu’un équilibre parfait en sous-jeux (subgame perfect equilibrium) ?",
       "choices": [
@@ -1104,7 +1113,7 @@
     },
     {
       "id": "2024-q016",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Dans le jeu du Centipede, pourquoi l’induction à rebours suggère-t-elle que les joueurs s’arrêtent tôt ?",
       "choices": [
@@ -1129,7 +1138,7 @@
     },
     {
       "id": "2024-q017",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Dans un équilibre de Nash bayésien, quel est le principe clé ?",
       "choices": [
@@ -1151,7 +1160,7 @@
     },
     {
       "id": "2024-q018",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Dans le modèle de Diamond-Dybvig, quelle est la différence clé entre les agents de type 1 et ceux de type 2 ?",
       "choices": [
@@ -1173,7 +1182,7 @@
     },
     {
       "id": "2024-q019",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Quel rôle jouent les banques dans le modèle de Diamond-Dybvig ?",
       "choices": [
@@ -1195,7 +1204,7 @@
     },
     {
       "id": "2024-q020",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Quel résultat est décrit comme un « mauvais équilibre » dans le contexte bancaire du modèle de Diamond-Dybvig ?",
       "choices": [
@@ -1217,7 +1226,7 @@
     },
     {
       "id": "2024-q021",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Dans le modèle de recherche sur le marché du travail, quel est l’un des principaux facteurs contribuant à la dispersion des salaires ?",
       "choices": [
@@ -1239,7 +1248,7 @@
     },
     {
       "id": "2024-q022",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Comment la présence de réseaux sociaux influence-t-elle les résultats salariaux dans le modèle du marché du travail présenté dans les slides ?",
       "choices": [
@@ -1264,7 +1273,7 @@
     },
     {
       "id": "2024-q023",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Dans l’équilibre compétitif décrit dans le modèle de Diamond-Dybvig, qu’est-ce qui empêche les agents d’atteindre un optimum de premier rang (first-best) ?",
       "choices": [
@@ -1286,7 +1295,7 @@
     },
     {
       "id": "2024-q024",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Dans le contexte des politiques bancaires, quel est le rôle d’une suspension de convertibilité ?",
       "choices": [
@@ -1309,7 +1318,7 @@
     },
     {
       "id": "2024-q025",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "En théorie des jeux coopératifs, que représente la fonction caractéristique v(S) d’une coalition S ?",
       "choices": [
@@ -1331,7 +1340,7 @@
     },
     {
       "id": "2024-q026",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Que signifie le concept de « rationalité individuelle » en théorie des jeux coopératifs ?",
       "choices": [
@@ -1353,7 +1362,7 @@
     },
     {
       "id": "2024-q027",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Comment définit-on la valeur de Shapley en théorie des jeux coopératifs ?",
       "choices": [
@@ -1378,7 +1387,7 @@
     },
     {
       "id": "2024-q028",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Dans un jeu coopératif convexe, laquelle des propriétés suivantes est vraie ?",
       "choices": [
@@ -1400,7 +1409,7 @@
     },
     {
       "id": "2024-q029",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "Lequel des axiomes suivants n’est pas requis pour la valeur de Shapley ?",
       "choices": [
@@ -1422,7 +1431,7 @@
     },
     {
       "id": "2024-q030",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
       "question": "La fonction caractéristique d’un jeu coopératif est :",
       "choices": [
@@ -1462,6 +1471,9 @@
         "espérance",
         "décision",
         "probabilités"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-06"
       ]
     },
     {
@@ -1640,6 +1652,9 @@
         "fonction caractéristique",
         "répartition des recettes",
         "Shapley (contexte)"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-06"
       ]
     },
     {
