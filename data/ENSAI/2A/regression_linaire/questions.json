@@ -1526,6 +1526,471 @@
         "variance des erreurs",
         "matrice de variance"
       ]
+    },
+    {
+      "id": "qcm4-q06",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Dans le contexte d’une régression multiple, qu’est-ce que l’hétéroscédasticité ?",
+      "choices": [
+        "Le fait que les εⁱ ne sont pas corrélés entre eux",
+        "Le fait que les coefficients du modèle sont biaisés",
+        "Le fait que la variance des εⁱ n’est pas constante",
+        "Le fait que la relation entre Y et les variables explicatives n’est pas linéaire"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L’hétéroscédasticité signifie que la variance des erreurs εⁱ varie selon les observations, c’est-à-dire qu’elle n’est pas constante. Cela viole l’hypothèse d’homoscedasticité du modèle linéaire classique.",
+      "tags": [
+        "hétéroscédasticité",
+        "variance des erreurs",
+        "régression multiple"
+      ]
+    },
+    {
+      "id": "qcm4-q07",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Quelles affirmations à propos des valeurs de levier $h^{ii}$ sont vraies ?",
+      "choices": [
+        "$\\sum_{i=1}^n h^{ii} = p$ (nombre de paramètres)",
+        "Le levier dépend de la variable réponse $Y$",
+        "$h^{ii} = (P^{[X]})^{ii}$",
+        "Les points à fort effet levier ont toujours de grands résidus",
+        "$h^{ii} > 2p/n$ indique un point à fort effet levier"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "Les valeurs de levier $h^{ii}$ proviennent de la matrice de projection $P^{[X]} = X(X^{\\top}X)^{-1}X^{\\top}$. Leur somme vaut le nombre de paramètres $p$. Elles ne dépendent que de $X$, pas de $Y$. Une valeur élevée (souvent $> 2p/n$) signale un point influent.",
+      "tags": [
+        "valeurs de levier",
+        "influence",
+        "projection",
+        "régression linéaire multiple"
+      ]
+    },
+    {
+      "id": "qcm4-q08",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Quelle est la corrélation théorique entre les résidus $\\hat{\\varepsilon}$ et les valeurs ajustées $\\hat{Y}$ ?",
+      "choices": [
+        "1",
+        "Elle dépend des données",
+        "0",
+        "$\\sigma^2$"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dans le modèle de régression linéaire, les résidus $\\hat{\\varepsilon}$ sont orthogonaux aux valeurs ajustées $\\hat{Y}$. Cela implique une corrélation théorique nulle entre les deux ($\\operatorname{Corr}(\\hat{\\varepsilon}, \\hat{Y}) = 0$).",
+      "tags": [
+        "corrélation",
+        "résidus",
+        "valeurs ajustées",
+        "orthogonalité"
+      ]
+    },
+    {
+      "id": "qcm4-q09",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Vous souhaitez tester si les variables $X^3$, $X^4$, $X^5$ peuvent être supprimées simultanément d’un modèle avec 8 régresseurs (y compris l’intercept). Sous $H_0$, quelle est la loi de la statistique de test de Fisher ?",
+      "choices": [
+        "$F_{3,\\,n-5}$",
+        "$F_{5,\\,n-8}$",
+        "$F_{3,\\,n-8}$",
+        "$F_{5,\\,n-5}$"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Sous l’hypothèse nulle $H_0 : \\beta^3 = \\beta^4 = \\beta^5 = 0$, on compare un modèle restreint (5 régressseurs) à un modèle complet (8 régressseurs). La statistique de Fisher suit alors une loi $F_{3,\\,n-8}$, car on teste 3 contraintes sur un modèle avec 8 paramètres estimés.",
+      "tags": [
+        "test de Fisher",
+        "modèles emboîtés",
+        "régression multiple",
+        "hypothèse nulle"
+      ]
+    },
+    {
+      "id": "qcm4-q10",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Après une recherche exhaustive basée sur le $R^2$ ajusté (c’est-à-dire le $R^2_a$), que peut-on affirmer sur le modèle retenu ?",
+      "choices": [
+        "Il ne présente aucun problème d’autocorrélation",
+        "Il a le plus grand $R^2_a$",
+        "Il ne présente aucun problème d’hétéroscédasticité",
+        "Il a le plus faible $R^2_a$",
+        "Il a le meilleur score BIC",
+        "Il peut souffrir de multicolinéarité"
+      ],
+      "answer": [
+        1,
+        5
+      ],
+      "explanation": "La sélection fondée sur le $R^2_a$ vise à maximiser ce critère, donc le modèle retenu possède le plus grand $R^2_a$. Cependant, cela n’exclut pas la présence de multicolinéarité entre variables explicatives.",
+      "tags": [
+        "R² ajusté",
+        "sélection de modèle",
+        "multicolinéarité",
+        "BIC"
+      ]
+    },
+    {
+      "id": "qcm4-q11",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Quelle forme du nuage de points des résidus indique un problème d’hétéroscédasticité ?",
+      "choices": [
+        "Dispersion constante mais trois valeurs aberrantes",
+        "Forme d’entonnoir : la variance augmente avec les valeurs ajustées",
+        "Forme parabolique",
+        "Nuage aléatoire avec une dispersion constante"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Une forme d’entonnoir dans le nuage des résidus indique que la variance des erreurs augmente avec les valeurs ajustées, ce qui caractérise un problème d’hétéroscédasticité.",
+      "tags": [
+        "hétéroscédasticité",
+        "résidus",
+        "diagnostic graphique",
+        "régression linéaire"
+      ]
+    },
+    {
+      "id": "qcm4-q12",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "La distance de Cook permet de détecter :",
+      "choices": [
+        "Les points à fort levier",
+        "Les problèmes de surapprentissage",
+        "L’autocorrélation des résidus",
+        "L’hétéroscédasticité",
+        "Les valeurs aberrantes"
+      ],
+      "answer": [
+        0,
+        4
+      ],
+      "explanation": "La distance de Cook met en évidence les observations ayant une forte influence sur le modèle, c’est-à-dire celles combinant un fort levier et un grand résidu. Elle permet donc d’identifier les points à fort levier et les valeurs aberrantes.",
+      "tags": [
+        "distance de Cook",
+        "influence",
+        "valeurs aberrantes",
+        "levier"
+      ]
+    },
+    {
+      "id": "qcm4-q13",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "La statistique du test de Breusch–Godfrey donne une p-valeur de 0,8. Que cela suggère-t-il ?",
+      "choices": [
+        "Aucune hétéroscédasticité dans les données",
+        "Une autocorrélation positive des résidus",
+        "Aucune autocorrélation des résidus",
+        "La présence d’un problème d’hétéroscédasticité"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Une p-valeur élevée (ici 0,8) conduit à ne pas rejeter l’hypothèse nulle du test de Breusch–Godfrey, selon laquelle il n’existe pas d’autocorrélation des résidus. On conclut donc à l’absence d’autocorrélation.",
+      "tags": [
+        "test de Breusch–Godfrey",
+        "autocorrélation",
+        "résidus",
+        "régression linéaire"
+      ]
+    },
+    {
+      "id": "qcm4-q14",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Dans un test de modèles emboîtés comparant des modèles à 10 et 7 paramètres, on obtient $F = 2{,}6$ avec une p-valeur de $0{,}22$. Que recommandez-vous ?",
+      "choices": [
+        "Il faut effectuer des tests de Student pour plus de puissance statistique",
+        "Le modèle le plus simple à 7 paramètres est adéquat",
+        "Il faut plus de données pour conclure",
+        "Le modèle complet à 10 paramètres est nécessaire"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Une p-valeur élevée (0,22) indique qu’on ne rejette pas l’hypothèse nulle selon laquelle le modèle restreint à 7 paramètres est suffisant. On retient donc le modèle le plus simple, jugé adéquat.",
+      "tags": [
+        "test de Fisher",
+        "modèles emboîtés",
+        "sélection de modèle",
+        "régression multiple"
+      ]
+    },
+    {
+      "id": "qcm4-q15",
+      "qcm": "QCM4",
+      "theme": "Régression linéaire",
+      "question": "Après une recherche exhaustive basée sur le BIC, que peut-on affirmer sur le modèle retenu ?",
+      "choices": [
+        "Il a le meilleur score $C_p$ de Mallows",
+        "Il ne présente aucun problème de multicolinéarité",
+        "Il ne présente aucun problème d’hétéroscédasticité",
+        "Il a le plus faible BIC",
+        "Il a le plus grand BIC",
+        "Il peut souffrir de problèmes d’autocorrélation"
+      ],
+      "answer": [
+        3,
+        5
+      ],
+      "explanation": "Le critère BIC (Bayesian Information Criterion) est minimisé pour sélectionner le meilleur modèle. Ainsi, le modèle retenu est celui avec le plus faible BIC, mais cela ne garantit pas l’absence d’autocorrélation des résidus.",
+      "tags": [
+        "BIC",
+        "sélection de modèle",
+        "autocorrélation",
+        "critères d’information"
+      ]
+    },
+    {
+      "id": "qcm6-q01",
+      "qcm": "QCM6",
+      "theme": "Régression linéaire",
+      "question": "Dans un modèle de régression linéaire simple, l’estimation de la pente vaut $\\tfrac{1}{4}$, d’écart-type estimé $0{,}1$. En vous aidant des quantiles donnés dans la table ci-dessous, à quel niveau $\\alpha$ pouvez-vous affirmer que cette pente est significativement différente de 0 ?",
+      "image": "/Images/regression_lineaire/qcm6-2024-q1.png",
+      "choices": [
+        "$\\alpha = 0{,}1$",
+        "$\\alpha = 0{,}05$",
+        "$\\alpha = 0{,}001$",
+        "$\\alpha = 0{,}01$",
+        "$\\alpha = 0{,}15$"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "La statistique de test vaut $t = \\tfrac{0{,}25}{0{,}1} = 2{,}5$. En comparant aux quantiles de Student (≈2{,}07 pour $\\alpha=0{,}1$, ≈1{,}71 pour $\\alpha=0{,}15$, ≈2{,}49 pour $\\alpha=0{,}05$), on rejette $H_0$ pour $\\alpha = 0{,}15$, $0{,}1$ et légèrement pour $0{,}05$, mais pas pour des niveaux plus faibles.",
+      "tags": [
+        "test de Student",
+        "pente de régression",
+        "niveau de signification",
+        "régression simple"
+      ]
+    },
+    {
+      "id": "qcm6-q02",
+      "qcm": "QCM6",
+      "theme": "Régression linéaire",
+      "question": "L’ANOVA permet de tester des différences significatives :",
+      "choices": [
+        "Entre deux ou plusieurs groupes",
+        "Entre deux groupes seulement",
+        "Entre plus de deux groupes uniquement",
+        "Entre des variables qualitatives"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L’ANOVA (analyse de la variance) compare les moyennes de plusieurs groupes pour déterminer s’il existe au moins une différence significative. Elle s’applique dès deux groupes, mais est surtout utile pour plus de deux.",
+      "tags": [
+        "ANOVA",
+        "analyse de la variance",
+        "comparaison de moyennes",
+        "tests statistiques"
+      ]
+    },
+    {
+      "id": "qcm6-q03",
+      "qcm": "QCM6",
+      "theme": "Régression linéaire",
+      "question": "Si la p-valeur obtenue dans une ANOVA vaut 0.013, cela signifie que :",
+      "choices": [
+        "Il y a une différence significative de variance entre au moins deux groupes",
+        "Les moyennes des groupes sont toutes significativement différentes",
+        "Toutes les moyennes des groupes sont identiques",
+        "Les variances des groupes sont toutes significativement différentes",
+        "Il y a une différence significative de moyenne entre au moins deux groupes"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "Une p-valeur de 0.013 est inférieure au seuil usuel de 5 %, donc on rejette l’hypothèse nulle d’égalité des moyennes. L’ANOVA conclut qu’il existe une différence significative de moyenne entre au moins deux groupes.",
+      "tags": [
+        "ANOVA",
+        "p-valeur",
+        "test de Fisher",
+        "comparaison de moyennes"
+      ]
+    },
+    {
+      "id": "qcm6-q04",
+      "qcm": "QCM6",
+      "theme": "Régression linéaire",
+      "question": "On considère un modèle de régression contenant deux variables explicatives, qui sont deux facteurs à respectivement 3 et 4 modalités. Si on n’introduit aucune interaction, combien de coefficients seront estimés ?",
+      "choices": [
+        "5",
+        "6",
+        "9",
+        "8",
+        "12",
+        "7",
+        "10"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Un facteur à 3 modalités nécessite 2 coefficients (car une modalité sert de référence) et un facteur à 4 modalités en nécessite 3. Avec l’intercept, on obtient donc $1 + 2 + 3 = 6$ coefficients estimés.",
+      "tags": [
+        "variables qualitatives",
+        "facteurs",
+        "paramétrisation",
+        "modèle linéaire"
+      ]
+    },
+    {
+      "id": "qcm6-q05",
+      "qcm": "QCM6",
+      "theme": "Régression linéaire",
+      "question": "Le test $F$ utilisé dans l’ANOVA est défini comme :",
+      "choices": [
+        "La moyenne (normalisée) des différences de variances entre chaque groupe",
+        "Le rapport entre la variance intergroupes et la variance totale",
+        "Le rapport entre la variance intergroupes et la variance intragroupes",
+        "La moyenne (normalisée) des différences de moyennes entre chaque groupe"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le test $F$ de l’ANOVA repose sur le rapport entre la variance intergroupes (due au modèle) et la variance intragroupes (due à l’erreur). Une valeur élevée de ce rapport indique une différence significative entre les groupes.",
+      "tags": [
+        "ANOVA",
+        "test F",
+        "variance intergroupes",
+        "variance intragroupes"
+      ]
+    },
+    {
+      "id": "qcm6-q06",
+      "qcm": "QCM6",
+      "theme": "Régression linéaire",
+      "question": "Dans un modèle de régression linéaire simple, l’estimation de l’ordonnée à l’origine vaut $-2$, d’écart-type estimé $1$. En vous aidant des quantiles donnés dans la table ci-dessous, à quel niveau $\\alpha$ pouvez-vous affirmer que cette ordonnée à l’origine est significativement différente de 0 ?",
+      "image": "/Images/regression_lineaire/qcm6-2024-q6.png",
+      "choices": [
+        "$\\alpha = 0{,}15$",
+        "$\\alpha = 0{,}05$",
+        "$\\alpha = 0{,}001$",
+        "$\\alpha = 0{,}01$",
+        "$\\alpha = 0{,}1$"
+      ],
+      "answer": [
+        0,
+        4
+      ],
+      "explanation": "La statistique de test vaut $t = \\tfrac{-2}{1} = -2$. En valeur absolue, $|t| = 2$, ce qui dépasse les seuils critiques pour $\\alpha = 0{,}15$ et $\\alpha = 0{,}1$, mais pas pour $\\alpha$ plus petits. On rejette donc $H_0$ à ces niveaux uniquement.",
+      "tags": [
+        "test de Student",
+        "ordonnée à l’origine",
+        "niveau de signification",
+        "régression simple"
+      ]
+    },
+    {
+      "id": "qcm6-q07",
+      "qcm": "QCM6",
+      "theme": "Régression linéaire",
+      "question": "Quel est l’objectif principal de l’ANOVA ?",
+      "choices": [
+        "Comparer les variances d’une variable quantitative dans plusieurs groupes",
+        "Tester la significativité de l’égalité de plusieurs variances",
+        "Déterminer si la corrélation entre deux variables qualitatives est significative",
+        "Comparer les moyennes d’une variable quantitative dans plusieurs groupes"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "L’ANOVA (analyse de la variance) vise à comparer les moyennes d’une variable quantitative entre plusieurs groupes afin de déterminer si elles diffèrent significativement.",
+      "tags": [
+        "ANOVA",
+        "comparaison de moyennes",
+        "analyse statistique",
+        "variance intergroupes"
+      ]
+    },
+    {
+      "id": "qcm6-q08",
+      "qcm": "QCM6",
+      "theme": "Régression linéaire",
+      "question": "Parmi ces options, quelle est la principale condition à vérifier avant d’appliquer une ANOVA ?",
+      "choices": [
+        "Vérifier que chaque groupe a même espérance",
+        "Vérifier la normalité des résidus",
+        "Vérifier que chaque groupe a même variance",
+        "Détecter la présence de valeurs aberrantes dans les données",
+        "Vérifier que chaque groupe a même taille"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L’ANOVA suppose l’homogénéité des variances (homoscédasticité) entre les groupes. Cette condition garantit la validité du test de Fisher utilisé pour comparer les moyennes.",
+      "tags": [
+        "ANOVA",
+        "conditions d’application",
+        "homoscédasticité",
+        "variance"
+      ]
+    },
+    {
+      "id": "qcm6-q09",
+      "qcm": "QCM6",
+      "theme": "Régression linéaire",
+      "question": "On considère un modèle de régression contenant deux variables explicatives, qui sont un facteur à trois modalités et une variable quantitative. Si on introduit une interaction entre les deux variables, combien de coefficients seront estimés ?",
+      "choices": [
+        "3",
+        "7",
+        "4",
+        "6",
+        "9",
+        "8",
+        "5"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Un facteur à trois modalités nécessite 2 coefficients, une variable quantitative en ajoute 1, et l’interaction entre les deux introduit 2 coefficients supplémentaires (car elle dépend des modalités du facteur). Avec l’intercept, on obtient $1 + 2 + 1 + 2 = 6$ coefficients estimés.",
+      "tags": [
+        "interaction",
+        "modèle linéaire",
+        "facteurs",
+        "variables explicatives"
+      ]
+    },
+    {
+      "id": "qcm6-q10",
+      "qcm": "QCM6",
+      "theme": "Régression linéaire",
+      "question": "Lorsqu’une ANOVA indique une différence significative, que devrait-on faire pour identifier précisément quels groupes diffèrent ?",
+      "choices": [
+        "Effectuer un test de Fisher",
+        "Effectuer un test de Tukey",
+        "Effectuer des tests de Student 2 à 2",
+        "Effectuer un test de Durbin–Watson"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Après une ANOVA significative, le test de Tukey permet de comparer toutes les paires de moyennes tout en contrôlant le risque global d’erreur de première espèce.",
+      "tags": [
+        "ANOVA",
+        "test de Tukey",
+        "comparaison multiple",
+        "analyse post-hoc"
+      ]
     }
   ]
 }

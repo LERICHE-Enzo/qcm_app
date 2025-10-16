@@ -21,7 +21,9 @@
         "causalité"
       ],
       "id_gen": [
-        "qcm004_2025-10-11"
+        "qcm004_2025-10-11",
+        "qcm011_2025-10-11",
+        "qcm013_2025-10-11"
       ]
     },
     {
@@ -47,7 +49,10 @@
       "id_gen": [
         "qcm001_2025-10-11",
         "qcm002_2025-10-11",
-        "qcm003_2025-10-11"
+        "qcm003_2025-10-11",
+        "qcm005_2025-10-11",
+        "qcm006_2025-10-11",
+        "qcm012_2025-10-11"
       ]
     },
     {
@@ -70,6 +75,13 @@
         "Von Neumann-Morgenstern",
         "axiomes",
         "utilité espérée"
+      ],
+      "id_gen": [
+        "qcm008_2025-10-11",
+        "qcm010_2025-10-11",
+        "qcm012_2025-10-11",
+        "qcm013_2025-10-11",
+        "qcm015_2025-10-11"
       ]
     },
     {
@@ -94,7 +106,8 @@
       ],
       "id_gen": [
         "qcm001_2025-10-11",
-        "qcm002_2025-10-11"
+        "qcm002_2025-10-11",
+        "qcm010_2025-10-11"
       ]
     },
     {
@@ -119,6 +132,14 @@
         "loteries",
         "CDF",
         "espérance sous utilité croissante"
+      ],
+      "id_gen": [
+        "qcm005_2025-10-11",
+        "qcm009_2025-10-11",
+        "qcm010_2025-10-11",
+        "qcm013_2025-10-11",
+        "qcm014_2025-10-11",
+        "qcm015_2025-10-11"
       ]
     },
     {
@@ -143,6 +164,10 @@
         "domination stochastique",
         "espérance",
         "risque"
+      ],
+      "id_gen": [
+        "qcm007_2025-10-11",
+        "qcm009_2025-10-11"
       ]
     },
     {
@@ -168,7 +193,11 @@
       ],
       "id_gen": [
         "qcm003_2025-10-11",
-        "qcm004_2025-10-11"
+        "qcm004_2025-10-11",
+        "qcm005_2025-10-11",
+        "qcm007_2025-10-11",
+        "qcm010_2025-10-11",
+        "qcm015_2025-10-11"
       ]
     },
     {
@@ -196,7 +225,8 @@
       "id_gen": [
         "qcm001_2025-10-11",
         "qcm002_2025-10-11",
-        "qcm003_2025-10-11"
+        "qcm003_2025-10-11",
+        "qcm014_2025-10-11"
       ]
     },
     {
@@ -221,7 +251,9 @@
         "incitations"
       ],
       "id_gen": [
-        "qcm002_2025-10-06"
+        "qcm002_2025-10-06",
+        "qcm008_2025-10-11",
+        "qcm014_2025-10-11"
       ]
     },
     {
@@ -243,6 +275,9 @@
         "théorie des jeux",
         "équilibre de Nash",
         "stratégie"
+      ],
+      "id_gen": [
+        "qcm015_2025-10-11"
       ]
     },
     {
@@ -266,7 +301,8 @@
         "rationalité"
       ],
       "id_gen": [
-        "qcm003_2025-10-11"
+        "qcm003_2025-10-11",
+        "qcm008_2025-10-11"
       ]
     },
     {
@@ -289,6 +325,12 @@
         "Pareto-optimalité",
         "équilibre instable",
         "théorie des jeux"
+      ],
+      "id_gen": [
+        "qcm006_2025-10-11",
+        "qcm009_2025-10-11",
+        "qcm012_2025-10-11",
+        "qcm013_2025-10-11"
       ]
     },
     {
@@ -313,7 +355,14 @@
         "stratégie dominante"
       ],
       "id_gen": [
-        "qcm003_2025-10-11"
+        "qcm003_2025-10-11",
+        "qcm006_2025-10-11",
+        "qcm009_2025-10-11",
+        "qcm011_2025-10-11",
+        "qcm012_2025-10-11",
+        "qcm013_2025-10-11",
+        "qcm014_2025-10-11",
+        "qcm015_2025-10-11"
       ]
     },
     {
@@ -339,7 +388,8 @@
       ],
       "id_gen": [
         "qcm001_2025-10-06",
-        "qcm004_2025-10-11"
+        "qcm004_2025-10-11",
+        "qcm011_2025-10-11"
       ]
     },
     {
@@ -365,7 +415,11 @@
       ],
       "id_gen": [
         "qcm001_2025-10-11",
-        "qcm002_2025-10-11"
+        "qcm002_2025-10-11",
+        "qcm006_2025-10-11",
+        "qcm008_2025-10-11",
+        "qcm009_2025-10-11",
+        "qcm012_2025-10-11"
       ]
     },
     {
@@ -412,6 +466,9 @@
         "assurance-dépôts",
         "bank run",
         "liquidité"
+      ],
+      "id_gen": [
+        "qcm007_2025-10-11"
       ]
     },
     {
@@ -434,6 +491,11 @@
         "salaires",
         "dispersion salariale",
         "inégalités"
+      ],
+      "id_gen": [
+        "qcm007_2025-10-11",
+        "qcm010_2025-10-11",
+        "qcm014_2025-10-11"
       ]
     },
     {
@@ -455,6 +517,10 @@
         "recherche d’emploi",
         "réseaux sociaux",
         "marché du travail"
+      ],
+      "id_gen": [
+        "qcm005_2025-10-11",
+        "qcm008_2025-10-11"
       ]
     },
     {
@@ -480,7 +546,8 @@
       ],
       "id_gen": [
         "qcm002_2025-10-06",
-        "qcm004_2025-10-11"
+        "qcm004_2025-10-11",
+        "qcm006_2025-10-11"
       ]
     },
     {
@@ -505,7 +572,8 @@
         "superadditivité"
       ],
       "id_gen": [
-        "qcm003_2025-10-06"
+        "qcm003_2025-10-06",
+        "qcm005_2025-10-11"
       ]
     },
     {
@@ -527,6 +595,9 @@
         "théorie des jeux",
         "jeux coopératifs",
         "fonction caractéristique"
+      ],
+      "id_gen": [
+        "qcm011_2025-10-11"
       ]
     },
     {
@@ -552,12 +623,14 @@
       "id_gen": [
         "qcm001_2025-10-11",
         "qcm002_2025-10-11",
-        "qcm004_2025-10-11"
+        "qcm004_2025-10-11",
+        "qcm007_2025-10-11",
+        "qcm011_2025-10-11"
       ]
     },
     {
       "id": "2023-q024",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-exercice",
       "theme": "Microéconomie",
       "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. Les issues possibles sous chaque stratégie sont :",
       "choices": [
@@ -578,7 +651,7 @@
     },
     {
       "id": "2023-q025",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-exercice",
       "theme": "Microéconomie",
       "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. En moyenne, combien d’œufs chaque stratégie permet-elle de rapporter ?",
       "choices": [
@@ -600,7 +673,7 @@
     },
     {
       "id": "2023-q026",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-exercice",
       "theme": "Microéconomie",
       "question": "Un individu achète une douzaine d’œufs et doit les ramener chez lui. Les trajets sont sans coût, mais il y a 50 % de chances que tous les œufs transportés lors d’un trajet donné se cassent. Il considère deux stratégies : (1) prendre les 12 œufs en un seul trajet ; (2) faire deux trajets avec 6 œufs à chaque fois. Si l’individu est averse au risque, quelle stratégie préfère-t-il ?",
       "choices": [
@@ -625,7 +698,7 @@
     },
     {
       "id": "2023-q027",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-exercice",
       "theme": "Microéconomie",
       "question": "En reprenant le scénario des œufs (12 œufs à transporter, avec 50% de chance de les perdre à chaque trajet), l’utilité de l’individu augmenterait-elle en multipliant le nombre de trajets ?",
       "choices": [
@@ -648,7 +721,7 @@
     },
     {
       "id": "2023-q028",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-exercice",
       "theme": "Microéconomie",
       "question": "Sophia participe à un jeu télévisé. Elle a choisi la porte n°3. L’animateur annonce qu’il y a 50 % de chances qu’un diamant de 16 000 £ soit derrière la porte et 50 % de chances qu’il y ait une chèvre (valeur nulle pour Sophia). Avant l’ouverture, quelqu’un dans le public lui propose : « Je te donne l’option de me vendre ce qu’il y a derrière la porte pour 9 000 £ si tu me paies 4 500 £ pour cette option. » Si Sophia ne se soucie que des valeurs monétaires **espérées**, va-t-elle acheter cette option ?",
       "choices": [
@@ -673,7 +746,7 @@
     },
     {
       "id": "2023-q029",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-exercice",
       "theme": "Microéconomie",
       "question": "Sophia participe à un jeu télévisé. Derrière la porte n°3, il y a 50 % de chances d’avoir un diamant de 16 000 £ et 50 % une chèvre (valeur nulle pour elle). Avant l’ouverture, quelqu’un lui propose : « Je t’achète ce qu’il y a derrière la porte 9 000 £ si tu me paies X £ pour cette option. » Sachant que l’utilité de Sophia sur la richesse est U(x) = x^{0,5}, existe-t-il une valeur de X pour laquelle elle voudra acheter l’option ?",
       "choices": [
@@ -696,7 +769,7 @@
     },
     {
       "id": "2023-q030",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-exercice",
       "theme": "Microéconomie",
       "question": "Deux éleveurs, Farmer A et Farmer B, partagent un pré où leurs vaches peuvent paître. Chaque fermier possède deux vaches et veut maximiser ses gains. Plus la vache est grosse, plus le prix est élevé, et le poids dépend de la quantité d’herbe disponible, qui diminue avec le nombre de vaches dans le pré. Une vache qui ne broute rien ne rapporte rien. Le tableau des gains est donné ci-dessous : (Image ci-dessous). Quelles sont les stratégies d'équilibre de Nash pour ce jeu ?",
       "image": "/Images/microeconomie/microeconomie-2023-q030.png",
@@ -719,7 +792,7 @@
     },
     {
       "id": "2023-q031",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-exercice",
       "theme": "Microéconomie",
       "question": "Le conseil municipal remarque que (1,1) domine tous les équilibres précédents du point de vue de Pareto, et décide de réguler l’utilisation du pré : il ne souhaite pas avoir plus de deux vaches dans le champ. Il infligera une amende f si plus de deux vaches sont présentes. Le tableau des gains est donné ci-dessous : (Image ci-dessous). Peut-on trouver un niveau de f tel que la situation de Pareto optimale (1,1) soit le seul équilibre de Nash ?",
       "image": "/Images/microeconomie/microeconomie-2023-q031.png",
@@ -743,7 +816,7 @@
     },
     {
       "id": "2023-q032",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-exercice",
       "theme": "Microéconomie",
       "question": "On considère le jeu coopératif (N, v) avec N = {1,2,3} et la fonction caractéristique ci-dessous : (Image ci-dessous). Quelle est l’expression du Noyau (Core) de ce jeu ?",
       "image": "/Images/microeconomie/microeconomie-2023-q032.png",
@@ -765,7 +838,7 @@
     },
     {
       "id": "2023-q033",
-      "qcm": "Partiel-2023",
+      "qcm": "Partiel-2023-exercice",
       "theme": "Microéconomie",
       "question": "On considère le jeu coopératif (N, v) avec N = {1,2,3} et la fonction caractéristique ci-dessous : (Image ci-dessous). Quelle est la valeur de Shapley de ce jeu ?",
       "image": "/Images/microeconomie/microeconomie-2023-q033.png",
@@ -793,7 +866,7 @@
       "id": "2024-q001",
       "qcm": "Partiel-2024-cours",
       "theme": "Microéconomie",
-      "question": "Quel est le principal défi empirique dans la détermination de l’effet causal de l’assurance santé sur les résultats de santé ? (Image ci-dessous)",
+      "question": "Quel est le principal défi empirique dans la détermination de l’effet causal de l’assurance santé sur les résultats de santé ?",
       "choices": [
         "L’impossibilité d’observer le même individu à la fois avec et sans assurance.",
         "La difficulté à collecter de grandes quantités de données.",
@@ -809,6 +882,14 @@
         "causalité",
         "assurance",
         "contrefactuel"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-12",
+        "qcm007_2025-10-13",
+        "qcm012_2025-10-13",
+        "qcm014_2025-10-13",
+        "qcm015_2025-10-13",
+        "qcm001_2025-10-14"
       ]
     },
     {
@@ -833,7 +914,8 @@
         "assurance"
       ],
       "id_gen": [
-        "qcm003_2025-10-06"
+        "qcm003_2025-10-06",
+        "qcm003_2025-10-12"
       ]
     },
     {
@@ -856,6 +938,12 @@
         "pari",
         "fair gamble",
         "microéconomie"
+      ],
+      "id_gen": [
+        "qcm007_2025-10-13",
+        "qcm008_2025-10-13",
+        "qcm010_2025-10-13",
+        "qcm001_2025-10-14"
       ]
     },
     {
@@ -879,7 +967,9 @@
         "utilité marginale décroissante"
       ],
       "id_gen": [
-        "qcm002_2025-10-06"
+        "qcm002_2025-10-06",
+        "qcm002_2025-10-12",
+        "qcm006_2025-10-13"
       ]
     },
     {
@@ -901,6 +991,10 @@
         "aversion au risque",
         "Arrow-Pratt",
         "théorie de l’utilité"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-12",
+        "qcm004_2025-10-12"
       ]
     },
     {
@@ -925,7 +1019,13 @@
         "risque"
       ],
       "id_gen": [
-        "qcm003_2025-10-06"
+        "qcm003_2025-10-06",
+        "qcm002_2025-10-13",
+        "qcm003_2025-10-13",
+        "qcm005_2025-10-13",
+        "qcm012_2025-10-13",
+        "qcm013_2025-10-13",
+        "qcm014_2025-10-13"
       ]
     },
     {
@@ -948,6 +1048,11 @@
         "risque",
         "incertitude",
         "théorie économique"
+      ],
+      "id_gen": [
+        "qcm009_2025-10-13",
+        "qcm011_2025-10-13",
+        "qcm001_2025-10-14"
       ]
     },
     {
@@ -970,6 +1075,12 @@
         "ratio des prix",
         "richesse",
         "états de la nature"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-12",
+        "qcm005_2025-10-12",
+        "qcm010_2025-10-13",
+        "qcm014_2025-10-13"
       ]
     },
     {
@@ -992,6 +1103,10 @@
         "utilité espérée",
         "axiomes",
         "théorie du choix"
+      ],
+      "id_gen": [
+        "qcm010_2025-10-13",
+        "qcm013_2025-10-13"
       ]
     },
     {
@@ -1016,6 +1131,9 @@
         "dominance stochastique",
         "fonction de répartition",
         "utilité croissante"
+      ],
+      "id_gen": [
+        "qcm007_2025-10-13"
       ]
     },
     {
@@ -1038,6 +1156,9 @@
         "biens contingents",
         "états du monde",
         "assurance"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-13"
       ]
     },
     {
@@ -1060,6 +1181,10 @@
         "biens contingents",
         "états du monde",
         "assurance"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-12",
+        "qcm011_2025-10-13"
       ]
     },
     {
@@ -1082,6 +1207,13 @@
         "profil de stratégies",
         "stratégies",
         "équilibre"
+      ],
+      "id_gen": [
+        "qcm005_2025-10-12",
+        "qcm002_2025-10-13",
+        "qcm003_2025-10-13",
+        "qcm007_2025-10-13",
+        "qcm013_2025-10-13"
       ]
     },
     {
@@ -1103,6 +1235,11 @@
         "théorie des jeux",
         "jeu stratégique",
         "composants"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-12",
+        "qcm001_2025-10-13",
+        "qcm014_2025-10-13"
       ]
     },
     {
@@ -1125,6 +1262,14 @@
         "équilibre mixte",
         "Nash",
         "Pierre-Feuille-Ciseaux"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-12",
+        "qcm005_2025-10-12",
+        "qcm002_2025-10-13",
+        "qcm003_2025-10-13",
+        "qcm011_2025-10-13",
+        "qcm013_2025-10-13"
       ]
     },
     {
@@ -1147,6 +1292,11 @@
         "équilibre parfait en sous-jeux",
         "SPNE",
         "Nash"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-13",
+        "qcm012_2025-10-13",
+        "qcm015_2025-10-13"
       ]
     },
     {
@@ -1171,7 +1321,11 @@
         "coopération"
       ],
       "id_gen": [
-        "qcm001_2025-10-06"
+        "qcm001_2025-10-06",
+        "qcm001_2025-10-12",
+        "qcm006_2025-10-13",
+        "qcm009_2025-10-13",
+        "qcm012_2025-10-13"
       ]
     },
     {
@@ -1194,6 +1348,11 @@
         "Nash",
         "théorie des jeux",
         "informations incomplètes"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-13",
+        "qcm009_2025-10-13",
+        "qcm015_2025-10-13"
       ]
     },
     {
@@ -1216,6 +1375,17 @@
         "consommation intertemporelle",
         "banques",
         "microéconomie"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-12",
+        "qcm001_2025-10-13",
+        "qcm002_2025-10-13",
+        "qcm003_2025-10-13",
+        "qcm005_2025-10-13",
+        "qcm006_2025-10-13",
+        "qcm009_2025-10-13",
+        "qcm010_2025-10-13",
+        "qcm011_2025-10-13"
       ]
     },
     {
@@ -1238,6 +1408,11 @@
         "banques",
         "risque de liquidité",
         "assurance"
+      ],
+      "id_gen": [
+        "qcm007_2025-10-13",
+        "qcm011_2025-10-13",
+        "qcm001_2025-10-14"
       ]
     },
     {
@@ -1260,6 +1435,10 @@
         "équilibre multiple",
         "panique bancaire",
         "mauvais équilibre"
+      ],
+      "id_gen": [
+        "qcm005_2025-10-12",
+        "qcm005_2025-10-13"
       ]
     },
     {
@@ -1282,6 +1461,13 @@
         "recherche d'emploi",
         "dispersion salariale",
         "asymétrie d'information"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-12",
+        "qcm004_2025-10-12",
+        "qcm004_2025-10-13",
+        "qcm005_2025-10-13",
+        "qcm008_2025-10-13"
       ]
     },
     {
@@ -1306,7 +1492,10 @@
         "dispersion salariale"
       ],
       "id_gen": [
-        "qcm001_2025-10-06"
+        "qcm001_2025-10-06",
+        "qcm004_2025-10-13",
+        "qcm008_2025-10-13",
+        "qcm012_2025-10-13"
       ]
     },
     {
@@ -1329,6 +1518,10 @@
         "asymétrie d’information",
         "optimum de premier rang",
         "contrats contingents"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-12",
+        "qcm009_2025-10-13"
       ]
     },
     {
@@ -1352,6 +1545,12 @@
         "suspension de convertibilité",
         "bank run",
         "politiques bancaires"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-13",
+        "qcm008_2025-10-13",
+        "qcm013_2025-10-13",
+        "qcm001_2025-10-14"
       ]
     },
     {
@@ -1374,6 +1573,9 @@
         "fonction caractéristique",
         "coalition",
         "valeur de coalition"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-12"
       ]
     },
     {
@@ -1396,6 +1598,12 @@
         "rationalité individuelle",
         "coalition",
         "allocation"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-13",
+        "qcm003_2025-10-13",
+        "qcm005_2025-10-13",
+        "qcm014_2025-10-13"
       ]
     },
     {
@@ -1420,7 +1628,11 @@
         "allocation équitable"
       ],
       "id_gen": [
-        "qcm002_2025-10-06"
+        "qcm002_2025-10-06",
+        "qcm004_2025-10-12",
+        "qcm005_2025-10-12",
+        "qcm006_2025-10-13",
+        "qcm010_2025-10-13"
       ]
     },
     {
@@ -1443,6 +1655,10 @@
         "convexité",
         "valeur de Shapley",
         "core"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-12",
+        "qcm006_2025-10-13"
       ]
     },
     {
@@ -1465,6 +1681,12 @@
         "axiomes",
         "coopératif",
         "microéconomie"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-12",
+        "qcm001_2025-10-13",
+        "qcm004_2025-10-13",
+        "qcm015_2025-10-13"
       ]
     },
     {
@@ -1487,11 +1709,17 @@
         "fonction caractéristique",
         "coalition",
         "microéconomie"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-12",
+        "qcm004_2025-10-12",
+        "qcm008_2025-10-13",
+        "qcm015_2025-10-13"
       ]
     },
     {
       "id": "2024-q031",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
       "question": "Un individu achète deux douzaines d’œufs (24) et doit les ramener chez lui. Les trajets sont sans coût, mais à chaque trajet il y a une chance sur trois que tous les œufs portés lors de ce trajet soient cassés. Deux stratégies sont envisagées : (1) faire deux trajets avec 12 œufs à chaque fois ; (2) faire un seul trajet avec les 24 œufs. Quels sont les résultats possibles sous chaque stratégie ?",
       "choices": [
@@ -1516,7 +1744,7 @@
     },
     {
       "id": "2024-q032",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
       "question": "Un individu achète deux douzaines d’œufs et doit les ramener chez lui. Chaque trajet comporte un risque : avec une probabilité de 1/3, tous les œufs transportés lors du trajet sont cassés ; avec une probabilité de 2/3, tous les œufs arrivent intacts. Deux stratégies sont possibles : (1) faire deux trajets de 12 œufs chacun ; (2) faire un seul trajet avec les 24 œufs. Combien d’œufs chaque stratégie rapporte-t-elle en moyenne ?",
       "choices": [
@@ -1539,7 +1767,7 @@
     },
     {
       "id": "2024-q033",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
       "question": "Un individu achète deux douzaines d’œufs et doit les ramener chez lui. Chaque trajet comporte un risque : avec une probabilité de 1/3, tous les œufs transportés lors du trajet sont cassés ; avec une probabilité de 2/3, tous les œufs arrivent intacts. Deux stratégies sont possibles : (1) faire deux trajets de 12 œufs chacun ; (2) faire un seul trajet avec les 24 œufs. Si l’individu est avers au risque, quelle stratégie préfère-t-il ?",
       "choices": [
@@ -1561,7 +1789,7 @@
     },
     {
       "id": "2024-q034",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
       "question": "Un individu achète deux douzaines d’œufs et doit les ramener chez lui. Chaque trajet comporte un risque : avec une probabilité de 1/3, tous les œufs transportés lors du trajet sont cassés ; avec une probabilité de 2/3, tous les œufs arrivent intacts. Plus l’individu fait de trajets (avec moins d’œufs par trajet), plus il réduit le risque de tout perdre d’un coup. Est-ce que l’utilité de l’individu augmente en multipliant les trajets ?",
       "choices": [
@@ -1583,9 +1811,9 @@
     },
     {
       "id": "2024-q035",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
-      "question": "Markus participe à un jeu télévisé. Derrière la porte n°3, il y a 50 % de chances d’avoir une bague en diamant de 24 000 $ et 50 % de chances d’avoir un vélo de 5 000 $. Avant d’ouvrir la porte, quelqu’un lui propose une **option** : « Je t’achète ce qu’il y a derrière la porte 14 000 $ si tu me paies 2 000 $ maintenant pour avoir le droit de décider après l’ouverture. » Markus ne se soucie que des valeurs monétaires **espérées**. Doit-il acheter cette option ?",
+      "question": "Markus participe à un jeu télévisé. Derrière la porte n°3, il y a 50 % de chances d’avoir une bague en diamant de 24 000 £ et 50 % de chances d’avoir un vélo de 5 000 £. Avant d’ouvrir la porte, quelqu’un lui propose une **option** : « Je t’achète ce qu’il y a derrière la porte 14 000£ si tu me paies 2 000 £ maintenant pour avoir le droit de décider après l’ouverture. » Markus ne se soucie que des valeurs monétaires **espérées**. Doit-il acheter cette option ?",
       "choices": [
         "Oui, car l’option a une valeur espérée plus élevée que le pari.",
         "Oui, même si l’option a une valeur espérée plus faible, car il est averse au risque.",
@@ -1605,9 +1833,9 @@
     },
     {
       "id": "2024-q036",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
-      "question": "Scénario (rappel) : Markus est candidat d’un jeu télévisé. Il y a 50 % de chances qu’un diamant de 24 000 $ soit derrière la porte choisie et 50 % qu’il s’agisse d’un vélo de 5 000 $. Avant l’ouverture, quelqu’un lui propose une option : contre un paiement de X dollars maintenant, Markus pourra, après révélation, vendre ce qu’il y a derrière la porte pour 14 000 $ (il exercera l’option seulement si cela l’avantage).\nSachant que l’utilité de Markus est U(w) = w^{1/10}, existe-t-il une valeur de X pour laquelle il souhaite acheter l’option ?",
+      "question": "Scénario (rappel) : Markus est candidat d’un jeu télévisé. Il y a 50 % de chances qu’un diamant de 24 000 £ soit derrière la porte choisie et 50 % qu’il s’agisse d’un vélo de 5 000 £. Avant l’ouverture, quelqu’un lui propose une option : contre un paiement de X dollars maintenant, Markus pourra, après révélation, vendre ce qu’il y a derrière la porte pour 14 000 £ (il exercera l’option seulement si cela l’avantage).\nSachant que l’utilité de Markus est U(w) = w^{1/10}, existe-t-il une valeur de X pour laquelle il souhaite acheter l’option ?",
       "choices": [
         "Non, Markus est quasiment neutre au risque.",
         "Oui, X doit être inférieur à 304.",
@@ -1627,7 +1855,7 @@
     },
     {
       "id": "2024-q037",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
       "question": "Deux éleveurs de vaches, A et B, partagent un pré dans lequel leurs animaux peuvent paître. Chaque éleveur possède deux vaches et cherche à maximiser son revenu issu de la vente. Le poids (et donc le prix) d’une vache dépend négativement du nombre total de vaches présentes dans le pré : 1 vache → prix = 8 ; 2 vaches → prix = 5 ; 3 vaches → prix = 3 ; 4 vaches → prix = 2. Une vache non placée dans le pré ne rapporte rien. Construire la matrice des gains (paiement matrix) pour ce jeu entre les deux éleveurs.",
       "image": "/Images/microeconomie/microeconomie-2024-q037.png",
@@ -1649,7 +1877,7 @@
     },
     {
       "id": "2024-q038",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
       "question": "Dans le jeu précédent des deux éleveurs de vaches, quelles sont les stratégies pures en équilibre de Nash ?",
       "image": "/Images/microeconomie/microeconomie-2024-q037.png",
@@ -1671,7 +1899,7 @@
     },
     {
       "id": "2024-q039",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
       "question": "Une ville possède 3 musées {1,2,3} et propose un pass donnant accès aux trois musées pour un prix normalisé à 1. On veut répartir les recettes entre musées à l’aide de la théorie des jeux coopératifs. Six visiteurs {a,b,c,d,e,f} viennent cette semaine : a et d visitent les trois musées ; b visite 1 et 2 ; f visite 2 et 3 ; c visite 1 ; e visite 2. Les joueurs sont les musées. Pour toute coalition S de musées, la valeur v(S) est le nombre de visiteurs qui ne visitent que les musées de S (c’est-à-dire dont l’ensemble de visites est inclus dans S). Quelle est la fonction caractéristique v(S) de ce jeu ?",
       "image": "/Images/microeconomie/microeconomie-2024-q039.png",
@@ -1697,7 +1925,7 @@
     },
     {
       "id": "2024-q040",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
       "question": "Pour le jeu des musées décrit à la question précédente, lequel des énoncés est correct ?",
       "choices": [
@@ -1719,7 +1947,7 @@
     },
     {
       "id": "2024-q041",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
       "question": "Déterminer la valeur de Shapley S(N,v) du jeu des musées décrit précédemment.",
       "choices": [
@@ -1741,7 +1969,7 @@
     },
     {
       "id": "2024-q042",
-      "qcm": "Partiel-2024",
+      "qcm": "Partiel-2024-exercice",
       "theme": "Microéconomie",
       "question": "La valeur de Shapley du jeu des musées (S(N,v) = (13/6, 16/6, 7/6)) appartient-elle au core C(N,v) de ce jeu ?",
       "choices": [
@@ -1760,6 +1988,1570 @@
         "core",
         "convexité"
       ]
+    },
+    {
+      "id": "chatgpt_q001",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Selon la théorie de Von Neumann-Morgenstern, quelle propriété permet de représenter les préférences d’un individu par une fonction d’utilité espérée unique à une transformation affine près ?",
+      "choices": [
+        "L’axiome d’indépendance.",
+        "L’axiome de continuité.",
+        "L’axiome de complétude.",
+        "L’axiome de transitivité."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L’axiome d’indépendance (ou de substitution) est crucial dans la démonstration du théorème de Von Neumann-Morgenstern : il garantit que les préférences entre loteries peuvent être représentées par une espérance d’utilité, unique à une transformation affine près. Sans cet axiome, la représentation par utilité espérée ne tiendrait pas.",
+      "tags": [
+        "utilité espérée",
+        "Von Neumann-Morgenstern",
+        "axiomes de rationalité",
+        "incertitude"
+      ],
+      "id_gen": [
+        "qcm005_2025-10-14",
+        "qcm006_2025-10-14",
+        "qcm001_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q002",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Selon la distinction de Knight entre risque et incertitude, laquelle des affirmations suivantes décrit correctement une situation d’incertitude au sens strict ?",
+      "choices": [
+        "Les probabilités des différents états du monde sont connues et mesurables.",
+        "Les probabilités des différents états du monde sont inconnues ou incommensurables.",
+        "Les individus font face à un risque calculable et peuvent s’assurer contre lui.",
+        "Les agents connaissent toutes les issues possibles et leurs conséquences exactes."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Pour Knight (1921), le risque correspond à une situation où les probabilités des états du monde sont connues, tandis que l’incertitude désigne une situation où ces probabilités sont inconnues ou ne peuvent être mesurées. C’est cette absence de distribution de probabilité qui caractérise l’incertitude véritable.",
+      "tags": [
+        "risque",
+        "incertitude",
+        "Knight",
+        "théorie de la décision"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-14",
+        "qcm007_2025-10-14",
+        "qcm004_2025-10-15",
+        "qcm005_2025-10-15",
+        "qcm006_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q003",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Selon Jensen, pour une fonction d’utilité strictement concave u(x), laquelle des propositions suivantes est correcte concernant l’espérance d’utilité ?",
+      "choices": [
+        "U(E[x]) > E[U(x)]",
+        "E[U(x)] > U(E[x])",
+        "E[U(x)] = U(E[x])",
+        "Aucune des propositions n’est correcte."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "D’après l’inégalité de Jensen, pour une fonction concave u(x), on a E[u(x)] ≤ u(E[x]). L’individu étant risk-averse, il préfère l’utilité du revenu certain à l’espérance d’utilité d’un revenu aléatoire. Donc E[U(x)] < U(E[x]).",
+      "tags": [
+        "Jensen",
+        "concavité",
+        "utilité espérée",
+        "aversion au risque"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-14",
+        "qcm002_2025-10-15",
+        "qcm003_2025-10-15",
+        "qcm005_2025-10-15",
+        "qcm006_2025-10-15",
+        "qcm007_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q005",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Que mesure le coefficient absolu d’aversion au risque d’Arrow-Pratt pour un individu doté d’une fonction d’utilité u(x) ?",
+      "choices": [
+        "La probabilité d’un gain dans une loterie équitable.",
+        "La sensibilité du niveau d’utilité au revenu moyen.",
+        "La courbure de la fonction d’utilité, indiquant la réaction de l’individu face au risque.",
+        "L’écart entre l’utilité espérée et l’utilité du revenu certain."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le coefficient absolu d’aversion au risque d’Arrow-Pratt est défini par A(x) = -u''(x)/u'(x). Il mesure la courbure de la fonction d’utilité : plus il est élevé, plus l’individu est sensible aux variations de risque et donc plus il est averse au risque.",
+      "tags": [
+        "Arrow-Pratt",
+        "aversion au risque",
+        "utilité concave",
+        "risque"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-14",
+        "qcm004_2025-10-14",
+        "qcm005_2025-10-14",
+        "qcm001_2025-10-15",
+        "qcm004_2025-10-15",
+        "qcm007_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q006",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Dans le cadre de la théorie de la décision, que signifie l’hypothèse de complétude des préférences ?",
+      "choices": [
+        "L’individu peut toujours classer deux options, même si elles sont incertaines.",
+        "L’individu préfère toujours les biens certains aux biens risqués.",
+        "Les préférences ne changent pas avec le revenu.",
+        "L’individu est neutre au risque."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L’hypothèse de complétude stipule que pour deux alternatives A et B, l’individu peut toujours dire s’il préfère A à B, B à A, ou s’il est indifférent entre les deux.",
+      "tags": [
+        "préférences",
+        "rationalité",
+        "choix",
+        "certitude"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-14",
+        "qcm004_2025-10-14",
+        "qcm006_2025-10-14",
+        "qcm007_2025-10-14"
+      ]
+    },
+    {
+      "id": "chatgpt_q007",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Quel élément distingue un bien contingent d’un bien ordinaire ?",
+      "choices": [
+        "Il n’a pas de prix de marché.",
+        "Il est défini par son état du monde spécifique.",
+        "Il est produit uniquement dans le secteur public.",
+        "Il ne procure aucune utilité directe."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Un bien contingent est un bien dont la livraison ou la consommation dépend d’un état du monde particulier, par exemple « 1 € si la pluie tombe demain ». Son prix reflète la probabilité et la valeur associées à cet état.",
+      "tags": [
+        "biens contingents",
+        "risque",
+        "marché complet"
+      ],
+      "id_gen": [
+        "qcm005_2025-10-14",
+        "qcm006_2025-10-14",
+        "qcm001_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q008",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Dans le modèle de marché complet, que représente le rapport de prix pg/pb entre le bien en état 'good' et 'bad' ?",
+      "choices": [
+        "Le taux d’intérêt réel entre les deux états.",
+        "Le taux marginal de substitution entre consommation en bons et mauvais états.",
+        "La probabilité objective du bon état.",
+        "Le coût marginal de production en période favorable."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le rapport des prix pg/pb exprime le taux auquel le marché permet d’échanger de la consommation entre bons et mauvais états. Il correspond au taux marginal de substitution entre richesse dans les deux états.",
+      "tags": [
+        "marché contingent",
+        "états du monde",
+        "TMS"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-14"
+      ]
+    },
+    {
+      "id": "chatgpt_q009",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Qu’indique une fonction d’utilité strictement concave pour un agent économique ?",
+      "choices": [
+        "Une aversion au risque.",
+        "Une neutralité face au risque.",
+        "Une préférence pour le risque.",
+        "Une absence de préférences définies."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Une fonction d’utilité concave traduit la décroissance de l’utilité marginale du revenu, caractéristique de l’aversion au risque : l’individu préfère un gain certain à une loterie équivalente.",
+      "tags": [
+        "aversion au risque",
+        "concavité",
+        "utilité"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-15",
+        "qcm005_2025-10-15",
+        "qcm006_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q010",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Quel concept économique est illustré par le 'market for lemons' d’Akerlof ?",
+      "choices": [
+        "Le risque moral après signature d’un contrat.",
+        "La sélection adverse avant la transaction.",
+        "L’équilibre de Nash en stratégie mixte.",
+        "La concurrence parfaite."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le 'market for lemons' montre comment une asymétrie d’information sur la qualité des biens entraîne une sélection adverse : seuls les produits de mauvaise qualité restent échangés.",
+      "tags": [
+        "Akerlof",
+        "asymétrie d'information",
+        "sélection adverse"
+      ],
+      "id_gen": [
+        "qcm005_2025-10-14",
+        "qcm006_2025-10-14",
+        "qcm007_2025-10-14",
+        "qcm001_2025-10-15",
+        "qcm003_2025-10-15",
+        "qcm005_2025-10-15",
+        "qcm006_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q011",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Dans le modèle de Diamond-Dybvig, pourquoi les banques peuvent-elles améliorer le bien-être des agents ?",
+      "choices": [
+        "Elles éliminent toute incertitude macroéconomique.",
+        "Elles assurent les agents contre les risques de liquidité.",
+        "Elles suppriment le risque moral des déposants.",
+        "Elles garantissent toujours le rendement optimal des investissements."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Les banques mutualisent les dépôts et permettent aux agents de lisser leur consommation entre besoins immédiats et futurs, offrant une assurance contre les chocs de liquidité.",
+      "tags": [
+        "Diamond-Dybvig",
+        "banques",
+        "liquidité",
+        "assurance"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-14",
+        "qcm004_2025-10-15",
+        "qcm007_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q012",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Qu’est-ce qu’un équilibre de Nash dans un jeu stratégique ?",
+      "choices": [
+        "Un état où chaque joueur maximise son gain indépendamment des autres.",
+        "Une situation où aucun joueur n’a intérêt à dévier unilatéralement de sa stratégie.",
+        "Une configuration où tous les joueurs choisissent la même action.",
+        "Un état où les gains sont égaux pour tous les joueurs."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Un équilibre de Nash est atteint lorsque chaque joueur choisit une stratégie qui constitue une meilleure réponse aux stratégies des autres : aucune déviation unilatérale ne peut améliorer son gain.",
+      "tags": [
+        "Nash",
+        "jeu stratégique",
+        "équilibre"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-14",
+        "qcm007_2025-10-14",
+        "qcm001_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q013",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Quelle est la particularité d’une stratégie strictement dominante ?",
+      "choices": [
+        "Elle maximise le gain du joueur seulement pour certaines stratégies adverses.",
+        "Elle donne un gain supérieur à toutes les autres stratégies, quelle que soit la stratégie des autres joueurs.",
+        "Elle dépend des croyances du joueur sur les actions adverses.",
+        "Elle n’existe que dans les jeux répétés."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Une stratégie strictement dominante procure un gain strictement supérieur à toute autre stratégie, quel que soit le comportement des autres joueurs.",
+      "tags": [
+        "stratégie dominante",
+        "jeu non coopératif",
+        "rationalité"
+      ]
+    },
+    {
+      "id": "chatgpt_q014",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Dans un jeu séquentiel, que garantit un équilibre parfait en sous-jeux ?",
+      "choices": [
+        "L’égalité des gains entre joueurs.",
+        "L’optimalité des stratégies uniquement à l’équilibre global.",
+        "La cohérence des stratégies dans chaque sous-jeu du jeu.",
+        "L’existence d’un unique équilibre pur."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Un équilibre parfait en sous-jeux (subgame perfect equilibrium) exige que les stratégies constituent un équilibre de Nash dans chaque sous-jeu, assurant la cohérence des comportements à chaque étape.",
+      "tags": [
+        "jeux séquentiels",
+        "SPE",
+        "Nash"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-15",
+        "qcm005_2025-10-15",
+        "qcm006_2025-10-15",
+        "qcm007_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q015",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Dans le modèle de Knight, que représente le 'risque' par opposition à l’incertitude ?",
+      "choices": [
+        "Une situation où les résultats sont totalement imprévisibles.",
+        "Une situation où les probabilités des états sont connues et mesurables.",
+        "Une situation sans possibilité de calculer d’espérance.",
+        "Une situation où toutes les issues sont certaines."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le risque se distingue de l’incertitude par la possibilité d’attribuer des probabilités connues aux différents états du monde.",
+      "tags": [
+        "Knight",
+        "risque",
+        "incertitude"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-14",
+        "qcm004_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q016",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Quel énoncé exprime correctement la neutralité au risque ?",
+      "choices": [
+        "L’individu préfère un gain certain à toute loterie équivalente.",
+        "L’individu est indifférent entre le gain certain et une loterie de même espérance de gain.",
+        "L’individu recherche activement le risque.",
+        "L’individu refuse toutes les loteries, quelle qu’en soit l’espérance."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La neutralité au risque correspond à une utilité linéaire en la richesse : U(E[x]) = E[U(x)]. L’individu se base uniquement sur la valeur espérée, pas sur la dispersion.",
+      "tags": [
+        "neutralité",
+        "utilité linéaire",
+        "risque"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-14",
+        "qcm003_2025-10-14",
+        "qcm005_2025-10-14"
+      ]
+    },
+    {
+      "id": "chatgpt_q017",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Dans un jeu de signalisation (Beer-Quiche), que représente la croyance du joueur 2 après observation du signal ?",
+      "choices": [
+        "La stratégie choisie par le joueur 1.",
+        "La probabilité subjective attribuée au type du joueur 1.",
+        "Le gain attendu du joueur 1.",
+        "La matrice de payoffs du jeu."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Dans un jeu bayésien, la croyance du joueur 2 est la probabilité qu’il attribue à chaque type possible du joueur 1 après observation du signal, mise à jour via la règle de Bayes.",
+      "tags": [
+        "Bayes",
+        "Beer-Quiche",
+        "croyances",
+        "signalisation"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-14",
+        "qcm007_2025-10-14",
+        "qcm002_2025-10-15",
+        "qcm003_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q018",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Quelle est la conséquence d’un marché incomplet en biens contingents ?",
+      "choices": [
+        "Tous les risques sont parfaitement assurés.",
+        "Certains états du monde ne peuvent pas être couverts, entraînant une inefficience.",
+        "Les prix des biens contingents deviennent indéterminés.",
+        "Les agents ne peuvent pas échanger entre états du monde."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Sur un marché incomplet, certains états du monde n’ont pas de bien contingent associé. Les agents ne peuvent pas s’assurer contre tous les risques, ce qui conduit à une inefficience de l’allocation.",
+      "tags": [
+        "marchés incomplets",
+        "assurance",
+        "risque"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-14",
+        "qcm004_2025-10-14",
+        "qcm002_2025-10-15",
+        "qcm003_2025-10-15",
+        "qcm004_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q019",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Que décrit l’indépendance des préférences dans la théorie de Von Neumann-Morgenstern ?",
+      "choices": [
+        "Les préférences entre deux loteries ne changent pas si on les mélange avec une troisième loterie commune.",
+        "Les individus choisissent toujours la loterie à plus forte espérance de gain.",
+        "Les préférences sont indépendantes du revenu initial.",
+        "Les préférences dépendent de la variance des gains."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L’axiome d’indépendance affirme que si un individu préfère A à B, il préférera toute combinaison pA + (1−p)C à pB + (1−p)C. Cela permet la représentation des préférences par utilité espérée.",
+      "tags": [
+        "VNM",
+        "axiome d’indépendance",
+        "préférences"
+      ],
+      "id_gen": [
+        "qcm006_2025-10-14",
+        "qcm003_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q020",
+      "qcm": "Chatgpt-cours",
+      "theme": "Microéconomie",
+      "question": "Dans un jeu répété, pourquoi la coopération peut-elle émerger entre joueurs rationnels ?",
+      "choices": [
+        "Parce qu’ils deviennent altruistes au fil du temps.",
+        "Parce que la punition d’un comportement déviant réduit l’intérêt de tricher à court terme.",
+        "Parce que les payoffs augmentent automatiquement à chaque répétition.",
+        "Parce que les préférences des joueurs changent après chaque tour."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Dans les jeux répétés, les stratégies conditionnelles (« punir la triche ») peuvent rendre la coopération rationnelle, car la perspective de sanctions futures rend la déviation non profitable.",
+      "tags": [
+        "jeux répétés",
+        "coopération",
+        "stratégies conditionnelles"
+      ],
+      "id_gen": [
+        "qcm007_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q021",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Quel axiome garantit qu’un individu peut toujours ordonner deux options, même sans préférence stricte entre elles ?",
+      "choices": [
+        "L’axiome de transitivité.",
+        "L’axiome de continuité.",
+        "L’axiome de complétude.",
+        "L’axiome d’indépendance."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L’axiome de complétude stipule que pour tout couple d’alternatives A et B, l’individu peut dire A ⪰ B, B ⪰ A, ou A ∼ B. Il interdit l’indécision totale.",
+      "tags": [
+        "préférences",
+        "rationalité",
+        "certitude"
+      ]
+    },
+    {
+      "id": "chatgpt_q022",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Dans la théorie de l’utilité espérée, pourquoi deux fonctions d’utilité peuvent-elles représenter les mêmes préférences ?",
+      "choices": [
+        "Parce qu’elles peuvent différer d’une transformation affine.",
+        "Parce qu’elles sont toujours linéaires.",
+        "Parce qu’elles dépendent du revenu nominal.",
+        "Parce qu’elles incluent la variance des gains."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Le théorème de Von Neumann-Morgenstern montre que si une fonction U représente des préférences, toute transformation affine aU+b les représente aussi.",
+      "tags": [
+        "VNM",
+        "utilité espérée",
+        "transformation affine"
+      ],
+      "id_gen": [
+        "qcm010_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q023",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Que traduit une fonction d’utilité strictement convexe ?",
+      "choices": [
+        "Une aversion au risque.",
+        "Une neutralité face au risque.",
+        "Une préférence pour le risque.",
+        "Une absence de cohérence des préférences."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Une fonction convexe implique que l’individu préfère la loterie à sa valeur certaine : il est amateur de risque.",
+      "tags": [
+        "préférence pour le risque",
+        "convexité",
+        "utilité"
+      ],
+      "id_gen": [
+        "qcm008_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q024",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Que permet de mesurer le coefficient relatif d’aversion au risque de Arrow-Pratt ?",
+      "choices": [
+        "La perte d’utilité absolue en cas de risque.",
+        "L’aversion au risque en proportion du revenu.",
+        "La probabilité d’un gain espéré.",
+        "Le taux d’intérêt d’équilibre sur les marchés financiers."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le coefficient relatif R(x) = -x·u''(x)/u'(x) mesure l’aversion au risque par rapport au niveau de richesse. Il permet de comparer des individus de richesse différente.",
+      "tags": [
+        "Arrow-Pratt",
+        "risque",
+        "aversion relative"
+      ],
+      "id_gen": [
+        "qcm008_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q025",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Quelle propriété est nécessaire pour que le théorème d’espérance d’utilité de VNM s’applique ?",
+      "choices": [
+        "La convexité des préférences.",
+        "La complétude, la transitivité, l’indépendance et la continuité.",
+        "La monotonie stricte des préférences.",
+        "L’existence d’un seul état du monde."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le théorème repose sur quatre axiomes fondamentaux : complétude, transitivité, indépendance et continuité. Ensemble, ils garantissent une représentation en utilité espérée.",
+      "tags": [
+        "VNM",
+        "axiomes",
+        "utilité espérée"
+      ]
+    },
+    {
+      "id": "chatgpt_q026",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Pourquoi dit-on que les biens contingents complètent le marché ?",
+      "choices": [
+        "Parce qu’ils permettent d’assurer tous les états du monde possibles.",
+        "Parce qu’ils rendent le marché plus concurrentiel.",
+        "Parce qu’ils éliminent le risque moral.",
+        "Parce qu’ils réduisent les coûts de transaction."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Un marché est dit complet lorsqu’il existe un bien contingent pour chaque état du monde, permettant d’assurer tous les risques possibles.",
+      "tags": [
+        "biens contingents",
+        "marché complet",
+        "assurance"
+      ]
+    },
+    {
+      "id": "chatgpt_q027",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Dans le modèle de choix intertemporel à deux périodes, quelle condition caractérise la solution optimale ?",
+      "choices": [
+        "L’égalité entre la consommation présente et future.",
+        "L’égalité entre le TMS intertemporel et le taux d’intérêt réel.",
+        "La maximisation de la consommation courante uniquement.",
+        "L’égalité du revenu dans les deux périodes."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "À l’optimum, le taux marginal de substitution intertemporel entre c¹ et c² est égal au facteur de prix intertemporel, soit 1 + r.",
+      "tags": [
+        "temps",
+        "consommation",
+        "TMS intertemporel"
+      ],
+      "id_gen": [
+        "qcm008_2025-10-15",
+        "qcm009_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q028",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Quelle est la signification économique du terme 'consumption smoothing' ?",
+      "choices": [
+        "Les individus préfèrent concentrer leur consommation dans une seule période.",
+        "Les individus préfèrent maintenir une consommation stable dans le temps malgré les variations de revenu.",
+        "Les individus consomment plus quand le taux d’intérêt est nul.",
+        "Les individus n’épargnent jamais."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le 'consumption smoothing' décrit la tendance des ménages à lisser leur consommation au cours du temps pour éviter de fortes fluctuations malgré les variations de revenu.",
+      "tags": [
+        "temps",
+        "consommation",
+        "revenu permanent"
+      ]
+    },
+    {
+      "id": "chatgpt_q029",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Dans un jeu statique à deux joueurs, une stratégie dominante est :",
+      "choices": [
+        "Une stratégie qui maximise le gain attendu si l’autre joueur coopère.",
+        "Une stratégie qui donne le meilleur résultat quel que soit le choix de l’autre joueur.",
+        "Une stratégie qui maximise le gain collectif.",
+        "Une stratégie qui suppose une information parfaite."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Une stratégie dominante offre le gain maximal pour un joueur, peu importe ce que choisissent les autres. C’est le cas du 'fink' dans le dilemme du prisonnier.",
+      "tags": [
+        "jeu statique",
+        "stratégie dominante",
+        "Nash"
+      ],
+      "id_gen": [
+        "qcm010_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q030",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Dans le modèle d’Akerlof, quelle est la conséquence d’une asymétrie d’information extrême ?",
+      "choices": [
+        "Une amélioration du bien-être collectif.",
+        "Une disparition du marché pour les biens de bonne qualité.",
+        "Une hausse du prix moyen des biens.",
+        "Une sélection des meilleurs produits uniquement."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Lorsque les acheteurs ne peuvent pas distinguer la qualité, seuls les 'lemons' (biens de mauvaise qualité) restent en vente, pouvant mener à un effondrement du marché.",
+      "tags": [
+        "Akerlof",
+        "sélection adverse",
+        "asymétrie d'information"
+      ],
+      "id_gen": [
+        "qcm010_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q031",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Quelle hypothèse distingue un jeu bayésien d’un jeu standard ?",
+      "choices": [
+        "Les joueurs ne connaissent pas parfaitement leurs propres gains.",
+        "Les joueurs ont des croyances sur des types cachés d’autres joueurs.",
+        "Les joueurs jouent successivement et non simultanément.",
+        "Les stratégies sont purement mixtes."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Dans un jeu bayésien, les joueurs ont une information incomplète sur les types des autres, et forment des croyances probabilistes selon la règle de Bayes.",
+      "tags": [
+        "jeu bayésien",
+        "incomplétude",
+        "Beer-Quiche"
+      ]
+    },
+    {
+      "id": "chatgpt_q032",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Que garantit le concept d’efficacité de Pareto dans une allocation ?",
+      "choices": [
+        "Aucune amélioration du bien-être n’est possible sans détériorer celui d’un autre agent.",
+        "L’égalité parfaite entre tous les agents.",
+        "La maximisation de la production totale.",
+        "L’équité dans la distribution du revenu."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Une allocation est Pareto-efficiente si aucune réallocation ne peut améliorer le bien-être d’un individu sans réduire celui d’un autre.",
+      "tags": [
+        "Pareto",
+        "efficacité",
+        "allocation"
+      ]
+    },
+    {
+      "id": "chatgpt_q033",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Dans la théorie des jeux, un équilibre mixte correspond à :",
+      "choices": [
+        "Une combinaison de stratégies où les joueurs choisissent aléatoirement selon des probabilités.",
+        "Un équilibre où les gains sont toujours égaux.",
+        "Une situation où chaque joueur choisit une seule stratégie pure.",
+        "Un jeu où les payoffs sont incertains."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L’équilibre mixte permet aux joueurs de randomiser leurs choix selon des probabilités, de sorte qu’aucun n’ait intérêt à modifier sa distribution.",
+      "tags": [
+        "stratégies mixtes",
+        "Nash",
+        "jeu"
+      ]
+    },
+    {
+      "id": "chatgpt_q034",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Pourquoi dit-on qu’un jeu coopératif à utilité transférable (TU-game) suppose une perspective centralisée ?",
+      "choices": [
+        "Parce que tous les joueurs se concertent pour fixer leurs stratégies indépendamment.",
+        "Parce qu’un coordinateur répartit le gain total du groupe entre les joueurs.",
+        "Parce que les préférences individuelles sont identiques.",
+        "Parce que le jeu se déroule sans incitations stratégiques."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Dans un TU-game, on considère la valeur totale v(S) de chaque coalition et la répartition de ce total entre ses membres, souvent décidée de façon centralisée.",
+      "tags": [
+        "TU-game",
+        "cooperation",
+        "allocation"
+      ]
+    },
+    {
+      "id": "chatgpt_q035",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Dans un jeu coopératif, le core (cœur) correspond à :",
+      "choices": [
+        "L’ensemble des stratégies dominantes.",
+        "L’ensemble des allocations stables où aucune coalition n’a intérêt à se séparer.",
+        "L’ensemble des équilibres de Nash.",
+        "L’ensemble des allocations efficaces mais inéquitables."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le core regroupe les allocations où aucune coalition ne peut obtenir une meilleure répartition pour ses membres. C’est une condition de stabilité collective.",
+      "tags": [
+        "core",
+        "coopératif",
+        "stabilité"
+      ],
+      "id_gen": [
+        "qcm009_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q036",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Quel est le rôle de la valeur de Shapley dans un jeu coopératif ?",
+      "choices": [
+        "Mesurer la contribution moyenne d’un joueur à toutes les coalitions possibles.",
+        "Attribuer au hasard la répartition du gain.",
+        "Maximiser le gain collectif total.",
+        "Déterminer la stratégie dominante de chaque joueur."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La valeur de Shapley attribue à chaque joueur une part du gain total proportionnelle à sa contribution moyenne à toutes les coalitions possibles.",
+      "tags": [
+        "Shapley",
+        "coopératif",
+        "allocation"
+      ],
+      "id_gen": [
+        "qcm008_2025-10-15",
+        "qcm009_2025-10-15",
+        "qcm010_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q037",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Pourquoi la convexité d’un jeu coopératif garantit-elle que la valeur de Shapley appartient au core ?",
+      "choices": [
+        "Parce que la convexité rend toutes les coalitions inefficaces.",
+        "Parce que les gains marginaux des joueurs croissent avec la taille des coalitions.",
+        "Parce que les préférences sont identiques entre joueurs.",
+        "Parce que le core devient vide."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Dans un jeu convexe, les contributions marginales des joueurs augmentent avec la taille de la coalition, ce qui assure que la valeur de Shapley satisfait toutes les contraintes du core.",
+      "tags": [
+        "convexité",
+        "core",
+        "Shapley"
+      ]
+    },
+    {
+      "id": "chatgpt_q038",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Quel axiome de la valeur de Shapley impose qu’un joueur sans contribution obtienne un gain nul ?",
+      "choices": [
+        "L’axiome d’efficacité.",
+        "L’axiome de symétrie.",
+        "L’axiome du joueur nul.",
+        "L’axiome d’additivité."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L’axiome du joueur nul stipule qu’un joueur dont la contribution marginale est toujours nulle dans toutes les coalitions reçoit un gain nul.",
+      "tags": [
+        "Shapley",
+        "axiomes",
+        "coopératif"
+      ],
+      "id_gen": [
+        "qcm009_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q039",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Quelle propriété caractérise un jeu superadditif ?",
+      "choices": [
+        "Les coalitions fusionnées ont une valeur au moins égale à la somme de leurs valeurs séparées.",
+        "Les coalitions fusionnées perdent en efficacité.",
+        "Les joueurs préfèrent rester seuls.",
+        "Les valeurs des coalitions sont constantes."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Dans un jeu superadditif, la coopération est bénéfique : v(S∪T) ≥ v(S) + v(T) pour S∩T=∅.",
+      "tags": [
+        "superadditivité",
+        "coopératif",
+        "valeur"
+      ],
+      "id_gen": [
+        "qcm008_2025-10-15",
+        "qcm010_2025-10-15"
+      ]
+    },
+    {
+      "id": "chatgpt_q040",
+      "qcm": "Chatgpt-cours2",
+      "theme": "Microéconomie",
+      "question": "Que signifie la monotonie d’un jeu coopératif (N,v) ?",
+      "choices": [
+        "Ajouter des joueurs ne réduit jamais la valeur d’une coalition.",
+        "Toutes les coalitions ont la même valeur.",
+        "Les gains individuels sont constants.",
+        "Le core est toujours vide."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Un jeu est monotone si pour S ⊆ T, v(S) ≤ v(T). Ajouter des membres ne doit jamais réduire la valeur de la coalition.",
+      "tags": [
+        "monotonie",
+        "coopératif",
+        "valeur"
+      ],
+      "id_gen": [
+        "qcm009_2025-10-15"
+      ]
+    },
+    {
+      "id": "cgpt3-q001",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Selon le modèle du marché des 'lemons' d’Akerlof, la présence d’asymétrie d’information entraîne :",
+      "choices": [
+        "une augmentation du volume d’échanges sur le marché.",
+        "une sélection des produits de meilleure qualité.",
+        "une réduction de la qualité moyenne des biens échangés.",
+        "un alignement des prix sur la valeur des biens de haute qualité."
+      ],
+      "answer": [2],
+      "explanation": "Les acheteurs anticipent la présence de 'lemons' et offrent un prix moyen, poussant les vendeurs de bonne qualité à quitter le marché — la qualité moyenne des biens échangés diminue.",
+      "tags": ["Akerlof", "asymétrie d'information", "sélection adverse", "lemons"]
+    },
+    {
+      "id": "cgpt3-q002",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Dans un jeu statique à information complète, une stratégie dominante est :",
+      "choices": [
+        "une stratégie optimale uniquement pour un certain profil de stratégies adverses.",
+        "une stratégie qui maximise le gain pour tous les profils de stratégies des autres joueurs.",
+        "une stratégie aléatoire qui augmente l’espérance de gain.",
+        "une stratégie qui dépend des croyances du joueur."
+      ],
+      "answer": [1],
+      "explanation": "Une stratégie dominante est celle qui procure le gain maximal quel que soit le choix des autres joueurs.",
+      "tags": ["théorie des jeux", "stratégie dominante", "équilibre"]
+    },
+    {
+      "id": "cgpt3-q003",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Dans le dilemme du prisonnier, l’issue de l’équilibre de Nash est :",
+      "choices": [
+        "coopérative et efficace au sens de Pareto.",
+        "non coopérative et inefficace au sens de Pareto.",
+        "instable et dépendante des croyances.",
+        "indéterminée sans information supplémentaire."
+      ],
+      "answer": [1],
+      "explanation": "L’équilibre (trahir, trahir) est stable mais inefficace : chaque joueur agit rationnellement, mais le résultat collectif est sous-optimal.",
+      "tags": ["dilemme du prisonnier", "Pareto", "équilibre de Nash"]
+    },
+    {
+      "id": "cgpt3-q004",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Dans le modèle à deux périodes, une hausse du taux d’intérêt réel :",
+      "choices": [
+        "rend la consommation présente plus attractive.",
+        "rend la consommation future plus chère.",
+        "augmente le rendement de l’épargne et incite à consommer moins aujourd’hui.",
+        "réduit le revenu permanent de l’agent."
+      ],
+      "answer": [2],
+      "explanation": "Un taux d’intérêt réel plus élevé accroît la rémunération de l’épargne et incite à reporter la consommation vers le futur.",
+      "tags": ["temps", "consommation", "épargne", "taux d’intérêt"]
+    },
+    {
+      "id": "cgpt3-q005",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Une fonction d’utilité concave implique que :",
+      "choices": [
+        "l’individu aime le risque.",
+        "l’individu est neutre au risque.",
+        "l’individu est averse au risque.",
+        "l’individu est indifférent aux loteries équitables."
+      ],
+      "answer": [2],
+      "explanation": "La concavité de la fonction d’utilité traduit une utilité marginale décroissante de la richesse, caractéristique de l’aversion au risque.",
+      "tags": ["utilité concave", "aversion au risque", "espérance d’utilité"]
+    },
+    {
+      "id": "cgpt3-q006",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Dans un jeu bayésien, les croyances des joueurs :",
+      "choices": [
+        "sont sans influence sur l’équilibre.",
+        "sont mises à jour via la règle de Bayes à partir des signaux observés.",
+        "sont supposées identiques pour tous les joueurs.",
+        "sont ignorées dans l’équilibre parfait en sous-jeux."
+      ],
+      "answer": [1],
+      "explanation": "Les croyances sont essentielles et se mettent à jour selon la règle de Bayes après chaque observation d’un signal ou d’une action.",
+      "tags": ["jeu bayésien", "croyances", "Bayes", "information incomplète"]
+    },
+    {
+      "id": "cgpt3-q007",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Dans le modèle de Diamond-Dybvig, un 'bank run' se produit lorsque :",
+      "choices": [
+        "les agents deviennent soudainement plus patients.",
+        "les agents retirent simultanément leurs dépôts par peur d’illiquidité.",
+        "les rendements des actifs bancaires augmentent.",
+        "le gouvernement augmente la garantie des dépôts."
+      ],
+      "answer": [1],
+      "explanation": "Les retraits massifs auto-réalisateurs créent un équilibre multiple et peuvent mener à la faillite de la banque même solvable.",
+      "tags": ["Diamond-Dybvig", "liquidité", "bank run", "équilibres multiples"]
+    },
+    {
+      "id": "cgpt3-q008",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "L’aléa moral se distingue de la sélection adverse car il :",
+      "choices": [
+        "intervient avant la signature du contrat.",
+        "résulte d’une asymétrie d’information après la signature du contrat.",
+        "n’a pas d’effet sur l’efficacité du marché.",
+        "ne concerne que les marchés financiers."
+      ],
+      "answer": [1],
+      "explanation": "L’aléa moral apparaît après la conclusion du contrat, lorsque l’une des parties peut modifier son comportement de façon opportuniste.",
+      "tags": ["aléa moral", "incitations", "asymétrie d’information"]
+    },
+    {
+      "id": "cgpt3-q009",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "La variance d’une loterie mesure :",
+      "choices": [
+        "le niveau d’utilité attendu.",
+        "l’intensité de l’aversion au risque.",
+        "la dispersion des gains autour de leur moyenne.",
+        "la probabilité d’un gain positif."
+      ],
+      "answer": [2],
+      "explanation": "La variance est un indicateur statistique de la dispersion des résultats aléatoires autour de leur espérance.",
+      "tags": ["variance", "risque", "dispersion", "incertitude"]
+    },
+    {
+      "id": "cgpt3-q010",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Dans un jeu séquentiel, l’analyse par induction rétrograde :",
+      "choices": [
+        "néglige les sous-jeux terminaux.",
+        "consiste à déterminer d’abord les stratégies initiales.",
+        "permet d’identifier les stratégies optimales à partir de la fin du jeu.",
+        "ne s’applique qu’aux jeux à information incomplète."
+      ],
+      "answer": [2],
+      "explanation": "L’induction rétrograde permet de résoudre les jeux séquentiels parfaits en remontant du dernier au premier mouvement.",
+      "tags": ["jeu séquentiel", "induction rétrograde", "SPNE"]
+    },
+    {
+      "id": "cgpt3-q011",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Une garantie sur un produit ou un certificat de qualité peut :",
+      "choices": [
+        "accroître l’asymétrie d’information.",
+        "rendre le marché moins efficient.",
+        "signaler la qualité du produit et rétablir la confiance des acheteurs.",
+        "réduire la concurrence."
+      ],
+      "answer": [2],
+      "explanation": "Les signaux coûteux comme les garanties ou labels servent à crédibiliser la qualité et réduire la sélection adverse.",
+      "tags": ["signalisation", "Spence", "sélection adverse", "marché"]
+    },
+    {
+      "id": "cgpt3-q012",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Un agent avec un facteur d’escompte β < 1 :",
+      "choices": [
+        "ne valorise pas le futur.",
+        "valorise moins la consommation future que la présente.",
+        "valorise davantage la consommation future.",
+        "est indifférent entre présent et futur."
+      ],
+      "answer": [1],
+      "explanation": "Si β < 1, la valeur actuelle des biens futurs est réduite : l’individu préfère la consommation immédiate.",
+      "tags": ["escompte", "préférences temporelles", "consommation"]
+    },
+    {
+      "id": "cgpt3-q013",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Selon Von Neumann et Morgenstern, un individu rationnel :",
+      "choices": [
+        "maximise la probabilité du meilleur résultat.",
+        "maximise l’espérance de son utilité et non celle du gain monétaire.",
+        "choisit toujours la loterie la plus sûre.",
+        "est indifférent à la variance des gains."
+      ],
+      "answer": [1],
+      "explanation": "Le principe d’utilité espérée suppose que les individus choisissent la loterie qui maximise leur espérance d’utilité, non de gain.",
+      "tags": ["utilité espérée", "Von Neumann-Morgenstern", "rationalité"]
+    },
+    {
+      "id": "cgpt3-q014",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Dans un jeu à utilité transférable (TU-game), la fonction caractéristique v(S) :",
+      "choices": [
+        "attribue un gain individuel à chaque joueur.",
+        "mesure la valeur totale qu’un groupe de joueurs peut obtenir ensemble.",
+        "indique la probabilité de coalition.",
+        "représente la satisfaction marginale de chaque joueur."
+      ],
+      "answer": [1],
+      "explanation": "La fonction caractéristique associe à chaque coalition la valeur totale qu’elle peut obtenir sans les autres.",
+      "tags": ["cooperative game theory", "TU-game", "fonction caractéristique"]
+    },
+    {
+      "id": "cgpt3-q015",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Une intervention publique sous forme d’assurance des dépôts bancaires vise à :",
+      "choices": [
+        "réduire la solvabilité des banques.",
+        "supprimer la préférence pour la liquidité.",
+        "éviter les paniques auto-réalisatrices.",
+        "imposer un taux d’intérêt unique."
+      ],
+      "answer": [2],
+      "explanation": "En garantissant les dépôts, l’État empêche les comportements de retrait paniques et stabilise les équilibres multiples.",
+      "tags": ["banque", "intervention publique", "assurance des dépôts", "coordination"]
+    },
+    {
+      "id": "cgpt3-q016",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Deux investissements de même espérance mais de variance différente :",
+      "choices": [
+        "sont équivalents pour un agent neutre au risque.",
+        "seront toujours préférés par un agent averse au risque au plus risqué.",
+        "ont la même utilité pour tout agent.",
+        "ne peuvent être comparés."
+      ],
+      "answer": [0],
+      "explanation": "Un agent neutre au risque ne se soucie pas de la variance : il évalue uniquement l’espérance des gains.",
+      "tags": ["risque", "variance", "attitude face au risque"]
+    },
+    {
+      "id": "cgpt3-q017",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Un équilibre de Nash peut être :",
+      "choices": [
+        "unique ou multiple selon le jeu.",
+        "forcément efficace au sens de Pareto.",
+        "toujours en stratégies dominantes.",
+        "forcément stable dynamiquement."
+      ],
+      "answer": [0],
+      "explanation": "Certains jeux possèdent plusieurs équilibres de Nash, voire un continuum d’équilibres.",
+      "tags": ["équilibre de Nash", "unicité", "jeux"]
+    },
+    {
+      "id": "cgpt3-q018",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "La condition d’indépendance de Von Neumann-Morgenstern implique que :",
+      "choices": [
+        "les préférences entre loteries dépendent des probabilités associées à des résultats communs.",
+        "ajouter une même loterie à deux options ne change pas leur ordre de préférence.",
+        "les préférences sont invariantes aux transformations monotones.",
+        "la continuité des préférences est assurée."
+      ],
+      "answer": [1],
+      "explanation": "L’axiome d’indépendance stipule que si A est préféré à B, alors un mélange identique avec une troisième loterie C ne change pas ce classement.",
+      "tags": ["axiomes VNM", "indépendance", "préférences", "utilité espérée"]
+    },
+    {
+      "id": "cgpt3-q019",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Le signal de Spence dans un modèle d’éducation suppose que :",
+      "choices": [
+        "le diplôme augmente directement la productivité.",
+        "le diplôme n’a pas d’effet sur la productivité mais révèle le type d’agent.",
+        "le coût de l’éducation est identique pour tous les agents.",
+        "l’information est symétrique entre employeurs et employés."
+      ],
+      "answer": [1],
+      "explanation": "Chez Spence, l’éducation sert de signal crédible : elle ne rend pas plus productif mais révèle le type à coût différencié.",
+      "tags": ["signalisation", "Spence", "information asymétrique"]
+    },
+    {
+      "id": "cgpt3-q020",
+      "qcm": "Chatgpt-cours3",
+      "theme": "Microéconomie",
+      "question": "Selon la théorie du revenu permanent de Friedman, la consommation dépend principalement :",
+      "choices": [
+        "du revenu courant.",
+        "du revenu permanent anticipé.",
+        "du taux d’intérêt courant uniquement.",
+        "de la richesse héritée."
+      ],
+      "answer": [1],
+      "explanation": "Les ménages lissent leur consommation dans le temps en fonction de leur revenu permanent attendu plutôt que du revenu temporaire.",
+      "tags": ["revenu permanent", "consommation", "Friedman"]
+    },
+    {
+      "id": "cgpt4-q001",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Le concept d’équilibre de marché concurrentiel repose sur l’hypothèse que :",
+      "choices": [
+        "chaque agent peut influencer les prix.",
+        "les agents sont preneurs de prix et maximisent leur utilité ou profit.",
+        "les prix sont imposés par une autorité centrale.",
+        "les agents agissent de manière coordonnée."
+      ],
+      "answer": [1],
+      "explanation": "Dans un marché concurrentiel, aucun agent n’a de pouvoir de marché : tous prennent les prix comme donnés et optimisent en conséquence.",
+      "tags": ["équilibre concurrentiel", "marché", "prix", "rationalité"]
+    },
+    {
+      "id": "cgpt4-q002",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Dans le modèle de choix intertemporel, la pente de la contrainte budgétaire intertemporelle correspond à :",
+      "choices": [
+        "le rapport entre les taux marginaux de substitution des biens.",
+        "le taux d’intérêt réel net.",
+        "le taux d’épargne agrégé.",
+        "la préférence pour la consommation immédiate."
+      ],
+      "answer": [1],
+      "explanation": "La contrainte intertemporelle a pour pente −(1+ r) : elle traduit le coût relatif de la consommation présente par rapport à la future.",
+      "tags": ["consommation", "budget intertemporel", "taux d’intérêt"]
+    },
+    {
+      "id": "cgpt4-q003",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Une fonction d’utilité U(x1, x2) = x1·x2 est :",
+      "choices": [
+        "linéaire et implique des biens parfaitement substituables.",
+        "concave et implique une préférence pour la diversité.",
+        "convexe et indique une aversion pour la diversification.",
+        "non monotone."
+      ],
+      "answer": [1],
+      "explanation": "La fonction de Cobb-Douglas U(x1, x2)=x1·x2 est concave : elle reflète des préférences pour la combinaison des deux biens.",
+      "tags": ["utilité", "Cobb-Douglas", "préférences", "concavité"]
+    },
+    {
+      "id": "cgpt4-q004",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "L’effet de substitution pur d’une hausse du prix d’un bien conduit le consommateur à :",
+      "choices": [
+        "consommer davantage de ce bien.",
+        "consommer moins de ce bien et plus des autres.",
+        "réduire sa consommation totale.",
+        "modifier son revenu nominal."
+      ],
+      "answer": [1],
+      "explanation": "L’effet de substitution reflète la réaction de l’agent au changement du prix relatif, indépendamment du revenu réel.",
+      "tags": ["effet de substitution", "prix relatif", "théorie du consommateur"]
+    },
+    {
+      "id": "cgpt4-q005",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Le théorème d’Arrow-Debreu établit que :",
+      "choices": [
+        "l’équilibre général est toujours unique.",
+        "tout équilibre concurrentiel est Pareto-efficient sous certaines hypothèses.",
+        "le monopole maximise le bien-être social.",
+        "la main invisible ne fonctionne pas en concurrence parfaite."
+      ],
+      "answer": [1],
+      "explanation": "Le premier théorème du bien-être stipule qu’un équilibre concurrentiel est Pareto-efficient si les marchés sont complets et sans externalités.",
+      "tags": ["Arrow-Debreu", "équilibre général", "efficience de Pareto"]
+    },
+    {
+      "id": "cgpt4-q006",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Un consommateur neutre au risque a une fonction d’utilité :",
+      "choices": [
+        "concave.",
+        "convexe.",
+        "linéaire.",
+        "en racine carrée."
+      ],
+      "answer": [2],
+      "explanation": "La neutralité au risque correspond à une utilité linéaire de la richesse : seule l’espérance du gain importe.",
+      "tags": ["neutralité au risque", "utilité", "espérance"]
+    },
+    {
+      "id": "cgpt4-q007",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "L’équilibre parfait en sous-jeux (SPNE) garantit :",
+      "choices": [
+        "que les menaces sont crédibles dans chaque sous-jeu.",
+        "que les joueurs jouent simultanément.",
+        "qu’il existe un seul équilibre possible.",
+        "que les croyances sont identiques pour tous les joueurs."
+      ],
+      "answer": [0],
+      "explanation": "Le SPNE impose que les stratégies constituent un équilibre de Nash dans chaque sous-jeu, assurant la crédibilité des menaces.",
+      "tags": ["SPNE", "jeux dynamiques", "crédibilité"]
+    },
+    {
+      "id": "cgpt4-q008",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "L’élasticité-prix de la demande mesure :",
+      "choices": [
+        "le revenu marginal du consommateur.",
+        "la sensibilité de la quantité demandée à une variation de prix.",
+        "la variation du prix d’équilibre.",
+        "l’effet de revenu sur la demande."
+      ],
+      "answer": [1],
+      "explanation": "L’élasticité-prix est le rapport de la variation relative de la quantité demandée à celle du prix : elle mesure la réactivité des consommateurs.",
+      "tags": ["élasticité", "demande", "prix", "microéconomie"]
+    },
+    {
+      "id": "cgpt4-q009",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Une contrainte budgétaire est linéaire lorsque :",
+      "choices": [
+        "les prix des biens sont constants.",
+        "les préférences changent avec le revenu.",
+        "il existe des effets de réseau.",
+        "l’individu fait face à des prix progressifs."
+      ],
+      "answer": [0],
+      "explanation": "Si les prix unitaires des biens ne dépendent pas des quantités, la contrainte budgétaire est une droite.",
+      "tags": ["contrainte budgétaire", "prix", "consommation"]
+    },
+    {
+      "id": "cgpt4-q010",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Dans un modèle de choix sous incertitude, l’espérance d’utilité est :",
+      "choices": [
+        "la moyenne pondérée des utilités possibles par leurs probabilités.",
+        "le résultat le plus probable de la loterie.",
+        "le gain maximal possible.",
+        "l’utilité du revenu moyen."
+      ],
+      "answer": [0],
+      "explanation": "L’espérance d’utilité est la somme des utilités de chaque issue pondérées par leur probabilité d’occurrence.",
+      "tags": ["espérance d’utilité", "incertitude", "probabilité"]
+    },
+    {
+      "id": "cgpt4-q011",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "L’aversion relative au risque mesure :",
+      "choices": [
+        "la pente de la contrainte budgétaire.",
+        "la proportion de richesse qu’un individu risque de perdre pour un gain incertain.",
+        "la variance du portefeuille optimal.",
+        "la dérivée seconde de la fonction d’utilité."
+      ],
+      "answer": [1],
+      "explanation": "L’aversion relative au risque d’Arrow-Pratt évalue la propension à éviter les risques proportionnellement à la richesse totale.",
+      "tags": ["aversion au risque", "Arrow-Pratt", "utilité"]
+    },
+    {
+      "id": "cgpt4-q012",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "La frontière efficiente moyenne-variance (Markowitz) représente :",
+      "choices": [
+        "les portefeuilles minimisant le risque pour un rendement donné.",
+        "les actifs sans risque.",
+        "les portefeuilles dominés.",
+        "les actifs parfaitement corrélés."
+      ],
+      "answer": [0],
+      "explanation": "Dans le modèle de Markowitz, la frontière efficiente décrit les combinaisons rendement-risque optimales.",
+      "tags": ["Markowitz", "risque", "portefeuille", "moyenne-variance"]
+    },
+    {
+      "id": "cgpt4-q013",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Dans un marché avec asymétrie d’information, un mécanisme de signalisation efficace doit être :",
+      "choices": [
+        "coûteux à imiter pour les agents de mauvaise qualité.",
+        "gratuit pour tous les agents.",
+        "sans effet sur le comportement des agents.",
+        "imposé par la réglementation."
+      ],
+      "answer": [0],
+      "explanation": "Le signal doit être crédible : il doit coûter suffisamment cher aux 'mauvais types' pour ne pas être imitables.",
+      "tags": ["signalisation", "Spence", "information asymétrique"]
+    },
+    {
+      "id": "cgpt4-q014",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Un équilibre de Cournot suppose que :",
+      "choices": [
+        "les firmes fixent les prix.",
+        "les firmes choisissent les quantités en anticipant les choix des concurrentes.",
+        "les firmes coopèrent pour maximiser le profit collectif.",
+        "les firmes ne connaissent pas la demande."
+      ],
+      "answer": [1],
+      "explanation": "Dans le modèle de Cournot, chaque firme choisit sa quantité optimale en tenant compte de la quantité anticipée des autres.",
+      "tags": ["oligopole", "Cournot", "quantité", "équilibre"]
+    },
+    {
+      "id": "cgpt4-q015",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Un bien normal se caractérise par :",
+      "choices": [
+        "une élasticité-revenu négative.",
+        "une élasticité-revenu positive.",
+        "une consommation indépendante du revenu.",
+        "un prix fixe sur tous les marchés."
+      ],
+      "answer": [1],
+      "explanation": "Pour un bien normal, la demande augmente avec le revenu : l’élasticité-revenu est positive.",
+      "tags": ["bien normal", "revenu", "demande"]
+    },
+    {
+      "id": "cgpt4-q016",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Un monopole pratique une discrimination parfaite des prix lorsqu’il :",
+      "choices": [
+        "fixe un prix unique pour tous les consommateurs.",
+        "adapte le prix à chaque unité vendue selon la disposition à payer de chaque consommateur.",
+        "réduit ses coûts de production.",
+        "produit au niveau concurrentiel."
+      ],
+      "answer": [1],
+      "explanation": "La discrimination parfaite du premier degré permet au monopole de capter tout le surplus du consommateur.",
+      "tags": ["monopole", "discrimination des prix", "surplus"]
+    },
+    {
+      "id": "cgpt4-q017",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "La contrainte d’incitation dans un contrat doit garantir que :",
+      "choices": [
+        "les agents acceptent le contrat proposé.",
+        "les agents réalisent l’action souhaitée malgré l’asymétrie d’information.",
+        "le marché est en équilibre général.",
+        "les prix sont constants."
+      ],
+      "answer": [1],
+      "explanation": "Elle assure que chaque agent choisira volontairement l’action désirée par le principal plutôt qu’une autre non souhaitée.",
+      "tags": ["incitation", "contrat", "principal-agent"]
+    },
+    {
+      "id": "cgpt4-q018",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Le surplus du consommateur correspond :",
+      "choices": [
+        "à la différence entre le prix payé et le coût marginal.",
+        "à la différence entre la disposition à payer et le prix de marché.",
+        "au profit du producteur.",
+        "à l’excédent budgétaire."
+      ],
+      "answer": [1],
+      "explanation": "Le surplus du consommateur mesure le gain obtenu en payant moins que sa disposition maximale à payer.",
+      "tags": ["surplus", "bien-être", "marché"]
+    },
+    {
+      "id": "cgpt4-q019",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "Une externalité négative implique :",
+      "choices": [
+        "une production socialement inefficiente trop faible.",
+        "une production socialement inefficiente trop élevée.",
+        "une internalisation automatique du coût externe.",
+        "un équilibre toujours Pareto-optimal."
+      ],
+      "answer": [1],
+      "explanation": "Une externalité négative (ex : pollution) entraîne une production excessive par rapport au niveau socialement optimal.",
+      "tags": ["externalité", "inefficience", "Pigou"]
+    },
+    {
+      "id": "cgpt4-q020",
+      "qcm": "Chatgpt-cours4",
+      "theme": "Microéconomie",
+      "question": "La théorie du signal de Spence et le modèle des 'lemons' d’Akerlof ont en commun :",
+      "choices": [
+        "l’analyse d’un marché avec information complète.",
+        "la recherche de mécanismes de révélation d’information.",
+        "l’étude de l’équilibre walrasien.",
+        "le refus de toute intervention publique."
+      ],
+      "answer": [1],
+      "explanation": "Les deux approches traitent des marchés avec asymétrie d’information et de la manière de révéler la qualité ou le type des agents.",
+      "tags": ["Spence", "Akerlof", "information", "signalisation"]
     }
   ]
 }

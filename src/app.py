@@ -843,7 +843,9 @@ else:
     letters = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     st.markdown("\n".join([f"- **{letters[i]}**. {opt}" for i, opt in enumerate(options)]))
 
+    # ==============================
     # UI réponses
+    # ==============================
     if is_multi:
         prev = st.session_state.answers.get(row_idx, [])
         if not isinstance(prev, list):
@@ -859,20 +861,18 @@ else:
             )
         choice_indexes = [i for i, checked in enumerate(checks) if checked]
     else:
+        # FIX: clé unique par question + placeholder pour éviter une présélection par défaut
         prev = st.session_state.answers.get(row_idx, None)
-        if isinstance(prev, int):
-            chosen_letter = st.radio(
-                "Ta réponse :",
-                options=[letters[i] for i in range(len(options))],
-                index=prev,
-            )
-        else:
-            chosen_letter = st.radio(
-                "Ta réponse :",
-                options=[letters[i] for i in range(len(options))],
-                index=None,
-            )
-        choice_indexes = letters.index(chosen_letter) if chosen_letter is not None else None
+        opts = ["—"] + [letters[i] for i in range(len(options))]
+        idx = (prev + 1) if isinstance(prev, int) else 0
+        sel = st.radio(
+            "Ta réponse :",
+            options=opts,
+            index=idx,
+            key=f"q{row_idx}_radio",   # <-- clé unique par question
+            horizontal=False
+        )
+        choice_indexes = None if sel == "—" else letters.index(sel)
 
     col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
     with col1:
