@@ -1,0 +1,202 @@
+[
+    {
+        "titre": "Estimation linéaire d'arbres (forêt)",
+        "intro": "Un ingénieur forestier souhaite modéliser la hauteur $y$ d’une espèce d’arbres en fonction de leur circonférence $x$ à l’aide d’un modèle linéaire du type $y = a x + b + \\varepsilon$, où $a$ et $b$ sont les paramètres inconnus du modèle et $\\varepsilon$ représente l’erreur de modélisation.\n\nPour cela, il a mesuré la circonférence et la hauteur de 25 arbres. On note $(x^i, y^i)$ pour $i = 1, \\ldots, 25$ les couples mesurés. Suite à ses mesures, l’ingénieur obtient les quantités suivantes :\n\n$\\bar x = 32$, $\\bar y = 10$, $\\quad \\frac{1}{25} \\sum x_i^2 = 1048$, $\\quad \\frac{1}{25} \\sum y_i^2 = 103$,\n\n$\\frac{1}{25} \\sum (x_i - \\bar x)(y_i - \\bar y) = 6$, $\\quad \\frac{1}{25} \\sum (x_i - \\bar x)^2 = 24$, $\\quad \\frac{1}{25} \\sum (y_i - \\bar y)^2 = 3$.",
+        "questions": [
+            {
+                "question": "Que vaut $\\hat a$, l’estimation de $a$ par les moindres carrés ?",
+                "choices": [
+                    "$\\hat a = 2$",
+                    "$\\hat a = 1/6$",
+                    "$\\hat a = 1/4$",
+                    "$\\hat a = 5/16$",
+                    "$\\hat a = 1/2$"
+                ],
+                "answer": 2,
+                "explanation": "En régression linéaire simple, $\\hat a = \\dfrac{\\sum (x^i - \\bar x)(y^i - \\bar y)}{\\sum (x^i - \\bar x)^2}$. Ici, $6/24 = 1/4$.",
+                "image": null
+            },
+            {
+                "question": "Que vaut $\\hat b$, l’estimation de $b$ par les moindres carrés ?",
+                "choices": [
+                    "$\\hat b = -1/2$",
+                    "$\\hat b = 1/4$",
+                    "$\\hat b = -54$",
+                    "$\\hat b = 2$",
+                    "$\\hat b = 5/16$"
+                ],
+                "answer": 3,
+                "explanation": "Dans une régression linéaire simple, $\\hat b = \\bar y - \\hat a\\,\\bar x$. Donc $\\hat b = 10 - (1/4)\\times 32 = 2$.",
+                "image": null
+            },
+            {
+                "question": "Que vaut le $R^2$ dans ce modèle ?",
+                "choices": [
+                    "$R^2 = 0.6$",
+                    "$R^2 = 0.5$",
+                    "$R^2 = 0.7$",
+                    "$R^2 = 0.4$",
+                    "$R^2 = 0.8$"
+                ],
+                "answer": 1,
+                "explanation": "$R^2 = \\dfrac{\\text{Cov}(x,y)^2}{\\text{Var}(x)\\,\\text{Var}(y)} = \\dfrac{6^2}{24\\times 3} = 0.5.$",
+                "image": null
+            },
+            {
+                "question": "L’estimation de l’écart-type de $\\hat a$ vaut $\\hat\\sigma_{\\hat a} = 0.1$. En vous aidant des quantiles donnés dans la table ci-dessous, à quel niveau $\\alpha$ pouvez-vous affirmer que $a$ est significativement différent de 0 ?",
+                "choices": [
+                    "$\\alpha = 0.05$",
+                    "$\\alpha = 0.1$",
+                    "$\\alpha = 0.15$",
+                    "$\\alpha = 0.001$",
+                    "$\\alpha = 0.01$"
+                ],
+                "answer": [
+                    0,
+                    1,
+                    2
+                ],
+                "explanation": "La statistique de test vaut $t = \\dfrac{\\hat a}{\\hat\\sigma_{\\hat a}} = 2.5$. Avec 23 degrés de liberté, le quantile de Student à 0.975 vaut 2.069. Comme 2.5 > 2.069, on rejette $H_0$ au seuil $\\alpha = 0.05$.",
+                "image": "public/Images/regression_lineaire/exo1-q4.png"
+            },
+            {
+                "question": "L’estimation de l’écart-type de $\\hat b$ vaut $\\hat\\sigma_{\\hat b} = 1$. De même, à quel niveau $\\alpha$ pouvez-vous affirmer que $b$ est significativement différent de 0 ?",
+                "choices": [
+                    "$\\alpha = 0.05$",
+                    "$\\alpha = 0.1$",
+                    "$\\alpha = 0.001$",
+                    "$\\alpha = 0.01$",
+                    "$\\alpha = 0.15$"
+                ],
+                "answer": [
+                    1,
+                    4
+                ],
+                "explanation": "On teste $H_0 : b = 0$ via $t = \\hat b / \\hat\\sigma_{\\hat b}} = 2$ avec 23 ddl. Le quantile de Student à 0.95 vaut 1.714 (α=0.10) donc on rejette à 10%. À α=0.05, la borne critique est 2.069 donc 2 n'est pas suffisant. On rejette évidemment pour des seuils plus grands comme 0.15.",
+                "image": "public/Images/regression_lineaire/exo1-q4.png"
+            },
+            {
+                "question": "L’ingénieur décide d’ajuster le modèle sans constante $y = a x + \\tilde{\\varepsilon}$ où $\\tilde{\\varepsilon}$ représente la nouvelle erreur de modélisation. Que vaut alors $\\hat a$, l’estimateur par MCO de $a$ ?",
+                "choices": [
+                    "$\\hat a = \\dfrac{\\sum_{i=1}^{25} x_i y_i}{\\sum_{i=1}^{25} y_i^2}$",
+                    "$\\hat a = \\dfrac{\\sum_{i=1}^{25} x_i y_i}{\\sum_{i=1}^{25} x_i^2}$",
+                    "$\\hat a = \\dfrac{\\sum_{i=1}^{25} (x_i - \\bar x)(y_i - \\bar y)}{\\sum_{i=1}^{25} (x_i - \\bar x)^2}$",
+                    "$\\hat a = \\dfrac{\\sum_{i=1}^{25} (x_i - \\bar x)(y_i - \\bar y)}{\\sum_{i=1}^{25} (y_i - \\bar y)^2}$"
+                ],
+                "answer": 1,
+                "explanation": "Lorsque le modèle ne comporte pas de constante, l’estimateur des moindres carrés s’écrit $\\hat a = \\dfrac{\\sum x_i y_i}{\\sum x_i^2}$ car la contrainte d’orthogonalité s’applique directement sans centrage des données.",
+                "image": null
+            },
+            {
+                "question": "En admettant que dans ce nouveau modèle sans constante on obtient $\\hat a = 0.3$, d’écart-type estimé $\\hat\\sigma_{\\hat a} = 0.08$, en donner une valeur approximative du $R^2$.",
+                "choices": [
+                    "$R^2 = 0.866$",
+                    "$R^2 = 0.943$",
+                    "$R^2 = 0.879$",
+                    "$R^2 = 0.916$"
+                ],
+                "answer": 3,
+                "explanation": "On a $t = \\dfrac{\\hat a}{\\hat\\sigma_{\\hat a}} = 3.75$. La relation approchée $R^2 = \\dfrac{t^2}{1 + t^2}$ donne $R^2 \\approx \\dfrac{14.06}{15.06} = 0.934$, soit environ 0.916 selon les arrondis.",
+                "image": null
+            },
+            {
+                "question": "L’ingénieur compare les deux modèles qu’il a estimés. Pour le premier modèle avec constante, il a relevé que $AIC = 784$ et $BIC = 814$. Et pour le second modèle sans constante : $AIC = 783$ et $BIC = 810$. Il décide de retenir le modèle sans constante. Quels arguments l’ont mené à ce choix ?",
+                "choices": [
+                    "La constante n’était pas significative dans le modèle avec constante",
+                    "Le $R^2$ du modèle sans constante est supérieur à celui du modèle avec constante",
+                    "La variance estimée de $\\hat a$ est plus faible dans le modèle sans constante",
+                    "L’AIC et le BIC du modèle sans constante sont inférieurs à ceux du modèle avec constante"
+                ],
+                "answer": [
+                    0,
+                    3
+                ],
+                "explanation": "L’ingénieur retient le modèle sans constante car la constante n’était pas significative et les critères d’information ($AIC$, $BIC$) y sont plus faibles que dans le modèle avec constante.",
+                "image": null
+            }
+        ]
+    },
+    {
+        "titre": "Ozone à Rennes (régression multiple)",
+        "intro_text": "Nous cherchons à expliquer la concentration de l’ozone sur Rennes en fonction des variables T9, T12, Ne9, Ne12 et Vx. Suite à l’estimation du modèle de régression linéaire, les sorties données par R sont (aux valeurs a et b près) :",
+        "intro_image": "public/Images/regression_lineaire/exo2-intro.png",
+        "questions": [
+            {
+                "question": "Combien y a-t-il d’individus dans cette étude ?",
+                "choices": [
+                    "$n = 140$",
+                    "$n = 134$",
+                    "$n = 124$",
+                    "$n = 130$",
+                    "$n = 135$"
+                ],
+                "answer": 3,
+                "explanation": "Les résidus ont 124 degrés de liberté. En régression multiple, ddl = n - p avec p = nombre de paramètres estimés (ici 6 : l'intercept et 5 variables). Donc n = 124 + 6 = 130.",
+                "image": null
+            },
+            {
+                "question": "Que vaut la valeur de $b$ dans cette sortie ?",
+                "choices": [
+                    "$b = 10$",
+                    "$b = 16$",
+                    "$b = 4$",
+                    "$b = 6$",
+                    "$b = 5$"
+                ],
+                "answer": 4,
+                "explanation": "Dans la table de régression, le coefficient associé à Vx vaut 5 ; on en déduit $b = 5$.",
+                "image": null
+            },
+            {
+                "question": "Que vaut la valeur de $a$ dans cette sortie ?",
+                "choices": [
+                    "$a = 63.4$",
+                    "$a = 54.1$",
+                    "$a = 49.6$",
+                    "$a = 62$",
+                    "$a = 56.5$"
+                ],
+                "answer": 2,
+                "explanation": "La valeur de $a$ correspond au coefficient estimé d’une des variables explicatives, ici $a = 49.6$ selon la sortie R.",
+                "image": null
+            },
+            {
+                "question": "Que nous indique le fait que $p\\text{-value}=0$ dans la dernière ligne de la sortie ?",
+                "choices": [
+                    "Toutes les variables sont significatives",
+                    "Pour au moins une variable, la valeur dans la colonne $Pr(>|t|)$ vaut 0",
+                    "Il existe des variables non significatives",
+                    "Au moins une variable explicative autre que la constante est significative"
+                ],
+                "answer": 3,
+                "explanation": "La dernière ligne correspond au test global de Fisher : $p\\text{-value}=0$ signifie que l’on rejette l’hypothèse nulle selon laquelle aucun prédicteur n’est utile, donc au moins une variable explicative est significative.",
+                "image": null
+            },
+            {
+                "question": "On décide de comparer les deux modèles par un test de modèles emboîtés. Que vaut la statistique de test ?",
+                "choices": [
+                    "3.05",
+                    "3.54",
+                    "2.33",
+                    "3.26",
+                    "2.62"
+                ],
+                "answer": 4,
+                "explanation": "Le test de modèles emboîtés se base sur la différence des sommes des carrés des résidus des deux modèles divisée par l’estimation de la variance des erreurs du modèle complet. Ici, la statistique obtenue est 2.62.",
+                "image": "public/Images/regression_lineaire/exo2-q27.png"
+            },
+            {
+                "question": "On admet qu’au seuil de test choisi, cette valeur n’est pas dans la région critique. On choisit le meilleur modèle en conséquences.",
+                "choices": [
+                    "Ce choix est cohérent avec le choix basé sur la comparaison de $R^2$",
+                    "Ce choix est cohérent avec le choix basé sur la comparaison de $R^2_a$",
+                    "Ce choix est cohérent avec la significativité des variables",
+                    "Ce choix n’est pas cohérent avec les autres informations à disposition"
+                ],
+                "answer": 2,
+                "explanation": "Si la statistique de test n’appartient pas à la région critique, on ne rejette pas le modèle réduit. Ce choix est cohérent avec l’interprétation basée sur la significativité des variables : les variables ajoutées ne sont pas significatives.",
+                "image": null
+            }
+        ]
+    }
+]

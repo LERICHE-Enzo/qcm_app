@@ -410,7 +410,9 @@
         "OLS"
       ],
       "id_gen": [
-        "qcm004_2025-10-10"
+        "qcm004_2025-10-10",
+        "qcm002_2025-10-24",
+        "qcm003_2025-10-24"
       ]
     },
     {
@@ -459,6 +461,9 @@
         "Gauss–Markov",
         "BLUE",
         "estimateur"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-24"
       ]
     },
     {
@@ -510,6 +515,9 @@
         "OLS",
         "hypothèses",
         "Gauss–Markov"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-24"
       ]
     },
     {
@@ -1049,6 +1057,9 @@
         "régression linéaire",
         "test de Fisher",
         "significativité globale"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-24"
       ]
     },
     {
@@ -1074,6 +1085,9 @@
         "SCR",
         "$R^2$",
         "$R^2_a$"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-24"
       ]
     },
     {
@@ -1224,7 +1238,8 @@
       ],
       "id_gen": [
         "qcm003_2025-10-10",
-        "qcm005_2025-10-10"
+        "qcm005_2025-10-10",
+        "qcm002_2025-10-24"
       ]
     },
     {
@@ -1254,7 +1269,8 @@
         "matrices de projection"
       ],
       "id_gen": [
-        "qcm003_2025-10-10"
+        "qcm003_2025-10-10",
+        "qcm001_2025-10-24"
       ]
     },
     {
@@ -1277,6 +1293,9 @@
         "variance",
         "r\\u00e9sidus",
         "degr\\u00e9s de libert\\u00e9"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-24"
       ]
     },
     {
@@ -1305,6 +1324,9 @@
         "observables",
         "paramètres",
         "résidus"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-24"
       ]
     },
     {
@@ -1428,6 +1450,9 @@
         "test de Fisher",
         "R^2",
         "comparaison de modèles"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-24"
       ]
     },
     {
@@ -1615,6 +1640,9 @@
         "modèles emboîtés",
         "régression multiple",
         "hypothèse nulle"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-24"
       ]
     },
     {
@@ -1708,6 +1736,9 @@
         "autocorrélation",
         "résidus",
         "régression linéaire"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-24"
       ]
     },
     {
@@ -1730,6 +1761,9 @@
         "modèles emboîtés",
         "sélection de modèle",
         "régression multiple"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-24"
       ]
     },
     {
@@ -1826,6 +1860,9 @@
         "p-valeur",
         "test de Fisher",
         "comparaison de moyennes"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-24"
       ]
     },
     {
