@@ -746,7 +746,8 @@
         "moments"
       ],
       "id_gen": [
-        "qcm002_2025-10-10"
+        "qcm002_2025-10-10",
+        "qcm002_2025-10-28"
       ]
     },
     {
@@ -766,6 +767,9 @@
         "régression multiple",
         "multicolinéarité",
         "colinéarité"
+      ],
+      "id_gen": [
+        "qcm003_2025-10-28"
       ]
     },
     {
@@ -787,7 +791,8 @@
         "régression multiple"
       ],
       "id_gen": [
-        "qcm006_2025-10-10"
+        "qcm006_2025-10-10",
+        "qcm003_2025-10-28"
       ]
     },
     {
@@ -812,6 +817,10 @@
         "régression multiple",
         "$R^2$",
         "SCR"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-28",
+        "qcm003_2025-10-28"
       ]
     },
     {
@@ -831,6 +840,9 @@
         "régression multiple",
         "hétéroscédasticité",
         "hypothèses"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-28"
       ]
     },
     {
@@ -885,7 +897,8 @@
         "régression"
       ],
       "id_gen": [
-        "qcm007_2025-10-10"
+        "qcm007_2025-10-10",
+        "qcm004_2025-10-28"
       ]
     },
     {
@@ -973,6 +986,9 @@
         "$R^2_a$",
         "qualité d’ajustement",
         "régression multiple"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-28"
       ]
     },
     {
@@ -994,7 +1010,9 @@
         "estimateur de pente"
       ],
       "id_gen": [
-        "qcm001_2025-10-10"
+        "qcm001_2025-10-10",
+        "qcm002_2025-10-28",
+        "qcm003_2025-10-28"
       ]
     },
     {
@@ -1038,6 +1056,9 @@
         "$R^2_a$",
         "qualité d’ajustement",
         "régression multiple"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-28"
       ]
     },
     {
@@ -1087,7 +1108,8 @@
         "$R^2_a$"
       ],
       "id_gen": [
-        "qcm003_2025-10-24"
+        "qcm003_2025-10-24",
+        "qcm001_2025-10-28"
       ]
     },
     {
@@ -1107,6 +1129,9 @@
         "régression linéaire",
         "moindres carrés",
         "ordonnée à l’origine"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-28"
       ]
     },
     {
@@ -1164,6 +1189,10 @@
         "régression linéaire",
         "test de Fisher",
         "comparaison de modèles"
+      ],
+      "id_gen": [
+        "qcm001_2025-10-28",
+        "qcm003_2025-10-28"
       ]
     },
     {
@@ -1190,6 +1219,9 @@
         "résidus",
         "espérance",
         "variance"
+      ],
+      "id_gen": [
+        "qcm002_2025-10-28"
       ]
     },
     {
@@ -1618,6 +1650,9 @@
         "résidus",
         "valeurs ajustées",
         "orthogonalité"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-28"
       ]
     },
     {
@@ -1668,6 +1703,9 @@
         "sélection de modèle",
         "multicolinéarité",
         "BIC"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-28"
       ]
     },
     {
@@ -1714,6 +1752,9 @@
         "influence",
         "valeurs aberrantes",
         "levier"
+      ],
+      "id_gen": [
+        "qcm004_2025-10-28"
       ]
     },
     {
@@ -1763,7 +1804,8 @@
         "régression multiple"
       ],
       "id_gen": [
-        "qcm003_2025-10-24"
+        "qcm003_2025-10-24",
+        "qcm004_2025-10-28"
       ]
     },
     {
@@ -2027,6 +2069,914 @@
         "test de Tukey",
         "comparaison multiple",
         "analyse post-hoc"
+      ]
+    },
+    {
+      "id": "qcmChat-q1",
+      "qcm": "QCM-Chatgpt1",
+      "theme": "Régression linéaire",
+      "question": "La statistique du test de Breusch–Godfrey donne une p-valeur très faible. Que cela suggère-t-il ?",
+      "choices": [
+        "Aucune hétéroscédasticité dans les données",
+        "Une autocorrélation positive des résidus",
+        "Aucune autocorrélation des résidus",
+        "La présence d’un problème d’hétéroscédasticité"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Une p-valeur très faible conduit à rejeter l’hypothèse nulle du test de Breusch–Godfrey, selon laquelle il n’existe pas d’autocorrélation des résidus. On conclut donc à la présence d’une autocorrélation positive des résidus.",
+      "tags": [
+        "test de Breusch–Godfrey",
+        "autocorrélation",
+        "résidus",
+        "régression linéaire"
+      ]
+    },
+    {
+      "id": "qcmChat-q2",
+      "qcm": "QCM-Chatgpt1",
+      "theme": "Régression linéaire",
+      "question": "La statistique du test de Breusch–Pagan donne une p-valeur de 0,8. Que cela suggère-t-il ?",
+      "choices": [
+        "Aucune hétéroscédasticité dans les données",
+        "Présence d’autocorrélation des résidus",
+        "Présence d’hétéroscédasticité dans les données",
+        "Les résidus suivent une loi normale"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Une p-valeur élevée (ici 0,8) conduit à ne pas rejeter l’hypothèse nulle du test de Breusch–Pagan, selon laquelle les résidus sont homoscédastiques. On conclut donc à l’absence d’hétéroscédasticité dans les données.",
+      "tags": [
+        "test de Breusch–Pagan",
+        "hétéroscédasticité",
+        "homoscédasticité",
+        "résidus",
+        "régression linéaire"
+      ]
+    },
+    {
+      "id": "qcmChat-q3",
+      "qcm": "QCM-Chatgpt1",
+      "theme": "Régression linéaire",
+      "question": "La statistique du test de Breusch–Pagan donne une p-valeur très faible. Que cela suggère-t-il ?",
+      "choices": [
+        "Aucune hétéroscédasticité dans les données",
+        "Présence d’autocorrélation des résidus",
+        "Présence d’hétéroscédasticité dans les données",
+        "Les résidus suivent une loi normale"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Une p-valeur très faible conduit à rejeter l’hypothèse nulle du test de Breusch–Pagan, selon laquelle les résidus sont homoscédastiques. On conclut donc à la présence d’hétéroscédasticité dans les données.",
+      "tags": [
+        "test de Breusch–Pagan",
+        "hétéroscédasticité",
+        "homoscédasticité",
+        "résidus",
+        "régression linéaire"
+      ]
+    },
+    {
+      "id": "qcmChat-q6",
+      "qcm": "QCM-Chatgpt1",
+      "theme": "Régression linéaire",
+      "question": "Le test de Durbin–Watson appliqué au modèle `reg2` donne DW = 1.98, p-value = 0.82. Que cela suggère-t-il ?",
+      "choices": [
+        "Présence d’une autocorrélation positive des résidus",
+        "Présence d’une autocorrélation négative des résidus",
+        "Aucune autocorrélation des résidus",
+        "Présence d’hétéroscédasticité"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La statistique DW est très proche de 2 et la p-valeur est élevée (0,82). Cela conduit à ne pas rejeter l’hypothèse nulle d’absence d’autocorrélation. On conclut donc à l’absence d’autocorrélation des résidus.",
+      "tags": [
+        "test de Durbin–Watson",
+        "autocorrélation",
+        "résidus",
+        "régression linéaire"
+      ]
+    },
+    {
+      "id": "qcmChat-q7",
+      "qcm": "QCM-Chatgpt1",
+      "theme": "Régression linéaire",
+      "question": "Le test de Durbin–Watson appliqué au modèle `reg2` donne DW = 1.54, p-value = 0.033. Que cela suggère-t-il ?",
+      "choices": [
+        "Présence d’une autocorrélation positive des résidus",
+        "Présence d’une autocorrélation négative des résidus",
+        "Aucune autocorrélation des résidus",
+        "Présence d’hétéroscédasticité"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La statistique DW est inférieure à 2 et la p-valeur est faible (0,033), ce qui conduit à rejeter l’hypothèse nulle d’absence d’autocorrélation. On conclut donc à la présence d’une autocorrélation positive des résidus.",
+      "tags": [
+        "test de Durbin–Watson",
+        "autocorrélation",
+        "résidus",
+        "régression linéaire"
+      ]
+    },
+    {
+      "id": "qcmChat-q8",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Quelle est la valeur possible du coefficient de corrélation linéaire de Pearson \\(\\hat{\\rho}\\) ?",
+      "choices": [
+        "Elle peut dépasser 1 si les variables sont fortement liées",
+        "Elle est toujours comprise entre -1 et 1",
+        "Elle est toujours positive",
+        "Elle dépend du nombre d’observations"
+      ],
+      "answer": 1,
+      "explanation": "Le coefficient de corrélation de Pearson est borné entre -1 et 1, quels que soient les échantillons.",
+      "tags": [
+        "corrélation",
+        "bornes",
+        "statistiques descriptives"
+      ]
+    },
+    {
+      "id": "qcmChat-q9",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Si \\(\\hat{\\rho} = 0\\), on peut conclure que : (plusieurs réponses possibles)",
+      "choices": [
+        "Il n’y a pas de lien linéaire entre X et Y",
+        "Il n’y a aucun lien entre X et Y",
+        "Il peut exister un lien non linéaire",
+        "Les variables sont indépendantes"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Corrélation nulle ⇒ absence de lien linéaire. Un lien non linéaire (ou une dépendance non linéaire) peut subsister.",
+      "tags": [
+        "corrélation",
+        "interprétation",
+        "non-linéarité"
+      ]
+    },
+    {
+      "id": "qcmChat-q10",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Le test de corrélation sous hypothèse \\(H_0 : \\rho = 0\\) utilise :",
+      "choices": [
+        "Une loi normale",
+        "Une loi du Khi-deux",
+        "Une loi de Student à \\(n-2\\) degrés de liberté",
+        "Une loi de Fisher"
+      ],
+      "answer": 2,
+      "explanation": "Sous \\(H_0\\), la statistique basée sur \\(\\hat{\\rho}\\) suit une loi de Student à \\(n-2\\) ddl.",
+      "tags": [
+        "tests",
+        "corrélation",
+        "Student"
+      ]
+    },
+    {
+      "id": "qcmChat-q11",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Le but principal d’une ANOVA à un facteur est de :",
+      "choices": [
+        "Comparer des variances entre deux échantillons",
+        "Tester l’égalité des moyennes entre plusieurs groupes",
+        "Vérifier la normalité des résidus",
+        "Maximiser la variance inter-classe"
+      ],
+      "answer": 1,
+      "explanation": "ANOVA à un facteur : test d’égalité de moyennes entre plusieurs groupes via une décomposition de variance.",
+      "tags": [
+        "anova",
+        "moyennes",
+        "test F"
+      ]
+    },
+    {
+      "id": "qcmChat-q12",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Dans une ANOVA à un facteur équilibrée : (plusieurs réponses possibles)",
+      "choices": [
+        "La variance inter-groupes mesure la variabilité entre les groupes",
+        "La variance intra-groupes mesure la variabilité à l’intérieur des groupes",
+        "La statistique F suit une loi \\(F(I-1, n-I)\\) sous \\(H_0\\)",
+        "On rejette \\(H_0\\) si \\(F < F_{critique}\\)"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "On rejette \\(H_0\\) si \\(F\\) est supérieur (pas inférieur) à la valeur critique.",
+      "tags": [
+        "anova",
+        "variance",
+        "loi de Fisher"
+      ]
+    },
+    {
+      "id": "qcmChat-q13",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "En plan équilibré à deux facteurs (A et B), le terme \\(S^2_{AB}\\) mesure :",
+      "choices": [
+        "L’effet global de A et B combinés (sans interaction)",
+        "L’interaction entre A et B",
+        "La somme des variances individuelles de A et B",
+        "La variance intra-groupes"
+      ],
+      "answer": 1,
+      "explanation": "Le terme d’interaction quantifie la modification de l’effet d’un facteur selon le niveau de l’autre.",
+      "tags": [
+        "anova à deux facteurs",
+        "interaction"
+      ]
+    },
+    {
+      "id": "qcmChat-q14",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Le critère de Mallows \\(C_p\\) sert principalement à :",
+      "choices": [
+        "Maximiser la variance expliquée par le modèle",
+        "Équilibrer biais et variance pour la prédiction",
+        "Tester la normalité des résidus",
+        "Estimer la corrélation entre variables explicatives"
+      ],
+      "answer": 1,
+      "explanation": "Le \\(C_p\\) fournit un compromis biais/variance en vue de la performance prédictive.",
+      "tags": [
+        "sélection de modèles",
+        "Cp",
+        "prédiction"
+      ]
+    },
+    {
+      "id": "qcmChat-q15",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Le critère AIC est fondé sur :",
+      "choices": [
+        "La distance euclidienne",
+        "La divergence de Kullback–Leibler",
+        "La médiane absolue des résidus",
+        "Le test du Khi-deux"
+      ],
+      "answer": 1,
+      "explanation": "AIC ≈ estimation (pénalisée) de la divergence KL entre modèle et vérité ; on **minimise** l’AIC.",
+      "tags": [
+        "AIC",
+        "information",
+        "sélection de modèles"
+      ]
+    },
+    {
+      "id": "qcmChat-q16",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Le test de Durbin–Watson permet de détecter :",
+      "choices": [
+        "L’hétéroscédasticité",
+        "Une autocorrélation d’ordre 1 des erreurs",
+        "Une endogénéité des régresseurs",
+        "Des valeurs aberrantes"
+      ],
+      "answer": 1,
+      "explanation": "DW cible l’autocorrélation sérielle d’ordre 1 dans les résidus.",
+      "tags": [
+        "autocorrélation",
+        "Durbin–Watson",
+        "résidus"
+      ]
+    },
+    {
+      "id": "qcmChat-q17",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Le test de Breusch–Godfrey généralise Durbin–Watson car il :",
+      "choices": [
+        "Teste des autocorrélations d’ordre supérieur",
+        "Ne requiert pas d’homoscédasticité",
+        "Utilise une loi de Student",
+        "Ne nécessite pas de régression auxiliaire"
+      ],
+      "answer": 0,
+      "explanation": "BG permet de tester AR(p) pour p>1 (via une régression auxiliaire des résidus).",
+      "tags": [
+        "autocorrélation",
+        "Breusch–Godfrey",
+        "régressions auxiliaires"
+      ]
+    },
+    {
+      "id": "qcmChat-q18",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Dans le modèle linéaire classique, on suppose :",
+      "choices": [
+        "\\(Y = X\\beta + \\varepsilon\\) avec \\(\\varepsilon \\sim \\mathcal{N}(0, \\sigma^2 I_n)\\)",
+        "Que \\(X\\) suit une loi uniforme",
+        "Que \\(\\beta\\) est aléatoire",
+        "Que \\(\\varepsilon\\) dépend de \\(X\\)"
+      ],
+      "answer": 0,
+      "explanation": "Hypothèses Gaussiennes usuelles : erreurs centrées, homoscédastiques et indépendantes du plan d’expérience.",
+      "tags": [
+        "modèle linéaire",
+        "hypothèses",
+        "Gauss–Markov"
+      ]
+    },
+    {
+      "id": "qcmChat-q19",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Une p-valeur faible dans une ANOVA signifie que : (plusieurs réponses possibles)",
+      "choices": [
+        "Au moins deux moyennes de groupes diffèrent",
+        "On rejette \\(H_0\\) d’égalité des moyennes",
+        "Les variances de tous les groupes sont égales",
+        "Le modèle est forcément mal spécifié"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "ANOVA rejette l’égalité des moyennes si la p-valeur est faible. Cela ne dit rien sur l’égalité des variances a posteriori.",
+      "tags": [
+        "anova",
+        "p-valeur",
+        "interprétation"
+      ]
+    },
+    {
+      "id": "qcmChat-q20",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Après une ANOVA significative, le test post-hoc de Tukey sert à :",
+      "choices": [
+        "Comparer les variances des groupes",
+        "Identifier quelles paires de moyennes diffèrent",
+        "Tester l’autocorrélation des résidus",
+        "Mesurer la corrélation entre deux variables"
+      ],
+      "answer": 1,
+      "explanation": "Tukey contrôle l’erreur de type I familiale pour des comparaisons multiples de moyennes 2-à-2.",
+      "tags": [
+        "anova",
+        "post-hoc",
+        "Tukey"
+      ]
+    },
+    {
+      "id": "qcmChat-q21",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Dans une régression multiple avec constante, la statistique de Fisher globale s’écrit en fonction de \\(R^2\\) comme :",
+      "choices": [
+        "\\(F = \\dfrac{(1-R^2)/p}{R^2/(n-p)}\\)",
+        "\\(F = \\dfrac{R^2/p}{(1-R^2)/(n-p)}\\)",
+        "\\(F = \\dfrac{R^2/(n-p)}{(1-R^2)/p}\\)",
+        "\\(F = \\dfrac{(1-R^2)/(n-p)}{R^2/p}\\)"
+      ],
+      "answer": 1,
+      "explanation": "Formule standard : \\(F = \\frac{(R^2/p)}{((1-R^2)/(n-p))}\\) pour tester la significativité globale (hors intercept).",
+      "tags": [
+        "Fisher",
+        "R2",
+        "significativité globale"
+      ]
+    },
+    {
+      "id": "qcmChat-q22",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Si les erreurs sont autocorrélées (mais centrées), alors : (plusieurs réponses possibles)",
+      "choices": [
+        "L’estimateur MCO reste sans biais",
+        "Les écarts-types usuels des MCO deviennent incorrects",
+        "Les tests de Student classiques peuvent être invalides",
+        "L’ordonnée à l’origine est forcément biaisée"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Autocorrélation : \\(\\hat\\beta\\) MCO reste sans biais mais n’est plus BLUE ; la variance est mal estimée ⇒ tests usuels invalides.",
+      "tags": [
+        "autocorrélation",
+        "variance des MCO",
+        "inférences"
+      ]
+    },
+    {
+      "id": "qcmChat-q23",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "En présence d’hétéroscédasticité : (plusieurs réponses possibles)",
+      "choices": [
+        "MCO reste sans biais",
+        "MCO est inefficace (variance non minimale) parmi les linéaires sans biais",
+        "On peut corriger via des écarts-types robustes (type White)",
+        "Le \\(R^2\\) devient invalide"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Hétéroscédasticité : MCO sans biais mais pas BLUE ; on corrige l’inférence avec des SE robustes ou par GLS/FGLS.",
+      "tags": [
+        "hétéroscédasticité",
+        "robuste",
+        "BLUE"
+      ]
+    },
+    {
+      "id": "qcmChat-q24",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Pourquoi utiliser un test de Tukey plutôt que des tests de Student 2-à-2 non ajustés après ANOVA ?",
+      "choices": [
+        "Pour maximiser \\(R^2\\)",
+        "Pour contrôler l’erreur de type I familiale",
+        "Pour éviter l’hétéroscédasticité",
+        "Parce que Tukey est non paramétrique"
+      ],
+      "answer": 1,
+      "explanation": "Les comparaisons multiples nécessitent un ajustement pour contrôler le risque global d’erreur de première espèce.",
+      "tags": [
+        "comparaisons multiples",
+        "Tukey",
+        "contrôle de l’erreur"
+      ]
+    },
+    {
+      "id": "qcmChat-q25",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Dans un test de modèles emboîtés (complet vs restreint), les degrés de liberté de la statistique F sont : (plusieurs réponses possibles)",
+      "choices": [
+        "Au numérateur : le nombre de contraintes testées",
+        "Au dénominateur : les ddl résiduels du modèle complet",
+        "Au numérateur : le nombre total d’observations",
+        "Au dénominateur : \\(n-1\\)"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "ddl \\(= (p-p',\\; n-p)\\) lorsque le complet a \\(p\\) paramètres estimés et le restreint \\(p'\\).",
+      "tags": [
+        "modèles emboîtés",
+        "ddl",
+        "Fisher"
+      ]
+    },
+    {
+      "id": "qcmChat-q26",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "Un VIF (Variance Inflation Factor) élevé pour une variable explicative indique :",
+      "choices": [
+        "Une forte multicolinéarité",
+        "Une hétéroscédasticité sévère",
+        "Des résidus non normaux",
+        "Un bon pouvoir prédictif"
+      ],
+      "answer": 0,
+      "explanation": "VIF mesure l’inflation de la variance due à la colinéarité. Des VIF > 10 (règle pratique) suggèrent un problème sérieux.",
+      "tags": [
+        "multicolinéarité",
+        "VIF",
+        "stabilité des coefficients"
+      ]
+    },
+    {
+      "id": "qcmChat-q27",
+      "qcm": "QCM-Chatgpt",
+      "theme": "Régression linéaire",
+      "question": "On modélise avec deux facteurs qualitatifs : A (3 modalités) et B (4 modalités), en codage par référence et en incluant leur interaction. Combien de coefficients sont estimés au total (constante incluse) ?",
+      "choices": [
+        "8",
+        "9",
+        "12",
+        "11",
+        "10"
+      ],
+      "answer": 2,
+      "explanation": "Sans interactions : 1 (constante) + (3-1) + (4-1) = 1+2+3=6. Avec interaction : (3-1)(4-1)=6 de plus ⇒ total 12.",
+      "tags": [
+        "facteurs",
+        "paramétrisation",
+        "interactions"
+      ]
+    },
+    {
+      "id": "qcm5-q15",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Dans un modèle de régression linéaire standard, utilisant les notations du cours, quelles quantités sont observables ou calculables à partir des observations ?",
+      "choices": [
+        "$\\varepsilon$",
+        "$\\widehat{Y}$",
+        "$\\widehat{\\beta}$",
+        "$Y$",
+        "$\\beta$",
+        "$\\widehat{\\varepsilon}$"
+      ],
+      "answer": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "explanation": "Dans un modèle linéaire standard, seules les quantités dépendant directement des données sont observables ou calculables. $Y$ est observé, et les estimateurs $\\widehat{Y}$, $\\widehat{\\beta}$ et les résidus $\\widehat{\\varepsilon}$ sont calculables. En revanche, l'erreur vraie $\\varepsilon$ et les paramètres réels $\\beta$ ne sont pas observables.",
+      "tags": [
+        "régression linéaire",
+        "quantités observables",
+        "estimateurs",
+        "résidus"
+      ]
+    },
+    {
+      "id": "qcm5-q16",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Avec les notations standards d’un modèle de régression linéaire, quelles égalités sont exactes ?",
+      "choices": [
+        "$\\widehat{Y} = P_{[X]}Y$",
+        "$\\widehat{\\varepsilon} = Y - \\widehat{Y}$",
+        "$\\widehat{\\varepsilon} = P_{[X]^\\perp}Y$",
+        "$\\widehat{\\varepsilon} = P_{[X]^\\perp}\\varepsilon$",
+        "$\\widehat{\\varepsilon} = P_{[X]}\\varepsilon$",
+        "$\\widehat{Y} = P_{[X]^\\perp}Y$"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Les égalités exactes dans le modèle sont : $\\widehat{Y} = P_{[X]}Y$, $\\widehat{\\varepsilon} = Y - \\widehat{Y}$, $\\widehat{\\varepsilon} = P_{[X]^\\perp}Y$ et, dans le modèle théorique, $\\widehat{\\varepsilon} = P_{[X]^\\perp}\\varepsilon$. Les égalités impliquant $P_{[X]}\\varepsilon$ ou $P_{[X]^\\perp}Y$ pour $\\widehat{Y}$ sont incorrectes.",
+      "tags": [
+        "régression linéaire",
+        "projecteurs",
+        "résidus",
+        "modèle linéaire"
+      ]
+    },
+    {
+      "id": "qcm5-q17",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Sous les hypothèses et les notations standards d’un modèle de régression linéaire, quelles sont les variables non corrélées ?",
+      "choices": [
+        "$\\widehat{Y}^1 \\text{ et } \\widehat{\\varepsilon}^1$",
+        "$Y^1 \\text{ et } Y^2$",
+        "$\\widehat{\\varepsilon}^1 \\text{ et } \\widehat{\\varepsilon}^2$",
+        "$\\varepsilon^1 \\text{ et } \\widehat{\\varepsilon}^1$",
+        "$\\varepsilon^1 \\text{ et } \\varepsilon^2$",
+        "$Y^1 \\text{ et } \\widehat{\\varepsilon}^1$",
+        "$Y^1 \\text{ et } \\widehat{Y}^1$",
+        "$\\widehat{\\beta}^1 \\text{ et } \\widehat{\\beta}^2$"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "Dans le modèle de régression linéaire standard avec erreurs non corrélées, on a : (i) $\\widehat{Y}$ et les résidus $\\widehat{\\varepsilon}$ sont non corrélés car ce sont des projections orthogonales de $Y$, donc en particulier $\\widehat{Y}^1$ et $\\widehat{\\varepsilon}^1$ ; (ii) les observations $Y^1$ et $Y^2$ sont non corrélées lorsque les erreurs le sont et que $X$ est non aléatoire ; (iii) les erreurs vraies $\\varepsilon^1$ et $\\varepsilon^2$ sont supposées non corrélées. Les autres couples impliquent des quantités qui, en général, sont corrélées.",
+      "tags": [
+        "régression linéaire",
+        "corrélation",
+        "erreurs",
+        "résidus",
+        "variables aléatoires"
+      ]
+    },
+    {
+      "id": "qcm5-q18",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Que se passe-t-il si l’hypothèse \\(\\operatorname{rg}(X) = p\\) n’est plus vérifiée ?",
+      "choices": [
+        "La matrice $X^T X$ devient inversible",
+        "La matrice $X^T X$ n’est plus inversible",
+        "La corrélation entre deux régresseurs vaut 1 ou $-1$",
+        "L’estimateur $\\widehat{\\beta}$ n’est plus bien défini",
+        "Les résidus $\\widehat{\\varepsilon}$ ne sont plus bien définis",
+        "Les valeurs ajustées $\\widehat{Y}$ ne sont plus bien définies"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Si l’hypothèse de rang complet $\\operatorname{rg}(X) = p$ n’est plus vérifiée, la matrice $X^T X$ n’est plus inversible et l’estimateur des moindres carrés $\\widehat{\\beta} = (X^T X)^{-1} X^T Y$ n’est plus bien défini. En revanche, les valeurs ajustées et les résidus peuvent encore être définis via la projection de $Y$ sur l’espace engendré par les colonnes de $X$.",
+      "tags": [
+        "régression linéaire",
+        "rang de X",
+        "multicolinéarité",
+        "estimateur des moindres carrés"
+      ]
+    },
+    {
+      "id": "qcm5-q19",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "On suppose que le bruit \\(\\varepsilon\\) est un vecteur Gaussien \\(\\mathcal{N}(0, \\sigma^{2} I_n)\\). Soit \\((\\widehat{\\beta}^{MLE}, \\widehat{\\sigma}^{2,MLE})\\) et \\((\\widehat{\\beta}^{OLS}, \\widehat{\\sigma}^{2,OLS})\\) les estimateurs de \\(\\beta\\) et \\(\\sigma^{2}\\) respectivement par maximum de vraisemblance et par moindres carrés ordinaires. Quelles affirmations sont exactes ?",
+      "choices": [
+        "$\\widehat{\\beta}^{MLE}$ est non biaisé",
+        "$\\widehat{\\sigma}^{2,MLE}$ est non biaisé",
+        "$\\widehat{\\beta}^{OLS}$ et $\\widehat{\\sigma}^{2,OLS}$ sont indépendants",
+        "$\\widehat{\\beta}^{MLE} = \\widehat{\\beta}^{OLS}$",
+        "$\\widehat{\\sigma}^{2,MLE} = \\widehat{\\sigma}^{2,OLS}$"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Sous l’hypothèse de bruit gaussien, l’estimateur de \\(\\beta\\) par maximum de vraisemblance coïncide avec l’estimateur des moindres carrés ordinaires : on a donc $\\widehat{\\beta}^{MLE} = \\widehat{\\beta}^{OLS}$, et cet estimateur est non biaisé. Dans le modèle gaussien, $\\widehat{\\beta}^{OLS}$ et $\\widehat{\\sigma}^{2,OLS}$ sont indépendants. En revanche, $\\widehat{\\sigma}^{2,MLE}$ est un estimateur biaisé de \\(\\sigma^{2}\\) et il diffère de $\\widehat{\\sigma}^{2,OLS}$, qui est l’estimateur sans biais usuel.",
+      "tags": [
+        "régression linéaire",
+        "maximum de vraisemblance",
+        "moindres carrés ordinaires",
+        "biais",
+        "indépendance"
+      ]
+    },
+    {
+      "id": "qcm5-q20",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "On estime $\\widehat{\\beta}$ sur $n$ individus, et on considère un nouvel individu $o$ pour lequel on ne connaît que les régresseurs $X^o$. Lorsque $n$ tend vers $+\\infty$, pour un taux de couverture de 95%,",
+      "choices": [
+        "la largeur de l’intervalle de confiance de $\\beta^1$ ne tend pas vers 0",
+        "la largeur de l’intervalle de prédiction de $Y^o$ ne tend pas vers 0",
+        "la largeur de l’intervalle de prédiction de $Y^o$ tend vers 0",
+        "la largeur de l’intervalle de confiance de $\\beta^1$ tend vers 0"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Quand $n \\to +\\infty$, la variance de l’estimateur de $\\beta^1$ décroît comme $1/n$, donc la largeur de l’intervalle de confiance pour $\\beta^1$ tend vers 0. En revanche, l’intervalle de prédiction pour $Y^o$ incorpore la variance irréductible du bruit $\\varepsilon$, qui ne diminue pas avec $n$ : sa largeur ne tend donc pas vers 0.",
+      "tags": [
+        "régression linéaire",
+        "intervalle de confiance",
+        "intervalle de prédiction",
+        "asymptotique"
+      ]
+    },
+    {
+      "id": "qcm5-q21",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Dans un modèle de régression linéaire simple, l’estimation de la pente auprès de 25 individus vaut 1/4, d’écart-type estimé 0.1. En vous aidant des quantiles donnés dans la table, à quel niveau α pouvez-vous conclure que cette pente est significativement différente de 0 ?",
+      "image": "/Images/regression_lineaire/qcm5-2025-q21.png",
+      "choices": [
+        "$\\alpha = 0.15$",
+        "$\\alpha = 0.05$",
+        "$\\alpha = 0.001$",
+        "$\\alpha = 0.01$",
+        "$\\alpha = 0.1$"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "Le statistique de test vaut $t = \\frac{0.25}{0.1} = 2.5$. Pour $n = 25$ individus, il y a $24$ degrés de liberté. D’après la table, le quantile pour $p = 0.99$ (donc test bilatéral au niveau $\\alpha = 0.02$) vaut $2.492$. Comme $2.5 > 2.492$, on rejette l’hypothèse nulle pour tous les niveaux d’α supérieurs ou égaux à 0.02. Les niveaux proposés qui vérifient cela sont $\\alpha = 0.15$, $\\alpha = 0.10$ et $\\alpha = 0.05$.",
+      "tags": [
+        "régression linéaire",
+        "test de Student",
+        "pente",
+        "significativité"
+      ]
+    },
+    {
+      "id": "qcm5-q22",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Dans un test de modèles emboîtés comparant des modèles à 10 et 7 paramètres, on obtient $F = 2.6$ avec une p-valeur de 0.22. Que recommandez-vous ?",
+      "choices": [
+        "Il faut plus de données pour conclure",
+        "Le modèle le plus simple à 7 paramètres est adéquat",
+        "Il faut effectuer des tests de Student pour plus de puissance statistique",
+        "Le modèle complet à 10 paramètres est nécessaire"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Avec une p-valeur de 0.22, on ne rejette pas l’hypothèse nulle selon laquelle les paramètres supplémentaires du modèle à 10 paramètres n’améliorent pas significativement l’ajustement. Le modèle à 7 paramètres est donc jugé adéquat.",
+      "tags": [
+        "régression linéaire",
+        "test F",
+        "modèles emboîtés",
+        "sélection de modèle"
+      ]
+    },
+    {
+      "id": "qcm5-q23",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "L’hypothèse usuelle sur l’erreur de modélisation est $\\mathrm{V}(\\varepsilon) = \\sigma^{2} I_n$. En cas d’hétéroscédasticité, que deviendrait la matrice $\\mathrm{V}(\\varepsilon)$ ?",
+      "choices": [
+        "Les valeurs sur sa diagonale seraient différentes",
+        "Les valeurs sur la diagonale seraient nulles",
+        "Elle ne serait pas inversible",
+        "Elle ne serait plus diagonale"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "En présence d’hétéroscédasticité, la variance de l’erreur n’est plus constante d’un individu à l’autre : la matrice $\\mathrm{V}(\\varepsilon)$ reste diagonale mais ses éléments diagonaux deviennent différents.",
+      "tags": [
+        "régression linéaire",
+        "hétéroscédasticité",
+        "variance de l’erreur",
+        "matrice de variance"
+      ]
+    },
+    {
+      "id": "qcm5-q24",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "On compare plusieurs modèles avec les critères AIC et BIC.",
+      "choices": [
+        "Si les modèles ont des tailles différentes, l’AIC choisira forcément le plus petit",
+        "Le meilleur modèle sera détecté : il s’agit de celui qui minimise à la fois l’AIC et le BIC",
+        "L’AIC choisira un modèle de taille plus petite ou égale à celui choisi par le BIC",
+        "Si les modèles ont des tailles différentes, le BIC choisira forcément le plus petit",
+        "Il est possible que l’AIC et le BIC soient tous les deux optimaux pour le plus gros modèle",
+        "Le meilleur modèle sera détecté : il s’agit de celui qui maximise à la fois l’AIC et le BIC",
+        "Le meilleur modèle au sens du BIC ne coïncide pas forcément avec celui au sens de l’AIC",
+        "Le BIC choisira un modèle de taille plus petite ou égale à celui choisi par l’AIC"
+      ],
+      "answer": [
+        4,
+        6,
+        7
+      ],
+      "explanation": "L’AIC et le BIC peuvent tous deux sélectionner le modèle le plus complexe si la pénalisation n’est pas suffisante pour compenser le gain en vraisemblance. Le meilleur modèle selon le BIC ne coïncide pas forcément avec celui selon l’AIC, car la pénalisation de la complexité diffère. En général, le BIC pénalise davantage les modèles complexes et choisira un modèle de taille plus petite ou égale à celui choisi par l’AIC.",
+      "tags": [
+        "régression linéaire",
+        "sélection de modèle",
+        "AIC",
+        "BIC"
+      ]
+    },
+    {
+      "id": "qcm5-q25",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Quel est l’objectif principal d’une ANOVA à un facteur ?",
+      "choices": [
+        "Comparer les variances d’une variable quantitative dans plusieurs groupes",
+        "Tester la significativité de l’égalité de plusieurs variances",
+        "Comparer les moyennes d’une variable quantitative dans plusieurs groupes",
+        "Déterminer si la corrélation entre deux variables qualitatives est significative"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "L’objectif principal d’une ANOVA à un facteur est de comparer les moyennes d’une variable quantitative entre plusieurs groupes, afin de déterminer si elles diffèrent significativement.",
+      "tags": [
+        "ANOVA",
+        "régression linéaire",
+        "comparaison de moyennes",
+        "statistiques inférentielles"
+      ]
+    },
+    {
+      "id": "qcm5-q26",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Parmi ces options, quelle est la principale condition à vérifier avant d’appliquer une ANOVA ?",
+      "choices": [
+        "Détecter la présence de valeurs aberrantes dans les données",
+        "Vérifier la normalité des résidus",
+        "Vérifier que chaque groupe a même espérance",
+        "Vérifier que chaque groupe a même variance",
+        "Vérifier que chaque groupe a même taille"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "La principale hypothèse de l’ANOVA à vérifier avant son application est l’homogénéité des variances entre groupes (homoscédasticité).",
+      "tags": [
+        "ANOVA",
+        "homoscédasticité",
+        "conditions d’application",
+        "statistiques"
+      ]
+    },
+    {
+      "id": "qcm5-q27",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Si la p-valeur d’un test ANOVA vaut 0.013, cela signifie que :",
+      "choices": [
+        "Les moyennes des groupes sont toutes significativement différentes",
+        "Les variances des groupes sont toutes significativement différentes",
+        "Toutes les moyennes des groupes sont identiques",
+        "Il y a une différence significative de moyenne entre au moins 2 groupes",
+        "Il y a une différence significative de variance entre au moins 2 groupes"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Une p-valeur de 0.013 dans un test ANOVA signifie que l’hypothèse nulle d’égalité des moyennes est rejetée au seuil usuel de 5%. On conclut donc qu’au moins deux groupes ont des moyennes significativement différentes.",
+      "tags": [
+        "ANOVA",
+        "test F",
+        "comparaison de moyennes",
+        "statistiques inférentielles"
+      ]
+    },
+    {
+      "id": "qcm5-q28",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "Lorsqu’une ANOVA indique une différence significative, que devrait-on faire pour identifier précisément les groupes qui diffèrent ?",
+      "choices": [
+        "Effectuer des tests de Student 2 à 2",
+        "Effectuer un test de Fisher",
+        "Effectuer un test de Tukey",
+        "Effectuer un test de Durbin Watson"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Après un résultat significatif d’ANOVA, le test post-hoc le plus couramment utilisé pour identifier précisément quels groupes diffèrent est le test de Tukey (Tukey HSD).",
+      "tags": [
+        "ANOVA",
+        "test post-hoc",
+        "Tukey",
+        "comparaisons multiples"
+      ]
+    },
+    {
+      "id": "qcm5-q29",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "On considère un modèle de régression contenant 2 variables explicatives, qui sont deux facteurs à respectivement 3 et 4 modalités. Si on n’introduit aucune interaction, combien de coefficients seront estimés ?",
+      "choices": [
+        "10",
+        "8",
+        "12",
+        "5",
+        "7",
+        "9",
+        "6"
+      ],
+      "answer": [
+        6
+      ],
+      "explanation": "Un facteur à 3 modalités nécessite 2 indicatrices, un facteur à 4 modalités en nécessite 3. Avec l’ordonnée à l’origine, cela donne $1 + 2 + 3 = 6$ coefficients estimés au total.",
+      "tags": [
+        "régression linéaire",
+        "variables catégorielles",
+        "facteurs",
+        "paramétrisation"
+      ]
+    },
+    {
+      "id": "qcm5-q30",
+      "qcm": "QCM5",
+      "theme": "Régression linéaire",
+      "question": "On considère un modèle de régression contenant 2 variables explicatives, qui sont 1 facteur à 3 modalités et une variable quantitative. Si on introduit une interaction entre les 2 variables, combien de coefficients seront estimés ?",
+      "choices": [
+        "3",
+        "8",
+        "7",
+        "4",
+        "6",
+        "9",
+        "5"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "Un facteur à 3 modalités nécessite 2 indicatrices. La variable quantitative ajoute 1 coefficient supplémentaire. L’interaction entre les deux ajoute 2 coefficients additionnels (une interaction par indicatrice). Avec l’intercept, cela donne un total de $1 + 2 + 1 + 2 = 6$ coefficients.",
+      "tags": [
+        "régression linéaire",
+        "interaction",
+        "variables catégorielles",
+        "paramétrisation"
       ]
     }
   ]

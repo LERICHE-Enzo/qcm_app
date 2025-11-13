@@ -198,5 +198,220 @@
                 "image": null
             }
         ]
+    },
+    {
+        "titre": "Exercice 1",
+        "intro": "On souhaite expliquer la variable quantitative Y en fonction de 3 régressseurs quantitatifs notés X^1, X^2 et X^3. On considère dans un premier temps le modèle M_1 : Y = μ + α X^1 + ε, où ε ∼ 𝒩(0, σ^2 I_n).",
+        "questions": [
+            {
+                "question": "Si on observait les quantités empiriques suivantes : Var(Y) = 2, Var(X) = 3, Cov(X, Y) = 1, X̄ = 0 et Ȳ = 5, quelles seraient les valeurs des estimations μ̂ et â ?",
+                "choices": [
+                    "$\\hat\\mu = 5$",
+                    "$\\hat\\alpha = 1/2$",
+                    "$\\hat\\mu = 0$",
+                    "$\\hat\\alpha = 1/3$",
+                    "$\\hat\\alpha = 2$"
+                ],
+                "answer": [
+                    0,
+                    3
+                ],
+                "explanation": "Dans le modèle Y = μ + α X^1 + ε, on a $\\hat\\alpha = \\frac{\\mathrm{Cov}(X, Y)}{\\mathrm{Var}(X)} = \\frac{1}{3}$ et $\\hat\\mu = \\bar Y - \\hat\\alpha \\bar X = 5 - (1/3) \\times 0 = 5$.",
+                "image": null
+            },
+            {
+                "question": "D’après cette sortie, que peut-on en déduire ?",
+                "choices": [
+                    "X^1 est pertinente pour expliquer Y",
+                    "$n = 100$",
+                    "X^1 n’est pas pertinente pour expliquer Y",
+                    "$\\hat\\sigma = 1.984$",
+                    "L’écart-type estimé de $\\hat\\alpha$ vaut 1.984"
+                ],
+                "answer": [
+                    0,
+                    3
+                ],
+                "explanation": "La sortie de régression montre que le coefficient associé à X^1 est significatif : X^1 est donc pertinente pour expliquer Y. La valeur 1.984 correspond à l’estimation de l’écart-type résiduel $\\hat\\sigma$, et non à l’écart-type de $\\hat\\alpha$.",
+                "image": "public/Images/regression_lineaire/exo1-q18.png"
+            },
+            {
+                "question": "On prend à présent en compte les variables X^2 et X^3 et on considère le modèle M_2 : Y = β_0 + β_1 X^1 + β_2 X^2 + β_3 X^3 + ε. Quelles affirmations sont exactes ?",
+                "choices": [
+                    "M_1 et M_2 sont deux modèles emboîtés.",
+                    "M_2 conduira nécessairement à un plus grand R^2 ajusté que M_1.",
+                    "À l’issue de l’estimation, on obtiendra β̂_1 = â.",
+                    "M_2 conduira nécessairement à un plus grand R^2 que M_1.",
+                    "L’intervalle de confiance à 95% du coefficient associé à X^1 devrait être plus petit en utilisant M_2 qu’en utilisant M_1."
+                ],
+                "answer": [
+                    0,
+                    3,
+                    4
+                ],
+                "explanation": "M_1 est inclus dans M_2, donc ce sont bien des modèles emboîtés. Ajouter des variables ne peut jamais diminuer R^2, donc R^2(M_2) ≥ R^2(M_1). Enfin, ajouter des prédicteurs réduit généralement la variance résiduelle, ce qui resserre l’intervalle de confiance du coefficient associé à X^1.",
+                "image": null
+            },
+            {
+                "question": "On effectue un test de Fisher comparant M_1 et M_2. La statistique de test vaut F = 12.5. On note q_{(a,b)}(p) le quantile d’ordre p d’une loi de Fisher de degrés de liberté (a, b). Sachant que q_{(2,97)}(0.95) = 3.09, q_{(3,97)}(0.95) = 2.36, q_{(2,97)}(0.9) = 2.36 et q_{(3,97)}(0.9) = 2.14, que peut-on conclure ?",
+                "choices": [
+                    "Le modèle M_1 est préférable au niveau 5%",
+                    "Le modèle M_2 est préférable au niveau 10%",
+                    "Le modèle M_1 est préférable au niveau 10%",
+                    "Le modèle M_2 est préférable au niveau 5%"
+                ],
+                "answer": [
+                    1,
+                    3
+                ],
+                "explanation": "La statistique F = 12.5 est largement supérieure aux quantiles critiques à 5% et 10%. On rejette donc M_1 au profit de M_2 à ces deux seuils : M_2 est préférable à 10% et à 5%.",
+                "image": null
+            },
+            {
+                "question": "On a lancé sous R les commandes reg=lm(Y ∼ X^1 + X^2 + X^3), suivi de summary(reg) et vif(reg). Sachant que la sortie obtenue est la suivante, que peut-on conclure ?",
+                "choices": [
+                    "Il y a un problème de multicolinéarité",
+                    "On devrait ajouter X^1 + X^3 au modèle",
+                    "On devrait enlever X^2 du modèle",
+                    "On devrait ajouter X_3^2 ou X_1^2 au modèle",
+                    "Il y a un problème d’hétéroscédasticité",
+                    "On devrait enlever X^1 et X^3 du modèle",
+                    "On devrait enlever X^1 ou X^3 (pas les deux) du modèle"
+                ],
+                "answer": [
+                    0,
+                    6
+                ],
+                "explanation": "Les VIF sont extrêmement élevés pour X^1 et X^3 (> 200), ce qui révèle une multicolinéarité très forte. Dans ce cas, retirer les variables responsables du problème (X^1 et X^3) est une solution logique.",
+                "image": "public/Images/regression_lineaire/exo1-q21.png"
+            },
+            {
+                "question": "On rappelle que l’AIC est donné par la formule AIC = n ln(SCR / n) + 2(p + 1). Que vaut l’AIC pour le modèle associé à la sortie précédente ?",
+                "choices": [
+                    "−461.73",
+                    "103.10",
+                    "0.31",
+                    "−5.3"
+                ],
+                "answer": 3,
+                "explanation": "En utilisant les valeurs de la sortie précédente et la formule AIC = n ln(SCR/n) + 2(p+1), on obtient AIC ≈ −5.3.",
+                "image": null
+            },
+            {
+                "question": "Après analyse, on trouve que les effets leviers h_i des points i = 5, i = 12 et i = 31 valent respectivement h5 = 0.0013, h12 = 0.12 et h31 = 0.28. Que peut-on en conclure ?",
+                "choices": [
+                    "Le point 12 est un point influent",
+                    "Le point 5 est un point influent",
+                    "Le point 12 est mal expliqué par le modèle",
+                    "Le point 5 est mal expliqué par le modèle",
+                    "Le point 31 est un point influent",
+                    "Le point 31 est mal expliqué par le modèle"
+                ],
+                "answer": [
+                    0,
+                    4
+                ],
+                "explanation": "Un point est considéré influent s’il a un levier élevé, typiquement supérieur à 2p/n. Ici, h12 = 0.12 et h31 = 0.28 sont élevés, donc les points 12 et 31 sont influents. En revanche, h5 = 0.0013 est très faible : le point 5 n’est ni influent ni mal expliqué.",
+                "image": null
+            }
+        ]
+    },
+    {
+        "titre": "Exercice 2",
+        "intro_text": "On met en place une analyse de la variance sous R dans le but d’expliquer la variable quantitative Y en fonction de la variable qualitative groupe. Les résultats sont donnés ci-dessous.",
+        "intro_image": "public/Images/regression_lineaire/exo2-intro-2025.png",
+        "questions": [
+            {
+                "question": "Combien de modalités différentes contient la variable groupe ?",
+                "choices": [
+                    "5",
+                    "4",
+                    "2",
+                    "3"
+                ],
+                "answer": 1,
+                "explanation": "Le modèle montre trois modalités estimées (groupeP, groupeB, groupeM) en plus de la modalité de référence. Cela correspond donc à 4 modalités au total.",
+                "image": null
+            },
+            {
+                "question": "Quelle est la taille de l’échantillon utilisée pour cette étude ?",
+                "choices": [
+                    "59",
+                    "61",
+                    "49",
+                    "51",
+                    "57",
+                    "53",
+                    "55"
+                ],
+                "answer": 4,
+                "explanation": "Le tableau ANOVA indique 53 degrés de liberté résiduelle. Comme il y a 4 modalités (donc 3 paramètres associés aux groupes), on a n - 4 = 53, d’où n = 57.",
+                "image": null
+            },
+            {
+                "question": "Quelle est la moyenne estimée de Y dans le groupe B ?",
+                "choices": [
+                    "2.33",
+                    "0.79",
+                    "3.16",
+                    "13.08",
+                    "9.92",
+                    "6.76"
+                ],
+                "answer": 3,
+                "explanation": "Dans un modèle ANOVA avec effet de groupe codé en variables indicatrices, la moyenne estimée pour un groupe est l'intercept plus le coefficient associé à ce groupe. Dans la sortie, l'intercept vaut 9.9194 et le coefficient du groupe B vaut 3.1577. On obtient donc : 9.9194 + 3.1577 = 13.0771, arrondi à 13.08.",
+                "image": null
+            },
+            {
+                "question": "Quel(s) groupe(s) présente(nt) une moyenne significativement différente du groupe de référence au seuil de 1% ?",
+                "choices": [
+                    "P et B",
+                    "Aucun",
+                    "Seulement M",
+                    "P, B et M"
+                ],
+                "answer": 0,
+                "explanation": "Dans la sortie de régression, les p-valeurs associées aux coefficients groupeP et groupeB sont très petites (de l’ordre de 10^{-9} et 10^{-12}), donc inférieures à 1% : leurs moyennes sont significativement différentes de celle du groupe de référence. En revanche, la p-valeur de groupeM vaut 0.0241, supérieure à 1%, donc M n’est pas significativement différent du groupe de référence à ce seuil.",
+                "image": null
+            },
+            {
+                "question": "Quelle conclusion tirer au seuil de 5% ?",
+                "choices": [
+                    "La moyenne de Y diffère significativement dans au moins un groupe par rapport aux autres.",
+                    "Les moyennes de Y dans chaque groupe sont toutes significativement différentes deux à deux.",
+                    "Il y a un problème d’hétéroscédasticité.",
+                    "Les moyennes de Y au sein des groupes ne sont pas significativement différentes."
+                ],
+                "answer": 0,
+                "explanation": "Le test global de l’ANOVA donne une p-valeur de 1.376e−12, très inférieure à 5%. On rejette donc l’hypothèse nulle d’égalité des moyennes dans tous les groupes. Cela signifie qu’au moins un groupe présente une moyenne significativement différente des autres. On ne peut pas conclure que toutes les moyennes sont différentes deux à deux : cela nécessiterait des tests post-hoc.",
+                "image": null
+            },
+            {
+                "question": "L’ANOVA s’appuie sur la formule S_T^2 = S_{inter}^2 + S_{intra}^2. Que vaut S_{intra}^2 ici ?",
+                "choices": [
+                    "48.76",
+                    "29.55",
+                    "0.85",
+                    "88.66",
+                    "44.90"
+                ],
+                "answer": 4,
+                "explanation": "Dans le tableau d’ANOVA, on lit : pour le facteur groupe, Sum Sq = 88.661 (c’est la somme des carrés inter-groupes S_{inter}^2), et pour les résidus, Sum Sq = 44.897. La somme des carrés intra-groupes S_{intra}^2 correspond justement à la somme des carrés des résidus. On a donc S_{intra}^2 ≈ 44.90 (arrondi de 44.897).",
+                "image": null
+            },
+            {
+                "question": "Que vaut le R² dans ce modèle ?",
+                "choices": [
+                    "88%",
+                    "66%",
+                    "45%",
+                    "92%",
+                    "51%"
+                ],
+                "answer": 1,
+                "explanation": "On utilise la formule du coefficient de détermination : R² = SCR / SCT. Dans le tableau ANOVA, la somme des carrés expliquée vaut SCR = 88.661 et la somme des carrés résiduels vaut SCE = 44.897. La somme totale des carrés est SCT = SCR + SCE = 88.661 + 44.897 = 133.558. Ainsi, R² = 88.661 / 133.558 ≈ 0.664, soit environ 66%.",
+                "image": null
+            }
+        ]
     }
 ]
