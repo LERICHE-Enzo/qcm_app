@@ -2978,6 +2978,353 @@
         "variables catégorielles",
         "paramétrisation"
       ]
+    },
+    {
+      "id": "qcm7-q01",
+      "qcm": "QCM7",
+      "theme": "Régression linéaire",
+      "question": "Quelles sont les valeurs possibles de la sortie d’un modèle de régression logistique ?",
+      "choices": [
+        "0 ou 1",
+        "Des valeurs continues entre 0 et +∞",
+        "Toute valeur continue entre 0 et 1",
+        "Des valeurs continues entre −∞ et +∞"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La régression logistique produit une probabilité via la fonction sigmoïde. Cette probabilité est une valeur continue strictement comprise entre 0 et 1.",
+      "tags": [
+        "régression logistique",
+        "sortie du modèle",
+        "probabilité",
+        "fonction sigmoïde"
+      ]
+    },
+    {
+      "id": "qcm7-q02",
+      "qcm": "QCM7",
+      "theme": "Régression linéaire",
+      "question": "Soit p(x) = P(Y = 1 | X = x) où Y ∈ {0,1} et x ∈ ℝ^p. Le modèle logistique suppose qu’il existe β tel que :",
+      "choices": [
+        "logit^{-1}(p(x)) = β'x",
+        "p(x) = β'x",
+        "p(x) = logit(β'x)",
+        "logit(p(x)) = β'x"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Dans un modèle logistique, on modélise le log-odds : logit(p(x)) = log(p(x)/(1−p(x))) = β'x. C’est donc l’expression correcte du modèle.",
+      "tags": [
+        "régression logistique",
+        "fonction logit",
+        "modèles GLM"
+      ]
+    },
+    {
+      "id": "qcm7-q03",
+      "qcm": "QCM7",
+      "theme": "Régression linéaire",
+      "question": "On considère un modèle de régression logistique contenant 2 variables explicatives : un facteur à 3 modalités et une variable quantitative. Si on introduit une interaction entre les 2 variables, combien de coefficients seront estimés ?",
+      "choices": [
+        "8",
+        "3",
+        "5",
+        "6",
+        "7",
+        "4",
+        "9"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Un facteur à 3 modalités nécessite 2 variables indicatrices. Avec l'intercept, cela donne 1 + 2 = 3 coefficients. On ajoute ensuite la variable quantitative (+1). L'interaction entre la variable quantitative et les 2 indicatrices ajoute 2 coefficients supplémentaires. Total : 1 (intercept) + 2 (facteur) + 1 (quantitative) + 2 (interaction) = 6 coefficients.",
+      "tags": [
+        "régression logistique",
+        "variables catégorielles",
+        "interaction",
+        "paramétrisation"
+      ]
+    },
+    {
+      "id": "qcm7-q04",
+      "qcm": "QCM7",
+      "theme": "Régression linéaire",
+      "question": "Dans un modèle de régression logistique, que peut-on dire de l'estimateur par maximum de vraisemblance du paramètre β ?",
+      "choices": [
+        "L’information de Fisher du problème d’estimation associé est explicite",
+        "Il existe toujours et est unique",
+        "Il suit asymptotiquement une loi Gaussienne",
+        "Il admet une forme explicite",
+        "Il est sans biais",
+        "Sa variance est explicite"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "En régression logistique, l’information de Fisher peut être écrite explicitement à partir de la matrice X et des probabilités prédites, ce qui rend l’estimation de la variance asymptotique possible. L’estimateur du maximum de vraisemblance n’a pas de forme explicite et doit être obtenu numériquement. De plus, il n’est ni garanti d’exister ni d’être unique (problèmes de séparation). En revanche, sous des conditions classiques, l’estimateur est asymptotiquement normal (Gaussien).",
+      "tags": [
+        "régression logistique",
+        "maximum de vraisemblance",
+        "information de Fisher",
+        "asymptotique"
+      ]
+    },
+    {
+      "id": "qcm7-q05",
+      "qcm": "QCM7",
+      "theme": "Régression linéaire",
+      "question": "Dans la sortie de la fonction glm de R, Residual deviance correspond à la deviance de :",
+      "choices": [
+        "du modèle avec que la constante",
+        "du modèle saturé",
+        "du modèle estimé",
+        "du modèle résiduel"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dans la sortie de glm() sous R, la \"Residual deviance\" correspond à la déviance du modèle estimé, c’est-à-dire la déviance évaluée avec les prédictions du modèle ajusté. À l’inverse, la \"Null deviance\" correspond au modèle ne contenant qu’une constante, et la déviance du modèle saturé vaut 0.",
+      "tags": [
+        "régression logistique",
+        "déviance",
+        "glm",
+        "modèle estimé"
+      ]
+    },
+    {
+      "id": "qcm7-q06",
+      "qcm": "QCM7",
+      "theme": "Régression linéaire",
+      "question": "Quel type de variable cible est adapté à la régression logistique ?",
+      "choices": [
+        "Une variable catégorielle binaire",
+        "Une variable continue",
+        "Une variable catégorielle multiclasse ordinale",
+        "Une variable de comptage"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "La régression logistique classique est conçue pour modéliser la probabilité d'un événement binaire (Y ∈ {0,1}). Pour des variables ordinales ou de comptage, on utiliserait plutôt une régression logistique ordinale ou un modèle de Poisson.",
+      "tags": [
+        "régression logistique",
+        "variable binaire",
+        "classification"
+      ]
+    },
+    {
+      "id": "qcm7-q07",
+      "qcm": "QCM7",
+      "theme": "Régression linéaire",
+      "question": "Supposons qu’on explique une variable Y à l’aide d’une variable X ∈ ℝᵖ à l’aide d’un modèle logistique. La formule du modèle est alors, pour un certain paramètre β,",
+      "choices": [
+        "$Y = X'β$",
+        "$\\mathbb{P}(Y = 1 \\,|\\, X) = \\frac{1}{1 + e^{-X'β}}$",
+        "$\\mathbb{P}(Y = 1 \\,|\\, X) = X'β$",
+        "$Y = \\frac{1}{1 + e^{-X'β}}$"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Le modèle logistique spécifie que la probabilité conditionnelle de succès est donnée par : $$\\mathbb{P}(Y = 1 \\mid X) = \\frac{1}{1 + e^{-X'β}}.$$ C’est l’application de la fonction logistique (sigmoïde) au prédicteur linéaire $X'β$. Les autres propositions confondent probabilité et prédiction linéaire, ou attribuent la fonction logistique directement à Y.",
+      "tags": [
+        "régression logistique",
+        "modélisation",
+        "probabilité conditionnelle",
+        "fonction logistique"
+      ]
+    },
+    {
+      "id": "qcm7-q08",
+      "qcm": "QCM7",
+      "theme": "Régression linéaire",
+      "question": "On considère un modèle de régression logistique contenant 2 variables explicatives, qui sont deux facteurs à respectivement 3 et 4 modalités. Si on n’introduit aucune interaction, combien de coefficients seront estimés ?",
+      "choices": [
+        "6",
+        "5",
+        "10",
+        "8",
+        "7",
+        "9",
+        "12"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Un facteur à 3 modalités nécessite 2 indicatrices, et un facteur à 4 modalités en nécessite 3. Sans interaction, on estime donc :\n- 1 intercept\n- 2 coefficients pour le premier facteur\n- 3 coefficients pour le second facteur\nCe qui donne un total de :\n$$1 + 2 + 3 = 6$$ coefficients estimés.",
+      "tags": [
+        "régression logistique",
+        "variables catégorielles",
+        "paramétrisation",
+        "modèles linéaires généralisés"
+      ]
+    },
+    {
+      "id": "qcm7-q09",
+      "qcm": "QCM7",
+      "theme": "Régression linéaire",
+      "question": "Lors de la modélisation de survenue d’un événement par une régression logistique, si l’odds ratio (OR) d’une variable explicative vaut 2, cela signifie que :",
+      "choices": [
+        "Le coefficient associé à cette variable vaut ln(2)",
+        "La cote de l’événement est multipliée par 2 lorsque cette variable augmente d’une unité",
+        "Le coefficient associé à cette variable vaut 1/2",
+        "L’événement se produit deux fois plus souvent que l’événement complémentaire",
+        "La probabilité de l’événement double lorsque la variable explicative augmente d’une unité",
+        "La probabilité de l’événement est de 50%",
+        "Le coefficient associé à cette variable vaut exp(2)"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "Si l’odds ratio (OR) vaut 2, par définition :\n$$ OR = e^{\\beta} = 2. $$\nOn en déduit que :\n- le coefficient associé vaut $$\\beta = \\ln(2),$$\n- la cote (odds) de l’événement est multipliée par 2 lorsqu’on augmente la variable d’une unité.\n\nLes autres propositions sont fausses : l’OR ne concerne pas directement la probabilité, mais la cote ; le coefficient n’est pas 1/2 ; et exp(2) correspondrait à un OR égal à e², pas à 2.",
+      "tags": [
+        "régression logistique",
+        "odds ratio",
+        "interprétation des coefficients"
+      ]
+    },
+    {
+      "id": "qcm7-q10",
+      "qcm": "QCM7",
+      "theme": "Régression linéaire",
+      "question": "Dans un modèle de régression logistique faisant intervenir p régressseurs et n individus, et dont la déviance vaut D, le BIC est défini par",
+      "choices": [
+        "D + 2 ln(p)",
+        "D + 2 p",
+        "D + p ln(n)",
+        "D + n ln(p)"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Le BIC (Bayesian Information Criterion) pour un modèle logistique s'écrit :\n$$ BIC = D + p \\, \\ln(n), $$\noù D est la déviance du modèle, p le nombre de paramètres estimés, et n la taille de l'échantillon.\nLa pénalisation dépend donc du logarithme de n (et non de p).",
+      "tags": [
+        "régression logistique",
+        "BIC",
+        "critères d'information",
+        "modèles statistiques"
+      ]
+    },
+    {
+      "id": "qcm6-q11",
+      "qcm": "QCM6",
+      "theme": "régression linéaire",
+      "question": "Parmi ces options, quelle est la condition principale à vérifier avant d’appliquer une ANOVA ?",
+      "choices": [
+        "Vérifier que chaque groupe a la même variance",
+        "Détecter la présence de valeurs aberrantes dans les données",
+        "Vérifier que chaque groupe a la même taille",
+        "Vérifier la normalité des résidus",
+        "Vérifier que chaque groupe a la même moyenne"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "L’ANOVA repose sur l’hypothèse d’homoscédasticité : les variances des groupes doivent être égales. C’est la condition principale à vérifier avant d'appliquer une ANOVA.",
+      "tags": [
+        "anova",
+        "hypothèses",
+        "statistiques",
+        "variance"
+      ]
+    },
+    {
+      "id": "qcm6-q12",
+      "qcm": "QCM6",
+      "theme": "régression linéaire",
+      "question": "Dans un jeu de données, on observe pour chaque individu sa valeur Y et son appartenance à un groupe. La commande lm(Y ~ group) fournit les estimations suivantes pour les coefficients : intercept = 8, groupT = 2, groupR = 1.5, groupA = -0.5, groupB = -1. Quelle est la moyenne de Y pour les individus dans la modalité R ?",
+      "choices": [
+        "1.5",
+        "3.5",
+        "-1",
+        "1",
+        "-0.5",
+        "0.5",
+        "9.5"
+      ],
+      "answer": [
+        6
+      ],
+      "explanation": "Dans un modèle linéaire avec un facteur, l'intercept correspond à la moyenne du groupe de référence. Chaque coefficient supplémentaire indique la différence entre la moyenne du groupe considéré et celle du groupe de référence. Ainsi, pour le groupe R : moyenne = 8 + 1.5 = 9.5.",
+      "tags": [
+        "ANOVA",
+        "régression linéaire",
+        "variables catégorielles",
+        "paramétrisation"
+      ]
+    },
+    {
+      "id": "qcm6-q13",
+      "qcm": "QCM6",
+      "theme": "régression linéaire",
+      "question": "Dans un modèle linéaire généralisé (GLM), à quoi sert la fonction de lien ?",
+      "question_en": "In a generalized linear model (GLM), the link function serves to:",
+      "choices": [
+        "Décrire la variance des erreurs aléatoires.",
+        "Établir une relation entre la prédiction du modèle et les coefficients estimés.",
+        "Établir une relation entre l'espérance de la variable réponse et une combinaison linéaire des prédicteurs.",
+        "Transformer la variable réponse pour rendre le modèle linéaire.",
+        "Établir une relation entre la distribution de Y et une distribution gaussienne."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dans un GLM, la fonction de lien g(.) relie l'espérance de la variable réponse au prédicteur linéaire : g(E[Y]) = Xβ. Elle n'agit pas sur Y directement, mais sur son espérance.",
+      "tags": [
+        "GLM",
+        "fonction de lien",
+        "modèles linéaires généralisés"
+      ]
+    },
+    {
+      "id": "qcm6-q14",
+      "qcm": "QCM6",
+      "theme": "régression linéaire",
+      "question": "Quel type de variable cible est adapté à la régression logique ?",
+      "choices": [
+        "Une variable catégorielle ordinale multiclasse",
+        "Une variable de comptage",
+        "Une variable catégorielle binaire",
+        "Une variable continue"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "La régression logistique classique est conçue pour modéliser une variable cible binaire (0/1). Elle relie la probabilité P(Y = 1 | X) au prédicteur linéaire via une fonction logit.",
+      "tags": [
+        "régression logistique",
+        "variable binaire",
+        "GLM"
+      ]
+    },
+    {
+      "id": "qcm6-q15",
+      "qcm": "QCM6",
+      "theme": "régression linéaire",
+      "question": "Lors de la modélisation de la survenue d’un événement par une régression logistique, si l’odds ratio (OR) d’une variable explicative binaire vaut 2, que signifie cela ?",
+      "choices": [
+        "La probabilité de l’événement est de 50%",
+        "Le coefficient associé à cette variable vaut exp(2)",
+        "Le coefficient associé à cette variable vaut ln(2)",
+        "L’événement se produit deux fois plus souvent que l’événement complémentaire",
+        "La cote (odds) de l’événement est multipliée par 2 lorsque cette variable vaut 1",
+        "La probabilité de l’événement double lorsque la variable explicative vaut 1",
+        "Le coefficient associé à cette variable vaut 1/2"
+      ],
+      "answer": [
+        2,
+        4
+      ],
+      "explanation": "Si OR = 2, alors exp(β) = 2, donc β = ln(2). De plus, l’odds ratio mesure la variation du odds lorsque la variable augmente de 1 : ici les odds sont multipliées par 2.",
+      "tags": [
+        "régression logistique",
+        "odds ratio",
+        "coefficients"
+      ]
     }
   ]
 }

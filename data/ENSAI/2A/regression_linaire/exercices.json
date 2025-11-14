@@ -298,7 +298,7 @@
                 "image": null
             },
             {
-                "question": "Après analyse, on trouve que les effets leviers h_i des points i = 5, i = 12 et i = 31 valent respectivement h5 = 0.0013, h12 = 0.12 et h31 = 0.28. Que peut-on en conclure ?",
+                "question": "Après analyse, on trouve que les effets leviers h_i des points i = 5, i = 12 et i = 31 valent respectivement $h_5$ = 0.0013, $h_12$ = 0.12 et $h_31$ = 0.28. Que peut-on en conclure ?",
                 "choices": [
                     "Le point 12 est un point influent",
                     "Le point 5 est un point influent",
