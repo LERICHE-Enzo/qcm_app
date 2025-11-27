@@ -3262,7 +3262,6 @@
       "qcm": "QCM6",
       "theme": "régression linéaire",
       "question": "Dans un modèle linéaire généralisé (GLM), à quoi sert la fonction de lien ?",
-      "question_en": "In a generalized linear model (GLM), the link function serves to:",
       "choices": [
         "Décrire la variance des erreurs aléatoires.",
         "Établir une relation entre la prédiction du modèle et les coefficients estimés.",
@@ -3324,6 +3323,119 @@
         "régression logistique",
         "odds ratio",
         "coefficients"
+      ]
+    },
+    {
+      "id": "qcm6-q16",
+      "qcm": "QCM6",
+      "theme": "régression linéaire",
+      "question": "La statistique de test F utilisée dans l’ANOVA à un facteur est définie comme :",
+      "choices": [
+        "La moyenne (normalisée) des différences de moyennes entre chaque groupe",
+        "Le rapport entre la variance intergroupes et la variance intragroupes",
+        "La moyenne (normalisée) des différences de variances entre chaque groupe",
+        "Le rapport entre la variance intergroupes et la variance totale"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Dans une ANOVA à un facteur, la statistique de test F est définie comme le rapport entre la variance expliquée (intergroupes) et la variance résiduelle (intragroupes).",
+      "tags": [
+        "ANOVA",
+        "statistique F",
+        "variance",
+        "tests"
+      ]
+    },
+    {
+      "id": "qcm6-q17",
+      "qcm": "QCM6",
+      "theme": "régression linéaire",
+      "question": "Dans un jeu de données, on observe pour chaque individu sa valeur pour une variable quantitative Y ainsi que sa modalité d’appartenance à une variable qualitative groupe. La commande lm(Y ~ groupe) fournit en sortie 5 estimations nommées intercept, groupeT, groupeR, groupeA, groupeS et valant respectivement : 8, 2, 1.5, -0.5, -1. Combien de modalités présente la variable groupe ?",
+      "choices": [
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Dans un modèle linéaire avec une variable qualitative à k modalités, on obtient 1 intercept + (k - 1) coefficients pour les modalités. Ici, 5 estimations signifient 1 intercept et 4 coefficients, donc k = 5 modalités.",
+      "tags": [
+        "régression linéaire",
+        "variables catégorielles",
+        "ANOVA",
+        "paramétrisation"
+      ]
+    },
+    {
+      "id": "qcm6-q18",
+      "qcm": "QCM6",
+      "theme": "régression linéaire",
+      "question": "Le modèle de régression logistique est un cas particulier de GLM avec :",
+      "choices": [
+        "Une distribution de Poisson pour Y et un lien logarithmique.",
+        "Une distribution de Bernoulli pour Y et un lien logit.",
+        "Une distribution logistique pour Y et un lien exponentielle.",
+        "Une distribution normale pour Y et un lien identité."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La régression logistique est un GLM avec une distribution de Bernoulli pour la variable réponse binaire et une fonction de lien logit.",
+      "tags": [
+        "GLM",
+        "régression logistique",
+        "distribution",
+        "fonction de lien"
+      ]
+    },
+    {
+      "id": "qcm6-q19",
+      "qcm": "QCM6",
+      "theme": "régression linéaire",
+      "question": "Soit p(x) = P(Y = 1 | X = x) où Y ∈ {0,1} et x ∈ ℝᵖ. Le modèle logistique suppose qu’il existe β tel que :",
+      "choices": [
+        "p(x) = logit(β' x)",
+        "p(x) = β' x",
+        "logit⁻¹(p(x)) = β' x",
+        "logit(p(x)) = β' x"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "En régression logistique, le modèle impose que logit(p(x)) = β' x, c’est-à-dire que le log-odds est une combinaison linéaire des prédicteurs.",
+      "tags": [
+        "régression logistique",
+        "GLM",
+        "fonction de lien",
+        "logit"
+      ]
+    },
+    {
+      "id": "qcm6-q20",
+      "qcm": "QCM6",
+      "theme": "régression linéaire",
+      "question": "Lors de la modélisation de survenue d’un événement par une régression logistique, l’odds ratio (OR) associé à une variable explicative binaire X vaut 4. Cela signifie que :",
+      "choices": [
+        "La probabilité de l’événement est 4 fois moins grande lorsque X = 1 que lorsque X = 0",
+        "La probabilité de l’événement est 4 fois plus grande lorsque X = 1 que lorsque X = 0",
+        "La côte de l’événement est 4 fois moins grande lorsque X = 1 que lorsque X = 0",
+        "La probabilité de l’événement est plus grande lorsque X = 1 que lorsque X = 0",
+        "La côte de l’événement est plus grande lorsque X = 1 que lorsque X = 0",
+        "La côte de l’événement est 4 fois plus grande lorsque X = 1 que lorsque X = 0"
+      ],
+      "answer": [
+        3,
+        4,
+        5
+      ],
+      "explanation": "Un odds ratio (OR) de 4 signifie que lorsque X passe de 0 à 1, les odds (cotes) de l’événement sont multipliées par 4. Cela implique que les odds augmentent, et donc que la probabilité augmente également. Les propositions D, E et F sont donc correctes.",
+      "tags": [
+        "régression logistique",
+        "odds ratio",
+        "GLM"
       ]
     }
   ]

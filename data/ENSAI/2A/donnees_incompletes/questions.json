@@ -1,0 +1,1743 @@
+{
+    "questions": [
+        {
+            "id": "quizz-id01",
+            "qcm": "quizz",
+            "theme": "Données Incomplètes",
+            "question": "Dans ce cours, nous apprenons que :",
+            "choices": [
+                "Une même fonction de pondération ω(·) permet d’éviter le biais dans de nombreuses situations de données incomplètes.",
+                "Sous certaines hypothèses, une pondération appropriée permet d’obtenir des estimateurs (asymptotiquement) sans biais.",
+                "Utiliser les estimateurs usuels uniquement sur les observations complètes (par exemple non censurées) conduit à du biais.",
+                "Avec des données incomplètes ou modifiées, les estimateurs usuels sont biaisés, quelle que soit la taille de l’échantillon.",
+                "Une même fonction IPCW ω(·) peut être utilisée avec des durées censurées à gauche et à droite.",
+                "La variance des estimateurs sans biais construits via IPCW avec données censurées est généralement strictement supérieure à celle obtenue avec des données complètes idéales (et sans pondération)."
+            ],
+            "answer": [
+                1,
+                2,
+                3,
+                5
+            ],
+            "explanation": "Les pondérations appropriées permettent d’obtenir des estimateurs asymptotiquement sans biais en présence de données incomplètes. Utiliser uniquement les données complètes introduit un biais, et les estimateurs usuels restent biaisés avec des données incomplètes, même en grand échantillon. Enfin, les estimateurs pondérés via IPCW ont en général une variance plus élevée que ceux obtenus avec des données complètes sans pondération.",
+            "tags": [
+                "IPCW",
+                "pondération",
+                "données censurées",
+                "biais",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "quizz-id02",
+            "qcm": "quizz",
+            "theme": "Données Incomplètes",
+            "question": "Soit ℓ(·,·) une fonction de perte. On suppose que Y ⟂ C | X et que T = Y ∧ C et δ = 1{Y ≤ C}. Alors\nE[ℓ(Y, m(X))] = E[ω(T, δ, X) ℓ(T, m(X))],\nà condition que :",
+            "choices": [
+                "ω(T, δ, X) = δ / S_{C|X}(T^{-} | X).",
+                "ω(T, δ, X) = δ / S_{C|X}(T | X).",
+                "ω(T, δ, X) = δ / S_{C}(T^{-}) et C ⟂ X.",
+                "ω(T, δ, X) = δ / S_{C}(T^{-}).",
+                "ω(T, δ, X) = δ / S_{C}(T^{-}) et C ⟂ Y.",
+                "ω(T, δ, X) = δ / F_{C|X}(T^{-} | X)."
+            ],
+            "answer": [
+                0,
+                2
+            ],
+            "explanation": "L'égalité E[ℓ(Y, m(X))] = E[ω(T, δ, X) ℓ(T, m(X))] repose sur l'indépendance conditionnelle Y ⟂ C | X. Les pondérations correctes sont celles basées sur la survie conditionnelle du temps de censure : S_{C|X}(· | X). L’utilisation de S_C(·) non conditionnelle n'est valide que sous l'hypothèse supplémentaire C ⟂ X.",
+            "tags": [
+                "IPCW",
+                "censure",
+                "pondération",
+                "survie conditionnelle",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "quizz-id03",
+            "qcm": "quizz",
+            "theme": "Données Incomplètes",
+            "question": "Soient $\\hat S_Y$ et $\\hat S_C$ les estimateurs de Kaplan–Meier de $S_Y$ et $S_C$, respectivement. Si $\\mathbb P(Y = C) = 0$, $Y \\perp C$, $T = Y \\wedge C$, et $\\hat S_T$ est l’estimateur empirique de la fonction de survie de $S_T$, alors :",
+            "choices": [
+                "Au moins l’un de $\\hat S_Y$ et $\\hat S_C$ est une fonction de survie propre.",
+                "$\\hat S_T(y) \\leq \\hat S_Y(y)$, $\\forall y$.",
+                "$\\hat S_Y$ et $\\hat S_C$ sont toutes deux des fonctions de survie propres.",
+                "$\\hat S_T(y) > \\hat S_C(y)\\hat S_Y(y)$, $\\forall y$.",
+                "$\\hat S_Y(y) = \\hat S_T(y)\\hat S_C(y)$, $\\forall y$.",
+                "$\\hat S_T(y) = \\hat S_C(y)\\hat S_Y(y)$, $\\forall y$."
+            ],
+            "answer": [
+                0,
+                1,
+                5
+            ],
+            "explanation": "Avec $T = Y \\wedge C$, la survie de $T$ vérifie $S_T(y) = \\mathbb P(T > y) = \\mathbb P(Y > y, C > y) = S_Y(y) S_C(y)$ sous l’hypothèse $Y \\perp C$, d’où $S_T(y) = S_Y(y) S_C(y)$ et donc $\\hat S_T(y) \\approx \\hat S_Y(y) \\hat S_C(y)$. Comme $T$ est le minimum de $Y$ et $C$, on a $S_T(y) \\leq S_Y(y)$, donc $\\hat S_T(y) \\leq \\hat S_Y(y)$. Enfin, au moins l’un des estimateurs de Kaplan–Meier $\\hat S_Y$ ou $\\hat S_C$ est une fonction de survie propre, mais pas nécessairement les deux.",
+            "tags": [
+                "Kaplan–Meier",
+                "fonctions de survie",
+                "censure",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "quizz-id04",
+            "qcm": "quizz",
+            "theme": "Données Incomplètes",
+            "question": "Si $C \\perp \\{Y, X\\}$, alors :",
+            "choices": [
+                "$Y \\perp C$.",
+                "$Y \\perp C \\mid X$.",
+                "Les observations censurées peuvent être supprimées de l’échantillon de $T = Y \\wedge C$ et $\\delta = 1\\{Y \\leq C\\}$.",
+                "$Y \\perp \\{C, X\\}$.",
+                "$C \\perp Y$.",
+                "$X \\perp Y$."
+            ],
+            "answer": [
+                0,
+                1,
+                4
+            ],
+            "explanation": "L’hypothèse $C \\perp \\{Y, X\\}$ implique en particulier $C \\perp Y$ et $C \\perp X$. On en déduit aussi $Y \\perp C$ et $Y \\perp C \\mid X$. En revanche, cette hypothèse n’implique ni $Y \\perp \\{C, X\\}$ ni $X \\perp Y$, et elle ne justifie pas de supprimer sans biais les observations censurées dans l’échantillon de $(T, \\delta)$.",
+            "tags": [
+                "indépendance",
+                "censure",
+                "données incomplètes",
+                "hypothèses de modèle"
+            ]
+        },
+        {
+            "id": "quizz-id05",
+            "qcm": "quizz",
+            "theme": "Données Incomplètes",
+            "question": "Le but ici est de construire l’estimateur de Kaplan–Meier (KM) de la fonction de survie $S_Y(\\cdot)$ d’une durée $Y$ à partir des 8 durées observées $T_i$ suivantes (on note que $1/8 = 0{,}125$) :\n\n$5.4,\\; 6.2{+},\\; 10.1{+},\\; 2.6,\\; 9.2,\\; 6.2,\\; 9.2,\\; 2.8{+},$\n\n(où le symbole “$+$” indique que $T_i$ est censuré, c’est-à-dire $T_i < Y_i$ et $\\delta_i = 0$). Alors :",
+            "choices": [
+                "L’estimation $\\hat S(3.5)$ de $S(3.5)$ est égale à $0{,}875$.",
+                "Avec cet échantillon, l’estimateur KM n’est pas une fonction de survie propre.",
+                "La fonction de survie empirique calculée à partir des $T_i$ est supérieure à l’estimateur KM.",
+                "L’estimation $\\hat S(6.2)$ de $S(6.2)$ est égale à $0{,}875$.",
+                "L’estimateur KM est une fonction en escalier croissante.",
+                "L’estimateur KM ne peut pas être calculé ici à cause des valeurs répétées $6.2$ et $9.2$."
+            ],
+            "answer": [
+                0,
+                1
+            ],
+            "explanation": "On a 8 observations, donc juste avant le premier événement (à $t = 2.6$) il y a 8 sujets à risque. Après cet événement, $\\hat S(2.6) = (8 - 1)/8 = 7/8 = 0{,}875$, et la survie reste constante entre 2.6 et le prochain temps d’événement (5.4), donc $\\hat S(3.5) = 0{,}875$ : la proposition A est vraie. Le dernier temps observé (10.1) est une censure, il reste donc une masse de probabilité positive en $+\\infty$ et la limite de l’estimateur KM n’est pas $0$ ; l’estimateur n’est donc pas une fonction de survie propre, ce qui rend B vraie. En revanche, $\\hat S(6.2)$ est strictement plus petite que $0{,}875$, l’estimateur KM est une fonction en escalier décroissante, les valeurs répétées ne posent pas de problème particulier, et la survie empirique basée sur les $T_i$ est au contraire inférieure à l’estimateur KM : C, D, E et F sont fausses.",
+            "tags": [
+                "Kaplan–Meier",
+                "fonctions de survie",
+                "censure",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "quizz-id06",
+            "qcm": "quizz",
+            "theme": "Données Incomplètes",
+            "question": "Le but ici est de construire un estimateur de l’espérance $\\mathbb E(Y)$ d’une durée $Y$ à partir des 8 durées observées $T_i$ :\n\n$9.2,\\; 6.2,\\; 9.2,\\; 3^{+},\\; 5.4,\\; 6.2^{+},\\; 11,\\; 2.6,$\n\n(où le symbole « $+$ » indique que $T_i$ est censurée, c’est-à-dire $T_i < Y_i$ et $\\delta_i = 0$).\nOn note que $1/8 = 0{,}125$ et que la moyenne empirique des $T_i$ est égale à 6.6.",
+            "choices": [
+                "L’estimateur de $\\mathbb E(Y)$ peut être calculé comme l’intégrale de l’estimateur de Kaplan–Meier.",
+                "L’estimateur de $\\mathbb E(Y)$ ne peut pas être calculé car $S_C$ n’est pas donnée.",
+                "La moyenne des observations $T_i$ est un estimateur sans biais de $\\mathbb E(Y)$.",
+                "L’estimateur $\\widehat{\\mathbb E}(Y)$ est approximativement égal à $5.869$.",
+                "La moyenne des observations non censurées $T_i$ est un estimateur sans biais de $\\mathbb E(Y)$.",
+                "L’estimateur $\\widehat{\\mathbb E}(Y)$ est approximativement égal à $7.733$."
+            ],
+            "answer": [
+                0,
+                5
+            ],
+            "explanation": "En présence de censure à droite, un estimateur classique de l’espérance est $\\widehat{\\mathbb E}(Y) = \\int_0^{\\infty} \\hat S_Y(t)\\,dt$, où $\\hat S_Y$ est l’estimateur de Kaplan–Meier : la proposition A est donc vraie. En utilisant les données et les sauts de $\\hat S_Y$, on obtient $\\widehat{\\mathbb E}(Y) \\approx 7.733$, ce qui rend la proposition F vraie. Les moyennes des temps observés $T_i$ ou seulement des temps non censurés ne sont en général pas sans biais pour $\\mathbb E(Y)$ en présence de censure, B, C et E sont donc fausses, et la valeur $5.869$ proposée en D ne correspond pas à l’intégrale de l’estimateur de Kaplan–Meier.",
+            "tags": [
+                "Kaplan–Meier",
+                "espérance",
+                "censure",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "quizz-id07",
+            "qcm": "quizz",
+            "theme": "Données Incomplètes",
+            "question": "Soit un échantillon indépendant $(T_i, \\delta_i)$ de taille $n$ d’observations aléatoirement censurées à droite, distribuées comme $(T, \\delta)$, où $T = Y \\wedge C$ et $\\delta = 1\\{Y \\leq C\\}$. Si la fonction de survie $S_C$ est connue, alors :",
+            "choices": [
+                "L’espérance de $Y$ peut être calculée comme l’intégrale de $S_C$.",
+                "L’estimateur de Kaplan–Meier ne peut plus être calculé.",
+                "La fonction $F_C$ est également connue et on a $\\mathbb E[\\delta Y / F_C(T)] = \\mathbb E(Y)$.",
+                "L’espérance de la moyenne empirique de $\\{\\delta_i / S_C(T_i^{-})\\} 1\\{T_i > t\\}$, $1 \\leq i \\leq n$, est égale à $S_Y(t)$.",
+                "Les observations censurées ne sont plus aléatoires.",
+                "La moyenne empirique de $\\{\\delta_i / S_C(T_i^{-})\\} 1\\{T_i > t\\}$, $1 \\leq i \\leq n$, est l’estimateur de Kaplan–Meier $\\hat S_Y(t)$."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Lorsque $S_C$ est connue, on peut construire des estimateurs pondérés de type IPCW en utilisant les poids $\\delta_i / S_C(T_i^{-})$. La propriété clé est que la moyenne pondérée $\\{\\delta_i / S_C(T_i^{-})\\} 1\\{T_i > t\\}$ a pour espérance la survie vraie $S_Y(t)$.",
+            "tags": [
+                "IPCW",
+                "censure à droite",
+                "fonctions de survie",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "quizz-id08",
+            "qcm": "quizz",
+            "theme": "Données Incomplètes",
+            "question": "Soit $Y \\ge 0$ une variable réponse aléatoirement censurée à droite par $C$, et $X$ un vecteur de prédicteurs (covariables). Si un modèle pour prédire $Y$ est ajusté en minimisant un risque empirique, alors :",
+            "choices": [
+                "La censure doit être ignorée et on ajuste le modèle comme d’habitude, avec $T = Y \\wedge C$ à la place de $Y$.",
+                "Sous des hypothèses appropriées, l’IPCW permet de construire des estimateurs consistants.",
+                "Seuls des modèles prédictifs linéaires pour les quantiles peuvent être utilisés.",
+                "Les données censurées doivent être traitées exactement comme des données manquantes.",
+                "Il n’est pas possible de prédire $Y$ parce que $X$ n’est pas censurée.",
+                "Les prédictions obtenues en pondérant convenablement le risque empirique sont nécessairement plus petites."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "En présence de censure à droite, l’approche IPCW consiste à pondérer le risque empirique par des poids dérivés de la distribution de la censure. Sous des hypothèses adéquates sur le mécanisme de censure, cette méthode permet d’obtenir des estimateurs consistants. Les autres affirmations ne reflètent pas la manière correcte de traiter la censure dans ce cadre.",
+            "tags": [
+                "IPCW",
+                "censure à droite",
+                "risque empirique",
+                "prédiction",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "exam24-25-q01",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Concernant le mécanisme de données manquantes sous l’hypothèse MAR :",
+            "choices": [
+                "MAR est une hypothèse moins restrictive que MCAR.",
+                "L’imputation ne peut pas être envisagée sous l’hypothèse MAR.",
+                "IPW et l’imputation conduisent aux mêmes estimateurs.",
+                "IPW s’applique à la perte empirique pinball, en régression quantile, avec des réponses MAR.",
+                "Supprimer (ignorer) les individus avec des valeurs manquantes conduit toujours à des estimateurs sans biais.",
+                "Pour estimer le score de propension, il faut utiliser les valeurs observées de tous les individus."
+            ],
+            "answer": [
+                0,
+                3,
+                5
+            ],
+            "explanation": "Sous MAR, l’hypothèse est moins restrictive que MCAR, ce qui permet notamment l’utilisation d’IPW et de modèles d’imputation. IPW peut être appliquée à différents critères, dont la perte pinball en régression quantile avec réponses MAR. L’estimation du score de propension nécessite d’exploiter toutes les observations disponibles (même celles avec données manquantes sur la réponse). En revanche, ignorer les individus avec données manquantes ou supposer qu’IPW et imputation donnent toujours les mêmes estimateurs n’est pas correct en général.",
+            "tags": [
+                "MAR",
+                "MCAR",
+                "IPW",
+                "imputation",
+                "score de propension",
+                "données manquantes"
+            ]
+        },
+        {
+            "id": "exam24-25-q02",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Dans ce cours, nous apprenons que :",
+            "choices": [
+                "L’imputation est plus générale que l’IPW.",
+                "Considérer des jeux de données plus grands ne supprime pas le biais induit par un mécanisme d’incomplétude.",
+                "Lorsque la censure $C$ et la durée $Y$ sont indépendantes conditionnellement aux covariables $X$, les observations censurées peuvent être omises.",
+                "En pratique, les covariables des modèles de régression peuvent aussi être manquantes.",
+                "L’IPW (resp. l’IPCW) peut être utilisée pour construire des estimateurs de régression linéaire LS pondérés lorsque la réponse est manquante (resp. censurée à droite).",
+                "Des censures aléatoires à gauche et à droite ne peuvent pas être traitées avec une même fonction IPCW."
+            ],
+            "answer": [
+                1,
+                3,
+                4,
+                5
+            ],
+            "explanation": "Le cours insiste sur le fait que l’augmentation de la taille de l’échantillon ne corrige pas le biais dû à un mécanisme d’incomplétude, que les covariables peuvent aussi être manquantes en pratique, et que l’IPW/IPCW permet de construire des estimateurs de régression pondérés quand la réponse est manquante ou censurée. Enfin, une même fonction IPCW ne permet pas en général de traiter simultanément censure à gauche et à droite.",
+            "tags": [
+                "IPW",
+                "IPCW",
+                "imputation",
+                "données manquantes",
+                "censure"
+            ]
+        },
+        {
+            "id": "exam24-25-q03",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Le but ici est de construire l’estimateur de Kaplan–Meier (KM) de la fonction de survie $S_Y(\\cdot)$ d’une durée $Y$ à partir des 8 durées observées $T_i$ :\n\n$5,\\; 6,\\; 10{+},\\; 2,\\; 9,\\; 6,\\; 9,\\; 3{+},$\n\n(où le symbole « $+$ » indique que $T_i$ est censurée à droite, c’est-à-dire $T_i < Y_i$ et $\\delta_i = 0$).",
+            "choices": [
+                "La valeur $\\hat S(11)$ de l’estimateur KM ne peut pas être calculée.",
+                "La fonction de survie empirique construite à partir des $T_i$ est inférieure ou égale à l’estimateur KM.",
+                "L’estimateur KM est une fonction décroissante continue.",
+                "L’estimation $\\hat S(3.5)$ de $S(3.5)$ est égale à $0{,}875$.",
+                "L’estimation $\\hat S(9.5)$ de $S(9.5)$ est égale à $7/48$.",
+                "L’estimation $\\hat S(6.5)$ de $S(6.5)$ est égale à $3/16$."
+            ],
+            "answer": [
+                1,
+                3,
+                4
+            ],
+            "explanation": "Avec ces données et la censure à droite, on construit l’estimateur de Kaplan–Meier $\\hat S(\\cdot)$. Dans ce cas, la survie empirique basée sur les $T_i$ est toujours inférieure ou égale à $\\hat S$, et les valeurs annoncées pour $\\hat S(3.5)$ et $\\hat S(9.5)$ correspondent à celles obtenues par la formule produit-limite. En revanche, $\\hat S(11)$ est bien défini (il reste constant après le dernier temps) et $\\hat S(6.5)$ n’est pas égal à $3/16$.",
+            "tags": [
+                "Kaplan–Meier",
+                "censure à droite",
+                "fonctions de survie",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "exam24-25-q04",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Le but ici est de construire un estimateur de l’espérance $\\mathbb E(Y)$ d’une durée $Y$ à partir des 8 durées observées $T_i$ :\n\n$5,\\; 6,\\; 10{+},\\; 2,\\; 9,\\; 6,\\; 9,\\; 3{+},$\\; (un symbole « $+$ » indique que $T_i$ est censurée à droite).",
+            "choices": [
+                "La moyenne des observations $\\delta_i T_i$ est un estimateur sans biais de $\\mathbb E(Y)$.",
+                "L’estimateur $\\widehat{\\mathbb E}(Y)$ obtenu par IPW est égal à $257/48 \\approx 5{,}354$.",
+                "L’estimateur de $\\mathbb E(Y)$ ne peut pas être calculé comme l’intégrale de l’estimateur de Kaplan–Meier.",
+                "L’estimateur de $\\mathbb E(Y)$ ne peut pas être calculé car $S_Y$ n’est pas donnée.",
+                "En considérant $T = 10$ non censurée, l’estimateur $\\widehat{\\mathbb E}(Y)$ est égal à $327/48 \\approx 6{,}813$.",
+                "La moyenne des observations non censurées $T_i$ est un estimateur sans biais de $\\mathbb E(Y)$."
+            ],
+            "answer": [
+                1,
+                2,
+                4
+            ],
+            "explanation": "Avec ces données censurées à droite, on peut construire un estimateur de $\\mathbb E(Y)$ soit par pondération IPW, soit en modifiant le statut de certaines observations (comme prendre $T=10$ non censurée), ce qui conduit ici aux valeurs numériques indiquées. En revanche, ni la simple moyenne des $\\delta_i T_i$ ni la moyenne des $T_i$ non censurés ne sont en général sans biais pour $\\mathbb E(Y)$, et l’intégrale de l’estimateur de Kaplan–Meier n’est pas utilisée dans cette question.",
+            "tags": [
+                "espérance",
+                "IPW",
+                "Kaplan–Meier",
+                "censure à droite",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "exam24-25-q05",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soit $\\ell(\\cdot,\\cdot)$ une fonction de perte, on suppose que $\\{Y, X\\} \\perp C$ et on pose $Z = \\max(Y, C)$ et $\\delta = 1\\{Y \\ge C\\}$. Il s’agit d’une situation de censure à gauche. Alors\n$$\\mathbb E[\\ell(Y, m(X))] = \\mathbb E[\\omega(Z, \\delta, X)\\,\\ell(Z, m(X))],$$\nà condition que :",
+            "choices": [
+                "$\\omega(Z, \\delta, X) = \\delta / S_C(Z^{-})$ et $C \\perp Y$.",
+                "$\\omega(Z, \\delta, X) = \\delta / S_{C\\mid X}(Z \\mid X)$.",
+                "$\\omega(Z, \\delta, X) = \\delta / F_C(Z)$.",
+                "$\\omega(Z, \\delta, X) = \\delta / F_{C\\mid X}(Z \\mid X) = \\delta / F_C(Z)$.",
+                "$\\omega(Z, \\delta, X) = \\delta / S_C(Z^{-})$.",
+                "$\\omega(Z, \\delta, X) = \\delta / F_{C\\mid X}(Z^{-} \\mid X)$."
+            ],
+            "answer": [
+                2,
+                3
+            ],
+            "explanation": "En censure à gauche, les pondérations IPCW pour retrouver $\\mathbb E[\\ell(Y, m(X))]$ s’expriment en fonction de la fonction de répartition $F_C$ du temps de censure. Les expressions correctes des poids sont celles données en C et D.",
+            "tags": [
+                "IPCW",
+                "censure à gauche",
+                "pondération",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "exam24-25-q06",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Si $\\Delta \\perp Y \\mid X$, avec $\\Delta \\in \\{0,1\\}$, alors :",
+            "choices": [
+                "$\\mathbb P(\\Delta = 1 \\mid Y, X) = \\mathbb P(\\Delta = 1 \\mid X)$.",
+                "$Y \\perp \\Delta \\mid X$.",
+                "$X \\perp Y$.",
+                "$\\Delta \\perp Y$.",
+                "$\\mathbb P(\\Delta = 0 \\mid Y, X) = \\mathbb P(\\Delta = 0 \\mid X)$.",
+                "$Y \\perp \\{\\Delta, X\\}$."
+            ],
+            "answer": [
+                0,
+                1,
+                4
+            ],
+            "explanation": "L’hypothèse $\\Delta \\perp Y \\mid X$ signifie que, conditionnellement à $X$, la valeur de $\\Delta$ ne dépend pas de $Y$. Cela équivaut aux égalités sur les probabilités conditionnelles données en A et E, et à $Y \\perp \\Delta \\mid X$ (réponse B).",
+            "tags": [
+                "indépendance conditionnelle",
+                "mécanismes de données manquantes",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "exam24-25-q07",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soit $(Z_i, \\delta_i)$, $1 \\le i \\le n$, un échantillon indépendant de $(Z, \\delta)$, où $Z = \\max(Y, C)$, $\\delta = 1\\{Y \\ge C\\}$, avec $Y, C \\ge 0$ et $Y \\perp C$. Si la fonction de répartition $F_C$ est connue, alors :",
+            "choices": [
+                "L’espérance de la moyenne empirique de $\\{\\delta_i / F_C(Z_i)\\} 1\\{Z_i > t\\}$, $1 \\le i \\le n$, est égale à $S_Y(t)$.",
+                "On a $\\mathbb E[\\delta Y / S_C(Z^{-})] = \\mathbb E(Y)$.",
+                "La fonction de survie empirique des $Z_i$ ne peut pas être calculée.",
+                "Les observations censurées ne sont plus aléatoires.",
+                "La moyenne empirique de $\\{\\delta_i / S_C(Z_i^{-})\\} 1\\{Z_i > t\\}$, $1 \\le i \\le n$, est l’estimateur de Kaplan–Meier $\\hat S_Y(t)$.",
+                "L’espérance de $Y$ peut être calculée comme l’intégrale de $F_C$."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Quand $F_C$ est connue dans ce cadre de censure (ici via $Z = \\max(Y, C)$ et $\\delta = 1\\{Y \\ge C\\}$), on peut utiliser une pondération de type IPCW. La moyenne empirique de $\\{\\delta_i / F_C(Z_i)\\} 1\\{Z_i > t\\}$ a alors pour espérance la vraie fonction de survie $S_Y(t)$, ce qui justifie la proposition A.",
+            "tags": [
+                "IPCW",
+                "censure",
+                "fonctions de survie",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "exam24-25-q08",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soient $g(X)$ et $h(Y)$ des fonctions réelles mesurables et bornées de $X$ et $Y$, respectivement. On suppose que $X \\perp Y \\mid Z$. Alors :",
+            "choices": [
+                "$\\mathbb E[g(X)] = \\mathbb E[h(Y)]$.",
+                "$\\mathbb E[g(X) \\mid Y, Z] = \\mathbb E[h(Y) \\mid X, Z]$.",
+                "$\\mathbb E[g(X)h(Y) \\mid Z] = \\mathbb E[g(X) \\mid Z] \\mathbb E[h(Y) \\mid Z]$.",
+                "$\\mathbb E[g(X) \\mid Y, Z] = \\mathbb E[g(X) \\mid Z]$.",
+                "$\\mathbb E[h(Y) \\mid X, Z] = \\mathbb E[h(Y) \\mid Z]$.",
+                "$\\mathbb E[g(X)h(Y) \\mid Z] = \\mathbb E[g(X)] \\mathbb E[h(Y)]$."
+            ],
+            "answer": [
+                2,
+                3,
+                4
+            ],
+            "explanation": "L’indépendance conditionnelle $X \\perp Y \\mid Z$ implique que, conditionnellement à $Z$, $X$ et $Y$ sont indépendantes. On a alors la factorisation $\\mathbb E[g(X)h(Y) \\mid Z] = \\mathbb E[g(X) \\mid Z] \\mathbb E[h(Y) \\mid Z]$ et les égalités de conditionnelles $\\mathbb E[g(X) \\mid Y, Z] = \\mathbb E[g(X) \\mid Z]$ et $\\mathbb E[h(Y) \\mid X, Z] = \\mathbb E[h(Y) \\mid Z]$.",
+            "tags": [
+                "indépendance conditionnelle",
+                "espérance conditionnelle",
+                "probabilités",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "exam24-25-q09",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soit $Y \\in \\mathbb R$ une variable aléatoire, $Z = (Z_1, Z_2)^{\\top} \\in \\mathbb R^2$ un vecteur aléatoire, et $\\Delta \\in \\{0,1\\}$ un indicateur aléatoire. On suppose que $Y$ est observée si et seulement si $\\Delta = 1$, sinon elle est manquante. De plus, $\\mathbb E[\\Delta \\mid Y, Z_1, Z_2] = \\mathbb P(\\Delta = 1 \\mid Z_2)$. On suppose que $p(z) = \\mathbb P(\\Delta = 1 \\mid Z_2 = z) > 0$ est connue. Alors :",
+            "choices": [
+                "La moyenne des observations $Y$ avec $\\Delta = 1$ a pour espérance $\\mathbb E(Y)$.",
+                "L’espérance de $Y$ ne peut pas être estimée de façon consistante par IPW.",
+                "Les variables $Y$ et $Z_2$ sont positivement corrélées.",
+                "La variance de $Y$ peut être estimée de façon consistante par IPW.",
+                "Les quantiles de $Y$ peuvent être estimés de façon consistante par IPW.",
+                "Les variables $Z_1, Z_2$ sont inutiles pour estimer les caractéristiques de $Y$ (moyenne, quantiles, ...)."
+            ],
+            "answer": [
+                3,
+                4
+            ],
+            "explanation": "Sous le schéma d’observation décrit, avec $p(z) = \\mathbb P(\\Delta = 1 \\mid Z_2 = z)$ connu et strictement positif, la pondération inverse de probabilité (IPW) permet d’estimer de façon consistante la variance et les quantiles de $Y$.",
+            "tags": [
+                "IPW",
+                "données manquantes",
+                "variance",
+                "quantiles",
+                "score de propension"
+            ]
+        },
+        {
+            "id": "exam24-25-q10",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soit $Y \\in \\mathbb R$ une variable réponse et $X \\in \\mathbb R$ un prédicteur. On suppose que\n$$Y = a + bX + \\varepsilon, \\qquad \\varepsilon \\perp X, \\; \\mathbb E(\\varepsilon) = 0, \\; \\mathbb E(\\varepsilon^2) = \\sigma^2.$$\nSoit $(Y_i, X_i),\\; 1 \\le i \\le n$, un échantillon de $(Y, X)$. Soient $\\omega_i \\ge 0$ des poids tels que $\\sum \\omega_i > 0$. On note $(\\hat a, \\hat b)$ la solution du problème de moindres carrés pondérés\n$$\\min_{a,b} \\sum \\omega_i\\bigl\\{Y_i - a - bX_i\\bigr\\}^2.$$\nIci $\\sum$ est une notation abrégée pour $\\sum_{i=1}^n$. Alors :",
+            "choices": [
+                "$\\hat a = \\dfrac{\\sum \\omega_i Y_i}{\\sum \\omega_i} - \\hat b\\, \\dfrac{\\sum \\omega_i X_i}{\\sum \\omega_i}$ avec $$\\hat b = \\dfrac{\\bigl(\\sum \\omega_i X_i Y_i\\bigr)\\bigl(\\sum \\omega_i\\bigr) - \\bigl(\\sum \\omega_i X_i\\bigr)\\bigl(\\sum \\omega_i Y_i\\bigr)}{\\bigl(\\sum \\omega_i X_i^2\\bigr)\\bigl(\\sum \\omega_i\\bigr) - \\bigl(\\sum \\omega_i X_i\\bigr)^2}.$$",
+                "Le problème de minimisation n’a pas de solution unique.",
+                "Le problème de minimisation n’a pas de solution.",
+                "$\\hat a = \\dfrac{\\sum \\omega_i Y_i}{\\sum \\omega_i} - \\hat b\\, \\dfrac{\\sum \\omega_i X_i}{\\sum \\omega_i}$ avec $$\\hat b = \\dfrac{\\bigl(\\sum \\omega_i X_i Y_i\\bigr) - \\bigl(\\sum \\omega_i X_i\\bigr)\\bigl(\\sum \\omega_i Y_i\\bigr)}{\\bigl(\\sum \\omega_i X_i^2\\bigr) - \\bigl(\\sum \\omega_i X_i\\bigr)^2}.$$",
+                "$$\\hat b = \\dfrac{\\bigl(\\sum \\omega_i X_i Y_i\\bigr) - \\bigl(\\sum \\omega_i X_i\\bigr)\\bigl(\\sum \\omega_i Y_i\\bigr)}{\\bigl(\\sum \\omega_i X_i^2\\bigr) - \\bigl(\\sum \\omega_i X_i\\bigr)^2}.$$",
+                "$$\\hat b = \\dfrac{\\bigl(\\sum \\omega_i X_i Y_i\\bigr)\\bigl(\\sum \\omega_i\\bigr) - \\bigl(\\sum \\omega_i X_i\\bigr)\\bigl(\\sum \\omega_i Y_i\\bigr)}{\\bigl(\\sum \\omega_i X_i^2\\bigr)\\bigl(\\sum \\omega_i\\bigr) - \\bigl(\\sum \\omega_i X_i\\bigr)^2}.$$"
+            ],
+            "answer": [
+                0,
+                5
+            ],
+            "explanation": "Les solutions des moindres carrés pondérés pour le modèle linéaire simple s’écrivent sous forme fermée : l’ordonnée à l’origine $\\hat a$ est donnée par la moyenne pondérée de $Y_i$ corrigée par $\\hat b$ et la moyenne pondérée de $X_i$, et la pente $\\hat b$ s’exprime avec les sommes pondérées croisées et quadratiques de $X_i$ et $Y_i$ comme dans la formule standard. Les expressions données en A et F correspondent à ces formules ; les autres propositions donnent soit des expressions incorrectes pour $\\hat b$, soit des affirmations erronées sur l’existence ou l’unicité de la solution.",
+            "tags": [
+                "moindres carrés pondérés",
+                "régression linéaire",
+                "poids",
+                "estimation"
+            ]
+        },
+        {
+            "id": "exam24-25-q11",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Dans le cadre de régression de la Question 10, on obtient l’échantillon suivant :\n\n$(*, 0.3),\\; (2.9, 0.5),\\; (0.9, 0.9),\\; (*, 1.3),\\; (*, 1.7),\\; (4.4, 2.1).$\n\nUn symbole « * » indique que $Y_i$ est manquante, et l’on définit $\\Delta_i \\in \\{0,1\\}$ valant 0 lorsque $Y_i$ est manquante et 1 lorsque $Y_i$ est observée. On suppose que\n$$\\mathbb P(\\Delta_i = 1 \\mid Y_i, X_i) = \\mathbb P(\\Delta_i = 1 \\mid X_i) = 1/5 + X_i/3 =: p(X_i).$$\nAinsi $p(\\cdot)$ est le score de propension dans un cadre MAR. En appliquant l’approche IPW dans la régression linéaire LS, et en utilisant l’expression de la solution $\\hat a$ et $\\hat b$ de la Question 10, on obtient :",
+            "choices": [
+                "$\\hat a = 0.178.$",
+                "$\\hat b = 3.791.$",
+                "$\\hat b = 0,\\; \\hat a = 2.913.$",
+                "$\\hat a = 1.526.$",
+                "$\\hat a = -0.178.$",
+                "$\\hat b = 1.035.$"
+            ],
+            "answer": [
+                3,
+                5
+            ],
+            "explanation": "En utilisant les poids IPW $1/p(X_i)$ dans le problème de moindres carrés pondérés défini à la Question 10, on obtient les estimateurs $\\hat a = 1.526$ et $\\hat b = 1.035$. Les autres valeurs proposées ne correspondent pas aux solutions IPW.",
+            "tags": [
+                "IPW",
+                "moindres carrés pondérés",
+                "données manquantes",
+                "régression linéaire"
+            ]
+        },
+        {
+            "id": "exam24-25-q12",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "À propos de l’imputation :",
+            "choices": [
+                "Aucune des réponses.",
+                "Elle ne permet pas de faire de l’inférence.",
+                "En régression, elle ne s’applique que lorsque les réponses sont manquantes.",
+                "C’est l’action de convertir un échantillon incomplet en un échantillon complet.",
+                "C’est la méthode qui recommande de remplacer toutes les valeurs manquantes par zéro.",
+                "En régression, elle ne s’applique que lorsque les covariables sont manquantes."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L’imputation consiste à remplacer les valeurs manquantes afin d’obtenir un jeu de données complet. Elle ne se limite ni aux réponses ni aux covariables, et ne correspond pas non plus à une règle spécifique comme « remplacer par zéro ». Les autres affirmations ne sont donc pas correctes.",
+            "tags": [
+                "imputation",
+                "données manquantes",
+                "méthodes statistiques"
+            ]
+        },
+        {
+            "id": "exam24-25-q13",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Dans le cadre de régression de la Question 10, on suppose $Y \\ge 0$ et que l’on obtient l’échantillon de taille $n = 6$ suivant :\n\n$(1.9^{+}, 0.3),\\; (2.9, 0.5),\\; (0.9, 0.9),\\; (2.1^{+}, 1.3),\\; (3^{+}, 1.7),\\; (4.4, 2.1).$\n\nUn symbole « $+$ » indique que $Y_i$ est censurée à droite, et qu’à la place de $Y_i$ on observe la valeur de censure $C_i$. On suppose que la variable de censure est positive, avec fonction de répartition $F_C(t) = t/6$ sur $[0,6]$. En supposant $C \\perp \\{Y, X\\}$, en appliquant l’approche IPCW dans la régression linéaire LS et en utilisant l’expression de la solution $\\hat a$ et $\\hat b$ de la Question 10, on obtient approximativement :",
+            "choices": [
+                "$\\hat b = 2.917.$",
+                "$\\hat a = 1.725.$",
+                "$\\hat b = 1.808,\\; \\hat a = 0.$",
+                "$\\hat b = 1.779.$",
+                "$\\hat a = 0.045.$",
+                "$\\hat a = -1.725.$"
+            ],
+            "answer": [
+                0,
+                5
+            ],
+            "explanation": "En utilisant les poids IPCW dérivés de la fonction de censure $F_C(t) = t/6$ et en appliquant la formule de moindres carrés pondérés de la Question 10, on obtient numériquement une pente $\\hat b \\approx 2.917$ et une ordonnée à l’origine $\\hat a \\approx -1.725$. Les autres couples proposés ne correspondent pas aux solutions IPCW calculées.",
+            "tags": [
+                "IPCW",
+                "censure à droite",
+                "moindres carrés pondérés",
+                "régression linéaire",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "exam24-25-q14",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Concernant la régression linéaire de la moyenne avec données manquantes sous l’hypothèse MAR :",
+            "choices": [
+                "Toutes les réponses sont correctes.",
+                "L’IPW peut être utilisée avec la perte pinball pour construire des estimateurs consistants.",
+                "Il n’existe aucun moyen de construire des estimateurs consistants lorsqu’une covariable est manquante.",
+                "L’IPCW peut être utilisée si la réponse est manquante.",
+                "Il n’existe aucun moyen de construire des estimateurs consistants lorsque la réponse est manquante.",
+                "L’IPW peut être utilisée pour construire des estimateurs des moindres carrés consistants."
+            ],
+            "answer": [
+                5
+            ],
+            "explanation": "Sous l’hypothèse MAR, la pondération inverse de probabilité (IPW) permet de corriger le biais lié aux données manquantes et de construire des estimateurs des moindres carrés consistants. Les autres affirmations sont fausses ou trop restrictives.",
+            "tags": [
+                "IPW",
+                "MAR",
+                "régression linéaire",
+                "données manquantes"
+            ]
+        },
+        {
+            "id": "exam24-25-q15",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soit $Y \\in \\mathbb R$ une réponse, $X \\in \\mathbb R$ un prédicteur, et $\\Delta \\in \\{0,1\\}$ un indicateur aléatoire. On suppose que\n$$Y = a + bX + \\varepsilon, \\qquad \\varepsilon \\perp X,\\; \\mathbb E(\\varepsilon) = 0,\\; \\mathbb E(\\varepsilon^2) = \\sigma^2.$$\nSoit $(Y_i, X_i, \\Delta_i)$, $1 \\le i \\le n$, un échantillon indépendant de $(Y,X,\\Delta)$. La réponse $Y_i$ est observée si et seulement si $\\Delta_i = 1$, sinon elle est manquante. On définit\n$$(\\hat a, \\hat b) = \\arg\\min_{a,b} \\sum \\Delta_i\\,\\{Y_i - a - b X_i\\}^2.$$\nAlors :",
+            "choices": [
+                "$\\hat a$ et $\\hat b$ sont consistants si $\\mathbb P(\\Delta = 1 \\mid Y, X)$ ne dépend pas de $Y$.",
+                "L’ordonnée à l’origine $a$ peut être estimée sans biais par la moyenne empirique des $Y_i$.",
+                "$\\hat a$ et $\\hat b$ sont sans biais si $\\Delta \\perp \\{Y, X\\}$.",
+                "$\\hat a$ et $\\hat b$ sont sans biais si $\\Delta \\perp Y \\mid X$.",
+                "Dans les applications réelles, les réponses $Y$ ne sont jamais manquantes.",
+                "La condition MAR $Y \\perp \\Delta \\mid X$ est un mécanisme destructif dans ce contexte."
+            ],
+            "answer": [
+                0,
+                2,
+                3
+            ],
+            "explanation": "Si la probabilité d’observer $Y$ ne dépend pas de $Y$ conditionnellement à $X$ (condition MAR $Y \\perp \\Delta \\mid X$), l’estimation par MCO sur les observations complètes fournit des estimateurs consistants : la proposition A est vraie. Lorsque le mécanisme est MCAR ($\\Delta \\perp \\{Y,X\\}$) ou MAR ($\\Delta \\perp Y \\mid X$), les estimateurs de régression obtenus en ne gardant que les observations avec $\\Delta=1$ sont sans biais (C et D). En revanche, la moyenne simple des $Y_i$ observés n’est en général pas sans biais, et les affirmations E et F ne correspondent pas aux définitions usuelles des mécanismes de données manquantes.",
+            "tags": [
+                "données manquantes",
+                "MAR",
+                "MCAR",
+                "régression linéaire",
+                "MCO"
+            ]
+        },
+        {
+            "id": "exam24-25-q16",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Concernant la régression linéaire des quantiles :",
+            "choices": [
+                "On ne peut pas inclure d’ordonnée à l’origine.",
+                "La pente est toujours positive.",
+                "Elle ne peut pas être estimée en statistique, mais seulement en apprentissage automatique.",
+                "Les coefficients peuvent être estimés de façon consistante par IPW sous l’hypothèse MAR, connaissant le score de propension.",
+                "On ne peut pas considérer plus d’une covariable.",
+                "Les coefficients peuvent être estimés de façon consistante par les moindres carrés."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "En régression des quantiles avec données manquantes MAR, la pondération inverse de probabilité (IPW) permet, à partir du score de propension, de corriger le biais et d’obtenir des estimateurs consistants des coefficients. Les autres affirmations décrivent des restrictions ou impossibilités qui ne sont pas vraies pour la régression des quantiles.",
+            "tags": [
+                "régression des quantiles",
+                "IPW",
+                "MAR",
+                "données manquantes"
+            ]
+        },
+        {
+            "id": "exam24-25-q17",
+            "qcm": "Exam 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soit $Y \\in \\mathbb R$ une variable aléatoire de variance finie, $Z \\in \\mathbb R$ une variable auxiliaire, et $\\Delta \\in \\{0,1\\}$ un indicateur aléatoire. On suppose que $Y$ est observée si et seulement si $\\Delta = 1$, sinon elle est manquante. De plus, $\\mathbb E[\\Delta \\mid Y, Z] = \\mathbb P(\\Delta = 1 \\mid Z)$. On suppose que $p(z) = \\mathbb P(\\Delta = 1 \\mid Z = z) \\ge c > 0$ est connue et, à partir d’un échantillon i.i.d. $(Y_i, \\Delta_i, Z_i)$, $1 \\le i \\le n$, on définit\n$$\\hat m = \\frac{1}{n} \\sum \\frac{\\Delta_i}{p(Z_i)} Y_i, \\qquad \\hat \\sigma^2 = \\frac{1}{n-1} \\sum \\left\\{ \\frac{\\Delta_i}{p(Z_i)} Y_i - \\hat m \\right\\}^2.$$\nAlors :",
+            "choices": [
+                "$\\hat \\sigma^2$ est consistant pour $\\operatorname{Var}(Y)$.",
+                "$\\hat \\sigma^2$ est biaisé pour $\\operatorname{Var}(Y \\mid Z)$ mais $\\hat m^2$ serait sans biais.",
+                "$\\hat m$ est consistant pour $\\mathbb E(Y)$.",
+                "$\\hat m$ est sans biais pour $\\mathbb E(Y \\mid Z)$ si $Y$ et $Z$ ne sont pas indépendantes.",
+                "$\\hat m$ est sans biais pour $\\mathbb E(Y)$.",
+                "$\\hat \\sigma^2$ est sans biais pour $\\operatorname{Var}(Y)$."
+            ],
+            "answer": [
+                0,
+                2,
+                4,
+                5
+            ],
+            "explanation": "Les estimateurs pondérés par IPW construits à partir de $p(Z)$ permettent, sous les hypothèses données, d’obtenir un estimateur sans biais et consistant de $\\mathbb E(Y)$ via $\\hat m$, et un estimateur $\\hat \\sigma^2$ qui est à la fois sans biais et consistant pour $\\operatorname{Var}(Y)$. Les autres propositions ne décrivent pas correctement les propriétés de ces estimateurs.",
+            "tags": [
+                "IPW",
+                "variance",
+                "espérance",
+                "données manquantes",
+                "score de propension"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q01",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "De manière générale :",
+            "choices": [
+                "Augmenter la taille des jeux de données supprime le biais des moyennes empiriques de durées aléatoirement censurées.",
+                "L’imputation n’est pas plus générale que l’IPW.",
+                "Lorsque la censure C est indépendante de la durée Y et des covariables X, les observations censurées peuvent être omises.",
+                "En pratique, les covariables des modèles de régression peuvent aussi être manquantes.",
+                "Des censures aléatoires à gauche et à droite peuvent être traitées avec un même système de poids.",
+                "L’IPW (resp. l’IPCW) peut être utilisée pour construire des estimateurs de régression linéaire LS pondérés lorsque la réponse est manquante (resp. censurée)."
+            ],
+            "answer": [
+                1,
+                3,
+                5
+            ],
+            "explanation": "Le cours souligne que l’imputation n’est pas plus générale que l’IPW, que dans les applications les covariables d’un modèle de régression peuvent aussi être manquantes, et que l’IPW/IPCW permet de construire des estimateurs de régression linéaire pondérés lorsque la réponse est manquante ou censurée. En revanche, augmenter la taille de l’échantillon ne corrige pas le biais dû à la censure, on ne peut pas en général ignorer les observations censurées, et une même pondération ne traite pas automatiquement censure à gauche et à droite.",
+            "tags": [
+                "IPW",
+                "IPCW",
+                "imputation",
+                "censure",
+                "données manquantes"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q02",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Concernant le mécanisme de données manquantes sous l’hypothèse MAR :",
+            "choices": [
+                "L’imputation et l’IPW donnent les mêmes estimateurs.",
+                "En général, supprimer (ignorer) les individus avec des valeurs manquantes conduit à des estimateurs sans biais.",
+                "Minimiser la perte pinball empirique avec IPW en régression quantile linéaire avec réponses MAR permet d’estimer les coefficients de régression de façon consistante.",
+                "L’estimation consistante du score de propension ne peut pas être garantie si les individus avec valeurs manquantes sont supprimés.",
+                "MCAR est une hypothèse plus restrictive que MAR.",
+                "L’imputation ne peut pas être envisagée sous l’hypothèse MCAR."
+            ],
+            "answer": [
+                2,
+                3,
+                4
+            ],
+            "explanation": "Sous MAR, l’IPW appliquée à la perte pinball en régression quantile permet d’obtenir des estimateurs consistants des coefficients, et l’estimation du score de propension nécessite de conserver l’information sur les individus ayant des valeurs manquantes. Par ailleurs, l’hypothèse MCAR est plus restrictive que MAR. En revanche, l’imputation et l’IPW ne donnent pas en général les mêmes estimateurs, ignorer les individus avec données manquantes introduit en général un biais, et l’imputation est bien compatible avec MCAR.",
+            "tags": [
+                "MAR",
+                "MCAR",
+                "IPW",
+                "score de propension",
+                "données manquantes"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q03",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Le but ici est de construire l’estimateur de Kaplan–Meier (KM) de la fonction de survie $S_Y(\\cdot)$ d’une durée $Y$ à partir des 8 durées observées $T_i$ :\n\n$3,\\; 10,\\; 7,\\; 6,\\; 10,\\; 7,\\; 11{+},\\; 4{+},$\n\n(où le symbole « $+$ » indique que $T_i$ est censurée à droite, c’est-à-dire $T_i < Y_i$ et $\\delta_i = 0$).",
+            "choices": [
+                "La valeur $\\hat S(11)$ de l’estimateur KM ne peut pas être calculée.",
+                "L’estimation $\\hat S(10.3)$ de $S(10.3)$ est égale à $7/48$.",
+                "L’estimateur KM est supérieur ou égal à la fonction de survie empirique construite à partir des $T_i$.",
+                "L’estimateur KM est une fonction en escalier non décroissante.",
+                "L’estimation $\\hat S(7.2)$ de $S(7.2)$ est égale à $12/48$.",
+                "L’estimation $\\hat S(4.8)$ de $S(4.8)$ est égale à $0{,}875$."
+            ],
+            "answer": [
+                1,
+                2,
+                5
+            ],
+            "explanation": "Pour cet échantillon censuré à droite, le corrigé indique que $\\hat S(10.3) = 7/48$ et $\\hat S(4.8) = 0{,}875$, et que l’estimateur de Kaplan–Meier domine la survie empirique construite à partir des $T_i$. Les autres affirmations (valeur en 11, forme non décroissante, valeur $12/48$ en 7.2) ne sont pas retenues dans ce QCM.",
+            "tags": [
+                "Kaplan–Meier",
+                "censure à droite",
+                "fonctions de survie",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q04",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soient $g(Y)$ et $h(Z)$ des fonctions réelles mesurables et bornées de $Y$ et $Z$, respectivement. On suppose que $Y \\perp Z \\mid X$. Alors :",
+            "choices": [
+                "$\\mathbb E[g(Y)h(Z) \\mid X] = \\mathbb E[g(Y)]\\mathbb E[h(Z)]$.",
+                "$\\mathbb E[g(Y) \\mid X, Z] = \\mathbb E[g(Y) \\mid Z]$.",
+                "$\\mathbb E[g(Y)] = \\mathbb E[h(Z)]$.",
+                "$\\mathbb E[g(Y) \\mid Z, X] = \\mathbb E[h(Z) \\mid X, Z]$.",
+                "$\\mathbb E[h(Z) \\mid X, Z] = \\mathbb E[h(Z) \\mid X]$.",
+                "$\\mathbb E[g(Y)h(Z) \\mid X] = \\mathbb E[g(Y) \\mid X] \\mathbb E[h(Z) \\mid X]$."
+            ],
+            "answer": [
+                5
+            ],
+            "explanation": "L’indépendance conditionnelle $Y \\perp Z \\mid X$ implique que, conditionnellement à $X$, les variables $Y$ et $Z$ sont indépendantes. On a alors la factorisation $\\mathbb E[g(Y)h(Z) \\mid X] = \\mathbb E[g(Y) \\mid X] \\mathbb E[h(Z) \\mid X]$. Les autres égalités ne découlent pas de cette seule hypothèse.",
+            "tags": [
+                "indépendance conditionnelle",
+                "espérance conditionnelle",
+                "probabilités"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q05",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Le but ici est de construire un estimateur de l’espérance $\\mathbb E(Y)$ d’une durée $Y$ à partir des 8 durées observées $T_i$ :\n\n$7.2,\\; 10.8,\\; 3.6^{+},\\; 6,\\; 7.2,\\; 12^{+},\\; 2.4,\\; 10.8,$\\; (un symbole « $+$ » indique que $T_i$ est censurée à droite).",
+            "choices": [
+                "L’estimateur de $\\mathbb E(Y)$ ne peut pas être calculé car $F_Y$ n’est pas donnée.",
+                "L’estimation de $\\mathbb E(Y)$ ne peut pas être obtenue comme l’intégrale de l’estimateur de Kaplan–Meier.",
+                "La moyenne des observations non censurées $T_i$ est un estimateur sans biais de $\\mathbb E(Y)$.",
+                "La moyenne des observations $\\delta_i Y_i$ est un estimateur sans biais de $\\mathbb E(Y)$.",
+                "En considérant $T = 12$ comme non censurée, l’estimateur $\\widehat{\\mathbb E}(Y)$ est égal à $327/40 \\approx 8{,}175$.",
+                "L’estimateur $\\widehat{\\mathbb E}(Y)$ obtenu par IPW est égal à $257/40 \\approx 6{,}425$."
+            ],
+            "answer": [
+                1,
+                4,
+                5
+            ],
+            "explanation": "Le corrigé indique que, dans cette situation de censure à droite, on ne calcule pas $\\mathbb E(Y)$ via l’intégrale de l’estimateur de Kaplan–Meier, mais à partir d’une version modifiée où l’on traite $T = 12$ comme non censurée, ce qui donne $327/40$, ainsi que via une approche IPW donnant $257/40$. Les moyennes simples des $T_i$ non censurés ou des $\\delta_i Y_i$ ne sont en général pas sans biais pour $\\mathbb E(Y)$.",
+            "tags": [
+                "espérance",
+                "Kaplan–Meier",
+                "IPW",
+                "censure à droite",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q06",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Si $\\{\\Delta, X\\} \\perp Y$, avec $\\Delta \\in \\{0,1\\}$, alors :",
+            "choices": [
+                "$Y \\perp \\Delta \\mid X.$",
+                "$X \\perp Y \\mid \\Delta.$",
+                "$X \\perp \\Delta.$",
+                "$\\mathbb P(\\Delta = 0 \\mid Y, X) = \\mathbb P(\\Delta = 0 \\mid X).$",
+                "$\\Delta \\perp X \\mid Y.$",
+                "$X \\perp Y.$"
+            ],
+            "answer": [
+                0,
+                1,
+                3,
+                5
+            ],
+            "explanation": "L'hypothèse $\\{\\Delta, X\\} \\perp Y$ implique que, une fois conditionné par $X$, la variable $Y$ est indépendante de $\\Delta$, ce qui donne $Y \\perp \\Delta \\mid X$. Elle implique aussi $X \\perp Y$. De plus, l’équation $\\mathbb P(\\Delta = 0 \\mid Y, X) = \\mathbb P(\\Delta = 0 \\mid X)$ découle directement de cette indépendance. Enfin, $X \\perp Y \\mid \\Delta$ est aussi vérifiée sous l'hypothèse globale d’indépendance.",
+            "tags": [
+                "indépendance",
+                "MAR",
+                "données manquantes"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q07",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soient $Y, C \\ge 0$, $X \\in \\mathbb R^p$ pour un certain $p \\ge 1$. Soit $\\ell(\\cdot,\\cdot)$ une fonction de perte, $Z = \\max(Y, C)$ et $\\delta = 1\\{Y \\ge C\\}$. Il s’agit d’une situation de censure à gauche. On suppose que $Y \\perp C \\mid X$. Alors,\n$$\\mathbb E[\\ell(Y, \\beta^{\\top}X)] = \\mathbb E[\\omega(Z, \\delta, X)\\,\\ell(Z, \\beta^{\\top}X)], \\qquad \\forall \\beta \\in \\mathbb R^p \\; (\\beta \\text{ non aléatoire}),$$\nà condition que :",
+            "choices": [
+                "$\\omega(Z, \\delta, X) = \\delta / S_C(Z^{-})$ et $C \\perp Y$.",
+                "$\\omega(Z, \\delta, X) = \\delta / S_C(Z^{-})$.",
+                "$\\omega(Z, \\delta, X) = \\delta / S_{C\\mid X}(Z \\mid X)$.",
+                "$\\omega(Z, \\delta, X) = \\delta / F_{C\\mid X}(Z^{-} \\mid X) = \\delta / F_C(Z).$",
+                "$\\omega(Z, \\delta, X) = \\delta / F_{C\\mid X}(Z \\mid X).$",
+                "$\\omega(Z, \\delta, X) = \\delta / F_C(Z).$"
+            ],
+            "answer": [
+                4
+            ],
+            "explanation": "En censure à gauche, les poids IPCW adaptés utilisent la fonction de répartition conditionnelle $F_{C\\mid X}$ du temps de censure. Le corrigé indique que le choix correct est $\\omega(Z, \\delta, X) = \\delta / F_{C\\mid X}(Z \\mid X)$, ce qui correspond à la proposition E.",
+            "tags": [
+                "IPCW",
+                "censure à gauche",
+                "pondération",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q08",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soient $Y, Z \\in \\mathbb R$ des variables aléatoires et $\\Delta \\in \\{0,1\\}$ un indicateur aléatoire. On suppose que $Y$ est observée si et seulement si $\\Delta = 1$, sinon elle est manquante. De plus, $\\mathbb E[\\Delta \\mid Y, Z] = \\mathbb P(\\Delta = 1 \\mid Z)$. On suppose que la fonction $p(z) = \\mathbb P(\\Delta = 1 \\mid Z = z) > 0$ est connue. Alors :",
+            "choices": [
+                "Les moments de $Y$ peuvent être estimés de façon consistante par IPW avec le score de propension $p(\\cdot)$.",
+                "Les variables $Y$ et $Z$ sont positivement corrélées.",
+                "La médiane de $Y$ peut être estimée de façon consistante par IPW avec le score de propension $p(\\cdot)$.",
+                "Les observations de la variable $Z$ sont inutiles pour estimer les quantiles de $Y$.",
+                "L’espérance de $Y$ ne peut pas être estimée de façon consistante.",
+                "La moyenne des observations $Y$ avec $\\Delta = 1$ a pour espérance $\\mathbb E(Y)$."
+            ],
+            "answer": [
+                0,
+                2
+            ],
+            "explanation": "Lorsque la probabilité d’observation $p(z) = \\mathbb P(\\Delta = 1 \\mid Z = z)$ est connue et strictement positive, la méthode IPW permet d’estimer de façon consistante différentes fonctionnelles de la loi de $Y$, en particulier ses moments et sa médiane. Les autres affirmations (corrélation, inutilité de $Z$, impossibilité d’estimer l’espérance ou moyenne naïve non biaisée) ne découlent pas des hypothèses données.",
+            "tags": [
+                "IPW",
+                "données manquantes",
+                "score de propension",
+                "moments",
+                "quantiles"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q09",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soit $(Y_i, \\delta_i)$, $1 \\le i \\le n$, un échantillon indépendant de $(Y, \\delta)$, où $Y = \\min(T, C)$, $\\delta = 1\\{T \\le C\\}$, avec $T, C \\ge 0$ et $T \\perp C$. Si la fonction de répartition $F_C$ est connue, alors :",
+            "choices": [
+                "On a $\\mathbb E[\\delta Y / F_C(Y^{-})] = \\mathbb E(T)$.",
+                "L’espérance de $T$ peut être calculée comme l’intégrale de $F_C$.",
+                "Les observations censurées ne sont plus aléatoires.",
+                "L’espérance de la moyenne empirique de $\\{1 - F_C(Y_i^{-})\\}^{-1} \\delta_i 1\\{Y_i > t\\}$, $1 \\le i \\le n$, est égale à $S_T(t)$.",
+                "La fonction de survie empirique des $Y_i$ ne peut pas être calculée.",
+                "La moyenne empirique de $\\{\\delta_i / F_C(Y_i^{-})\\} 1\\{Y_i > t\\}$, $1 \\le i \\le n$, est un estimateur sans biais de $S_T(t)$."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Lorsque $F_C$ est connue et que $T \\perp C$, on peut construire des estimateurs pondérés de type IPCW. Dans ce cadre, la quantité $\\{1 - F_C(Y_i^{-})\\}^{-1} \\delta_i 1\\{Y_i > t\\}$ a pour espérance la survie vraie $S_T(t)$, et la moyenne empirique de ces termes est donc centrée sur $S_T(t)$. Les autres propositions ne correspondent pas à cette propriété.",
+            "tags": [
+                "IPCW",
+                "censure à droite",
+                "fonctions de survie",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q10",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "À propos de l’imputation :",
+            "choices": [
+                "C’est la méthode qui recommande de remplacer toutes les valeurs manquantes par zéro.",
+                "En régression, elle ne s’applique que lorsque les réponses sont manquantes.",
+                "En régression, elle ne s’applique que lorsqu’il y a au moins deux covariables.",
+                "En régression, elle ne s’applique que lorsque les covariables sont manquantes.",
+                "Elle ne permet pas de faire de l’inférence.",
+                "C’est l’acte de convertir un échantillon incomplet en un échantillon complet."
+            ],
+            "answer": [
+                5
+            ],
+            "explanation": "L’imputation consiste à remplacer les valeurs manquantes afin d’obtenir un jeu de données complet. Les autres affirmations ne décrivent pas correctement la définition générale de l’imputation.",
+            "tags": [
+                "imputation",
+                "données manquantes",
+                "complétion d’échantillon"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q11",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soit $Y \\in \\mathbb R$ une réponse et $X \\in \\mathbb R$ un prédicteur. On suppose que\n$$Y = a + bX + \\varepsilon, \\qquad \\varepsilon \\perp X,\\; \\mathbb E(\\varepsilon) = 0,\\; \\mathbb E(\\varepsilon^2) = \\sigma^2.$$\nSoit $(Y_i, X_i),\\; 1 \\le i \\le n$, un échantillon de $(Y,X)$. Soient $\\omega_i \\ge 0$ des poids tels que $\\sum \\omega_i = 1$. On note $(\\hat a, \\hat b)$ la solution du problème de moindres carrés pondérés\n$$\\min_{a,b} \\sum \\omega_i\\{Y_i - a - b X_i\\}^2.$$\nAlors :",
+            "choices": [
+                "$\\hat a = \\sum \\omega_i Y_i - \\hat b \\sum \\omega_i X_i$ avec $$\\hat b = \\dfrac{\\sum \\omega_i X_i Y_i - (\\sum \\omega_i X_i)(\\sum \\omega_i Y_i)}{\\sum \\omega_i X_i^2 - (\\sum \\omega_i X_i)^2}.$$",
+                "$\\hat a = \\dfrac{\\sum \\omega_i Y_i}{\\sum \\omega_i} + \\hat b\\, \\dfrac{\\sum \\omega_i X_i}{\\sum \\omega_i}$ avec $$\\hat b = \\dfrac{\\sum \\omega_i X_i Y_i - (\\sum \\omega_i X_i)(\\sum \\omega_i Y_i)}{\\sum \\omega_i X_i^2 - (\\sum \\omega_i X_i)^2}.$$",
+                "$$\\hat b = \\dfrac{\\sum \\omega_i X_i Y_i - (\\sum \\omega_i X_i)(\\sum \\omega_i Y_i)}{\\sum \\omega_i X_i^2 - (\\sum \\omega_i X_i)^2}.$$",
+                "$$\\hat b = \\dfrac{\\sum \\omega_i X_i Y_i - (\\sum \\omega_i X_i)(\\sum \\omega_i Y_i)}{(\\sum \\omega_i X_i^2)(\\sum \\omega_i) - (\\sum \\omega_i X_i)^2}.$$",
+                "Le problème de minimisation n’a pas de solution car $\\sum \\omega_i = 1$.",
+                "Le problème de minimisation n’a pas de solution unique."
+            ],
+            "answer": [
+                0,
+                2,
+                3
+            ],
+            "explanation": "Avec des poids $\\omega_i$ vérifiant $\\sum \\omega_i = 1$, les solutions des moindres carrés pondérés s’écrivent comme dans la formule standard : $\\hat a$ est la moyenne pondérée des $Y_i$ ajustée par $\\hat b$ et la moyenne pondérée des $X_i$, et $\\hat b$ s’exprime via les sommes pondérées croisées et quadratiques. Les deux expressions proposées pour $\\hat b$ (avec ou sans le facteur $\\sum \\omega_i$ au dénominateur) sont équivalentes lorsque $\\sum \\omega_i = 1$, d’où la validité des propositions A, C et D. Les affirmations E et F sur l’absence de solution (ou de solution unique) sont incorrectes.",
+            "tags": [
+                "moindres carrés pondérés",
+                "régression linéaire",
+                "poids",
+                "données incomplètes"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q12",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Concernant la régression linéaire de la moyenne avec données manquantes sous l’hypothèse MAR :",
+            "choices": [
+                "L’IPW peut être utilisée pour construire des estimateurs des moindres carrés consistants.",
+                "Aucune des réponses n’est correcte.",
+                "Il n’existe aucun moyen de construire des estimateurs consistants lorsque la réponse est manquante.",
+                "L’IPW peut être utilisée avec la perte pinball pour construire des estimateurs consistants.",
+                "L’IPCW peut être utilisée si la réponse est manquante.",
+                "Il n’existe aucun moyen de construire des estimateurs consistants lorsqu’une covariable est manquante."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sous l’hypothèse MAR, la pondération inverse de probabilité (IPW) permet de corriger le biais dû aux réponses manquantes et de construire des estimateurs des moindres carrés consistants. Les autres affirmations sont fausses ou trop restrictives.",
+            "tags": [
+                "IPW",
+                "MAR",
+                "régression linéaire",
+                "données manquantes"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q13",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Concernant la régression linéaire de la médiane avec réponses manquantes :",
+            "choices": [
+                "On ne peut pas considérer plus d’une covariable.",
+                "On ne peut pas inclure d’ordonnée à l’origine.",
+                "La pente est toujours positive.",
+                "Les coefficients peuvent être estimés de façon consistante par IPW sous l’hypothèse MAR.",
+                "Elle ne peut pas être estimée en statistique, mais seulement en apprentissage automatique.",
+                "Les coefficients peuvent être estimés de façon consistante par les moindres carrés."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "En régression linéaire de la médiane avec réponses manquantes MAR, l’IPW permet, à partir du score de propension, de construire des estimateurs consistants des coefficients. Les autres affirmations ne décrivent pas correctement les propriétés de la régression de la médiane.",
+            "tags": [
+                "régression de la médiane",
+                "IPW",
+                "MAR",
+                "données manquantes"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q14",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Dans le modèle de régression linéaire de la Question 11, on obtient l’échantillon suivant de $(Y, X)$ :\n\n$(2.9, 0.5),\\; (*, 0.8),\\; (0.9, 0.9),\\; (4.4, 2.1),\\; (*, 1.9),\\; (*, 2.7).$\n\nUn symbole « * » indique que $Y_i$ est manquante, et l’on définit $\\Delta_i \\in \\{0,1\\}$ égal à 0 lorsque $Y_i$ est manquante et égal à 1 lorsque $Y_i$ est observée. On suppose que\n$$\\mathbb P(\\Delta_i = 1 \\mid Y_i, X_i) = \\mathbb P(\\Delta_i = 1 \\mid X_i) = 1/5 + X_i/3 =: p(X_i).$$\nAinsi $p(\\cdot)$ est le score de propension dans un cadre MAR. En appliquant l’approche IPW dans la régression linéaire LS, et en utilisant l’expression de la solution $\\hat a$ et $\\hat b$ de la Question 11, on obtient (approximativement) :",
+            "choices": [
+                "$\\hat b = 0,\\; \\hat a = 1.913.$",
+                "$\\hat b = 4.791.$",
+                "$\\hat a = 1.526.$",
+                "$\\hat a = 0.108.$",
+                "$\\hat b = 1.035.$",
+                "$\\hat a = -0.108.$"
+            ],
+            "answer": [
+                2,
+                4
+            ],
+            "explanation": "En utilisant les poids IPW $1/p(X_i)$ dans le problème de moindres carrés pondérés et la formule de la Question 11, on obtient numériquement une ordonnée à l’origine $\\hat a \\approx 1.526$ et une pente $\\hat b \\approx 1.035$. Les autres valeurs proposées ne correspondent pas aux solutions IPW calculées.",
+            "tags": [
+                "IPW",
+                "moindres carrés pondérés",
+                "données manquantes",
+                "régression linéaire"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q15",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soit $Y \\in \\mathbb R$ une variable aléatoire de variance finie, $Z \\in \\mathbb R$ une variable auxiliaire, et $\\Delta \\in \\{0,1\\}$ un indicateur aléatoire. On suppose que $Y$ est observée si et seulement si $\\Delta = 1$, sinon elle est manquante. De plus, $\\mathbb E[\\Delta \\mid Y, Z] = \\mathbb P(\\Delta = 1 \\mid Z)$. On suppose que $p(z) = \\mathbb P(\\Delta = 1 \\mid Z = z) \\ge c > 0$ est connue et, à partir d’un échantillon i.i.d. $(Y_i, \\Delta_i, Z_i)$, $1 \\le i \\le n$, on définit\n$$\\hat m = \\frac{1}{n} \\sum \\frac{\\Delta_i}{p(Z_i)} Y_i, \\qquad \\hat \\sigma^2 = \\frac{1}{n} \\sum \\frac{\\Delta_i Y_i^2}{p(Z_i)} - \\hat m^2.$$\nAlors :",
+            "choices": [
+                "$\\hat \\sigma^2$ est sans biais pour $\\operatorname{Var}(Y)$.",
+                "$\\hat m$ est consistant pour $\\mathbb E(Y)$.",
+                "$\\hat m$ est sans biais pour $\\mathbb E(Y)$.",
+                "$\\hat \\sigma^2$ est consistant pour $\\operatorname{Var}(Y)$.",
+                "$\\hat m$ est sans biais pour $\\mathbb E(Y \\mid Z)$ si $Y$ et $Z$ ne sont pas indépendantes.",
+                "$\\hat \\sigma^2$ est biaisé mais $\\hat m^2$ serait sans biais pour estimer $\\operatorname{Var}(Y \\mid Z)$."
+            ],
+            "answer": [
+                1,
+                2,
+                3
+            ],
+            "explanation": "Avec un score de propension $p(Z)$ connu et strictement positif, la pondération IPW permet de construire un estimateur $\\hat m$ qui est à la fois sans biais et consistant pour $\\mathbb E(Y)$. De même, $\\hat \\sigma^2$ est un estimateur consistant de $\\operatorname{Var}(Y)$. Les autres affirmations (sans biaisité de $\\hat \\sigma^2$, propriétés par rapport à $\\mathbb E(Y \\mid Z)$ ou $\\operatorname{Var}(Y \\mid Z)$) ne sont pas satisfaites dans ce cadre.",
+            "tags": [
+                "IPW",
+                "espérance",
+                "variance",
+                "données manquantes",
+                "score de propension"
+            ]
+        },
+        {
+            "id": "rattrapage24-25-q16",
+            "qcm": "Rattrapage 2024-2025",
+            "theme": "Données Incomplètes",
+            "question": "Soit $Y \\in \\mathbb R$ la réponse, $X \\in \\mathbb R$ une covariable, et $\\Delta \\in \\{0,1\\}$ un indicateur aléatoire. On suppose le modèle de régression\n$$Y = a + bX + cX^2 + \\varepsilon, \\qquad \\varepsilon \\perp X,\\; \\mathbb E(\\varepsilon) = 0,\\; \\mathbb E(\\varepsilon^2) = \\sigma^2.$$\nSoit $(Y_i, X_i, \\Delta_i)$, $1 \\le i \\le n$, un échantillon indépendant de $(Y,X,\\Delta)$. La réponse $Y_i$ est observée si et seulement si $\\Delta_i = 1$, sinon elle est manquante. On définit\n$$(\\hat a, \\hat b, \\hat c) = \\arg\\min_{a,b,c} \\sum \\Delta_i\\,\\{Y_i - a - bX_i - cX_i^2\\}^2.$$\nAlors :",
+            "choices": [
+                "La condition MAR $Y \\perp \\Delta \\mid X$ correspond ici à un mécanisme de données manquantes destructif.",
+                "Dans les données réelles, les réponses $Y$ ne sont jamais manquantes.",
+                "L’ordonnée à l’origine $a$ peut être estimée sans biais par la moyenne empirique des $Y_i$.",
+                "$\\hat a$, $\\hat b$ et $\\hat c$ sont sans biais si $\\Delta \\perp Y \\mid X$.",
+                "$\\hat a$, $\\hat b$ et $\\hat c$ sont consistants si $\\mathbb P(\\Delta = 1 \\mid Y, X)$ ne dépend pas de $Y$.",
+                "$\\hat a$, $\\hat b$ et $\\hat c$ sont sans biais si $\\Delta \\perp \\{Y, X\\}$."
+            ],
+            "answer": [
+                3,
+                4,
+                5
+            ],
+            "explanation": "Si la probabilité d’observer $Y$ ne dépend pas de $Y$ conditionnellement à $X$ (condition MAR $Y \\perp \\Delta \\mid X$), la régression MCO sur les seules observations complètes fournit des estimateurs de régression consistants, ce qui justifie la proposition E. Sous MAR, les coefficients sont également sans biais (D). Lorsque le mécanisme est encore plus fort, MCAR ($\\Delta \\perp \\{Y,X\\}$), les estimateurs MCO basés sur les observations complètes restent sans biais (F). Les propositions A, B et C sont fausses.",
+            "tags": [
+                "données manquantes",
+                "MAR",
+                "MCAR",
+                "régression quadratique",
+                "moindres carrés"
+            ]
+        },
+        {
+            "id": "chatgpt1-q01",
+            "qcm": "ChatGPT1",
+            "theme": "Données Incomplètes",
+            "question": "Sous l’hypothèse MAR, laquelle des affirmations suivantes est correcte ?",
+            "choices": [
+                "IPW fournit des estimateurs consistants si le score de propension est correctement spécifié.",
+                "L’imputation est toujours préférable à IPW.",
+                "Ignorer les données manquantes conduit toujours à des estimateurs sans biais.",
+                "MAR implique nécessairement MCAR."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sous MAR, IPW est consistant si le score de propension est correctement modélisé. Les autres affirmations sont fausses."
+        },
+        {
+            "id": "chatgpt1-q02",
+            "qcm": "ChatGPT1",
+            "theme": "Données Incomplètes",
+            "question": "Soit un échantillon censuré à droite et Ŝ la Kaplan–Meier. Laquelle(s) des affirmations suivante(s) est/sont correcte(s) ?",
+            "choices": [
+                "Ŝ est une fonction en escalier décroissante.",
+                "L’estimateur Ŝ peut augmenter lorsque des observations censurées apparaissent.",
+                "Ŝ(t) est toujours inférieur à la fonction de survie empirique non censurée.",
+                "Ŝ ne peut pas être calculée si aucune observation n’est censurée."
+            ],
+            "answer": [
+                0,
+                2
+            ],
+            "explanation": "Ŝ est une fonction en escalier décroissante et ≥ à la survie empirique non censurée. Elle n’augmente jamais."
+        },
+        {
+            "id": "chatgpt1-q03",
+            "qcm": "ChatGPT1",
+            "theme": "Données Incomplètes",
+            "question": "On suppose Δ ∈ {0,1}, Y observé si Δ=1, et p(Z)=P(Δ=1|Z). Laquelle(s) des affirmations suivante(s) est/sont correcte(s) ?",
+            "choices": [
+                "L’estimateur IPW de E(Y) est consistant si Δ ⟂ Y | Z.",
+                "Si p(Z)=0.5 constant, IPW revient à doubler les observations Δ=1.",
+                "L’IPW ne peut pas être utilisé pour estimer des quantiles.",
+                "Si p(Z) est mal spécifié, l’estimation IPW de E(Y) est biaisée."
+            ],
+            "answer": [
+                0,
+                1,
+                3
+            ],
+            "explanation": "L’IPW est consistant sous MAR et peut adapter d’autres critères (médiane, quantiles). Une mauvaise spécification induit un biais."
+        },
+        {
+            "id": "chatgpt1-q04",
+            "qcm": "ChatGPT1",
+            "theme": "Données Incomplètes",
+            "question": "Si Δ ⟂ {Y, X} mais Δ n’est pas indépendant de Y conditionnellement à X, laquelle(s) est/sont correcte(s) ?",
+            "choices": [
+                "L’estimation par moindres carrés sur les données complètes est biaisée.",
+                "Δ ⟂ {Y, X} implique que Y ⟂ X.",
+                "Les méthodes IPW restent applicables.",
+                "Le mécanisme n’est ni MCAR ni MAR."
+            ],
+            "answer": [
+                0,
+                2
+            ],
+            "explanation": "Ignorer les valeurs manquantes est biaisé. Δ ⟂ {Y,X} n’implique rien entre Y et X. IPW reste applicable sous MAR."
+        },
+        {
+            "id": "chatgpt1-q05",
+            "qcm": "ChatGPT1",
+            "theme": "Données Incomplètes",
+            "question": "Dans un schéma de censure à droite, on observe T = min(Y,C), δ = 1{Y ≤ C}. Laquelle(s) est/sont correcte(s) ?",
+            "choices": [
+                "S_T(t) = S_Y(t) S_C(t) si Y ⟂ C.",
+                "P(T > t) = P(Y > t, C > t).",
+                "S_T(t) ≥ S_Y(t).",
+                "Si Y n’est pas indépendant de C, S_T(t) = S_Y(t) S_C(t)."
+            ],
+            "answer": [
+                0,
+                1
+            ],
+            "explanation": "Sous indépendance Y ⟂ C, S_T = S_Y S_C. En général S_T ≤ S_Y."
+        },
+        {
+            "id": "chatgpt1-q06",
+            "qcm": "ChatGPT1",
+            "theme": "Données Incomplètes",
+            "question": "Dans une régression pondérée par IPW, w_i = Δ_i / p(X_i). Laquelle(s) est/sont correcte(s) ?",
+            "choices": [
+                "Les coefficients estimés sont consistants si Δ ⟂ Y | X.",
+                "Si p(X) est petit, les poids w_i sont grands.",
+                "Les estimateurs obtenus sont identiques à ceux des moindres carrés usuels.",
+                "Si p(X) dépend de Y, l’estimation est biaisée."
+            ],
+            "answer": [
+                0,
+                1,
+                3
+            ],
+            "explanation": "L’IPW corrige le biais sous MAR. Si p(X) est mal spécifié ou dépend de Y, l’estimation est biaisée."
+        },
+        {
+            "id": "chatgpt1-q07",
+            "qcm": "ChatGPT1",
+            "theme": "Données Incomplètes",
+            "question": "Laquelle(s) des affirmations suivante(s) est/sont correcte(s) concernant l’imputation ?",
+            "choices": [
+                "L’imputation simple peut sous-estimer la variance.",
+                "L’imputation multiple permet des intervalles de confiance valides.",
+                "L’imputation nécessite MCAR.",
+                "L’imputation multiple est valide sous MAR."
+            ],
+            "answer": [
+                0,
+                1,
+                3
+            ],
+            "explanation": "L'imputation simple réduit artificiellement la variance. L’imputation multiple fonctionne sous MAR."
+        },
+        {
+            "id": "chatgpt1-q08",
+            "qcm": "ChatGPT1",
+            "theme": "Données Incomplètes",
+            "question": "On utilise un estimateur IPW de la variance : σ̂² = (1/n) Σ Δ_i/p(Z_i) (Y_i − m̂)^2. Laquelle(s) est/sont correcte(s) ?",
+            "choices": [
+                "σ̂² est consistant si p(Z) est correctement spécifié.",
+                "σ̂² reste non biaisé même si p(Z) est mal spécifié.",
+                "m̂ doit être estimé avec les mêmes poids IPW.",
+                "σ̂² estime Var(Y|Z) plutôt que Var(Y)."
+            ],
+            "answer": [
+                0,
+                2
+            ],
+            "explanation": "La cohérence de l’estimation dépend de la bonne spécification de p(Z) et de l’utilisation cohérente des mêmes poids."
+        },
+        {
+            "id": "chatgpt2-q01",
+            "qcm": "ChatGPT2",
+            "theme": "Données Incomplètes",
+            "question": "Sous MCAR, laquelle des affirmations suivantes est correcte ?",
+            "choices": [
+                "Δ est indépendant de {Y, X}.",
+                "IPW est indispensable pour garantir l'absence de biais.",
+                "MCAR implique que Y ⟂ X.",
+                "Les estimateurs complets sont généralement biaisés."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "MCAR signifie Δ ⟂ {Y, X}. Les estimateurs complets sont donc sans biais."
+        },
+        {
+            "id": "chatgpt2-q02",
+            "qcm": "ChatGPT2",
+            "theme": "Données Incomplètes",
+            "question": "À propos de la Kaplan–Meier (censure à droite), lesquelles sont correctes ?",
+            "choices": [
+                "En absence totale de censure, Kaplan–Meier correspond exactement à la survie empirique.",
+                "Kaplan–Meier est consistante sous Y ⟂ C.",
+                "Elle augmente lorsque survient une censure.",
+                "Si toutes les observations sont censurées, elle décroît jusqu'à 0."
+            ],
+            "answer": [
+                0,
+                1
+            ],
+            "explanation": "KM est identique à la survie empirique sans censure et est consistante sous indépendance Y ⟂ C."
+        },
+        {
+            "id": "chatgpt2-q03",
+            "qcm": "ChatGPT2",
+            "theme": "Données Incomplètes",
+            "question": "Dans une estimation IPW de E(Y), lesquelles sont correctes ?",
+            "choices": [
+                "IPW est consistant sous MAR si p(Z) est bien spécifié.",
+                "Des p(Z) petits génèrent des poids très grands.",
+                "Une mauvaise spécification de p(Z) entraîne un biais.",
+                "IPW nécessite Δ ⟂ Y inconditionnellement."
+            ],
+            "answer": [
+                0,
+                1,
+                2
+            ],
+            "explanation": "IPW est consistant sous MAR, les poids explosent si p(Z) est petit, et une mauvaise spécification fait apparaître un biais."
+        },
+        {
+            "id": "chatgpt2-q04",
+            "qcm": "ChatGPT2",
+            "theme": "Données Incomplètes",
+            "question": "Dans la régression linéaire de la médiane, laquelle des affirmations suivantes est correcte ?",
+            "choices": [
+                "La perte utilisée est la perte pinball.",
+                "La droite obtenue coïncide avec celle des moindres carrés.",
+                "Elle minimise la variance conditionnelle.",
+                "Elle n'est pas convexe."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La régression quantile utilise la perte pinball. Les autres affirmations sont fausses."
+        },
+        {
+            "id": "chatgpt2-q05",
+            "qcm": "ChatGPT2",
+            "theme": "Données Incomplètes",
+            "question": "Dans un modèle de censure à gauche Z = max(Y, C), lesquelles sont correctes ?",
+            "choices": [
+                "Z = C lorsque Y < C.",
+                "Les petites valeurs de Y sont plus difficiles à observer.",
+                "IPCW peut corriger la censure.",
+                "La censure à gauche signifie que les grandes valeurs sont les plus difficiles à observer."
+            ],
+            "answer": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "explanation": "Toutes les affirmations sont correctes *sauf la dernière*, car en censure à gauche ce sont les petites valeurs qui disparaissent."
+        },
+        {
+            "id": "chatgpt2-q06",
+            "qcm": "ChatGPT2",
+            "theme": "Données Incomplètes",
+            "question": "Dans l’estimation de la variance via IPW, lesquelles sont correctes ?",
+            "choices": [
+                "σ̂² est consistant si p(Z) est correctement spécifié.",
+                "Si m̂ n’est pas pondéré de la même façon, σ̂² peut être biaisé.",
+                "Sous MCAR, p(Z) dépend forcément de Z.",
+                "σ̂² estime Var(Y|Z) plutôt que Var(Y)."
+            ],
+            "answer": [
+                0,
+                1
+            ],
+            "explanation": "La cohérence dépend de la bonne spécification de p(Z) et de l'utilisation cohérente des poids. MCAR → p(Z) constant."
+        },
+        {
+            "id": "chatgpt2-q07",
+            "qcm": "ChatGPT2",
+            "theme": "Données Incomplètes",
+            "question": "À propos de l’imputation multiple, laquelle est correcte ?",
+            "choices": [
+                "Elle prend en compte l’incertitude liée aux valeurs manquantes.",
+                "Elle nécessite MCAR pour être valide.",
+                "Elle génère plusieurs jeux imputés.",
+                "Elle produit toujours des estimateurs biaisés."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L’imputation multiple gère l’incertitude et n'exige pas MCAR."
+        },
+        {
+            "id": "chatgpt2-q08",
+            "qcm": "ChatGPT2",
+            "theme": "Données Incomplètes",
+            "question": "À propos de MAR, MCAR et MNAR, lesquelles sont correctes ?",
+            "choices": [
+                "MCAR implique MAR.",
+                "Dans MAR, Δ dépend de Y uniquement via X.",
+                "Sous MNAR, Δ dépend directement de Y.",
+                "Sous MAR, Δ dépend de Y inconditionnellement."
+            ],
+            "answer": [
+                0,
+                1,
+                2
+            ],
+            "explanation": "MCAR ⊂ MAR. MAR = dépendance via X. MNAR = dépendance directe à Y."
+        },
+        {
+            "id": "chatgpt3-q01",
+            "qcm": "ChatGPT3",
+            "theme": "Données Incomplètes",
+            "question": "Sous MAR, laquelle des affirmations suivantes est correcte ?",
+            "choices": [
+                "Δ dépend de Y uniquement via des covariables observées X.",
+                "MAR implique MCAR.",
+                "Sous MAR, ignorer les données manquantes ne crée jamais de biais.",
+                "MAR signifie que Δ est indépendant de X."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sous MAR, Δ peut dépendre de Y mais uniquement via X."
+        },
+        {
+            "id": "chatgpt3-q02",
+            "qcm": "ChatGPT3",
+            "theme": "Données Incomplètes",
+            "question": "Dans un schéma de censure à droite T = min(Y, C), δ = 1{Y ≤ C}, lesquelles de ces affirmations sont correctes ?",
+            "choices": [
+                "δ = 1 indique que Y est observé.",
+                "Si δ = 0, T = C.",
+                "T est supérieur ou égal à Y.",
+                "Kaplan–Meier nécessite l’indépendance Y ⟂ C."
+            ],
+            "answer": [
+                0,
+                1
+            ],
+            "explanation": "δ=1 signifie non censuré. Si δ=0, l’observation provient de C."
+        },
+        {
+            "id": "chatgpt3-q03",
+            "qcm": "ChatGPT3",
+            "theme": "Données Incomplètes",
+            "question": "Concernant l’IPW pour estimer E(Y), lesquelles des affirmations suivantes sont correctes ?",
+            "choices": [
+                "IPW est consistant sous MAR si p(Z) est correctement spécifié.",
+                "Un petit p(Z_i) entraîne un poids w_i très grand.",
+                "Une mauvaise spécification de p(Z) introduit un biais.",
+                "IPW nécessite Δ ⟂ Y inconditionnellement."
+            ],
+            "answer": [
+                0,
+                1,
+                2
+            ],
+            "explanation": "L’IPW est correct sous MAR, les poids explosent lorsque p(Z) est petit, et une mauvaise spécification crée un biais."
+        },
+        {
+            "id": "chatgpt3-q04",
+            "qcm": "ChatGPT3",
+            "theme": "Données Incomplètes",
+            "question": "À propos de l’imputation simple des valeurs manquantes, laquelle des affirmations suivantes est correcte ?",
+            "choices": [
+                "Elle peut sous-estimer la variance des estimateurs.",
+                "Elle fournit toujours des estimateurs non biaisés.",
+                "Elle est valide sous MNAR.",
+                "Elle préserve toujours la distribution originale."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L’imputation simple sous-estime typiquement la variance. Les autres affirmations sont fausses."
+        },
+        {
+            "id": "chatgpt3-q05",
+            "qcm": "ChatGPT3",
+            "theme": "Données Incomplètes",
+            "question": "Dans une censure à gauche Z = max(Y, C), lesquelles des affirmations suivantes sont correctes ?",
+            "choices": [
+                "Z = C si Y < C.",
+                "Les petites valeurs de Y sont les plus facilement censurées.",
+                "IPCW peut être utilisé pour corriger la censure.",
+                "Z = Y lorsque Y ≥ C.",
+                "La censure à gauche rend l’estimation des grandes valeurs impossible."
+            ],
+            "answer": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "explanation": "Tout est correct sauf la dernière : ce sont les petites valeurs qui disparaissent en censure à gauche."
+        },
+        {
+            "id": "chatgpt3-q06",
+            "qcm": "ChatGPT3",
+            "theme": "Données Incomplètes",
+            "question": "À propos de la régression linéaire pondérée via IPW, lesquelles sont correctes ?",
+            "choices": [
+                "Les estimateurs sont consistants sous MAR si p(X) est correct.",
+                "Ils coïncident avec les moindres carrés si tous les poids valent 1.",
+                "Ils sont toujours sans biais, même si p(X) est incorrect.",
+                "Les poids w_i = Δ_i / p(X_i) sont utilisés dans le critère de minimisation."
+            ],
+            "answer": [
+                0,
+                1
+            ],
+            "explanation": "IPW est consistant sous MAR et retrouve la régression ordinaire si les poids sont tous égaux."
+        },
+        {
+            "id": "chatgpt3-q07",
+            "qcm": "ChatGPT3",
+            "theme": "Données Incomplètes",
+            "question": "Dans la régression linéaire de la médiane (quantile 0.5), laquelle des affirmations suivantes est correcte ?",
+            "choices": [
+                "La perte utilisée est la perte pinball.",
+                "Elle minimise la variance conditionnelle.",
+                "Elle n’est pas convexe.",
+                "La droite obtenue coïncide avec la régression des moindres carrés."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La régression quantile utilise la perte pinball, les autres propositions sont fausses."
+        },
+        {
+            "id": "chatgpt3-q08",
+            "qcm": "ChatGPT3",
+            "theme": "Données Incomplètes",
+            "question": "À propos des mécanismes MAR, MCAR et MNAR, lesquelles sont correctes ?",
+            "choices": [
+                "MCAR implique MAR.",
+                "Sous MAR, Δ dépend de Y uniquement via X.",
+                "Sous MNAR, Δ dépend de Y même après conditionnement sur X.",
+                "MAR implique que Δ ⟂ Y sans conditionnement."
+            ],
+            "answer": [
+                0,
+                1,
+                2
+            ],
+            "explanation": "MCAR ⊂ MAR ; MAR = dépendance via X ; MNAR = dépendance directe à Y."
+        },
+        {
+            "id": "chatgpt4-q01",
+            "qcm": "ChatGPT4",
+            "theme": "Données Incomplètes",
+            "question": "Concernant le mécanisme MNAR, laquelle des affirmations suivantes est correcte ?",
+            "choices": [
+                "Δ dépend directement de Y même après conditionnement sur X.",
+                "MNAR signifie toujours Δ ⟂ Y.",
+                "MNAR est moins général que MAR.",
+                "MNAR garantit l’absence de biais pour les estimateurs naïfs."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "MNAR implique Δ dépend directement de Y. C’est le mécanisme le plus général."
+        },
+        {
+            "id": "chatgpt4-q02",
+            "qcm": "ChatGPT4",
+            "theme": "Données Incomplètes",
+            "question": "Dans une censure à droite, T = min(Y, C) et δ = 1{Y ≤ C}. Lesquelles sont correctes ?",
+            "choices": [
+                "T = Y lorsque δ = 1.",
+                "Si δ = 0, l’observation provient de C.",
+                "Kaplan–Meier est consistante sous Y ⟂ C.",
+                "T est toujours supérieur à Y."
+            ],
+            "answer": [
+                0,
+                1,
+                2
+            ],
+            "explanation": "δ=1 signifie événement observé, donc T=Y. Si δ=0, T=C. KM nécessite indépendance."
+        },
+        {
+            "id": "chatgpt4-q03",
+            "qcm": "ChatGPT4",
+            "theme": "Données Incomplètes",
+            "question": "Pour une estimation IPW de E(Y), lesquelles sont correctes ?",
+            "choices": [
+                "Une mauvaise spécification de p(Z) peut introduire un biais.",
+                "IPW utilise uniquement les observations Δ_i = 1.",
+                "IPW est insensible à la valeur de p(Z).",
+                "IPW nécessite que p(Z) soit strictement positif."
+            ],
+            "answer": [
+                0,
+                1
+            ],
+            "explanation": "IPW utilise seulement Δ=1 et dépend fortement de la précision de p(Z)."
+        },
+        {
+            "id": "chatgpt4-q04",
+            "qcm": "ChatGPT4",
+            "theme": "Données Incomplètes",
+            "question": "Dans une régression linéaire pondérée par IPW, quelles affirmations sont correctes ?",
+            "choices": [
+                "Les poids w_i = Δ_i / p(X_i) apparaissent dans le critère à minimiser.",
+                "Les estimateurs sont consistants sous MAR si p(X) est bien spécifié.",
+                "Si tous les poids sont identiques, on récupère les moindres carrés classiques.",
+                "Les estimateurs restent sans biais même si p(X) est incorrect."
+            ],
+            "answer": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "explanation": "Tout est correct sauf la dernière : si p(X) est incorrect, un biais apparaît."
+        },
+        {
+            "id": "chatgpt4-q05",
+            "qcm": "ChatGPT4",
+            "theme": "Données Incomplètes",
+            "question": "Dans une imputation simple, laquelle est correcte ?",
+            "choices": [
+                "Elle sous-estime généralement la variance.",
+                "Elle fournit une estimation exacte sous MNAR.",
+                "Elle est toujours préférable à l’IPW.",
+                "Elle nécessite de connaître exactement la loi de Y."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L’imputation simple sous-estime la variance, les autres affirmations sont fausses."
+        },
+        {
+            "id": "chatgpt4-q06",
+            "qcm": "ChatGPT4",
+            "theme": "Données Incomplètes",
+            "question": "À propos de la régression quantile (méthode pinball), lesquelles sont correctes ?",
+            "choices": [
+                "La fonction de perte est asymétrique.",
+                "La fonction de coût est convexe.",
+                "IPW peut être utilisée pour corriger les données MAR.",
+                "Elle minimise la variance conditionnelle de Y."
+            ],
+            "answer": [
+                0,
+                1,
+                2
+            ],
+            "explanation": "La perte pinball est convexe et asymétrique, et IPW permet de corriger les données manquantes MAR."
+        },
+        {
+            "id": "chatgpt4-q07",
+            "qcm": "ChatGPT4",
+            "theme": "Données Incomplètes",
+            "question": "Dans une censure à gauche Z = max(Y, C), lesquelles sont correctes ?",
+            "choices": [
+                "Z = C lorsque Y < C.",
+                "Les petites valeurs de Y sont les plus sujettes à la censure.",
+                "La censure à gauche empêche l’observation des grandes valeurs.",
+                "IPCW peut être utilisé pour corriger la censure."
+            ],
+            "answer": [
+                0,
+                1
+            ],
+            "explanation": "En censure à gauche, ce sont les petites valeurs qui disparaissent et Z=C indique une observation censurée."
+        },
+        {
+            "id": "chatgpt4-q08",
+            "qcm": "ChatGPT4",
+            "theme": "Données Incomplètes",
+            "question": "Concernant MAR, MCAR et MNAR, laquelle est correcte ?",
+            "choices": [
+                "MCAR implique MAR.",
+                "MAR implique MCAR.",
+                "MNAR signifie dépendance directe entre Δ et Y.",
+                "Sous MAR, Δ ne dépend jamais de X."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "MCAR ⊂ MAR. MNAR = dépendance directe au Y non observé."
+        },
+        {
+            "id": "chatgpt5-q01",
+            "qcm": "ChatGPT5",
+            "theme": "Données Incomplètes",
+            "question": "Dans le mécanisme MCAR, laquelle des affirmations suivantes est correcte ?",
+            "choices": [
+                "Δ est indépendant de {Y, X}.",
+                "MCAR implique Δ dépend de Y via X.",
+                "Sous MCAR, ignorer les données manquantes ne crée jamais de biais.",
+                "MCAR est plus général que MAR."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "MCAR signifie indépendance totale Δ ⟂ {Y, X}."
+        },
+        {
+            "id": "chatgpt5-q02",
+            "qcm": "ChatGPT5",
+            "theme": "Données Incomplètes",
+            "question": "Dans un contexte de censure à droite, lesquelles des affirmations suivantes sont correctes ?",
+            "choices": [
+                "T = min(Y, C).",
+                "δ = 1 signifie que Y est observé.",
+                "T = max(Y, C).",
+                "Kaplan–Meier ne nécessite aucune hypothèse d’indépendance."
+            ],
+            "answer": [
+                0,
+                1
+            ],
+            "explanation": "La censure à droite utilise min(Y,C) et δ=1 signifie non censuré."
+        },
+        {
+            "id": "chatgpt5-q03",
+            "qcm": "ChatGPT5",
+            "theme": "Données Incomplètes",
+            "question": "Dans l’utilisation des poids IPW pour estimer une moyenne, lesquelles des affirmations suivantes sont correctes ?",
+            "choices": [
+                "Les poids w_i = Δ_i/p(Z_i) doivent être strictement positifs.",
+                "IPW est consistant sous MAR si p(Z) est correctement spécifié.",
+                "Les observations avec Δ_i = 0 contribuent directement à la somme.",
+                "Un p(Z_i) très petit peut rendre l’estimation instable.",
+                "IPW reste sans biais même si p(Z) est incorrect."
+            ],
+            "answer": [
+                0,
+                1,
+                3,
+                4
+            ],
+            "explanation": "IPW requiert p(Z)>0, est consistant sous MAR, et instable si p(Z) est petit."
+        },
+        {
+            "id": "chatgpt5-q04",
+            "qcm": "ChatGPT5",
+            "theme": "Données Incomplètes",
+            "question": "En régression quantile (médiane), laquelle des affirmations suivantes est correcte ?",
+            "choices": [
+                "La perte utilisée est la perte pinball.",
+                "Cette régression minimise E[(Y − Xβ)²].",
+                "La fonction de coût est non convexe.",
+                "Elle fournit toujours la même droite que les moindres carrés."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La régression quantile utilise la perte pinball, les autres propositions sont fausses."
+        },
+        {
+            "id": "chatgpt5-q05",
+            "qcm": "ChatGPT5",
+            "theme": "Données Incomplètes",
+            "question": "À propos de l’imputation multiple, lesquelles des affirmations suivantes sont correctes ?",
+            "choices": [
+                "Elle génère plusieurs jeux de données imputés.",
+                "Elle est valide sous MAR.",
+                "Elle permet d’incorporer l’incertitude due aux valeurs manquantes.",
+                "Elle produit toujours les mêmes valeurs imputées à chaque itération.",
+                "Elle ne nécessite jamais de modèle pour Δ."
+            ],
+            "answer": [
+                0,
+                1,
+                2
+            ],
+            "explanation": "MI génère plusieurs jeux imputés, fonctionne sous MAR et intègre l'incertitude."
+        },
+        {
+            "id": "chatgpt5-q06",
+            "qcm": "ChatGPT5",
+            "theme": "Données Incomplètes",
+            "question": "Dans une censure à gauche Z = max(Y, C), lesquelles des affirmations suivantes sont correctes ?",
+            "choices": [
+                "Les petites valeurs de Y sont les plus censurées.",
+                "Z = C lorsque Y < C.",
+                "Z = Y implique une observation censurée.",
+                "IPCW peut être utilisé pour corriger ce type de censure."
+            ],
+            "answer": [
+                0,
+                1
+            ],
+            "explanation": "En censure à gauche, ce sont les petites valeurs qui disparaissent et Z=C indique censure."
+        },
+        {
+            "id": "chatgpt5-q07",
+            "qcm": "ChatGPT5",
+            "theme": "Données Incomplètes",
+            "question": "Concernant le mécanisme MAR, laquelle des affirmations suivantes est correcte ?",
+            "choices": [
+                "Δ dépend de Y uniquement via des covariables observées X.",
+                "MAR implique MCAR.",
+                "Sous MAR, Δ ne peut jamais dépendre de X.",
+                "MAR signifie indépendance totale Δ ⟂ {Y, X}."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sous MAR, Δ dépend potentiellement de Y via X."
+        },
+        {
+            "id": "chatgpt5-q08",
+            "qcm": "ChatGPT5",
+            "theme": "Données Incomplètes",
+            "question": "À propos de Kaplan–Meier, lesquelles des affirmations suivantes sont correctes ?",
+            "choices": [
+                "L’estimateur peut rester constant entre deux événements.",
+                "Il est identique à la survie empirique en absence de censure.",
+                "Il nécessite l’hypothèse Y ⟂ C.",
+                "Il peut augmenter suite à une censure.",
+                "Il décroît uniquement aux moments d’événement."
+            ],
+            "answer": [
+                0,
+                1,
+                2,
+                4
+            ],
+            "explanation": "KM est constant entre événements, égal à la survie empirique sans censure, nécessite Y ⟂ C, et décroît seulement aux événements."
+        }
+    ]
+}
