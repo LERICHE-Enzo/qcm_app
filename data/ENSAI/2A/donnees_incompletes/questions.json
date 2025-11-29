@@ -1738,6 +1738,375 @@
                 4
             ],
             "explanation": "KM est constant entre événements, égal à la survie empirique sans censure, nécessite Y ⟂ C, et décroît seulement aux événements."
+        },
+        {
+            "id": "chatgpt6-q01",
+            "qcm": "ChatGPT6",
+            "theme": "Données Incomplètes",
+            "question": "Parmi les propositions suivantes, lesquelles caractérisent correctement la situation MCAR (Missing Completely At Random) ?",
+            "choices": [
+                "Δ ⟂ Y",
+                "Δ ⟂ Y | X",
+                "P(Δ = 1) = P(Δ = 0)",
+                "MCAR implique MAR",
+                "MAR implique MCAR"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "MCAR signifie Δ ⟂ {Y, X}. Ici seule la réponse A caractérise correctement MCAR."
+        },
+        {
+            "id": "chatgpt6-q02",
+            "qcm": "ChatGPT6",
+            "theme": "Données Incomplètes",
+            "question": "Sous l’hypothèse MAR pour une variable Y potentiellement manquante, quelles affirmations sont vraies ?",
+            "choices": [
+                "Δ ⟂ Y",
+                "Δ ⟂ Y | X",
+                "Sous MAR, ignorer les observations manquantes ne crée aucun biais",
+                "Sous MAR, l’IPW permet une estimation consistante de E(Y)",
+                "MAR est directement testable empiriquement"
+            ],
+            "answer": [
+                1,
+                3
+            ],
+            "explanation": "MAR signifie Δ ⟂ Y | X, et l'IPW fournit une estimation consistante sous MAR."
+        },
+        {
+            "id": "chatgpt6-q03",
+            "qcm": "ChatGPT6",
+            "theme": "Données Incomplètes",
+            "question": "Concernant la méthode IPW appliquée à des données manquantes sous MAR, quelles propositions sont correctes ?",
+            "choices": [
+                "Elle nécessite un modèle pour le score de propension p(X)",
+                "Elle peut augmenter la variance des estimateurs",
+                "Elle reste non biaisée même si le score de propension est faux",
+                "Elle requiert la connaissance exacte de p(X)",
+                "Elle s'applique naturellement sous MAR"
+            ],
+            "answer": [
+                0,
+                1,
+                4
+            ],
+            "explanation": "IPW requiert le modèle p(X), augmente souvent la variance et s’applique sous MAR."
+        },
+        {
+            "id": "chatgpt6-q04",
+            "qcm": "ChatGPT6",
+            "theme": "Données Incomplètes",
+            "question": "À propos de l’estimateur de Kaplan–Meier pour une durée Y censurée à droite par C, quelles affirmations sont vraies ?",
+            "choices": [
+                "L’estimateur de Kaplan–Meier est une fonction en escalier",
+                "Les sauts se produisent aux temps d’événements non censurés",
+                "On suppose que Y ⟂ C",
+                "L’estimateur est strictement croissant",
+                "L’estimateur est càdlàg"
+            ],
+            "answer": [
+                0,
+                1,
+                2,
+                4
+            ],
+            "explanation": "KM est une fonction en escalier, càdlàg, avec sauts aux événements, et suppose Y ⟂ C."
+        },
+        {
+            "id": "chatgpt6-q05",
+            "qcm": "ChatGPT6",
+            "theme": "Données Incomplètes",
+            "question": "On observe Y censurée à droite par C, T = min(Y,C) et δ = 1{Y ≤ C}. Quelles propositions sont correctes ?",
+            "choices": [
+                "T = max(Y, C)",
+                "T = min(Y, C)",
+                "δ = 1 si Y est observé",
+                "δ = 1 si Y > C",
+                "δ = 0 implique Y < C"
+            ],
+            "answer": [
+                1,
+                2
+            ],
+            "explanation": "T = min(Y,C) et δ = 1 signifie que Y est observé."
+        },
+        {
+            "id": "chatgpt6-q06",
+            "qcm": "ChatGPT6",
+            "theme": "Données Incomplètes",
+            "question": "À propos du biais de longueur (length bias), quelles affirmations sont vraies ?",
+            "choices": [
+                "La probabilité d’observer Y est proportionnelle à Y",
+                "Il s’agit d’un biais lié au schéma d’échantillonnage",
+                "Kaplan–Meier corrige automatiquement ce biais",
+                "Ce biais apparaît dans des études de temps d’attente",
+                "Sans correction, la moyenne observée tend à être surestimée"
+            ],
+            "answer": [
+                0,
+                1,
+                3
+            ],
+            "explanation": "Le length bias provient du schéma d’échantillonnage et favorise les valeurs grandes."
+        },
+        {
+            "id": "chatgpt6-q07",
+            "qcm": "ChatGPT6",
+            "theme": "Données Incomplètes",
+            "question": "Dans un modèle WLS, laquelle est correcte ?",
+            "choices": [
+                "La matrice inversée est WX Xᵀ",
+                "L’estimateur minimise une somme de valeurs absolues",
+                "La matrice inversée est Xᵀ W X",
+                "Les poids doivent être ≤ 1",
+                "WLS = OLS uniquement si les poids sont strictement positifs"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L’estimateur WLS s’écrit (XᵀWX)⁻¹XᵀWY."
+        },
+        {
+            "id": "chatgpt6-q08",
+            "qcm": "ChatGPT6",
+            "theme": "Données Incomplètes",
+            "question": "Pour estimer un quantile conditionnel par IPW sous MAR, quelles propositions sont correctes ?",
+            "choices": [
+                "On utilise la pinball loss pondérée IPW",
+                "On doit supposer un modèle gaussien",
+                "L’IPW corrige le biais lié à MAR",
+                "Il faut MCAR plutôt que MAR",
+                "La méthode donne toujours le même résultat que l’OLS"
+            ],
+            "answer": [
+                0,
+                2
+            ],
+            "explanation": "Régression quantile = pinball loss ; IPW corrige MAR."
+        },
+        {
+            "id": "chatgpt6-q09",
+            "qcm": "ChatGPT6",
+            "theme": "Données Incomplètes",
+            "question": "À propos de l’imputation simple par la moyenne, quelles affirmations sont vraies ?",
+            "choices": [
+                "Elle fait baisser la variance",
+                "Elle peut introduire un biais sous MAR",
+                "Elle préserve généralement les corrélations",
+                "Elle est très simple à implémenter",
+                "Elle corrige correctement MAR"
+            ],
+            "answer": [
+                0,
+                1,
+                3
+            ],
+            "explanation": "Elle réduit la variance, introduit du biais sous MAR et est simple."
+        },
+        {
+            "id": "chatgpt6-q10",
+            "qcm": "ChatGPT6",
+            "theme": "Données Incomplètes",
+            "question": "Concernant l’imputation par régression, quelles propositions sont correctes ?",
+            "choices": [
+                "On utilise U^O pour prédire U^M",
+                "On peut ajouter du bruit résiduel",
+                "Elle peut modifier les corrélations",
+                "Elle peut être consistante sous MAR",
+                "Elle est toujours préférable à IPW"
+            ],
+            "answer": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "explanation": "L’imputation par régression peut être consistante sous MAR, mais peut modifier les corrélations."
+        },
+        {
+            "id": "chatgpt7-q11",
+            "qcm": "ChatGPT7",
+            "theme": "Données Incomplètes",
+            "question": "Concernant l’imputation par kNN, quelles affirmations sont vraies ?",
+            "choices": [
+                "Il est nécessaire de choisir k",
+                "Il s’agit d’une méthode paramétrique",
+                "Il faut définir une distance dans l’espace des variables observées",
+                "Cette méthode ne peut jamais réduire la variance",
+                "Elle ne fonctionne que sous MCAR strict"
+            ],
+            "answer": [
+                0,
+                2
+            ],
+            "explanation": "Le kNN nécessite un choix de k et une distance, mais n’est pas paramétrique."
+        },
+        {
+            "id": "chatgpt7-q12",
+            "qcm": "ChatGPT7",
+            "theme": "Données Incomplètes",
+            "question": "À propos de la SVD pour traiter des données incomplètes, quelle affirmation est correcte ?",
+            "choices": [
+                "Elle permet une réduction de dimension utile avant imputation",
+                "Elle ne fonctionne que si la matrice est diagonale",
+                "Elle augmente nécessairement la variance",
+                "Elle ne s’applique qu’aux variables catégorielles",
+                "Elle est impossible si des données manquent"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La SVD est une méthode de réduction de dimension utile même avant imputation."
+        },
+        {
+            "id": "chatgptадий-q13",
+            "qcm": "ChatGPT7",
+            "theme": "Données Incomplètes",
+            "question": "Sous MCAR, supprimer les observations manquantes (listwise deletion), quelles affirmations sont vraies ?",
+            "choices": [
+                "L’estimateur de E(Y) reste consistant",
+                "L’estimateur devient systématiquement biaisé",
+                "La variance augmente",
+                "Cela suppose que P(Δ = 1) est constant",
+                "Cela équivaut à une pondération IPW complexe"
+            ],
+            "answer": [
+                0,
+                2,
+                3
+            ],
+            "explanation": "Sous MCAR, listwise deletion est sans biais mais réduit l'efficacité."
+        },
+        {
+            "id": "chatgpt7-q14",
+            "qcm": "ChatGPT7",
+            "theme": "Données Incomplètes",
+            "question": "À propos de l’hypothèse MAR, laquelle est correcte ?",
+            "choices": [
+                "Elle est toujours testable",
+                "Elle n’est jamais testable",
+                "Elle est non testable à partir des seules données observées",
+                "Elle devient testable si les données sont continues",
+                "Elle devient testable si une seule covariable est observée"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "MAR est en général non testable avec les seules données observées."
+        },
+        {
+            "id": "chatgpt7-q15",
+            "qcm": "ChatGPT7",
+            "theme": "Données Incomplètes",
+            "question": "Pour des données censurées à droite, si l’on construit naïvement la survie empirique, quelles affirmations sont vraies ?",
+            "choices": [
+                "La survie naïve sous-estime S(t)",
+                "La survie naïve surestime S(t)",
+                "Kaplan–Meier corrige ce biais",
+                "La médiane de survie reste inchangée",
+                "La censure n’a aucun effet"
+            ],
+            "answer": [
+                0,
+                2
+            ],
+            "explanation": "La survie naïve sous-estime S(t). KM corrige sous indépendance."
+        },
+        {
+            "id": "chatgpt7-q16",
+            "qcm": "ChatGPT7",
+            "theme": "Données Incomplètes",
+            "question": "Concernant le survivorship bias, quelles affirmations sont correctes ?",
+            "choices": [
+                "Il survient lorsqu’on observe seulement les survivants",
+                "Il peut surestimer les performances moyennes",
+                "Une pondération IPW peut corriger ce biais",
+                "Il est identique à MAR",
+                "Il est impossible à corriger"
+            ],
+            "answer": [
+                0,
+                1,
+                2
+            ],
+            "explanation": "Le survivorship bias survient quand seuls les survivants sont observés ; IPW peut corriger."
+        },
+        {
+            "id": "chatgpt7-q17",
+            "qcm": "ChatGPT7",
+            "theme": "Données Incomplètes",
+            "question": "Pour estimer une densité de Y sous MAR, quelles affirmations sont vraies ?",
+            "choices": [
+                "Une correction IPW/IPCW est nécessaire",
+                "Une estimation naïve par histogramme est non biaisée",
+                "On peut utiliser Δ/p(X)",
+                "On peut combiner ces poids avec une base orthonormale",
+                "Il faut Y ⟂ X pour utiliser IPW"
+            ],
+            "answer": [
+                0,
+                2,
+                3
+            ],
+            "explanation": "Pour corriger MAR, on utilise Δ/p(X) et on peut faire une projection pondérée."
+        },
+        {
+            "id": "chatgpt7-q18",
+            "qcm": "ChatGPT7",
+            "theme": "Données Incomplètes",
+            "question": "À propos du modèle du score de propension p(X), quelles affirmations sont correctes ?",
+            "choices": [
+                "Il peut être estimé par régression logistique",
+                "Il doit être connu exactement",
+                "Un modèle mal spécifié induit un biais",
+                "Il est identique au modèle de Y",
+                "Il est indépendant de MAR"
+            ],
+            "answer": [
+                0,
+                2
+            ],
+            "explanation": "p(X) est estimé (souvent par logistique) et sa mauvaise spécification entraîne un biais."
+        },
+        {
+            "id": "chatgpt7-q19",
+            "qcm": "ChatGPT7",
+            "theme": "Données Incomplètes",
+            "question": "À propos de la variance des estimateurs IPW, quelles affirmations sont vraies ?",
+            "choices": [
+                "Elle peut devenir très grande si les poids sont élevés",
+                "Elle est toujours plus petite que l’estimateur naïf",
+                "On peut la stabiliser en tronquant les poids",
+                "On peut la stabiliser en normalisant les poids",
+                "Elle est indépendante de la qualité du modèle"
+            ],
+            "answer": [
+                0,
+                2,
+                3
+            ],
+            "explanation": "Les poids extrêmes augmentent la variance ; truncation et normalisation peuvent stabiliser."
+        },
+        {
+            "id": "chatgpt7-q20",
+            "qcm": "ChatGPT7",
+            "theme": "Données Incomplètes",
+            "question": "Concernant la Multiple Imputation, quelles affirmations sont correctes ?",
+            "choices": [
+                "Elle crée plusieurs jeux imputés",
+                "Elle repose sur une approche bayésienne",
+                "Elle estime mieux la variance que l’imputation simple",
+                "Elle nécessite au moins 100 imputations",
+                "Elle est valide sous MAR"
+            ],
+            "answer": [
+                0,
+                1,
+                2,
+                4
+            ],
+            "explanation": "La MI est bayésienne, crée plusieurs jeux imputés, valide sous MAR et donne une variance plus correcte."
         }
     ]
 }

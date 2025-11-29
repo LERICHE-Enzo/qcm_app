@@ -3045,6 +3045,9 @@
         "variables catégorielles",
         "interaction",
         "paramétrisation"
+      ],
+      "id_gen": [
+        "qcm001_2025-11-28"
       ]
     },
     {
@@ -3070,6 +3073,9 @@
         "maximum de vraisemblance",
         "information de Fisher",
         "asymptotique"
+      ],
+      "id_gen": [
+        "qcm001_2025-11-28"
       ]
     },
     {
@@ -3436,6 +3442,579 @@
         "régression logistique",
         "odds ratio",
         "GLM"
+      ]
+    },
+    {
+      "id": "qcm7-q11",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Parmi ces options, quelle est la principale condition à vérifier avant d’appliquer une ANOVA ?",
+      "choices": [
+        "Vérifier que chaque groupe a même taille",
+        "Vérifier la normalité des résidus",
+        "Vérifier que chaque groupe a même espérance",
+        "Détecter la présence de valeurs aberrantes dans les données",
+        "Vérifier que chaque groupe a même variance"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "La principale hypothèse de l’ANOVA est l’homogénéité des variances entre les groupes. C’est la condition essentielle pour que le test F soit valide.",
+      "tags": [
+        "régression linéaire",
+        "ANOVA",
+        "homogénéité des variances"
+      ],
+      "id_gen": [
+        "qcm001_2025-11-28"
+      ]
+    },
+    {
+      "id": "qcm7-q12",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Dans un jeu de données, on observe auprès de chaque individu leur valeur pour une variable quantitative Y ainsi que leur modalité d’appartenance à une variable qualitative groupe. La commande lm(Y~groupe) fournit en sortie 5 estimations nommées intercept, groupeT, groupeR, groupeA, groupeS et valant respectivement : 8, 2, 1.5, -0.5, -1. Quelle est la moyenne de Y des individus dans la modalité R de la variable groupe ?",
+      "choices": [
+        "1.5",
+        "-0.5",
+        "3.5",
+        "9.5",
+        "1",
+        "0.5",
+        "-1"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Dans un modèle linéaire avec codage traitement, la moyenne du groupe de référence est l’intercept (8) et celle d’un autre groupe est intercept + effet du groupe. Pour le groupe R : 8 + 1.5 = 9.5.",
+      "tags": [
+        "régression linéaire",
+        "modèle linéaire",
+        "variables qualitatives"
+      ]
+    },
+    {
+      "id": "qcm7-q13",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Dans un modèle linéaire généralisé (GLM), la fonction de lien sert à :",
+      "choices": [
+        "Relier l’espérance de la variable réponse à une combinaison linéaire des prédicteurs.",
+        "Relier la distribution de Y à une loi Gaussienne.",
+        "Lier la prédiction du modèle à son estimation.",
+        "Décrire la variance des erreurs aléatoires.",
+        "Transformer la variable réponse pour rendre le modèle linéaire."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Dans un GLM, la fonction de lien relie l’espérance de la variable réponse au prédicteur linéaire. C’est le rôle fondamental du lien.",
+      "tags": [
+        "régression linéaire",
+        "GLM",
+        "fonction de lien"
+      ],
+      "id_gen": [
+        "qcm001_2025-11-28"
+      ]
+    },
+    {
+      "id": "qcm7-q14",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Quel type de variable cible est adapté à la régression logistique ?",
+      "choices": [
+        "Une variable continue",
+        "Une variable catégorielle binaire",
+        "Une variable catégorielle multiclasse ordinale",
+        "Une variable de comptage"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La régression logistique est conçue pour modéliser une variable cible binaire.",
+      "tags": [
+        "régression linéaire",
+        "régression logistique"
+      ]
+    },
+    {
+      "id": "qcm7-q15",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Lors de la modélisation de survenue d’un événement par une régression logistique, si l’odds ratio (OR) d’une variable explicative binaire vaut 2, cela signifie que :",
+      "choices": [
+        "La probabilité de l’événement double lorsque la variable explicative vaut 1",
+        "La probabilité de l’événement est de 50%",
+        "L’événement se produit deux fois plus souvent que l’événement complémentaire.",
+        "Le coefficient associé à cette variable vaut ln(2)",
+        "Le coefficient associé à cette variable vaut exp(2)",
+        "Le coefficient associé à cette variable vaut 1/2",
+        "La cote de l’événement est multipliée par 2 lorsque cette variable vaut 1"
+      ],
+      "answer": [
+        3,
+        6
+      ],
+      "explanation": "Un OR de 2 signifie que la cote (odds) est multipliée par 2 quand la variable passe à 1. Le coefficient du modèle logit vaut donc ln(2).",
+      "tags": [
+        "régression linéaire",
+        "régression logistique",
+        "odds ratio"
+      ]
+    },
+    {
+      "id": "qcm7-q16",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "La statistique de test F utilisée dans l’ANOVA à un facteur est définie comme :",
+      "choices": [
+        "La moyenne (normalisée) des différences de moyennes entre chaque groupe",
+        "Le rapport entre la variance intergroupes et la variance intragroupes",
+        "La moyenne (normalisée) des différences de variances entre chaque groupe",
+        "Le rapport entre la variance intergroupes et la variance totale"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Dans l’ANOVA, la statistique F est le rapport entre la variance expliquée (intergroupes) et la variance résiduelle (intragroupes).",
+      "tags": [
+        "régression linéaire",
+        "ANOVA",
+        "statistique F"
+      ]
+    },
+    {
+      "id": "qcm7-q17",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Dans un jeu de données, on observe auprès de chaque individu leur valeur pour une variable quantitative Y ainsi que leur modalité d’appartenance à une variable qualitative groupe. La commande lm(Y~groupe) fournit en sortie 5 estimations nommées intercept, groupeT, groupeR, groupeA, groupeS et valant respectivement : 8, 2, 1.5, -0.5, -1. Combien de modalités présente la variable groupe ?",
+      "choices": [
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le modèle fournit un intercept et un coefficient par modalité supplémentaire. Ici, intercept + 4 coefficients → 5 modalités au total.",
+      "tags": [
+        "régression linéaire",
+        "variables qualitatives",
+        "modèle linéaire"
+      ]
+    },
+    {
+      "id": "qcm7-q18",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Le modèle de régression logistique est un cas particulier de GLM avec :",
+      "choices": [
+        "Une distribution de Poisson pour Y et un lien logarithmique.",
+        "Une distribution de Bernoulli pour Y et un lien logit.",
+        "Une distribution logistique pour Y et un lien exponentielle.",
+        "Une distribution normale pour Y et un lien identité."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "La régression logistique est un GLM avec une distribution de Bernoulli et un lien logit.",
+      "tags": [
+        "régression linéaire",
+        "régression logistique",
+        "GLM"
+      ]
+    },
+    {
+      "id": "qcm7-q19",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Soit p(x) = P(Y = 1|X = x) où Y ∈ {0,1} et x ∈ R^p. Le modèle logistique suppose qu’il existe β tel que",
+      "choices": [
+        "p(x) = logit(β′x)",
+        "p(x) = β′x",
+        "logit^{-1}(p(x)) = β′x",
+        "logit(p(x)) = β′x"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Dans la régression logistique, le modèle impose logit(p(x)) = β′x.",
+      "tags": [
+        "régression linéaire",
+        "régression logistique",
+        "GLM"
+      ]
+    },
+    {
+      "id": "qcm7-q20",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Lors de la modélisation de survenue d’un événement par une régression logistique, l’odds ratio (OR) associée à une variable explicative binaire X vaut 4. Cela signifie que :",
+      "choices": [
+        "La probabilité de l’événement est 4 fois moins grande lorsque X = 1 que lorsque X = 0",
+        "La probabilité de l’événement est 4 fois plus grande lorsque X = 1 que lorsque X = 0",
+        "La côte de l’événement est 4 fois moins grande lorsque X = 1 que lorsque X = 0",
+        "La probabilité de l’événement est plus grande lorsque X = 1 que lorsque X = 0",
+        "La côte de l’événement est plus grande lorsque X = 1 que lorsque X = 0",
+        "La côte de l’événement est 4 fois plus grande lorsque X = 1 que lorsque X = 0"
+      ],
+      "answer": [
+        3,
+        4,
+        5
+      ],
+      "explanation": "Un OR de 4 signifie que la cote (odds) est multipliée par 4 lorsque X passe de 0 à 1. Cela implique aussi une probabilité plus grande pour X = 1.",
+      "tags": [
+        "régression linéaire",
+        "régression logistique",
+        "odds ratio"
+      ]
+    },
+    {
+      "id": "qcm8-q1",
+      "qcm": "QCM8",
+      "theme": "régression linéaire",
+      "question": "Lors de la modélisation de survenue d’un événement par une régression logistique, si l’odds ratio (OR) d’une variable explicative vaut 2, cela signifie que :",
+      "choices": [
+        "L’événement se produit deux fois plus souvent que l’événement complémentaire",
+        "Le coefficient associé à cette variable vaut ln(2)",
+        "La probabilité de l’événement est de 50%",
+        "La cote de l’événement est multipliée par 2 lorsque cette variable augmente d’une unité",
+        "La probabilité de l’événement double lorsque la variable explicative augmente d’une unité.",
+        "Le coefficient associé à cette variable vaut 1/2",
+        "Le coefficient associé à cette variable vaut exp(2)"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Un OR de 2 signifie que la cote (odds) est multipliée par 2 lorsque la variable augmente d’une unité. Dans un modèle logit, le coefficient associé est ln(2).",
+      "tags": [
+        "régression linéaire",
+        "régression logistique",
+        "odds ratio"
+      ]
+    },
+    {
+      "id": "qcm8-q2",
+      "qcm": "QCM8",
+      "theme": "régression linéaire",
+      "question": "Supposons qu’on ait modélisé une variable catégorielle Y ordinale à 4 modalités à l’aide d’un modèle cumulatif, et que ceci a conduit à l’estimation de 12 paramètres. Si l’on utilise à présent un modèle à odds proportionnel, combien de paramètres devra-t-on estimer ?",
+      "choices": [
+        "7",
+        "11",
+        "8",
+        "10",
+        "9",
+        "12",
+        "6"
+      ],
+      "answer": [
+        6
+      ],
+      "explanation": "Avec 4 modalités ordinales, un modèle cumulatif sans contrainte estime séparément des coefficients pour chaque seuil, ce qui peut conduire ici à 12 paramètres. Le modèle à odds proportionnels impose des pentes communes, ce qui réduit le nombre total de paramètres à 6.",
+      "tags": [
+        "régression linéaire",
+        "modèles ordonnés",
+        "odds proportionnels"
+      ]
+    },
+    {
+      "id": "qcm8-q3",
+      "qcm": "QCM8",
+      "theme": "régression linéaire",
+      "question": "Dans une régression log-linéaire de Poisson, qu’estime la prédiction du modèle ?",
+      "choices": [
+        "L’exponentielle de l’espérance de la variable dépendante",
+        "L’espérance de la variable dépendante",
+        "Le logarithme de l’espérance de la variable dépendante",
+        "La probabilité d’un événement"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Dans une régression de Poisson, la prédiction du modèle correspond à l’espérance de la variable dépendante.",
+      "tags": [
+        "régression linéaire",
+        "régression de Poisson",
+        "GLM"
+      ]
+    },
+    {
+      "id": "qcm8-q4",
+      "qcm": "QCM8",
+      "theme": "régression linéaire",
+      "question": "Si Y suit un modèle log-linéaire de Poisson, laquelle de ces affirmations est correcte ?",
+      "choices": [
+        "La variance de Y est constante",
+        "La variance de Y est indépendante des variables explicatives",
+        "La variance de Y est égale à l’information de Fisher",
+        "La variance de Y est égale à son espérance"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Dans un modèle de Poisson, la variance est égale à l’espérance — propriété fondamentale de la loi de Poisson.",
+      "tags": [
+        "régression linéaire",
+        "Poisson",
+        "GLM"
+      ]
+    },
+    {
+      "id": "qcm8-q5",
+      "qcm": "QCM8",
+      "theme": "régression linéaire",
+      "question": "Dans un modèle de régression log-linéaire de Poisson faisant intervenir p régressseurs et n individus, et dont la déviance vaut D, le BIC est défini par",
+      "choices": [
+        "D + 2 ln(p)",
+        "D + 2 p",
+        "D + n ln(p)",
+        "D + p ln(n)"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le critère BIC s’écrit classiquement BIC = D + p ln(n), où p est le nombre de paramètres estimés et n le nombre d’observations.",
+      "tags": [
+        "régression linéaire",
+        "BIC",
+        "modèle de Poisson"
+      ]
+    },
+    {
+      "id": "qcm8-q6",
+      "qcm": "QCM8",
+      "theme": "régression linéaire",
+      "question": "On estime un modèle de régression logistique contenant différentes variables explicatives dont un facteur A à 3 modalités (qui intervient sans interaction). On note sa déviance D1. On estime également le même modèle, mais sans le facteur A : sa déviance est notée D2. Pour comparer ces deux modèles, sur quelle statistique et quelle loi asymptotique le test va-t-il reposer ?",
+      "choices": [
+        "D1 − D2 ∼ χ²(2)",
+        "D2 − D1 ∼ χ²(1)",
+        "D1 − D2 ∼ χ²(3)",
+        "D2 − D1 ∼ χ²(2)",
+        "D2 − D1 ∼ χ²(3)",
+        "D1 − D2 ∼ χ²(1)"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Pour comparer un modèle complet et un modèle emboîté sans le facteur A, on utilise la statistique de rapport de vraisemblance D2 − D1, qui suit asymptotiquement une loi du χ² avec un nombre de degrés de liberté égal au nombre de paramètres supprimés, soit 2 (car A a 3 modalités).",
+      "tags": [
+        "régression linéaire",
+        "régression logistique",
+        "déviance",
+        "test du rapport de vraisemblance"
+      ]
+    },
+    {
+      "id": "qcm8-q7",
+      "qcm": "QCM8",
+      "theme": "régression linéaire",
+      "question": "On souhaite expliquer une variable catégorielle Y contenant 4 modalités, en fonction d’une variable quantitative continue et d’un facteur à 3 modalités. Si on utilise un modèle multinomial, combien de paramètres devra-t-on estimer ?",
+      "choices": [
+        "6",
+        "15",
+        "20",
+        "16",
+        "4",
+        "5",
+        "12"
+      ],
+      "answer": [
+        6
+      ],
+      "explanation": "Un modèle multinomial avec 4 modalités nécessite 3 équations (référence + 3). Chaque équation comporte : 1 intercept, 1 coefficient pour la variable quantitative, et 2 coefficients pour le facteur (à 3 modalités). Soit 4 paramètres par équation → 3×4 = 12 paramètres.",
+      "tags": [
+        "régression linéaire",
+        "multinomial",
+        "modèles catégoriels"
+      ]
+    },
+    {
+      "id": "qcm8-q8",
+      "qcm": "QCM8",
+      "theme": "régression linéaire",
+      "question": "Dans une régression log-linéaire de Poisson expliquant Y, si le coefficient d’une variable explicative X est β, alors une augmentation de X d’une unité correspond à",
+      "choices": [
+        "Une augmentation additive de e^β sur l’espérance de Y",
+        "Une augmentation additive de (1 + e^{-β}) sur l’espérance de Y",
+        "Une multiplication de l’espérance de Y par (1 + e^β)",
+        "Une multiplication de l’espérance de Y par 1/(1+e^{-β})",
+        "Une multiplication de l’espérance de Y par e^β",
+        "Une augmentation additive de β sur l’espérance de Y"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "Dans un modèle log-linéaire de Poisson, l'espérance μ vérifie log(μ)=βX+…, et donc toute augmentation de X d’une unité multiplie μ par e^β.",
+      "tags": [
+        "régression linéaire",
+        "régression de Poisson",
+        "GLM"
+      ]
+    },
+    {
+      "id": "qcm8-q9",
+      "qcm": "QCM8",
+      "theme": "régression linéaire",
+      "question": "Si vous suspectez une surdispersion dans un modèle log-linéaire de Poisson (variance>moyenne), quelle serait une alternative appropriée ?",
+      "choices": [
+        "Un modèle à odds proportionnel",
+        "Un modèle cumulatif",
+        "Un modèle binomial négatif",
+        "Une régression logistique",
+        "Un modèle multinomial"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "En présence de surdispersion (variance supérieure à la moyenne), le modèle de Poisson n’est plus adapté. Le modèle binomial négatif est l’alternative standard.",
+      "tags": [
+        "régression linéaire",
+        "Poisson",
+        "surdispersion",
+        "binomial négatif"
+      ]
+    },
+    {
+      "id": "qcm8-q10",
+      "qcm": "QCM8",
+      "theme": "régression linéaire",
+      "question": "Dans la sortie R d’un modèle log-linéaire de Poisson, Residual deviance correspond à la deviance",
+      "choices": [
+        "du modèle avec que la constante",
+        "du modèle saturé",
+        "du modèle résiduel",
+        "du modèle estimé"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Dans la sortie R, la « Residual deviance » est la déviance du modèle ajusté, c’est-à-dire du modèle estimé, par opposition à la null deviance (modèle avec intercept seul).",
+      "tags": [
+        "régression linéaire",
+        "Poisson",
+        "GLM",
+        "déviance"
+      ]
+    },
+    {
+      "id": "qcm7-q21",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Soit $\\hat{\\beta}$ un estimateur de $\\beta$ dans un modèle de régression logistique. Parmi les expressions suivantes, lesquelles sont des estimateurs valides ?",
+      "choices": [
+        "$\\widehat{OR}(x_1, x_2) = p_{\\hat{\\beta}}(x_1) / p_{\\hat{\\beta}}(x_2)$",
+        "$\\widehat{OR}(x_1, x_2) = e^{(x_1 - x_2)^T \\hat{\\beta}}$",
+        "$\\widehat{OR}(x_1, x_2) = e^{(x_1 + x_2)^T \\hat{\\beta}}$",
+        "$p_{\\hat{\\beta}}(x) = \\text{logit}^{-1}(x^T \\hat{\\beta})$",
+        "$p_{\\hat{\\beta}}(x) = e^{x^T \\hat{\\beta}}$"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Dans un modèle logistique, l’odds ratio entre deux observations est $\\exp((x_1 - x_2)^T \\hat{\\beta})$. La probabilité est donnée par $\\text{logit}^{-1}(x^T \\hat{\\beta})$. Les autres expressions sont incorrectes.",
+      "tags": [
+        "régression linéaire",
+        "régression logistique",
+        "odds ratio",
+        "logit"
+      ]
+    },
+    {
+      "id": "qcm7-q22",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Dans une régression logistique où Y est la variable réponse, on étudie l’effet d’une variable explicative quantitative X^{(j)} dont le coefficient estimé est β̂_j = 3. Si on augmente X^{(j)} de 2 unités, en maintenant toutes les autres variables constantes, alors :",
+      "choices": [
+        "les odds que Y = 1 est multipliée par 6",
+        "la probabilité que Y = 1 est multipliée par 6",
+        "la probabilité que Y = 1 augmente avec X^{(j)}",
+        "la probabilité que Y = 1 est multipliée par e^6",
+        "les odds que Y = 1 est multipliée par e^6"
+      ],
+      "answer": [
+        2,
+        4
+      ],
+      "explanation": "Dans un modèle logistique, augmenter X^{(j)} de 2 unités multiplie les odds par exp(2β̂_j) = e^6. Comme β̂_j = 3 > 0, p(Y=1|X) augmente avec X^{(j)}, mais n’est pas multipliée par une constante.",
+      "tags": [
+        "régression linéaire",
+        "régression logistique",
+        "odds ratio"
+      ],
+      "id_gen": [
+        "qcm001_2025-11-28"
+      ]
+    },
+    {
+      "id": "qcm7-q23",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Nous comparons un modèle logistique avec 15 variables explicatives (en plus de l’interception) à un sous-modèle avec seulement 5. La déviance du modèle complet est D1 = 1200 et celle du sous-modèle est D2 = 1203. Quelle conclusion peut-on tirer d’un test de déviance ?",
+      "choices": [
+        "Nous rejetons H0, le modèle complet est préféré",
+        "Nous rejetons H0, le sous-modèle est préféré",
+        "Nous ne rejetons pas H0, le modèle complet est préféré",
+        "Nous ne rejetons pas H0, le sous-modèle est préféré"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Le test de déviance compare D2 − D1 = 3 avec une loi du χ² à 10 degrés de liberté, puisque le modèle complet comporte 10 paramètres de plus. La valeur 3 n’est pas significative, donc on ne rejette pas H0 et on préfère le sous-modèle plus parcimonieux.",
+      "tags": [
+        "régression linéaire",
+        "régression logistique",
+        "déviance",
+        "test du rapport de vraisemblance"
+      ]
+    },
+    {
+      "id": "qcm7-q24",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Dans la sortie de la fonction glm dans R, la Residual deviance correspond à la déviance :",
+      "choices": [
+        "du modèle résiduel",
+        "du modèle saturé",
+        "du modèle ajusté",
+        "du modèle avec seulement la constante"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Dans R, la Residual deviance est la déviance du modèle ajusté (fitted model), tandis que la Null deviance correspond au modèle avec uniquement l’intercept.",
+      "tags": [
+        "régression linéaire",
+        "GLM",
+        "déviance",
+        "R"
+      ]
+    },
+    {
+      "id": "qcm7-q25",
+      "qcm": "QCM7",
+      "theme": "régression linéaire",
+      "question": "Nous ajustons un modèle logistique multinomial où Y est une variable avec 4 catégories. Le modèle inclut 3 régressseurs, sans interactions, et une constante. Deux régressseurs sont quantitatifs et un est qualitatif avec 5 catégories. Combien de paramètres sont estimés au total ?",
+      "choices": [
+        "11",
+        "24",
+        "18",
+        "28",
+        "21"
+      ],
+      "answer": [
+        4
+      ],
+      "explanation": "Un modèle multinomial avec 4 catégories nécessite 3 équations. Chaque équation comprend : 1 intercept, 2 coefficients pour les variables quantitatives et 4 coefficients pour la variable qualitative à 5 modalités. Cela fait 7 paramètres par équation, soit 21 au total.",
+      "tags": [
+        "régression linéaire",
+        "multinomiale",
+        "GLM",
+        "variables qualitatives"
       ]
     }
   ]
