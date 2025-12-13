@@ -1,0 +1,454 @@
+{
+    "questions": [
+        {
+            "id": "2024-id01",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "On effectue la régression suivante : $\\log(salaire_i) = a + b\\,educ_i + c\\,age_i + d\\,age_i^2 + e\\,\\mathbb{1}_{\\{syndicat_i=1\\}} + f\\,\\mathbb{1}_{\\{syndicat_i=1\\}}\\times educ_i + u_i$. L’indicatrice $\\mathbb{1}_{\\{syndicat_i=1\\}}$ vaut 1 si l’individu $i$ est syndiqué et 0 sinon. L’estimateur de l’effet moyen de l’âge sur le logarithme du salaire pour les personnes syndiquées est donné par :",
+            "choices": [
+                "$\\hat c + \\hat e$",
+                "$\\hat c + 2\\hat d\\,age_i$",
+                "$\\hat c$",
+                "$\\hat c + 2\\,age_i + \\hat e$",
+                "$2\\hat d\\,age_i + \\hat e$",
+                "$2\\hat d + \\hat e$",
+                "$2\\hat d$",
+                "$\\hat c + 2\\hat d\\,age_i + \\hat e$"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’effet marginal de l’âge sur $\\log(salaire_i)$ est la dérivée par rapport à $age_i$, soit $\\hat c + 2\\hat d\\,age_i$. L’indicatrice de syndicalisation n’interagit pas avec l’âge, donc l’effet est identique pour les individus syndiqués.",
+            "tags": [
+                "indicatrice",
+                "mathbb",
+                "effet marginal",
+                "régression quadratique"
+            ]
+        },
+        {
+            "id": "2024-id02",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Dans la régression précédente, quelle(s) assertion(s) est (sont) vraie(s) ?",
+            "choices": [
+                "Une augmentation du nombre d’années d’éducation de 1% augmente le salaire de $100\\cdot b\\%$ en moyenne pour les personnes non syndiquées.",
+                "Une augmentation du nombre d’années d’éducation de 1 an augmente le salaire de $100\\cdot b\\%$ en moyenne pour les personnes non syndiquées.",
+                "Une augmentation du nombre d’années d’éducation de 1% augmente le salaire de $b$ unités en moyenne pour les personnes non syndiquées.",
+                "Une augmentation du nombre d’années d’éducation de 1 an augmente le log salaire de $b$ unités en moyenne pour les personnes non syndiquées."
+            ],
+            "answer": [
+                1,
+                3
+            ],
+            "explanation": "Dans un modèle $\\log(salaire_i)=\\dots + b\\,educ_i + \\dots$, pour les non-syndiqués (indicatrice = 0), une hausse de $educ$ d’une unité augmente exactement $\\log(salaire)$ de $b$. Cela correspond à une hausse approximative du salaire de $100\\cdot b\\%$ (plus précisément $100(\\exp(b)-1)\\%$). Les variations en pourcentage de $educ$ (1%) ne s’interprètent pas ainsi car $educ$ n’est pas en logarithme.",
+            "tags": [
+                "interprétation des coefficients",
+                "log-linéaire",
+                "semi-élasticité",
+                "éducation"
+            ]
+        },
+        {
+            "id": "2024-id03",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Que fait le test de Hausman dans le contexte des modèles de données de panel ?",
+            "choices": [
+                "Il teste la normalité des résidus.",
+                "Il teste l’hypothèse d’homoscédasticité.",
+                "Il teste la corrélation entre les effets individuels et les variables explicatives.",
+                "Il teste l’égalité des coefficients estimés par les modèles à effets fixes et à effets aléatoires."
+            ],
+            "answer": [
+                2,
+                3
+            ],
+            "explanation": "Le test de Hausman évalue l’hypothèse nulle selon laquelle les effets individuels ne sont pas corrélés avec les variables explicatives. Si cette hypothèse est rejetée, l’estimateur à effets aléatoires est inconsistant et on privilégie le modèle à effets fixes.",
+            "tags": [
+                "test de Hausman",
+                "données de panel",
+                "effets fixes",
+                "effets aléatoires"
+            ]
+        },
+        {
+            "id": "2024-id04",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Quel est l’objectif principal de la méthode des variables instrumentales (IV) en économétrie ?",
+            "choices": [
+                "Minimiser la variance des coefficients estimés.",
+                "Contrôler l’hétéroscédasticité des résidus.",
+                "Remédier à l’endogénéité des variables explicatives.",
+                "Remédier au problème de colinéarité entre les variables indépendantes."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La méthode des variables instrumentales vise à obtenir des estimateurs consistants lorsque certaines variables explicatives sont endogènes, c’est-à-dire corrélées avec le terme d’erreur. Elle ne cherche pas à minimiser la variance ni à corriger l’hétéroscédasticité ou la colinéarité.",
+            "tags": [
+                "variables instrumentales",
+                "endogénéité",
+                "estimateur IV",
+                "identification"
+            ]
+        },
+        {
+            "id": "2024-id05",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Quelle est l’hypothèse clé du modèle à effets aléatoires ?",
+            "choices": [
+                "Les effets individuels sont corrélés avec les variables explicatives.",
+                "Les effets individuels sont indépendants des variables explicatives.",
+                "Les effets individuels varient systématiquement dans le temps.",
+                "Les effets individuels sont constants pour tous les individus."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le modèle à effets aléatoires repose sur l’hypothèse fondamentale que les effets individuels non observés sont non corrélés avec les variables explicatives. Cette condition garantit la consistance de l’estimateur à effets aléatoires.",
+            "tags": [
+                "effets aléatoires",
+                "données de panel",
+                "hypothèse clé",
+                "corrélation"
+            ]
+        },
+        {
+            "id": "2024-id06",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Dans une étude comparant les performances économiques de plusieurs pays au cours du temps, quel modèle serait le plus pertinent si les caractéristiques non observées des pays ne sont pas corrélées aux variables explicatives ?",
+            "choices": [
+                "Modèle à effets fixes.",
+                "Modèle à effets aléatoires.",
+                "Modèle des moindres carrés ordinaires.",
+                "Modèle de régression simple."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Lorsque les effets individuels non observés ne sont pas corrélés avec les variables explicatives, le modèle à effets aléatoires est approprié et plus efficace que le modèle à effets fixes. Les modèles MCO ou de régression simple ne tiennent pas compte de la structure de panel.",
+            "tags": [
+                "données de panel",
+                "effets aléatoires",
+                "choix du modèle",
+                "comparaison internationale"
+            ]
+        },
+        {
+            "id": "2024-id07",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Lequel de ces scénarios est le mieux adapté à un modèle à effets fixes ?",
+            "choices": [
+                "Étude de la performance des élèves dans plusieurs écoles, où les écoles diffèrent sur des aspects non observés mais fixes.",
+                "Analyse de la productivité des entreprises, avec des différences aléatoires entre les entreprises.",
+                "Étude des habitudes alimentaires où les caractéristiques des individus ne varient pas avec le temps.",
+                "Analyse d’une série temporelle univariée."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le modèle à effets fixes est adapté lorsque les unités (ici les écoles) présentent des caractéristiques non observées mais constantes dans le temps et potentiellement corrélées avec les variables explicatives. Il permet de contrôler ces effets inobservables fixes.",
+            "tags": [
+                "effets fixes",
+                "données de panel",
+                "hétérogénéité inobservée",
+                "éducation"
+            ]
+        },
+        {
+            "id": "2024-id08",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Quelles sont les deux étapes principales de la méthode des variables instrumentales ?",
+            "choices": [
+                "Estimation des résidus, puis régression de la variable dépendante sur ces résidus.",
+                "Identification de la VI (variable instrumentale), puis estimation par maximum de vraisemblance de l’effet de la VI sur la variable dépendante.",
+                "Estimation de la variable endogène à partir de la VI, puis régression de la variable dépendante sur la variable endogène.",
+                "Régression multiple, puis test de significativité de la VI dans la régression de la variable dépendante sur la VI."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La méthode des variables instrumentales (souvent mise en œuvre via les moindres carrés en deux étapes, 2SLS) consiste d’abord à estimer la variable endogène à l’aide de la variable instrumentale (première étape), puis à utiliser la valeur prédite de cette variable endogène dans une régression de la variable dépendante (seconde étape).",
+            "tags": [
+                "variables instrumentales",
+                "2SLS",
+                "endogénéité",
+                "estimation en deux étapes"
+            ]
+        },
+        {
+            "id": "2024-id09",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Dans un modèle avec une variable explicative endogène, pourquoi est-il important de s’assurer que la VI est pertinente ?",
+            "choices": [
+                "Pour garantir que le modèle est identique à une régression classique.",
+                "Pour éviter que la VI introduise un biais supplémentaire.",
+                "Pour s’assurer que la VI est fortement corrélée avec la variable explicative endogène.",
+                "Pour rendre le modèle plus simple à interpréter."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une variable instrumentale non pertinente (faiblement corrélée avec la variable endogène) peut conduire à des estimateurs biaisés et instables. La correction insiste ici sur l’idée qu’un mauvais instrument peut aggraver les biais au lieu de les corriger.",
+            "tags": [
+                "variables instrumentales",
+                "pertinence de l'instrument",
+                "biais",
+                "endogénéité"
+            ]
+        },
+        {
+            "id": "2024-id10",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Dans quel cas pratique utiliseriez-vous une variable instrumentale ?",
+            "choices": [
+                "Pour analyser l’effet de l’éducation sur le revenu en tenant compte des facteurs non observés comme la motivation.",
+                "Pour estimer une simple relation linéaire entre deux variables exogènes.",
+                "Pour corriger une erreur de mesure dans la variable dépendante.",
+                "Pour tester l’impact d’une politique publique à l’aide de données de séries temporelles."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "On utilise une variable instrumentale lorsqu’une variable explicative est endogène, par exemple l’éducation qui peut être corrélée avec des facteurs non observés comme la motivation ou les capacités. La VI permet alors d’obtenir une estimation consistante de l’effet causal.",
+            "tags": [
+                "variables instrumentales",
+                "endogénéité",
+                "éducation",
+                "effet causal"
+            ]
+        },
+        {
+            "id": "2024-id11",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Une enquête utilise la distance entre le domicile et l’université comme VI pour étudier l’effet de l’éducation supérieure sur le revenu. Pourquoi cette variable pourrait-elle être un bon instrument ?",
+            "choices": [
+                "Parce qu’elle est indépendante du revenu et corrélée à l’éducation supérieure.",
+                "Parce qu’elle influence directement le revenu.",
+                "Parce qu’elle est constante dans le temps.",
+                "Parce qu’elle explique les différences individuelles non observées."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La distance à l’université est un bon instrument potentiel si elle satisfait les deux conditions d’une VI : (i) pertinence — elle influence la probabilité de faire des études supérieures, et (ii) exogénéité — elle n’affecte pas directement le revenu autrement que par l’éducation.",
+            "tags": [
+                "variables instrumentales",
+                "pertinence",
+                "exogénéité",
+                "éducation"
+            ]
+        },
+        {
+            "id": "2024-id12",
+            "qcm": "Partiel-2024",
+            "theme": "Econométrie",
+            "question": "Si une variable instrumentale est faible, quelles sont les conséquences sur l’estimation ?",
+            "choices": [
+                "Les estimations seront non biaisées mais moins précises.",
+                "Les estimations seront biaisées et inconsistantes.",
+                "Les estimations seront biaisées mais consistantes.",
+                "Il n’y aura aucun impact sur l’estimation."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Lorsque l’instrument est faible mais valide, l’estimateur par variables instrumentales est biaisé en échantillon fini, mais reste consistant lorsque la taille de l’échantillon tend vers l’infini. C’est cette interprétation théorique qui est retenue dans la correction.",
+            "tags": [
+                "variables instrumentales",
+                "instrument faible",
+                "biais",
+                "consistance asymptotique"
+            ]
+        },
+        {
+            "id": "2023-id01",
+            "qcm": "Partiel-2023",
+            "theme": "Econométrie",
+            "question": "On effectue la régression suivante : $\\log(salaire_i)= a + b\\,educ_i + c\\,age_i + d\\,\\mathbb{1}_{\\{syndicat_i=1\\}} + e\\,\\mathbb{1}_{\\{syndicat_i=1\\}}\\times educ_i + u_i$, où $\\mathbb{1}_{\\{syndicat_i=1\\}}$ est une indicatrice qui vaut 1 si l’individu $i$ est syndiqué et 0 sinon. L’estimateur de l’effet moyen d’une année d’éducation sur le logarithme du salaire pour les personnes non-syndiquées est donné par :",
+            "choices": [
+                "$\\hat b$",
+                "$\\hat d$",
+                "$\\hat e$",
+                "$\\hat b + \\hat e$",
+                "$\\hat d + \\hat e$",
+                "$\\hat b + \\hat d + \\hat e$"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Pour les non-syndiqués, on a $\\mathbb{1}_{\\{syndicat_i=1\\}}=0$, donc le terme d’interaction disparaît et l’effet marginal de $educ_i$ sur $\\log(salaire_i)$ est simplement $b$. L’estimateur est donc $\\hat b$.",
+            "tags": [
+                "interaction",
+                "variable indicatrice",
+                "effet marginal",
+                "log-linéaire"
+            ]
+        },
+        {
+            "id": "2023-id02",
+            "qcm": "Partiel-2023",
+            "theme": "Econométrie",
+            "question": "Dans la régression précédente, quelle(s) assertion(s) est (sont) vraie(s) ?",
+            "choices": [
+                "Une augmentation de l’âge de $1\\%$ augmente le salaire de $100\\cdot c\\%$ en moyenne.",
+                "Une augmentation de l’âge de 1 an augmente le salaire de $100\\cdot c\\%$ en moyenne.",
+                "Une augmentation de l’âge de $1\\%$ augmente le salaire de $c$ unités en moyenne.",
+                "Une augmentation de l’âge de 1 an augmente le log salaire de $c$ unités en moyenne."
+            ],
+            "answer": [
+                1,
+                3
+            ],
+            "explanation": "Dans un modèle $\\log(salaire_i)=\\dots + c\\,age_i + \\dots$, une hausse de $age$ d’une unité (1 an) augmente $\\log(salaire)$ de $c$ (exactement). En termes de salaire, cela correspond approximativement à une hausse de $100\\cdot c\\%$ (plus précisément $100(\\exp(c)-1)\\%$). Les variations en pourcentage de l’âge ne se lisent pas ainsi car $age$ n’est pas en logarithme.",
+            "tags": [
+                "interprétation des coefficients",
+                "log-linéaire",
+                "semi-élasticité",
+                "âge"
+            ]
+        },
+        {
+            "id": "2023-id03",
+            "qcm": "Partiel-2023",
+            "theme": "Econométrie",
+            "question": "Que fait le test de Hausman dans le contexte des modèles de données de panel ?",
+            "choices": [
+                "Il teste la normalité des résidus.",
+                "Il teste l’hypothèse d’homoscédasticité.",
+                "Il teste la corrélation entre les effets individuels et les variables explicatives.",
+                "Il teste l’égalité des coefficients estimés par les modèles à effets fixes et à effets aléatoires."
+            ],
+            "answer": [
+                2,
+                3
+            ],
+            "explanation": "Le test de Hausman a pour hypothèse nulle que les effets individuels ne sont pas corrélés avec les variables explicatives. En pratique, cela revient à tester si les estimateurs des modèles à effets fixes et à effets aléatoires sont statistiquement égaux. Si l’égalité est rejetée, on privilégie le modèle à effets fixes.",
+            "tags": [
+                "test de Hausman",
+                "données de panel",
+                "effets fixes",
+                "effets aléatoires"
+            ]
+        },
+        {
+            "id": "2023-id04",
+            "qcm": "Partiel-2023",
+            "theme": "Econométrie",
+            "question": "Dans le modèle suivant $y_{it}= b_0 + b_1 x_{1it} + b_2 x_{2it} + a_i + e_{it}$, on suppose que $\\mathbb{E}(a_i\\mid x_{1it},x_{2it}, t=1,\\ldots,T)=0$. Quelle(s) méthode(s) peut-on utiliser pour estimer $b_1$ et $b_2$ sans biais ?",
+            "choices": [
+                "La méthode des Effets Fixes.",
+                "La méthode des Effets Aléatoires.",
+                "La méthode des Moindres Carrés Ordinaires.",
+                "Les trois méthodes précédentes."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L’hypothèse $\\mathbb{E}(a_i\\mid X)=0$ signifie que l’effet individuel $a_i$ n’est pas corrélé avec les régresseurs. Dans ce cas, l’estimateur à effets aléatoires est approprié et l’estimateur MCO (sur données poolées) est sans biais pour $b_1$ et $b_2$ ; l’estimateur à effets fixes reste également sans biais (bien que potentiellement moins efficace).",
+            "tags": [
+                "panel",
+                "effets aléatoires",
+                "effets fixes",
+                "exogénéité"
+            ]
+        },
+        {
+            "id": "2023-id05",
+            "qcm": "Partiel-2023",
+            "theme": "Econométrie",
+            "question": "Dans le modèle suivant $y_{it}= b_0 + b_1 x_{1it} + b_2 x_{2it} + a_i + e_{it}$, on suppose que $\\mathbb{E}(a_i\\mid X)=1$. Quelle(s) méthode(s) peut-on utiliser pour estimer $b_1$ et $b_2$ sans biais ?",
+            "choices": [
+                "La méthode des Effets Fixes.",
+                "La méthode des Effets Aléatoires.",
+                "La méthode des Moindres Carrés Ordinaires.",
+                "Les trois méthodes précédentes."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L’hypothèse $\\mathbb{E}(a_i\\mid X)=1$ signifie que l’effet individuel $a_i$ n’est pas corrélé avec les variables explicatives, mais a une moyenne non nulle. Cette constante est absorbée dans l’ordonnée à l’origine du modèle. Les estimateurs MCO, à effets aléatoires et à effets fixes permettent donc tous d’estimer $b_1$ et $b_2$ sans biais.",
+            "tags": [
+                "panel",
+                "effets individuels",
+                "exogénéité",
+                "biais"
+            ]
+        },
+        {
+            "id": "2023-id06",
+            "qcm": "Partiel-2023",
+            "theme": "Econométrie",
+            "question": "Dans quelle situation le modèle à effets aléatoires est-il généralement préférable au modèle à effets fixes ?",
+            "choices": [
+                "Lorsqu’il y a une corrélation entre les effets individuels et les variables explicatives.",
+                "Lorsqu’il y a une hétérogénéité individuelle importante.",
+                "Lorsqu’on s’attend à ce que les effets individuels soient constants dans le temps.",
+                "Lorsque les effets individuels sont indépendants des variables explicatives."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le modèle à effets aléatoires est préférable lorsque les effets individuels ne sont pas corrélés avec les variables explicatives. Dans ce cas, l’estimateur à effets aléatoires est consistant et plus efficace que l’estimateur à effets fixes. En présence de corrélation, il devient biaisé et on privilégie les effets fixes.",
+            "tags": [
+                "effets aléatoires",
+                "effets fixes",
+                "données de panel",
+                "hypothèse d’exogénéité"
+            ]
+        },
+        {
+            "id": "2023-id07",
+            "qcm": "Partiel-2023",
+            "theme": "Econométrie",
+            "question": "Quel est l’objectif principal de la méthode des variables instrumentales (IV) en économétrie ?",
+            "choices": [
+                "Minimiser la variance des coefficients estimés.",
+                "Contrôler l’hétéroscédasticité des résidus.",
+                "Remédier à l’endogénéité des variables explicatives.",
+                "Remédier au problème de colinéarité entre les variables indépendantes."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La méthode des variables instrumentales est utilisée lorsque certaines variables explicatives sont endogènes, c’est-à-dire corrélées avec le terme d’erreur. Les IV permettent d’obtenir des estimateurs consistants en isolant la composante exogène de ces variables, mais elles n’ont pas pour objectif de minimiser la variance, ni de corriger l’hétéroscédasticité ou la colinéarité.",
+            "tags": [
+                "variables instrumentales",
+                "endogénéité",
+                "estimateur IV",
+                "causalité"
+            ]
+        },
+        {
+            "id": "2023-id08",
+            "qcm": "Partiel-2023",
+            "theme": "Econométrie",
+            "question": "Pourquoi est-il important que les instruments utilisés dans la méthode IV soient corrélés avec les variables explicatives endogènes ?",
+            "choices": [
+                "Pour maximiser la précision des estimations.",
+                "Pour éviter la colinéarité entre les instruments et les variables explicatives.",
+                "Pour garantir l’homoscédasticité des résidus.",
+                "Pour isoler l’effet causal des variables explicatives."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La corrélation entre l’instrument et la variable explicative endogène (condition de pertinence) est essentielle pour que l’instrument permette d’extraire la composante exogène de la variable endogène. C’est cette variation exogène qui permet d’identifier et d’estimer l’effet causal recherché.",
+            "tags": [
+                "variables instrumentales",
+                "pertinence",
+                "effet causal",
+                "endogénéité"
+            ]
+        }
+    ]
+}

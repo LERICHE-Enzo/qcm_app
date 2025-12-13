@@ -1,0 +1,196 @@
+{
+    "questions": [
+        {
+            "id": "micro-q01",
+            "qcm": "Examen 2023",
+            "theme": "Microeconomie",
+            "question": "Le premier théorème du bien-être énonce que tout:",
+            "choices": [
+                "Équilibre de Pareto est un optimum général",
+                "Équilibre général est un optimum de Pareto",
+                "Équilibre général n'est pas un optimum de Pareto",
+                "Équilibre général peut être atteint à partir d'allocations optimales"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le Premier Théorème du Bien-Être stipule qu'un équilibre général (concurrentiel) est une allocation Pareto-optimale (Choix B)."
+        },
+        {
+            "id": "micro-q02",
+            "qcm": "Examen 2023",
+            "theme": "Microeconomie",
+            "question": "Le paradoxe de Saint Pétersbourg montre que :",
+            "choices": [
+                "La valorisation par le critère de l'espérance mathématique conduit à une prime de risque infini",
+                "Les agents sont prêts à payer un prix infini pour participer à la loterie",
+                "Les agents sont prêts à payer une prime de risque infinie pour participer à la loterie",
+                "Les agents refusent de participer à cette loterie car elle est trop risquée"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Ce paradoxe met en évidence la limite du critère de l'espérance mathématique, car il prédit une valeur infinie pour une loterie (conduisant à une prime de risque infinie). (Choix A)."
+        },
+        {
+            "id": "micro-q03",
+            "qcm": "Examen 2023",
+            "theme": "Microeconomie",
+            "question": "L'agent représentatif implique que:",
+            "choices": [
+                "Les consommations ne sont pas calculables",
+                "Les prix se déduisent des conditions d'optimalité",
+                "Le financement de l'économie est sans effet sur les prix d'équilibre",
+                "Les consommations sont proportionnelles à la valorisation boursière de l'économie"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans le modèle de l'agent représentatif (TMS homogènes de degré 0), les consommations individuelles sont proportionnelles à la richesse relative de l'agent (sa richesse actualisée divisée par la richesse globale), qui est liée à la valorisation boursière de l'économie. (Choix D)."
+        },
+        {
+            "id": "micro-q04",
+            "qcm": "Examen 2023",
+            "theme": "Microeconomie",
+            "question": "L'équivalent certain définit :",
+            "choices": [
+                "Le montant qu'un agent est prêt à payer pour se départir d'un risque, et ce pour une richesse donnée",
+                "Le montant qu'un agent est prêt à payer pour acquérir un risque, et ce pour une richesse donnée",
+                "Le montant qui procure à un agent le même niveau d'utilité qu'une loterie, et ce pour une richesse donnée",
+                "La valorisation monétaire d'une loterie"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'Équivalent Certain (EC) est le montant de richesse certain qui procure à l'agent le même niveau d'utilité (satisfaction) que la loterie risquée ($U(\text{EC}) = E[U(\text{Loterie})]$). (Choix C)."
+        },
+        {
+            "id": "micro-q05",
+            "qcm": "Examen 2023",
+            "theme": "Microeconomie",
+            "question": "Le théorème de la neutralité de la politique de financement énonce :",
+            "choices": [
+                "Que les dividendes redistribuent la valeur boursière d'une firme pendant la durée de son existence",
+                "Que les profits sont redistribués à la date de leur réalisation",
+                "Que les apporteurs de capitaux doivent obligatoirement recevoir des dividendes à chaque date de l'économie",
+                "Que les dividendes sont nécessairement réinvestis"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le Théorème de Modigliani-Miller (souvent associé à la neutralité du financement) stipule que la valeur d'une entreprise est indépendante de sa politique de dividendes ou de son financement. Le choix A est la meilleure description de l'impact des dividendes sans effet sur la valeur. (Choix A)."
+        },
+        {
+            "id": "micro-q06",
+            "qcm": "Examen 2023",
+            "theme": "Microeconomie",
+            "question": "L'absence d'opportunité d'arbitrage implique que :",
+            "choices": [
+                "Le profit actualisé d'une stratégie financière est nul",
+                "Le prix d'un actif financier peut être négatif",
+                "Le prix d'un actif financier peut être positif",
+                "Les revenus de la stratégie financière sont non négatifs"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'Absence d'Opportunité d'Arbitrage (AOA) signifie qu'il est impossible de réaliser un profit certain sans engager de dépenses. Donc, toute stratégie d'arbitrage a un profit actualisé nul. (Choix A)."
+        },
+        {
+            "id": "micro-q07",
+            "qcm": "Examen 2022",
+            "theme": "Microeconomie",
+            "question": "L'aversion à l'égard du risque traduit :",
+            "choices": [
+                "Un désamour du risque",
+                "Un amour du risque",
+                "Une crainte du risque",
+                "Une indifférence au risque"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'aversion au risque est une préférence des agents à éviter le risque, ce qui se traduit par une crainte du risque (Choix C)[cite: 2604]."
+        },
+        {
+            "id": "micro-q08",
+            "qcm": "Examen 2022",
+            "theme": "Microeconomie",
+            "question": "Le paradoxe d'Allais montre que :",
+            "choices": [
+                "Que tous les axiomes nécessaires à la construction de la fonction d'utilité vnm sont respectés",
+                "L'axiome d'indépendance n'est pas respecté",
+                "L'axiome de continuité n'est pas respecté",
+                "L'axiome de transitivité n'est pas respecté"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le paradoxe d'Allais est l'expérience classique qui démontre que l'axiome d'indépendance de la théorie de l'utilité espérée n'est pas toujours respecté (Choix B)[cite: 2608]."
+        },
+        {
+            "id": "micro-q09",
+            "qcm": "Examen 2022",
+            "theme": "Microeconomie",
+            "question": "L'homogénéité de degré 0 d'un TMS implique que :",
+            "choices": [
+                "Les consommations sont constantes",
+                "Les consommations sont croissantes",
+                "Les consommations les décroissantes",
+                "Les consommations sont proportionnelles"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'homogénéité de degré 0 d'un TMS (préférences homothétiques) signifie que les ratios de consommation (consommations) sont constants le long d'un rayon et donc que les consommations sont proportionnelles à la richesse (Choix D)[cite: 2615]."
+        },
+        {
+            "id": "micro-q10",
+            "qcm": "Examen 2022",
+            "theme": "Microeconomie",
+            "question": "Le théorème de séparation de Fisher stipule que :",
+            "choices": [
+                "Les décisions réelles de production sont prises indépendamment des décisions réelles de consommation",
+                "Les décisions de consommations ne dépendent que de la technologie de l'économie et des dotations en facteurs de l'économie",
+                "Les décisions de production ne dépendant que des préférences des agents et de leurs revenus",
+                "Les décisions de production et de consommation ne dépendent pas de la technologie de l'économie et des dotations en facteurs de l'économie, et des préférences des agents et de leurs revenus"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le Théorème de Séparation de Fisher énonce que la décision d'investissement (production) est prise indépendamment de la décision de consommation, car l'investissement est choisi pour maximiser le profit actualisé (Choix A)[cite: 2617]."
+        },
+        {
+            "id": "micro-q11",
+            "qcm": "Examen 2022",
+            "theme": "Microeconomie",
+            "question": "Le théorème d'équivalence énonce que :",
+            "choices": [
+                "Tous les marchés financiers sont équivalents",
+                "Tous les marchés des biens sont équivalents",
+                "Tous les marchés sont équivalents",
+                "En absence d'opportunités d'arbitrage, les marchés financiers sont équivalent aux marchés des biens contingents."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le théorème d'équivalence relie la valorisation par les marchés financiers et par les marchés de biens contingents (Arrow-Debreu) en l'absence d'arbitrage (Choix D)[cite: 2626]."
+        },
+        {
+            "id": "micro-q12",
+            "qcm": "Examen 2022",
+            "theme": "Microeconomie",
+            "question": "Un bien pris comme numéraire implique que :",
+            "choices": [
+                "La richesse réelle est égale à la richesse nominale",
+                "L'inflation détermine le niveau des prix",
+                "Les agents ne sont pas sensibles à l'illusion monétaire",
+                "La richesse de l'agent est corrélée avec ses consommations"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le bien numéraire est celui dont le prix est fixé à 1. Dans ce cas, la richesse (ou valeur) réelle, mesurée en unités de ce bien, est égale à la richesse nominale (Choix A)[cite: 2628]."
+        }
+    ]
+}
