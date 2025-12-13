@@ -449,6 +449,422 @@
                 "effet causal",
                 "endogénéité"
             ]
+        },
+        {
+            "id": "Chat1-id01",
+            "qcm": "CHATGPT1",
+            "theme": "Econométrie",
+            "question": "On estime par MCO le modèle $y_i = \\beta_0 + \\beta_1 x_i + u_i$, alors que le vrai modèle est $y_i = \\beta_0 + \\beta_1 x_i + \\beta_2 z_i + \\varepsilon_i$. Dans quel cas l’estimateur MCO de $\\beta_1$ est-il biaisé ?",
+            "choices": [
+                "$z_i$ est corrélé avec $x_i$.",
+                "$z_i$ est corrélé avec $y_i$.",
+                "$z_i$ est non corrélé avec $x_i$.",
+                "$z_i$ est constant dans l’échantillon."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Il y a un biais de variable omise lorsque la variable omise est corrélée avec une variable explicative incluse dans le modèle.",
+            "tags": [
+                "biais de variable omise",
+                "MCO",
+                "exogénéité"
+            ]
+        },
+        {
+            "id": "Chat1-id02",
+            "qcm": "CHATGPT1",
+            "theme": "Econométrie",
+            "question": "On estime le modèle $\\log(y_i)=\\beta_0+\\beta_1 x_i+u_i$. Comment interpréter $\\beta_1$ ?",
+            "choices": [
+                "Une augmentation de $x_i$ de 1 unité augmente $y_i$ de $\\beta_1$ unités.",
+                "Une augmentation de $x_i$ de 1 unité augmente $\\log(y_i)$ de $\\beta_1$ unités.",
+                "Une augmentation de $x_i$ de 1% augmente $y_i$ de $\\beta_1$%.",
+                "Une augmentation de $x_i$ de 1 unité augmente $y_i$ de $100\\beta_1$ unités."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans un modèle log-niveau, le coefficient mesure l’effet d’une variation unitaire de $x$ sur le logarithme de $y$.",
+            "tags": [
+                "log-linéaire",
+                "interprétation des coefficients"
+            ]
+        },
+        {
+            "id": "Chat1-id03",
+            "qcm": "CHATGPT1",
+            "theme": "Econométrie",
+            "question": "Quelle combinaison de conditions définit une variable instrumentale valide $z$ pour une variable endogène $x$ dans le modèle $y = \\beta x + u$ ?",
+            "choices": [
+                "$\\text{Cov}(z,x)=0$ et $\\text{Cov}(z,u)=0$.",
+                "$\\text{Cov}(z,x)\\neq 0$ et $\\text{Cov}(z,u)=0$.",
+                "$\\text{Cov}(z,x)=0$ et $\\text{Cov}(z,u)\\neq 0$.",
+                "$\\text{Cov}(z,y)\\neq 0$ et $\\text{Cov}(z,u)\\neq 0$."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un instrument doit être corrélé avec la variable endogène (pertinence) et indépendant du terme d’erreur (exogénéité).",
+            "tags": [
+                "variables instrumentales",
+                "endogénéité"
+            ]
+        },
+        {
+            "id": "Chat1-id04",
+            "qcm": "CHATGPT1",
+            "theme": "Econométrie",
+            "question": "Pourquoi l’estimateur à effets fixes est-il sans biais lorsque les effets individuels sont corrélés avec les variables explicatives ?",
+            "choices": [
+                "Parce qu’il élimine l’hétéroscédasticité.",
+                "Parce qu’il supprime les effets individuels invariants dans le temps.",
+                "Parce qu’il suppose l’indépendance entre $a_i$ et $X$.",
+                "Parce qu’il maximise la vraisemblance."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La transformation within élimine les effets individuels constants dans le temps, même s’ils sont corrélés avec les régresseurs.",
+            "tags": [
+                "effets fixes",
+                "panel"
+            ]
+        },
+        {
+            "id": "Chat1-id05",
+            "qcm": "CHATGPT1",
+            "theme": "Econométrie",
+            "question": "Quelle est l’hypothèse clé permettant une interprétation causale de l’estimateur de différences de différences ?",
+            "choices": [
+                "L’absence de biais de sélection.",
+                "L’homoscédasticité des erreurs.",
+                "L’hypothèse de tendances parallèles.",
+                "La normalité du terme d’erreur."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Sans le traitement, les groupes traité et contrôle auraient suivi des trajectoires parallèles dans le temps.",
+            "tags": [
+                "différences de différences",
+                "causalité"
+            ]
+        },
+        {
+            "id": "Chat2-id01",
+            "qcm": "CHATGPT2",
+            "theme": "Econométrie",
+            "question": "On estime par MCO le modèle $y_i = \\beta_0 + \\beta_1 x_i + u_i$. La variable $x_i$ est corrélée avec une variable omise $z_i$ qui influence $y_i$. Quelle est la conséquence principale sur $\\hat\\beta_1$ ?",
+            "choices": [
+                "L’estimateur est sans biais mais inefficace.",
+                "L’estimateur est biaisé et inconsistant.",
+                "L’estimateur est non biaisé mais non convergent.",
+                "L’estimateur reste valide si $z_i$ est non observable."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La corrélation entre $x_i$ et une variable omise influençant $y_i$ crée un biais de variable omise, rendant l’estimateur MCO biaisé et inconsistant.",
+            "tags": [
+                "biais de variable omise",
+                "MCO",
+                "endogénéité"
+            ]
+        },
+        {
+            "id": "Chat2-id02",
+            "qcm": "CHATGPT2",
+            "theme": "Econométrie",
+            "question": "On estime le modèle $\\log(y_i)=\\beta_0+\\beta_1\\log(x_i)+u_i$. Comment interpréter $\\beta_1$ ?",
+            "choices": [
+                "Une augmentation de $x_i$ de 1 unité augmente $y_i$ de $\\beta_1$ unités.",
+                "Une augmentation de $x_i$ de 1% augmente $y_i$ de $\\beta_1$%.",
+                "Une augmentation de $x_i$ de 1 unité augmente $\\log(y_i)$ de $\\beta_1$ unités.",
+                "Une augmentation de $x_i$ de 1% augmente $\\log(y_i)$ de $\\beta_1$ unités."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans un modèle log-log, $\\beta_1$ est une élasticité : une augmentation de $x$ de 1% entraîne une augmentation de $y$ de $\\beta_1$%.",
+            "tags": [
+                "élasticité",
+                "log-log",
+                "interprétation"
+            ]
+        },
+        {
+            "id": "Chat2-id03",
+            "qcm": "CHATGPT2",
+            "theme": "Econométrie",
+            "question": "Dans un modèle de panel $y_{it}=\\beta x_{it}+a_i+u_{it}$, pourquoi l’estimateur à effets fixes ne permet-il pas d’identifier l’effet d’une variable constante dans le temps ?",
+            "choices": [
+                "Parce que la variance de la variable est nulle.",
+                "Parce que la variable est parfaitement colinéaire avec l’effet individuel.",
+                "Parce que l’estimateur FE impose l’exogénéité stricte.",
+                "Parce que la variable est absorbée par le terme d’erreur."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les effets fixes éliminent toutes les composantes invariantes dans le temps. Une variable constante dans le temps est donc parfaitement colinéaire avec $a_i$.",
+            "tags": [
+                "effets fixes",
+                "panel",
+                "colinéarité"
+            ]
+        },
+        {
+            "id": "Chat2-id04",
+            "qcm": "CHATGPT2",
+            "theme": "Econométrie",
+            "question": "Quelle est la conséquence principale de l’utilisation d’un instrument faible dans une estimation par variables instrumentales ?",
+            "choices": [
+                "Les estimations sont non biaisées et très précises.",
+                "Les estimations sont biaisées mais consistantes.",
+                "Les estimations sont très imprécises et biaisées en petit échantillon.",
+                "Les estimations sont identiques à celles des MCO."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un instrument faiblement corrélé avec la variable endogène conduit à des estimations IV très instables et fortement biaisées en échantillon fini.",
+            "tags": [
+                "variables instrumentales",
+                "instrument faible",
+                "biais"
+            ]
+        },
+        {
+            "id": "Chat2-id05",
+            "qcm": "CHATGPT2",
+            "theme": "Econométrie",
+            "question": "Dans une estimation en différences de différences, quel événement invalide directement l’interprétation causale de l’estimateur ?",
+            "choices": [
+                "Une hétéroscédasticité des erreurs.",
+                "Une violation de l’hypothèse de tendances parallèles.",
+                "Une autocorrélation des résidus.",
+                "Une taille d’échantillon faible."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’estimateur Diff-in-Diff repose fondamentalement sur l’hypothèse de tendances parallèles. Si elle est violée, l’effet estimé n’a plus d’interprétation causale.",
+            "tags": [
+                "différences de différences",
+                "causalité",
+                "évaluation des politiques publiques"
+            ]
+        },
+        {
+            "id": "Chat3-id01",
+            "qcm": "CHATGPT3",
+            "theme": "Econométrie",
+            "question": "On considère le modèle $y_{it}=\\beta x_{it}+a_i+u_{it}$. Quelle hypothèse supplémentaire est nécessaire pour que l’estimateur à effets fixes soit consistant ?",
+            "choices": [
+                "$\\mathbb{E}(u_{it}\\mid x_{it})=0$ pour tout $t$.",
+                "$\\mathbb{E}(u_{it}\\mid x_{i1},\\dots,x_{iT},a_i)=0$ pour tout $t$.",
+                "$\\mathbb{E}(a_i\\mid x_{it})=0$.",
+                "$\\mathbb{E}(u_{it})=0$."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’estimateur à effets fixes requiert l’exogénéité stricte : le terme d’erreur idiosyncratique doit être non corrélé avec l’ensemble des régresseurs de l’individu sur toutes les périodes.",
+            "tags": [
+                "effets fixes",
+                "exogénéité stricte",
+                "panel"
+            ]
+        },
+        {
+            "id": "Chat3-id02",
+            "qcm": "CHATGPT3",
+            "theme": "Econométrie",
+            "question": "Dans un modèle en différences de différences, pourquoi l’ajout d’effets fixes individuels ne change-t-il pas l’estimateur du traitement ?",
+            "choices": [
+                "Parce que les effets fixes sont orthogonaux au traitement.",
+                "Parce que le traitement varie uniquement entre individus.",
+                "Parce que l’effet du traitement est identifié par la variation temporelle différentielle.",
+                "Parce que les effets fixes améliorent uniquement la précision."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L’identification du Diff-in-Diff repose sur la variation dans le temps entre groupes. Les effets fixes absorbent seulement les différences invariantes entre individus.",
+            "tags": [
+                "différences de différences",
+                "effets fixes",
+                "identification"
+            ]
+        },
+        {
+            "id": "Chat3-id03",
+            "qcm": "CHATGPT3",
+            "theme": "Econométrie",
+            "question": "Pourquoi l’estimateur IV peut-il être moins précis que l’estimateur MCO même lorsqu’il est sans biais ?",
+            "choices": [
+                "Parce qu’il suppose l’hétéroscédasticité.",
+                "Parce qu’il utilise uniquement la variation exogène de la variable endogène.",
+                "Parce qu’il est calculé en deux étapes.",
+                "Parce qu’il viole l’hypothèse de normalité."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’estimateur IV n’utilise que la partie de la variation expliquée par l’instrument, ce qui réduit l’information disponible et augmente la variance.",
+            "tags": [
+                "variables instrumentales",
+                "variance",
+                "efficacité"
+            ]
+        },
+        {
+            "id": "Chat3-id04",
+            "qcm": "CHATGPT3",
+            "theme": "Econométrie",
+            "question": "Dans le cadre de Rubin, pourquoi l’effet causal individuel $Y_{1i}-Y_{0i}$ n’est-il pas directement observable ?",
+            "choices": [
+                "Parce que $Y_{1i}$ et $Y_{0i}$ sont aléatoires.",
+                "Parce que l’individu ne peut pas être à la fois traité et non traité.",
+                "Parce que les données sont agrégées.",
+                "Parce que l’effet causal dépend de $X_i$."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Pour un individu donné, on n’observe qu’un seul résultat potentiel : soit sous traitement, soit sans traitement. L’autre est contrefactuel.",
+            "tags": [
+                "cadre de Rubin",
+                "résultats potentiels",
+                "causalité"
+            ]
+        },
+        {
+            "id": "Chat3-id05",
+            "qcm": "CHATGPT3",
+            "theme": "Econométrie",
+            "question": "Pourquoi une régression MCO de $Y$ sur $T$ ne permet-elle pas en général d’identifier un effet causal du traitement ?",
+            "choices": [
+                "Parce que $Y$ est une variable continue.",
+                "Parce que $T$ peut être corrélé avec le terme d’erreur.",
+                "Parce que le modèle est mal spécifié.",
+                "Parce que l’échantillon est trop petit."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Si le traitement est endogène (biais de sélection), la régression simple confond l’effet causal avec les différences initiales entre groupes.",
+            "tags": [
+                "biais de sélection",
+                "traitement",
+                "causalité"
+            ]
+        },
+        {
+            "id": "Chat4-id01",
+            "qcm": "CHATGPT4",
+            "theme": "Econométrie",
+            "question": "Dans un modèle de panel, quelle est la différence essentielle entre l’exogénéité faible et l’exogénéité stricte des variables explicatives ?",
+            "choices": [
+                "L’exogénéité stricte autorise une corrélation avec les erreurs passées.",
+                "L’exogénéité faible impose l’indépendance entre $x_{it}$ et $u_{it}$ pour chaque $t$ seulement.",
+                "L’exogénéité stricte est nécessaire uniquement pour les effets aléatoires.",
+                "Il n’existe aucune différence conceptuelle entre les deux."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’exogénéité faible impose $\\mathbb{E}(u_{it}\\mid x_{it})=0$, tandis que l’exogénéité stricte exige $\\mathbb{E}(u_{it}\\mid x_{i1},\\dots,x_{iT})=0$ pour tout $t$, ce qui est plus fort.",
+            "tags": [
+                "exogénéité",
+                "panel",
+                "hypothèses"
+            ]
+        },
+        {
+            "id": "Chat4-id02",
+            "qcm": "CHATGPT4",
+            "theme": "Econométrie",
+            "question": "Dans le cadre de l’évaluation des politiques publiques, quelle hypothèse est directement violée en présence d’externalités du traitement ?",
+            "choices": [
+                "L’hypothèse de tendances parallèles.",
+                "L’hypothèse SUTVA.",
+                "L’hypothèse d’exogénéité des variables explicatives.",
+                "L’hypothèse d’homoscédasticité."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’hypothèse SUTVA suppose que le traitement d’un individu n’affecte pas les résultats des autres. Les externalités violent directement cette hypothèse.",
+            "tags": [
+                "SUTVA",
+                "externalités",
+                "évaluation des politiques publiques"
+            ]
+        },
+        {
+            "id": "Chat4-id03",
+            "qcm": "CHATGPT4",
+            "theme": "Econométrie",
+            "question": "Pourquoi le test de Hausman est-il interprété comme un test d’endogénéité des effets individuels ?",
+            "choices": [
+                "Parce qu’il teste directement la corrélation entre $a_i$ et $u_{it}$.",
+                "Parce qu’il compare un estimateur toujours biaisé à un estimateur toujours consistant.",
+                "Parce qu’il repose sur la différence entre deux estimateurs dont l’un est inconsistant sous l’hypothèse de corrélation.",
+                "Parce qu’il teste la significativité des effets fixes."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Sous l’hypothèse nulle, FE et RE sont tous deux consistants. Si les coefficients diffèrent significativement, cela indique une corrélation entre les effets individuels et les régresseurs.",
+            "tags": [
+                "Hausman",
+                "effets fixes",
+                "effets aléatoires"
+            ]
+        },
+        {
+            "id": "Chat4-id04",
+            "qcm": "CHATGPT4",
+            "theme": "Econométrie",
+            "question": "Dans une estimation en différences de différences, quel est le rôle principal d’un test placebo (faux traitement) ?",
+            "choices": [
+                "Améliorer la précision des estimateurs.",
+                "Tester l’hypothèse d’homoscédasticité.",
+                "Vérifier l’absence d’effet avant le traitement.",
+                "Identifier l’ATT."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un test placebo consiste à attribuer fictivement le traitement avant sa mise en œuvre afin de vérifier qu’aucun effet n’est détecté, ce qui soutient l’hypothèse de tendances parallèles.",
+            "tags": [
+                "différences de différences",
+                "placebo",
+                "tendances parallèles"
+            ]
+        },
+        {
+            "id": "Chat4-id05",
+            "qcm": "CHATGPT4",
+            "theme": "Econométrie",
+            "question": "Pourquoi l’ATT (Average Treatment Effect on the Treated) peut-il différer de l’ATE (Average Treatment Effect) ?",
+            "choices": [
+                "Parce que l’ATT dépend de la taille de l’échantillon.",
+                "Parce que l’effet du traitement peut être hétérogène entre individus.",
+                "Parce que l’ATE suppose l’homoscédasticité.",
+                "Parce que l’ATT est toujours plus grand que l’ATE."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Lorsque l’effet du traitement varie selon les individus, l’effet moyen sur les traités peut différer de l’effet moyen sur l’ensemble de la population.",
+            "tags": [
+                "ATT",
+                "ATE",
+                "hétérogénéité"
+            ]
         }
     ]
 }
