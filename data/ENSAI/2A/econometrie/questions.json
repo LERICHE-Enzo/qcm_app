@@ -1079,7 +1079,7 @@
         },
         {
             "id": "GEMINI2-id01",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI2",
             "theme": "Econométrie",
             "question": "Dans un test d’hypothèse paramétrique, l’hypothèse nulle $H_0$ correspond à :",
             "choices": [
@@ -1100,7 +1100,7 @@
         },
         {
             "id": "GEMINI2-id02",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI2",
             "theme": "Econométrie",
             "question": "Une erreur de type I correspond au fait de :",
             "choices": [
@@ -1121,7 +1121,7 @@
         },
         {
             "id": "GEMINI2-id03",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI2",
             "theme": "Econométrie",
             "question": "Le niveau de significativité $\\alpha$ d’un test est :",
             "choices": [
@@ -1142,7 +1142,7 @@
         },
         {
             "id": "GEMINI2-id04",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI2",
             "theme": "Econométrie",
             "question": "La p-valeur d’un test est :",
             "choices": [
@@ -1163,7 +1163,7 @@
         },
         {
             "id": "GEMINI2-id05",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI2",
             "theme": "Econométrie",
             "question": "Dans le modèle linéaire normal, on suppose que :",
             "choices": [
@@ -1184,7 +1184,7 @@
         },
         {
             "id": "GEMINI2-id06",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI2",
             "theme": "Econométrie",
             "question": "Pour tester $H_0: \\beta_j=0$, la statistique de Student est donnée par :",
             "choices": [
@@ -1205,7 +1205,7 @@
         },
         {
             "id": "GEMINI2-id07",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI2",
             "theme": "Econométrie",
             "question": "Sous les hypothèses classiques et $H_0$, la statistique de Student suit :",
             "choices": [
@@ -1226,7 +1226,7 @@
         },
         {
             "id": "GEMINI2-id08",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI2",
             "theme": "Econométrie",
             "question": "Un test de Fisher permet de :",
             "choices": [
@@ -1247,7 +1247,7 @@
         },
         {
             "id": "GEMINI2-id09",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI2",
             "theme": "Econométrie",
             "question": "On parle d’hétéroscédasticité lorsque :",
             "choices": [
@@ -1268,7 +1268,7 @@
         },
         {
             "id": "GEMINI2-id10",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI2",
             "theme": "Econométrie",
             "question": "En présence d’hétéroscédasticité, l’estimateur des MCO est :",
             "choices": [
@@ -1290,7 +1290,7 @@
         },
         {
             "id": "GEMINI3-id01",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI3",
             "theme": "Econométrie",
             "question": "Une variable explicative $x_1$ est endogène lorsque :",
             "choices": [
@@ -1311,7 +1311,7 @@
         },
         {
             "id": "GEMINI3-id02",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI3",
             "theme": "Econométrie",
             "question": "Laquelle des situations suivantes **n’est pas** une cause d’endogénéité ?",
             "choices": [
@@ -1332,7 +1332,7 @@
         },
         {
             "id": "GEMINI3-id03",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI3",
             "theme": "Econométrie",
             "question": "Une variable $z$ est un instrument valide pour $x_1$ si :",
             "choices": [
@@ -1353,7 +1353,7 @@
         },
         {
             "id": "GEMINI3-id04",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI3",
             "theme": "Econométrie",
             "question": "Dans le modèle $y = \\beta_0 + \\beta_1 x_1 + u$ avec un instrument $z$, l’estimateur des variables instrumentales de $\\beta_1$ est :",
             "choices": [
@@ -1374,7 +1374,7 @@
         },
         {
             "id": "GEMINI3-id05",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI3",
             "theme": "Econométrie",
             "question": "Le paramètre $\\beta$ est **juste-identifié** lorsque :",
             "choices": [
@@ -1395,7 +1395,7 @@
         },
         {
             "id": "GEMINI3-id06",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI3",
             "theme": "Econométrie",
             "question": "La méthode des Doubles Moindres Carrés (2SLS) consiste à :",
             "choices": [
@@ -1416,7 +1416,7 @@
         },
         {
             "id": "GEMINI3-id07",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI3",
             "theme": "Econométrie",
             "question": "Le test de Durbin–Wu–Hausman permet de :",
             "choices": [
@@ -1437,7 +1437,7 @@
         },
         {
             "id": "GEMINI3-id08",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI3",
             "theme": "Econométrie",
             "question": "Le test de Sargan est applicable lorsque :",
             "choices": [
@@ -1458,7 +1458,7 @@
         },
         {
             "id": "GEMINI3-id09",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI3",
             "theme": "Econométrie",
             "question": "Un instrument est dit faible lorsque :",
             "choices": [
@@ -1479,7 +1479,7 @@
         },
         {
             "id": "GEMINI3-id10",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI3",
             "theme": "Econométrie",
             "question": "L’estimateur de Wald identifie :",
             "choices": [
@@ -1501,7 +1501,7 @@
         },
         {
             "id": "GEMINI4-id01",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI4",
             "theme": "Econométrie",
             "question": "On parle de données de panel lorsque :",
             "choices": [
@@ -1522,7 +1522,7 @@
         },
         {
             "id": "GEMINI4-id02",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI4",
             "theme": "Econométrie",
             "question": "La méthode de différences-de-différences (Diff-in-Diff ou DiD) permet :",
             "choices": [
@@ -1543,7 +1543,7 @@
         },
         {
             "id": "GEMINI4-id03",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI4",
             "theme": "Econométrie",
             "question": "L’hypothèse fondamentale de la méthode Diff-in-Diff est :",
             "choices": [
@@ -1564,7 +1564,7 @@
         },
         {
             "id": "GEMINI4-id04",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI4",
             "theme": "Econométrie",
             "question": "Dans le modèle $y_{it} = \\beta_0 + \\beta_1 T_i + \\beta_2 Post_t + \\beta_3 (T_i \\times Post_t) + \\varepsilon_{it}$, le paramètre d’intérêt est :",
             "choices": [
@@ -1585,7 +1585,7 @@
         },
         {
             "id": "GEMINI4-id05",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI4",
             "theme": "Econométrie",
             "question": "L’estimation par effets fixes (EF) permet :",
             "choices": [
@@ -1606,7 +1606,7 @@
         },
         {
             "id": "GEMINI4-id06",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI4",
             "theme": "Econométrie",
             "question": "L’estimateur en première différence (First Difference - FD) élimine :",
             "choices": [
@@ -1627,7 +1627,7 @@
         },
         {
             "id": "GEMINI4-id07",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI4",
             "theme": "Econométrie",
             "question": "La méthode des effets aléatoires (RE) suppose que :",
             "choices": [
@@ -1648,7 +1648,7 @@
         },
         {
             "id": "GEMINI4-id08",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI4",
             "theme": "Econométrie",
             "question": "Le test d’Hausman permet de :",
             "choices": [
@@ -1669,7 +1669,7 @@
         },
         {
             "id": "GEMINI4-id09",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI4",
             "theme": "Econométrie",
             "question": "Les Moindres Carrés Généralisés (MCG ou GLS) sont utilisés lorsque :",
             "choices": [
@@ -1691,7 +1691,7 @@
         },
         {
             "id": "GEMINI4-id10",
-            "qcm": "GEMINI1",
+            "qcm": "GEMINI4",
             "theme": "Econométrie",
             "question": "L’estimateur des MCG est :",
             "choices": [
