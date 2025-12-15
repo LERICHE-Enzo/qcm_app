@@ -865,6 +865,851 @@
                 "ATE",
                 "hétérogénéité"
             ]
+        },
+        {
+            "id": "GEMINI1-id01",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Quel est l’objectif principal de l’économétrie ?",
+            "choices": [
+                "Décrire uniquement des corrélations statistiques",
+                "Tester des modèles mathématiques sans données",
+                "Identifier et interpréter des effets causaux à partir de données",
+                "Produire des prévisions sans hypothèses"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'économétrie utilise la théorie économique, les mathématiques et les statistiques pour tester des théories, modéliser des relations et surtout identifier des relations causales entre les variables.",
+            "tags": [
+                "objectif",
+                "causalité",
+                "définition"
+            ]
+        },
+        {
+            "id": "GEMINI1-id02",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Dans le modèle linéaire $y = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + u$, quelle est la variable dépendante ?",
+            "choices": [
+                "$x_1$",
+                "$x_2$",
+                "$u$",
+                "$y$"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Dans une régression, la variable dépendante ($y$) est la variable expliquée, tandis que les variables indépendantes ou explicatives ($x_i$) sont les variables utilisées pour l'expliquer.",
+            "tags": [
+                "modèle linéaire",
+                "variable dépendante",
+                "notations"
+            ]
+        },
+        {
+            "id": "GEMINI1-id03",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Le terme d’erreur $u$ représente :",
+            "choices": [
+                "Une erreur de mesure uniquement",
+                "Les facteurs observables",
+                "Les facteurs inobservables ou omis influençant $y$",
+                "Une constante"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le terme d'erreur capture l'effet agrégé de tous les facteurs (non-observés, omis, idiosyncratiques) autres que les régresseurs inclus dans le modèle qui influencent la variable dépendante.",
+            "tags": [
+                "terme d'erreur",
+                "résidus",
+                "hypothèses"
+            ]
+        },
+        {
+            "id": "GEMINI1-id04",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "L’interprétation *ceteris paribus* d’un coefficient $\\beta_1$ correspond à :",
+            "choices": [
+                "L’effet total de $x_1$ sur $y$",
+                "L’effet de $x_1$ sur $y$ toutes choses égales par ailleurs",
+                "Une corrélation simple entre $x_1$ et $y$",
+                "Une relation non causale"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'interprétation 'toutes choses égales par ailleurs' (*ceteris paribus*) signifie que l'on isole l'effet d'une variable explicative en maintenant toutes les autres variables du modèle constantes.",
+            "tags": [
+                "interprétation",
+                "coefficient",
+                "ceteris paribus"
+            ]
+        },
+        {
+            "id": "GEMINI1-id05",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "L’estimateur des Moindres Carrés Ordinaires (MCO) est défini comme :",
+            "choices": [
+                "Celui qui maximise $R^2$",
+                "Celui qui minimise la somme des valeurs absolues des résidus",
+                "Celui qui minimise la somme des carrés des résidus",
+                "Celui qui annule tous les résidus"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'objectif des MCO est de trouver les coefficients qui minimisent la somme des carrés des erreurs (ou résidus) entre les valeurs observées de $y$ et les valeurs prédites par le modèle.",
+            "tags": [
+                "MCO",
+                "estimation",
+                "méthode"
+            ]
+        },
+        {
+            "id": "GEMINI1-id06",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Lorsque le modèle contient une constante, les résidus MCO vérifient :",
+            "choices": [
+                "Leur moyenne est positive",
+                "Leur moyenne est nulle",
+                "Ils sont corrélés aux régresseurs",
+                "Ils expliquent toute la variance de $y$"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une propriété algébrique clé des MCO lorsque le modèle inclut un terme constant (ordonnée à l'origine) est que la moyenne des résidus est exactement nulle. Ceci fait partie des conditions d'ordre premier (FOC) des MCO.",
+            "tags": [
+                "propriété MCO",
+                "résidus",
+                "statistique"
+            ]
+        },
+        {
+            "id": "GEMINI1-id07",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Le coefficient de détermination $R^2$ mesure :",
+            "choices": [
+                "La causalité entre $x$ et $y$",
+                "La proportion de la variance de $y$ expliquée par le modèle",
+                "La significativité statistique des coefficients",
+                "Le biais de l’estimateur"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le $R^2$ est une mesure de l'ajustement global du modèle, indiquant la fraction de la variation totale de la variable dépendante ($y$) qui est expliquée par les variables indépendantes incluses dans le modèle.",
+            "tags": [
+                "R2",
+                "ajustement",
+                "performance du modèle"
+            ]
+        },
+        {
+            "id": "GEMINI1-id08",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Dans une régression simple, le modèle est identifié si :",
+            "choices": [
+                "$E(u \\mid x) \\neq 0$",
+                "La variance de $x$ est nulle",
+                "La variance de $x$ est strictement positive",
+                "Le nombre d’observations est égal à 2"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'une des hypothèses de base est qu'il doit y avoir une variation dans la variable explicative ($x$). Si la variance de $x$ était nulle (toutes les valeurs de $x$ sont identiques), il serait impossible d'estimer l'effet de $x$ sur $y$.",
+            "tags": [
+                "identification",
+                "hypothèses MCO",
+                "régression simple"
+            ]
+        },
+        {
+            "id": "GEMINI1-id09",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Un biais de variable omise apparaît lorsque :",
+            "choices": [
+                "Une variable omise n’affecte pas $y$",
+                "Une variable omise est corrélée à un régresseur inclus et affecte $y$",
+                "Le modèle contient trop de variables",
+                "Le terme d’erreur est homoscédastique"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le biais de variable omise (omitted variable bias) survient si la variable omise est à la fois (1) un déterminant de $y$ et (2) corrélée à une ou plusieurs variables explicatives incluses dans le modèle.",
+            "tags": [
+                "biais",
+                "variable omise",
+                "hypothèses MCO"
+            ]
+        },
+        {
+            "id": "GEMINI1-id10",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Sous les hypothèses classiques, l’estimateur MCO est :",
+            "choices": [
+                "Le meilleur estimateur non linéaire",
+                "Le meilleur estimateur biaisé",
+                "Le meilleur estimateur linéaire sans biais (BLUE)",
+                "Toujours inefficace en petit échantillon"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Selon le théorème de Gauss-Markov, sous les hypothèses classiques (incluant l'homoscédasticité et l'absence d'autocorrélation), l'estimateur MCO est le meilleur estimateur linéaire sans biais (*Best Linear Unbiased Estimator* ou BLUE).",
+            "tags": [
+                "Gauss-Markov",
+                "MCO",
+                "propriétés asymptotiques",
+                "BLUE"
+            ]
+        },
+        {
+            "id": "GEMINI2-id01",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Dans un test d’hypothèse paramétrique, l’hypothèse nulle $H_0$ correspond à :",
+            "choices": [
+                "Une affirmation toujours fausse",
+                "Une restriction sur un ou plusieurs paramètres",
+                "Une hypothèse non testable",
+                "L’hypothèse la plus probable"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'hypothèse nulle $H_0$ est l'hypothèse de base, souvent une absence d'effet ou une valeur spécifique du paramètre (par ex., $\\beta_j=0$). On tente de la rejeter en faveur de l'hypothèse alternative $H_1$ à partir des données.",
+            "tags": [
+                "test d'hypothèse",
+                "hypothèse nulle",
+                "statistique inférentielle"
+            ]
+        },
+        {
+            "id": "GEMINI2-id02",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Une erreur de type I correspond au fait de :",
+            "choices": [
+                "Ne pas rejeter $H_0$ alors qu’elle est fausse",
+                "Rejeter $H_0$ alors qu’elle est vraie",
+                "Accepter $H_1$ alors qu’elle est vraie",
+                "Mal estimer la variance"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'erreur de type I (ou risque de première espèce) est la probabilité de rejeter l'hypothèse nulle $H_0$ alors qu'elle est en réalité vraie. ",
+            "tags": [
+                "test d'hypothèse",
+                "erreur de type I",
+                "niveau de significativité"
+            ]
+        },
+        {
+            "id": "GEMINI2-id03",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Le niveau de significativité $\\alpha$ d’un test est :",
+            "choices": [
+                "La probabilité de ne pas rejeter $H_0$",
+                "La probabilité de rejeter $H_0$ quand elle est vraie",
+                "La puissance du test",
+                "La p-valeur"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le niveau de significativité $\\alpha$ est la probabilité maximale que l'on accepte de prendre de commettre une erreur de type I (rejeter $H_0$ à tort).",
+            "tags": [
+                "niveau de significativité",
+                "alpha",
+                "erreur de type I"
+            ]
+        },
+        {
+            "id": "GEMINI2-id04",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "La p-valeur d’un test est :",
+            "choices": [
+                "La probabilité que $H_0$ soit vraie",
+                "La plus petite valeur de $\\alpha$ pour laquelle on rejette $H_0$",
+                "La valeur critique du test",
+                "La variance estimée du coefficient"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La p-valeur est la probabilité d'observer un résultat aussi extrême (ou plus extrême) que celui que nous avons obtenu, en supposant que l'hypothèse nulle $H_0$ est vraie. On rejette $H_0$ si p-valeur $< \\alpha$.",
+            "tags": [
+                "p-valeur",
+                "test d'hypothèse",
+                "règle de décision"
+            ]
+        },
+        {
+            "id": "GEMINI2-id05",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Dans le modèle linéaire normal, on suppose que :",
+            "choices": [
+                "Les erreurs sont seulement centrées",
+                "Les erreurs sont hétéroscédastiques",
+                "Les erreurs sont indépendantes, homoscédastiques et normales",
+                "Les régresseurs sont aléatoires"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les hypothèses du modèle linéaire normal (MLN) exigent que le terme d'erreur $u$ soit i.i.d. (indépendant et identiquement distribué) et suive une loi normale: $u \\sim N(0, \\sigma^2I)$.",
+            "tags": [
+                "modèle normal",
+                "hypothèses classiques",
+                "loi normale"
+            ]
+        },
+        {
+            "id": "GEMINI2-id06",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Pour tester $H_0: \\beta_j=0$, la statistique de Student est donnée par :",
+            "choices": [
+                "$\\frac{\\beta_j}{\\sigma^2}$",
+                "$\\frac{\\hat{\\beta}_j}{\\hat{\\sigma}_{\\hat{\\beta}_j}}$",
+                "$\\frac{\\hat{y}}{u}$",
+                "$\\frac{R^2}{1-R^2}$"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La statistique t de Student est le coefficient estimé divisé par son écart-type standard estimé (erreur-type). Elle permet de standardiser l'estimation pour la comparer à la distribution de référence (loi de Student).",
+            "tags": [
+                "statistique t",
+                "test de significativité",
+                "formule"
+            ]
+        },
+        {
+            "id": "GEMINI2-id07",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Sous les hypothèses classiques et $H_0$, la statistique de Student suit :",
+            "choices": [
+                "Une loi normale centrée réduite",
+                "Une loi du $\\chi^2$",
+                "Une loi de Student à $n-K-1$ degrés de liberté",
+                "Une loi de Fisher"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La statistique de Student suit une loi de Student, où $n$ est le nombre d'observations et $K$ le nombre de régresseurs (hors constante). $n-K-1$ sont les degrés de liberté.",
+            "tags": [
+                "loi de distribution",
+                "statistique t",
+                "degrés de liberté"
+            ]
+        },
+        {
+            "id": "GEMINI2-id08",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Un test de Fisher permet de :",
+            "choices": [
+                "Tester une seule contrainte",
+                "Tester l’homoscédasticité uniquement",
+                "Tester plusieurs restrictions linéaires simultanément",
+                "Estimer les coefficients"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La statistique F de Fisher est utilisée pour tester la validité conjointe de plusieurs restrictions linéaires sur les paramètres du modèle (par exemple, $H_0: \\beta_1=0$ et $\\beta_2=0$).",
+            "tags": [
+                "test F",
+                "test joint",
+                "restrictions"
+            ]
+        },
+        {
+            "id": "GEMINI2-id09",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "On parle d’hétéroscédasticité lorsque :",
+            "choices": [
+                "$E(u_i \\mid x) = 0$",
+                "$\\text{Var}(u_i) = \\sigma^2$ pour tout $i$",
+                "$\\text{Var}(u_i)$ dépend de $i$ ou de $x_i$",
+                "Les erreurs sont corrélées"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'hétéroscédasticité est la violation de l'hypothèse d'homoscédasticité (variance constante). Elle signifie que la variance du terme d'erreur est différente pour différentes observations ou niveaux des variables explicatives. ",
+            "tags": [
+                "hétéroscédasticité",
+                "variance",
+                "hypothèses MCO"
+            ]
+        },
+        {
+            "id": "GEMINI2-id10",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "En présence d’hétéroscédasticité, l’estimateur des MCO est :",
+            "choices": [
+                "Biaisé",
+                "Non convergent",
+                "Toujours BLUE",
+                "Non biaisé mais inefficace"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'hétéroscédasticité n'entraîne pas de biais ou de non-convergence de l'estimateur MCO (il reste sans biais et convergent), mais il n'est plus le Meilleur Estimateur Linéaire Sans Biais (BLUE), car il devient inefficace (sa variance n'est pas la plus petite). Les erreurs-types MCO standard sont fausses.",
+            "tags": [
+                "conséquences",
+                "hétéroscédasticité",
+                "propriétés MCO",
+                "inefficacité"
+            ]
+        },
+        {
+            "id": "GEMINI3-id01",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Une variable explicative $x_1$ est endogène lorsque :",
+            "choices": [
+                "$\\text{Var}(x_1)=0$",
+                "$\\text{Cov}(x_1, u)=0$",
+                "$E(u \\mid x_1) \\neq 0$",
+                "$x_1$ est constante"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Une variable $x_1$ est endogène lorsque la condition d'exogénéité stricte est violée, c'est-à-dire quand $E(u \\mid x_1) \\neq 0$ ou, de manière équivalente, quand $\\text{Cov}(x_1, u) \\neq 0$. Cela conduit à un estimateur MCO biaisé et non convergent. ",
+            "tags": [
+                "endogénéité",
+                "hypothèses MCO",
+                "corrélation"
+            ]
+        },
+        {
+            "id": "GEMINI3-id02",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Laquelle des situations suivantes **n’est pas** une cause d’endogénéité ?",
+            "choices": [
+                "Biais de simultanéité",
+                "Erreur de mesure",
+                "Variable omise",
+                "Hétéroscédasticité"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'hétéroscédasticité n'entraîne pas d'endogénéité (l'estimateur MCO reste sans biais et convergent). L'endogénéité est principalement causée par le biais de variable omise corrélée, la simultanéité ou l'erreur de mesure sur la variable explicative.",
+            "tags": [
+                "endogénéité",
+                "causes",
+                "MCO"
+            ]
+        },
+        {
+            "id": "GEMINI3-id03",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Une variable $z$ est un instrument valide pour $x_1$ si :",
+            "choices": [
+                "$\\text{Cov}(z, x_1)=0$ et $\\text{Cov}(z, u)=0$",
+                "$\\text{Cov}(z, x_1) \\neq 0$ et $\\text{Cov}(z, u)=0$",
+                "$\\text{Cov}(z, x_1)=0$ et $\\text{Cov}(z, u) \\neq 0$",
+                "$\\text{Cov}(z, y) \\neq 0$ uniquement"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un instrument valide doit satisfaire deux conditions : 1) **Exclusion Restriction** (Validité/Exogénéité) : $\\text{Cov}(z, u) = 0$, l'instrument n'est pas corrélé au terme d'erreur. 2) **Relevance** (Pertinence) : $\\text{Cov}(z, x_1) \\neq 0$, l'instrument est corrélé à la variable endogène.",
+            "tags": [
+                "variable instrumentale",
+                "validité",
+                "pertinence"
+            ]
+        },
+        {
+            "id": "GEMINI3-id04",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Dans le modèle $y = \\beta_0 + \\beta_1 x_1 + u$ avec un instrument $z$, l’estimateur des variables instrumentales de $\\beta_1$ est :",
+            "choices": [
+                "$\\frac{\\text{Cov}(x_1, y)}{\\text{Var}(x_1)}$",
+                "$\\frac{\\text{Cov}(z, y)}{\\text{Cov}(z, x_1)}$",
+                "$\\frac{\\text{Var}(z)}{\\text{Cov}(x_1, z)}$",
+                "$\\frac{\\text{Cov}(y, u)}{\\text{Cov}(x_1, u)}$"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'estimateur VI de $\\beta_1$ dans le cas simple (un régresseur et un instrument) est donné par le ratio des covariances de l'instrument avec la variable dépendante et avec la variable endogène. C'est l'estimateur de Wald.",
+            "tags": [
+                "variable instrumentale",
+                "formule",
+                "estimateur"
+            ]
+        },
+        {
+            "id": "GEMINI3-id05",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Le paramètre $\\beta$ est **juste-identifié** lorsque :",
+            "choices": [
+                "Le nombre d’instruments est inférieur au nombre de régresseurs",
+                "Le nombre d’instruments est strictement supérieur au nombre de régresseurs",
+                "Le nombre d’instruments est égal au nombre de paramètres à estimer",
+                "Les instruments sont faibles"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Dans les méthodes VI/2SLS, le modèle est : 1) **Juste-identifié** si le nombre d'instruments est égal au nombre de variables endogènes ; 2) **Sur-identifié** s'il y a plus d'instruments que de variables endogènes ; 3) **Sous-identifié** s'il y a moins d'instruments que de variables endogènes.",
+            "tags": [
+                "identification",
+                "variable instrumentale",
+                "2SLS"
+            ]
+        },
+        {
+            "id": "GEMINI3-id06",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "La méthode des Doubles Moindres Carrés (2SLS) consiste à :",
+            "choices": [
+                "Estimer le modèle directement par MCO",
+                "Régresser $y$ sur $x$, puis sur $z$",
+                "Régresser $x_1$ sur $z$, puis $y$ sur $\\hat{x}_1$",
+                "Régresser $u$ sur $z$"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le 2SLS (Two-Stage Least Squares) est la méthode standard pour les VI : **Étape 1 :** Régresser la variable endogène $x_1$ sur tous les instruments $z$ pour obtenir la valeur prédite $\\hat{x}_1$. **Étape 2 :** Régresser $y$ sur $\\hat{x}_1$.",
+            "tags": [
+                "2SLS",
+                "méthode",
+                "variable instrumentale"
+            ]
+        },
+        {
+            "id": "GEMINI3-id07",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Le test de Durbin–Wu–Hausman permet de :",
+            "choices": [
+                "Tester la pertinence des instruments",
+                "Tester l’homoscédasticité",
+                "Tester l’exogénéité des régresseurs",
+                "Tester la normalité des erreurs"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le test de Hausman sert à comparer l'estimateur MCO (efficace sous exogénéité) et l'estimateur VI (consistant même sous endogénéité). Il teste l'hypothèse nulle que les régresseurs sont exogènes ($\\text{Cov}(x_i, u)=0$).",
+            "tags": [
+                "test de Hausman",
+                "endogénéité",
+                "exogénéité"
+            ]
+        },
+        {
+            "id": "GEMINI3-id08",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Le test de Sargan est applicable lorsque :",
+            "choices": [
+                "Le modèle est juste-identifié",
+                "Le modèle est sous-identifié",
+                "Le modèle est sur-identifié",
+                "Il n’y a qu’un seul instrument"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le test de Sargan (ou J-test) est un test de sur-identification utilisé pour vérifier l'hypothèse de validité de l'instrument (l'exclusion restriction). Il nécessite plus d'instruments que de variables endogènes (modèle sur-identifié).",
+            "tags": [
+                "test de Sargan",
+                "sur-identification",
+                "validité instrumentale"
+            ]
+        },
+        {
+            "id": "GEMINI3-id09",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Un instrument est dit faible lorsque :",
+            "choices": [
+                "Il est corrélé avec le terme d’erreur",
+                "La statistique de Fisher de première étape est inférieure à 10",
+                "Il est binaire",
+                "Il est exogène"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un instrument faible est un instrument qui, bien qu'exogène, est très faiblement corrélé à la variable endogène. Une règle empirique est que la statistique F du test de pertinence (dans la première étape 2SLS) doit être supérieure à 10 pour écarter le problème des instruments faibles. ",
+            "tags": [
+                "instruments faibles",
+                "pertinence",
+                "biais MCO"
+            ]
+        },
+        {
+            "id": "GEMINI3-id10",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "L’estimateur de Wald identifie :",
+            "choices": [
+                "L’effet moyen du traitement sur toute la population",
+                "L’effet du traitement sur les traités",
+                "L’effet du traitement sur les non-traités",
+                "L’effet moyen du traitement local (LATE) sur les *compliers*"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Dans le cadre de l'évaluation d'impact avec des variables instrumentales binaires, l'estimateur de Wald est interprété comme l'Effet Moyen du Traitement Local (LATE - Local Average Treatment Effect) pour le sous-groupe des 'compliers' (ceux qui changent de statut de traitement en réponse au changement de l'instrument).",
+            "tags": [
+                "LATE",
+                "effet causal",
+                "compliers",
+                "variable instrumentale"
+            ]
+        },
+        {
+            "id": "GEMINI4-id01",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "On parle de données de panel lorsque :",
+            "choices": [
+                "On observe plusieurs individus à une seule date",
+                "On observe un seul individu sur plusieurs dates",
+                "On observe les **mêmes unités** sur plusieurs périodes",
+                "On observe uniquement des moyennes agrégées"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les données de panel (ou longitudinales) combinent une dimension individuelle (plusieurs unités $i$) et une dimension temporelle (plusieurs périodes $t$), en suivant les mêmes unités au cours du temps.",
+            "tags": [
+                "données de panel",
+                "structure de données",
+                "longitudinales"
+            ]
+        },
+        {
+            "id": "GEMINI4-id02",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "La méthode de différences-de-différences (Diff-in-Diff ou DiD) permet :",
+            "choices": [
+                "D’identifier une corrélation simple",
+                "D’estimer un effet causal en présence de tendances communes",
+                "De corriger l’hétéroscédasticité",
+                "D’estimer des effets fixes"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le Diff-in-Diff est une méthode quasi-expérimentale qui estime l'effet causal d'un traitement en comparant le changement dans le temps du groupe traité avec le changement dans le temps du groupe contrôle. ",
+            "tags": [
+                "diff-in-diff",
+                "causalité",
+                "méthodes quasi-expérimentales"
+            ]
+        },
+        {
+            "id": "GEMINI4-id03",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "L’hypothèse fondamentale de la méthode Diff-in-Diff est :",
+            "choices": [
+                "Normalité des erreurs",
+                "Homoscédasticité",
+                "Exogénéité stricte",
+                "**Tendance commune** entre groupe traité et groupe contrôle"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'hypothèse clé est celle des tendances parallèles : en l'absence de traitement, le groupe traité et le groupe contrôle auraient suivi des tendances d'évolution identiques. Le DiD soustrait cette tendance commune au groupe traité pour isoler l'effet du traitement.",
+            "tags": [
+                "diff-in-diff",
+                "hypothèse",
+                "tendances parallèles"
+            ]
+        },
+        {
+            "id": "GEMINI4-id04",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Dans le modèle $y_{it} = \\beta_0 + \\beta_1 T_i + \\beta_2 Post_t + \\beta_3 (T_i \\times Post_t) + \\varepsilon_{it}$, le paramètre d’intérêt est :",
+            "choices": [
+                "$\\beta_0$",
+                "$\\beta_1$",
+                "$\\beta_2$",
+                "$\\beta_3$"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le coefficient de la variable d'interaction $\\beta_3$ mesure la différence entre la variation du groupe traité et celle du groupe contrôle, c'est l'effet moyen du traitement.",
+            "tags": [
+                "diff-in-diff",
+                "interprétation",
+                "modèle"
+            ]
+        },
+        {
+            "id": "GEMINI4-id05",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "L’estimation par effets fixes (EF) permet :",
+            "choices": [
+                "D’estimer les effets des variables constantes dans le temps",
+                "D’autoriser la corrélation entre effets individuels et régresseurs",
+                "D’améliorer l’efficacité en toutes circonstances",
+                "De supposer $E(a_i \\mid x_{it}) = 0$"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La méthode des effets fixes (par ex. par transformation *Within*) élimine l'effet individuel $a_i$ (qui capture les caractéristiques non observées de l'individu). Elle permet donc d'obtenir des estimateurs non biaisés même si $a_i$ est corrélé avec les régresseurs $x_{it}$.",
+            "tags": [
+                "effets fixes",
+                "estimation de panel",
+                "endogénéité"
+            ]
+        },
+        {
+            "id": "GEMINI4-id06",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "L’estimateur en première différence (First Difference - FD) élimine :",
+            "choices": [
+                "Le terme d’erreur $e_{it}$",
+                "La constante $\\beta_0$ et les effets fixes $a_i$",
+                "L’hétéroscédasticité",
+                "Les variables explicatives"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'estimation en première différence ($\\Delta y_{it} = y_{it} - y_{i,t-1}$) permet d'éliminer le terme d'effet fixe $a_i$, car celui-ci est constant dans le temps ($\\Delta a_i = 0$).",
+            "tags": [
+                "première différence",
+                "effets fixes",
+                "transformation"
+            ]
+        },
+        {
+            "id": "GEMINI4-id07",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "La méthode des effets aléatoires (RE) suppose que :",
+            "choices": [
+                "$a_i$ est corrélé avec $x_{it}$",
+                "$E(a_i \\mid x_{it}) \\neq 0$",
+                "$E(a_i \\mid x_{it}) = 0$",
+                "Les erreurs sont indépendantes dans le temps"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'hypothèse cruciale des effets aléatoires est que l'effet individuel $a_i$ n'est pas corrélé avec les variables explicatives ($x_{it}$), c'est-à-dire $E(a_i \\mid x_{it}) = 0$. Si cette hypothèse est violée, l'estimateur RE est biaisé et inconsistent.",
+            "tags": [
+                "effets aléatoires",
+                "hypothèses",
+                "panel"
+            ]
+        },
+        {
+            "id": "GEMINI4-id08",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Le test d’Hausman permet de :",
+            "choices": [
+                "Tester l’hétéroscédasticité",
+                "Choisir entre MCO et GLS",
+                "Choisir entre effets fixes et effets aléatoires",
+                "Tester la normalité des erreurs"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Dans le contexte des données de panel, le test de Hausman est utilisé pour choisir entre les estimateurs à effets fixes (EF) et à effets aléatoires (RE). Il teste l'hypothèse nulle ($H_0$) que l'estimateur RE est consistant et efficace (ce qui implique que l'effet individuel $a_i$ est exogène).",
+            "tags": [
+                "test de Hausman",
+                "effets fixes",
+                "effets aléatoires"
+            ]
+        },
+        {
+            "id": "GEMINI4-id09",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "Les Moindres Carrés Généralisés (MCG ou GLS) sont utilisés lorsque :",
+            "choices": [
+                "Le modèle est mal identifié",
+                "Il y a hétéroscédasticité et/ou corrélation des erreurs",
+                "Les variables sont endogènes",
+                "Le panel est équilibré"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les MCG sont la méthode d'estimation utilisée lorsque la matrice de variance-covariance des erreurs n'est pas scalaire ($\\Omega \\neq \\sigma^2I$), c'est-à-dire en présence d'hétéroscédasticité et/ou d'autocorrélation.",
+            "tags": [
+                "MCG",
+                "GLS",
+                "hétéroscédasticité",
+                "autocorrélation"
+            ]
+        },
+        {
+            "id": "GEMINI4-id10",
+            "qcm": "GEMINI1",
+            "theme": "Econométrie",
+            "question": "L’estimateur des MCG est :",
+            "choices": [
+                "Biaisé mais efficace",
+                "Sans biais et inefficace",
+                "Linéaire sans biais à variance minimale",
+                "Toujours identique aux MCO"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'estimateur des MCG est le Meilleur Estimateur Linéaire Sans Biais (BLUE) dans le cas général où les erreurs sont non-sphériques (hétéroscédasticité et/ou autocorrélation), car il utilise une transformation pour obtenir la variance minimale. ",
+            "tags": [
+                "MCG",
+                "propriétés",
+                "BLUE",
+                "efficacité"
+            ]
         }
     ]
 }
