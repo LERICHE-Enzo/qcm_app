@@ -1,0 +1,3470 @@
+{
+    "questions": [
+        {
+            "id": "gp-q001",
+            "qcm": "AM - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la principale mission d'un gérant de portefeuille ?",
+            "choices": [
+                "Contrôler la conformité réglementaire des opérations.",
+                "Sélectionner les actifs financiers pour atteindre les objectifs du client.",
+                "Garantir le paiement des dividendes à l'investisseur."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le gérant de portefeuille construit et ajuste le portefeuille d'actifs pour répondre au mandat fixé par le client, dans le respect d'un couple rendement/risque."
+        },
+        {
+            "id": "gp-q002",
+            "qcm": "AM - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie l'acronyme AUM dans le secteur de l'Asset Management ?",
+            "choices": [
+                "Advanced User Metrics",
+                "Assets Under Management",
+                "Aggregate Utility Model"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "AUM désigne le montant total des actifs financiers gérés par une société pour le compte de ses clients."
+        },
+        {
+            "id": "gp-q003",
+            "qcm": "AM - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle société est aujourd'hui le plus grand gestionnaire d'actifs au monde ?",
+            "choices": [
+                "Amundi",
+                "Vanguard",
+                "BlackRock"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "BlackRock est le leader mondial avec plus de 9 000 milliards de dollars d'actifs sous gestion."
+        },
+        {
+            "id": "gp-q004",
+            "qcm": "AM - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la différence principale entre un FCP et une SICAV ?",
+            "choices": [
+                "Le FCP est coté en bourse, la SICAV ne l'est pas.",
+                "La SICAV a une personnalité morale, le FCP non.",
+                "Le FCP est réservé aux professionnels."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Contrairement au FCP, la SICAV est une société d'investissement dotée de la personnalité morale."
+        },
+        {
+            "id": "gp-q005",
+            "qcm": "AM - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est le rôle de l'AMF en France ?",
+            "choices": [
+                "Garantir le rendement des fonds.",
+                "Superviser les marchés financiers et les sociétés de gestion.",
+                "Fournir des conseils d'investissement aux particuliers."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'AMF régule les marchés financiers français, délivre les agréments et protège les épargnants."
+        },
+        {
+            "id": "gp-q006",
+            "qcm": "AM - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la fonction d'un analyste financier en Asset Management ?",
+            "choices": [
+                "Analyser les risques juridiques des produits.",
+                "Étudier les marchés et les entreprises pour soutenir les décisions d'investissement.",
+                "Gérer la relation client et les reportings mensuels."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'analyste financier fournit des analyses fondamentales ou quantitatives pour alimenter les décisions du gérant."
+        },
+        {
+            "id": "gp-q007",
+            "qcm": "AM - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'un hedge fund ?",
+            "choices": [
+                "Un fonds réglementé européen pour les particuliers.",
+                "Un fonds utilisant des stratégies flexibles, souvent risquées, réservé à des investisseurs qualifiés.",
+                "Un fonds souverain financé par un État."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les hedge funds visent une performance absolue en utilisant des stratégies complexes et peu encadrées."
+        },
+        {
+            "id": "gp-q008",
+            "qcm": "AM - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel type de fonds est destiné à gérer l'épargne retraite ?",
+            "choices": [
+                "Mutual fund",
+                "Fonds de pension",
+                "Fonds souverain"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les fonds de pension collectent et investissent l'épargne pour assurer le versement futur des pensions de retraite."
+        },
+        {
+            "id": "gp-q009",
+            "qcm": "AM - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est le principal avantage d'un ETF (Exchange Traded Fund) ?",
+            "choices": [
+                "Il garantit un rendement minimum.",
+                "Il est négociable en continu sur les marchés, avec des frais faibles.",
+                "Il est réservé aux investisseurs institutionnels."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les ETF répliquent des indices et sont cotés en bourse, ce qui offre souplesse et faible coût."
+        },
+        {
+            "id": "gp-q010",
+            "qcm": "AM - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel régulateur supervise l'Asset Management aux États-Unis ?",
+            "choices": [
+                "FCA",
+                "SEC",
+                "ESMA"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La SEC (Securities and Exchange Commission) supervise les marchés et sociétés de gestion aux États-Unis."
+        },
+        {
+            "id": "gp-q011",
+            "qcm": "AM - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie l'acronyme ETF ?",
+            "choices": [
+                "Equity Transfer Fund",
+                "Exchange Traded Fund",
+                "European Trading Framework"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "ETF signifie Exchange Traded Fund, c'est-à-dire un fonds coté en bourse qui réplique un indice."
+        },
+        {
+            "id": "gp-q012",
+            "qcm": "AM - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie l'acronyme SEC ?",
+            "choices": [
+                "Stock Exchange Committee",
+                "Securities and Exchange Commission",
+                "Sovereign Equity Control"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La SEC (Securities and Exchange Commission) est le régulateur des marchés financiers aux États-Unis."
+        },
+        {
+            "id": "gp-q013",
+            "qcm": "AM - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle entité est responsable de l'agrément des sociétés de gestion en France ?",
+            "choices": [
+                "Le ministère de l'Économie et des Finances",
+                "L'Autorité des Marchés Financiers (AMF)",
+                "La Banque de France"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'AMF délivre les agréments aux sociétés de gestion, contrôle leur activité et veille à la protection des investisseurs."
+        },
+        {
+            "id": "gp-q014",
+            "qcm": "AM - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie \"gestion passive\" ?",
+            "choices": [
+                "Une gestion basée sur des prévisions macroéconomiques",
+                "Une gestion qui suit un indice sans chercher à le battre",
+                "Une gestion réalisée uniquement par des algorithmes"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La gestion passive réplique la performance d'un indice (ex : CAC 40), généralement à travers un ETF, sans décision active de sélection de titres."
+        },
+        {
+            "id": "gp-q015",
+            "qcm": "AM - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est le rôle d'un dépositaire dans un fonds ?",
+            "choices": [
+                "Gérer la stratégie d'investissement",
+                "Fournir un service juridique à l'AMF",
+                "Conserver les actifs et contrôler certaines opérations"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le dépositaire est un tiers chargé de conserver les titres du fonds et de contrôler la régularité des opérations (achats, valeurs liquidatives...)."
+        },
+        {
+            "id": "gp-q016",
+            "qcm": "AM - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel type d'actif est généralement le plus risqué ?",
+            "choices": [
+                "Obligations d'État notées AAA",
+                "Actions de petites capitalisations",
+                "Dépôts à terme garantis"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les petites capitalisations sont souvent plus volatiles, moins liquides et plus sensibles aux cycles économiques que les grandes valeurs ou les produits garantis."
+        },
+        {
+            "id": "gp-q017",
+            "qcm": "AM - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'un prospectus réglementaire ?",
+            "choices": [
+                "Un document marketing produit par les banques",
+                "Un document contractuel obligatoire décrivant le fonctionnement d'un fonds",
+                "Un rapport de performance publié chaque trimestre"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le prospectus est un document juridique validé par le régulateur, qui décrit la stratégie, les frais, les risques et les règles d'un fonds."
+        },
+        {
+            "id": "gp-q018",
+            "qcm": "AM - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle organisation européenne coordonne la régulation des marchés financiers dans l'UE ?",
+            "choices": [
+                "BCE",
+                "ESMA",
+                "FMI"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'ESMA (European Securities and Markets Authority) harmonise les pratiques de régulation dans l'Union européenne et supervise certaines activités transfrontalières."
+        },
+        {
+            "id": "gp-q019",
+            "qcm": "AM - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie l'acronyme FMI ?",
+            "choices": [
+                "Fonds Monétaire International",
+                "Fédération des Marchés et Investissements",
+                "Fonds de Mutualisation des Intérêts"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le FMI (Fonds Monétaire International) est une organisation internationale qui favorise la stabilité financière et la coopération monétaire mondiale."
+        },
+        {
+            "id": "gp-q020",
+            "qcm": "AM - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie l'acronyme ESMA ?",
+            "choices": [
+                "European Stock Market Authority",
+                "European Securities and Markets Authority",
+                "Eurozone Securities Management Agency"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "ESMA signifie European Securities and Markets Authority, l'autorité européenne de surveillance des marchés financiers."
+        },
+        {
+            "id": "gp-q021",
+            "qcm": "AM - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est l'objectif principal d'un fonds souverain ?",
+            "choices": [
+                "Financer les déficits courants de l'État",
+                "Gérer l'épargne publique pour les générations futures ou stabiliser les revenus",
+                "Fournir des crédits aux entreprises locales"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les fonds souverains sont des outils de long terme pour diversifier les revenus d'un État et préparer l'avenir (ex : Norvège, Émirats...)."
+        },
+        {
+            "id": "gp-q022",
+            "qcm": "AM - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle stratégie est typique d'un hedge fund ?",
+            "choices": [
+                "Acheter des obligations d'État à long terme",
+                "Répliquer passivement un indice boursier",
+                "Vendre à découvert des actions pour spéculer à la baisse"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les hedge funds utilisent des stratégies alternatives, comme la vente à découvert, les dérivés ou l'arbitrage statistique."
+        },
+        {
+            "id": "gp-q023",
+            "qcm": "AM - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie ESG dans le cadre de l'investissement responsable ?",
+            "choices": [
+                "Épargne Sociale Garantie",
+                "Environnement, Social, Gouvernance",
+                "Évaluation Stratégique Globale"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les critères ESG permettent d'évaluer l'impact environnemental, social et de gouvernance d'un émetteur, au-delà de sa performance financière."
+        },
+        {
+            "id": "gp-q024",
+            "qcm": "AM - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel fonds détient l'un des plus grands portefeuilles d'actions au monde ?",
+            "choices": [
+                "Le fonds souverain norvégien (GPFG)",
+                "Le fonds de pension suédois AP7",
+                "Le Harvard Endowment Fund"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le GPFG norvégien investit les revenus pétroliers du pays. Il détient plus de 1 400 milliards USD, dont une part significative en actions cotées."
+        },
+        {
+            "id": "gp-q025",
+            "qcm": "AM - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel type de fonds est le plus souvent utilisé par les fondations et universités ?",
+            "choices": [
+                "Hedge fund",
+                "Endowment fund",
+                "Fonds souverain"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les universités (comme Harvard ou Yale) gèrent des endowments : dotations investies à long terme pour financer leurs missions."
+        },
+        {
+            "id": "gp-q026",
+            "qcm": "AM - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est le principal objectif de la gestion d'actifs ?",
+            "choices": [
+                "Maximiser la rentabilité immédiate",
+                "Suivre la performance d'un indice",
+                "Optimiser le couple rendement/risque dans le temps"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'Asset Management vise un équilibre entre rentabilité et maîtrise du risque, adapté au profil et à l'horizon du client."
+        },
+        {
+            "id": "gp-q027",
+            "qcm": "AM - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la particularité d'un investment trust (Royaume-Uni) ?",
+            "choices": [
+                "Il est réservé aux institutions publiques",
+                "Il est coté en bourse avec un capital fixe",
+                "Il est garanti par la Banque d'Angleterre"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'investissement trust est un fonds fermé coté en Bourse, avec un nombre d'actions fixe. Il peut se négocier avec une décote ou une prime."
+        },
+        {
+            "id": "gp-q028",
+            "qcm": "AM - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Que désigne le terme \"actifs non cotés\" ?",
+            "choices": [
+                "Des titres négociés sur les marchés réglementés",
+                "Des produits financiers adossés à un indice",
+                "Des investissements non échangés en bourse, comme le private equity"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les actifs non cotés ne sont pas négociés sur un marché réglementé. Ils incluent le capital-investissement, l'immobilier direct, les infrastructures, etc."
+        },
+        {
+            "id": "gp-q029",
+            "qcm": "AM - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est l'une des principales contraintes imposées aux fonds par l'AMF ?",
+            "choices": [
+                "La garantie du capital",
+                "Le respect de ratios de diversification",
+                "L'obligation d'avoir un siège social en France"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'AMF impose des limites sur la concentration des investissements (par émetteur, secteur...), pour limiter le risque de perte excessive."
+        },
+        {
+            "id": "gp-q030",
+            "qcm": "AM - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel type d'investisseur est appelé \"asset owner\" ?",
+            "choices": [
+                "Une société de gestion d'actifs",
+                "Une personne physique investissant en bourse",
+                "Une entité institutionnelle détenant les capitaux investis"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les asset owners sont les véritables propriétaires des capitaux : caisses de retraite, assureurs, fonds souverains, fondations..."
+        },
+        {
+            "id": "gp-q031",
+            "qcm": "AM - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle technologie permet de stocker et d'accéder aux données à distance, en temps réel ?",
+            "choices": [
+                "La blockchain",
+                "Le cloud computing",
+                "La réalité augmentée"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le cloud permet un accès centralisé, sécurisé et distant aux données, et soutient l'automatisation en Asset Management."
+        },
+        {
+            "id": "gp-q032",
+            "qcm": "AM - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle agence européenne supervise les marchés financiers au niveau supranational ?",
+            "choices": [
+                "ESMA",
+                "AMF",
+                "BCE"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'ESMA (European Securities and Markets Authority) est l'autorité qui coordonne les régulateurs nationaux et publie des normes européennes."
+        },
+        {
+            "id": "gp-q033",
+            "qcm": "AM - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est l'un des défis majeurs de l'Asset Management aujourd'hui ?",
+            "choices": [
+                "La disparition des fonds indiciels",
+                "L'absence de réglementation",
+                "L'intégration des critères ESG dans les décisions d'investissement"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Intégrer les critères environnementaux, sociaux et de gouvernance (ESG) est devenu incontournable dans la gestion moderne."
+        },
+        {
+            "id": "gp-q034",
+            "qcm": "AM - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle mission est typiquement assurée par un \"risk manager\" dans une société de gestion ?",
+            "choices": [
+                "Choisir les titres à acheter",
+                "Surveiller les expositions aux risques de marché",
+                "Élaborer les supports commerciaux"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le risk manager analyse les risques liés aux portefeuilles (volatilité, concentration, dérivés...) et vérifie leur conformité aux limites fixées."
+        },
+        {
+            "id": "gp-q035",
+            "qcm": "AM - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Que mesure la performance d'un fonds d'investissement ?",
+            "choices": [
+                "Le volume des souscriptions",
+                "L'évolution de sa valeur liquidative sur une période donnée",
+                "Le nombre d'actifs achetés"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La performance d'un fonds correspond à la variation de sa valeur liquidative (VL), qui reflète l'évolution de la valeur de ses actifs nets."
+        },
+        {
+            "id": "gp-q036",
+            "qcm": "AM - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est l'intérêt de la diversification dans un portefeuille ?",
+            "choices": [
+                "Réduire le risque global du portefeuille",
+                "Maximiser la fiscalité avantageuse",
+                "Obtenir un effet de levier"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Diversifier permet de répartir les risques entre différents actifs ou secteurs, réduisant l'impact négatif d'une seule position sur le portefeuille."
+        },
+        {
+            "id": "gp-q037",
+            "qcm": "AM - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle unité de mesure exprime la volatilité d'un actif financier ?",
+            "choices": [
+                "Le P/E ratio",
+                "Le ratio de Sharpe",
+                "L'écart-type des rendements"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'écart-type mesure la dispersion des rendements d'un actif autour de sa moyenne. Plus il est élevé, plus l'actif est volatil."
+        },
+        {
+            "id": "gp-q038",
+            "qcm": "AM - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel indicateur permet d'évaluer la rentabilité ajustée du risque ?",
+            "choices": [
+                "Ratio de Sharpe",
+                "Taux de change",
+                "Durée de détention"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le ratio de Sharpe évalue le gain obtenu par unité de risque : il compare le rendement excédentaire d'un actif à sa volatilité."
+        },
+        {
+            "id": "gp-q039",
+            "qcm": "AM - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle structure permet de loger un fonds tout en offrant une transparence fiscale ?",
+            "choices": [
+                "La holding",
+                "La société civile de portefeuille",
+                "Le FCP (Fonds Commun de Placement)"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le FCP est fiscalement transparent : les revenus sont directement imposés entre les mains des porteurs de parts, et non au niveau du fonds."
+        },
+        {
+            "id": "gp-q040",
+            "qcm": "AM - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la différence entre une gestion collective et une gestion sous mandat ?",
+            "choices": [
+                "Le montant investi",
+                "Le nombre d'investisseurs concernés",
+                "Le pays de résidence fiscale"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La gestion collective regroupe plusieurs investisseurs dans un même fonds, tandis que la gestion sous mandat est individualisée pour un seul client."
+        },
+        {
+            "id": "gp-q041",
+            "qcm": "AM - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans quel cas un fonds peut-il être dit \"fonds fermé\" ?",
+            "choices": [
+                "Lorsqu'il ne publie pas ses résultats",
+                "Lorsqu'il ne permet pas de souscrire ou de racheter à tout moment",
+                "Lorsqu'il est réservé aux entreprises publiques"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un fonds fermé n'autorise les souscriptions/rachats qu'à certaines périodes ou pas du tout, contrairement aux fonds ouverts à capital variable."
+        },
+        {
+            "id": "gp-q042",
+            "qcm": "AM - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est le rôle du \"middle office\" dans une société de gestion ?",
+            "choices": [
+                "Émettre les ordres d'achat et de vente",
+                "Contrôler, valider et suivre les opérations entre le front et le back office",
+                "Commercialiser les produits financiers"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le middle office fait le lien entre la décision d'investissement (front) et le traitement administratif (back). Il garantit la cohérence des flux."
+        },
+        {
+            "id": "gp-q043",
+            "qcm": "AM - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est l'impact principal des frais de gestion sur un fonds ?",
+            "choices": [
+                "Ils réduisent la performance nette pour l'investisseur",
+                "Ils augmentent automatiquement la valeur liquidative",
+                "Ils garantissent la protection du capital"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les frais de gestion sont déduits des actifs du fonds. Ils diminuent donc la performance nette perçue par l'investisseur."
+        },
+        {
+            "id": "gp-q044",
+            "qcm": "AM - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'un robo-advisor ?",
+            "choices": [
+                "Un système automatisé de gestion de portefeuille basé sur des algorithmes",
+                "Un gestionnaire humain spécialisé en robotique",
+                "Une plateforme de crowdfunding réglementée"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les robo-advisors allouent les portefeuilles via des algorithmes en fonction du profil de risque du client, à frais réduits et sans intervention humaine directe."
+        },
+        {
+            "id": "gp-q045",
+            "qcm": "AM - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel type d'analyse repose sur l'étude des états financiers d'une entreprise ?",
+            "choices": [
+                "Analyse technique",
+                "Analyse fondamentale",
+                "Analyse comportementale"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'analyse fondamentale s'appuie sur les états financiers, la stratégie, le secteur et la gouvernance d'une entreprise pour évaluer sa valeur."
+        },
+        {
+            "id": "gp-q046",
+            "qcm": "AM - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Que représente la notation \"AAA\" attribuée à un actif obligataire ?",
+            "choices": [
+                "Une faible liquidité",
+                "Un risque de défaut élevé",
+                "Une excellente qualité de crédit"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Une notation \"AAA\" est la meilleure possible : elle indique un très faible risque de non-remboursement, attribuée par des agences comme S&P ou Moody's."
+        },
+        {
+            "id": "gp-q047",
+            "qcm": "AM - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel indicateur macroéconomique influence fortement les marchés obligataires ?",
+            "choices": [
+                "Le taux de chômage",
+                "Le taux directeur des banques centrales",
+                "Le taux de natalité"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le taux directeur fixe le coût de l'argent. Une hausse ou une baisse influence directement les rendements obligataires et les prix des obligations."
+        },
+        {
+            "id": "gp-q048",
+            "qcm": "AM - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la fonction principale du back-office dans la gestion d'actifs ?",
+            "choices": [
+                "Émettre les prévisions économiques",
+                "Garantir le bon traitement administratif des opérations",
+                "Réaliser des arbitrages de portefeuille"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le back-office gère la comptabilité titres, les règlements/livraisons et les reportings réglementaires. Il est essentiel à la fiabilité opérationnelle."
+        },
+        {
+            "id": "gp-q049",
+            "qcm": "AM - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle réglementation encadre les fonds d'investissement au niveau européen ?",
+            "choices": [
+                "Solvabilité II",
+                "UCITS (OPCVM)",
+                "MiFID III"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La directive UCITS (Undertakings for Collective Investment in Transferable Securities) encadre la gestion des fonds ouverts à l'échelle européenne."
+        },
+        {
+            "id": "gp-q050",
+            "qcm": "AM - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel élément ne fait pas partie des critères ESG ?",
+            "choices": [
+                "Gouvernance",
+                "Performance financière",
+                "Environnement"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les critères ESG évaluent les aspects extra-financiers d'un émetteur. La performance financière est prise en compte à part, dans l'analyse globale."
+        },
+        {
+            "id": "gp-q051",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel métier est en charge de la commercialisation des fonds auprès des clients ?",
+            "choices": [
+                "Gérant obligataire",
+                "Contrôleur de gestion",
+                "Responsable de la distribution"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le responsable de la distribution développe la clientèle (institutionnelle ou retail) et assure la commercialisation des produits de gestion."
+        },
+        {
+            "id": "gp-q052",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel pays abrite le plus grand fonds souverain mondial ?",
+            "choices": [
+                "Chine",
+                "Norvège",
+                "Arabie Saoudite"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le \"Government Pension Fund Global\" (GPFG) norvégien dépasse les 1 400 milliards USD. Il investit largement dans les actions mondiales."
+        },
+        {
+            "id": "gp-q053",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est l'objectif principal d'un fonds à échéance ?",
+            "choices": [
+                "Répliquer un indice boursier",
+                "Distribuer des dividendes chaque trimestre",
+                "Être liquidé à une date donnée avec un portefeuille stable"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les fonds à échéance sont clos à une date prévue, avec une gestion souvent obligataire et peu de rotation d'actifs. Leur rendement est connu ex-ante."
+        },
+        {
+            "id": "gp-q054",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle technologie est de plus en plus utilisée pour automatiser la conformité réglementaire (RegTech) ?",
+            "choices": [
+                "Intelligence artificielle",
+                "Réalité virtuelle",
+                "Impression 3D"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'intelligence artificielle permet d'automatiser le contrôle des règles réglementaires, la surveillance des transactions et la détection d'anomalies."
+        },
+        {
+            "id": "gp-q055",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la principale limite du modèle CAPM ?",
+            "choices": [
+                "Il suppose des marchés parfaits et des investisseurs rationnels, ce qui est irréaliste",
+                "Il ne prend pas en compte le rendement des obligations",
+                "Il est réservé aux grands fonds institutionnels"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le CAPM repose sur des hypothèses fortes (marchés efficients, pas de frictions, un seul facteur de risque). Des modèles multi-facteurs comme Fama-French le complètent en pratique."
+        },
+        {
+            "id": "gp-q056",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce que le tracking error d'un fonds ?",
+            "choices": [
+                "L'écart-type de la différence de rendement entre le fonds et son benchmark",
+                "L'erreur comptable dans la valorisation des actifs",
+                "Le délai de traitement des ordres en back-office"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un tracking error faible indique que le fonds suit de près son indice (gestion passive). Un tracking error élevé signale des choix actifs significatifs."
+        },
+        {
+            "id": "gp-q057",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la différence entre performance absolue et relative ?",
+            "choices": [
+                "La performance absolue s'applique uniquement aux fonds obligataires",
+                "La performance absolue vise un gain positif indépendamment du marché ; la relative se compare à un indice",
+                "La performance relative est réservée aux hedge funds"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les hedge funds visent souvent une performance absolue (gagner même en marché baissier). La plupart des fonds OPCVM sont évalués en performance relative vs leur benchmark."
+        },
+        {
+            "id": "gp-q058",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce que la \"duration\" (sensibilité) d'une obligation ?",
+            "choices": [
+                "La date d'émission de l'obligation",
+                "Le taux de coupon annuel versé à l'investisseur",
+                "La sensibilité du prix de l'obligation à une variation des taux d'intérêt"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Plus la duration est longue, plus le prix de l'obligation est sensible aux variations de taux. C'est un outil clé en gestion obligataire pour piloter le risque de taux."
+        },
+        {
+            "id": "gp-q059",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce que le private equity (capital-investissement) ?",
+            "choices": [
+                "Un investissement en capital dans des entreprises non cotées en bourse",
+                "Un fonds réservé aux particuliers fortunés cotés en bourse",
+                "Une stratégie d'achat d'obligations à haut rendement"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le PE finance des entreprises à différents stades : capital-risque (venture capital), capital-développement, LBO. C'est une classe d'actifs illiquide avec des horizons longs (7-10 ans)."
+        },
+        {
+            "id": "gp-q060",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'un \"high yield bond\" (obligation à haut rendement) ?",
+            "choices": [
+                "Une obligation émise par un État membre de l'OCDE",
+                "Une obligation émise par un émetteur de faible qualité de crédit offrant un rendement élevé en contrepartie d'un risque plus fort",
+                "Un produit structuré garanti en capital"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Notées en dessous de BBB- (S&P) ou Baa3 (Moody's), ces obligations dites \"spéculatives\" ou \"junk bonds\" compensent leur risque de défaut par des coupons plus élevés."
+        },
+        {
+            "id": "gp-q061",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce que la valeur liquidative (VL) et quand est-elle calculée ?",
+            "choices": [
+                "Le cours de bourse en temps réel d'une action du fonds",
+                "La valeur de l'actif net divisée par le nombre de parts, calculée à fréquence définie (quotidienne pour la plupart des OPCVM)",
+                "La valeur de marché des seuls actifs obligataires du fonds"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La VL = (Actifs – Passifs) / Nombre de parts. Elle sert de prix de référence pour les souscriptions et rachats. Elle est distincte du cours de bourse pour les fonds fermés."
+        },
+        {
+            "id": "gp-q062",
+            "qcm": "AM - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est l'objectif du règlement SFDR en Europe ?",
+            "choices": [
+                "Encadrer les opérations de fusions-acquisitions transfrontalières",
+                "Imposer une transparence sur la durabilité des investissements pour lutter contre le greenwashing",
+                "Harmoniser les frais de gestion à l'échelle européenne"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le SFDR (Sustainable Finance Disclosure Regulation, 2021) classe les fonds en articles 6, 8 ou 9 selon leur niveau d'intégration ESG, pour informer les investisseurs et limiter le greenwashing."
+        },
+        {
+            "id": "gp-q071",
+            "qcm": "CG - QCM2",
+            "theme": "Culture générale",
+            "question": "Paul Samuelson :",
+            "choices": [
+                "A réfuté la notion d'avantages comparatifs en économie internationale.",
+                "A introduit la notion de chômage naturel en macroéconomie.",
+                "Est l'auteur d'une des premières démonstrations de l'existence de l'équilibre général en 1951.",
+                "Est l'auteur d'un article démontrant que des prix correctement anticipés varient de manière aléatoire."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Samuelson a démontré que si les prix sont correctement anticipés, leurs variations sont aléatoires (article de 1965, précurseur de l'hypothèse des marchés efficients). Le chômage naturel est associé à Friedman et Phelps. L'existence de l'équilibre général (1954) est due à Arrow et Debreu."
+        },
+        {
+            "id": "gp-q072",
+            "qcm": "CG - QCM2",
+            "theme": "Culture générale",
+            "question": "Maurice Allais fut :",
+            "choices": [
+                "Un macroéconomiste de la fin du XIXe siècle.",
+                "L'inventeur de la machine à vapeur.",
+                "Le responsable du programme nucléaire sous le général de Gaulle.",
+                "Un chansonnier des années 1830.",
+                "L'inventeur des modèles à génération imbriquée avec Paul Samuelson."
+            ],
+            "answer": [
+                4
+            ],
+            "explanation": "Maurice Allais (1911–2010), Prix Nobel d'économie 1988, est notamment connu pour ses modèles à générations imbriquées, développés indépendamment de Samuelson. Il a également contribué à la théorie de l'équilibre général et aux choix dans l'incertain (paradoxe d'Allais)."
+        },
+        {
+            "id": "gp-q073",
+            "qcm": "CG - QCM2",
+            "theme": "Culture générale",
+            "question": "Jacques Rueff :",
+            "choices": [
+                "A été l'un des premiers à tester empiriquement la théorie de la parité des pouvoirs d'achat dans les années 1920.",
+                "A défendu la nécessité d'une politique dirigiste dans les années 1930.",
+                "A été Commissaire au Plan en France sous le général de Gaulle.",
+                "A développé une théorie de la tarification des monopoles publics."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Jacques Rueff (1896–1978) fut un pionnier des tests empiriques de la parité des pouvoirs d'achat. Libéral convaincu, il s'opposa au dirigisme. Il fut conseiller économique de de Gaulle (plan Rueff de 1958) mais n'était pas Commissaire au Plan."
+        },
+        {
+            "id": "gp-q074",
+            "qcm": "CG - QCM2",
+            "theme": "Culture générale",
+            "question": "Joseph Schumpeter :",
+            "choices": [
+                "Fut ministre des Finances en 1919–20 du gouvernement socialiste d'Otto Bauer en Autriche.",
+                "Fut une économiste qui développa dans son ouvrage « Capitalisme, Socialisme et Démocratie » la thèse de l'effondrement à venir de l'Union Soviétique.",
+                "Était le maître à penser des deux économistes autrichiens Ludwig von Mises et Friedrich von Hayek.",
+                "Se vantait d'avoir formé jadis les vœux d'être un grand cavalier, un grand amant et un grand économiste et de les avoir tous réalisés."
+            ],
+            "answer": [
+                0,
+                3
+            ],
+            "explanation": "Schumpeter fut bien ministre des Finances du gouvernement Renner-Bauer (1919–20). L'anecdote sur les trois vœux est célèbre et authentique. Son ouvrage « Capitalisme, Socialisme et Démocratie » (1942) prédit l'effondrement du capitalisme, non de l'URSS. Mises et Hayek étaient ses contemporains, non ses disciples."
+        },
+        {
+            "id": "gp-q075",
+            "qcm": "CG - QCM2",
+            "theme": "Culture générale",
+            "question": "Monopole de Cournot — $P = 2000 - 10Q$, $C = 100 + 20Q + 10Q^2$. Donnez le surplus social d'équilibre.",
+            "choices": [
+                "12 251,25",
+                "36 653,75",
+                "24 402,5",
+                "49 500"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Rm = 2000 − 20Q, Cm = 20 + 20Q. Q* = 1980/40 = 49,5. P* = 1505. SC = ½ × 495 × 49,5 = 12 251,25. Profit = 495 × 49,5 − 100 = 24 402,5. Surplus social = 12 251,25 + 24 402,5 = 36 653,75."
+        },
+        {
+            "id": "gp-q076",
+            "qcm": "CG - QCM2",
+            "theme": "Culture générale",
+            "question": "Monopole de Cournot — $P = 100 - 10Q$, $C = 20Q + 5Q^2$. Donnez le prix d'équilibre.",
+            "choices": [
+                "60",
+                "80",
+                "73,33",
+                "50"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Rm = 100 − 20Q, Cm = 20 + 10Q. Rm = Cm → Q* = 8/3 ≈ 2,67. P* = 100 − 10 × (8/3) = 100 − 80/3 ≈ 73,33."
+        },
+        {
+            "id": "gp-q077",
+            "qcm": "CG - QCM2",
+            "theme": "Culture générale",
+            "question": "CPP — $P = 100 - 10Q$, $C = 20Q + 5Q^2$. Donnez le surplus social si le marché est en CPP.",
+            "choices": [
+                "80",
+                "120",
+                "160",
+                "49,5"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "En CPP : P = Cm → Q* = 4, P* = 60. SC = ½ × 40 × 4 = 80. Cm_moy = 40, SP = (60−40) × 4 = 80. Surplus social = 80 + 80 = 160."
+        },
+        {
+            "id": "gp-q078",
+            "qcm": "CG - QCM2",
+            "theme": "Culture générale",
+            "question": "CPP — $P = 100 - 10Q$, $C = 20Q + 5Q^2$. Donnez la quantité globale produite en CPP.",
+            "choices": [
+                "2,67",
+                "4",
+                "6",
+                "8"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "En CPP : P = Cm → 100 − 10Q = 20 + 10Q → 80 = 20Q → Q* = 4."
+        },
+        {
+            "id": "gp-q079",
+            "qcm": "CG - QCM2",
+            "theme": "Culture générale",
+            "question": "Monopole de Cournot — $P = 500 - 20Q$, $C = 100 + 10Q + 20Q^2$. Donnez le prix d'équilibre.",
+            "choices": [
+                "250",
+                "300",
+                "377,5",
+                "422,5"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Rm = 500 − 40Q, Cm = 10 + 40Q. Q* = 490/80 = 6,125. P* = 500 − 20 × 6,125 = 377,5."
+        },
+        {
+            "id": "gp-q080",
+            "qcm": "CG - QCM2",
+            "theme": "Culture générale",
+            "question": "Monopole de Dupuit — $P = 2000 - 10Q$, $C = 100 + 20Q + 10Q^2$. Donnez la quantité d'équilibre.",
+            "choices": [
+                "49,5",
+                "56",
+                "66",
+                "75"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le monopole de Dupuit fixe P(Q) = Cm (discrimination parfaite). 2000 − 10Q = 20 + 20Q → Q* = 1980/30 = 66."
+        },
+        {
+            "id": "gp-q093",
+            "qcm": "GdP1 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio de Sharpe est :",
+            "choices": [
+                "Le taux auquel le risque est transformé en prime de risque.",
+                "Un critère non paramétrique de classement des risques.",
+                "Une mesure de risque corrigée de la performance.",
+                "Une estimation de la perte maximale au seuil de 5%."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le ratio de Sharpe = (Rp – Rf) / σp est la pente de la droite CML : il mesure combien d'unités de prime de risque l'investisseur obtient par unité de risque (volatilité) acceptée. C'est donc le taux de conversion du risque en prime de risque."
+        },
+        {
+            "id": "gp-q094",
+            "qcm": "GdP1 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère deux titres A et B dont les betas sont 1,5 et 1,2. Le rendement espéré du marché est de 12%. Le taux certain est de 2%. Quel est l'écart de leur rendement espéré (Er de A - Er de B) ?",
+            "choices": [
+                "Aucune de ces valeurs.",
+                "-0,02",
+                "0,05",
+                "0,03"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Er(A) = 2% + 1,5 × (12% – 2%) = 17%. Er(B) = 2% + 1,2 × (12% – 2%) = 14%. Er(A) – Er(B) = 3% = 0,03."
+        },
+        {
+            "id": "gp-q095",
+            "qcm": "GdP1 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio de Sharpe d'un gérant est :",
+            "choices": [
+                "Son rendement excédentaire (calculé avec le CAPM).",
+                "Son rendement moyen corrigé du risque.",
+                "Le taux auquel il convertit du risque en prime de risque."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le ratio de Sharpe est la pente de la droite reliant l'actif sans risque au portefeuille du gérant. Il mesure le nombre de points de rendement excédentaire obtenus par unité de volatilité. La proposition A décrit l'alpha de Jensen."
+        },
+        {
+            "id": "gp-q096",
+            "qcm": "GdP1 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le beta d'un titre est :",
+            "choices": [
+                "Le résidu du modèle de marché.",
+                "Le rapport de la covariance des rendements du titre et de l'indice du marché divisée par la variance du rendement du marché.",
+                "Le rapport de la corrélation des rendements du titre et de l'indice de marché à l'écart-type du rendement de l'indice de marché."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "β = Cov(Ri, Rm) / Var(Rm). La proposition A décrit le résidu ε du modèle de marché. La proposition C est incorrecte : ρ/σm ≠ β."
+        },
+        {
+            "id": "gp-q097",
+            "qcm": "GdP1 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère un univers de deux titres dont les volatilités sont 10% et 15%. Si la corrélation est égale à -1, quelle sera la part du premier titre dans le portefeuille sans risque ?",
+            "choices": [
+                "0,4",
+                "0,5",
+                "0,6",
+                "0,67"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Quand ρ = −1, le portefeuille sans risque a pour poids : w1 = σ2 / (σ1 + σ2) = 15% / (10% + 15%) = 15/25 = 0,6."
+        },
+        {
+            "id": "gp-q098",
+            "qcm": "GdP1 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le CAPM est supposé valide. Deux titres ont des betas de 0,5 et 1, des rendements espérés de 4,5% et 7%. Le taux certain est de 2%. Un troisième titre a un beta de 0,2. Quel est son rendement espéré ?",
+            "choices": [
+                "0,02",
+                "0,03",
+                "0,04",
+                "0,05"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Titre 1 : 4,5% = 2% + 0,5 × (Rm – Rf) → Rm – Rf = 5%. Titre 2 : 7% = 2% + 1 × 5% ✓. Er3 = 2% + 0,2 × 5% = 3% = 0,03."
+        },
+        {
+            "id": "gp-q099",
+            "qcm": "GdP1 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le rendement moyen de l'indice de marché est de 10%, sa volatilité est de 16%. Le taux certain est de 2%. Si un investisseur veut atteindre un rendement de 20%, quelle volatilité devra-t-il accepter ?",
+            "choices": [
+                "0,24",
+                "0,30",
+                "0,36",
+                "0,40"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Pente de la CML = ratio de Sharpe du marché : (10% – 2%) / 16% = 0,5. (20% – 2%) / σp = 0,5 → σp = 18% / 0,5 = 36% = 0,36."
+        },
+        {
+            "id": "gp-q100",
+            "qcm": "GdP1 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio de Treynor est :",
+            "choices": [
+                "Le rapport du rendement excédentaire à la volatilité totale du portefeuille.",
+                "Le taux auquel le risque systématique est transformé en prime de risque.",
+                "La différence entre le rendement du portefeuille et celui prédit par le CAPM.",
+                "Une estimation de la perte maximale au seuil de 1%."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le ratio de Treynor = (Rp – Rf) / βp. Il mesure combien d'unités de prime de risque le portefeuille génère par unité de risque systématique (bêta). La proposition A décrit le ratio de Sharpe, la proposition C décrit l'alpha de Jensen."
+        },
+        {
+            "id": "gp-q101",
+            "qcm": "GdP1 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère deux titres A et B dont les betas sont 0,8 et 1,4. Le rendement espéré du marché est de 10%. Le taux certain est de 3%. Quel est l'écart de leur rendement espéré (Er de A - Er de B) ?",
+            "choices": [
+                "-0,042",
+                "0,042",
+                "-0,06",
+                "Aucune de ces valeurs."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Er(A) = 3% + 0,8 × (10% – 3%) = 8,6%. Er(B) = 3% + 1,4 × (10% – 3%) = 12,8%. Er(A) – Er(B) = -4,2% = -0,042."
+        },
+        {
+            "id": "gp-q102",
+            "qcm": "GdP1 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "L'alpha de Jensen d'un gérant est :",
+            "choices": [
+                "Le taux auquel il convertit du risque systématique en prime de risque.",
+                "Son rendement moyen divisé par son bêta.",
+                "La part de son rendement non expliquée par le CAPM, mesure de sa surperformance."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'alpha de Jensen = Rp – [Rf + βp × (Rm – Rf)]. C'est la différence entre le rendement effectivement réalisé et celui qu'aurait prédit le CAPM. Un alpha positif indique une surperformance. La proposition A décrit le ratio de Treynor."
+        },
+        {
+            "id": "gp-q103",
+            "qcm": "GdP1 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "La variance d'un portefeuille composé de deux titres est :",
+            "choices": [
+                "La somme pondérée des variances des deux titres.",
+                "$w_1^2\\sigma_1^2 + w_2^2\\sigma_2^2 + 2w_1w_2\\text{Cov}(R_1,R_2)$",
+                "Le produit des écarts-types des deux titres multiplié par leur corrélation."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La formule exacte est σ²p = w1²σ1² + w2²σ2² + 2w1w2Cov(R1,R2), avec Cov(R1,R2) = ρ12 × σ1 × σ2. La proposition A oublie le terme croisé de covariance. La proposition C ne correspond à aucune formule standard."
+        },
+        {
+            "id": "gp-q104",
+            "qcm": "GdP1 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère un univers de deux titres dont les volatilités sont 8% et 20%. Si la corrélation est égale à -1, quelle sera la part du premier titre dans le portefeuille sans risque ?",
+            "choices": [
+                "0,5",
+                "0,6",
+                "0,667",
+                "0,714"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Quand ρ = −1 : w1 = σ2 / (σ1 + σ2) = 20% / (8% + 20%) = 20/28 ≈ 0,714."
+        },
+        {
+            "id": "gp-q105",
+            "qcm": "GdP1 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Le CAPM est supposé valide. Deux titres ont des betas de 0,4 et 1,2, des rendements espérés de 5,2% et 9,6%. Le taux certain est de 3%. Un troisième titre a un beta de 0,6. Quel est son rendement espéré ?",
+            "choices": [
+                "0,055",
+                "0,060",
+                "0,063",
+                "0,066"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Titre 1 : 5,2% = 3% + 0,4 × (Rm – Rf) → Rm – Rf = 5,5%. Titre 2 : 9,6% = 3% + 1,2 × 5,5% = 9,6% ✓. Er3 = 3% + 0,6 × 5,5% = 6,3% = 0,063. (Le PDF indiquait 0,066 par erreur.)"
+        },
+        {
+            "id": "gp-q106",
+            "qcm": "GdP1 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Le rendement moyen de l'indice de marché est de 8%, sa volatilité est de 20%. Le taux certain est de 2%. Si un investisseur veut atteindre un rendement de 14%, quelle volatilité devra-t-il accepter ?",
+            "choices": [
+                "0,30",
+                "0,36",
+                "0,40",
+                "0,50"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Sharpe du marché = (8% – 2%) / 20% = 0,3. (14% – 2%) / σp = 0,3 → σp = 12% / 0,3 = 40% = 0,40."
+        },
+        {
+            "id": "gp-q107",
+            "qcm": "GdP1 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Si un gérant fait jouer l'effet de levier, son ratio de Sharpe va :",
+            "choices": [
+                "Rester le même.",
+                "Augmenter.",
+                "Augmenter si le marché est haussier, baisser sinon."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'effet de levier consiste à emprunter au taux sans risque pour investir davantage dans le portefeuille risqué. On se déplace sur la CML, mais la pente reste identique : le rendement excédentaire et la volatilité augmentent dans la même proportion, donc le ratio de Sharpe = (Rp – Rf) / σp est inchangé."
+        },
+        {
+            "id": "gp-q108",
+            "qcm": "GdP1 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "L'investissement sur un titre dont le beta est négatif implique que :",
+            "choices": [
+                "L'impact des baisses du marché va être plus faible.",
+                "Le portefeuille va être décorrélé du marché.",
+                "La prime de risque du portefeuille va être négative."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un beta négatif signifie que le titre évolue en sens inverse du marché. Quand le marché baisse, ce titre monte — ce qui atténue l'impact des baisses sur le portefeuille. La proposition C est fausse : c'est le rendement espéré du titre lui-même qui est inférieur à Rf. La proposition B serait vraie pour β = 0 uniquement."
+        },
+        {
+            "id": "gp-q109",
+            "qcm": "GdP1 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille efficient est :",
+            "choices": [
+                "Un portefeuille qui permet d'avoir une performance plus grande pour un niveau de risque donné.",
+                "Un portefeuille pour lequel il n'existe aucun autre portefeuille ayant un rendement moyen strictement supérieur pour au pire la même volatilité.",
+                "Un portefeuille vérifiant le critère de Pareto."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "C'est la définition exacte de l'efficience au sens de Markowitz : un portefeuille est efficient s'il n'est dominé par aucun autre, c'est-à-dire qu'on ne peut pas trouver un portefeuille offrant plus de rendement pour le même niveau de risque ou moins. La proposition A est trop vague. La proposition C utilise un vocabulaire d'économie du bien-être."
+        },
+        {
+            "id": "gp-q110",
+            "qcm": "GdP1 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio de Sharpe d'un portefeuille est de 0,2 calculé sur des rendements mensuels. Si on l'annualisait, sa valeur serait :",
+            "choices": [
+                "12 fois plus grande (soit 2,4).",
+                "Environ 0,69.",
+                "La même car le ratio de Sharpe est invariant à l'horizon."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Pour annualiser un ratio de Sharpe mensuel, on multiplie par √12 : Sharpe annuel = 0,2 × √12 ≈ 0,693. Le rendement moyen s'annualise ×12 mais la volatilité s'annualise ×√12, donc le ratio donne ×√12."
+        },
+        {
+            "id": "gp-q111",
+            "qcm": "GdP1 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère un titre dont le beta est 0,5 et un portefeuille dont le beta est 1. La volatilité du marché est de 10%. Quelle est la covariance entre les rendements du portefeuille et du titre ?",
+            "choices": [
+                "0,001",
+                "0,005",
+                "0,010",
+                "0,050"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans le modèle de marché : Cov(Ri, Rj) = βi × βj × σ²m = 0,5 × 1 × (0,10)² = 0,5 × 0,01 = 0,005."
+        },
+        {
+            "id": "gp-q112",
+            "qcm": "GdP1 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Trois titres A, B, C ont des rendements espérés de 10%, 12%, 5% et des volatilités de 15%, 20%, 8%. Les corrélations sont : ρ(A,B)=0,5, ρ(A,C)=-0,2, ρ(B,C)=-0,1. Le taux sans risque est 2%. Quelle est la volatilité du portefeuille tangent ?",
+            "choices": [
+                "0,0512",
+                "0,0612",
+                "0,0702",
+                "0,0850"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "On cherche le portefeuille tangent via w ∝ Σ⁻¹(μ – rf·1). Primes de risque : zA=8%, zB=10%, zC=3%. Après inversion de la matrice de covariance, les poids normalisés sont wA≈0,2894, wB≈0,1412, wC≈0,5694. σp = √(w⊤Σw) ≈ 0,0702 (soit 7,02%)."
+        },
+        {
+            "id": "gp-q113",
+            "qcm": "GdP1 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux titres A et B ont des betas de 0,8 et 1,2. La volatilité du marché est de 15%. Donnez la covariance entre ces deux titres.",
+            "choices": [
+                "0,0144",
+                "0,0180",
+                "0,0216",
+                "0,0270"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Cov(RA, RB) = βA × βB × σ²m = 0,8 × 1,2 × (0,15)² = 0,96 × 0,0225 = 0,0216."
+        },
+        {
+            "id": "gp-q114",
+            "qcm": "GdP1 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Le CAPM est une théorie :",
+            "choices": [
+                "découverte simultanément par Jevons, Walras et Menger.",
+                "découverte en 1936 par John Maynard Keynes.",
+                "affirmant que la prime de risque est créée par le risque.",
+                "découverte notamment par William Sharpe."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le CAPM (Capital Asset Pricing Model) a été développé dans les années 1960 notamment par William Sharpe, John Lintner et Jan Mossin. Il relie le rendement espéré d'un actif à son risque systématique mesuré par le bêta."
+        },
+        {
+            "id": "gp-q115",
+            "qcm": "GdP1 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "À l'équilibre du marché, la valeur d'un alpha est :",
+            "choices": [
+                "nécessairement strictement positif.",
+                "nul si le modèle définissant l'équilibre est correct.",
+                "positif si la bourse est à la hausse, négatif sinon."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'alpha mesure l'écart entre le rendement observé d'un actif et celui prédit par le modèle. Si le modèle d'équilibre est parfaitement valide, aucun actif ne génère de rendement anormal : l'alpha est donc nul."
+        },
+        {
+            "id": "gp-q116",
+            "qcm": "GdP1 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Les corrélations des rendements des actions ont tendance en cas de crise :",
+            "choices": [
+                "à devenir très négatives.",
+                "à augmenter.",
+                "à diminuer en raison du ralentissement des transactions."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Lors des crises financières, les investisseurs vendent massivement de nombreux actifs simultanément. Les rendements deviennent alors davantage synchronisés et les corrélations augmentent fortement, réduisant les bénéfices de la diversification."
+        },
+        {
+            "id": "gp-q117",
+            "qcm": "GdP1 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un produit financier a un rendement espéré de 10% et un risque (écart-type) de 15%. L'investisseur a un coefficient d'aversion au risque de 2. Quel est le rendement du produit sans risque équivalent ?",
+            "choices": [
+                "0,0550",
+                "0,0700",
+                "0,0775",
+                "0,0850"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "U = E(R) − (A/2) × σ² = 0,10 − (2/2) × (0,15)² = 0,10 − 0,0225 = 0,0775. Le rendement certain équivalent est donc 7,75%."
+        },
+        {
+            "id": "gp-q118",
+            "qcm": "GdP1 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère deux titres A et B avec les rendements suivants sur 10 périodes :\n\n| Période | Indice | Titre A | Titre B |\n|---------|--------|---------|---------|\n| 1       | 0,109  | -0,002  | 0,020   |\n| 2       | 0,143  | 0,099   | -0,087  |\n| 3       | 0,071  | -0,035  | 0,094   |\n| 4       | 0,259  | 0,034   | -0,088  |\n| 5       | 0,076  | 0,064   | -0,062  |\n| 6       | 0,163  | 0,040   | 0,001   |\n| 7       | 0,111  | -0,039  | 0,003   |\n| 8       | -0,008 | -0,056  | -0,005  |\n| 9       | -0,199 | -0,083  | 0,018   |\n| 10      | 0,095  | 0,051   | -0,017  |\n\nQuel doit être le poids du titre A pour que le portefeuille formé de ces deux titres soit décorrélé de l'indice ?",
+            "choices": [
+                "0,250",
+                "0,373",
+                "0,500",
+                "0,627"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "On cherche wA tel que Cov(RP, RM) = 0. wA × Cov(RA,RM) + (1−wA) × Cov(RB,RM) = 0 → wA = −Cov(RB,RM) / (Cov(RA,RM) − Cov(RB,RM)) ≈ 0,373.\n\nSous Excel, on calcule d'abord les deux covariances :\n- `=COVARIANCE.S(C2:C11;B2:B11)` pour obtenir la covariance entre le titre A et l'indice.\n- `=COVARIANCE.S(D2:D11;B2:B11)` pour obtenir la covariance entre le titre B et l'indice.\n\nPuis on applique directement :\n`=-COVARIANCE.S(D2:D11;B2:B11)/(COVARIANCE.S(C2:C11;B2:B11)-COVARIANCE.S(D2:D11;B2:B11))`"
+        },
+        {
+            "id": "gp-q119",
+            "qcm": "GdP1 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un univers où tous les titres ont la même volatilité de 10% et une même corrélation de 0,5, quel est le niveau de volatilité minimale obtenu par diversification ?",
+            "choices": [
+                "0,005",
+                "0,050",
+                "0,0707",
+                "0,100"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La volatilité minimale tend vers σ√ρ = 0,10 × √0,5 ≈ 0,0707 quand le nombre de titres devient grand. La variance correspondante est 0,005 (valeur affichée par le corrigé Moodle, qui correspond à la variance et non à la volatilité)."
+        },
+        {
+            "id": "gp-q120",
+            "qcm": "GdP1 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "L'indice de marché a un rendement espéré de 12% et une volatilité de 15%. Le taux certain est de 2%. Un fonds a une volatilité de 30%. Quel devrait être son rendement espéré d'après la CML ?",
+            "choices": [
+                "0,18",
+                "0,20",
+                "0,22",
+                "0,24"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Sur la CML : (E(R) − Rf) / σ = (E(RM) − Rf) / σM. E(R) = 0,02 + 0,30 × (0,10/0,15) = 0,02 + 0,20 = 0,22."
+        },
+        {
+            "id": "gp-q121",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le modèle du CAPM, le portefeuille de marché est :",
+            "choices": [
+                "le portefeuille de l'investisseur le plus prudent",
+                "le portefeuille qui maximise la variance",
+                "le portefeuille composé uniquement d'actions",
+                "la combinaison pondérée de tous les actifs risqués selon leur capitalisation"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le portefeuille de marché dans le CAPM est constitué de l'ensemble des actifs risqués disponibles dans l'économie, pondérés par leur capitalisation de marché. Il représente le portefeuille que tous les investisseurs détiennent à l'équilibre."
+        },
+        {
+            "id": "gp-q122",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "La liquidité d'un hedge fund est généralement :",
+            "choices": [
+                "plus faible que celle d'un mutual fund",
+                "meilleure que celle des actions cotées",
+                "inexistante car les hedge funds ne sont pas réglementés",
+                "assurée quotidiennement par le marché"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les hedge funds imposent souvent des périodes de blocage (lock-up) et des fenêtres de rachat limitées. Leur liquidité est généralement inférieure à celle des mutual funds classiques."
+        },
+        {
+            "id": "gp-q123",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Que mesure le ratio de Sharpe ?",
+            "choices": [
+                "la perte maximale anticipée",
+                "la volatilité spécifique d'un portefeuille",
+                "le rendement excédentaire par unité de risque total",
+                "le rendement corrigé du bêta"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le ratio de Sharpe = (Rp − Rf) / σp. Il indique combien de rendement excédentaire est obtenu pour chaque unité de risque total supportée."
+        },
+        {
+            "id": "gp-q124",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est dit efficient au sens de Pareto si :",
+            "choices": [
+                "il offre une performance supérieure à l'indice",
+                "il n'existe aucun autre portefeuille avec un rendement supérieur et un risque inférieur",
+                "il maximise la rentabilité absolue",
+                "il présente la meilleure diversification possible"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un portefeuille est Pareto-efficient lorsqu'il est impossible de trouver un autre portefeuille offrant simultanément un rendement plus élevé et un risque plus faible."
+        },
+        {
+            "id": "gp-q125",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Si un actif est correctement valorisé selon le CAPM, alors :",
+            "choices": [
+                "son alpha est nul",
+                "sa variance est égale à zéro",
+                "son bêta est toujours égal à 1",
+                "son rendement est supérieur au marché"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un actif correctement valorisé se situe exactement sur la Security Market Line. Son rendement correspond à celui prévu par le CAPM : α = 0."
+        },
+        {
+            "id": "gp-q126",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif a une covariance avec le marché de 0,018 et la variance du marché est de 0,012. Quel est son bêta estimé ?",
+            "choices": [
+                "1,50",
+                "1,25",
+                "2,00",
+                "0,75"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "β = Cov(Ri, RM) / Var(RM) = 0,018 / 0,012 = 1,50."
+        },
+        {
+            "id": "gp-q127",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un hedge fund, l'effet de levier financier permet :",
+            "choices": [
+                "de se protéger contre l'inflation",
+                "d'amplifier les gains comme les pertes en empruntant pour investir davantage",
+                "de réduire le risque d'un portefeuille en augmentant la liquidité",
+                "de garantir un rendement minimum"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'effet de levier consiste à emprunter pour investir davantage. Il augmente à la fois le potentiel de gain et le risque de perte."
+        },
+        {
+            "id": "gp-q128",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce que la Capital Market Line (CML) ?",
+            "choices": [
+                "la droite reliant la prime de risque du marché au bêta",
+                "la droite des actifs dominés dans le plan rendement-risque",
+                "la droite définie par le ratio de Sharpe du marché et le taux certain dans le plan volatilité-rendement",
+                "une frontière efficiente des portefeuilles individuels uniquement"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La CML relie le taux sans risque au portefeuille de marché dans le plan rendement-volatilité. Sa pente est le ratio de Sharpe du marché."
+        },
+        {
+            "id": "gp-q129",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la principale différence entre un fonds ouvert (mutual fund) et un fonds fermé ?",
+            "choices": [
+                "Le fonds fermé est plus liquide que le fonds ouvert",
+                "Le fonds ouvert émet et rachète ses parts en continu",
+                "Le fonds ouvert est réservé aux institutionnels",
+                "Le fonds fermé garantit le capital initial"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les fonds ouverts créent et rachètent continuellement des parts à la valeur liquidative."
+        },
+        {
+            "id": "gp-q130",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "40% dans un actif à 5%, 60% dans un actif à 8%. Quel est le rendement moyen du portefeuille ?",
+            "choices": [
+                "6,8 %",
+                "7,5 %",
+                "5,8 %",
+                "6,0 %"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "RP = 0,4 × 5% + 0,6 × 8% = 2% + 4,8% = 6,8%."
+        },
+        {
+            "id": "gp-q131",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Covariance actif-marché : 0,014, variance marché : 0,016. Quel est le bêta estimé ?",
+            "choices": [
+                "1,25",
+                "0,875",
+                "1,05",
+                "0,65"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "β = Cov(Ri, RM) / Var(RM) = 0,014 / 0,016 = 0,875."
+        },
+        {
+            "id": "gp-q132",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le taux sans risque est de 2%. Le portefeuille de marché a un rendement de 8% et une volatilité de 10%. Quel est le rendement attendu d'un portefeuille avec une volatilité de 5% situé sur la Capital Market Line ?",
+            "choices": [
+                "7,0 %",
+                "5,0 %",
+                "4,0 %",
+                "6,0 %"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Sur la CML : E(RP) = Rf + σP × (E(RM) − Rf) / σM = 2 + 5 × (8−2)/10 = 2 + 3 = 5%."
+        },
+        {
+            "id": "gp-q133",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio d'information mesure :",
+            "choices": [
+                "le bêta ajusté à la volatilité",
+                "la variance d'un portefeuille",
+                "la corrélation d'un actif au marché",
+                "la performance excédentaire ajustée du risque spécifique"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le ratio d'information mesure la surperformance obtenue relativement au benchmark par unité de tracking error : IR = (RP − RB) / Tracking Error."
+        },
+        {
+            "id": "gp-q134",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux actifs A et B ont les caractéristiques suivantes : Rendement A = 5%, écart-type A = 10% ; Rendement B = 9%, écart-type B = 20% ; Corrélation A-B = 0,2. Quel portefeuille (pondérations de A) minimise la variance ?",
+            "choices": [
+                "50% A, 50% B",
+                "69% A, 31% B",
+                "31% A, 69% B",
+                "100% A"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "wA = (σB² − ρσAσB) / (σA² + σB² − 2ρσAσB) = (0,04 − 0,004) / (0,05 − 0,008) = 0,036 / 0,052 ≈ 69%. Donc wB ≈ 31%."
+        },
+        {
+            "id": "gp-q135",
+            "qcm": "GdP2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon l'hypothèse d'efficience des marchés (forme faible), les prix reflètent :",
+            "choices": [
+                "toutes les informations publiques",
+                "toutes les informations passées sur les prix",
+                "aucune information",
+                "toutes les informations, y compris privées"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La forme faible de l'efficience stipule que toute l'information historique des prix est déjà intégrée dans les cours actuels. À retenir : forme faible → informations passées sur les prix ; forme semi-forte → informations publiques ; forme forte → toutes les informations, y compris privées."
+        },
+        {
+            "id": "gp-q136",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille a un rendement de 10%, une volatilité de 5% et le taux sans risque est de 2%. Quel est son ratio de Sharpe ?",
+            "choices": [
+                "2,0",
+                "1,6",
+                "0,5",
+                "1,2"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Sharpe = (Rp − Rf) / σp = (10 − 2) / 5 = 8/5 = 1,6."
+        },
+        {
+            "id": "gp-q137",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Rendements mensuels sur 10 périodes — Titre C : 4%, 5%, 3%, 6%, 2%, 4%, 3%, 5%, 6%, 4% — Marché : 2%, 3%, 2%, 4%, 1%, 3%, 2%, 3%, 5%, 3%. Quel est le bêta estimé du titre C ?",
+            "choices": [
+                "1,00",
+                "1,50",
+                "1,30",
+                "0,75"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "β = Cov(RC, RM) / Var(RM). D'après le calcul sur ces données, le bêta est proche de 1,00."
+        },
+        {
+            "id": "gp-q138",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le CAPM, le rendement espéré d'un actif dépend :",
+            "choices": [
+                "de son alpha",
+                "de sa volatilité uniquement",
+                "du taux d'inflation",
+                "de son bêta et de la prime de risque du marché"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "E(R) = Rf + β × (E(RM) − Rf). Le rendement attendu dépend du bêta et de la prime de risque du marché."
+        },
+        {
+            "id": "gp-q139",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon l'hypothèse d'efficience des marchés (forme faible), les prix reflètent :",
+            "choices": [
+                "toutes les informations, y compris privées",
+                "toutes les informations passées sur les prix",
+                "aucune information",
+                "toutes les informations publiques"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La forme faible implique que toute l'information historique sur les prix est déjà intégrée dans les cours. Forme semi-forte → informations publiques. Forme forte → toutes les informations y compris privées."
+        },
+        {
+            "id": "gp-q140",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon l'hypothèse d'efficience des marchés (forme semi-forte), les prix reflètent :",
+            "choices": [
+                "toutes les informations, y compris privées",
+                "aucune information",
+                "toutes les informations passées sur les prix uniquement",
+                "toutes les informations publiques"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La forme semi-forte implique que toutes les informations publiques (annonces, bilans, etc.) sont déjà intégrées dans les cours. La forme faible couvre uniquement les prix passés, la forme forte couvre aussi les informations privées."
+        },
+        {
+            "id": "gp-q141",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la principale différence entre un fonds ouvert (mutual fund) et un fonds fermé ?",
+            "choices": [
+                "Le fonds ouvert émet et rachète ses parts en continu",
+                "Le fonds ouvert est réservé aux institutionnels",
+                "Le fonds fermé est plus liquide que le fonds ouvert",
+                "Le fonds fermé garantit le capital initial"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les fonds ouverts permettent l'émission et le rachat continus de parts à la valeur liquidative."
+        },
+        {
+            "id": "gp-q142",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Rendement : 10%, taux sans risque : 2%, bêta : 1,25. Quel est le ratio de Treynor ?",
+            "choices": [
+                "10,0",
+                "6,4",
+                "8,0",
+                "7,5"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Treynor = (Rp − Rf) / β = (10 − 2) / 1,25 = 8 / 1,25 = 6,4."
+        },
+        {
+            "id": "gp-q143",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif affiche un rendement de 11% avec un bêta de 1. Le marché a rapporté 9% et le taux sans risque est 2%. Quel est son alpha estimé selon le CAPM ?",
+            "choices": [
+                "1%",
+                "0%",
+                "-1%",
+                "2%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "E(R) = 2 + 1 × (9 − 2) = 9%. α = 11 − 9 = 2%."
+        },
+        {
+            "id": "gp-q144",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio de Treynor utilise quelle mesure du risque ?",
+            "choices": [
+                "Le bêta",
+                "L'écart-type",
+                "Le VaR",
+                "La corrélation au marché"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le ratio de Treynor = (Rp − Rf) / β. Il mesure le rendement excédentaire par unité de risque systématique (bêta)."
+        },
+        {
+            "id": "gp-q145",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Que mesure le ratio de Sharpe ?",
+            "choices": [
+                "le rendement corrigé du bêta",
+                "le rendement excédentaire par unité de risque total",
+                "la volatilité spécifique d'un portefeuille",
+                "la perte maximale anticipée"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Sharpe = (Rp − Rf) / σp. Le risque mesuré est la volatilité totale du portefeuille."
+        },
+        {
+            "id": "gp-q146",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux portefeuilles efficients : P1 (rendement=6%, volatilité=5%) et P2 (rendement=10%, volatilité=15%). Quel est le poids de P1 dans un portefeuille visant 7,6% de rendement ?",
+            "choices": [
+                "0,6",
+                "0,4",
+                "0,25",
+                "0,75"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "7,6 = x × 6 + (1−x) × 10 → 7,6 = 6x + 10 − 10x → 4x = 2,4 → x = 0,6."
+        },
+        {
+            "id": "gp-q147",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce que la Capital Market Line (CML) ?",
+            "choices": [
+                "la droite des actifs dominés dans le plan rendement-risque",
+                "la droite reliant la prime de risque du marché au bêta",
+                "la droite définie par le ratio de Sharpe du marché et le taux certain dans le plan volatilité-rendement",
+                "une frontière efficiente des portefeuilles individuels uniquement"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La CML relie le taux sans risque au portefeuille de marché dans le plan rendement-volatilité. Sa pente est le ratio de Sharpe du marché."
+        },
+        {
+            "id": "gp-q148",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'un portefeuille efficient selon Markowitz ?",
+            "choices": [
+                "un portefeuille qui maximise la kurtosis",
+                "un portefeuille qui minimise l'asymétrie",
+                "un portefeuille pour lequel aucun autre n'offre un meilleur rendement pour un même risque",
+                "un portefeuille diversifié sur tous les secteurs"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un portefeuille efficient est situé sur la frontière efficiente : aucun autre portefeuille n'offre un rendement supérieur pour le même niveau de risque."
+        },
+        {
+            "id": "gp-q149",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Si un actif est correctement valorisé selon le CAPM, alors :",
+            "choices": [
+                "son rendement est supérieur au marché",
+                "sa variance est égale à zéro",
+                "son alpha est nul",
+                "son bêta est toujours égal à 1"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un actif correctement valorisé se situe exactement sur la SML : α = 0."
+        },
+        {
+            "id": "gp-q150",
+            "qcm": "GdP3 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel test valide empiriquement le CAPM ?",
+            "choices": [
+                "la corrélation négative entre rendement et volatilité",
+                "la relation linéaire entre rendement excédentaire et bêta",
+                "la prédiction exacte des rendements futurs",
+                "le lien entre alpha et risque idiosyncratique"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le CAPM est validé lorsque les rendements excédentaires sont expliqués linéairement par le bêta et non par des alphas significatifs."
+        },
+        {
+            "id": "gp-q151",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille offre un rendement espéré de 8% et une variance de 0,0025. L'aversion au risque A=3. Quel est son équivalent certain (CE) ?",
+            "choices": [
+                "6,500%",
+                "7,625%",
+                "8%",
+                "7,750%"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "CE = E(R) − (A/2) × σ² = 8% − (3/2) × 0,0025 = 8% − 0,375% = 7,625%."
+        },
+        {
+            "id": "gp-q152",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Sur la frontière efficiente, les portefeuilles :",
+            "choices": [
+                "offrent le meilleur rendement pour un niveau de risque donné",
+                "sont composés uniquement d'actifs sans risque",
+                "ont toujours une corrélation négative",
+                "ont tous le même bêta"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La frontière efficiente représente les portefeuilles optimaux en termes de rendement et de risque."
+        },
+        {
+            "id": "gp-q153",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux portefeuilles efficients : P1 = 5%, P2 = 9%. Quel portefeuille permet d'atteindre un rendement cible de 6,2% ?",
+            "choices": [
+                "30% P1, 70% P2",
+                "70% P1, 30% P2",
+                "50% P1, 50% P2",
+                "40% P1, 60% P2"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "x = (R2 − Rt) / (R2 − R1) = (9 − 6,2) / (9 − 5) = 2,8/4 = 0,7 → 70% dans P1 et 30% dans P2."
+        },
+        {
+            "id": "gp-q154",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'une anomalie sur les marchés financiers ?",
+            "choices": [
+                "une imperfection des marchés due aux coûts de transaction",
+                "un déséquilibre temporaire appelé à être résorbé dans la journée",
+                "une théorie reposant sur la psychologie des investisseurs",
+                "un écart entre la prime de risque effective et la prime de risque prédite par le CAPM"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Une anomalie est un écart empirique entre les prédictions d'un modèle (comme le CAPM) et les observations du marché."
+        },
+        {
+            "id": "gp-q155",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif sans risque rapporte 2%. Un portefeuille P a un rendement de 8% et une volatilité de 10%. Quel est le ratio de Sharpe ?",
+            "choices": [
+                "0,5",
+                "0,6",
+                "0,8",
+                "1,2"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Sharpe = (8 − 2) / 10 = 6/10 = 0,6."
+        },
+        {
+            "id": "gp-q156",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Les fonds de pension investissent généralement avec :",
+            "choices": [
+                "une stratégie de très court terme",
+                "un horizon de placement de long terme",
+                "un objectif de rendement immédiat",
+                "des arbitrages intrajournaliers fréquents"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les fonds de pension investissent sur plusieurs décennies afin de financer les retraites futures."
+        },
+        {
+            "id": "gp-q157",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un arbitrage consiste à :",
+            "choices": [
+                "profiter d'une opportunité sans risque pour un gain certain",
+                "comparer les performances sur un benchmark",
+                "diversifier le portefeuille pour réduire le risque",
+                "acheter et conserver un actif en espérant une hausse"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'arbitrage exploite une incohérence de prix afin de réaliser un profit sans risque."
+        },
+        {
+            "id": "gp-q158",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio d'information mesure :",
+            "choices": [
+                "la corrélation d'un actif au marché",
+                "le bêta ajusté à la volatilité",
+                "la performance excédentaire ajustée du risque spécifique",
+                "la variance d'un portefeuille"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "IR = (Rp − Rb) / Tracking Error. Il mesure la qualité de la surperformance obtenue par unité de risque actif."
+        },
+        {
+            "id": "gp-q159",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel test valide empiriquement le CAPM ?",
+            "choices": [
+                "le lien entre alpha et risque idiosyncratique",
+                "la relation linéaire entre rendement excédentaire et bêta",
+                "la prédiction exacte des rendements futurs",
+                "la corrélation négative entre rendement et volatilité"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le CAPM est validé lorsque les rendements excédentaires sont expliqués linéairement par le bêta et non par des alphas significatifs."
+        },
+        {
+            "id": "gp-q160",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est composé de 60% d'un actif à bêta 1,3 et 40% d'un actif à bêta 0,8. Quel est le bêta du portefeuille ?",
+            "choices": [
+                "1,1",
+                "0,95",
+                "1,0",
+                "1,2"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "βp = 0,6 × 1,3 + 0,4 × 0,8 = 0,78 + 0,32 = 1,10."
+        },
+        {
+            "id": "gp-q161",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le CAPM, la droite de marché des titres (SML) est :",
+            "choices": [
+                "la frontière efficiente du portefeuille",
+                "la courbe des taux sans risque",
+                "la relation entre rendement espéré et bêta",
+                "la relation entre rendement et volatilité"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La Security Market Line (SML) relie le rendement attendu au bêta : E(R) = Rf + β × (E(RM) − Rf)."
+        },
+        {
+            "id": "gp-q162",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est dit efficient au sens de Pareto si :",
+            "choices": [
+                "il n'existe aucun autre portefeuille avec un rendement supérieur et un risque inférieur",
+                "il maximise la rentabilité absolue",
+                "il offre une performance supérieure à l'indice",
+                "il présente la meilleure diversification possible"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un portefeuille est Pareto-efficient lorsqu'il ne peut être amélioré simultanément en rendement et en risque."
+        },
+        {
+            "id": "gp-q163",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un mutual fund (fonds commun de placement) est :",
+            "choices": [
+                "un fonds qui regroupe les capitaux de plusieurs investisseurs pour les placer dans un portefeuille diversifié",
+                "un fonds obligataire exclusivement",
+                "un produit structuré à capital garanti",
+                "un fonds spéculatif réservé aux institutionnels"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les mutual funds permettent à plusieurs investisseurs de mutualiser leurs capitaux dans un portefeuille géré professionnellement."
+        },
+        {
+            "id": "gp-q164",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On dispose de la matrice de covariance entre 3 titres A, B, C (variances : A=4, B=5, C=6 ; covariances : AB=2, AC=1, BC=1,5). Quel est le portefeuille de variance minimale ?",
+            "choices": [
+                "45% A, 25% B, 30% C",
+                "25% A, 25% B, 50% C",
+                "50% A, 30% B, 20% C",
+                "60% A, 20% B, 20% C"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La formule théorique est : w = Σ⁻¹·1 / (1'·Σ⁻¹·1)\n\n**Méthode Excel du professeur**\n\n**Cas 1 : on dispose directement de la matrice de covariance**\n1. Calculer l'inverse : `=INVERSEMAT(matrice_covariance)`\n2. Créer le vecteur : [1, 1, 1]\n3. Calculer : `=PRODUITMAT(matrice_inverse;vecteur_1)`\n4. Faire la somme des composantes obtenues : `=SOMME(...)`\n5. Diviser chaque composante par cette somme.\n\nOn obtient : 38% A, 42% B, 20% C.\n\n**Cas 2 : si l'énoncé fournit un vecteur de volatilités et une matrice de corrélation**\nIl faut d'abord construire la matrice de covariance :\n`=PRODUITMAT(mat_diag_volatilites;PRODUITMAT(mat_correlations;mat_diag_volatilites))`\nEnsuite : `=INVERSEMAT(matrice_covariance)` → `=PRODUITMAT(matrice_inverse;vecteur_1)` → `=SOMME(...)` → `=chaque_valeur/somme`\n\nC'est exactement la méthode utilisée dans le cours."
+        },
+        {
+            "id": "gp-q165",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "À l'équilibre du marché selon le CAPM, quelle est la valeur attendue de l'alpha d'un actif ?",
+            "choices": [
+                "nul si le modèle définissant l'équilibre est correct",
+                "positif si la bourse est à la hausse, négatif sinon",
+                "lié à la prime de risque moyenne du marché",
+                "nécessairement strictement positif"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Selon le CAPM, α = 0 pour tout actif correctement valorisé à l'équilibre du marché."
+        },
+        {
+            "id": "gp-q166",
+            "qcm": "GdP4 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On donne les rendements espérés, les volatilités et la matrice de corrélation de trois actifs :\n\n| | Actif 1 | Actif 2 | Actif 3 |\n|---|---|---|---|\n| Rendement espéré | 12% | 10% | 6% |\n| Volatilité | 20% | 16% | 6% |\n\nMatrice de corrélation :\n\n| | Actif 1 | Actif 2 | Actif 3 |\n|---|---|---|---|\n| Actif 1 | 1 | 0,6 | -0,2 |\n| Actif 2 | 0,6 | 1 | -0,1 |\n| Actif 3 | -0,2 | -0,1 | 1 |\n\nAprès avoir calculé le portefeuille de variance minimale, quelles sont ses performances ?",
+            "choices": [
+                "E(R)=0,068, volatilité=0,0524, Sharpe=1,296",
+                "E(R)=0,080, volatilité=0,0600, Sharpe=1,333",
+                "E(R)=0,060, volatilité=0,0480, Sharpe=1,250",
+                "E(R)=0,074, volatilité=0,0580, Sharpe=1,276"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Poids du portefeuille de variance minimale : w1≈8,2%, w2≈7,8%, w3≈84,0%.\n\n**Formules Excel :**\n\n- **E(R)** : `{=PRODUITMAT(TRANSPOSE(Er);poids)}` → 0,068\n- **Volatilité** : `{=PRODUITMAT(TRANSPOSE(poids);PRODUITMAT(correlation;poids))^0,5}` → 0,0524\n- **Sharpe** : `=E(R)/volatilité` → 1,296\n\nPour les poids, construire d'abord la matrice de covariance :\n`=PRODUITMAT(mat_diag_volatilites;PRODUITMAT(mat_correlations;mat_diag_volatilites))`\nPuis : `=INVERSEMAT()` → `=PRODUITMAT(inverse;vecteur_1)` → normaliser par `=SOMME(...)`"
+        },
+        {
+            "id": "gp-q167",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le CAPM, la droite de marché des titres est :",
+            "choices": [
+                "la relation entre rendement espéré et bêta",
+                "la relation entre rendement et volatilité",
+                "la frontière efficiente du portefeuille",
+                "la courbe des taux sans risque"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La droite de marché des titres (Security Market Line) relie le rendement espéré d'un actif à son bêta."
+        },
+        {
+            "id": "gp-q168",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille offre un rendement espéré de 8% et une variance de 0,0025. L'aversion au risque A = 3. Quel est son équivalent certain (CE) ?",
+            "choices": [
+                "8%",
+                "6,500%",
+                "7,750%",
+                "7,625%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "CE = E(R) − (1/2) × A × σ² = 8% − (1/2) × 3 × 0,0025 = 7,625%."
+        },
+        {
+            "id": "gp-q169",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Que représente un alpha positif dans un modèle de marché ?",
+            "choices": [
+                "une meilleure corrélation au marché",
+                "une surperformance par rapport à ce que prédit le modèle",
+                "un indicateur de risque systématique",
+                "un rendement identique au marché"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un alpha positif signifie que l'actif ou le portefeuille réalise une performance supérieure à celle prédite par le modèle."
+        },
+        {
+            "id": "gp-q170",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon l'hypothèse d'efficience des marchés (forme faible), les prix reflètent :",
+            "choices": [
+                "toutes les informations passées sur les prix",
+                "toutes les informations publiques",
+                "aucune information",
+                "toutes les informations, y compris privées"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La forme faible de l'efficience suppose que toute l'information historique est déjà intégrée dans les cours."
+        },
+        {
+            "id": "gp-q171",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio d'information mesure :",
+            "choices": [
+                "la variance d'un portefeuille",
+                "le bêta ajusté à la volatilité",
+                "la performance excédentaire ajustée du risque spécifique",
+                "la corrélation d'un actif au marché"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le ratio d'information mesure la qualité de l'alpha obtenu par unité de risque spécifique (tracking error)."
+        },
+        {
+            "id": "gp-q172",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un arbitrage consiste à :",
+            "choices": [
+                "profiter d'une opportunité sans risque pour un gain certain",
+                "diversifier le portefeuille pour réduire le risque",
+                "acheter et conserver un actif en espérant une hausse",
+                "comparer les performances sur un benchmark"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'arbitrage exploite une anomalie de prix afin de générer un profit sans risque."
+        },
+        {
+            "id": "gp-q173",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le risque non systématique est aussi appelé :",
+            "choices": [
+                "risque spécifique",
+                "rendement excédentaire",
+                "risque de marché",
+                "prime de risque"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Ce risque est propre à l'entreprise et peut être réduit par diversification."
+        },
+        {
+            "id": "gp-q174",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'un portefeuille efficient selon Markowitz ?",
+            "choices": [
+                "un portefeuille pour lequel aucun autre n'offre un meilleur rendement pour un même risque",
+                "un portefeuille qui maximise la kurtosis",
+                "un portefeuille diversifié sur tous les secteurs",
+                "un portefeuille qui minimise l'asymétrie"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un portefeuille efficient maximise le rendement pour un niveau de risque donné."
+        },
+        {
+            "id": "gp-q175",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Que mesure le ratio de Sharpe ?",
+            "choices": [
+                "le rendement corrigé du bêta",
+                "la perte maximale anticipée",
+                "la volatilité spécifique d'un portefeuille",
+                "le rendement excédentaire par unité de risque total"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Sharpe = (Rp − Rf) / σp. Il mesure le rendement excédentaire obtenu pour une unité de risque total."
+        },
+        {
+            "id": "gp-q176",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille a un rendement annuel de 10% avec une volatilité de 5%, taux sans risque : 2%. Quel est son ratio de Sharpe ?",
+            "choices": [
+                "1,2",
+                "0,8",
+                "2,0",
+                "1,6"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Sharpe = (10 − 2) / 5 = 8/5 = 1,6."
+        },
+        {
+            "id": "gp-q177",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Comment est défini le bêta d'un actif ?",
+            "choices": [
+                "la corrélation entre les rendements de l'actif et du marché",
+                "la covariance entre les rendements de l'actif et du marché divisée par la variance du marché",
+                "la volatilité de l'actif sur la volatilité du marché",
+                "le rendement moyen d'un actif sur celui du marché"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "βi = Cov(Ri, Rm) / Var(Rm)."
+        },
+        {
+            "id": "gp-q178",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif a généré un rendement moyen de 9%, pour un bêta de 1,1. Marché : 8%, Rf : 2%. Quel est son alpha estimé ?",
+            "choices": [
+                "0%",
+                "0,4%",
+                "2%",
+                "1%"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "E(R) = 2 + 1,1 × (8 − 2) = 2 + 6,6 = 8,6%. α = 9 − 8,6 = 0,4%."
+        },
+        {
+            "id": "gp-q179",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est le rendement espéré d'un actif avec un bêta de 1,5, si Rf = 2% et E(Rm) = 8% ?",
+            "choices": [
+                "9%",
+                "10%",
+                "11%",
+                "12%"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "E(R) = Rf + β × (E(Rm) − Rf) = 2 + 1,5 × (8 − 2) = 2 + 9 = 11%."
+        },
+        {
+            "id": "gp-q180",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est composé de 60% d'un actif à bêta 1,3 et 40% d'un actif à bêta 0,8. Quel est le bêta du portefeuille ?",
+            "choices": [
+                "1,2",
+                "1,1",
+                "0,95",
+                "1,0"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "βp = 0,6 × 1,3 + 0,4 × 0,8 = 0,78 + 0,32 = 1,1."
+        },
+        {
+            "id": "gp-q181",
+            "qcm": "GdP5 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille situé sous la Capital Market Line :",
+            "choices": [
+                "a un bêta nul",
+                "est toujours composé uniquement d'actifs sans risque",
+                "domine les portefeuilles efficients",
+                "offre un rendement inférieur à celui d'un portefeuille efficient pour le même risque"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un portefeuille situé sous la CML n'est pas efficient : pour un même niveau de risque, un portefeuille sur la CML offre un rendement plus élevé."
+        },
+        {
+            "id": "gp-q182",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est composé de 60% d'un actif à β=1,3 et 40% d'un actif à β=0,8. Quel est le bêta du portefeuille ?",
+            "choices": [
+                "1,2",
+                "1,1",
+                "1,0",
+                "0,95"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "βp = 0,6×1,3 + 0,4×0,8 = 0,78 + 0,32 = 1,1."
+        },
+        {
+            "id": "gp-q183",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif a généré un rendement moyen de 9%, pour un bêta de 1,1. Marché : 8%, Rf : 2%. Quel est son alpha estimé ?",
+            "choices": [
+                "0,2%",
+                "2%",
+                "0%",
+                "1%"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "CAPM : E(R) = 2 + 1,1×(8−2) = 8,8%. α = 9 − 8,8 = 0,2%."
+        },
+        {
+            "id": "gp-q184",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Qui est l'un des principaux contributeurs à la formulation du CAPM ?",
+            "choices": [
+                "William Sharpe",
+                "Robert Merton",
+                "Fischer Black",
+                "Harry Markowitz"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "William Sharpe a formalisé le CAPM dans les années 1960, en s'appuyant sur la théorie de Markowitz."
+        },
+        {
+            "id": "gp-q185",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif affiche un rendement de 11% avec un bêta de 1. Le marché a rapporté 9%, et le taux sans risque est 2%. Quel est son alpha estimé selon le CAPM ?",
+            "choices": [
+                "2%",
+                "-1%",
+                "1%",
+                "0%"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "E(R) = 2 + 1×(9−2) = 9%. α = 11 − 9 = 2%. (Le corrigé Moodle indiquait 0% par erreur.)"
+        },
+        {
+            "id": "gp-q186",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le cadre de la théorie du portefeuille, un actif sans risque a :",
+            "choices": [
+                "un rendement supérieur au marché",
+                "un bêta de 1",
+                "une variance nulle",
+                "une corrélation parfaite avec l'indice"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'actif sans risque a un rendement constant, donc une variance nulle (σ²=0) et un bêta de 0."
+        },
+        {
+            "id": "gp-q187",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le modèle du CAPM, le portefeuille de marché est :",
+            "choices": [
+                "la combinaison pondérée de tous les actifs risqués selon leur capitalisation",
+                "le portefeuille qui maximise la variance",
+                "le portefeuille composé uniquement d'actions",
+                "le portefeuille de l'investisseur le plus prudent"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le portefeuille de marché dans le CAPM est une combinaison de tous les actifs risqués pondérés par leur part dans le marché."
+        },
+        {
+            "id": "gp-q188",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Sur la frontière efficiente, les portefeuilles :",
+            "choices": [
+                "ont tous le même bêta",
+                "sont composés uniquement d'actifs sans risque",
+                "ont toujours une corrélation négative",
+                "offrent le meilleur rendement pour un niveau de risque donné"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La frontière efficiente représente les portefeuilles optimaux en termes de rendement et de risque."
+        },
+        {
+            "id": "gp-q189",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "40% dans un actif à 5%, 60% dans un actif à 8%. Quel est le rendement moyen du portefeuille ?",
+            "choices": [
+                "6,0%",
+                "5,8%",
+                "7,5%",
+                "6,8%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Rp = 0,4×5% + 0,6×8% = 2% + 4,8% = 6,8%."
+        },
+        {
+            "id": "gp-q190",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "On observe les rendements : A = 3%,4%,5%,3%,2%,4%,3%,4%,5%,4% et B = 2%,3%,4%,2%,1%,3%,2%,3%,4%,3%. Quelle est la corrélation approximative entre A et B ?",
+            "choices": [
+                "0,45",
+                "-0,15",
+                "0,25",
+                "0,95"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "En utilisant la fonction de corrélation sur Excel (=COEFFICIENT.CORRELATION()), on obtient ≈ 0,95."
+        },
+        {
+            "id": "gp-q191",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'une anomalie sur les marchés financiers ?",
+            "choices": [
+                "un déséquilibre temporaire appelé à être résorbé dans la journée",
+                "une théorie reposant sur la psychologie des investisseurs",
+                "une imperfection des marchés due aux coûts de transaction",
+                "un écart entre la prime de risque effective et la prime de risque prédite par le CAPM"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Une anomalie est un écart empirique entre les prédictions du modèle et les observations du marché."
+        },
+        {
+            "id": "gp-q192",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle stratégie un hedge fund peut-il utiliser pour se protéger contre une baisse du marché ?",
+            "choices": [
+                "la diversification sectorielle seulement",
+                "l'achat d'obligations convertibles uniquement",
+                "la vente à découvert",
+                "l'augmentation de la duration obligataire"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les hedge funds peuvent vendre des titres qu'ils ne détiennent pas pour profiter d'une baisse attendue (vente à découvert)."
+        },
+        {
+            "id": "gp-q193",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel type de risque peut être éliminé par diversification dans un portefeuille ?",
+            "choices": [
+                "Le risque systématique",
+                "Le risque spécifique",
+                "Le bêta",
+                "La volatilité totale"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le risque spécifique est propre à chaque actif et peut être diversifié à travers la construction de portefeuilles. Le risque systématique reste présent."
+        },
+        {
+            "id": "gp-q194",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un arbitrage consiste à :",
+            "choices": [
+                "comparer les performances sur un benchmark",
+                "diversifier le portefeuille pour réduire le risque",
+                "profiter d'une opportunité sans risque pour un gain certain",
+                "acheter et conserver un actif en espérant une hausse"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'arbitrage désigne une stratégie permettant de tirer profit de déséquilibres de prix sans prendre de risque."
+        },
+        {
+            "id": "gp-q195",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Si un actif est correctement valorisé selon le CAPM, alors :",
+            "choices": [
+                "son alpha est nul",
+                "sa variance est égale à zéro",
+                "son rendement est supérieur au marché",
+                "son bêta est toujours égal à 1"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Dans le modèle du CAPM, un actif bien valorisé a un alpha nul, c'est-à-dire qu'il est sur la ligne de marché (SML)."
+        },
+        {
+            "id": "gp-q196",
+            "qcm": "GdP5 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux actifs parfaitement corrélés (+1) auront dans un portefeuille :",
+            "choices": [
+                "un rendement certain",
+                "un bêta moyen nul",
+                "aucun gain de diversification",
+                "une volatilité minimale"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Lorsque deux actifs sont parfaitement corrélés (ρ=+1), la diversification ne réduit pas le risque global."
+        },
+        {
+            "id": "gp-q197",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle hypothèse est essentielle dans le modèle du CAPM ?",
+            "choices": [
+                "Le rendement des actifs est constant",
+                "Les actifs ne sont pas risqués",
+                "Les marchés sont toujours en hausse",
+                "Tous les investisseurs ont les mêmes anticipations"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le CAPM suppose que tous les investisseurs disposent des mêmes informations et forment les mêmes anticipations sur les rendements, les risques et les corrélations."
+        },
+        {
+            "id": "gp-q198",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la principale différence entre un fonds ouvert (mutual fund) et un fonds fermé ?",
+            "choices": [
+                "Le fonds ouvert est réservé aux institutionnels",
+                "Le fonds ouvert émet et rachète ses parts en continu",
+                "Le fonds fermé est plus liquide que le fonds ouvert",
+                "Le fonds fermé garantit le capital initial"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les fonds ouverts permettent aux investisseurs d'acheter ou vendre des parts directement auprès du fonds à la valeur liquidative."
+        },
+        {
+            "id": "gp-q199",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Le risque non systématique est aussi appelé :",
+            "choices": [
+                "rendement excédentaire",
+                "risque de marché",
+                "prime de risque",
+                "risque spécifique"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le risque spécifique est propre à une entreprise ou à un secteur. Il peut être éliminé par diversification."
+        },
+        {
+            "id": "gp-q200",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Rendement espéré : 10%, écart-type : 4%, A = 4. Quelle est la valeur équivalente certaine ?",
+            "choices": [
+                "8,4%",
+                "10%",
+                "9,2%",
+                "9,6%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "CE = E(R) − 0,5×A×σ² = 10 − 0,5×4×(0,04)² = 10 − 0,0032 = 9,968% ≈ 9,6% (réponse la plus proche). Note : le corrigé officiel indique 9,2% mais le calcul exact donne 9,968%."
+        },
+        {
+            "id": "gp-q201",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est dit efficient au sens de Pareto si :",
+            "choices": [
+                "il présente la meilleure diversification possible",
+                "il offre une performance supérieure à l'indice",
+                "il maximise la rentabilité absolue",
+                "il n'existe aucun autre portefeuille avec un rendement supérieur et un risque inférieur"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "On ne peut pas améliorer simultanément rendement et risque pour un portefeuille efficient."
+        },
+        {
+            "id": "gp-q202",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel test valide empiriquement le CAPM ?",
+            "choices": [
+                "la relation linéaire entre rendement excédentaire et bêta",
+                "la corrélation négative entre rendement et volatilité",
+                "la prédiction exacte des rendements futurs",
+                "le lien entre alpha et risque idiosyncratique"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le CAPM est validé lorsque les rendements excédentaires sont linéairement expliqués par le bêta."
+        },
+        {
+            "id": "gp-q203",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux titres A et B ont les rendements suivants sur 10 mois :\nA : 2%,3%,4%,2%,1%,3%,4%,2%,2%,3%\nB : 1%,2%,2%,1%,2%,1%,2%,2%,1%,2%\nLa corrélation est ρ=0,5. Quelle est la volatilité approximative du portefeuille équipondéré (50%-50%) ?",
+            "choices": [
+                "0,70%",
+                "1,24%",
+                "1,75%",
+                "2,50%"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "σP = √(w1²σ1² + w2²σ2² + 2w1w2ρσ1σ2). Avec σA≈0,97%, σB≈0,52%, ρ=0,5, w=0,5 : σP ≈ 0,65% ≈ 0,70% (réponse la plus proche). Sous Excel : =RACINE(0,5^2*σA^2+0,5^2*σB^2+2*0,5*0,5*0,5*σA*σB)."
+        },
+        {
+            "id": "gp-q204",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif avec un bêta de 1,2 a tendance à :",
+            "choices": [
+                "évoluer plus fortement que le marché",
+                "être décorrélé du marché",
+                "avoir un rendement inférieur au marché",
+                "avoir un risque plus faible que le marché"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un bêta > 1 signifie que l'actif amplifie les mouvements du marché : il monte plus que le marché quand celui-ci monte, et baisse plus quand il baisse."
+        },
+        {
+            "id": "gp-q205",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille situé sous la Capital Market Line :",
+            "choices": [
+                "domine les portefeuilles efficients",
+                "offre un rendement inférieur à celui d'un portefeuille efficient pour le même risque",
+                "est toujours composé uniquement d'actifs sans risque",
+                "a un bêta nul"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un portefeuille sous la CML est sous-optimal : pour le même niveau de risque, un portefeuille sur la CML offre un rendement plus élevé."
+        },
+        {
+            "id": "gp-q206",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Les fonds de pension investissent généralement avec :",
+            "choices": [
+                "un objectif de rendement immédiat",
+                "un horizon de placement de long terme",
+                "une stratégie de très court terme",
+                "des arbitrages intrajournaliers fréquents"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les fonds de pension investissent sur plusieurs décennies afin de financer les retraites futures."
+        },
+        {
+            "id": "gp-q207",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif rapporte 10%. Bêta = 1,1, marché = 9%, taux sans risque = 3%. Quel est son alpha estimé ?",
+            "choices": [
+                "1,0%",
+                "0,7%",
+                "0%",
+                "0,4%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "E(R) = 3 + 1,1×(9−3) = 3 + 6,6 = 9,6%. α = 10 − 9,6 = 0,4%. (Le corrigé officiel indiquait 0,1% par erreur de calcul : 3+1,1×6 = 9,6 et non 9,9.)"
+        },
+        {
+            "id": "gp-q208",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le CAPM, la droite de marché des titres est :",
+            "choices": [
+                "la courbe des taux sans risque",
+                "la relation entre rendement et volatilité",
+                "la relation entre rendement espéré et bêta",
+                "la frontière efficiente du portefeuille"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La Security Market Line (SML) relie le rendement espéré d'un actif à son bêta."
+        },
+        {
+            "id": "gp-q209",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un mutual fund (fonds commun de placement) est :",
+            "choices": [
+                "un fonds spéculatif réservé aux institutionnels",
+                "un produit structuré à capital garanti",
+                "un fonds qui regroupe les capitaux de plusieurs investisseurs pour les placer dans un portefeuille diversifié",
+                "un fonds obligataire exclusivement"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les mutual funds permettent à plusieurs investisseurs de mutualiser leurs capitaux dans un portefeuille géré professionnellement."
+        },
+        {
+            "id": "gp-q210",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif a un rendement moyen de 11%, un bêta de 1,2. Le marché a rapporté 8%, le taux sans risque est de 2%. L'alpha de l'actif est :",
+            "choices": [
+                "négatif",
+                "non mesurable",
+                "positif",
+                "nul"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "E(R) = 2 + 1,2×(8−2) = 9,2%. α = 11 − 9,2 = 1,8% > 0 → alpha positif."
+        },
+        {
+            "id": "gp-q211",
+            "qcm": "GdP5 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif a une covariance avec le marché de 0,018, et la variance du marché est de 0,012. Quel est son bêta estimé ?",
+            "choices": [
+                "0,75",
+                "1,50",
+                "2,00",
+                "1,25"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "β = Cov(RA, RM) / Var(RM) = 0,018 / 0,012 = 1,50."
+        },
+        {
+            "id": "gp-q212",
+            "qcm": "AM2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, quelle classe d'actifs a enregistré la plus forte croissance des encours (en variation annuelle) ?",
+            "choices": [
+                "Alternatifs",
+                "« Other » (multi-actifs, infra, commodities, etc.)",
+                "Cash",
+                "Obligations (fixed income)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les actifs alternatifs (private equity, infrastructure, immobilier, hedge funds, etc.) ont connu la plus forte croissance des encours en 2023 parmi les grandes classes d'actifs."
+        },
+        {
+            "id": "gp-q213",
+            "qcm": "AM2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans l'attribution de performance, que représente généralement l'alpha d'un gérant ?",
+            "choices": [
+                "Le taux sans risque à court terme",
+                "La part de portefeuille investie en obligations d'État",
+                "Le coût total des frais de transaction du fonds",
+                "La performance « résiduelle » par rapport au benchmark après prise en compte du risque (beta)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'alpha mesure la valeur ajoutée du gérant qui ne s'explique pas par l'exposition au risque de marché."
+        },
+        {
+            "id": "gp-q214",
+            "qcm": "AM2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle région représente la plus grande part des encours des 500 plus grands gestionnaires (fin 2023) ?",
+            "choices": [
+                "Amérique du Nord",
+                "Reste du monde",
+                "Japon",
+                "Europe (incluant Royaume-Uni)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les États-Unis dominent largement l'industrie mondiale de la gestion d'actifs, ce qui place l'Amérique du Nord en tête des encours."
+        },
+        {
+            "id": "gp-q215",
+            "qcm": "AM2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle combinaison décrit le mieux les rôles respectifs d'une autorité nationale et d'une autorité européenne en matière de supervision des marchés ?",
+            "choices": [
+                "Nationale : supervise uniquement l'immobilier ; Européenne : supervise uniquement les actions",
+                "Nationale : agrée/contrôle/sanctionne ; Européenne : coordonne/harmonise et veille à la convergence des règles",
+                "Nationale : fixe les taux directeurs ; Européenne : gère la comptabilité des entreprises",
+                "Nationale : ne fait que du conseil ; Européenne : garantit les rendements des fonds"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les régulateurs nationaux supervisent les acteurs locaux tandis que les autorités européennes harmonisent les pratiques et réglementations."
+        },
+        {
+            "id": "gp-q216",
+            "qcm": "AM2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, quel type de véhicule a le plus augmenté ses encours (croissance annuelle) ?",
+            "choices": [
+                "Autres fonds mutualisés (pooled/commingled)",
+                "Mandats (separate accounts)",
+                "Fonds (mutual funds / UCITS)",
+                "Produits structurés"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les fonds ouverts de type UCITS/mutual funds ont affiché la croissance des encours la plus élevée en 2023."
+        },
+        {
+            "id": "gp-q217",
+            "qcm": "AM2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle proposition décrit le mieux une SICAV ?",
+            "choices": [
+                "Un compte-titres géré par une banque centrale",
+                "Une société d'investissement qui émet des actions et détient un portefeuille d'actifs",
+                "Un contrat d'assurance-vie en unités de compte",
+                "Un véhicule à capital fixe coté en bourse"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une SICAV est une société à capital variable dont les investisseurs deviennent actionnaires."
+        },
+        {
+            "id": "gp-q218",
+            "qcm": "AM2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel véhicule correspond à une société cotée à capital fixe au Royaume-Uni ?",
+            "choices": [
+                "Fonds souverain",
+                "FCP (Fonds Commun de Placement)",
+                "Fonds de pension",
+                "Investment Trust (UK)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un Investment Trust est un fonds fermé coté en bourse dont le capital est fixe."
+        },
+        {
+            "id": "gp-q219",
+            "qcm": "AM2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle proposition décrit le mieux une industrie de gestion d'actifs fortement intégrée verticalement ?",
+            "choices": [
+                "Un marché composé uniquement de petits acteurs indépendants",
+                "Un système où tous les portefeuilles sont gérés par l'État",
+                "Un modèle où la gestion est remplacée par des comptes à terme",
+                "Des groupes bancaires/assurantiels contrôlent à la fois distribution, gestion et souvent la conservation des actifs"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'intégration verticale signifie qu'un même groupe contrôle plusieurs maillons de la chaîne de valeur (distribution, gestion, conservation)."
+        },
+        {
+            "id": "gp-q220",
+            "qcm": "AM2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel acteur est généralement propriétaire des actifs et délègue la gestion à une société de gestion ?",
+            "choices": [
+                "Broker (courtier)",
+                "Asset owner (caisse de retraite, fondation, fonds souverain)",
+                "Dépositaire (custodian)",
+                "Agence de notation"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'asset owner possède les actifs et mandate éventuellement un gestionnaire pour les administrer."
+        },
+        {
+            "id": "gp-q221",
+            "qcm": "AM2 - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle « marque » est associée au lancement (autour de l'an 2000) d'une grande gamme d'ETF ayant contribué à l'industrialisation mondiale des ETF ?",
+            "choices": [
+                "HedgeTrack",
+                "BondPlus",
+                "PrimeAlpha",
+                "iShares"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La gamme iShares a largement contribué à démocratiser et développer le marché mondial des ETF au début des années 2000."
+        },
+        {
+            "id": "gp-q222",
+            "qcm": "AM2 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle définition correspond le mieux au tracking error d'un fonds indiciel ?",
+            "choices": [
+                "La volatilité de l'écart de performance entre le fonds et son benchmark.",
+                "Le pourcentage d'actifs illiquides dans le portefeuille.",
+                "Le nombre moyen de titres détenus par le fonds.",
+                "La performance moyenne du fonds avant frais."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le tracking error mesure la variabilité de l'écart de performance entre un fonds indiciel et son indice de référence. Plus il est faible, plus la réplication de l'indice est fidèle."
+        },
+        {
+            "id": "gp-q223",
+            "qcm": "AM2 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, quel type de véhicule a affiché la plus forte croissance des encours (YoY) ?",
+            "choices": [
+                "Autres véhicules mutualisés (pooled/commingled)",
+                "Mandats (separate accounts)",
+                "Cash management",
+                "Fonds (mutual funds / UCITS)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les fonds UCITS ont bénéficié du rebond des marchés et des flux d'investissement, contribuant à une forte croissance des encours."
+        },
+        {
+            "id": "gp-q224",
+            "qcm": "AM2 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "À quoi sert principalement une plateforme de gestion de portefeuille (PMS) ?",
+            "choices": [
+                "Garantir contractuellement la performance d'un fonds.",
+                "Remplacer la conservation des titres par une chambre de compensation.",
+                "Fixer les taux directeurs de l'économie.",
+                "Centraliser le suivi des portefeuilles (positions/ordres) et faciliter le contrôle, l'analyse risque/performance et le reporting."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le PMS est l'outil central des sociétés de gestion pour le suivi des positions, le contrôle des risques, l'analyse des performances et la production de reportings."
+        },
+        {
+            "id": "gp-q225",
+            "qcm": "AM2 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est l'impact principal des frais de gestion sur un fonds pour l'investisseur ?",
+            "choices": [
+                "Ils augmentent automatiquement la valeur liquidative.",
+                "Ils garantissent la protection du capital.",
+                "Ils suppriment totalement le risque de marché.",
+                "Ils réduisent la performance nette pour l'investisseur."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les frais sont prélevés sur les actifs du fonds et diminuent directement le rendement net obtenu par l'investisseur."
+        },
+        {
+            "id": "gp-q226",
+            "qcm": "AM2 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle date est associée à l'approbation par Vanguard du premier fonds indiciel ?",
+            "choices": [
+                "15 août 1971",
+                "1er janvier 1993",
+                "18 septembre 1975",
+                "29 octobre 1929"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le 18 septembre 1975 est associé à l'approbation du premier fonds indiciel de Vanguard, précurseur de l'investissement indiciel moderne."
+        },
+        {
+            "id": "gp-q227",
+            "qcm": "AM2 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "La catégorie « alternatifs » inclut le plus souvent quels types de stratégies ?",
+            "choices": [
+                "Uniquement produits monétaires et dépôts bancaires.",
+                "Uniquement actions large cap et obligations souveraines.",
+                "Private equity (dont venture), hedge funds, immobilier, infrastructure, crédit illiquide (et assimilés).",
+                "Uniquement stratégies de change (FX) sans autres classes d'actifs."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les investissements alternatifs regroupent généralement les actifs non traditionnels tels que le private equity, l'immobilier ou encore les hedge funds."
+        },
+        {
+            "id": "gp-q228",
+            "qcm": "AM2 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Laquelle des propositions décrit le mieux des actifs non cotés (non-listed) ?",
+            "choices": [
+                "Réservés exclusivement aux banques centrales ; interdits aux investisseurs institutionnels.",
+                "Pas de marché secondaire organisé ; valorisation plus complexe ; liquidité généralement plus faible.",
+                "Garantis par l'État ; rendement minimum contractuel ; risque nul.",
+                "Négociés sur un marché réglementé ; prix transparents ; liquidité élevée."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les actifs non cotés sont souvent plus difficiles à valoriser et à revendre que les actifs négociés sur les marchés publics."
+        },
+        {
+            "id": "gp-q229",
+            "qcm": "AM2 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un marché où le Top 3 représente environ 40,8% des encours (cas du Royaume-Uni), quels acteurs composent ce Top 3 ?",
+            "choices": [
+                "Amundi, BNP Paribas AM, Natixis IM",
+                "BlackRock, Vanguard, State Street",
+                "Legal & General, Schroders, Fidelity International",
+                "HSBC, Barclays, Lloyds"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Ces trois acteurs, souvent appelés les « Big Three », dominent la gestion indicielle mondiale."
+        },
+        {
+            "id": "gp-q230",
+            "qcm": "AM2 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le cadre du cours, quelles sont les trois institutions cardinales de l'industrie de l'asset management ?",
+            "choices": [
+                "Société de gestion, fonds d'investissement, régulateur",
+                "Banque centrale, chambre de compensation, agence de notation",
+                "Prime broker, hedge fund, dépositaire",
+                "Banque de dépôt, assureur, fonds souverain"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Ces trois acteurs constituent les fondements institutionnels de l'industrie de la gestion d'actifs."
+        },
+        {
+            "id": "gp-q231",
+            "qcm": "AM2 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, quelle part environ des encours totaux des 500 plus grands gestionnaires est concentrée dans le Top 20 ?",
+            "choices": [
+                "Environ 12,5%",
+                "Environ 80,3%",
+                "Environ 29,0%",
+                "Environ 45,5%"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'industrie mondiale de la gestion d'actifs est fortement concentrée : les 20 plus grands acteurs contrôlent une très grande majorité des encours."
+        },
+        {
+            "id": "gp-q232",
+            "qcm": "AM2 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle caractéristique définit le mieux un fonds ouvert (open-end) ?",
+            "choices": [
+                "Le fonds est coté en continu en bourse et ne traite jamais à la valeur liquidative.",
+                "L'investisseur peut souscrire et racheter des parts au prix de la valeur liquidative (NAV) selon une fréquence définie.",
+                "Le nombre de parts est fixe : aucune souscription ni aucun rachat n'est possible.",
+                "Le fonds est réservé exclusivement aux investisseurs qualifiés et non au public."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un fonds ouvert émet et rachète continuellement des parts. Les investisseurs peuvent entrer ou sortir du fonds à la valeur liquidative (NAV) calculée périodiquement."
+        },
+        {
+            "id": "gp-q233",
+            "qcm": "AM2 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un marché où le Top 3 représente environ 67% des encours (cas France), quels acteurs composent ce Top 3 ?",
+            "choices": [
+                "Allianz, UBS, Deutsche Bank",
+                "Legal & General, Schroders, Fidelity International",
+                "AXA IM, Crédit Agricole CIB, Société Générale CIB",
+                "Amundi, BNP Paribas Asset Management, Natixis Investment Managers"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le marché français de la gestion d'actifs est historiquement dominé par Amundi, BNP Paribas Asset Management et Natixis Investment Managers."
+        },
+        {
+            "id": "gp-q234",
+            "qcm": "AM2 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Une loi fédérale américaine majeure de 1974 sur les retraites (ERISA) a imposé un devoir fiduciaire. Quels effets lui sont le plus directement associés ?",
+            "choices": [
+                "Clarification des responsabilités, standardisation des pratiques et essor d'outils/acteurs de mesure, comparaison et intermédiation.",
+                "Privatisation des banques centrales et suppression des régulateurs de marché.",
+                "Suppression des obligations de reporting, interdiction des benchmarks et plafonnement uniforme des rendements.",
+                "Obligation d'investir exclusivement en immobilier résidentiel."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'ERISA (1974) a professionnalisé la gestion institutionnelle en clarifiant les responsabilités des fiduciaires et en favorisant le développement des benchmarks, du reporting et du conseil."
+        },
+        {
+            "id": "gp-q235",
+            "qcm": "AM2 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, quelle classe d'actifs a enregistré la plus forte croissance des encours ?",
+            "choices": [
+                "Obligations (fixed income)",
+                "Cash",
+                "« Other » (multi-actifs, infrastructures, commodities…)",
+                "Alternatifs"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les actifs alternatifs (private equity, dette privée, infrastructures, hedge funds, etc.) ont connu la croissance la plus forte grâce à la recherche de diversification et de rendement."
+        },
+        {
+            "id": "gp-q236",
+            "qcm": "AM2 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie un « nombre effectif d'acteurs » plus élevé (mesuré comme 1/HHI) dans un marché de gestion d'actifs ?",
+            "choices": [
+                "Le marché est plus concentré autour de quelques acteurs dominants.",
+                "Le marché est moins concentré (répartition des parts de marché plus diffuse).",
+                "La gestion est nécessairement 100% passive.",
+                "Les encours sont forcément plus élevés en valeur absolue."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Plus le nombre effectif d'acteurs est élevé, plus les parts de marché sont réparties entre plusieurs concurrents et moins le marché est concentré."
+        },
+        {
+            "id": "gp-q237",
+            "qcm": "AM2 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après le rapport Top 500 Asset Managers (Thinking Ahead Institute / Pensions & Investments), quel était le total des AUM des 500 plus grands gestionnaires à fin 2023 ?",
+            "choices": [
+                "68,9 trillions USD",
+                "128,0 trillions USD",
+                "77,8 trillions USD",
+                "58,2 trillions USD"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les 500 plus grands gestionnaires mondiaux administraient environ 128 trillions USD à fin 2023."
+        },
+        {
+            "id": "gp-q238",
+            "qcm": "AM2 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Parmi ces types de véhicules, lequel a connu la plus forte croissance des encours en 2023 ?",
+            "choices": [
+                "Fonds (Mutual Funds / UCITS)",
+                "Mandats (Separate Accounts)",
+                "Cash Management uniquement",
+                "Pooled/Commingled Funds"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les fonds ouverts (Mutual Funds / UCITS) ont enregistré la plus forte croissance des encours en 2023, devant les mandats et les fonds mutualisés."
+        },
+        {
+            "id": "gp-q239",
+            "qcm": "AM2 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans l'exemple français présenté, quel rôle est attribué au dépositaire d'un fonds ?",
+            "choices": [
+                "Garantir un rendement minimum aux porteurs de parts.",
+                "Conserver les actifs du fonds et effectuer certains contrôles.",
+                "Définir l'allocation stratégique et choisir les titres.",
+                "Noter la qualité de crédit des émetteurs."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le dépositaire assure la garde des actifs et vérifie la conformité de certaines opérations réalisées par la société de gestion."
+        },
+        {
+            "id": "gp-q240",
+            "qcm": "AM2 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle région représente la plus grande part des encours des 500 plus grands gestionnaires à fin 2023 ?",
+            "choices": [
+                "Reste du monde",
+                "Amérique du Nord",
+                "Japon",
+                "Europe (incluant Royaume-Uni)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'Amérique du Nord domine largement le secteur grâce aux géants mondiaux tels que BlackRock, Vanguard, Fidelity ou State Street."
+        },
+        {
+            "id": "gp-q241",
+            "qcm": "AM2 - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle innovation institutionnelle est présentée comme une étape majeure de la structuration de la gestion collective en France ?",
+            "choices": [
+                "Le Big Bang de la City (1986)",
+                "La création des SICAV (1963)",
+                "L'abrogation du Glass-Steagall Act (1999)",
+                "Le lancement du SPDR S&P 500 (1993)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La création des SICAV en 1963 constitue une étape fondatrice de la gestion collective moderne en France et a favorisé la démocratisation de l'investissement collectif."
+        }
+    ]
+}

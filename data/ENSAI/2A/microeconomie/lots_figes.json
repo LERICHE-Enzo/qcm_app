@@ -879,6 +879,22 @@
         96
       ],
       "size": 5
+    },
+    {
+      "id": "qcm001_2025-12-21",
+      "created_at": "2025-12-21T19:51:47",
+      "school": "ENSAI",
+      "year": "2A",
+      "subject": "microeconomie",
+      "qcm_filter": "Chatgpt-cours3",
+      "orig_indices": [
+        133,
+        117,
+        131,
+        125,
+        118
+      ],
+      "size": 5
     }
   ]
 }

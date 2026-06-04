@@ -2964,9 +2964,16 @@
         "une réduction de la qualité moyenne des biens échangés.",
         "un alignement des prix sur la valeur des biens de haute qualité."
       ],
-      "answer": [2],
+      "answer": [
+        2
+      ],
       "explanation": "Les acheteurs anticipent la présence de 'lemons' et offrent un prix moyen, poussant les vendeurs de bonne qualité à quitter le marché — la qualité moyenne des biens échangés diminue.",
-      "tags": ["Akerlof", "asymétrie d'information", "sélection adverse", "lemons"]
+      "tags": [
+        "Akerlof",
+        "asymétrie d'information",
+        "sélection adverse",
+        "lemons"
+      ]
     },
     {
       "id": "cgpt3-q002",
@@ -2979,9 +2986,15 @@
         "une stratégie aléatoire qui augmente l’espérance de gain.",
         "une stratégie qui dépend des croyances du joueur."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Une stratégie dominante est celle qui procure le gain maximal quel que soit le choix des autres joueurs.",
-      "tags": ["théorie des jeux", "stratégie dominante", "équilibre"]
+      "tags": [
+        "théorie des jeux",
+        "stratégie dominante",
+        "équilibre"
+      ]
     },
     {
       "id": "cgpt3-q003",
@@ -2994,9 +3007,18 @@
         "instable et dépendante des croyances.",
         "indéterminée sans information supplémentaire."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "L’équilibre (trahir, trahir) est stable mais inefficace : chaque joueur agit rationnellement, mais le résultat collectif est sous-optimal.",
-      "tags": ["dilemme du prisonnier", "Pareto", "équilibre de Nash"]
+      "tags": [
+        "dilemme du prisonnier",
+        "Pareto",
+        "équilibre de Nash"
+      ],
+      "id_gen": [
+        "qcm001_2025-12-21"
+      ]
     },
     {
       "id": "cgpt3-q004",
@@ -3009,9 +3031,19 @@
         "augmente le rendement de l’épargne et incite à consommer moins aujourd’hui.",
         "réduit le revenu permanent de l’agent."
       ],
-      "answer": [2],
+      "answer": [
+        2
+      ],
       "explanation": "Un taux d’intérêt réel plus élevé accroît la rémunération de l’épargne et incite à reporter la consommation vers le futur.",
-      "tags": ["temps", "consommation", "épargne", "taux d’intérêt"]
+      "tags": [
+        "temps",
+        "consommation",
+        "épargne",
+        "taux d’intérêt"
+      ],
+      "id_gen": [
+        "qcm001_2025-12-21"
+      ]
     },
     {
       "id": "cgpt3-q005",
@@ -3024,9 +3056,15 @@
         "l’individu est averse au risque.",
         "l’individu est indifférent aux loteries équitables."
       ],
-      "answer": [2],
+      "answer": [
+        2
+      ],
       "explanation": "La concavité de la fonction d’utilité traduit une utilité marginale décroissante de la richesse, caractéristique de l’aversion au risque.",
-      "tags": ["utilité concave", "aversion au risque", "espérance d’utilité"]
+      "tags": [
+        "utilité concave",
+        "aversion au risque",
+        "espérance d’utilité"
+      ]
     },
     {
       "id": "cgpt3-q006",
@@ -3039,9 +3077,16 @@
         "sont supposées identiques pour tous les joueurs.",
         "sont ignorées dans l’équilibre parfait en sous-jeux."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Les croyances sont essentielles et se mettent à jour selon la règle de Bayes après chaque observation d’un signal ou d’une action.",
-      "tags": ["jeu bayésien", "croyances", "Bayes", "information incomplète"]
+      "tags": [
+        "jeu bayésien",
+        "croyances",
+        "Bayes",
+        "information incomplète"
+      ]
     },
     {
       "id": "cgpt3-q007",
@@ -3054,9 +3099,16 @@
         "les rendements des actifs bancaires augmentent.",
         "le gouvernement augmente la garantie des dépôts."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Les retraits massifs auto-réalisateurs créent un équilibre multiple et peuvent mener à la faillite de la banque même solvable.",
-      "tags": ["Diamond-Dybvig", "liquidité", "bank run", "équilibres multiples"]
+      "tags": [
+        "Diamond-Dybvig",
+        "liquidité",
+        "bank run",
+        "équilibres multiples"
+      ]
     },
     {
       "id": "cgpt3-q008",
@@ -3069,9 +3121,15 @@
         "n’a pas d’effet sur l’efficacité du marché.",
         "ne concerne que les marchés financiers."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "L’aléa moral apparaît après la conclusion du contrat, lorsque l’une des parties peut modifier son comportement de façon opportuniste.",
-      "tags": ["aléa moral", "incitations", "asymétrie d’information"]
+      "tags": [
+        "aléa moral",
+        "incitations",
+        "asymétrie d’information"
+      ]
     },
     {
       "id": "cgpt3-q009",
@@ -3084,9 +3142,16 @@
         "la dispersion des gains autour de leur moyenne.",
         "la probabilité d’un gain positif."
       ],
-      "answer": [2],
+      "answer": [
+        2
+      ],
       "explanation": "La variance est un indicateur statistique de la dispersion des résultats aléatoires autour de leur espérance.",
-      "tags": ["variance", "risque", "dispersion", "incertitude"]
+      "tags": [
+        "variance",
+        "risque",
+        "dispersion",
+        "incertitude"
+      ]
     },
     {
       "id": "cgpt3-q010",
@@ -3099,9 +3164,15 @@
         "permet d’identifier les stratégies optimales à partir de la fin du jeu.",
         "ne s’applique qu’aux jeux à information incomplète."
       ],
-      "answer": [2],
+      "answer": [
+        2
+      ],
       "explanation": "L’induction rétrograde permet de résoudre les jeux séquentiels parfaits en remontant du dernier au premier mouvement.",
-      "tags": ["jeu séquentiel", "induction rétrograde", "SPNE"]
+      "tags": [
+        "jeu séquentiel",
+        "induction rétrograde",
+        "SPNE"
+      ]
     },
     {
       "id": "cgpt3-q011",
@@ -3114,9 +3185,19 @@
         "signaler la qualité du produit et rétablir la confiance des acheteurs.",
         "réduire la concurrence."
       ],
-      "answer": [2],
+      "answer": [
+        2
+      ],
       "explanation": "Les signaux coûteux comme les garanties ou labels servent à crédibiliser la qualité et réduire la sélection adverse.",
-      "tags": ["signalisation", "Spence", "sélection adverse", "marché"]
+      "tags": [
+        "signalisation",
+        "Spence",
+        "sélection adverse",
+        "marché"
+      ],
+      "id_gen": [
+        "qcm001_2025-12-21"
+      ]
     },
     {
       "id": "cgpt3-q012",
@@ -3129,9 +3210,15 @@
         "valorise davantage la consommation future.",
         "est indifférent entre présent et futur."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Si β < 1, la valeur actuelle des biens futurs est réduite : l’individu préfère la consommation immédiate.",
-      "tags": ["escompte", "préférences temporelles", "consommation"]
+      "tags": [
+        "escompte",
+        "préférences temporelles",
+        "consommation"
+      ]
     },
     {
       "id": "cgpt3-q013",
@@ -3144,9 +3231,15 @@
         "choisit toujours la loterie la plus sûre.",
         "est indifférent à la variance des gains."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Le principe d’utilité espérée suppose que les individus choisissent la loterie qui maximise leur espérance d’utilité, non de gain.",
-      "tags": ["utilité espérée", "Von Neumann-Morgenstern", "rationalité"]
+      "tags": [
+        "utilité espérée",
+        "Von Neumann-Morgenstern",
+        "rationalité"
+      ]
     },
     {
       "id": "cgpt3-q014",
@@ -3159,9 +3252,15 @@
         "indique la probabilité de coalition.",
         "représente la satisfaction marginale de chaque joueur."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "La fonction caractéristique associe à chaque coalition la valeur totale qu’elle peut obtenir sans les autres.",
-      "tags": ["cooperative game theory", "TU-game", "fonction caractéristique"]
+      "tags": [
+        "cooperative game theory",
+        "TU-game",
+        "fonction caractéristique"
+      ]
     },
     {
       "id": "cgpt3-q015",
@@ -3174,9 +3273,16 @@
         "éviter les paniques auto-réalisatrices.",
         "imposer un taux d’intérêt unique."
       ],
-      "answer": [2],
+      "answer": [
+        2
+      ],
       "explanation": "En garantissant les dépôts, l’État empêche les comportements de retrait paniques et stabilise les équilibres multiples.",
-      "tags": ["banque", "intervention publique", "assurance des dépôts", "coordination"]
+      "tags": [
+        "banque",
+        "intervention publique",
+        "assurance des dépôts",
+        "coordination"
+      ]
     },
     {
       "id": "cgpt3-q016",
@@ -3189,9 +3295,15 @@
         "ont la même utilité pour tout agent.",
         "ne peuvent être comparés."
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "explanation": "Un agent neutre au risque ne se soucie pas de la variance : il évalue uniquement l’espérance des gains.",
-      "tags": ["risque", "variance", "attitude face au risque"]
+      "tags": [
+        "risque",
+        "variance",
+        "attitude face au risque"
+      ]
     },
     {
       "id": "cgpt3-q017",
@@ -3204,9 +3316,18 @@
         "toujours en stratégies dominantes.",
         "forcément stable dynamiquement."
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "explanation": "Certains jeux possèdent plusieurs équilibres de Nash, voire un continuum d’équilibres.",
-      "tags": ["équilibre de Nash", "unicité", "jeux"]
+      "tags": [
+        "équilibre de Nash",
+        "unicité",
+        "jeux"
+      ],
+      "id_gen": [
+        "qcm001_2025-12-21"
+      ]
     },
     {
       "id": "cgpt3-q018",
@@ -3219,9 +3340,16 @@
         "les préférences sont invariantes aux transformations monotones.",
         "la continuité des préférences est assurée."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "L’axiome d’indépendance stipule que si A est préféré à B, alors un mélange identique avec une troisième loterie C ne change pas ce classement.",
-      "tags": ["axiomes VNM", "indépendance", "préférences", "utilité espérée"]
+      "tags": [
+        "axiomes VNM",
+        "indépendance",
+        "préférences",
+        "utilité espérée"
+      ]
     },
     {
       "id": "cgpt3-q019",
@@ -3234,9 +3362,18 @@
         "le coût de l’éducation est identique pour tous les agents.",
         "l’information est symétrique entre employeurs et employés."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Chez Spence, l’éducation sert de signal crédible : elle ne rend pas plus productif mais révèle le type à coût différencié.",
-      "tags": ["signalisation", "Spence", "information asymétrique"]
+      "tags": [
+        "signalisation",
+        "Spence",
+        "information asymétrique"
+      ],
+      "id_gen": [
+        "qcm001_2025-12-21"
+      ]
     },
     {
       "id": "cgpt3-q020",
@@ -3249,9 +3386,15 @@
         "du taux d’intérêt courant uniquement.",
         "de la richesse héritée."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Les ménages lissent leur consommation dans le temps en fonction de leur revenu permanent attendu plutôt que du revenu temporaire.",
-      "tags": ["revenu permanent", "consommation", "Friedman"]
+      "tags": [
+        "revenu permanent",
+        "consommation",
+        "Friedman"
+      ]
     },
     {
       "id": "cgpt4-q001",
@@ -3264,9 +3407,16 @@
         "les prix sont imposés par une autorité centrale.",
         "les agents agissent de manière coordonnée."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Dans un marché concurrentiel, aucun agent n’a de pouvoir de marché : tous prennent les prix comme donnés et optimisent en conséquence.",
-      "tags": ["équilibre concurrentiel", "marché", "prix", "rationalité"]
+      "tags": [
+        "équilibre concurrentiel",
+        "marché",
+        "prix",
+        "rationalité"
+      ]
     },
     {
       "id": "cgpt4-q002",
@@ -3279,9 +3429,15 @@
         "le taux d’épargne agrégé.",
         "la préférence pour la consommation immédiate."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "La contrainte intertemporelle a pour pente −(1+ r) : elle traduit le coût relatif de la consommation présente par rapport à la future.",
-      "tags": ["consommation", "budget intertemporel", "taux d’intérêt"]
+      "tags": [
+        "consommation",
+        "budget intertemporel",
+        "taux d’intérêt"
+      ]
     },
     {
       "id": "cgpt4-q003",
@@ -3294,9 +3450,16 @@
         "convexe et indique une aversion pour la diversification.",
         "non monotone."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "La fonction de Cobb-Douglas U(x1, x2)=x1·x2 est concave : elle reflète des préférences pour la combinaison des deux biens.",
-      "tags": ["utilité", "Cobb-Douglas", "préférences", "concavité"]
+      "tags": [
+        "utilité",
+        "Cobb-Douglas",
+        "préférences",
+        "concavité"
+      ]
     },
     {
       "id": "cgpt4-q004",
@@ -3309,9 +3472,15 @@
         "réduire sa consommation totale.",
         "modifier son revenu nominal."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "L’effet de substitution reflète la réaction de l’agent au changement du prix relatif, indépendamment du revenu réel.",
-      "tags": ["effet de substitution", "prix relatif", "théorie du consommateur"]
+      "tags": [
+        "effet de substitution",
+        "prix relatif",
+        "théorie du consommateur"
+      ]
     },
     {
       "id": "cgpt4-q005",
@@ -3324,9 +3493,15 @@
         "le monopole maximise le bien-être social.",
         "la main invisible ne fonctionne pas en concurrence parfaite."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Le premier théorème du bien-être stipule qu’un équilibre concurrentiel est Pareto-efficient si les marchés sont complets et sans externalités.",
-      "tags": ["Arrow-Debreu", "équilibre général", "efficience de Pareto"]
+      "tags": [
+        "Arrow-Debreu",
+        "équilibre général",
+        "efficience de Pareto"
+      ]
     },
     {
       "id": "cgpt4-q006",
@@ -3339,9 +3514,15 @@
         "linéaire.",
         "en racine carrée."
       ],
-      "answer": [2],
+      "answer": [
+        2
+      ],
       "explanation": "La neutralité au risque correspond à une utilité linéaire de la richesse : seule l’espérance du gain importe.",
-      "tags": ["neutralité au risque", "utilité", "espérance"]
+      "tags": [
+        "neutralité au risque",
+        "utilité",
+        "espérance"
+      ]
     },
     {
       "id": "cgpt4-q007",
@@ -3354,9 +3535,15 @@
         "qu’il existe un seul équilibre possible.",
         "que les croyances sont identiques pour tous les joueurs."
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "explanation": "Le SPNE impose que les stratégies constituent un équilibre de Nash dans chaque sous-jeu, assurant la crédibilité des menaces.",
-      "tags": ["SPNE", "jeux dynamiques", "crédibilité"]
+      "tags": [
+        "SPNE",
+        "jeux dynamiques",
+        "crédibilité"
+      ]
     },
     {
       "id": "cgpt4-q008",
@@ -3369,9 +3556,16 @@
         "la variation du prix d’équilibre.",
         "l’effet de revenu sur la demande."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "L’élasticité-prix est le rapport de la variation relative de la quantité demandée à celle du prix : elle mesure la réactivité des consommateurs.",
-      "tags": ["élasticité", "demande", "prix", "microéconomie"]
+      "tags": [
+        "élasticité",
+        "demande",
+        "prix",
+        "microéconomie"
+      ]
     },
     {
       "id": "cgpt4-q009",
@@ -3384,9 +3578,15 @@
         "il existe des effets de réseau.",
         "l’individu fait face à des prix progressifs."
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "explanation": "Si les prix unitaires des biens ne dépendent pas des quantités, la contrainte budgétaire est une droite.",
-      "tags": ["contrainte budgétaire", "prix", "consommation"]
+      "tags": [
+        "contrainte budgétaire",
+        "prix",
+        "consommation"
+      ]
     },
     {
       "id": "cgpt4-q010",
@@ -3399,9 +3599,15 @@
         "le gain maximal possible.",
         "l’utilité du revenu moyen."
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "explanation": "L’espérance d’utilité est la somme des utilités de chaque issue pondérées par leur probabilité d’occurrence.",
-      "tags": ["espérance d’utilité", "incertitude", "probabilité"]
+      "tags": [
+        "espérance d’utilité",
+        "incertitude",
+        "probabilité"
+      ]
     },
     {
       "id": "cgpt4-q011",
@@ -3414,9 +3620,15 @@
         "la variance du portefeuille optimal.",
         "la dérivée seconde de la fonction d’utilité."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "L’aversion relative au risque d’Arrow-Pratt évalue la propension à éviter les risques proportionnellement à la richesse totale.",
-      "tags": ["aversion au risque", "Arrow-Pratt", "utilité"]
+      "tags": [
+        "aversion au risque",
+        "Arrow-Pratt",
+        "utilité"
+      ]
     },
     {
       "id": "cgpt4-q012",
@@ -3429,9 +3641,16 @@
         "les portefeuilles dominés.",
         "les actifs parfaitement corrélés."
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "explanation": "Dans le modèle de Markowitz, la frontière efficiente décrit les combinaisons rendement-risque optimales.",
-      "tags": ["Markowitz", "risque", "portefeuille", "moyenne-variance"]
+      "tags": [
+        "Markowitz",
+        "risque",
+        "portefeuille",
+        "moyenne-variance"
+      ]
     },
     {
       "id": "cgpt4-q013",
@@ -3444,9 +3663,15 @@
         "sans effet sur le comportement des agents.",
         "imposé par la réglementation."
       ],
-      "answer": [0],
+      "answer": [
+        0
+      ],
       "explanation": "Le signal doit être crédible : il doit coûter suffisamment cher aux 'mauvais types' pour ne pas être imitables.",
-      "tags": ["signalisation", "Spence", "information asymétrique"]
+      "tags": [
+        "signalisation",
+        "Spence",
+        "information asymétrique"
+      ]
     },
     {
       "id": "cgpt4-q014",
@@ -3459,9 +3684,16 @@
         "les firmes coopèrent pour maximiser le profit collectif.",
         "les firmes ne connaissent pas la demande."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Dans le modèle de Cournot, chaque firme choisit sa quantité optimale en tenant compte de la quantité anticipée des autres.",
-      "tags": ["oligopole", "Cournot", "quantité", "équilibre"]
+      "tags": [
+        "oligopole",
+        "Cournot",
+        "quantité",
+        "équilibre"
+      ]
     },
     {
       "id": "cgpt4-q015",
@@ -3474,9 +3706,15 @@
         "une consommation indépendante du revenu.",
         "un prix fixe sur tous les marchés."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Pour un bien normal, la demande augmente avec le revenu : l’élasticité-revenu est positive.",
-      "tags": ["bien normal", "revenu", "demande"]
+      "tags": [
+        "bien normal",
+        "revenu",
+        "demande"
+      ]
     },
     {
       "id": "cgpt4-q016",
@@ -3489,9 +3727,15 @@
         "réduit ses coûts de production.",
         "produit au niveau concurrentiel."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "La discrimination parfaite du premier degré permet au monopole de capter tout le surplus du consommateur.",
-      "tags": ["monopole", "discrimination des prix", "surplus"]
+      "tags": [
+        "monopole",
+        "discrimination des prix",
+        "surplus"
+      ]
     },
     {
       "id": "cgpt4-q017",
@@ -3504,9 +3748,15 @@
         "le marché est en équilibre général.",
         "les prix sont constants."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Elle assure que chaque agent choisira volontairement l’action désirée par le principal plutôt qu’une autre non souhaitée.",
-      "tags": ["incitation", "contrat", "principal-agent"]
+      "tags": [
+        "incitation",
+        "contrat",
+        "principal-agent"
+      ]
     },
     {
       "id": "cgpt4-q018",
@@ -3519,9 +3769,15 @@
         "au profit du producteur.",
         "à l’excédent budgétaire."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Le surplus du consommateur mesure le gain obtenu en payant moins que sa disposition maximale à payer.",
-      "tags": ["surplus", "bien-être", "marché"]
+      "tags": [
+        "surplus",
+        "bien-être",
+        "marché"
+      ]
     },
     {
       "id": "cgpt4-q019",
@@ -3534,9 +3790,15 @@
         "une internalisation automatique du coût externe.",
         "un équilibre toujours Pareto-optimal."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Une externalité négative (ex : pollution) entraîne une production excessive par rapport au niveau socialement optimal.",
-      "tags": ["externalité", "inefficience", "Pigou"]
+      "tags": [
+        "externalité",
+        "inefficience",
+        "Pigou"
+      ]
     },
     {
       "id": "cgpt4-q020",
@@ -3549,9 +3811,16 @@
         "l’étude de l’équilibre walrasien.",
         "le refus de toute intervention publique."
       ],
-      "answer": [1],
+      "answer": [
+        1
+      ],
       "explanation": "Les deux approches traitent des marchés avec asymétrie d’information et de la manière de révéler la qualité ou le type des agents.",
-      "tags": ["Spence", "Akerlof", "information", "signalisation"]
+      "tags": [
+        "Spence",
+        "Akerlof",
+        "information",
+        "signalisation"
+      ]
     }
   ]
 }
