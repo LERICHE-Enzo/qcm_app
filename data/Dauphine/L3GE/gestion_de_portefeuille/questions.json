@@ -3576,7 +3576,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Titre 1 : 5,2% = 3% + 0,4 × (Rm – Rf) → Rm – Rf = 5,5%. Titre 2 : 9,6% = 3% + 1,2 × 5,5% = 9,6% ✓. Er3 = 3% + 0,6 × 5,5% = 6,3% = 0,063."
+            "explanation": "Titre 1 : 5,2% = 3% + 0,4 × (Rm – Rf) → Rm – Rf = 5,5%. Titre 2 : 9,6% = 3% + 1,2 × 5,5% = 9,6% ✓. Er3 = 3% + 0,6 × 5,5% = 6,3% = 0,063. (Le PDF indiquait 0,066 par erreur.)"
         },
         {
             "id": "gp-q106-maths",
@@ -3671,7 +3671,7 @@
             "answer": [
                 2
             ],
-            "explanation": "La volatilité minimale tend vers σ√ρ = 0,10 × √0,5 ≈ 0,0707 quand le nombre de titres devient grand."
+            "explanation": "La volatilité minimale tend vers σ√ρ = 0,10 × √0,5 ≈ 0,0707 quand le nombre de titres devient grand. La variance correspondante est 0,005 (valeur affichée par le corrigé Moodle, qui correspond à la variance et non à la volatilité)."
         },
         {
             "id": "gp-q120-maths",
@@ -3687,7 +3687,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Sur la CML : E(R) = 0,02 + 0,30 × (0,10/0,15) = 0,02 + 0,20 = 0,22."
+            "explanation": "Sur la CML : (E(R) − Rf) / σ = (E(RM) − Rf) / σM. E(R) = 0,02 + 0,30 × (0,10/0,15) = 0,02 + 0,20 = 0,22."
         },
         {
             "id": "gp-q126-maths",
@@ -4023,7 +4023,7 @@
             "answer": [
                 0
             ],
-            "explanation": "E(R) = 2 + 1×(9−2) = 9%. α = 11 − 9 = 2%."
+            "explanation": "E(R) = 2 + 1×(9−2) = 9%. α = 11 − 9 = 2%. (Le corrigé Moodle indiquait 0% par erreur.)"
         },
         {
             "id": "gp-q189-maths",
@@ -4055,7 +4055,7 @@
             "answer": [
                 3
             ],
-            "explanation": "CE = E(R) − 0,5×A×σ² = 10 − 0,5×4×(0,04)² = 10 − 0,0032 = 9,968% ≈ 9,6% (réponse la plus proche)."
+            "explanation": "CE = E(R) − 0,5×A×σ² = 10 − 0,5×4×(0,04)² = 10 − 0,0032 = 9,968% ≈ 9,6% (réponse la plus proche). Note : le corrigé officiel indique 9,2% mais le calcul exact donne 9,968%."
         },
         {
             "id": "gp-q207-maths",
@@ -4071,7 +4071,7 @@
             "answer": [
                 3
             ],
-            "explanation": "E(R) = 3 + 1,1×(9−3) = 3 + 6,6 = 9,6%. α = 10 − 9,6 = 0,4%."
+            "explanation": "E(R) = 3 + 1,1×(9−3) = 3 + 6,6 = 9,6%. α = 10 − 9,6 = 0,4%. (Le corrigé officiel indiquait 0,1% par erreur de calcul : 3+1,1×6 = 9,6 et non 9,9.)"
         },
         {
             "id": "gp-q210-maths",
