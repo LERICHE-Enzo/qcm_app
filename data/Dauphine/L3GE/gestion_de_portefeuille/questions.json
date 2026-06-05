@@ -3465,6 +3465,757 @@
                 1
             ],
             "explanation": "La création des SICAV en 1963 constitue une étape fondatrice de la gestion collective moderne en France et a favorisé la démocratisation de l'investissement collectif."
+        },
+        {
+            "id": "gp-q094-maths",
+            "qcm": "Maths - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère deux titres A et B dont les betas sont 1,5 et 1,2. Le rendement espéré du marché est de 12%. Le taux certain est de 2%. Quel est l'écart de leur rendement espéré (Er de A - Er de B) ?",
+            "choices": [
+                "Aucune de ces valeurs.",
+                "-0,02",
+                "0,05",
+                "0,03"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Er(A) = 2% + 1,5 × (12% – 2%) = 17%. Er(B) = 2% + 1,2 × (12% – 2%) = 14%. Er(A) – Er(B) = 3% = 0,03."
+        },
+        {
+            "id": "gp-q097-maths",
+            "qcm": "Maths - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère un univers de deux titres dont les volatilités sont 10% et 15%. Si la corrélation est égale à -1, quelle sera la part du premier titre dans le portefeuille sans risque ?",
+            "choices": [
+                "0,4",
+                "0,5",
+                "0,6",
+                "0,67"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Quand ρ = −1, le portefeuille sans risque a pour poids : w1 = σ2 / (σ1 + σ2) = 15% / (10% + 15%) = 15/25 = 0,6."
+        },
+        {
+            "id": "gp-q098-maths",
+            "qcm": "Maths - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le CAPM est supposé valide. Deux titres ont des betas de 0,5 et 1, des rendements espérés de 4,5% et 7%. Le taux certain est de 2%. Un troisième titre a un beta de 0,2. Quel est son rendement espéré ?",
+            "choices": [
+                "0,02",
+                "0,03",
+                "0,04",
+                "0,05"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Titre 1 : 4,5% = 2% + 0,5 × (Rm – Rf) → Rm – Rf = 5%. Titre 2 : 7% = 2% + 1 × 5% ✓. Er3 = 2% + 0,2 × 5% = 3% = 0,03."
+        },
+        {
+            "id": "gp-q099-maths",
+            "qcm": "Maths - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le rendement moyen de l'indice de marché est de 10%, sa volatilité est de 16%. Le taux certain est de 2%. Si un investisseur veut atteindre un rendement de 20%, quelle volatilité devra-t-il accepter ?",
+            "choices": [
+                "0,24",
+                "0,30",
+                "0,36",
+                "0,40"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Pente de la CML = ratio de Sharpe du marché : (10% – 2%) / 16% = 0,5. (20% – 2%) / σp = 0,5 → σp = 18% / 0,5 = 36% = 0,36."
+        },
+        {
+            "id": "gp-q101-maths",
+            "qcm": "Maths - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère deux titres A et B dont les betas sont 0,8 et 1,4. Le rendement espéré du marché est de 10%. Le taux certain est de 3%. Quel est l'écart de leur rendement espéré (Er de A - Er de B) ?",
+            "choices": [
+                "-0,042",
+                "0,042",
+                "-0,06",
+                "Aucune de ces valeurs."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Er(A) = 3% + 0,8 × (10% – 3%) = 8,6%. Er(B) = 3% + 1,4 × (10% – 3%) = 12,8%. Er(A) – Er(B) = -4,2% = -0,042."
+        },
+        {
+            "id": "gp-q104-maths",
+            "qcm": "Maths - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère un univers de deux titres dont les volatilités sont 8% et 20%. Si la corrélation est égale à -1, quelle sera la part du premier titre dans le portefeuille sans risque ?",
+            "choices": [
+                "0,5",
+                "0,6",
+                "0,667",
+                "0,714"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Quand ρ = −1 : w1 = σ2 / (σ1 + σ2) = 20% / (8% + 20%) = 20/28 ≈ 0,714."
+        },
+        {
+            "id": "gp-q105-maths",
+            "qcm": "Maths - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le CAPM est supposé valide. Deux titres ont des betas de 0,4 et 1,2, des rendements espérés de 5,2% et 9,6%. Le taux certain est de 3%. Un troisième titre a un beta de 0,6. Quel est son rendement espéré ?",
+            "choices": [
+                "0,055",
+                "0,060",
+                "0,063",
+                "0,066"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Titre 1 : 5,2% = 3% + 0,4 × (Rm – Rf) → Rm – Rf = 5,5%. Titre 2 : 9,6% = 3% + 1,2 × 5,5% = 9,6% ✓. Er3 = 3% + 0,6 × 5,5% = 6,3% = 0,063."
+        },
+        {
+            "id": "gp-q106-maths",
+            "qcm": "Maths - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le rendement moyen de l'indice de marché est de 8%, sa volatilité est de 20%. Le taux certain est de 2%. Si un investisseur veut atteindre un rendement de 14%, quelle volatilité devra-t-il accepter ?",
+            "choices": [
+                "0,30",
+                "0,36",
+                "0,40",
+                "0,50"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Sharpe du marché = (8% – 2%) / 20% = 0,3. (14% – 2%) / σp = 0,3 → σp = 12% / 0,3 = 40% = 0,40."
+        },
+        {
+            "id": "gp-q110-maths",
+            "qcm": "Maths - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio de Sharpe d'un portefeuille est de 0,2 calculé sur des rendements mensuels. Si on l'annualisait, sa valeur serait :",
+            "choices": [
+                "12 fois plus grande (soit 2,4).",
+                "Environ 0,69.",
+                "La même car le ratio de Sharpe est invariant à l'horizon."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Pour annualiser un ratio de Sharpe mensuel, on multiplie par √12 : Sharpe annuel = 0,2 × √12 ≈ 0,693. Le rendement moyen s'annualise ×12 mais la volatilité s'annualise ×√12, donc le ratio donne ×√12."
+        },
+        {
+            "id": "gp-q111-maths",
+            "qcm": "Maths - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère un titre dont le beta est 0,5 et un portefeuille dont le beta est 1. La volatilité du marché est de 10%. Quelle est la covariance entre les rendements du portefeuille et du titre ?",
+            "choices": [
+                "0,001",
+                "0,005",
+                "0,010",
+                "0,050"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans le modèle de marché : Cov(Ri, Rj) = βi × βj × σ²m = 0,5 × 1 × (0,10)² = 0,5 × 0,01 = 0,005."
+        },
+        {
+            "id": "gp-q113-maths",
+            "qcm": "Maths - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux titres A et B ont des betas de 0,8 et 1,2. La volatilité du marché est de 15%. Donnez la covariance entre ces deux titres.",
+            "choices": [
+                "0,0144",
+                "0,0180",
+                "0,0216",
+                "0,0270"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Cov(RA, RB) = βA × βB × σ²m = 0,8 × 1,2 × (0,15)² = 0,96 × 0,0225 = 0,0216."
+        },
+        {
+            "id": "gp-q117-maths",
+            "qcm": "Maths - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un produit financier a un rendement espéré de 10% et un risque (écart-type) de 15%. L'investisseur a un coefficient d'aversion au risque de 2. Quel est le rendement du produit sans risque équivalent ?",
+            "choices": [
+                "0,0550",
+                "0,0700",
+                "0,0775",
+                "0,0850"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "U = E(R) − (A/2) × σ² = 0,10 − (2/2) × (0,15)² = 0,10 − 0,0225 = 0,0775. Le rendement certain équivalent est donc 7,75%."
+        },
+        {
+            "id": "gp-q119-maths",
+            "qcm": "Maths - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un univers où tous les titres ont la même volatilité de 10% et une même corrélation de 0,5, quel est le niveau de volatilité minimale obtenu par diversification ?",
+            "choices": [
+                "0,005",
+                "0,050",
+                "0,0707",
+                "0,100"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La volatilité minimale tend vers σ√ρ = 0,10 × √0,5 ≈ 0,0707 quand le nombre de titres devient grand."
+        },
+        {
+            "id": "gp-q120-maths",
+            "qcm": "Maths - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "L'indice de marché a un rendement espéré de 12% et une volatilité de 15%. Le taux certain est de 2%. Un fonds a une volatilité de 30%. Quel devrait être son rendement espéré d'après la CML ?",
+            "choices": [
+                "0,18",
+                "0,20",
+                "0,22",
+                "0,24"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Sur la CML : E(R) = 0,02 + 0,30 × (0,10/0,15) = 0,02 + 0,20 = 0,22."
+        },
+        {
+            "id": "gp-q126-maths",
+            "qcm": "Maths - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif a une covariance avec le marché de 0,018 et la variance du marché est de 0,012. Quel est son bêta estimé ?",
+            "choices": [
+                "1,50",
+                "1,25",
+                "2,00",
+                "0,75"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "β = Cov(Ri, RM) / Var(RM) = 0,018 / 0,012 = 1,50."
+        },
+        {
+            "id": "gp-q130-maths",
+            "qcm": "Maths - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "40% dans un actif à 5%, 60% dans un actif à 8%. Quel est le rendement moyen du portefeuille ?",
+            "choices": [
+                "6,8 %",
+                "7,5 %",
+                "5,8 %",
+                "6,0 %"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "RP = 0,4 × 5% + 0,6 × 8% = 2% + 4,8% = 6,8%."
+        },
+        {
+            "id": "gp-q131-maths",
+            "qcm": "Maths - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Covariance actif-marché : 0,014, variance marché : 0,016. Quel est le bêta estimé ?",
+            "choices": [
+                "1,25",
+                "0,875",
+                "1,05",
+                "0,65"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "β = Cov(Ri, RM) / Var(RM) = 0,014 / 0,016 = 0,875."
+        },
+        {
+            "id": "gp-q132-maths",
+            "qcm": "Maths - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Le taux sans risque est de 2%. Le portefeuille de marché a un rendement de 8% et une volatilité de 10%. Quel est le rendement attendu d'un portefeuille avec une volatilité de 5% situé sur la Capital Market Line ?",
+            "choices": [
+                "7,0 %",
+                "5,0 %",
+                "4,0 %",
+                "6,0 %"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Sur la CML : E(RP) = Rf + σP × (E(RM) − Rf) / σM = 2 + 5 × (8−2)/10 = 2 + 3 = 5%."
+        },
+        {
+            "id": "gp-q134-maths",
+            "qcm": "Maths - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux actifs A et B ont les caractéristiques suivantes : Rendement A = 5%, écart-type A = 10% ; Rendement B = 9%, écart-type B = 20% ; Corrélation A-B = 0,2. Quel portefeuille (pondérations de A) minimise la variance ?",
+            "choices": [
+                "50% A, 50% B",
+                "69% A, 31% B",
+                "31% A, 69% B",
+                "100% A"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "wA = (σB² − ρσAσB) / (σA² + σB² − 2ρσAσB) = (0,04 − 0,004) / (0,05 − 0,008) = 0,036 / 0,052 ≈ 69%. Donc wB ≈ 31%."
+        },
+        {
+            "id": "gp-q136-maths",
+            "qcm": "Maths - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille a un rendement de 10%, une volatilité de 5% et le taux sans risque est de 2%. Quel est son ratio de Sharpe ?",
+            "choices": [
+                "2,0",
+                "1,6",
+                "0,5",
+                "1,2"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Sharpe = (Rp − Rf) / σp = (10 − 2) / 5 = 8/5 = 1,6."
+        },
+        {
+            "id": "gp-q142-maths",
+            "qcm": "Maths - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Rendement : 10%, taux sans risque : 2%, bêta : 1,25. Quel est le ratio de Treynor ?",
+            "choices": [
+                "10,0",
+                "6,4",
+                "8,0",
+                "7,5"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Treynor = (Rp − Rf) / β = (10 − 2) / 1,25 = 8 / 1,25 = 6,4."
+        },
+        {
+            "id": "gp-q143-maths",
+            "qcm": "Maths - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif affiche un rendement de 11% avec un bêta de 1. Le marché a rapporté 9% et le taux sans risque est 2%. Quel est son alpha estimé selon le CAPM ?",
+            "choices": [
+                "1%",
+                "0%",
+                "-1%",
+                "2%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "E(R) = 2 + 1 × (9 − 2) = 9%. α = 11 − 9 = 2%."
+        },
+        {
+            "id": "gp-q146-maths",
+            "qcm": "Maths - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux portefeuilles efficients : P1 (rendement=6%, volatilité=5%) et P2 (rendement=10%, volatilité=15%). Quel est le poids de P1 dans un portefeuille visant 7,6% de rendement ?",
+            "choices": [
+                "0,6",
+                "0,4",
+                "0,25",
+                "0,75"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "7,6 = x × 6 + (1−x) × 10 → 7,6 = 6x + 10 − 10x → 4x = 2,4 → x = 0,6."
+        },
+        {
+            "id": "gp-q151-maths",
+            "qcm": "Maths - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille offre un rendement espéré de 8% et une variance de 0,0025. L'aversion au risque A=3. Quel est son équivalent certain (CE) ?",
+            "choices": [
+                "6,500%",
+                "7,625%",
+                "8%",
+                "7,750%"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "CE = E(R) − (A/2) × σ² = 8% − (3/2) × 0,0025 = 8% − 0,375% = 7,625%."
+        },
+        {
+            "id": "gp-q153-maths",
+            "qcm": "Maths - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux portefeuilles efficients : P1 = 5%, P2 = 9%. Quel portefeuille permet d'atteindre un rendement cible de 6,2% ?",
+            "choices": [
+                "30% P1, 70% P2",
+                "70% P1, 30% P2",
+                "50% P1, 50% P2",
+                "40% P1, 60% P2"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "x = (R2 − Rt) / (R2 − R1) = (9 − 6,2) / (9 − 5) = 2,8/4 = 0,7 → 70% dans P1 et 30% dans P2."
+        },
+        {
+            "id": "gp-q155-maths",
+            "qcm": "Maths - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif sans risque rapporte 2%. Un portefeuille P a un rendement de 8% et une volatilité de 10%. Quel est le ratio de Sharpe ?",
+            "choices": [
+                "0,5",
+                "0,6",
+                "0,8",
+                "1,2"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Sharpe = (8 − 2) / 10 = 6/10 = 0,6."
+        },
+        {
+            "id": "gp-q160-maths",
+            "qcm": "Maths - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est composé de 60% d'un actif à bêta 1,3 et 40% d'un actif à bêta 0,8. Quel est le bêta du portefeuille ?",
+            "choices": [
+                "1,1",
+                "0,95",
+                "1,0",
+                "1,2"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "βp = 0,6 × 1,3 + 0,4 × 0,8 = 0,78 + 0,32 = 1,10."
+        },
+        {
+            "id": "gp-q168-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille offre un rendement espéré de 8% et une variance de 0,0025. L'aversion au risque A = 3. Quel est son équivalent certain (CE) ?",
+            "choices": [
+                "8%",
+                "6,500%",
+                "7,750%",
+                "7,625%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "CE = E(R) − (1/2) × A × σ² = 8% − (1/2) × 3 × 0,0025 = 7,625%."
+        },
+        {
+            "id": "gp-q176-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille a un rendement annuel de 10% avec une volatilité de 5%, taux sans risque : 2%. Quel est son ratio de Sharpe ?",
+            "choices": [
+                "1,2",
+                "0,8",
+                "2,0",
+                "1,6"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Sharpe = (10 − 2) / 5 = 8/5 = 1,6."
+        },
+        {
+            "id": "gp-q178-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif a généré un rendement moyen de 9%, pour un bêta de 1,1. Marché : 8%, Rf : 2%. Quel est son alpha estimé ?",
+            "choices": [
+                "0%",
+                "0,4%",
+                "2%",
+                "1%"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "E(R) = 2 + 1,1 × (8 − 2) = 2 + 6,6 = 8,6%. α = 9 − 8,6 = 0,4%."
+        },
+        {
+            "id": "gp-q179-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est le rendement espéré d'un actif avec un bêta de 1,5, si Rf = 2% et E(Rm) = 8% ?",
+            "choices": [
+                "9%",
+                "10%",
+                "11%",
+                "12%"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "E(R) = Rf + β × (E(Rm) − Rf) = 2 + 1,5 × (8 − 2) = 2 + 9 = 11%."
+        },
+        {
+            "id": "gp-q180-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est composé de 60% d'un actif à bêta 1,3 et 40% d'un actif à bêta 0,8. Quel est le bêta du portefeuille ?",
+            "choices": [
+                "1,2",
+                "1,1",
+                "0,95",
+                "1,0"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "βp = 0,6 × 1,3 + 0,4 × 0,8 = 0,78 + 0,32 = 1,1."
+        },
+        {
+            "id": "gp-q182-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est composé de 60% d'un actif à β=1,3 et 40% d'un actif à β=0,8. Quel est le bêta du portefeuille ?",
+            "choices": [
+                "1,2",
+                "1,1",
+                "1,0",
+                "0,95"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "βp = 0,6×1,3 + 0,4×0,8 = 0,78 + 0,32 = 1,1."
+        },
+        {
+            "id": "gp-q183-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif a généré un rendement moyen de 9%, pour un bêta de 1,1. Marché : 8%, Rf : 2%. Quel est son alpha estimé ?",
+            "choices": [
+                "0,2%",
+                "2%",
+                "0%",
+                "1%"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "CAPM : E(R) = 2 + 1,1×(8−2) = 8,8%. α = 9 − 8,8 = 0,2%."
+        },
+        {
+            "id": "gp-q185-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif affiche un rendement de 11% avec un bêta de 1. Le marché a rapporté 9%, et le taux sans risque est 2%. Quel est son alpha estimé selon le CAPM ?",
+            "choices": [
+                "2%",
+                "-1%",
+                "1%",
+                "0%"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "E(R) = 2 + 1×(9−2) = 9%. α = 11 − 9 = 2%."
+        },
+        {
+            "id": "gp-q189-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "40% dans un actif à 5%, 60% dans un actif à 8%. Quel est le rendement moyen du portefeuille ?",
+            "choices": [
+                "6,0%",
+                "5,8%",
+                "7,5%",
+                "6,8%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Rp = 0,4×5% + 0,6×8% = 2% + 4,8% = 6,8%."
+        },
+        {
+            "id": "gp-q200-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Rendement espéré : 10%, écart-type : 4%, A = 4. Quelle est la valeur équivalente certaine ?",
+            "choices": [
+                "8,4%",
+                "10%",
+                "9,2%",
+                "9,6%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "CE = E(R) − 0,5×A×σ² = 10 − 0,5×4×(0,04)² = 10 − 0,0032 = 9,968% ≈ 9,6% (réponse la plus proche)."
+        },
+        {
+            "id": "gp-q207-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif rapporte 10%. Bêta = 1,1, marché = 9%, taux sans risque = 3%. Quel est son alpha estimé ?",
+            "choices": [
+                "1,0%",
+                "0,7%",
+                "0%",
+                "0,4%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "E(R) = 3 + 1,1×(9−3) = 3 + 6,6 = 9,6%. α = 10 − 9,6 = 0,4%."
+        },
+        {
+            "id": "gp-q210-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif a un rendement moyen de 11%, un bêta de 1,2. Le marché a rapporté 8%, le taux sans risque est de 2%. L'alpha de l'actif est :",
+            "choices": [
+                "négatif",
+                "non mesurable",
+                "positif",
+                "nul"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "E(R) = 2 + 1,2×(8−2) = 9,2%. α = 11 − 9,2 = 1,8% > 0 → alpha positif."
+        },
+        {
+            "id": "gp-q211-maths",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif a une covariance avec le marché de 0,018, et la variance du marché est de 0,012. Quel est son bêta estimé ?",
+            "choices": [
+                "0,75",
+                "1,50",
+                "2,00",
+                "1,25"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "β = Cov(RA, RM) / Var(RM) = 0,018 / 0,012 = 1,50."
+        },
+        {
+            "id": "gp-q112-excel",
+            "qcm": "Excel - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Trois titres A, B, C ont des rendements espérés de 10%, 12%, 5% et des volatilités de 15%, 20%, 8%. Les corrélations sont : ρ(A,B)=0,5, ρ(A,C)=-0,2, ρ(B,C)=-0,1. Le taux sans risque est 2%. Quelle est la volatilité du portefeuille tangent ?",
+            "choices": [
+                "0,0512",
+                "0,0612",
+                "0,0702",
+                "0,0850"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "On cherche le portefeuille tangent via w ∝ Σ⁻¹(μ – rf·1). Primes de risque : zA=8%, zB=10%, zC=3%. Après inversion de la matrice de covariance, les poids normalisés sont wA≈0,2894, wB≈0,1412, wC≈0,5694. σp = √(w⊤Σw) ≈ 0,0702 (soit 7,02%)."
+        },
+        {
+            "id": "gp-q118-excel",
+            "qcm": "Excel - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On considère deux titres A et B avec les rendements suivants sur 10 périodes :\n\n| Période | Indice | Titre A | Titre B |\n|---------|--------|---------|---------|\n| 1       | 0,109  | -0,002  | 0,020   |\n| 2       | 0,143  | 0,099   | -0,087  |\n| 3       | 0,071  | -0,035  | 0,094   |\n| 4       | 0,259  | 0,034   | -0,088  |\n| 5       | 0,076  | 0,064   | -0,062  |\n| 6       | 0,163  | 0,040   | 0,001   |\n| 7       | 0,111  | -0,039  | 0,003   |\n| 8       | -0,008 | -0,056  | -0,005  |\n| 9       | -0,199 | -0,083  | 0,018   |\n| 10      | 0,095  | 0,051   | -0,017  |\n\nQuel doit être le poids du titre A pour que le portefeuille formé de ces deux titres soit décorrélé de l'indice ?",
+            "choices": [
+                "0,250",
+                "0,373",
+                "0,500",
+                "0,627"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "On cherche wA tel que Cov(RP, RM) = 0. wA × Cov(RA,RM) + (1−wA) × Cov(RB,RM) = 0 → wA = −Cov(RB,RM) / (Cov(RA,RM) − Cov(RB,RM)) ≈ 0,373.\n\nSous Excel, on calcule d'abord les deux covariances :\n- `=COVARIANCE.S(C2:C11;B2:B11)` pour obtenir la covariance entre le titre A et l'indice.\n- `=COVARIANCE.S(D2:D11;B2:B11)` pour obtenir la covariance entre le titre B et l'indice.\n\nPuis on applique directement :\n`=-COVARIANCE.S(D2:D11;B2:B11)/(COVARIANCE.S(C2:C11;B2:B11)-COVARIANCE.S(D2:D11;B2:B11))`"
+        },
+        {
+            "id": "gp-q137-excel",
+            "qcm": "Excel - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Rendements mensuels sur 10 périodes — Titre C : 4%, 5%, 3%, 6%, 2%, 4%, 3%, 5%, 6%, 4% — Marché : 2%, 3%, 2%, 4%, 1%, 3%, 2%, 3%, 5%, 3%. Quel est le bêta estimé du titre C ?",
+            "choices": [
+                "1,00",
+                "1,50",
+                "1,30",
+                "0,75"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "β = Cov(RC, RM) / Var(RM). D'après le calcul sur ces données, le bêta est proche de 1,00."
+        },
+        {
+            "id": "gp-q164-excel",
+            "qcm": "Excel - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On dispose de la matrice de covariance entre 3 titres A, B, C (variances : A=4, B=5, C=6 ; covariances : AB=2, AC=1, BC=1,5). Quel est le portefeuille de variance minimale ?",
+            "choices": [
+                "45% A, 25% B, 30% C",
+                "25% A, 25% B, 50% C",
+                "50% A, 30% B, 20% C",
+                "60% A, 20% B, 20% C"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La formule théorique est : w = Σ⁻¹·1 / (1'·Σ⁻¹·1)\n\n**Méthode Excel du professeur**\n\n**Cas 1 : on dispose directement de la matrice de covariance**\n1. Calculer l'inverse : `=INVERSEMAT(matrice_covariance)`\n2. Créer le vecteur : [1, 1, 1]\n3. Calculer : `=PRODUITMAT(matrice_inverse;vecteur_1)`\n4. Faire la somme des composantes obtenues : `=SOMME(...)`\n5. Diviser chaque composante par cette somme.\n\nOn obtient : 38% A, 42% B, 20% C.\n\n**Cas 2 : si l'énoncé fournit un vecteur de volatilités et une matrice de corrélation**\nIl faut d'abord construire la matrice de covariance :\n`=PRODUITMAT(mat_diag_volatilites;PRODUITMAT(mat_correlations;mat_diag_volatilites))`\nEnsuite : `=INVERSEMAT(matrice_covariance)` → `=PRODUITMAT(matrice_inverse;vecteur_1)` → `=SOMME(...)` → `=chaque_valeur/somme`\n\nC'est exactement la méthode utilisée dans le cours."
+        },
+        {
+            "id": "gp-q166-excel",
+            "qcm": "Excel - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On donne les rendements espérés, les volatilités et la matrice de corrélation de trois actifs :\n\n| | Actif 1 | Actif 2 | Actif 3 |\n|---|---|---|---|\n| Rendement espéré | 12% | 10% | 6% |\n| Volatilité | 20% | 16% | 6% |\n\nMatrice de corrélation :\n\n| | Actif 1 | Actif 2 | Actif 3 |\n|---|---|---|---|\n| Actif 1 | 1 | 0,6 | -0,2 |\n| Actif 2 | 0,6 | 1 | -0,1 |\n| Actif 3 | -0,2 | -0,1 | 1 |\n\nAprès avoir calculé le portefeuille de variance minimale, quelles sont ses performances ?",
+            "choices": [
+                "E(R)=0,068, volatilité=0,0524, Sharpe=1,296",
+                "E(R)=0,080, volatilité=0,0600, Sharpe=1,333",
+                "E(R)=0,060, volatilité=0,0480, Sharpe=1,250",
+                "E(R)=0,074, volatilité=0,0580, Sharpe=1,276"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Poids du portefeuille de variance minimale : w1≈8,2%, w2≈7,8%, w3≈84,0%.\n\n**Formules Excel :**\n\n- **E(R)** : `{=PRODUITMAT(TRANSPOSE(Er);poids)}` → 0,068\n- **Volatilité** : `{=PRODUITMAT(TRANSPOSE(poids);PRODUITMAT(correlation;poids))^0,5}` → 0,0524\n- **Sharpe** : `=E(R)/volatilité` → 1,296\n\nPour les poids, construire d'abord la matrice de covariance :\n`=PRODUITMAT(mat_diag_volatilites;PRODUITMAT(mat_correlations;mat_diag_volatilites))`\nPuis : `=INVERSEMAT()` → `=PRODUITMAT(inverse;vecteur_1)` → normaliser par `=SOMME(...)`"
+        },
+        {
+            "id": "gp-q190-excel",
+            "qcm": "Excel - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On observe les rendements : A = 3%,4%,5%,3%,2%,4%,3%,4%,5%,4% et B = 2%,3%,4%,2%,1%,3%,2%,3%,4%,3%. Quelle est la corrélation approximative entre A et B ?",
+            "choices": [
+                "0,45",
+                "-0,15",
+                "0,25",
+                "0,95"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "En utilisant la fonction de corrélation sur Excel (=COEFFICIENT.CORRELATION()), on obtient ≈ 0,95."
+        },
+        {
+            "id": "gp-q203-excel",
+            "qcm": "Excel - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux titres A et B ont les rendements suivants sur 10 mois :\nA : 2%,3%,4%,2%,1%,3%,4%,2%,2%,3%\nB : 1%,2%,2%,1%,2%,1%,2%,2%,1%,2%\nLa corrélation est ρ=0,5. Quelle est la volatilité approximative du portefeuille équipondéré (50%-50%) ?",
+            "choices": [
+                "0,70%",
+                "1,24%",
+                "1,75%",
+                "2,50%"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "σP = √(w1²σ1² + w2²σ2² + 2w1w2ρσ1σ2). Avec σA≈0,97%, σB≈0,52%, ρ=0,5, w=0,5 : σP ≈ 0,65% ≈ 0,70% (réponse la plus proche). Sous Excel : =RACINE(0,5^2*σA^2+0,5^2*σB^2+2*0,5*0,5*0,5*σA*σB)."
         }
     ]
 }
