@@ -5454,6 +5454,38 @@
                 0
             ],
             "explanation": "Un bêta > 1 signifie que l'actif amplifie les mouvements du marché : il monte plus que le marché quand celui-ci monte, et baisse plus quand il baisse."
+        },
+        {
+            "id": "gp-q242",
+            "qcm": "GdP5 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "La dominance moyenne-variance signifie qu'un portefeuille A domine B si :",
+            "choices": [
+                "B est composé d'actifs parfaitement corrélés.",
+                "A a un rendement supérieur pour une même volatilité, ou une volatilité inférieure pour un même rendement.",
+                "A a une meilleure corrélation avec le marché.",
+                "A a un alpha plus élevé que B."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La dominance moyenne-variance (théorie de Markowitz) indique qu'un portefeuille est préférable à un autre s'il offre un rendement plus élevé à risque égal ou un risque plus faible pour un même rendement. Dans ce cas, l'investisseur rationnel choisira toujours le portefeuille dominant. Les notions de corrélation avec le marché ou d'alpha ne définissent pas à elles seules la dominance moyenne-variance."
+        },
+        {
+            "id": "gp-q242-cours",
+            "qcm": "Cours - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "La dominance moyenne-variance signifie qu'un portefeuille A domine B si :",
+            "choices": [
+                "B est composé d'actifs parfaitement corrélés.",
+                "A a un rendement supérieur pour une même volatilité, ou une volatilité inférieure pour un même rendement.",
+                "A a une meilleure corrélation avec le marché.",
+                "A a un alpha plus élevé que B."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La dominance moyenne-variance (théorie de Markowitz) indique qu'un portefeuille est préférable à un autre s'il offre un rendement plus élevé à risque égal ou un risque plus faible pour un même rendement. Dans ce cas, l'investisseur rationnel choisira toujours le portefeuille dominant. Les notions de corrélation avec le marché ou d'alpha ne définissent pas à elles seules la dominance moyenne-variance."
         }
     ]
 }
