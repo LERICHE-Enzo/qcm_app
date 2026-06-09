@@ -5486,6 +5486,38 @@
                 1
             ],
             "explanation": "La dominance moyenne-variance (théorie de Markowitz) indique qu'un portefeuille est préférable à un autre s'il offre un rendement plus élevé à risque égal ou un risque plus faible pour un même rendement. Dans ce cas, l'investisseur rationnel choisira toujours le portefeuille dominant. Les notions de corrélation avec le marché ou d'alpha ne définissent pas à elles seules la dominance moyenne-variance."
+        },
+        {
+            "id": "gp-q243",
+            "qcm": "GdP5 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Que dit le théorème des deux fonds ?",
+            "choices": [
+                "Deux actifs sont toujours suffisants pour une diversification parfaite.",
+                "Tout investisseur peut composer son portefeuille optimal à partir d'un actif sans risque et du portefeuille de marché.",
+                "Deux fonds suffisent à couvrir tous les types de risque.",
+                "Il existe deux types de risques : systématique et idiosyncratique."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le théorème des deux fonds (Two-Fund Separation Theorem) affirme que tous les investisseurs peuvent obtenir leur portefeuille optimal en combinant seulement deux fonds : un actif sans risque et un portefeuille de marché (ou portefeuille tangent). La proportion investie dans chacun dépend uniquement de leur tolérance au risque. Les autres propositions ne correspondent pas à ce théorème."
+        },
+        {
+            "id": "gp-q243-cours",
+            "qcm": "Cours - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Que dit le théorème des deux fonds ?",
+            "choices": [
+                "Deux actifs sont toujours suffisants pour une diversification parfaite.",
+                "Tout investisseur peut composer son portefeuille optimal à partir d'un actif sans risque et du portefeuille de marché.",
+                "Deux fonds suffisent à couvrir tous les types de risque.",
+                "Il existe deux types de risques : systématique et idiosyncratique."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le théorème des deux fonds (Two-Fund Separation Theorem) affirme que tous les investisseurs peuvent obtenir leur portefeuille optimal en combinant seulement deux fonds : un actif sans risque et un portefeuille de marché (ou portefeuille tangent). La proportion investie dans chacun dépend uniquement de leur tolérance au risque. Les autres propositions ne correspondent pas à ce théorème."
         }
     ]
 }
