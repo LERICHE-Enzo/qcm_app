@@ -4727,6 +4727,733 @@
                 2
             ],
             "explanation": "E(R) = 2 + 1,2×(8−2) = 9,2%. α = 11 − 9,2 = 1,8% > 0 → alpha positif."
+        },
+        {
+            "id": "gp-q093-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio de Sharpe est :",
+            "choices": [
+                "Le taux auquel le risque est transformé en prime de risque.",
+                "Un critère non paramétrique de classement des risques.",
+                "Une mesure de risque corrigée de la performance.",
+                "Une estimation de la perte maximale au seuil de 5%."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le ratio de Sharpe = (Rp – Rf) / σp est la pente de la droite CML : il mesure combien d'unités de prime de risque l'investisseur obtient par unité de risque (volatilité) acceptée. C'est donc le taux de conversion du risque en prime de risque."
+        },
+        {
+            "id": "gp-q095-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio de Sharpe d'un gérant est :",
+            "choices": [
+                "Son rendement excédentaire (calculé avec le CAPM).",
+                "Son rendement moyen corrigé du risque.",
+                "Le taux auquel il convertit du risque en prime de risque."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le ratio de Sharpe est la pente de la droite reliant l'actif sans risque au portefeuille du gérant. Il mesure le nombre de points de rendement excédentaire obtenus par unité de volatilité. La proposition A décrit l'alpha de Jensen."
+        },
+        {
+            "id": "gp-q096-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le beta d'un titre est :",
+            "choices": [
+                "Le résidu du modèle de marché.",
+                "Le rapport de la covariance des rendements du titre et de l'indice du marché divisée par la variance du rendement du marché.",
+                "Le rapport de la corrélation des rendements du titre et de l'indice de marché à l'écart-type du rendement de l'indice de marché."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "β = Cov(Ri, Rm) / Var(Rm). La proposition A décrit le résidu ε du modèle de marché. La proposition C est incorrecte : ρ/σm ≠ β."
+        },
+        {
+            "id": "gp-q100-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio de Treynor est :",
+            "choices": [
+                "Le rapport du rendement excédentaire à la volatilité totale du portefeuille.",
+                "Le taux auquel le risque systématique est transformé en prime de risque.",
+                "La différence entre le rendement du portefeuille et celui prédit par le CAPM.",
+                "Une estimation de la perte maximale au seuil de 1%."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le ratio de Treynor = (Rp – Rf) / βp. Il mesure combien d'unités de prime de risque le portefeuille génère par unité de risque systématique (bêta). La proposition A décrit le ratio de Sharpe, la proposition C décrit l'alpha de Jensen."
+        },
+        {
+            "id": "gp-q102-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "L'alpha de Jensen d'un gérant est :",
+            "choices": [
+                "Le taux auquel il convertit du risque systématique en prime de risque.",
+                "Son rendement moyen divisé par son bêta.",
+                "La part de son rendement non expliquée par le CAPM, mesure de sa surperformance."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'alpha de Jensen = Rp – [Rf + βp × (Rm – Rf)]. C'est la différence entre le rendement effectivement réalisé et celui qu'aurait prédit le CAPM. Un alpha positif indique une surperformance. La proposition A décrit le ratio de Treynor."
+        },
+        {
+            "id": "gp-q103-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "La variance d'un portefeuille composé de deux titres est :",
+            "choices": [
+                "La somme pondérée des variances des deux titres.",
+                "$w_1^2\\sigma_1^2 + w_2^2\\sigma_2^2 + 2w_1w_2\\text{Cov}(R_1,R_2)$",
+                "Le produit des écarts-types des deux titres multiplié par leur corrélation."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La formule exacte est σ²p = w1²σ1² + w2²σ2² + 2w1w2Cov(R1,R2), avec Cov(R1,R2) = ρ12 × σ1 × σ2. La proposition A oublie le terme croisé de covariance. La proposition C ne correspond à aucune formule standard."
+        },
+        {
+            "id": "gp-q107-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Si un gérant fait jouer l'effet de levier, son ratio de Sharpe va :",
+            "choices": [
+                "Rester le même.",
+                "Augmenter.",
+                "Augmenter si le marché est haussier, baisser sinon."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'effet de levier consiste à emprunter au taux sans risque pour investir davantage dans le portefeuille risqué. On se déplace sur la CML, mais la pente reste identique : le rendement excédentaire et la volatilité augmentent dans la même proportion, donc le ratio de Sharpe = (Rp – Rf) / σp est inchangé."
+        },
+        {
+            "id": "gp-q108-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "L'investissement sur un titre dont le beta est négatif implique que :",
+            "choices": [
+                "L'impact des baisses du marché va être plus faible.",
+                "Le portefeuille va être décorrélé du marché.",
+                "La prime de risque du portefeuille va être négative."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un beta négatif signifie que le titre évolue en sens inverse du marché. Quand le marché baisse, ce titre monte — ce qui atténue l'impact des baisses sur le portefeuille. La proposition C est fausse : c'est le rendement espéré du titre lui-même qui est inférieur à Rf. La proposition B serait vraie pour β = 0 uniquement."
+        },
+        {
+            "id": "gp-q109-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille efficient est :",
+            "choices": [
+                "Un portefeuille qui permet d'avoir une performance plus grande pour un niveau de risque donné.",
+                "Un portefeuille pour lequel il n'existe aucun autre portefeuille ayant un rendement moyen strictement supérieur pour au pire la même volatilité.",
+                "Un portefeuille vérifiant le critère de Pareto."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "C'est la définition exacte de l'efficience au sens de Markowitz : un portefeuille est efficient s'il n'est dominé par aucun autre, c'est-à-dire qu'on ne peut pas trouver un portefeuille offrant plus de rendement pour le même niveau de risque ou moins. La proposition A est trop vague. La proposition C utilise un vocabulaire d'économie du bien-être."
+        },
+        {
+            "id": "gp-q114-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le CAPM est une théorie :",
+            "choices": [
+                "découverte simultanément par Jevons, Walras et Menger.",
+                "découverte en 1936 par John Maynard Keynes.",
+                "affirmant que la prime de risque est créée par le risque.",
+                "découverte notamment par William Sharpe."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le CAPM (Capital Asset Pricing Model) a été développé dans les années 1960 notamment par William Sharpe, John Lintner et Jan Mossin. Il relie le rendement espéré d'un actif à son risque systématique mesuré par le bêta."
+        },
+        {
+            "id": "gp-q115-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "À l'équilibre du marché, la valeur d'un alpha est :",
+            "choices": [
+                "nécessairement strictement positif.",
+                "nul si le modèle définissant l'équilibre est correct.",
+                "positif si la bourse est à la hausse, négatif sinon."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'alpha mesure l'écart entre le rendement observé d'un actif et celui prédit par le modèle. Si le modèle d'équilibre est parfaitement valide, aucun actif ne génère de rendement anormal : l'alpha est donc nul."
+        },
+        {
+            "id": "gp-q116-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Les corrélations des rendements des actions ont tendance en cas de crise :",
+            "choices": [
+                "à devenir très négatives.",
+                "à augmenter.",
+                "à diminuer en raison du ralentissement des transactions."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Lors des crises financières, les investisseurs vendent massivement de nombreux actifs simultanément. Les rendements deviennent alors davantage synchronisés et les corrélations augmentent fortement, réduisant les bénéfices de la diversification."
+        },
+        {
+            "id": "gp-q121-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le modèle du CAPM, le portefeuille de marché est :",
+            "choices": [
+                "le portefeuille de l'investisseur le plus prudent",
+                "le portefeuille qui maximise la variance",
+                "le portefeuille composé uniquement d'actions",
+                "la combinaison pondérée de tous les actifs risqués selon leur capitalisation"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le portefeuille de marché dans le CAPM est constitué de l'ensemble des actifs risqués disponibles dans l'économie, pondérés par leur capitalisation de marché. Il représente le portefeuille que tous les investisseurs détiennent à l'équilibre."
+        },
+        {
+            "id": "gp-q122-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "La liquidité d'un hedge fund est généralement :",
+            "choices": [
+                "plus faible que celle d'un mutual fund",
+                "meilleure que celle des actions cotées",
+                "inexistante car les hedge funds ne sont pas réglementés",
+                "assurée quotidiennement par le marché"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les hedge funds imposent souvent des périodes de blocage (lock-up) et des fenêtres de rachat limitées. Leur liquidité est généralement inférieure à celle des mutual funds classiques."
+        },
+        {
+            "id": "gp-q123-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Que mesure le ratio de Sharpe ?",
+            "choices": [
+                "la perte maximale anticipée",
+                "la volatilité spécifique d'un portefeuille",
+                "le rendement excédentaire par unité de risque total",
+                "le rendement corrigé du bêta"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le ratio de Sharpe = (Rp − Rf) / σp. Il indique combien de rendement excédentaire est obtenu pour chaque unité de risque total supportée."
+        },
+        {
+            "id": "gp-q124-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est dit efficient au sens de Pareto si :",
+            "choices": [
+                "il offre une performance supérieure à l'indice",
+                "il n'existe aucun autre portefeuille avec un rendement supérieur et un risque inférieur",
+                "il maximise la rentabilité absolue",
+                "il présente la meilleure diversification possible"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un portefeuille est Pareto-efficient lorsqu'il est impossible de trouver un autre portefeuille offrant simultanément un rendement plus élevé et un risque plus faible."
+        },
+        {
+            "id": "gp-q125-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Si un actif est correctement valorisé selon le CAPM, alors :",
+            "choices": [
+                "son alpha est nul",
+                "sa variance est égale à zéro",
+                "son bêta est toujours égal à 1",
+                "son rendement est supérieur au marché"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un actif correctement valorisé se situe exactement sur la Security Market Line. Son rendement correspond à celui prévu par le CAPM : α = 0."
+        },
+        {
+            "id": "gp-q127-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un hedge fund, l'effet de levier financier permet :",
+            "choices": [
+                "de se protéger contre l'inflation",
+                "d'amplifier les gains comme les pertes en empruntant pour investir davantage",
+                "de réduire le risque d'un portefeuille en augmentant la liquidité",
+                "de garantir un rendement minimum"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'effet de levier consiste à emprunter pour investir davantage. Il augmente à la fois le potentiel de gain et le risque de perte."
+        },
+        {
+            "id": "gp-q128-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce que la Capital Market Line (CML) ?",
+            "choices": [
+                "la droite reliant la prime de risque du marché au bêta",
+                "la droite des actifs dominés dans le plan rendement-risque",
+                "la droite définie par le ratio de Sharpe du marché et le taux certain dans le plan volatilité-rendement",
+                "une frontière efficiente des portefeuilles individuels uniquement"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La CML relie le taux sans risque au portefeuille de marché dans le plan rendement-volatilité. Sa pente est le ratio de Sharpe du marché."
+        },
+        {
+            "id": "gp-q129-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle est la principale différence entre un fonds ouvert (mutual fund) et un fonds fermé ?",
+            "choices": [
+                "Le fonds fermé est plus liquide que le fonds ouvert",
+                "Le fonds ouvert émet et rachète ses parts en continu",
+                "Le fonds ouvert est réservé aux institutionnels",
+                "Le fonds fermé garantit le capital initial"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les fonds ouverts créent et rachètent continuellement des parts à la valeur liquidative."
+        },
+        {
+            "id": "gp-q133-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio d'information mesure :",
+            "choices": [
+                "le bêta ajusté à la volatilité",
+                "la variance d'un portefeuille",
+                "la corrélation d'un actif au marché",
+                "la performance excédentaire ajustée du risque spécifique"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le ratio d'information mesure la surperformance obtenue relativement au benchmark par unité de tracking error : IR = (RP − RB) / Tracking Error."
+        },
+        {
+            "id": "gp-q135-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon l'hypothèse d'efficience des marchés (forme faible), les prix reflètent :",
+            "choices": [
+                "toutes les informations publiques",
+                "toutes les informations passées sur les prix",
+                "aucune information",
+                "toutes les informations, y compris privées"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La forme faible de l'efficience stipule que toute l'information historique des prix est déjà intégrée dans les cours actuels. À retenir : forme faible → informations passées sur les prix ; forme semi-forte → informations publiques ; forme forte → toutes les informations, y compris privées."
+        },
+        {
+            "id": "gp-q138-cours",
+            "qcm": "Cours - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le CAPM, le rendement espéré d'un actif dépend :",
+            "choices": [
+                "de son alpha",
+                "de sa volatilité uniquement",
+                "du taux d'inflation",
+                "de son bêta et de la prime de risque du marché"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "E(R) = Rf + β × (E(RM) − Rf). Le rendement attendu dépend du bêta et de la prime de risque du marché."
+        },
+        {
+            "id": "gp-q140-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon l'hypothèse d'efficience des marchés (forme semi-forte), les prix reflètent :",
+            "choices": [
+                "toutes les informations, y compris privées",
+                "aucune information",
+                "toutes les informations passées sur les prix uniquement",
+                "toutes les informations publiques"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La forme semi-forte implique que toutes les informations publiques (annonces, bilans, etc.) sont déjà intégrées dans les cours. La forme faible couvre uniquement les prix passés, la forme forte couvre aussi les informations privées."
+        },
+        {
+            "id": "gp-q144-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Le ratio de Treynor utilise quelle mesure du risque ?",
+            "choices": [
+                "Le bêta",
+                "L'écart-type",
+                "Le VaR",
+                "La corrélation au marché"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le ratio de Treynor = (Rp − Rf) / β. Il mesure le rendement excédentaire par unité de risque systématique (bêta)."
+        },
+        {
+            "id": "gp-q148-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'un portefeuille efficient selon Markowitz ?",
+            "choices": [
+                "un portefeuille qui maximise la kurtosis",
+                "un portefeuille qui minimise l'asymétrie",
+                "un portefeuille pour lequel aucun autre n'offre un meilleur rendement pour un même risque",
+                "un portefeuille diversifié sur tous les secteurs"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un portefeuille efficient est situé sur la frontière efficiente : aucun autre portefeuille n'offre un rendement supérieur pour le même niveau de risque."
+        },
+        {
+            "id": "gp-q150-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel test valide empiriquement le CAPM ?",
+            "choices": [
+                "la corrélation négative entre rendement et volatilité",
+                "la relation linéaire entre rendement excédentaire et bêta",
+                "la prédiction exacte des rendements futurs",
+                "le lien entre alpha et risque idiosyncratique"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le CAPM est validé lorsque les rendements excédentaires sont expliqués linéairement par le bêta et non par des alphas significatifs."
+        },
+        {
+            "id": "gp-q152-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Sur la frontière efficiente, les portefeuilles :",
+            "choices": [
+                "offrent le meilleur rendement pour un niveau de risque donné",
+                "sont composés uniquement d'actifs sans risque",
+                "ont toujours une corrélation négative",
+                "ont tous le même bêta"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La frontière efficiente représente les portefeuilles optimaux en termes de rendement et de risque."
+        },
+        {
+            "id": "gp-q154-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'une anomalie sur les marchés financiers ?",
+            "choices": [
+                "une imperfection des marchés due aux coûts de transaction",
+                "un déséquilibre temporaire appelé à être résorbé dans la journée",
+                "une théorie reposant sur la psychologie des investisseurs",
+                "un écart entre la prime de risque effective et la prime de risque prédite par le CAPM"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Une anomalie est un écart empirique entre les prédictions d'un modèle (comme le CAPM) et les observations du marché."
+        },
+        {
+            "id": "gp-q156-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Les fonds de pension investissent généralement avec :",
+            "choices": [
+                "une stratégie de très court terme",
+                "un horizon de placement de long terme",
+                "un objectif de rendement immédiat",
+                "des arbitrages intrajournaliers fréquents"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les fonds de pension investissent sur plusieurs décennies afin de financer les retraites futures."
+        },
+        {
+            "id": "gp-q157-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un arbitrage consiste à :",
+            "choices": [
+                "profiter d'une opportunité sans risque pour un gain certain",
+                "comparer les performances sur un benchmark",
+                "diversifier le portefeuille pour réduire le risque",
+                "acheter et conserver un actif en espérant une hausse"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'arbitrage exploite une incohérence de prix afin de réaliser un profit sans risque."
+        },
+        {
+            "id": "gp-q161-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le CAPM, la droite de marché des titres (SML) est :",
+            "choices": [
+                "la frontière efficiente du portefeuille",
+                "la courbe des taux sans risque",
+                "la relation entre rendement espéré et bêta",
+                "la relation entre rendement et volatilité"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La Security Market Line (SML) relie le rendement attendu au bêta : E(R) = Rf + β × (E(RM) − Rf)."
+        },
+        {
+            "id": "gp-q163-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un mutual fund (fonds commun de placement) est :",
+            "choices": [
+                "un fonds qui regroupe les capitaux de plusieurs investisseurs pour les placer dans un portefeuille diversifié",
+                "un fonds obligataire exclusivement",
+                "un produit structuré à capital garanti",
+                "un fonds spéculatif réservé aux institutionnels"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les mutual funds permettent à plusieurs investisseurs de mutualiser leurs capitaux dans un portefeuille géré professionnellement."
+        },
+        {
+            "id": "gp-q165-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "À l'équilibre du marché selon le CAPM, quelle est la valeur attendue de l'alpha d'un actif ?",
+            "choices": [
+                "nul si le modèle définissant l'équilibre est correct",
+                "positif si la bourse est à la hausse, négatif sinon",
+                "lié à la prime de risque moyenne du marché",
+                "nécessairement strictement positif"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Selon le CAPM, α = 0 pour tout actif correctement valorisé à l'équilibre du marché."
+        },
+        {
+            "id": "gp-q167-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le CAPM, la droite de marché des titres est :",
+            "choices": [
+                "la relation entre rendement espéré et bêta",
+                "la relation entre rendement et volatilité",
+                "la frontière efficiente du portefeuille",
+                "la courbe des taux sans risque"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La droite de marché des titres (Security Market Line) relie le rendement espéré d'un actif à son bêta."
+        },
+        {
+            "id": "gp-q169-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Que représente un alpha positif dans un modèle de marché ?",
+            "choices": [
+                "une meilleure corrélation au marché",
+                "une surperformance par rapport à ce que prédit le modèle",
+                "un indicateur de risque systématique",
+                "un rendement identique au marché"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un alpha positif signifie que l'actif ou le portefeuille réalise une performance supérieure à celle prédite par le modèle."
+        },
+        {
+            "id": "gp-q173-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Le risque non systématique est aussi appelé :",
+            "choices": [
+                "risque spécifique",
+                "rendement excédentaire",
+                "risque de marché",
+                "prime de risque"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Ce risque est propre à l'entreprise et peut être réduit par diversification."
+        },
+        {
+            "id": "gp-q177-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Comment est défini le bêta d'un actif ?",
+            "choices": [
+                "la corrélation entre les rendements de l'actif et du marché",
+                "la covariance entre les rendements de l'actif et du marché divisée par la variance du marché",
+                "la volatilité de l'actif sur la volatilité du marché",
+                "le rendement moyen d'un actif sur celui du marché"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "βi = Cov(Ri, Rm) / Var(Rm)."
+        },
+        {
+            "id": "gp-q181-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille situé sous la Capital Market Line :",
+            "choices": [
+                "a un bêta nul",
+                "est toujours composé uniquement d'actifs sans risque",
+                "domine les portefeuilles efficients",
+                "offre un rendement inférieur à celui d'un portefeuille efficient pour le même risque"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un portefeuille situé sous la CML n'est pas efficient : pour un même niveau de risque, un portefeuille sur la CML offre un rendement plus élevé."
+        },
+        {
+            "id": "gp-q184-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Qui est l'un des principaux contributeurs à la formulation du CAPM ?",
+            "choices": [
+                "William Sharpe",
+                "Robert Merton",
+                "Fischer Black",
+                "Harry Markowitz"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "William Sharpe a formalisé le CAPM dans les années 1960, en s'appuyant sur la théorie de Markowitz."
+        },
+        {
+            "id": "gp-q186-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le cadre de la théorie du portefeuille, un actif sans risque a :",
+            "choices": [
+                "un rendement supérieur au marché",
+                "un bêta de 1",
+                "une variance nulle",
+                "une corrélation parfaite avec l'indice"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'actif sans risque a un rendement constant, donc une variance nulle (σ²=0) et un bêta de 0."
+        },
+        {
+            "id": "gp-q192-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle stratégie un hedge fund peut-il utiliser pour se protéger contre une baisse du marché ?",
+            "choices": [
+                "la diversification sectorielle seulement",
+                "l'achat d'obligations convertibles uniquement",
+                "la vente à découvert",
+                "l'augmentation de la duration obligataire"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les hedge funds peuvent vendre des titres qu'ils ne détiennent pas pour profiter d'une baisse attendue (vente à découvert)."
+        },
+        {
+            "id": "gp-q193-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel type de risque peut être éliminé par diversification dans un portefeuille ?",
+            "choices": [
+                "Le risque systématique",
+                "Le risque spécifique",
+                "Le bêta",
+                "La volatilité totale"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le risque spécifique est propre à chaque actif et peut être diversifié à travers la construction de portefeuilles. Le risque systématique reste présent."
+        },
+        {
+            "id": "gp-q196-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux actifs parfaitement corrélés (+1) auront dans un portefeuille :",
+            "choices": [
+                "un rendement certain",
+                "un bêta moyen nul",
+                "aucun gain de diversification",
+                "une volatilité minimale"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Lorsque deux actifs sont parfaitement corrélés (ρ=+1), la diversification ne réduit pas le risque global."
+        },
+        {
+            "id": "gp-q197-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle hypothèse est essentielle dans le modèle du CAPM ?",
+            "choices": [
+                "Le rendement des actifs est constant",
+                "Les actifs ne sont pas risqués",
+                "Les marchés sont toujours en hausse",
+                "Tous les investisseurs ont les mêmes anticipations"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le CAPM suppose que tous les investisseurs disposent des mêmes informations et forment les mêmes anticipations sur les rendements, les risques et les corrélations."
+        },
+        {
+            "id": "gp-q204-cours",
+            "qcm": "Cours - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un actif avec un bêta de 1,2 a tendance à :",
+            "choices": [
+                "évoluer plus fortement que le marché",
+                "être décorrélé du marché",
+                "avoir un rendement inférieur au marché",
+                "avoir un risque plus faible que le marché"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un bêta > 1 signifie que l'actif amplifie les mouvements du marché : il monte plus que le marché quand celui-ci monte, et baisse plus quand il baisse."
         }
     ]
 }
