@@ -5518,6 +5518,166 @@
                 1
             ],
             "explanation": "Le théorème des deux fonds (Two-Fund Separation Theorem) affirme que tous les investisseurs peuvent obtenir leur portefeuille optimal en combinant seulement deux fonds : un actif sans risque et un portefeuille de marché (ou portefeuille tangent). La proportion investie dans chacun dépend uniquement de leur tolérance au risque. Les autres propositions ne correspondent pas à ce théorème."
+        },
+        {
+            "id": "gp-q244",
+            "qcm": "GdP5 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un fonds de pension est :",
+            "choices": [
+                "Un fonds souverain détenu par une banque centrale.",
+                "Un produit à échéance fixe proposé par une mutuelle.",
+                "Un fonds qui gère l'épargne retraite des salariés.",
+                "Un fonds d'investissement alternatif réservé aux États."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un fonds de pension est un organisme de placement qui collecte et investit l'épargne destinée à financer les retraites des salariés. Les cotisations sont investies sur les marchés financiers afin de générer des revenus pour les futurs retraités. Les autres propositions confondent les fonds de pension avec les fonds souverains ou d'autres types de produits financiers."
+        },
+        {
+            "id": "gp-q244-cours",
+            "qcm": "Cours - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Un fonds de pension est :",
+            "choices": [
+                "Un fonds souverain détenu par une banque centrale.",
+                "Un produit à échéance fixe proposé par une mutuelle.",
+                "Un fonds qui gère l'épargne retraite des salariés.",
+                "Un fonds d'investissement alternatif réservé aux États."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un fonds de pension est un organisme de placement qui collecte et investit l'épargne destinée à financer les retraites des salariés. Les cotisations sont investies sur les marchés financiers afin de générer des revenus pour les futurs retraités. Les autres propositions confondent les fonds de pension avec les fonds souverains ou d'autres types de produits financiers."
+        },
+        {
+            "id": "gp-q245",
+            "qcm": "GdP5 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est l'effet principal de la diversification ?",
+            "choices": [
+                "Réduire le risque spécifique sans affecter le risque systématique.",
+                "Augmenter le rendement attendu.",
+                "Garantir un rendement minimum.",
+                "Réduire le bêta moyen du portefeuille."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La diversification consiste à répartir les investissements entre plusieurs actifs afin de diminuer le risque spécifique (ou risque idiosyncratique) propre à chaque entreprise ou actif. En revanche, elle ne permet pas d'éliminer le risque systématique, qui dépend des conditions générales du marché. Elle ne garantit pas un rendement minimum et n'a pas nécessairement pour effet de réduire le bêta du portefeuille."
+        },
+        {
+            "id": "gp-q245-cours",
+            "qcm": "Cours - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est l'effet principal de la diversification ?",
+            "choices": [
+                "Réduire le risque spécifique sans affecter le risque systématique.",
+                "Augmenter le rendement attendu.",
+                "Garantir un rendement minimum.",
+                "Réduire le bêta moyen du portefeuille."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La diversification consiste à répartir les investissements entre plusieurs actifs afin de diminuer le risque spécifique (ou risque idiosyncratique) propre à chaque entreprise ou actif. En revanche, elle ne permet pas d'éliminer le risque systématique, qui dépend des conditions générales du marché. Elle ne garantit pas un rendement minimum et n'a pas nécessairement pour effet de réduire le bêta du portefeuille."
+        },
+        {
+            "id": "gp-q246",
+            "qcm": "GdP5 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un fonds ouvert, les investisseurs peuvent :",
+            "choices": [
+                "Accéder uniquement à un fonds garanti.",
+                "Racheter leurs parts à tout moment selon la valeur liquidative.",
+                "Modifier eux-mêmes la composition du fonds.",
+                "Seulement vendre leurs parts sur un marché secondaire."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un fonds ouvert (open-end fund) émet et rachète continuellement des parts. Les investisseurs peuvent donc demander le rachat de leurs parts auprès du fonds à la valeur liquidative (VL) calculée périodiquement."
+        },
+        {
+            "id": "gp-q246-cours",
+            "qcm": "Cours - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un fonds ouvert, les investisseurs peuvent :",
+            "choices": [
+                "Accéder uniquement à un fonds garanti.",
+                "Racheter leurs parts à tout moment selon la valeur liquidative.",
+                "Modifier eux-mêmes la composition du fonds.",
+                "Seulement vendre leurs parts sur un marché secondaire."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un fonds ouvert (open-end fund) émet et rachète continuellement des parts. Les investisseurs peuvent donc demander le rachat de leurs parts auprès du fonds à la valeur liquidative (VL) calculée périodiquement."
+        },
+        {
+            "id": "gp-q247",
+            "qcm": "GdP5 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Les fonds UCITS (OPCVM en français) sont caractérisés par :",
+            "choices": [
+                "Une réglementation européenne garantissant transparence et liquidité.",
+                "L'absence totale de contrôle réglementaire.",
+                "Leur utilisation exclusive par les États.",
+                "Une spécialisation dans les matières premières."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les UCITS (Undertakings for Collective Investment in Transferable Securities), appelés OPCVM en France, sont des fonds d'investissement soumis à une réglementation européenne harmonisée."
+        },
+        {
+            "id": "gp-q247-cours",
+            "qcm": "Cours - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Les fonds UCITS (OPCVM en français) sont caractérisés par :",
+            "choices": [
+                "Une réglementation européenne garantissant transparence et liquidité.",
+                "L'absence totale de contrôle réglementaire.",
+                "Leur utilisation exclusive par les États.",
+                "Une spécialisation dans les matières premières."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les UCITS (Undertakings for Collective Investment in Transferable Securities), appelés OPCVM en France, sont des fonds d'investissement soumis à une réglementation européenne harmonisée."
+        },
+        {
+            "id": "gp-q248",
+            "qcm": "GdP5 - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Qui est considéré comme le fondateur de la théorie moderne du portefeuille ?",
+            "choices": [
+                "Harry Markowitz",
+                "William Sharpe",
+                "John Maynard Keynes",
+                "Eugene Fama"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Harry Markowitz est considéré comme le père de la théorie moderne du portefeuille (Modern Portfolio Theory - MPT). Dans son article de 1952, il a montré comment les investisseurs peuvent construire un portefeuille optimal en tenant compte simultanément du rendement attendu et du risque (variance/écart-type), tout en bénéficiant de la diversification."
+        },
+        {
+            "id": "gp-q248-cours",
+            "qcm": "Cours - QCM3",
+            "theme": "Gestion de portefeuille",
+            "question": "Qui est considéré comme le fondateur de la théorie moderne du portefeuille ?",
+            "choices": [
+                "Harry Markowitz",
+                "William Sharpe",
+                "John Maynard Keynes",
+                "Eugene Fama"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Harry Markowitz est considéré comme le père de la théorie moderne du portefeuille (Modern Portfolio Theory - MPT). Dans son article de 1952, il a montré comment les investisseurs peuvent construire un portefeuille optimal en tenant compte simultanément du rendement attendu et du risque (variance/écart-type), tout en bénéficiant de la diversification."
         }
     ]
 }
