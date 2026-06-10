@@ -1,0 +1,54 @@
+Question;Réponse
+Le ratio de Sharpe est :;Le taux auquel le risque est transformé en prime de risque.
+Le ratio de Sharpe d'un gérant est :;Le taux auquel il convertit du risque en prime de risque.
+Le beta d'un titre est :;Le rapport de la covariance des rendements du titre et de l'indice du marché divisée par la variance du rendement du marché.
+Le ratio de Treynor est :;Le taux auquel le risque systématique est transformé en prime de risque.
+L'alpha de Jensen d'un gérant est :;La part de son rendement non expliquée par le CAPM, mesure de sa surperformance.
+La variance d'un portefeuille composé de deux titres est :;$w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\text{Cov}(R_1,R_2)$
+Si un gérant fait jouer l'effet de levier, son ratio de Sharpe va :;Rester le même.
+L'investissement sur un titre dont le beta est négatif implique que :;L'impact des baisses du marché va être plus faible.
+Un portefeuille efficient est :;Un portefeuille pour lequel il n'existe aucun autre portefeuille ayant un rendement moyen strictement supérieur pour au pire la même volatilité.
+Le CAPM est une théorie :;découverte notamment par William Sharpe.
+À l'équilibre du marché, la valeur d'un alpha est :;nul si le modèle définissant l'équilibre est correct.
+Les corrélations des rendements des actions ont tendance en cas de crise :;à augmenter.
+Dans le modèle du CAPM, le portefeuille de marché est :;la combinaison pondérée de tous les actifs risqués selon leur capitalisation
+La liquidité d'un hedge fund est généralement :;plus faible que celle d'un mutual fund
+Que mesure le ratio de Sharpe ?;le rendement excédentaire par unité de risque total
+Un portefeuille est dit efficient au sens de Pareto si :;il n'existe aucun autre portefeuille avec un rendement supérieur et un risque inférieur
+Si un actif est correctement valorisé selon le CAPM, alors :;son alpha est nul
+Dans un hedge fund, l'effet de levier financier permet :;d'amplifier les gains comme les pertes en empruntant pour investir davantage
+Qu'est-ce que la Capital Market Line (CML) ?;la droite définie par le ratio de Sharpe du marché et le taux certain dans le plan volatilité-rendement
+Quelle est la principale différence entre un fonds ouvert (mutual fund) et un fonds fermé ?;Le fonds ouvert émet et rachète ses parts en continu
+Le ratio d'information mesure :;la performance excédentaire ajustée du risque spécifique
+Selon l'hypothèse d'efficience des marchés (forme faible), les prix reflètent :;toutes les informations passées sur les prix
+Dans le CAPM, le rendement espéré d'un actif dépend :;de son bêta et de la prime de risque du marché
+Selon l'hypothèse d'efficience des marchés (forme semi-forte), les prix reflètent :;toutes les informations publiques
+Le ratio de Treynor utilise quelle mesure du risque ?;Le bêta
+Qu'est-ce qu'un portefeuille efficient selon Markowitz ?;un portefeuille pour lequel aucun autre n'offre un meilleur rendement pour un même risque
+Quel test valide empiriquement le CAPM ?;la relation linéaire entre rendement excédentaire et bêta
+Sur la frontière efficiente, les portefeuilles :;offrent le meilleur rendement pour un niveau de risque donné
+Qu'est-ce qu'une anomalie sur les marchés financiers ?;un écart entre la prime de risque effective et la prime de risque prédite par le CAPM
+Les fonds de pension investissent généralement avec :;un horizon de placement de long terme
+Un arbitrage consiste à :;profiter d'une opportunité sans risque pour un gain certain
+Dans le CAPM, la droite de marché des titres (SML) est :;la relation entre rendement espéré et bêta
+Un mutual fund (fonds commun de placement) est :;un fonds qui regroupe les capitaux de plusieurs investisseurs pour les placer dans un portefeuille diversifié
+À l'équilibre du marché selon le CAPM, quelle est la valeur attendue de l'alpha d'un actif ?;nul si le modèle définissant l'équilibre est correct
+Dans le CAPM, la droite de marché des titres est :;la relation entre rendement espéré et bêta
+Que représente un alpha positif dans un modèle de marché ?;une surperformance par rapport à ce que prédit le modèle
+Le risque non systématique est aussi appelé :;risque spécifique
+Comment est défini le bêta d'un actif ?;la covariance entre les rendements de l'actif et du marché divisée par la variance du marché
+Un portefeuille situé sous la Capital Market Line :;offre un rendement inférieur à celui d'un portefeuille efficient pour le même risque
+Qui est l'un des principaux contributeurs à la formulation du CAPM ?;William Sharpe
+Dans le cadre de la théorie du portefeuille, un actif sans risque a :;une variance nulle
+Quelle stratégie un hedge fund peut-il utiliser pour se protéger contre une baisse du marché ?;la vente à découvert
+Quel type de risque peut être éliminé par diversification dans un portefeuille ?;Le risque spécifique
+Deux actifs parfaitement corrélés (+1) auront dans un portefeuille :;aucun gain de diversification
+Quelle hypothèse est essentielle dans le modèle du CAPM ?;Tous les investisseurs ont les mêmes anticipations
+Un actif avec un bêta de 1,2 a tendance à :;évoluer plus fortement que le marché
+La dominance moyenne-variance signifie qu'un portefeuille A domine B si :;A a un rendement supérieur pour une même volatilité, ou une volatilité inférieure pour un même rendement.
+Que dit le théorème des deux fonds ?;Tout investisseur peut composer son portefeuille optimal à partir d'un actif sans risque et du portefeuille de marché.
+Un fonds de pension est :;Un fonds qui gère l'épargne retraite des salariés.
+Quel est l'effet principal de la diversification ?;Réduire le risque spécifique sans affecter le risque systématique.
+Dans un fonds ouvert, les investisseurs peuvent :;Racheter leurs parts à tout moment selon la valeur liquidative.
+Les fonds UCITS (OPCVM en français) sont caractérisés par :;Une réglementation européenne garantissant transparence et liquidité.
+Qui est considéré comme le fondateur de la théorie moderne du portefeuille ?;Harry Markowitz

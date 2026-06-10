@@ -3302,9 +3302,9 @@
                 "Environ 45,5%"
             ],
             "answer": [
-                1
+                3
             ],
-            "explanation": "L'industrie mondiale de la gestion d'actifs est fortement concentrée : les 20 plus grands acteurs contrôlent une très grande majorité des encours."
+            "explanation": "L'industrie mondiale de la gestion d'actifs est concentrée : les 20 plus grands acteurs représentent environ 45,5 % des encours totaux des 500 plus grands gestionnaires."
         },
         {
             "id": "gp-q232",
@@ -5678,6 +5678,2358 @@
                 0
             ],
             "explanation": "Harry Markowitz est considéré comme le père de la théorie moderne du portefeuille (Modern Portfolio Theory - MPT). Dans son article de 1952, il a montré comment les investisseurs peuvent construire un portefeuille optimal en tenant compte simultanément du rendement attendu et du risque (variance/écart-type), tout en bénéficiant de la diversification."
+        },
+        {
+            "id": "gp-q249",
+            "qcm": "GdP4 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Rendement du marché : 10 %, taux sans risque : 3 %, bêta du titre D = 1,2\n\nQuelle est la prime de risque du titre D selon le CAPM ?",
+            "choices": [
+                "10 %",
+                "6,5 %",
+                "8,4 %",
+                "7,0 %"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Selon le CAPM, la prime de risque d'un titre est : β × (Rm − Rf) = 1,2 × (10% − 3%) = 1,2 × 7% = 8,4%."
+        },
+        {
+            "id": "gp-q249-maths4",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Rendement du marché : 10 %, taux sans risque : 3 %, bêta du titre D = 1,2\n\nQuelle est la prime de risque du titre D selon le CAPM ?",
+            "choices": [
+                "10 %",
+                "6,5 %",
+                "8,4 %",
+                "7,0 %"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Selon le CAPM, la prime de risque d'un titre est : β × (Rm − Rf) = 1,2 × (10% − 3%) = 1,2 × 7% = 8,4%."
+        },
+        {
+            "id": "gp-q249-maths5",
+            "qcm": "Maths - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Rendement du marché : 10 %, taux sans risque : 3 %, bêta du titre D = 1,2\n\nQuelle est la prime de risque du titre D selon le CAPM ?",
+            "choices": [
+                "10 %",
+                "6,5 %",
+                "8,4 %",
+                "7,0 %"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Selon le CAPM, la prime de risque d'un titre est : β × (Rm − Rf) = 1,2 × (10% − 3%) = 1,2 × 7% = 8,4%."
+        },
+        {
+            "id": "gp-q250",
+            "qcm": "GdP4 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un investisseur place 40 % de sa richesse dans le portefeuille de marché (volatilité = 12 %) et le reste dans l'actif sans risque.\n\nQuelle est la volatilité de son portefeuille ?",
+            "choices": [
+                "6,0 %",
+                "12,0 %",
+                "4,8 %",
+                "9,6 %"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Lorsqu'un portefeuille est composé d'un actif risqué (portefeuille de marché) et d'un actif sans risque, la volatilité du portefeuille est : σP = wM × σM = 0,40 × 12% = 4,8%."
+        },
+        {
+            "id": "gp-q250-maths4",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un investisseur place 40 % de sa richesse dans le portefeuille de marché (volatilité = 12 %) et le reste dans l'actif sans risque.\n\nQuelle est la volatilité de son portefeuille ?",
+            "choices": [
+                "6,0 %",
+                "12,0 %",
+                "4,8 %",
+                "9,6 %"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Lorsqu'un portefeuille est composé d'un actif risqué (portefeuille de marché) et d'un actif sans risque, la volatilité du portefeuille est : σP = wM × σM = 0,40 × 12% = 4,8%."
+        },
+        {
+            "id": "gp-q250-maths5",
+            "qcm": "Maths - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Un investisseur place 40 % de sa richesse dans le portefeuille de marché (volatilité = 12 %) et le reste dans l'actif sans risque.\n\nQuelle est la volatilité de son portefeuille ?",
+            "choices": [
+                "6,0 %",
+                "12,0 %",
+                "4,8 %",
+                "9,6 %"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Lorsqu'un portefeuille est composé d'un actif risqué (portefeuille de marché) et d'un actif sans risque, la volatilité du portefeuille est : σP = wM × σM = 0,40 × 12% = 4,8%."
+        },
+        {
+            "id": "gp-q251",
+            "qcm": "GdP4 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille offre un rendement espéré de 8 % et une variance de 0,0025. L'aversion au risque est A = 3.\n\nQuel est son équivalent certain (CE) ?",
+            "choices": [
+                "7,750 %",
+                "7,625 %",
+                "6,500 %",
+                "8 %"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'équivalent certain est donné par : CE = E(R) − (A/2) × σ² = 8% − (3/2) × 0,0025 = 8% − 0,375% = 7,625%."
+        },
+        {
+            "id": "gp-q251-maths4",
+            "qcm": "Maths - QCM4",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille offre un rendement espéré de 8 % et une variance de 0,0025. L'aversion au risque est A = 3.\n\nQuel est son équivalent certain (CE) ?",
+            "choices": [
+                "7,750 %",
+                "7,625 %",
+                "6,500 %",
+                "8 %"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'équivalent certain est donné par : CE = E(R) − (A/2) × σ² = 8% − (3/2) × 0,0025 = 8% − 0,375% = 7,625%."
+        },
+        {
+            "id": "gp-q251-maths5",
+            "qcm": "Maths - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille offre un rendement espéré de 8 % et une variance de 0,0025. L'aversion au risque est A = 3.\n\nQuel est son équivalent certain (CE) ?",
+            "choices": [
+                "7,750 %",
+                "7,625 %",
+                "6,500 %",
+                "8 %"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'équivalent certain est donné par : CE = E(R) − (A/2) × σ² = 8% − (3/2) × 0,0025 = 8% − 0,375% = 7,625%."
+        },
+        {
+            "id": "gp-q252",
+            "qcm": "GdP4 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Covariances en %² pour trois titres D, E, F :\n\n| | D | E | F |\n|---|---|---|---|\n| D | 3,0 | 1,2 | 0,8 |\n| E | 1,2 | 4,0 | 1,0 |\n| F | 0,8 | 1,0 | 5,0 |\n\nQuel est le portefeuille de variance minimale, sans contrainte de rendement ?\nArrondissez à l'entier le plus proche.",
+            "choices": [
+                "46 % D, 28 % E, 26 % F",
+                "40 % D, 40 % E, 20 % F",
+                "30 % D, 20 % E, 50 % F",
+                "20 % D, 60 % E, 20 % F"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le portefeuille de variance minimale se calcule à partir de la matrice de covariance. Le résultat exact est w ≈ 46 % D, 28 % E, 26 % F."
+        },
+        {
+            "id": "gp-q252-excel",
+            "qcm": "Excel - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Covariances en %² pour trois titres D, E, F :\n\n| | D | E | F |\n|---|---|---|---|\n| D | 3,0 | 1,2 | 0,8 |\n| E | 1,2 | 4,0 | 1,0 |\n| F | 0,8 | 1,0 | 5,0 |\n\nQuel est le portefeuille de variance minimale, sans contrainte de rendement ?\nArrondissez à l'entier le plus proche.",
+            "choices": [
+                "46 % D, 28 % E, 26 % F",
+                "40 % D, 40 % E, 20 % F",
+                "30 % D, 20 % E, 50 % F",
+                "20 % D, 60 % E, 20 % F"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le portefeuille de variance minimale se calcule à partir de la matrice de covariance. Le résultat exact est w ≈ 46 % D, 28 % E, 26 % F."
+        },
+        {
+            "id": "gp-q253",
+            "qcm": "AM2 - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Au-delà de la simple réplication d'un indice « large », quelle évolution est associée à l'essor de l'investissement passif ?",
+            "choices": [
+                "Des expositions passives « sur-mesure » (facteurs, thèmes ou secteurs) en plus de l'indexation traditionnelle.",
+                "L'obligation de détenir uniquement des actifs non cotés.",
+                "La suppression des indices de référence (benchmarks).",
+                "L'interdiction de publier les frais pour éviter la concurrence."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'investissement passif ne se limite plus à la réplication d'indices larges : il s'est diversifié vers des expositions passives « sur-mesure », construites autour de facteurs (smart beta), de thèmes ou de secteurs spécifiques."
+        },
+        {
+            "id": "gp-q254",
+            "qcm": "AM2 - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle combinaison résume le mieux les trois moteurs expliquant l'émergence de grands acteurs de la gestion d'actifs aux États-Unis ?",
+            "choices": [
+                "Épargne longue, règle fiduciaire, distribution industrialisée (plateformes/menus de fonds).",
+                "Faiblesse des marchés actions, absence de réglementation, suppression de la concurrence.",
+                "Inflation élevée, contrôle des changes, interdiction des fonds indiciels.",
+                "Monnaie unique, harmonisation fiscale mondiale, garantie publique des performances."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'émergence de grands acteurs de la gestion d'actifs aux États-Unis s'explique notamment par trois moteurs : une épargne longue (retraite par capitalisation), une règle fiduciaire imposant d'agir dans l'intérêt du client, et une distribution industrialisée via des plateformes et menus de fonds."
+        },
+        {
+            "id": "gp-q255",
+            "qcm": "AM2 - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le Q/R, que signifie AUM (Assets Under Management) ?",
+            "choices": [
+                "La performance moyenne annuelle d'un fonds en pourcentage.",
+                "La valeur totale des actifs financiers gérés par une société pour le compte de ses clients.",
+                "Le montant total des frais de gestion facturés sur une année.",
+                "Le capital social d'une société de gestion."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "AUM (Assets Under Management) désigne la valeur totale des actifs financiers gérés par une société pour le compte de ses clients."
+        },
+        {
+            "id": "gp-q256",
+            "qcm": "AM2 - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon le document Q/R, quelle est la différence clé entre Asset Management et trading ?",
+            "choices": [
+                "L'asset management consiste à coter des entreprises, tandis que le trading consiste à auditer leurs comptes.",
+                "L'asset management vise une gestion de long terme et encadrée, alors que le trading est plutôt spéculatif de court terme et peut être pour compte propre.",
+                "L'asset management ne concerne que les obligations, tandis que le trading ne concerne que les actions.",
+                "L'asset management est non réglementé, alors que le trading est toujours strictement interdit."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'asset management consiste à gérer des actifs pour le compte de tiers dans une optique de long terme et dans un cadre réglementé, tandis que le trading désigne des opérations plus spéculatives, souvent de court terme, pouvant être réalisées pour compte propre."
+        },
+        {
+            "id": "gp-q257",
+            "qcm": "AM2 - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Entre fin 2022 et fin 2023, de quel ordre de grandeur est la croissance des encours totaux des 500 plus grands gestionnaires ?",
+            "choices": [
+                "Environ −12,5 %",
+                "Environ +33,7 %",
+                "Environ +3,2 %",
+                "Environ +12,5 %"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Entre fin 2022 et fin 2023, les encours totaux des 500 plus grands gestionnaires ont progressé d'environ +12,5 %, porté par le rebond des marchés financiers."
+        },
+        {
+            "id": "gp-q258",
+            "qcm": "AM2 - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après le Q/R, laquelle des propositions suivantes n'est pas citée comme contrainte de l'AMF sur un FCP ?",
+            "choices": [
+                "Garantir un rendement minimum aux porteurs de parts",
+                "Agrément préalable",
+                "Informations réglementaires obligatoires (KID, prospectus)",
+                "Dépôt auprès d'un dépositaire"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'AMF n'impose pas de garantie de rendement minimum aux porteurs de parts. En revanche, elle exige un agrément préalable, la fourniture d'informations réglementaires (KID, prospectus) et le dépôt des actifs auprès d'un dépositaire."
+        },
+        {
+            "id": "gp-q259",
+            "qcm": "AM2 - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans la répartition des encours par classe d'actifs (fin 2023), quelle catégorie représente la part la plus importante ?",
+            "choices": [
+                "Obligations (fixed income)",
+                "Cash",
+                "Alternatifs",
+                "Actions (incluant REITs)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Fin 2023, les actions (incluant les REITs) représentent la part la plus importante des encours par classe d'actifs."
+        },
+        {
+            "id": "gp-q260",
+            "qcm": "AM2 - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, quelle affirmation est correcte concernant la part des actifs détenus via fonds (mutual funds / UCITS) et son évolution ?",
+            "choices": [
+                "52,4 % des actifs, avec une hausse de participation d'environ 114 points de base.",
+                "67,0 % des actifs, avec une hausse de participation d'environ 400 points de base.",
+                "33,7 % des actifs, avec une baisse de participation d'environ 114 points de base.",
+                "12,5 % des actifs, avec une hausse de participation d'environ 114 points de base."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "En 2023, les fonds (mutual funds / UCITS) représentaient 52,4 % des actifs, avec une hausse de participation d'environ 114 points de base par rapport à l'année précédente."
+        },
+        {
+            "id": "gp-q261",
+            "qcm": "AM2 - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après le Q/R, quelle combinaison décrit correctement les notions sous gestion, sous supervision et sous conseil ?",
+            "choices": [
+                "Sous gestion : portefeuille géré activement par la société ; sous supervision : portefeuille surveillé mais pas directement géré ; sous conseil : portefeuille géré par un tiers avec recommandations.",
+                "Sous gestion : actifs conservés par le dépositaire ; sous supervision : actifs garantis par l'État ; sous conseil : actifs détenus en cash.",
+                "Sous gestion : uniquement les actions ; sous supervision : uniquement les obligations ; sous conseil : uniquement l'immobilier.",
+                "Sous gestion : actifs non cotés ; sous supervision : actifs cotés ; sous conseil : produits dérivés."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sous gestion désigne un portefeuille géré activement par la société de gestion ; sous supervision, un portefeuille surveillé sans gestion directe ; sous conseil, un portefeuille géré par un tiers sur la base de recommandations de la société."
+        },
+        {
+            "id": "gp-q262",
+            "qcm": "AM2 - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Le Q/R cite plusieurs grands métiers de l'asset management. Lequel n'est pas cité dans la liste des « principaux rôles » ?",
+            "choices": [
+                "Analyste financier",
+                "Trader pour compte propre",
+                "Gérant de portefeuille",
+                "Compliance officer"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le trading pour compte propre n'est pas cité parmi les principaux rôles de l'asset management : il relève davantage de l'activité de marché des banques, distincte de la gestion pour compte de tiers."
+        },
+        {
+            "id": "gp-q212-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, quelle classe d'actifs a enregistré la plus forte croissance des encours (en variation annuelle) ?",
+            "choices": [
+                "Alternatifs",
+                "« Other » (multi-actifs, infra, commodities, etc.)",
+                "Cash",
+                "Obligations (fixed income)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les actifs alternatifs (private equity, infrastructure, immobilier, hedge funds, etc.) ont connu la plus forte croissance des encours en 2023 parmi les grandes classes d'actifs."
+        },
+        {
+            "id": "gp-q213-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans l'attribution de performance, que représente généralement l'alpha d'un gérant ?",
+            "choices": [
+                "Le taux sans risque à court terme",
+                "La part de portefeuille investie en obligations d'État",
+                "Le coût total des frais de transaction du fonds",
+                "La performance « résiduelle » par rapport au benchmark après prise en compte du risque (beta)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'alpha mesure la valeur ajoutée du gérant qui ne s'explique pas par l'exposition au risque de marché."
+        },
+        {
+            "id": "gp-q214-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle région représente la plus grande part des encours des 500 plus grands gestionnaires (fin 2023) ?",
+            "choices": [
+                "Amérique du Nord",
+                "Reste du monde",
+                "Japon",
+                "Europe (incluant Royaume-Uni)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les États-Unis dominent largement l'industrie mondiale de la gestion d'actifs, ce qui place l'Amérique du Nord en tête des encours."
+        },
+        {
+            "id": "gp-q215-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle combinaison décrit le mieux les rôles respectifs d'une autorité nationale et d'une autorité européenne en matière de supervision des marchés ?",
+            "choices": [
+                "Nationale : supervise uniquement l'immobilier ; Européenne : supervise uniquement les actions",
+                "Nationale : agrée/contrôle/sanctionne ; Européenne : coordonne/harmonise et veille à la convergence des règles",
+                "Nationale : fixe les taux directeurs ; Européenne : gère la comptabilité des entreprises",
+                "Nationale : ne fait que du conseil ; Européenne : garantit les rendements des fonds"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les régulateurs nationaux supervisent les acteurs locaux tandis que les autorités européennes harmonisent les pratiques et réglementations."
+        },
+        {
+            "id": "gp-q216-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, quel type de véhicule a le plus augmenté ses encours (croissance annuelle) ?",
+            "choices": [
+                "Autres fonds mutualisés (pooled/commingled)",
+                "Mandats (separate accounts)",
+                "Fonds (mutual funds / UCITS)",
+                "Produits structurés"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les fonds ouverts de type UCITS/mutual funds ont affiché la croissance des encours la plus élevée en 2023."
+        },
+        {
+            "id": "gp-q217-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle proposition décrit le mieux une SICAV ?",
+            "choices": [
+                "Un compte-titres géré par une banque centrale",
+                "Une société d'investissement qui émet des actions et détient un portefeuille d'actifs",
+                "Un contrat d'assurance-vie en unités de compte",
+                "Un véhicule à capital fixe coté en bourse"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une SICAV est une société à capital variable dont les investisseurs deviennent actionnaires."
+        },
+        {
+            "id": "gp-q218-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel véhicule correspond à une société cotée à capital fixe au Royaume-Uni ?",
+            "choices": [
+                "Fonds souverain",
+                "FCP (Fonds Commun de Placement)",
+                "Fonds de pension",
+                "Investment Trust (UK)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un Investment Trust est un fonds fermé coté en bourse dont le capital est fixe."
+        },
+        {
+            "id": "gp-q219-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle proposition décrit le mieux une industrie de gestion d'actifs fortement intégrée verticalement ?",
+            "choices": [
+                "Un marché composé uniquement de petits acteurs indépendants",
+                "Un système où tous les portefeuilles sont gérés par l'État",
+                "Un modèle où la gestion est remplacée par des comptes à terme",
+                "Des groupes bancaires/assurantiels contrôlent à la fois distribution, gestion et souvent la conservation des actifs"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'intégration verticale signifie qu'un même groupe contrôle plusieurs maillons de la chaîne de valeur (distribution, gestion, conservation)."
+        },
+        {
+            "id": "gp-q220-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel acteur est généralement propriétaire des actifs et délègue la gestion à une société de gestion ?",
+            "choices": [
+                "Broker (courtier)",
+                "Asset owner (caisse de retraite, fondation, fonds souverain)",
+                "Dépositaire (custodian)",
+                "Agence de notation"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'asset owner possède les actifs et mandate éventuellement un gestionnaire pour les administrer."
+        },
+        {
+            "id": "gp-q221-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle « marque » est associée au lancement (autour de l'an 2000) d'une grande gamme d'ETF ayant contribué à l'industrialisation mondiale des ETF ?",
+            "choices": [
+                "HedgeTrack",
+                "BondPlus",
+                "PrimeAlpha",
+                "iShares"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La gamme iShares a largement contribué à démocratiser et développer le marché mondial des ETF au début des années 2000."
+        },
+        {
+            "id": "gp-q222-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle définition correspond le mieux au tracking error d'un fonds indiciel ?",
+            "choices": [
+                "La volatilité de l'écart de performance entre le fonds et son benchmark.",
+                "Le pourcentage d'actifs illiquides dans le portefeuille.",
+                "Le nombre moyen de titres détenus par le fonds.",
+                "La performance moyenne du fonds avant frais."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le tracking error mesure la variabilité de l'écart de performance entre un fonds indiciel et son indice de référence. Plus il est faible, plus la réplication de l'indice est fidèle."
+        },
+        {
+            "id": "gp-q224-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "À quoi sert principalement une plateforme de gestion de portefeuille (PMS) ?",
+            "choices": [
+                "Garantir contractuellement la performance d'un fonds.",
+                "Remplacer la conservation des titres par une chambre de compensation.",
+                "Fixer les taux directeurs de l'économie.",
+                "Centraliser le suivi des portefeuilles (positions/ordres) et faciliter le contrôle, l'analyse risque/performance et le reporting."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le PMS est l'outil central des sociétés de gestion pour le suivi des positions, le contrôle des risques, l'analyse des performances et la production de reportings."
+        },
+        {
+            "id": "gp-q225-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel est l'impact principal des frais de gestion sur un fonds pour l'investisseur ?",
+            "choices": [
+                "Ils augmentent automatiquement la valeur liquidative.",
+                "Ils garantissent la protection du capital.",
+                "Ils suppriment totalement le risque de marché.",
+                "Ils réduisent la performance nette pour l'investisseur."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les frais sont prélevés sur les actifs du fonds et diminuent directement le rendement net obtenu par l'investisseur."
+        },
+        {
+            "id": "gp-q226-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle date est associée à l'approbation par Vanguard du premier fonds indiciel ?",
+            "choices": [
+                "15 août 1971",
+                "1er janvier 1993",
+                "18 septembre 1975",
+                "29 octobre 1929"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le 18 septembre 1975 est associé à l'approbation du premier fonds indiciel de Vanguard, précurseur de l'investissement indiciel moderne."
+        },
+        {
+            "id": "gp-q227-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "La catégorie « alternatifs » inclut le plus souvent quels types de stratégies ?",
+            "choices": [
+                "Uniquement produits monétaires et dépôts bancaires.",
+                "Uniquement actions large cap et obligations souveraines.",
+                "Private equity (dont venture), hedge funds, immobilier, infrastructure, crédit illiquide (et assimilés).",
+                "Uniquement stratégies de change (FX) sans autres classes d'actifs."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les investissements alternatifs regroupent généralement les actifs non traditionnels tels que le private equity, l'immobilier ou encore les hedge funds."
+        },
+        {
+            "id": "gp-q228-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Laquelle des propositions décrit le mieux des actifs non cotés (non-listed) ?",
+            "choices": [
+                "Réservés exclusivement aux banques centrales ; interdits aux investisseurs institutionnels.",
+                "Pas de marché secondaire organisé ; valorisation plus complexe ; liquidité généralement plus faible.",
+                "Garantis par l'État ; rendement minimum contractuel ; risque nul.",
+                "Négociés sur un marché réglementé ; prix transparents ; liquidité élevée."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les actifs non cotés sont souvent plus difficiles à valoriser et à revendre que les actifs négociés sur les marchés publics."
+        },
+        {
+            "id": "gp-q229-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un marché où le Top 3 représente environ 40,8% des encours (cas du Royaume-Uni), quels acteurs composent ce Top 3 ?",
+            "choices": [
+                "Amundi, BNP Paribas AM, Natixis IM",
+                "BlackRock, Vanguard, State Street",
+                "Legal & General, Schroders, Fidelity International",
+                "HSBC, Barclays, Lloyds"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Ces trois acteurs, souvent appelés les « Big Three », dominent la gestion indicielle mondiale."
+        },
+        {
+            "id": "gp-q230-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le cadre du cours, quelles sont les trois institutions cardinales de l'industrie de l'asset management ?",
+            "choices": [
+                "Société de gestion, fonds d'investissement, régulateur",
+                "Banque centrale, chambre de compensation, agence de notation",
+                "Prime broker, hedge fund, dépositaire",
+                "Banque de dépôt, assureur, fonds souverain"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Ces trois acteurs constituent les fondements institutionnels de l'industrie de la gestion d'actifs."
+        },
+        {
+            "id": "gp-q231-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, quelle part environ des encours totaux des 500 plus grands gestionnaires est concentrée dans le Top 20 ?",
+            "choices": [
+                "Environ 12,5%",
+                "Environ 80,3%",
+                "Environ 29,0%",
+                "Environ 45,5%"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'industrie mondiale de la gestion d'actifs est concentrée : les 20 plus grands acteurs représentent environ 45,5 % des encours totaux des 500 plus grands gestionnaires."
+        },
+        {
+            "id": "gp-q232-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle caractéristique définit le mieux un fonds ouvert (open-end) ?",
+            "choices": [
+                "Le fonds est coté en continu en bourse et ne traite jamais à la valeur liquidative.",
+                "L'investisseur peut souscrire et racheter des parts au prix de la valeur liquidative (NAV) selon une fréquence définie.",
+                "Le nombre de parts est fixe : aucune souscription ni aucun rachat n'est possible.",
+                "Le fonds est réservé exclusivement aux investisseurs qualifiés et non au public."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un fonds ouvert émet et rachète continuellement des parts. Les investisseurs peuvent entrer ou sortir du fonds à la valeur liquidative (NAV) calculée périodiquement."
+        },
+        {
+            "id": "gp-q233-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un marché où le Top 3 représente environ 67% des encours (cas France), quels acteurs composent ce Top 3 ?",
+            "choices": [
+                "Allianz, UBS, Deutsche Bank",
+                "Legal & General, Schroders, Fidelity International",
+                "AXA IM, Crédit Agricole CIB, Société Générale CIB",
+                "Amundi, BNP Paribas Asset Management, Natixis Investment Managers"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le marché français de la gestion d'actifs est historiquement dominé par Amundi, BNP Paribas Asset Management et Natixis Investment Managers."
+        },
+        {
+            "id": "gp-q234-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Une loi fédérale américaine majeure de 1974 sur les retraites (ERISA) a imposé un devoir fiduciaire. Quels effets lui sont le plus directement associés ?",
+            "choices": [
+                "Clarification des responsabilités, standardisation des pratiques et essor d'outils/acteurs de mesure, comparaison et intermédiation.",
+                "Privatisation des banques centrales et suppression des régulateurs de marché.",
+                "Suppression des obligations de reporting, interdiction des benchmarks et plafonnement uniforme des rendements.",
+                "Obligation d'investir exclusivement en immobilier résidentiel."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'ERISA (1974) a professionnalisé la gestion institutionnelle en clarifiant les responsabilités des fiduciaires et en favorisant le développement des benchmarks, du reporting et du conseil."
+        },
+        {
+            "id": "gp-q236-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie un « nombre effectif d'acteurs » plus élevé (mesuré comme 1/HHI) dans un marché de gestion d'actifs ?",
+            "choices": [
+                "Le marché est plus concentré autour de quelques acteurs dominants.",
+                "Le marché est moins concentré (répartition des parts de marché plus diffuse).",
+                "La gestion est nécessairement 100% passive.",
+                "Les encours sont forcément plus élevés en valeur absolue."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Plus le nombre effectif d'acteurs est élevé, plus les parts de marché sont réparties entre plusieurs concurrents et moins le marché est concentré."
+        },
+        {
+            "id": "gp-q237-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après le rapport Top 500 Asset Managers (Thinking Ahead Institute / Pensions & Investments), quel était le total des AUM des 500 plus grands gestionnaires à fin 2023 ?",
+            "choices": [
+                "68,9 trillions USD",
+                "128,0 trillions USD",
+                "77,8 trillions USD",
+                "58,2 trillions USD"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les 500 plus grands gestionnaires mondiaux administraient environ 128 trillions USD à fin 2023."
+        },
+        {
+            "id": "gp-q239-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans l'exemple français présenté, quel rôle est attribué au dépositaire d'un fonds ?",
+            "choices": [
+                "Garantir un rendement minimum aux porteurs de parts.",
+                "Conserver les actifs du fonds et effectuer certains contrôles.",
+                "Définir l'allocation stratégique et choisir les titres.",
+                "Noter la qualité de crédit des émetteurs."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le dépositaire assure la garde des actifs et vérifie la conformité de certaines opérations réalisées par la société de gestion."
+        },
+        {
+            "id": "gp-q241-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle innovation institutionnelle est présentée comme une étape majeure de la structuration de la gestion collective en France ?",
+            "choices": [
+                "Le Big Bang de la City (1986)",
+                "La création des SICAV (1963)",
+                "L'abrogation du Glass-Steagall Act (1999)",
+                "Le lancement du SPDR S&P 500 (1993)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La création des SICAV en 1963 constitue une étape fondatrice de la gestion collective moderne en France et a favorisé la démocratisation de l'investissement collectif."
+        },
+        {
+            "id": "gp-q253-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Au-delà de la simple réplication d'un indice « large », quelle évolution est associée à l'essor de l'investissement passif ?",
+            "choices": [
+                "Des expositions passives « sur-mesure » (facteurs, thèmes ou secteurs) en plus de l'indexation traditionnelle.",
+                "L'obligation de détenir uniquement des actifs non cotés.",
+                "La suppression des indices de référence (benchmarks).",
+                "L'interdiction de publier les frais pour éviter la concurrence."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'investissement passif ne se limite plus à la réplication d'indices larges : il s'est diversifié vers des expositions passives « sur-mesure », construites autour de facteurs (smart beta), de thèmes ou de secteurs spécifiques."
+        },
+        {
+            "id": "gp-q254-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle combinaison résume le mieux les trois moteurs expliquant l'émergence de grands acteurs de la gestion d'actifs aux États-Unis ?",
+            "choices": [
+                "Épargne longue, règle fiduciaire, distribution industrialisée (plateformes/menus de fonds).",
+                "Faiblesse des marchés actions, absence de réglementation, suppression de la concurrence.",
+                "Inflation élevée, contrôle des changes, interdiction des fonds indiciels.",
+                "Monnaie unique, harmonisation fiscale mondiale, garantie publique des performances."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'émergence de grands acteurs de la gestion d'actifs aux États-Unis s'explique notamment par trois moteurs : une épargne longue (retraite par capitalisation), une règle fiduciaire imposant d'agir dans l'intérêt du client, et une distribution industrialisée via des plateformes et menus de fonds."
+        },
+        {
+            "id": "gp-q255-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le Q/R, que signifie AUM (Assets Under Management) ?",
+            "choices": [
+                "La performance moyenne annuelle d'un fonds en pourcentage.",
+                "La valeur totale des actifs financiers gérés par une société pour le compte de ses clients.",
+                "Le montant total des frais de gestion facturés sur une année.",
+                "Le capital social d'une société de gestion."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "AUM (Assets Under Management) désigne la valeur totale des actifs financiers gérés par une société pour le compte de ses clients."
+        },
+        {
+            "id": "gp-q256-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon le document Q/R, quelle est la différence clé entre Asset Management et trading ?",
+            "choices": [
+                "L'asset management consiste à coter des entreprises, tandis que le trading consiste à auditer leurs comptes.",
+                "L'asset management vise une gestion de long terme et encadrée, alors que le trading est plutôt spéculatif de court terme et peut être pour compte propre.",
+                "L'asset management ne concerne que les obligations, tandis que le trading ne concerne que les actions.",
+                "L'asset management est non réglementé, alors que le trading est toujours strictement interdit."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'asset management consiste à gérer des actifs pour le compte de tiers dans une optique de long terme et dans un cadre réglementé, tandis que le trading désigne des opérations plus spéculatives, souvent de court terme, pouvant être réalisées pour compte propre."
+        },
+        {
+            "id": "gp-q257-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Entre fin 2022 et fin 2023, de quel ordre de grandeur est la croissance des encours totaux des 500 plus grands gestionnaires ?",
+            "choices": [
+                "Environ −12,5 %",
+                "Environ +33,7 %",
+                "Environ +3,2 %",
+                "Environ +12,5 %"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Entre fin 2022 et fin 2023, les encours totaux des 500 plus grands gestionnaires ont progressé d'environ +12,5 %, porté par le rebond des marchés financiers."
+        },
+        {
+            "id": "gp-q258-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après le Q/R, laquelle des propositions suivantes n'est pas citée comme contrainte de l'AMF sur un FCP ?",
+            "choices": [
+                "Garantir un rendement minimum aux porteurs de parts",
+                "Agrément préalable",
+                "Informations réglementaires obligatoires (KID, prospectus)",
+                "Dépôt auprès d'un dépositaire"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'AMF n'impose pas de garantie de rendement minimum aux porteurs de parts. En revanche, elle exige un agrément préalable, la fourniture d'informations réglementaires (KID, prospectus) et le dépôt des actifs auprès d'un dépositaire."
+        },
+        {
+            "id": "gp-q259-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans la répartition des encours par classe d'actifs (fin 2023), quelle catégorie représente la part la plus importante ?",
+            "choices": [
+                "Obligations (fixed income)",
+                "Cash",
+                "Alternatifs",
+                "Actions (incluant REITs)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Fin 2023, les actions (incluant les REITs) représentent la part la plus importante des encours par classe d'actifs."
+        },
+        {
+            "id": "gp-q260-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, quelle affirmation est correcte concernant la part des actifs détenus via fonds (mutual funds / UCITS) et son évolution ?",
+            "choices": [
+                "52,4 % des actifs, avec une hausse de participation d'environ 114 points de base.",
+                "67,0 % des actifs, avec une hausse de participation d'environ 400 points de base.",
+                "33,7 % des actifs, avec une baisse de participation d'environ 114 points de base.",
+                "12,5 % des actifs, avec une hausse de participation d'environ 114 points de base."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "En 2023, les fonds (mutual funds / UCITS) représentaient 52,4 % des actifs, avec une hausse de participation d'environ 114 points de base par rapport à l'année précédente."
+        },
+        {
+            "id": "gp-q261-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après le Q/R, quelle combinaison décrit correctement les notions sous gestion, sous supervision et sous conseil ?",
+            "choices": [
+                "Sous gestion : portefeuille géré activement par la société ; sous supervision : portefeuille surveillé mais pas directement géré ; sous conseil : portefeuille géré par un tiers avec recommandations.",
+                "Sous gestion : actifs conservés par le dépositaire ; sous supervision : actifs garantis par l'État ; sous conseil : actifs détenus en cash.",
+                "Sous gestion : uniquement les actions ; sous supervision : uniquement les obligations ; sous conseil : uniquement l'immobilier.",
+                "Sous gestion : actifs non cotés ; sous supervision : actifs cotés ; sous conseil : produits dérivés."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sous gestion désigne un portefeuille géré activement par la société de gestion ; sous supervision, un portefeuille surveillé sans gestion directe ; sous conseil, un portefeuille géré par un tiers sur la base de recommandations de la société."
+        },
+        {
+            "id": "gp-q262-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Le Q/R cite plusieurs grands métiers de l'asset management. Lequel n'est pas cité dans la liste des « principaux rôles » ?",
+            "choices": [
+                "Analyste financier",
+                "Trader pour compte propre",
+                "Gérant de portefeuille",
+                "Compliance officer"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le trading pour compte propre n'est pas cité parmi les principaux rôles de l'asset management : il relève davantage de l'activité de marché des banques, distincte de la gestion pour compte de tiers."
+        },
+        {
+            "id": "gp-q263",
+            "qcm": "AM2 - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après le rapport TAI / P&I 500 (édition 2024, données fin 2023), quelle part des investissements est réalisée en stratégies passives ?",
+            "choices": [
+                "33,7 %",
+                "12,5 %",
+                "52,4 %",
+                "45,5 %"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "D'après le rapport TAI / P&I 500 (édition 2024, données fin 2023), environ 45,5 % des investissements sont réalisés en stratégies passives."
+        },
+        {
+            "id": "gp-q264",
+            "qcm": "AM2 - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon le cours, quelles lois de 1940 structurent l'architecture moderne des mutual funds et de l'activité de gestion/conseil aux États-Unis ?",
+            "choices": [
+                "Glass–Steagall Act (1933) et Dodd–Frank Act (2010)",
+                "Investment Company Act (1940) et Investment Advisers Act (1940)",
+                "UCITS Directive (1985) et MiFID II (2018)",
+                "Securities Act (1933) et Securities Exchange Act (1934)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'Investment Company Act (1940) et l'Investment Advisers Act (1940) constituent le socle réglementaire qui structure encore aujourd'hui l'architecture des mutual funds et de l'activité de gestion/conseil aux États-Unis."
+        },
+        {
+            "id": "gp-q265",
+            "qcm": "AM2 - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel énoncé décrit le mieux le principe du passeport pour un fonds réglementé (type UCITS) ?",
+            "choices": [
+                "Éviter toute supervision réglementaire en se domiciliant dans un pays tiers.",
+                "Garantir une performance minimale identique dans tous les pays.",
+                "Commercialiser le fonds dans plusieurs pays après autorisation dans le pays d'origine, sous un cadre harmonisé.",
+                "Imposer une allocation fixe 60/40 à tous les porteurs."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le principe du passeport permet à un fonds réglementé (type UCITS), une fois autorisé dans son pays d'origine, d'être commercialisé dans les autres pays membres sous un cadre réglementaire harmonisé, sans nouvelle autorisation complète."
+        },
+        {
+            "id": "gp-q266",
+            "qcm": "AM2 - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "À quoi correspond le plus souvent la notion d'encours passifs ?",
+            "choices": [
+                "Des actifs investis uniquement dans des titres non cotés.",
+                "Des actifs investis uniquement en trésorerie à court terme.",
+                "Des actifs investis dans une stratégie qui suit un indice (tracking).",
+                "Des actifs garantis contre toute perte, quelle que soit l'évolution des marchés."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les encours passifs correspondent le plus souvent à des actifs investis dans une stratégie qui réplique un indice (gestion indicielle/tracking), par opposition à la gestion active."
+        },
+        {
+            "id": "gp-q267",
+            "qcm": "AM2 - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "Toujours selon le rapport TAI / P&I 500 (fin 2023), quelle classe d'actifs a enregistré la plus forte croissance des encours en 2023 (YoY) ?",
+            "choices": [
+                "Alternatives",
+                "Cash",
+                "Obligations (Fixed Income)",
+                "Actions (Equity)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "D'après le rapport TAI / P&I 500 (fin 2023), les actions (equity) ont enregistré la plus forte croissance des encours en 2023 (YoY), portées par le rebond des marchés actions."
+        },
+        {
+            "id": "gp-q268",
+            "qcm": "AM2 - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après la comparaison France–Royaume-Uni (Top 500), quelle affirmation est correcte concernant la concentration du marché (part de marché du Top 3) ?",
+            "choices": [
+                "Le Royaume-Uni est plus concentré : Top 3 ≈ 67,0 % contre ≈ 40,8 % en France.",
+                "Les données Top 500 ne permettent pas d'estimer la concentration du marché.",
+                "France et Royaume-Uni ont la même concentration : Top 3 ≈ 50 % dans les deux pays.",
+                "La France est plus concentrée : Top 3 ≈ 67,0 % contre ≈ 40,8 % au Royaume-Uni."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La France est plus concentrée que le Royaume-Uni : le Top 3 représente environ 67,0 % des encours en France (Amundi, BNP Paribas Asset Management, Natixis Investment Managers), contre environ 40,8 % au Royaume-Uni."
+        },
+        {
+            "id": "gp-q269",
+            "qcm": "AM2 - QCM6",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après le document Panorama de l'Asset Management européen (Top 11), quel gestionnaire affiche le plus haut niveau d'AUM en 2023 dans le tableau consolidé ?",
+            "choices": [
+                "BNP Paribas",
+                "Amundi",
+                "Allianz Group",
+                "UBS"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans le tableau consolidé du Panorama de l'Asset Management européen (Top 11), Amundi affiche le plus haut niveau d'AUM en 2023."
+        },
+        {
+            "id": "gp-q263-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après le rapport TAI / P&I 500 (édition 2024, données fin 2023), quelle part des investissements est réalisée en stratégies passives ?",
+            "choices": [
+                "33,7 %",
+                "12,5 %",
+                "52,4 %",
+                "45,5 %"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "D'après le rapport TAI / P&I 500 (édition 2024, données fin 2023), environ 45,5 % des investissements sont réalisés en stratégies passives."
+        },
+        {
+            "id": "gp-q264-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon le cours, quelles lois de 1940 structurent l'architecture moderne des mutual funds et de l'activité de gestion/conseil aux États-Unis ?",
+            "choices": [
+                "Glass–Steagall Act (1933) et Dodd–Frank Act (2010)",
+                "Investment Company Act (1940) et Investment Advisers Act (1940)",
+                "UCITS Directive (1985) et MiFID II (2018)",
+                "Securities Act (1933) et Securities Exchange Act (1934)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L'Investment Company Act (1940) et l'Investment Advisers Act (1940) constituent le socle réglementaire qui structure encore aujourd'hui l'architecture des mutual funds et de l'activité de gestion/conseil aux États-Unis."
+        },
+        {
+            "id": "gp-q265-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel énoncé décrit le mieux le principe du passeport pour un fonds réglementé (type UCITS) ?",
+            "choices": [
+                "Éviter toute supervision réglementaire en se domiciliant dans un pays tiers.",
+                "Garantir une performance minimale identique dans tous les pays.",
+                "Commercialiser le fonds dans plusieurs pays après autorisation dans le pays d'origine, sous un cadre harmonisé.",
+                "Imposer une allocation fixe 60/40 à tous les porteurs."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le principe du passeport permet à un fonds réglementé (type UCITS), une fois autorisé dans son pays d'origine, d'être commercialisé dans les autres pays membres sous un cadre réglementaire harmonisé, sans nouvelle autorisation complète."
+        },
+        {
+            "id": "gp-q266-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "À quoi correspond le plus souvent la notion d'encours passifs ?",
+            "choices": [
+                "Des actifs investis uniquement dans des titres non cotés.",
+                "Des actifs investis uniquement en trésorerie à court terme.",
+                "Des actifs investis dans une stratégie qui suit un indice (tracking).",
+                "Des actifs garantis contre toute perte, quelle que soit l'évolution des marchés."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les encours passifs correspondent le plus souvent à des actifs investis dans une stratégie qui réplique un indice (gestion indicielle/tracking), par opposition à la gestion active."
+        },
+        {
+            "id": "gp-q267-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Toujours selon le rapport TAI / P&I 500 (fin 2023), quelle classe d'actifs a enregistré la plus forte croissance des encours en 2023 (YoY) ?",
+            "choices": [
+                "Alternatives",
+                "Cash",
+                "Obligations (Fixed Income)",
+                "Actions (Equity)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "D'après le rapport TAI / P&I 500 (fin 2023), les actions (equity) ont enregistré la plus forte croissance des encours en 2023 (YoY), portées par le rebond des marchés actions."
+        },
+        {
+            "id": "gp-q268-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après la comparaison France–Royaume-Uni (Top 500), quelle affirmation est correcte concernant la concentration du marché (part de marché du Top 3) ?",
+            "choices": [
+                "Le Royaume-Uni est plus concentré : Top 3 ≈ 67,0 % contre ≈ 40,8 % en France.",
+                "Les données Top 500 ne permettent pas d'estimer la concentration du marché.",
+                "France et Royaume-Uni ont la même concentration : Top 3 ≈ 50 % dans les deux pays.",
+                "La France est plus concentrée : Top 3 ≈ 67,0 % contre ≈ 40,8 % au Royaume-Uni."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La France est plus concentrée que le Royaume-Uni : le Top 3 représente environ 67,0 % des encours en France (Amundi, BNP Paribas Asset Management, Natixis Investment Managers), contre environ 40,8 % au Royaume-Uni."
+        },
+        {
+            "id": "gp-q269-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "D'après le document Panorama de l'Asset Management européen (Top 11), quel gestionnaire affiche le plus haut niveau d'AUM en 2023 dans le tableau consolidé ?",
+            "choices": [
+                "BNP Paribas",
+                "Amundi",
+                "Allianz Group",
+                "UBS"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Dans le tableau consolidé du Panorama de l'Asset Management européen (Top 11), Amundi affiche le plus haut niveau d'AUM en 2023."
+        },
+        {
+            "id": "gp-q270",
+            "qcm": "AM2 - QCM7",
+            "theme": "Gestion de portefeuille",
+            "question": "Parmi ces grands gestionnaires européens, lequel se situe généralement juste derrière le leader en termes d'encours (AUM) en fin d'année 2023 ?",
+            "choices": [
+                "AXA Group",
+                "Schroders",
+                "Allianz Group",
+                "BNP Paribas"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Dans le classement des grands gestionnaires européens par AUM en fin d'année 2023, Allianz Group se situe généralement juste derrière le leader (Amundi)."
+        },
+        {
+            "id": "gp-q271",
+            "qcm": "AM2 - QCM7",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle définition correspond le mieux à un endowment ?",
+            "choices": [
+                "Instrument dérivé standardisé permettant une exposition avec levier à un indice.",
+                "Fonds constitué de dons, investi pour générer des revenus réguliers finançant une institution (ex. université, musée).",
+                "Société cotée à capital fixe dont les actions se négocient en bourse.",
+                "Compte bancaire à vue dédié uniquement aux paiements courants."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un endowment est un fonds constitué de dons, investi à long terme pour générer des revenus réguliers destinés à financer une institution (université, musée, fondation, etc.)."
+        },
+        {
+            "id": "gp-q272",
+            "qcm": "AM2 - QCM7",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un classement des 20 plus grands gestionnaires mondiaux (fin 2023), combien d'entre eux sont domiciliés aux États-Unis ?",
+            "choices": [
+                "14",
+                "10",
+                "20",
+                "6"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Dans le classement des 20 plus grands gestionnaires mondiaux à fin 2023, 14 d'entre eux sont domiciliés aux États-Unis, confirmant la domination du pays dans l'industrie de la gestion d'actifs."
+        },
+        {
+            "id": "gp-q273",
+            "qcm": "AM2 - QCM7",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux pays peuvent afficher des encours totaux comparables tout en ayant des structures de marché très différentes. Quelle combinaison est la plus cohérente avec ce constat ?",
+            "choices": [
+                "Encours totaux proches, donc les deux marchés ont forcément le même nombre d'acteurs et la même concentration.",
+                "Encours totaux proches, mais l'un a beaucoup plus d'acteurs (marché fragmenté) et l'autre est dominé par quelques champions (marché concentré).",
+                "Encours totaux proches, donc les deux marchés ont forcément le même type de clients (uniquement retail).",
+                "Encours totaux proches, donc les deux marchés sont nécessairement 100% passifs."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Deux marchés peuvent avoir des encours totaux comparables tout en présentant des structures très différentes : l'un peut être fragmenté entre de nombreux acteurs, tandis que l'autre est concentré autour de quelques champions nationaux."
+        },
+        {
+            "id": "gp-q274",
+            "qcm": "AM2 - QCM7",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans une société de gestion, quelle fonction est principalement responsable du respect des règles internes et réglementaires (procédures, conflits d'intérêts, contrôles) ?",
+            "choices": [
+                "Sales / Distribution",
+                "Compliance / Conformité",
+                "Front office (gérants)",
+                "Marketing (communication)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La fonction Compliance / Conformité est principalement responsable du respect des règles internes et réglementaires : procédures, gestion des conflits d'intérêts et contrôles."
+        },
+        {
+            "id": "gp-q275",
+            "qcm": "AM2 - QCM7",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel énoncé décrit correctement un FCP (fonds commun de placement) ?",
+            "choices": [
+                "Un produit dérivé listé permettant de répliquer un indice par levier.",
+                "Un véhicule réservé aux banques uniquement, sans porteurs externes.",
+                "Une société cotée qui verse un dividende garanti.",
+                "Une copropriété d'actifs dont les investisseurs détiennent des parts."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un FCP (fonds commun de placement) est une copropriété d'actifs sans personnalité morale, dont les investisseurs détiennent des parts représentatives de leur quote-part dans le fonds."
+        },
+        {
+            "id": "gp-q276",
+            "qcm": "AM2 - QCM7",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le tableau des pays européens (Top 500), quel pays affiche un ratio AUM/PIB particulièrement élevé (effet « industrie de gestion » très supérieur à l'économie domestique) ?",
+            "choices": [
+                "Italie",
+                "Espagne",
+                "Suisse",
+                "Allemagne"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La Suisse affiche un ratio AUM/PIB particulièrement élevé, l'industrie de la gestion d'actifs y étant très supérieure à la taille de son économie domestique, du fait de son rôle de centre financier international."
+        },
+        {
+            "id": "gp-q270-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Parmi ces grands gestionnaires européens, lequel se situe généralement juste derrière le leader en termes d'encours (AUM) en fin d'année 2023 ?",
+            "choices": [
+                "AXA Group",
+                "Schroders",
+                "Allianz Group",
+                "BNP Paribas"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Dans le classement des grands gestionnaires européens par AUM en fin d'année 2023, Allianz Group se situe généralement juste derrière le leader (Amundi)."
+        },
+        {
+            "id": "gp-q271-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle définition correspond le mieux à un endowment ?",
+            "choices": [
+                "Instrument dérivé standardisé permettant une exposition avec levier à un indice.",
+                "Fonds constitué de dons, investi pour générer des revenus réguliers finançant une institution (ex. université, musée).",
+                "Société cotée à capital fixe dont les actions se négocient en bourse.",
+                "Compte bancaire à vue dédié uniquement aux paiements courants."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un endowment est un fonds constitué de dons, investi à long terme pour générer des revenus réguliers destinés à financer une institution (université, musée, fondation, etc.)."
+        },
+        {
+            "id": "gp-q272-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un classement des 20 plus grands gestionnaires mondiaux (fin 2023), combien d'entre eux sont domiciliés aux États-Unis ?",
+            "choices": [
+                "14",
+                "10",
+                "20",
+                "6"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Dans le classement des 20 plus grands gestionnaires mondiaux à fin 2023, 14 d'entre eux sont domiciliés aux États-Unis, confirmant la domination du pays dans l'industrie de la gestion d'actifs."
+        },
+        {
+            "id": "gp-q273-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Deux pays peuvent afficher des encours totaux comparables tout en ayant des structures de marché très différentes. Quelle combinaison est la plus cohérente avec ce constat ?",
+            "choices": [
+                "Encours totaux proches, donc les deux marchés ont forcément le même nombre d'acteurs et la même concentration.",
+                "Encours totaux proches, mais l'un a beaucoup plus d'acteurs (marché fragmenté) et l'autre est dominé par quelques champions (marché concentré).",
+                "Encours totaux proches, donc les deux marchés ont forcément le même type de clients (uniquement retail).",
+                "Encours totaux proches, donc les deux marchés sont nécessairement 100% passifs."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Deux marchés peuvent avoir des encours totaux comparables tout en présentant des structures très différentes : l'un peut être fragmenté entre de nombreux acteurs, tandis que l'autre est concentré autour de quelques champions nationaux."
+        },
+        {
+            "id": "gp-q274-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans une société de gestion, quelle fonction est principalement responsable du respect des règles internes et réglementaires (procédures, conflits d'intérêts, contrôles) ?",
+            "choices": [
+                "Sales / Distribution",
+                "Compliance / Conformité",
+                "Front office (gérants)",
+                "Marketing (communication)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La fonction Compliance / Conformité est principalement responsable du respect des règles internes et réglementaires : procédures, gestion des conflits d'intérêts et contrôles."
+        },
+        {
+            "id": "gp-q275-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel énoncé décrit correctement un FCP (fonds commun de placement) ?",
+            "choices": [
+                "Un produit dérivé listé permettant de répliquer un indice par levier.",
+                "Un véhicule réservé aux banques uniquement, sans porteurs externes.",
+                "Une société cotée qui verse un dividende garanti.",
+                "Une copropriété d'actifs dont les investisseurs détiennent des parts."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un FCP (fonds commun de placement) est une copropriété d'actifs sans personnalité morale, dont les investisseurs détiennent des parts représentatives de leur quote-part dans le fonds."
+        },
+        {
+            "id": "gp-q276-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le tableau des pays européens (Top 500), quel pays affiche un ratio AUM/PIB particulièrement élevé (effet « industrie de gestion » très supérieur à l'économie domestique) ?",
+            "choices": [
+                "Italie",
+                "Espagne",
+                "Suisse",
+                "Allemagne"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La Suisse affiche un ratio AUM/PIB particulièrement élevé, l'industrie de la gestion d'actifs y étant très supérieure à la taille de son économie domestique, du fait de son rôle de centre financier international."
+        },
+        {
+            "id": "gp-q277",
+            "qcm": "AM2 - QCM8",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel type d'analyse repose principalement sur l'étude des états financiers d'une entreprise ?",
+            "choices": [
+                "Analyse fondamentale",
+                "Analyse météorologique",
+                "Analyse technique",
+                "Analyse comportementale"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'analyse fondamentale s'appuie sur les états financiers, la stratégie, le secteur et la gouvernance d'une entreprise pour évaluer sa valeur."
+        },
+        {
+            "id": "gp-q278",
+            "qcm": "AM2 - QCM8",
+            "theme": "Gestion de portefeuille",
+            "question": "Une grande loi américaine sur les retraites (1974) est présentée comme structurant durablement l'industrie de la gestion d'actifs. Quels effets sont le plus directement associés à ce cadre ?",
+            "choices": [
+                "Nationalisation des sociétés de gestion et allocation unique imposée à tous les fonds.",
+                "Obligation d'investir uniquement en or afin de stabiliser les retraites.",
+                "Suppression des benchmarks, interdiction du reporting, et plafonnement uniforme des rendements.",
+                "Clarification des responsabilités, standardisation des pratiques, et développement d'une industrie d'intermédiation."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'ERISA (1974) a clarifié les responsabilités fiduciaires, standardisé les pratiques de gestion des retraites et favorisé le développement d'une industrie d'intermédiation (consultants, gérants, outils de mesure et de comparaison)."
+        },
+        {
+            "id": "gp-q279",
+            "qcm": "AM2 - QCM8",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'un robo-advisor ?",
+            "choices": [
+                "Un gestionnaire humain spécialisé en robotique industrielle.",
+                "Un système automatisé de gestion de portefeuille basé sur des algorithmes.",
+                "Une plateforme de financement participatif non régulée.",
+                "Un marché organisé où s'échangent exclusivement des actions technologiques."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un robo-advisor est un système automatisé de gestion de portefeuille basé sur des algorithmes, qui propose une allocation d'actifs adaptée au profil de l'investisseur avec une intervention humaine limitée."
+        },
+        {
+            "id": "gp-q280",
+            "qcm": "AM2 - QCM8",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel jalon est le plus directement associé à la formalisation du couple risque/rendement et au rôle de la diversification dans la construction de portefeuille ?",
+            "choices": [
+                "La création des ETF obligataires",
+                "La théorie moderne du portefeuille (Markowitz)",
+                "La mise en place du swing pricing",
+                "Le lancement des fonds monétaires modernes"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La théorie moderne du portefeuille (Markowitz, 1952) a formalisé le couple risque/rendement et démontré le rôle de la diversification dans la construction d'un portefeuille optimal."
+        },
+        {
+            "id": "gp-q281",
+            "qcm": "AM2 - QCM8",
+            "theme": "Gestion de portefeuille",
+            "question": "Entre fin 2022 et fin 2023, de quel ordre de grandeur est la croissance des encours totaux des 500 plus grands gestionnaires ?",
+            "choices": [
+                "Environ +12,5%",
+                "Environ +33,7%",
+                "Environ -12,5%",
+                "Environ +3,2%"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Entre fin 2022 et fin 2023, les encours totaux des 500 plus grands gestionnaires ont progressé d'environ +12,5 %, porté par le rebond des marchés financiers."
+        },
+        {
+            "id": "gp-q282",
+            "qcm": "AM2 - QCM8",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le quizz (réponses), quel est le rôle du middle office dans une société de gestion ?",
+            "choices": [
+                "Commercialiser les fonds auprès du grand public et gérer la publicité.",
+                "Contrôler, valider et suivre les opérations entre le front et le back office.",
+                "Émettre les décisions d'investissement et passer les ordres de marché.",
+                "Assurer la conservation des titres du fonds (custody) en tant que dépositaire."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le middle office assure le contrôle, la validation et le suivi des opérations réalisées entre le front office (gérants/traders) et le back office (règlement-livraison, comptabilité)."
+        },
+        {
+            "id": "gp-q283",
+            "qcm": "AM2 - QCM8",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle proposition décrit le mieux la différence de logique entre la supervision américaine et française ?",
+            "choices": [
+                "Supervision identique dans les deux pays : mêmes règles, mêmes autorités, mêmes procédures.",
+                "Absence de supervision aux États-Unis ; supervision uniquement bancaire en France.",
+                "Supervision municipale axée sur la fiscalité aux États-Unis ; supervision privée axée sur le marketing en France.",
+                "Supervision fédérale axée sur la disclosure aux États-Unis ; supervision nationale plus encadrante dans un cadre européen en France."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Aux États-Unis, la supervision (SEC) est fédérale et repose principalement sur la disclosure (transparence de l'information), alors qu'en France, l'AMF exerce une supervision nationale plus encadrante, s'inscrivant dans un cadre réglementaire européen harmonisé."
+        },
+        {
+            "id": "gp-q284",
+            "qcm": "AM2 - QCM8",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel événement est présenté comme le lancement du premier ETF américain majeur dans le cours ?",
+            "choices": [
+                "Lancement du SPDR S&P 500 (SPY) en janvier 1993",
+                "Création de la SEC via le Securities Exchange Act en 1934",
+                "Adoption de la directive UCITS en 1985",
+                "Création du premier fonds monétaire moderne en 1971"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le SPDR S&P 500 (SPY), lancé en janvier 1993, est présenté comme le premier ETF américain majeur, marquant le début de l'essor des ETF."
+        },
+        {
+            "id": "gp-q285",
+            "qcm": "AM2 - QCM8",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel régulateur est associé à l'Allemagne ?",
+            "choices": [
+                "FCA",
+                "BaFin",
+                "AMF",
+                "CONSOB"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La BaFin (Bundesanstalt für Finanzdienstleistungsaufsicht) est l'autorité de supervision financière allemande."
+        },
+        {
+            "id": "gp-q286",
+            "qcm": "AM2 - QCM8",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans les plans de retraite à cotisations définies, que recouvre le plus souvent la fonction de recordkeeping ?",
+            "choices": [
+                "Conservation juridique des titres en tant que dépositaire du fonds.",
+                "Émission de notes de crédit (AAA/BBB) sur les entreprises.",
+                "Fixation des taux directeurs et conduite de la politique monétaire.",
+                "Administration des plans : tenue des positions, conformité, communication et services aux participants."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le recordkeeping, dans les plans de retraite à cotisations définies, recouvre l'administration des plans : tenue des positions des participants, conformité, communication et services associés."
+        },
+        {
+            "id": "gp-q277-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel type d'analyse repose principalement sur l'étude des états financiers d'une entreprise ?",
+            "choices": [
+                "Analyse fondamentale",
+                "Analyse météorologique",
+                "Analyse technique",
+                "Analyse comportementale"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'analyse fondamentale s'appuie sur les états financiers, la stratégie, le secteur et la gouvernance d'une entreprise pour évaluer sa valeur."
+        },
+        {
+            "id": "gp-q278-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Une grande loi américaine sur les retraites (1974) est présentée comme structurant durablement l'industrie de la gestion d'actifs. Quels effets sont le plus directement associés à ce cadre ?",
+            "choices": [
+                "Nationalisation des sociétés de gestion et allocation unique imposée à tous les fonds.",
+                "Obligation d'investir uniquement en or afin de stabiliser les retraites.",
+                "Suppression des benchmarks, interdiction du reporting, et plafonnement uniforme des rendements.",
+                "Clarification des responsabilités, standardisation des pratiques, et développement d'une industrie d'intermédiation."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'ERISA (1974) a clarifié les responsabilités fiduciaires, standardisé les pratiques de gestion des retraites et favorisé le développement d'une industrie d'intermédiation (consultants, gérants, outils de mesure et de comparaison)."
+        },
+        {
+            "id": "gp-q279-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Qu'est-ce qu'un robo-advisor ?",
+            "choices": [
+                "Un gestionnaire humain spécialisé en robotique industrielle.",
+                "Un système automatisé de gestion de portefeuille basé sur des algorithmes.",
+                "Une plateforme de financement participatif non régulée.",
+                "Un marché organisé où s'échangent exclusivement des actions technologiques."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un robo-advisor est un système automatisé de gestion de portefeuille basé sur des algorithmes, qui propose une allocation d'actifs adaptée au profil de l'investisseur avec une intervention humaine limitée."
+        },
+        {
+            "id": "gp-q280-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel jalon est le plus directement associé à la formalisation du couple risque/rendement et au rôle de la diversification dans la construction de portefeuille ?",
+            "choices": [
+                "La création des ETF obligataires",
+                "La théorie moderne du portefeuille (Markowitz)",
+                "La mise en place du swing pricing",
+                "Le lancement des fonds monétaires modernes"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La théorie moderne du portefeuille (Markowitz, 1952) a formalisé le couple risque/rendement et démontré le rôle de la diversification dans la construction d'un portefeuille optimal."
+        },
+        {
+            "id": "gp-q282-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans le quizz (réponses), quel est le rôle du middle office dans une société de gestion ?",
+            "choices": [
+                "Commercialiser les fonds auprès du grand public et gérer la publicité.",
+                "Contrôler, valider et suivre les opérations entre le front et le back office.",
+                "Émettre les décisions d'investissement et passer les ordres de marché.",
+                "Assurer la conservation des titres du fonds (custody) en tant que dépositaire."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le middle office assure le contrôle, la validation et le suivi des opérations réalisées entre le front office (gérants/traders) et le back office (règlement-livraison, comptabilité)."
+        },
+        {
+            "id": "gp-q283-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quelle proposition décrit le mieux la différence de logique entre la supervision américaine et française ?",
+            "choices": [
+                "Supervision identique dans les deux pays : mêmes règles, mêmes autorités, mêmes procédures.",
+                "Absence de supervision aux États-Unis ; supervision uniquement bancaire en France.",
+                "Supervision municipale axée sur la fiscalité aux États-Unis ; supervision privée axée sur le marketing en France.",
+                "Supervision fédérale axée sur la disclosure aux États-Unis ; supervision nationale plus encadrante dans un cadre européen en France."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Aux États-Unis, la supervision (SEC) est fédérale et repose principalement sur la disclosure (transparence de l'information), alors qu'en France, l'AMF exerce une supervision nationale plus encadrante, s'inscrivant dans un cadre réglementaire européen harmonisé."
+        },
+        {
+            "id": "gp-q284-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel événement est présenté comme le lancement du premier ETF américain majeur dans le cours ?",
+            "choices": [
+                "Lancement du SPDR S&P 500 (SPY) en janvier 1993",
+                "Création de la SEC via le Securities Exchange Act en 1934",
+                "Adoption de la directive UCITS en 1985",
+                "Création du premier fonds monétaire moderne en 1971"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le SPDR S&P 500 (SPY), lancé en janvier 1993, est présenté comme le premier ETF américain majeur, marquant le début de l'essor des ETF."
+        },
+        {
+            "id": "gp-q285-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel régulateur est associé à l'Allemagne ?",
+            "choices": [
+                "FCA",
+                "BaFin",
+                "AMF",
+                "CONSOB"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La BaFin (Bundesanstalt für Finanzdienstleistungsaufsicht) est l'autorité de supervision financière allemande."
+        },
+        {
+            "id": "gp-q286-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans les plans de retraite à cotisations définies, que recouvre le plus souvent la fonction de recordkeeping ?",
+            "choices": [
+                "Conservation juridique des titres en tant que dépositaire du fonds.",
+                "Émission de notes de crédit (AAA/BBB) sur les entreprises.",
+                "Fixation des taux directeurs et conduite de la politique monétaire.",
+                "Administration des plans : tenue des positions, conformité, communication et services aux participants."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le recordkeeping, dans les plans de retraite à cotisations définies, recouvre l'administration des plans : tenue des positions des participants, conformité, communication et services associés."
+        },
+        {
+            "id": "gp-q287",
+            "qcm": "AM2 - QCM9",
+            "theme": "Gestion de portefeuille",
+            "question": "Le « nombre effectif d'acteurs » (mesuré comme 1/HHI) d'environ 11,8 correspond à quel marché ?",
+            "choices": [
+                "Luxembourg",
+                "Royaume-Uni",
+                "Suisse",
+                "France"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un nombre effectif d'acteurs (1/HHI) d'environ 11,8 correspond au marché du Royaume-Uni, indiquant un marché relativement moins concentré que d'autres places européennes."
+        },
+        {
+            "id": "gp-q288",
+            "qcm": "AM2 - QCM9",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel grand acteur est issu de la fusion de Bank of New York et Mellon Financial, renforçant le couple « conservation + administration + gestion » ?",
+            "choices": [
+                "State Street Global Advisors",
+                "BNY Mellon",
+                "J.P. Morgan Asset Management",
+                "Goldman Sachs Asset Management"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "BNY Mellon est issu de la fusion entre Bank of New York et Mellon Financial, renforçant le modèle intégré associant conservation (custody), administration et gestion d'actifs."
+        },
+        {
+            "id": "gp-q289",
+            "qcm": "AM2 - QCM9",
+            "theme": "Gestion de portefeuille",
+            "question": "Une obligation notée AAA correspond généralement à :",
+            "choices": [
+                "Un risque de défaut très faible (meilleure qualité de crédit).",
+                "Un risque de défaut élevé.",
+                "Une obligation dont le coupon est nécessairement indexé sur l'inflation.",
+                "Une faible liquidité et une impossibilité de revendre."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La note AAA est la meilleure note de crédit attribuée par les agences de notation : elle correspond à un risque de défaut très faible, c'est-à-dire à la meilleure qualité de crédit possible."
+        },
+        {
+            "id": "gp-q290",
+            "qcm": "AM2 - QCM9",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon le rapport Top 500 Asset Managers (Thinking Ahead Institute / Pensions & Investments), quelle part des actifs « surveyed » en 2023 est détenue via Mutual Funds / UCITS ?",
+            "choices": [
+                "29,0 %",
+                "48,3 %",
+                "8,5 %",
+                "52,4 %"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "D'après le rapport Top 500 Asset Managers (Thinking Ahead Institute / Pensions & Investments), 52,4% des actifs « surveyed » en 2023 sont détenus via des Mutual Funds / UCITS."
+        },
+        {
+            "id": "gp-q291",
+            "qcm": "AM2 - QCM9",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel pays correspond à un ratio AUM/PIB d'environ 3,30 dans un tableau comparatif européen ?",
+            "choices": [
+                "Luxembourg",
+                "Italie",
+                "Espagne",
+                "Irlande"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Dans le tableau comparatif européen, l'Irlande affiche un ratio AUM/PIB d'environ 3,30, reflétant le poids important de son industrie de gestion d'actifs par rapport à la taille de son économie domestique."
+        },
+        {
+            "id": "gp-q292",
+            "qcm": "AM2 - QCM9",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel nom est associé à une infrastructure largement utilisée pour industrialiser le risque, la gestion de portefeuille et certaines opérations chez un grand gestionnaire mondial ?",
+            "choices": [
+                "Bloomberg Terminal",
+                "Aladdin",
+                "Morningstar Direct",
+                "Eikon"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Aladdin (BlackRock) est une plateforme largement utilisée pour industrialiser la gestion des risques, la gestion de portefeuille et certaines opérations chez un grand gestionnaire mondial."
+        },
+        {
+            "id": "gp-q293",
+            "qcm": "AM2 - QCM9",
+            "theme": "Gestion de portefeuille",
+            "question": "Parmi ces grands gestionnaires européens, lequel affiche le CAGR (taux de croissance annuel composé) le plus négatif sur la période renseignée ?",
+            "choices": [
+                "Credit Suisse",
+                "UBS",
+                "BNP Paribas",
+                "Natixis Investment Managers"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Credit Suisse affiche le CAGR le plus négatif parmi ces grands gestionnaires européens sur la période renseignée, reflétant les difficultés rencontrées par le groupe avant son rachat par UBS."
+        },
+        {
+            "id": "gp-q294",
+            "qcm": "AM2 - QCM9",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans les dispositifs d'épargne retraite à cotisations définies, que recouvre le plus souvent le recordkeeping ?",
+            "choices": [
+                "Émission d'actions nouvelles pour financer les entreprises.",
+                "Administration des plans : tenue des positions, conformité, communication et services aux participants.",
+                "Fixation du taux d'inflation officiel et publication des statistiques macroéconomiques.",
+                "Notation de crédit des obligations et des émetteurs souverains."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le recordkeeping, dans les dispositifs d'épargne retraite à cotisations définies, recouvre l'administration des plans : tenue des positions, conformité, communication et services aux participants."
+        },
+        {
+            "id": "gp-q295",
+            "qcm": "AM2 - QCM9",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, la part des actifs détenus via des fonds (mutual funds / UCITS) est d'environ 52,4 %. De combien (en points de base) cette part a-t-elle augmenté sur l'année ?",
+            "choices": [
+                "11 bps",
+                "1 140 bps",
+                "524 bps",
+                "114 bps"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "En 2023, la part des actifs détenus via des fonds (mutual funds / UCITS), d'environ 52,4 %, a augmenté d'environ 114 points de base par rapport à l'année précédente."
+        },
+        {
+            "id": "gp-q287-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Le « nombre effectif d'acteurs » (mesuré comme 1/HHI) d'environ 11,8 correspond à quel marché ?",
+            "choices": [
+                "Luxembourg",
+                "Royaume-Uni",
+                "Suisse",
+                "France"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un nombre effectif d'acteurs (1/HHI) d'environ 11,8 correspond au marché du Royaume-Uni, indiquant un marché relativement moins concentré que d'autres places européennes."
+        },
+        {
+            "id": "gp-q288-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel grand acteur est issu de la fusion de Bank of New York et Mellon Financial, renforçant le couple « conservation + administration + gestion » ?",
+            "choices": [
+                "State Street Global Advisors",
+                "BNY Mellon",
+                "J.P. Morgan Asset Management",
+                "Goldman Sachs Asset Management"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "BNY Mellon est issu de la fusion entre Bank of New York et Mellon Financial, renforçant le modèle intégré associant conservation (custody), administration et gestion d'actifs."
+        },
+        {
+            "id": "gp-q289-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Une obligation notée AAA correspond généralement à :",
+            "choices": [
+                "Un risque de défaut très faible (meilleure qualité de crédit).",
+                "Un risque de défaut élevé.",
+                "Une obligation dont le coupon est nécessairement indexé sur l'inflation.",
+                "Une faible liquidité et une impossibilité de revendre."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La note AAA est la meilleure note de crédit attribuée par les agences de notation : elle correspond à un risque de défaut très faible, c'est-à-dire à la meilleure qualité de crédit possible."
+        },
+        {
+            "id": "gp-q290-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Selon le rapport Top 500 Asset Managers (Thinking Ahead Institute / Pensions & Investments), quelle part des actifs « surveyed » en 2023 est détenue via Mutual Funds / UCITS ?",
+            "choices": [
+                "29,0 %",
+                "48,3 %",
+                "8,5 %",
+                "52,4 %"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "D'après le rapport Top 500 Asset Managers (Thinking Ahead Institute / Pensions & Investments), 52,4% des actifs « surveyed » en 2023 sont détenus via des Mutual Funds / UCITS."
+        },
+        {
+            "id": "gp-q291-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel pays correspond à un ratio AUM/PIB d'environ 3,30 dans un tableau comparatif européen ?",
+            "choices": [
+                "Luxembourg",
+                "Italie",
+                "Espagne",
+                "Irlande"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Dans le tableau comparatif européen, l'Irlande affiche un ratio AUM/PIB d'environ 3,30, reflétant le poids important de son industrie de gestion d'actifs par rapport à la taille de son économie domestique."
+        },
+        {
+            "id": "gp-q292-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel nom est associé à une infrastructure largement utilisée pour industrialiser le risque, la gestion de portefeuille et certaines opérations chez un grand gestionnaire mondial ?",
+            "choices": [
+                "Bloomberg Terminal",
+                "Aladdin",
+                "Morningstar Direct",
+                "Eikon"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Aladdin (BlackRock) est une plateforme largement utilisée pour industrialiser la gestion des risques, la gestion de portefeuille et certaines opérations chez un grand gestionnaire mondial."
+        },
+        {
+            "id": "gp-q293-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Parmi ces grands gestionnaires européens, lequel affiche le CAGR (taux de croissance annuel composé) le plus négatif sur la période renseignée ?",
+            "choices": [
+                "Credit Suisse",
+                "UBS",
+                "BNP Paribas",
+                "Natixis Investment Managers"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Credit Suisse affiche le CAGR le plus négatif parmi ces grands gestionnaires européens sur la période renseignée, reflétant les difficultés rencontrées par le groupe avant son rachat par UBS."
+        },
+        {
+            "id": "gp-q294-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans les dispositifs d'épargne retraite à cotisations définies, que recouvre le plus souvent le recordkeeping ?",
+            "choices": [
+                "Émission d'actions nouvelles pour financer les entreprises.",
+                "Administration des plans : tenue des positions, conformité, communication et services aux participants.",
+                "Fixation du taux d'inflation officiel et publication des statistiques macroéconomiques.",
+                "Notation de crédit des obligations et des émetteurs souverains."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le recordkeeping, dans les dispositifs d'épargne retraite à cotisations définies, recouvre l'administration des plans : tenue des positions, conformité, communication et services aux participants."
+        },
+        {
+            "id": "gp-q295-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "En 2023, la part des actifs détenus via des fonds (mutual funds / UCITS) est d'environ 52,4 %. De combien (en points de base) cette part a-t-elle augmenté sur l'année ?",
+            "choices": [
+                "11 bps",
+                "1 140 bps",
+                "524 bps",
+                "114 bps"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "En 2023, la part des actifs détenus via des fonds (mutual funds / UCITS), d'environ 52,4 %, a augmenté d'environ 114 points de base par rapport à l'année précédente."
+        },
+        {
+            "id": "gp-q296",
+            "qcm": "AM2 - QCM10",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans quel périmètre s'appliquent directement des ratios réglementaires (ex. limites par émetteur, diversification) ?",
+            "choices": [
+                "Actifs conseillés (conseil sans gestion)",
+                "Actifs sous supervision (surveillance sans gestion directe)",
+                "Actifs « potentiels » (prospects non clients)",
+                "Actifs sous gestion"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les ratios réglementaires (limites par émetteur, diversification, etc.) s'appliquent directement aux actifs sous gestion, pour lesquels la société de gestion prend les décisions d'investissement."
+        },
+        {
+            "id": "gp-q297",
+            "qcm": "AM2 - QCM10",
+            "theme": "Gestion de portefeuille",
+            "question": "Parmi les grands gestionnaires européens suivants, lequel affiche la plus forte croissance annuelle composée (CAGR) sur la période disponible ?",
+            "choices": [
+                "Amundi",
+                "UBS",
+                "Allianz Group",
+                "HSBC Holdings"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Amundi affiche la plus forte croissance annuelle composée (CAGR) parmi ces grands gestionnaires européens sur la période disponible."
+        },
+        {
+            "id": "gp-q298",
+            "qcm": "AM2 - QCM10",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie le terme discretionary AUM (encours discrétionnaires) ?",
+            "choices": [
+                "Des actifs détenus par l'entreprise pour son propre compte (trésorerie interne).",
+                "Des actifs uniquement destinés à des opérations transactionnelles (paiements, comptes courants).",
+                "Des actifs uniquement conservés en dépôt (custody) sans décisions d'investissement.",
+                "Des actifs sur lesquels le gestionnaire prend les décisions d'investissement."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le discretionary AUM (encours discrétionnaires) désigne les actifs sur lesquels le gestionnaire prend lui-même les décisions d'investissement, par opposition aux actifs sous conseil ou sous supervision."
+        },
+        {
+            "id": "gp-q299",
+            "qcm": "AM2 - QCM10",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un marché national où le Top 3 regroupe environ 67 % des encours, quelle interprétation est la plus correcte ?",
+            "choices": [
+                "Marché totalement passif, car la concentration implique forcément l'indexation.",
+                "Marché très concentré, dominé par quelques grands acteurs.",
+                "Marché sans concurrence, car les parts de marché ne peuvent pas évoluer.",
+                "Marché très fragmenté, composé majoritairement de petits acteurs de taille similaire."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un Top 3 représentant environ 67 % des encours indique un marché très concentré, dominé par quelques grands acteurs."
+        },
+        {
+            "id": "gp-q300",
+            "qcm": "AM2 - QCM10",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel mécanisme vise à protéger les porteurs existants d'un fonds lorsque des souscriptions/rachats importants génèrent des coûts de transaction ?",
+            "choices": [
+                "Le split d'actions (augmentation du nombre de parts sans effet économique).",
+                "La vente à découvert obligatoire de l'indice de référence.",
+                "Le swing pricing (ajustement de la NAV pour limiter la dilution liée aux flux).",
+                "Le \"guaranteed NAV\" (garantie publique systématique de la NAV)."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le swing pricing ajuste la valeur liquidative (NAV) du fonds pour faire supporter aux porteurs entrants ou sortants les coûts de transaction générés par des flux importants, protégeant ainsi les porteurs existants de la dilution."
+        },
+        {
+            "id": "gp-q301",
+            "qcm": "AM2 - QCM10",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel énoncé décrit le mieux le rôle des assureurs dans l'asset management ?",
+            "choices": [
+                "Autorités publiques dont la mission principale est d'émettre la monnaie.",
+                "Intermédiaires de marché qui ne peuvent détenir que du cash à court terme.",
+                "Acteurs spécialisés uniquement dans l'achat/vente intraday pour compte propre.",
+                "Investisseurs institutionnels majeurs gérant de grands portefeuilles long terme, avec fortes contraintes de liquidité, duration et solvabilité."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les assureurs sont des investisseurs institutionnels majeurs qui gèrent de grands portefeuilles à long terme, soumis à de fortes contraintes de liquidité, de duration (adossement actif-passif) et de solvabilité réglementaire."
+        },
+        {
+            "id": "gp-q296-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans quel périmètre s'appliquent directement des ratios réglementaires (ex. limites par émetteur, diversification) ?",
+            "choices": [
+                "Actifs conseillés (conseil sans gestion)",
+                "Actifs sous supervision (surveillance sans gestion directe)",
+                "Actifs « potentiels » (prospects non clients)",
+                "Actifs sous gestion"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les ratios réglementaires (limites par émetteur, diversification, etc.) s'appliquent directement aux actifs sous gestion, pour lesquels la société de gestion prend les décisions d'investissement."
+        },
+        {
+            "id": "gp-q297-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Parmi les grands gestionnaires européens suivants, lequel affiche la plus forte croissance annuelle composée (CAGR) sur la période disponible ?",
+            "choices": [
+                "Amundi",
+                "UBS",
+                "Allianz Group",
+                "HSBC Holdings"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Amundi affiche la plus forte croissance annuelle composée (CAGR) parmi ces grands gestionnaires européens sur la période disponible."
+        },
+        {
+            "id": "gp-q298-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Que signifie le terme discretionary AUM (encours discrétionnaires) ?",
+            "choices": [
+                "Des actifs détenus par l'entreprise pour son propre compte (trésorerie interne).",
+                "Des actifs uniquement destinés à des opérations transactionnelles (paiements, comptes courants).",
+                "Des actifs uniquement conservés en dépôt (custody) sans décisions d'investissement.",
+                "Des actifs sur lesquels le gestionnaire prend les décisions d'investissement."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le discretionary AUM (encours discrétionnaires) désigne les actifs sur lesquels le gestionnaire prend lui-même les décisions d'investissement, par opposition aux actifs sous conseil ou sous supervision."
+        },
+        {
+            "id": "gp-q299-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Dans un marché national où le Top 3 regroupe environ 67 % des encours, quelle interprétation est la plus correcte ?",
+            "choices": [
+                "Marché totalement passif, car la concentration implique forcément l'indexation.",
+                "Marché très concentré, dominé par quelques grands acteurs.",
+                "Marché sans concurrence, car les parts de marché ne peuvent pas évoluer.",
+                "Marché très fragmenté, composé majoritairement de petits acteurs de taille similaire."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un Top 3 représentant environ 67 % des encours indique un marché très concentré, dominé par quelques grands acteurs."
+        },
+        {
+            "id": "gp-q300-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel mécanisme vise à protéger les porteurs existants d'un fonds lorsque des souscriptions/rachats importants génèrent des coûts de transaction ?",
+            "choices": [
+                "Le split d'actions (augmentation du nombre de parts sans effet économique).",
+                "La vente à découvert obligatoire de l'indice de référence.",
+                "Le swing pricing (ajustement de la NAV pour limiter la dilution liée aux flux).",
+                "Le \"guaranteed NAV\" (garantie publique systématique de la NAV)."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le swing pricing ajuste la valeur liquidative (NAV) du fonds pour faire supporter aux porteurs entrants ou sortants les coûts de transaction générés par des flux importants, protégeant ainsi les porteurs existants de la dilution."
+        },
+        {
+            "id": "gp-q301-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel énoncé décrit le mieux le rôle des assureurs dans l'asset management ?",
+            "choices": [
+                "Autorités publiques dont la mission principale est d'émettre la monnaie.",
+                "Intermédiaires de marché qui ne peuvent détenir que du cash à court terme.",
+                "Acteurs spécialisés uniquement dans l'achat/vente intraday pour compte propre.",
+                "Investisseurs institutionnels majeurs gérant de grands portefeuilles long terme, avec fortes contraintes de liquidité, duration et solvabilité."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les assureurs sont des investisseurs institutionnels majeurs qui gèrent de grands portefeuilles à long terme, soumis à de fortes contraintes de liquidité, de duration (adossement actif-passif) et de solvabilité réglementaire."
+        },
+        {
+            "id": "gp-q302",
+            "qcm": "AM2 - QCM10",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel organisme supervise les marchés et les sociétés de gestion aux États-Unis ?",
+            "choices": [
+                "ESMA",
+                "AMF",
+                "FCA",
+                "SEC (Securities and Exchange Commission)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La SEC (Securities and Exchange Commission) supervise les marchés et les sociétés de gestion aux États-Unis."
+        },
+        {
+            "id": "gp-q302-am2qcm11",
+            "qcm": "AM2 - QCM11",
+            "theme": "Gestion de portefeuille",
+            "question": "Quel organisme supervise les marchés et les sociétés de gestion aux États-Unis ?",
+            "choices": [
+                "ESMA",
+                "AMF",
+                "FCA",
+                "SEC (Securities and Exchange Commission)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La SEC (Securities and Exchange Commission) supervise les marchés et les sociétés de gestion aux États-Unis."
+        },
+        {
+            "id": "gp-q303",
+            "qcm": "GdP4 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est composé de 30% de marché et 70% d'actif sans risque.\n\nQuel est son bêta ?",
+            "choices": [
+                "0.50",
+                "0.70",
+                "1.00",
+                "0.30"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le bêta de l'actif sans risque est nul. Le bêta du portefeuille est donc : βP = wM × βM = 0,30 × 1 = 0,30."
+        },
+        {
+            "id": "gp-q303-maths5",
+            "qcm": "Maths - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Un portefeuille est composé de 30% de marché et 70% d'actif sans risque.\n\nQuel est son bêta ?",
+            "choices": [
+                "0.50",
+                "0.70",
+                "1.00",
+                "0.30"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le bêta de l'actif sans risque est nul. Le bêta du portefeuille est donc : βP = wM × βM = 0,30 × 1 = 0,30."
+        },
+        {
+            "id": "gp-q304",
+            "qcm": "GdP4 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "On vous donne la matrice de covariance entre trois titres A, B et C (en %²) :\n\n| | A | B | C |\n|---|---|---|---|\n| A | 4.0 | 2.0 | 1.0 |\n| B | 2.0 | 5.0 | 1.5 |\n| C | 1.0 | 1.5 | 6.0 |\n\nQuel est le portefeuille de variance minimale (somme des poids = 1, sans contrainte de rendement) ?",
+            "choices": [
+                "33 % A, 33 % B, 34 % C",
+                "45 % A, 25 % B, 30 % C",
+                "20 % A, 50 % B, 30 % C",
+                "60 % A, 20 % B, 20 % C"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le portefeuille de variance minimale se calcule à partir de la matrice de covariance : w = Σ⁻¹ × 1 / (1ᵀ × Σ⁻¹ × 1). Le résultat exact est w ≈ 45,2 % A, 25,2 % B, 29,6 % C, soit la proposition B."
+        },
+        {
+            "id": "gp-q304-excel",
+            "qcm": "Excel - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "On vous donne la matrice de covariance entre trois titres A, B et C (en %²) :\n\n| | A | B | C |\n|---|---|---|---|\n| A | 4.0 | 2.0 | 1.0 |\n| B | 2.0 | 5.0 | 1.5 |\n| C | 1.0 | 1.5 | 6.0 |\n\nQuel est le portefeuille de variance minimale (somme des poids = 1, sans contrainte de rendement) ?",
+            "choices": [
+                "33 % A, 33 % B, 34 % C",
+                "45 % A, 25 % B, 30 % C",
+                "20 % A, 50 % B, 30 % C",
+                "60 % A, 20 % B, 20 % C"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le portefeuille de variance minimale se calcule à partir de la matrice de covariance : w = Σ⁻¹ × 1 / (1ᵀ × Σ⁻¹ × 1). Le résultat exact est w ≈ 45,2 % A, 25,2 % B, 29,6 % C, soit la proposition B."
+        },
+        {
+            "id": "gp-q305",
+            "qcm": "GdP4 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Que représente un alpha positif dans un modèle de marché ?",
+            "choices": [
+                "une meilleure corrélation au marché",
+                "une surperformance par rapport à ce que prédit le modèle",
+                "un indicateur de risque systématique",
+                "un rendement identique au marché"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un alpha positif signifie que l'actif ou le portefeuille réalise une performance supérieure à celle prédite par le modèle."
+        },
+        {
+            "id": "gp-q306",
+            "qcm": "GdP4 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "La covariance entre les rendements de A et B est 0,0048. Les écarts-types de A et B sont respectivement 0,06 et 0,10.\nQuelle est leur corrélation ?",
+            "choices": [
+                "0,5",
+                "0,8",
+                "1,2",
+                "0,2"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La corrélation se calcule comme ρ = Cov(A,B) / (σA × σB) = 0,0048 / (0,06 × 0,10) = 0,0048 / 0,006 = 0,8."
+        },
+        {
+            "id": "gp-q306-maths5",
+            "qcm": "Maths - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "La covariance entre les rendements de A et B est 0,0048. Les écarts-types de A et B sont respectivement 0,06 et 0,10.\nQuelle est leur corrélation ?",
+            "choices": [
+                "0,5",
+                "0,8",
+                "1,2",
+                "0,2"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La corrélation se calcule comme ρ = Cov(A,B) / (σA × σB) = 0,0048 / (0,06 × 0,10) = 0,0048 / 0,006 = 0,8."
+        },
+        {
+            "id": "gp-q307",
+            "qcm": "GdP4 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Taux sans risque : 3 %, rendement du marché : 9 %, volatilité du marché : 15 %.\n\nUn investisseur souhaite obtenir un rendement espéré de 6 %.\n\nQuelle proportion doit-il investir dans le portefeuille de marché ?",
+            "choices": [
+                "50 %",
+                "60 %",
+                "33 %",
+                "75 %"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Avec la droite de marché des capitaux, E(R) = Rf + w × (Rm - Rf), soit 6% = 3% + w × (9% - 3%), donc w = (6% - 3%) / (9% - 3%) = 3% / 6% = 50%."
+        },
+        {
+            "id": "gp-q307-maths5",
+            "qcm": "Maths - QCM5",
+            "theme": "Gestion de portefeuille",
+            "question": "Taux sans risque : 3 %, rendement du marché : 9 %, volatilité du marché : 15 %.\n\nUn investisseur souhaite obtenir un rendement espéré de 6 %.\n\nQuelle proportion doit-il investir dans le portefeuille de marché ?",
+            "choices": [
+                "50 %",
+                "60 %",
+                "33 %",
+                "75 %"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Avec la droite de marché des capitaux, E(R) = Rf + w × (Rm - Rf), soit 6% = 3% + w × (9% - 3%), donc w = (6% - 3%) / (9% - 3%) = 3% / 6% = 50%."
+        },
+        {
+            "id": "gp-q308",
+            "qcm": "GdP4 - QCM2",
+            "theme": "Gestion de portefeuille",
+            "question": "Vous disposez des rendements mensuels sur 10 périodes pour un titre C et le marché :\nTitre C :\n4 %, 5 %, 3 %, 6 %, 2 %, 4 %, 3 %, 5 %, 6 %, 4 %\nMarché :\n2 %, 3 %, 2 %, 4 %, 1 %, 3 %, 2 %, 3 %, 5 %, 3 %\nQuel est le bêta estimé du titre C, arrondi au centième près ?",
+            "choices": [
+                "0,75",
+                "1,50",
+                "1,00",
+                "1,30"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "β = Cov(RC, RM) / Var(RM). D'après le calcul sur ces données, le bêta est proche de 1,00."
+        },
+        {
+            "id": "gp-q308-excel",
+            "qcm": "Excel - QCM1",
+            "theme": "Gestion de portefeuille",
+            "question": "Vous disposez des rendements mensuels sur 10 périodes pour un titre C et le marché :\nTitre C :\n4 %, 5 %, 3 %, 6 %, 2 %, 4 %, 3 %, 5 %, 6 %, 4 %\nMarché :\n2 %, 3 %, 2 %, 4 %, 1 %, 3 %, 2 %, 3 %, 5 %, 3 %\nQuel est le bêta estimé du titre C, arrondi au centième près ?",
+            "choices": [
+                "0,75",
+                "1,50",
+                "1,00",
+                "1,30"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "β = Cov(RC, RM) / Var(RM). D'après le calcul sur ces données, le bêta est proche de 1,00."
         }
     ]
 }
