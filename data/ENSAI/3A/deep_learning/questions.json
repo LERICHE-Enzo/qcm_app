@@ -1,0 +1,590 @@
+{
+    "questions": [
+        {
+            "id": "qcm1-q01",
+            "qcm": "QCM1",
+            "theme": "Deep Learning",
+            "question": "What does the term epoch refer to in deep learning?",
+            "choices": [
+                "A single cycle of updates through the entire training dataset.",
+                "The number of hidden states in the unfolded Recurrent Neural Networks (RNNs).",
+                "The number of layers between the input layer and the final output layer of a neural network.",
+                "The number of nodes in a hidden layer."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Une epoch correspond à un passage complet sur l’ensemble du jeu d’entraînement (toutes les mini-batchs ont été vues une fois).",
+            "tags": [
+                "epoch",
+                "entraînement"
+            ]
+        },
+        {
+            "id": "qcm1-q02",
+            "qcm": "QCM1",
+            "theme": "Deep Learning",
+            "question": "Which of the following is true concerning the impact of an average pooling layer?",
+            "choices": [
+                "It introduces non-linearity to the model.",
+                "It reduces the dimensions of the feature maps.",
+                "It increases the number of feature maps.",
+                "It optimizes the weights of the model on average."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le pooling (moyen ou max) résume chaque région locale par une valeur : il réduit la taille spatiale des feature maps, sans en changer le nombre ni avoir de poids à apprendre. L’average pooling est de plus linéaire.",
+            "tags": [
+                "pooling",
+                "CNN"
+            ]
+        },
+        {
+            "id": "qcm1-q03",
+            "qcm": "QCM1",
+            "theme": "Deep Learning",
+            "question": "Which of the following descriptions is INCORRECT concerning Recurrent Neural Networks (RNNs)?",
+            "choices": [
+                "The transition of the hidden state of an RNN is determined by a function shared by all positions of the input sequence.",
+                "The hidden state of an RNN makes a transition based on the input and the previous hidden state.",
+                "The transition of the hidden state of an RNN are determined by different functions at different positions of the input sequence."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un RNN partage les mêmes paramètres (même fonction de transition) à tous les pas de temps ; l’état caché dépend de l’entrée courante et de l’état précédent. L’affirmation (c) est donc fausse.",
+            "tags": [
+                "RNN",
+                "partage de paramètres"
+            ]
+        },
+        {
+            "id": "qcm1-q04",
+            "qcm": "QCM1",
+            "theme": "Deep Learning",
+            "question": "What is the primary purpose of a convolutional layer in a Convolutional Neural Network (CNN)?",
+            "choices": [
+                "To normalize the input data according the mean and the standard deviation.",
+                "To model a general matrix multiplication in a computationally efficient way.",
+                "To extract features of each local region of the input image or feature map.",
+                "To extract features according to correlation between pixels located far apart."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Une couche de convolution applique un filtre sur des régions locales de l’entrée afin d’en extraire des caractéristiques (bords, textures…). Les dépendances à longue distance ne sont captées qu’en empilant des couches.",
+            "tags": [
+                "convolution",
+                "CNN"
+            ]
+        },
+        {
+            "id": "qcm1-q05",
+            "qcm": "QCM1",
+            "theme": "Deep Learning",
+            "question": "What is the purpose of the DataLoader class in PyTorch?",
+            "choices": [
+                "To define model architecture",
+                "To save model checkpoints",
+                "To iterate over a dataset",
+                "To visualize training progress"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "DataLoader permet d’itérer sur un Dataset par mini-batchs (avec mélange, chargement parallèle, etc.).",
+            "tags": [
+                "PyTorch",
+                "DataLoader"
+            ]
+        },
+        {
+            "id": "qcm1-q06",
+            "qcm": "QCM1",
+            "theme": "Deep Learning",
+            "question": "Is the following sentence true or false?: We can calculate outputs of an artificial neural network efficiently using a computer because it has only linear functions as components except the bias term.",
+            "choices": [
+                "True",
+                "False"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Faux : un réseau de neurones contient des fonctions d’activation non linéaires, c’est précisément ce qui lui donne sa capacité d’expression. Son calcul est efficace grâce à la structure en produits matriciels et à la parallélisation (GPU), pas parce qu’il serait linéaire.",
+            "tags": [
+                "non-linéarité",
+                "réseau de neurones"
+            ]
+        },
+        {
+            "id": "qcm1-q07",
+            "qcm": "QCM1",
+            "theme": "Deep Learning",
+            "question": "What is the main purpose of using dropout in a neural network?",
+            "choices": [
+                "To speed up the training process by randomly choosing some of the training data and ignoring them during training.",
+                "To reduce overfitting by randomly choosing some of the training data and ignoring them during training.",
+                "To reduce overfitting by randomly choosing some inputs to a layer and setting them to zero during training.",
+                "To normalize the input data by removing outliers of the training data during training.",
+                "To speed up the training process by randomly choosing some of the channels and ignoring them during training."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le dropout met aléatoirement à zéro certaines entrées/neurones d’une couche pendant l’entraînement, ce qui joue le rôle de régularisation et réduit le surapprentissage. Il ne s’agit pas d’ignorer des données d’entraînement.",
+            "tags": [
+                "dropout",
+                "régularisation",
+                "surapprentissage"
+            ]
+        },
+        {
+            "id": "qcm2-q01",
+            "qcm": "QCM2",
+            "theme": "Deep Learning",
+            "question": "What is the role of a learning rate in training a neural network?",
+            "choices": [
+                "It selects how many optimization steps we perform per epoch.",
+                "It decides the size of the neural network in relation to the sample size.",
+                "It controls how much the model parameters are updated in each optimization step.",
+                "It determines the ratio between the coefficients of the loss and the regularization terms."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le learning rate est le pas de la mise à jour : θ ← θ − η∇L. Il contrôle l’amplitude de la modification des paramètres à chaque itération.",
+            "tags": [
+                "learning rate",
+                "optimisation"
+            ]
+        },
+        {
+            "id": "qcm2-q02",
+            "qcm": "QCM2",
+            "theme": "Deep Learning",
+            "question": "Which of the following algorithms is commonly used for optimizing the parameters of a neural network in training?",
+            "choices": [
+                "Genetic Algorithm",
+                "K-Nearest Neighbors",
+                "Stochastic Gradient Descent",
+                "Simulated Annealing"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L’entraînement des réseaux de neurones repose sur la descente de gradient stochastique (SGD) et ses variantes (Adam, etc.).",
+            "tags": [
+                "SGD",
+                "optimisation"
+            ]
+        },
+        {
+            "id": "qcm2-q03",
+            "qcm": "QCM2",
+            "theme": "Deep Learning",
+            "question": "Is the following sentence true or false?: As of 2024, deep learning is the only relevant approach to artificial intelligence.",
+            "choices": [
+                "False",
+                "True"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Faux : le deep learning est très important, mais d’autres approches (méthodes à noyaux, arbres/boosting, méthodes probabilistes, symboliques…) restent pertinentes, notamment sur données tabulaires.",
+            "tags": [
+                "IA",
+                "culture générale"
+            ]
+        },
+        {
+            "id": "qcm2-q04",
+            "qcm": "QCM2",
+            "theme": "Deep Learning",
+            "question": "In CNNs, what does the term “receptive field” refer to?",
+            "choices": [
+                "The number of layers in a Convolutional Neural Network (CNN).",
+                "The region of the input data that influences a particular feature in the output.",
+                "The output size after convolution.",
+                "The size of the convolutional filter (or kernel)."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le champ réceptif d’une unité est la zone de l’entrée qui influence sa valeur ; il grandit avec la profondeur du réseau. Il ne se confond pas avec la taille du noyau, qui n’en est que la contribution d’une seule couche.",
+            "tags": [
+                "receptive field",
+                "CNN"
+            ]
+        },
+        {
+            "id": "qcm2-q05",
+            "qcm": "QCM2",
+            "theme": "Deep Learning",
+            "question": "What is the main advantage of using a Convolutional Neural Network (CNN) over a fully connected network for image data?",
+            "choices": [
+                "CNNs do not require any data preprocessing.",
+                "CNNs are faster because there is no convolution operation.",
+                "CNNs take advantage of the spatial structure of the data, making them more effective for image processing with less parameters.",
+                "CNNs are trained faster on CPUs than on GPUs."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Connexions locales et partage des poids exploitent la structure spatiale des images, avec bien moins de paramètres qu’un réseau entièrement connecté.",
+            "tags": [
+                "CNN",
+                "partage de poids",
+                "images"
+            ]
+        },
+        {
+            "id": "qcm2-q06",
+            "qcm": "QCM2",
+            "theme": "Deep Learning",
+            "question": "Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) are types of",
+            "choices": [
+                "Convolutional Neural Networks (CNNs)",
+                "Recurrent Neural Networks (RNNs)",
+                "Multi-Layer Perceptrons (MLPs)",
+                "Residual Networks (ResNets)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "LSTM et GRU sont des variantes de RNN à portes (gates) qui atténuent le problème de disparition du gradient et gèrent mieux les dépendances longues.",
+            "tags": [
+                "LSTM",
+                "GRU",
+                "RNN"
+            ]
+        },
+        {
+            "id": "qcm2-q07",
+            "qcm": "QCM2",
+            "theme": "Deep Learning",
+            "question": "What is the primary role of an activation function in a neural network?",
+            "choices": [
+                "Introduce non-linearity into the model.",
+                "Increase the learning rate of the training process.",
+                "Reduce overfitting.",
+                "Normalize the input data."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sans fonction d’activation non linéaire, un empilement de couches linéaires resterait une application linéaire. L’activation introduit la non-linéarité.",
+            "tags": [
+                "activation",
+                "non-linéarité"
+            ]
+        },
+        {
+            "id": "qcm3-q01",
+            "qcm": "QCM3",
+            "theme": "Deep Learning",
+            "question": "Which of the following is true concerning padding in a convolutional layer?",
+            "choices": [
+                "The number of channels in the output of the layer will be larger than that without padding.",
+                "The output dimensions of the layer will be smaller than those without padding.",
+                "The number of channels in the output of the layer will be larger than that without padding.",
+                "The output dimensions of the layer will be larger than those without padding."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le padding ajoute des bords à l’entrée : les dimensions spatiales de la sortie sont plus grandes que sans padding (avec k, s fixés : ⌊(n+2p−k)/s⌋+1). Le nombre de canaux dépend du nombre de filtres, pas du padding. (Les propositions (a) et (c) sont identiques dans l’énoncé.)",
+            "tags": [
+                "padding",
+                "convolution",
+                "CNN"
+            ]
+        },
+        {
+            "id": "qcm3-q02",
+            "qcm": "QCM3",
+            "theme": "Deep Learning",
+            "question": "Which of the following functions outputs zero for negative inputs?",
+            "choices": [
+                "Softmax",
+                "ZeroGrad",
+                "ReLU (Rectified Linear Unit)",
+                "Tanh (hyperbolic tangent)",
+                "Sigmoid"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "ReLU(x) = max(0, x) renvoie 0 pour tout x négatif. Sigmoid et Tanh sont strictement non nulles en dehors de la limite, Softmax produit des probabilités positives, et ZeroGrad n’est pas une fonction d’activation.",
+            "tags": [
+                "ReLU",
+                "activation"
+            ]
+        },
+        {
+            "id": "qcm3-q03",
+            "qcm": "QCM3",
+            "theme": "Deep Learning",
+            "question": "What does tensor.to(‘cuda’) do, where tensor is a torch.Tensor object.",
+            "choices": [
+                "It copies the content of tensor to the CPU device.",
+                "It changes the dtype of tensor to cuda.",
+                "It creates a three dimensional array (of CUbic Data Array, CUDA).",
+                "It copies the content of tensor to the GPU device."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "to('cuda') transfère le tenseur sur le GPU (CUDA). Ce n’est pas un changement de dtype ni de dimension.",
+            "tags": [
+                "PyTorch",
+                "GPU",
+                "CUDA"
+            ]
+        },
+        {
+            "id": "qcm3-q04",
+            "qcm": "QCM3",
+            "theme": "Deep Learning",
+            "question": "Which of the following is a common loss function used in training a classifier using a neural network?",
+            "choices": [
+                "Cross-Entropy Loss.",
+                "Zero-one Loss.",
+                "Mean Absolute Error.",
+                "ℓ1 Loss."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La cross-entropie est la perte usuelle en classification (vraisemblance négative). La perte 0-1 n’est pas différentiable, donc inutilisable avec la descente de gradient.",
+            "tags": [
+                "cross-entropy",
+                "fonction de perte",
+                "classification"
+            ]
+        },
+        {
+            "id": "qcm3-q05",
+            "qcm": "QCM3",
+            "theme": "Deep Learning",
+            "question": "What does a stride of 2 in a convolutional layer indicate when applied to images?",
+            "choices": [
+                "It adds margins of 2 pixels around the boundary of the input image.",
+                "The output dimensions will be increased by a factor of 2.",
+                "The filter moves by 2 pixels across the input image.",
+                "The filter size is 2 × 2."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le stride est le pas de déplacement du filtre : avec un stride de 2, il avance de 2 pixels à chaque fois, ce qui réduit environ de moitié les dimensions de sortie.",
+            "tags": [
+                "stride",
+                "convolution"
+            ]
+        },
+        {
+            "id": "qcm3-q06",
+            "qcm": "QCM3",
+            "theme": "Deep Learning",
+            "question": "What is overfitting in the context of deep learning?",
+            "choices": [
+                "The model performs well on the test data but poorly on the training data.",
+                "The model performs poorly on both training and test data.",
+                "The model has too few parameters.",
+                "The model performs well on the training data but poorly on the test data."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le surapprentissage (overfitting) : bonne performance sur l’entraînement mais mauvaise généralisation sur le test. Les cas (b) et (c) relèvent plutôt du sous-apprentissage.",
+            "tags": [
+                "overfitting",
+                "généralisation"
+            ]
+        },
+        {
+            "id": "qcm3-q07",
+            "qcm": "QCM3",
+            "theme": "Deep Learning",
+            "question": "What does a kernel (or filter) in a convolutional layer do?",
+            "choices": [
+                "It fully connects the input to the output layer.",
+                "It normalizes the input data.",
+                "It reduces the input size by pooling.",
+                "It slides over the input to compute inner products, extracting features such as edges or textures."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le noyau glisse sur l’entrée et calcule des produits scalaires locaux, ce qui détecte des motifs (bords, textures).",
+            "tags": [
+                "kernel",
+                "filtre",
+                "convolution"
+            ]
+        },
+        {
+            "id": "qcm4-q01",
+            "qcm": "QCM4",
+            "theme": "Deep Learning",
+            "question": "Is the following sentence true or false?: the Gradient Descent (GD) method performs optimization by updating the parameters in the opposite directions of the gradients of the cost function.",
+            "choices": [
+                "False",
+                "True"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Vrai : θ ← θ − η∇L(θ). On se déplace dans la direction opposée au gradient, celle de plus forte décroissance locale de la fonction de coût.",
+            "tags": [
+                "descente de gradient",
+                "optimisation"
+            ]
+        },
+        {
+            "id": "qcm4-q02",
+            "qcm": "QCM4",
+            "theme": "Deep Learning",
+            "question": "Your friend is using dropout for training his neural network. Which of the following descriptions is the most accurate in this situation?",
+            "choices": [
+                "He should apply dropout with the same probability of dropping connections, for training and testing.",
+                "He should apply dropout with different probabilities of dropping connections, for training and testing.",
+                "He should not apply dropout when he evaluates the trained model with test data.",
+                "He should not use dropout in training a neural network."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le dropout n’est actif que pendant l’entraînement ; à l’évaluation (model.eval()), on le désactive et on utilise le réseau complet.",
+            "tags": [
+                "dropout",
+                "évaluation"
+            ]
+        },
+        {
+            "id": "qcm4-q03",
+            "qcm": "QCM4",
+            "theme": "Deep Learning",
+            "question": "What is the primary application of Convolutional Neural Networks (CNNs)?",
+            "choices": [
+                "Generative models for arbitrary types of data.",
+                "Computer vision tasks.",
+                "Fourier transform.",
+                "Matrix factorization.",
+                "Bayesian neural networks."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les CNN sont conçus pour des données à structure en grille, en premier lieu les images : c’est le domaine de la vision par ordinateur.",
+            "tags": [
+                "CNN",
+                "vision par ordinateur"
+            ]
+        },
+        {
+            "id": "qcm4-q04",
+            "qcm": "QCM4",
+            "theme": "Deep Learning",
+            "question": "What is the purpose of having fully connected layers in the last layers in a Convolutional Neural Network (CNN)?",
+            "choices": [
+                "To incorporate convolution operation into the feature extraction.",
+                "To incorporate the batch normalization to the architecture for stable optimization.",
+                "To combine features extracted by convolution layers and produce the final output.",
+                "To reduce the number of parameters."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les couches entièrement connectées finales combinent les caractéristiques extraites par les convolutions pour produire la sortie (scores de classes). Elles ont plutôt beaucoup de paramètres.",
+            "tags": [
+                "CNN",
+                "couche entièrement connectée"
+            ]
+        },
+        {
+            "id": "qcm4-q05",
+            "qcm": "QCM4",
+            "theme": "Deep Learning",
+            "question": "Which of the following descriptions is correct concerning Residual Networks (ResNets)?",
+            "choices": [
+                "A ResNets is trained to predict the residuals of the ordinary least square estimates, which has proven effective for mitigating overfitting.",
+                "A ResNet uses a shortcut connection added to the output of the skipped convolution block so that the convolution block will be only responsible for the residual of the total output.",
+                "ResNets are multi-layer perceptrons with a very deep architecture.",
+                "ResNets are a type of Recurrent Neural Networks (RNNs) with a very deep architecture."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un ResNet ajoute une connexion de raccourci (skip connection) : y = x + F(x). Le bloc n’apprend que le résidu F(x), ce qui facilite l’entraînement de réseaux très profonds. Ce sont des CNN, pas des MLP ni des RNN.",
+            "tags": [
+                "ResNet",
+                "skip connection"
+            ]
+        },
+        {
+            "id": "qcm4-q06",
+            "qcm": "QCM4",
+            "theme": "Deep Learning",
+            "question": "Which optimizer estimates the second-order moment of the momentum?",
+            "choices": [
+                "Gradient Descent",
+                "Mini-batch Gradient Descent",
+                "Stochastic Gradient Descent (SGD)",
+                "Forward Propagation",
+                "Back Propagation",
+                "Adam"
+            ],
+            "answer": [
+                5
+            ],
+            "explanation": "Adam estime à la fois le moment d’ordre 1 (moyenne mobile du gradient) et le moment d’ordre 2 (moyenne mobile du gradient au carré) pour adapter le pas de chaque paramètre. Forward et back propagation ne sont pas des optimiseurs.",
+            "tags": [
+                "Adam",
+                "optimiseur",
+                "moments"
+            ]
+        },
+        {
+            "id": "qcm4-q07",
+            "qcm": "QCM4",
+            "theme": "Deep Learning",
+            "question": "You are developping a neural network using PyTorch. You decided to use some differentiable but uncommon activation function f that cannot be expressed with those already implemented in the PyTorch package. Which of the following descriptions is the most accurate in this situation?",
+            "choices": [
+                "Automatic differentiation (torch.autograd) calculates gradients of a function f using the Back Propagation, and thus it only requires us to implement the function f.",
+                "Automatic differentiation (torch.autograd) calculates gradients of a function f using the Gradient Descent, and thus it only requires us to implement the function f.",
+                "Automatic differentiation (torch.autograd) calculates gradients of a function f using the Taylor approximation calculated numerically, and thus it only requires us to implement the function f.",
+                "Automatic differentiation (torch.autograd) calculates gradients of a function f by automatically referring to the code for calculating the derivative ∇f, and thus it still requires us to implement ∇f along with f.",
+                "Automatic differentiation (torch.autograd) calculates gradients of a function f by an approximate, finite differentiation of the form (f(x+ϵ) − f(x)) / ϵ or its variants, where x is the input and ϵ > 0 is a small real number controlling the precision of discretization."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "autograd construit le graphe de calcul de f et applique la règle de la chaîne (rétropropagation) : il suffit d’implémenter f avec des opérations PyTorch, sans coder ∇f. Ce n’est ni de la différence finie, ni du développement de Taylor, ni de la descente de gradient. (La correction du cours indiquait (d), mais c’est une erreur.)",
+            "tags": [
+                "autograd",
+                "PyTorch",
+                "rétropropagation"
+            ]
+        },
+        {
+            "id": "qcm4-q08",
+            "qcm": "QCM4",
+            "theme": "Deep Learning",
+            "question": "Is the following sentence true or false?: A Multi-Layer Perceptron (MLP) is a model precisely imitating the structure of a human brain in the biological sense.",
+            "choices": [
+                "False",
+                "True"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Faux : un MLP est inspiré très librement des neurones biologiques mais ne reproduit pas la structure du cerveau ; c’est une composition de transformations affines et d’activations non linéaires.",
+            "tags": [
+                "MLP",
+                "culture générale"
+            ]
+        }
+    ]
+}
