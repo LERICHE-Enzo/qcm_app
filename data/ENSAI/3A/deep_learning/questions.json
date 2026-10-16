@@ -587,6 +587,505 @@
             ]
         },
         {
+            "id": "qcm5-q01",
+            "qcm": "EN-QCM5",
+            "theme": "Deep Learning",
+            "question": "What is the main difference between the roles of the encoder and the decoder in the Transformer model (Vaswani et al., 2017)?",
+            "choices": [
+                "The encoder uses convolution layers to produce lower-dimensional codes, while the decoder uses transposed convolution layers to convert codes to produce the output sequence.",
+                "The decoder reads the input sequence and produces useful features, while the encoder uses them to generate the output sequence.",
+                "The decoder uses convolution layers to produce lower-dimensional codes, while the encoder uses transposed convolution layers to convert codes to produce the output sequence.",
+                "The encoder reads the input sequence and produces useful features, while the decoder uses them to generate the output sequence."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Dans le Transformer, l’encodeur lit la séquence d’entrée et en produit des représentations utiles ; le décodeur les utilise (via l’attention croisée) pour générer la séquence de sortie. Il n’y a pas de convolutions dans cette architecture.",
+            "tags": [
+                "Transformer",
+                "encodeur",
+                "décodeur"
+            ]
+        },
+        {
+            "id": "qcm5-q02",
+            "qcm": "EN-QCM5",
+            "theme": "Deep Learning",
+            "question": "In a convolution layer, padding:",
+            "choices": [
+                "Reduces the extent of spatial size reduction caused by convolution.",
+                "Decreases the number of kernels used.",
+                "Increases the number of learnable parameters of the kernel.",
+                "Drops randomly chosen pixels (by setting them to zero)."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sans padding, chaque convolution rétrécit la carte de caractéristiques. Le padding ajoute des bords (souvent des zéros) et limite cette réduction. Il ne change ni le nombre de noyaux ni leurs paramètres.",
+            "tags": [
+                "padding",
+                "convolution"
+            ]
+        },
+        {
+            "id": "qcm5-q03",
+            "qcm": "EN-QCM5",
+            "theme": "Deep Learning",
+            "question": "In minibatch gradient descent, a minibatch refers to:",
+            "choices": [
+                "A subset of the dataset.",
+                "The entire dataset.",
+                "A single example from the dataset.",
+                "One complete pass through the dataset."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un minibatch est un sous-ensemble du jeu de données sur lequel on calcule le gradient pour une mise à jour. Le jeu complet correspond au batch GD, un seul exemple au SGD pur, et un passage complet à une epoch.",
+            "tags": [
+                "minibatch",
+                "descente de gradient"
+            ]
+        },
+        {
+            "id": "qcm5-q04",
+            "qcm": "EN-QCM5",
+            "theme": "Deep Learning",
+            "question": "An activation function introduces:",
+            "choices": [
+                "Weight initialization.",
+                "Non-linearity.",
+                "Gradient vanishing.",
+                "Linearity."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La fonction d’activation introduit de la non-linéarité ; sans elle, un empilement de couches linéaires resterait linéaire.",
+            "tags": [
+                "activation",
+                "non-linéarité"
+            ]
+        },
+        {
+            "id": "qcm5-q05",
+            "qcm": "EN-QCM5",
+            "theme": "Deep Learning",
+            "question": "A bidirectional Recurrent Neural Network (RNN):",
+            "choices": [
+                "Produces positive and negative gradients simultaneously.",
+                "Processes sequences both forward and backward.",
+                "Performs the gradient descent using two random directions.",
+                "Performs the forward pass calculation and the back-propagation simultaneously."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un RNN bidirectionnel parcourt la séquence dans les deux sens (passé→futur et futur→passé) et combine les deux états cachés.",
+            "tags": [
+                "RNN",
+                "bidirectionnel"
+            ]
+        },
+        {
+            "id": "qcm6-q01",
+            "qcm": "EN-QCM6",
+            "theme": "Deep Learning",
+            "question": "A convolution layer:",
+            "choices": [
+                "Normalizes each local region of the input.",
+                "Applies random dropout to the input neurons to reduce the number of connections.",
+                "Has a shortcut (skip) connection by design.",
+                "Applies the dot product between the kernel and each local region of the input."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Une couche de convolution calcule le produit scalaire entre le noyau et chaque région locale de l’entrée. La normalisation, le dropout et les connexions raccourcis sont d’autres mécanismes.",
+            "tags": [
+                "convolution",
+                "noyau"
+            ]
+        },
+        {
+            "id": "qcm6-q02",
+            "qcm": "EN-QCM6",
+            "theme": "Deep Learning",
+            "question": "The stride of a convolution layer defines:",
+            "choices": [
+                "The step (skip) size of the kernel movement.",
+                "The size of the matrix used by the kernel.",
+                "The activation function applied after the convolution.",
+                "The number of channels of the layer."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le stride est le pas de déplacement du noyau sur l’entrée.",
+            "tags": [
+                "stride",
+                "convolution"
+            ]
+        },
+        {
+            "id": "qcm6-q03",
+            "qcm": "EN-QCM6",
+            "theme": "Deep Learning",
+            "question": "What is the main purpose of a loss function?",
+            "choices": [
+                "Introduce non-linearity to a neural network.",
+                "Implement the forward pass calculation.",
+                "Implement weight decay.",
+                "Measure model performance."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La fonction de perte mesure l’écart entre les prédictions et les cibles ; c’est ce que l’optimisation cherche à minimiser.",
+            "tags": [
+                "fonction de perte"
+            ]
+        },
+        {
+            "id": "qcm6-q04",
+            "qcm": "EN-QCM6",
+            "theme": "Deep Learning",
+            "question": "Which of the following best describes the main weakness of diffusion models?",
+            "choices": [
+                "They rely on small datasets that limit their efficiency.",
+                "They are less effective for generating higher-resolution images compared to other existing generative models.",
+                "They produce low-quality images that need to be regenerated multiple times.",
+                "They require extensive computational resources, leading to high energy consumption."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les modèles de diffusion produisent des images de très haute qualité, mais leur entraînement et surtout leur génération (nombreuses étapes de débruitage) sont coûteux en calcul et en énergie.",
+            "tags": [
+                "modèles de diffusion",
+                "coût de calcul"
+            ]
+        },
+        {
+            "id": "qcm6-q05",
+            "qcm": "EN-QCM6",
+            "theme": "Deep Learning",
+            "question": "What is the primary purpose of early stopping in training neural networks?",
+            "choices": [
+                "To avoid using a model that has been overfitted by long training.",
+                "To randomly drop neurons during training.",
+                "To increase the learning rate over time.",
+                "To initialize weights more effectively."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L’early stopping arrête l’entraînement quand la performance sur un jeu de validation cesse de s’améliorer, pour éviter le surapprentissage dû à un entraînement trop long.",
+            "tags": [
+                "early stopping",
+                "surapprentissage"
+            ]
+        },
+        {
+            "id": "qcm7-q01",
+            "qcm": "EN-QCM7",
+            "theme": "Deep Learning",
+            "question": "A too large learning rate can cause:",
+            "choices": [
+                "Early stopping.",
+                "Overfitting.",
+                "Overconfident predictions.",
+                "Oscillation or divergence."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Avec un pas trop grand, les mises à jour dépassent le minimum : la perte oscille ou diverge.",
+            "tags": [
+                "learning rate",
+                "divergence"
+            ]
+        },
+        {
+            "id": "qcm7-q02",
+            "qcm": "EN-QCM7",
+            "theme": "Deep Learning",
+            "question": "Overfitting is a situation where:",
+            "choices": [
+                "The model performs poorly on both the training data and unseen test data.",
+                "The model performs well on the training data, but poorly on unseen test data.",
+                "The model performs well both on the training data and unseen test data.",
+                "The model performs well on unseen test data, but poorly on the training data."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le surapprentissage : bon sur l’entraînement, mauvais sur des données non vues.",
+            "tags": [
+                "overfitting",
+                "généralisation"
+            ]
+        },
+        {
+            "id": "qcm7-q03",
+            "qcm": "EN-QCM7",
+            "theme": "Deep Learning",
+            "question": "A pooling layer:",
+            "choices": [
+                "Reduces the dimensions (resolution) of the input array.",
+                "Increases the dimensions (resolution) of the input array.",
+                "Accumulates the output values from the previous layers.",
+                "Accumulates the gradients of the previous layers."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le pooling résume des régions locales et réduit la résolution spatiale. Le document source indiquait (b) par erreur, en précisant lui-même que la bonne réponse est (a).",
+            "tags": [
+                "pooling",
+                "CNN"
+            ]
+        },
+        {
+            "id": "qcm7-q04",
+            "qcm": "EN-QCM7",
+            "theme": "Deep Learning",
+            "question": "An epoch means:",
+            "choices": [
+                "One gradient descent update.",
+                "One training pass through a training dataset.",
+                "One iteration of any for loop in Python.",
+                "One training pass through a minibatch."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une epoch est un passage complet sur le jeu d’entraînement ; une mise à jour correspond à une itération sur un minibatch.",
+            "tags": [
+                "epoch",
+                "entraînement"
+            ]
+        },
+        {
+            "id": "qcm7-q05",
+            "qcm": "EN-QCM7",
+            "theme": "Deep Learning",
+            "question": "Dropout helps prevent overfitting by:",
+            "choices": [
+                "Adding noise to the inputs.",
+                "Stopping training at a random point in time.",
+                "Dropping randomly selected neurons (forcing their values to be zero).",
+                "Freezing weights of the feature extractor."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le dropout met aléatoirement à zéro des neurones pendant l’entraînement, ce qui régularise le réseau.",
+            "tags": [
+                "dropout",
+                "régularisation"
+            ]
+        },
+        {
+            "id": "qcm8-q01",
+            "qcm": "EN-QCM8",
+            "theme": "Deep Learning",
+            "question": "In contrast to Recurrent Neural Networks, Transformers rely on:",
+            "choices": [
+                "Attention mechanism.",
+                "Diffusion processes.",
+                "Convolution layers.",
+                "Recurrent state transition."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les Transformers reposent sur le mécanisme d’attention et non sur une transition d’état récurrente, ce qui permet de paralléliser le calcul sur la séquence.",
+            "tags": [
+                "Transformer",
+                "attention"
+            ]
+        },
+        {
+            "id": "qcm8-q02",
+            "qcm": "EN-QCM8",
+            "theme": "Deep Learning",
+            "question": "Which of the following correctly describes the main steps of one iteration of a typical training loop implemented in PyTorch?",
+            "choices": [
+                "Randomly propose a prediction label → Compute the loss → Reject or accept the proposed label → Repeat until the proposed label converges.",
+                "Backward pass calculation → Compute the loss → Forward pass calculation → Update the parameters using the gradients.",
+                "Forward pass calculation → Compute loss → Backward pass calculation → Update the parameters using the gradients.",
+                "Randomly propose a prediction label → Compute the loss → Reject or accept the proposed label → Repeat until convergence to the stationary distribution."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Une itération : passe avant (forward), calcul de la perte, passe arrière (backward, loss.backward()), puis mise à jour des paramètres (optimizer.step()).",
+            "tags": [
+                "PyTorch",
+                "boucle d’entraînement"
+            ]
+        },
+        {
+            "id": "qcm8-q03",
+            "qcm": "EN-QCM8",
+            "theme": "Deep Learning",
+            "question": "The gradient descent algorithm updates parameters by:",
+            "choices": [
+                "Moving them in the direction of the gradient.",
+                "Moving them in the opposite direction of the gradient.",
+                "Multiplying the gradient.",
+                "Reducing the gradient."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "θ ← θ − η∇L : on se déplace dans la direction opposée au gradient.",
+            "tags": [
+                "descente de gradient"
+            ]
+        },
+        {
+            "id": "qcm8-q04",
+            "qcm": "EN-QCM8",
+            "theme": "Deep Learning",
+            "question": "The stochastic gradient descent (SGD) differs from the gradient descent (GD) because:",
+            "choices": [
+                "GD uses gradients, while SGD uses no gradients.",
+                "GD uses a fixed step size, while SGD uses an uniformly random step size.",
+                "GD updates weights only once, while SGD updates them repeatedly across iterations.",
+                "For each update, GD uses the entire dataset, while SGD uses a random subsample."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "À chaque mise à jour, GD calcule le gradient sur tout le jeu de données, SGD sur un sous-échantillon aléatoire (exemple ou minibatch). Les deux utilisent des gradients et itèrent.",
+            "tags": [
+                "SGD",
+                "descente de gradient"
+            ]
+        },
+        {
+            "id": "qcm8-q05",
+            "qcm": "EN-QCM8",
+            "theme": "Deep Learning",
+            "question": "Object detection involves:",
+            "choices": [
+                "Clustering objects of an image.",
+                "Identifying objects and recognizing their locations.",
+                "Textually describing an input image as a whole.",
+                "Detecting common visual patterns in an image dataset."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La détection d’objets consiste à identifier les objets présents et à les localiser (typiquement par des boîtes englobantes).",
+            "tags": [
+                "détection d’objets",
+                "vision par ordinateur"
+            ]
+        },
+        {
+            "id": "qcm9-q01",
+            "qcm": "EN-QCM9",
+            "theme": "Deep Learning",
+            "question": "A linear layer represents:",
+            "choices": [
+                "A linear function with no bias term.",
+                "An activation function.",
+                "An affine function.",
+                "A loss function."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Une couche linéaire calcule Wx + b, une fonction affine (linéaire plus biais).",
+            "tags": [
+                "couche linéaire",
+                "affine"
+            ]
+        },
+        {
+            "id": "qcm9-q02",
+            "qcm": "EN-QCM9",
+            "theme": "Deep Learning",
+            "question": "What is a fundamental limitation of standard RNNs?",
+            "choices": [
+                "They always require batch normalization layers to function properly.",
+                "They cannot handle sequences of variable length.",
+                "The calculation of hidden states for a long sequence cannot be fully parallelized.",
+                "They cannot learn short-term dependencies."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Chaque état caché dépend du précédent : le calcul est séquentiel et ne peut pas être entièrement parallélisé sur la séquence. Les RNN gèrent bien les longueurs variables et les dépendances à court terme.",
+            "tags": [
+                "RNN",
+                "parallélisation"
+            ]
+        },
+        {
+            "id": "qcm9-q03",
+            "qcm": "EN-QCM9",
+            "theme": "Deep Learning",
+            "question": "Image classification:",
+            "choices": [
+                "Predicts the ranking of the images of a given dataset.",
+                "Produces segmentation maps of a given input.",
+                "Finds multiple objects in a given image.",
+                "Assigns a single class label to a given image."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La classification d’images attribue une seule étiquette de classe à une image entière.",
+            "tags": [
+                "classification d’images",
+                "vision par ordinateur"
+            ]
+        },
+        {
+            "id": "qcm9-q04",
+            "qcm": "EN-QCM9",
+            "theme": "Deep Learning",
+            "question": "Which of the following does NOT use a deep learning approach?",
+            "choices": [
+                "Convolutional Neural Networks",
+                "Recurrent Neural Networks",
+                "Kernel Ridge Regression",
+                "Transformers"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La régression ridge à noyau est une méthode à noyaux classique, pas un réseau de neurones profond.",
+            "tags": [
+                "deep learning",
+                "méthodes à noyaux"
+            ]
+        },
+        {
+            "id": "qcm9-q05",
+            "qcm": "EN-QCM9",
+            "theme": "Deep Learning",
+            "question": "What is the main characteristic of Residual Networks (ResNets)?",
+            "choices": [
+                "Regression performed at each layer.",
+                "Prediction of bounding boxes around the objects.",
+                "Use of memory cells along with hidden states.",
+                "Use of shortcut (skip) connections."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les ResNets reposent sur des connexions raccourcis y = x + F(x), qui facilitent l’entraînement de réseaux très profonds.",
+            "tags": [
+                "ResNet",
+                "skip connection"
+            ]
+        },
+        {
             "id": "fr-qcm1-q01",
             "qcm": "FR-QCM1",
             "theme": "Deep Learning",
@@ -1170,6 +1669,505 @@
             "tags": [
                 "MLP",
                 "culture générale"
+            ]
+        },
+        {
+            "id": "fr-qcm5-q01",
+            "qcm": "FR-QCM5",
+            "theme": "Deep Learning",
+            "question": "Quelle est la principale différence entre les rôles de l’encodeur (encoder) et du décodeur (decoder) dans le modèle Transformer (Vaswani et al., 2017) ?",
+            "choices": [
+                "L’encodeur utilise des couches de convolution (convolution layers) pour produire des codes de dimension réduite, tandis que le décodeur utilise des couches de convolution transposée (transposed convolution layers) pour convertir les codes et produire la séquence de sortie.",
+                "Le décodeur lit la séquence d’entrée et produit des caractéristiques utiles (features), tandis que l’encodeur les utilise pour générer la séquence de sortie.",
+                "Le décodeur utilise des couches de convolution pour produire des codes de dimension réduite, tandis que l’encodeur utilise des couches de convolution transposée pour convertir les codes et produire la séquence de sortie.",
+                "L’encodeur lit la séquence d’entrée et produit des caractéristiques utiles, tandis que le décodeur les utilise pour générer la séquence de sortie."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Dans le Transformer, l’encodeur lit la séquence d’entrée et en produit des représentations utiles ; le décodeur les utilise (via l’attention croisée) pour générer la séquence de sortie. Il n’y a pas de convolutions dans cette architecture.",
+            "tags": [
+                "Transformer",
+                "encodeur",
+                "décodeur"
+            ]
+        },
+        {
+            "id": "fr-qcm5-q02",
+            "qcm": "FR-QCM5",
+            "theme": "Deep Learning",
+            "question": "Dans une couche de convolution, le remplissage (padding) :",
+            "choices": [
+                "Réduit l’ampleur de la réduction de taille spatiale causée par la convolution.",
+                "Diminue le nombre de noyaux (kernels) utilisés.",
+                "Augmente le nombre de paramètres apprenables (learnable parameters) du noyau.",
+                "Supprime aléatoirement des pixels choisis (en les mettant à zéro)."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sans padding, chaque convolution rétrécit la carte de caractéristiques. Le padding ajoute des bords (souvent des zéros) et limite cette réduction. Il ne change ni le nombre de noyaux ni leurs paramètres.",
+            "tags": [
+                "padding",
+                "convolution"
+            ]
+        },
+        {
+            "id": "fr-qcm5-q03",
+            "qcm": "FR-QCM5",
+            "theme": "Deep Learning",
+            "question": "Dans la descente de gradient par mini-lots (minibatch gradient descent), un mini-lot (minibatch) désigne :",
+            "choices": [
+                "Un sous-ensemble du jeu de données (dataset).",
+                "Le jeu de données entier.",
+                "Un seul exemple du jeu de données.",
+                "Un passage complet sur le jeu de données."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un minibatch est un sous-ensemble du jeu de données sur lequel on calcule le gradient pour une mise à jour. Le jeu complet correspond au batch GD, un seul exemple au SGD pur, et un passage complet à une epoch.",
+            "tags": [
+                "minibatch",
+                "descente de gradient"
+            ]
+        },
+        {
+            "id": "fr-qcm5-q04",
+            "qcm": "FR-QCM5",
+            "theme": "Deep Learning",
+            "question": "Une fonction d’activation (activation function) introduit :",
+            "choices": [
+                "L’initialisation des poids (weight initialization).",
+                "De la non-linéarité (non-linearity).",
+                "Une disparition du gradient (gradient vanishing).",
+                "De la linéarité."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La fonction d’activation introduit de la non-linéarité ; sans elle, un empilement de couches linéaires resterait linéaire.",
+            "tags": [
+                "activation",
+                "non-linéarité"
+            ]
+        },
+        {
+            "id": "fr-qcm5-q05",
+            "qcm": "FR-QCM5",
+            "theme": "Deep Learning",
+            "question": "Un réseau de neurones récurrent bidirectionnel (bidirectional RNN) :",
+            "choices": [
+                "Produit simultanément des gradients positifs et négatifs.",
+                "Traite les séquences dans les deux sens, avant et arrière (forward and backward).",
+                "Effectue la descente de gradient en utilisant deux directions aléatoires.",
+                "Effectue simultanément le calcul de la passe avant (forward pass) et la rétropropagation (back-propagation)."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un RNN bidirectionnel parcourt la séquence dans les deux sens (passé→futur et futur→passé) et combine les deux états cachés.",
+            "tags": [
+                "RNN",
+                "bidirectionnel"
+            ]
+        },
+        {
+            "id": "fr-qcm6-q01",
+            "qcm": "FR-QCM6",
+            "theme": "Deep Learning",
+            "question": "Une couche de convolution :",
+            "choices": [
+                "Normalise chaque région locale de l’entrée.",
+                "Applique un dropout aléatoire aux neurones d’entrée pour réduire le nombre de connexions.",
+                "Possède par conception une connexion raccourci (shortcut / skip connection).",
+                "Applique le produit scalaire (dot product) entre le noyau (kernel) et chaque région locale de l’entrée."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Une couche de convolution calcule le produit scalaire entre le noyau et chaque région locale de l’entrée. La normalisation, le dropout et les connexions raccourcis sont d’autres mécanismes.",
+            "tags": [
+                "convolution",
+                "noyau"
+            ]
+        },
+        {
+            "id": "fr-qcm6-q02",
+            "qcm": "FR-QCM6",
+            "theme": "Deep Learning",
+            "question": "Le pas (stride) d’une couche de convolution définit :",
+            "choices": [
+                "Le pas (saut) de déplacement du noyau.",
+                "La taille de la matrice utilisée par le noyau.",
+                "La fonction d’activation appliquée après la convolution.",
+                "Le nombre de canaux (channels) de la couche."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le stride est le pas de déplacement du noyau sur l’entrée.",
+            "tags": [
+                "stride",
+                "convolution"
+            ]
+        },
+        {
+            "id": "fr-qcm6-q03",
+            "qcm": "FR-QCM6",
+            "theme": "Deep Learning",
+            "question": "Quel est le but principal d’une fonction de perte (loss function) ?",
+            "choices": [
+                "Introduire de la non-linéarité dans un réseau de neurones.",
+                "Implémenter le calcul de la passe avant (forward pass).",
+                "Implémenter la décroissance des poids (weight decay).",
+                "Mesurer la performance du modèle."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La fonction de perte mesure l’écart entre les prédictions et les cibles ; c’est ce que l’optimisation cherche à minimiser.",
+            "tags": [
+                "fonction de perte"
+            ]
+        },
+        {
+            "id": "fr-qcm6-q04",
+            "qcm": "FR-QCM6",
+            "theme": "Deep Learning",
+            "question": "Laquelle de ces affirmations décrit le mieux la principale faiblesse des modèles de diffusion (diffusion models) ?",
+            "choices": [
+                "Ils reposent sur de petits jeux de données qui limitent leur efficacité.",
+                "Ils sont moins efficaces pour générer des images en haute résolution que les autres modèles génératifs (generative models) existants.",
+                "Ils produisent des images de mauvaise qualité qui doivent être régénérées plusieurs fois.",
+                "Ils nécessitent d’importantes ressources de calcul, ce qui entraîne une forte consommation d’énergie."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les modèles de diffusion produisent des images de très haute qualité, mais leur entraînement et surtout leur génération (nombreuses étapes de débruitage) sont coûteux en calcul et en énergie.",
+            "tags": [
+                "modèles de diffusion",
+                "coût de calcul"
+            ]
+        },
+        {
+            "id": "fr-qcm6-q05",
+            "qcm": "FR-QCM6",
+            "theme": "Deep Learning",
+            "question": "Quel est le but principal de l’arrêt précoce (early stopping) dans l’entraînement des réseaux de neurones ?",
+            "choices": [
+                "Éviter d’utiliser un modèle qui a fait du surapprentissage (overfitting) à cause d’un entraînement trop long.",
+                "Désactiver aléatoirement des neurones pendant l’entraînement.",
+                "Augmenter le taux d’apprentissage (learning rate) au fil du temps.",
+                "Initialiser les poids plus efficacement."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L’early stopping arrête l’entraînement quand la performance sur un jeu de validation cesse de s’améliorer, pour éviter le surapprentissage dû à un entraînement trop long.",
+            "tags": [
+                "early stopping",
+                "surapprentissage"
+            ]
+        },
+        {
+            "id": "fr-qcm7-q01",
+            "qcm": "FR-QCM7",
+            "theme": "Deep Learning",
+            "question": "Un taux d’apprentissage (learning rate) trop grand peut provoquer :",
+            "choices": [
+                "Un arrêt précoce (early stopping).",
+                "Du surapprentissage (overfitting).",
+                "Des prédictions trop confiantes (overconfident predictions).",
+                "Des oscillations ou une divergence."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Avec un pas trop grand, les mises à jour dépassent le minimum : la perte oscille ou diverge.",
+            "tags": [
+                "learning rate",
+                "divergence"
+            ]
+        },
+        {
+            "id": "fr-qcm7-q02",
+            "qcm": "FR-QCM7",
+            "theme": "Deep Learning",
+            "question": "Le surapprentissage (overfitting) est une situation où :",
+            "choices": [
+                "Le modèle est peu performant à la fois sur les données d’entraînement et sur les données de test non vues.",
+                "Le modèle est performant sur les données d’entraînement, mais peu performant sur les données de test non vues.",
+                "Le modèle est performant à la fois sur les données d’entraînement et sur les données de test non vues.",
+                "Le modèle est performant sur les données de test non vues, mais peu performant sur les données d’entraînement."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le surapprentissage : bon sur l’entraînement, mauvais sur des données non vues.",
+            "tags": [
+                "overfitting",
+                "généralisation"
+            ]
+        },
+        {
+            "id": "fr-qcm7-q03",
+            "qcm": "FR-QCM7",
+            "theme": "Deep Learning",
+            "question": "Une couche de pooling (pooling layer) :",
+            "choices": [
+                "Réduit les dimensions (résolution) du tableau d’entrée (array).",
+                "Augmente les dimensions (résolution) du tableau d’entrée.",
+                "Accumule les valeurs de sortie des couches précédentes.",
+                "Accumule les gradients des couches précédentes."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le pooling résume des régions locales et réduit la résolution spatiale. Le document source indiquait (b) par erreur, en précisant lui-même que la bonne réponse est (a).",
+            "tags": [
+                "pooling",
+                "CNN"
+            ]
+        },
+        {
+            "id": "fr-qcm7-q04",
+            "qcm": "FR-QCM7",
+            "theme": "Deep Learning",
+            "question": "Une époque (epoch) correspond à :",
+            "choices": [
+                "Une mise à jour de la descente de gradient.",
+                "Un passage d’entraînement sur l’ensemble du jeu d’entraînement (training dataset).",
+                "Une itération de n’importe quelle boucle for en Python.",
+                "Un passage d’entraînement sur un mini-lot (minibatch)."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une epoch est un passage complet sur le jeu d’entraînement ; une mise à jour correspond à une itération sur un minibatch.",
+            "tags": [
+                "epoch",
+                "entraînement"
+            ]
+        },
+        {
+            "id": "fr-qcm7-q05",
+            "qcm": "FR-QCM7",
+            "theme": "Deep Learning",
+            "question": "Le dropout aide à prévenir le surapprentissage en :",
+            "choices": [
+                "Ajoutant du bruit (noise) aux entrées.",
+                "Arrêtant l’entraînement à un moment aléatoire.",
+                "Supprimant des neurones choisis aléatoirement (en forçant leurs valeurs à zéro).",
+                "Gelant (freezing) les poids de l’extracteur de caractéristiques (feature extractor)."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le dropout met aléatoirement à zéro des neurones pendant l’entraînement, ce qui régularise le réseau.",
+            "tags": [
+                "dropout",
+                "régularisation"
+            ]
+        },
+        {
+            "id": "fr-qcm8-q01",
+            "qcm": "FR-QCM8",
+            "theme": "Deep Learning",
+            "question": "Contrairement aux réseaux de neurones récurrents (RNN), les Transformers reposent sur :",
+            "choices": [
+                "Le mécanisme d’attention (attention mechanism).",
+                "Des processus de diffusion (diffusion processes).",
+                "Des couches de convolution.",
+                "Une transition d’état récurrente (recurrent state transition)."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les Transformers reposent sur le mécanisme d’attention et non sur une transition d’état récurrente, ce qui permet de paralléliser le calcul sur la séquence.",
+            "tags": [
+                "Transformer",
+                "attention"
+            ]
+        },
+        {
+            "id": "fr-qcm8-q02",
+            "qcm": "FR-QCM8",
+            "theme": "Deep Learning",
+            "question": "Laquelle de ces propositions décrit correctement les étapes principales d’une itération d’une boucle d’entraînement (training loop) typique implémentée en PyTorch ?",
+            "choices": [
+                "Proposer aléatoirement une étiquette de prédiction (prediction label) → Calculer la perte (loss) → Rejeter ou accepter l’étiquette proposée → Répéter jusqu’à ce que l’étiquette proposée converge.",
+                "Calcul de la passe arrière (backward pass) → Calculer la perte → Calcul de la passe avant (forward pass) → Mettre à jour les paramètres à l’aide des gradients.",
+                "Calcul de la passe avant → Calculer la perte → Calcul de la passe arrière → Mettre à jour les paramètres à l’aide des gradients.",
+                "Proposer aléatoirement une étiquette de prédiction → Calculer la perte → Rejeter ou accepter l’étiquette proposée → Répéter jusqu’à la convergence vers la distribution stationnaire (stationary distribution)."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Une itération : passe avant (forward), calcul de la perte, passe arrière (backward, loss.backward()), puis mise à jour des paramètres (optimizer.step()).",
+            "tags": [
+                "PyTorch",
+                "boucle d’entraînement"
+            ]
+        },
+        {
+            "id": "fr-qcm8-q03",
+            "qcm": "FR-QCM8",
+            "theme": "Deep Learning",
+            "question": "L’algorithme de descente de gradient (gradient descent) met à jour les paramètres en :",
+            "choices": [
+                "Les déplaçant dans la direction du gradient.",
+                "Les déplaçant dans la direction opposée au gradient.",
+                "Multipliant le gradient.",
+                "Réduisant le gradient."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "θ ← θ − η∇L : on se déplace dans la direction opposée au gradient.",
+            "tags": [
+                "descente de gradient"
+            ]
+        },
+        {
+            "id": "fr-qcm8-q04",
+            "qcm": "FR-QCM8",
+            "theme": "Deep Learning",
+            "question": "La descente de gradient stochastique (SGD) diffère de la descente de gradient (GD) car :",
+            "choices": [
+                "La GD utilise des gradients, alors que la SGD n’en utilise pas.",
+                "La GD utilise un pas (step size) fixe, alors que la SGD utilise un pas uniformément aléatoire.",
+                "La GD ne met à jour les poids qu’une seule fois, alors que la SGD les met à jour de façon répétée au fil des itérations.",
+                "À chaque mise à jour, la GD utilise l’ensemble du jeu de données, alors que la SGD utilise un sous-échantillon aléatoire (random subsample)."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "À chaque mise à jour, GD calcule le gradient sur tout le jeu de données, SGD sur un sous-échantillon aléatoire (exemple ou minibatch). Les deux utilisent des gradients et itèrent.",
+            "tags": [
+                "SGD",
+                "descente de gradient"
+            ]
+        },
+        {
+            "id": "fr-qcm8-q05",
+            "qcm": "FR-QCM8",
+            "theme": "Deep Learning",
+            "question": "La détection d’objets (object detection) consiste à :",
+            "choices": [
+                "Regrouper (clustering) les objets d’une image.",
+                "Identifier des objets et reconnaître leur position.",
+                "Décrire textuellement une image d’entrée dans son ensemble.",
+                "Détecter des motifs visuels communs dans un jeu de données d’images."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La détection d’objets consiste à identifier les objets présents et à les localiser (typiquement par des boîtes englobantes).",
+            "tags": [
+                "détection d’objets",
+                "vision par ordinateur"
+            ]
+        },
+        {
+            "id": "fr-qcm9-q01",
+            "qcm": "FR-QCM9",
+            "theme": "Deep Learning",
+            "question": "Une couche linéaire (linear layer) représente :",
+            "choices": [
+                "Une fonction linéaire sans terme de biais (bias).",
+                "Une fonction d’activation.",
+                "Une fonction affine (affine function).",
+                "Une fonction de perte."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Une couche linéaire calcule Wx + b, une fonction affine (linéaire plus biais).",
+            "tags": [
+                "couche linéaire",
+                "affine"
+            ]
+        },
+        {
+            "id": "fr-qcm9-q02",
+            "qcm": "FR-QCM9",
+            "theme": "Deep Learning",
+            "question": "Quelle est une limite fondamentale des RNN standards ?",
+            "choices": [
+                "Ils nécessitent toujours des couches de normalisation par lots (batch normalization) pour fonctionner correctement.",
+                "Ils ne peuvent pas traiter des séquences de longueur variable.",
+                "Le calcul des états cachés (hidden states) pour une longue séquence ne peut pas être entièrement parallélisé.",
+                "Ils ne peuvent pas apprendre les dépendances à court terme (short-term dependencies)."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Chaque état caché dépend du précédent : le calcul est séquentiel et ne peut pas être entièrement parallélisé sur la séquence. Les RNN gèrent bien les longueurs variables et les dépendances à court terme.",
+            "tags": [
+                "RNN",
+                "parallélisation"
+            ]
+        },
+        {
+            "id": "fr-qcm9-q03",
+            "qcm": "FR-QCM9",
+            "theme": "Deep Learning",
+            "question": "La classification d’images (image classification) :",
+            "choices": [
+                "Prédit le classement des images d’un jeu de données donné.",
+                "Produit des cartes de segmentation (segmentation maps) d’une entrée donnée.",
+                "Trouve plusieurs objets dans une image donnée.",
+                "Attribue une seule étiquette de classe (class label) à une image donnée."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La classification d’images attribue une seule étiquette de classe à une image entière.",
+            "tags": [
+                "classification d’images",
+                "vision par ordinateur"
+            ]
+        },
+        {
+            "id": "fr-qcm9-q04",
+            "qcm": "FR-QCM9",
+            "theme": "Deep Learning",
+            "question": "Laquelle de ces approches n’utilise PAS l’apprentissage profond (deep learning) ?",
+            "choices": [
+                "Réseaux de neurones convolutifs (Convolutional Neural Networks)",
+                "Réseaux de neurones récurrents (Recurrent Neural Networks)",
+                "Régression ridge à noyau (Kernel Ridge Regression)",
+                "Transformers"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La régression ridge à noyau est une méthode à noyaux classique, pas un réseau de neurones profond.",
+            "tags": [
+                "deep learning",
+                "méthodes à noyaux"
+            ]
+        },
+        {
+            "id": "fr-qcm9-q05",
+            "qcm": "FR-QCM9",
+            "theme": "Deep Learning",
+            "question": "Quelle est la principale caractéristique des réseaux résiduels (Residual Networks, ResNets) ?",
+            "choices": [
+                "Une régression effectuée à chaque couche.",
+                "La prédiction de boîtes englobantes (bounding boxes) autour des objets.",
+                "L’utilisation de cellules mémoire (memory cells) en plus des états cachés.",
+                "L’utilisation de connexions raccourcis (shortcut / skip connections)."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les ResNets reposent sur des connexions raccourcis y = x + F(x), qui facilitent l’entraînement de réseaux très profonds.",
+            "tags": [
+                "ResNet",
+                "skip connection"
             ]
         }
     ]
