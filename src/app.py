@@ -90,7 +90,7 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
 
 
 @st.cache_data
-def load_questions_json(path: Path) -> pd.DataFrame:
+def load_questions_json(path: Path, mtime: float = 0.0) -> pd.DataFrame:
     """Charge data/.../questions.json (liste ou {'questions': [...]}) en DataFrame normalisée.
        Ajoute 'orig_idx' (index original dans le JSON) pour persister des lots."""
     if not path.exists():
@@ -117,7 +117,7 @@ def load_questions_json(path: Path) -> pd.DataFrame:
 
 
 @st.cache_data
-def load_exercices_json(path: Path) -> List[Dict[str, Any]]:
+def load_exercices_json(path: Path, mtime: float = 0.0) -> List[Dict[str, Any]]:
     """
     Charge exercices.json.
 
@@ -525,7 +525,7 @@ with st.sidebar:
     exercices_sidebar = None
     labels_exos = []
     if st.session_state.get("content_type_radio") == "Exercices":
-        exercices_sidebar = load_exercices_json(EXERCICES_FILE)
+        exercices_sidebar = load_exercices_json(EXERCICES_FILE, EXERCICES_FILE.stat().st_mtime if EXERCICES_FILE.exists() else 0.0)
 
         labels_exos = [
             f"Exercice {i+1} : {exo['titre']}"
@@ -550,7 +550,7 @@ with st.sidebar:
 
 # ===================== MODE EXERCICES GUIDÉS =====================
 if st.session_state.get("content_type_radio") == "Exercices":
-    exercices = exercices_sidebar if exercices_sidebar is not None else load_exercices_json(EXERCICES_FILE)
+    exercices = exercices_sidebar if exercices_sidebar is not None else load_exercices_json(EXERCICES_FILE, EXERCICES_FILE.stat().st_mtime if EXERCICES_FILE.exists() else 0.0)
 
     # --- états / progression ---
     if "exo_id" not in st.session_state:
@@ -802,7 +802,7 @@ if st.session_state.get("content_type_radio") == "Exercices":
 # ===================== MODE QCM CLASSIQUE =====================
 
 # ===== Chargement du JSON unique =====
-df = load_questions_json(QUESTIONS_FILE)
+df = load_questions_json(QUESTIONS_FILE, QUESTIONS_FILE.stat().st_mtime if QUESTIONS_FILE.exists() else 0.0)
 
 # Filtre QCM (si champ 'qcm' existe)
 available_qcms = sorted({q for q in df.get("qcm", pd.Series()).dropna().unique()})

@@ -1086,6 +1086,519 @@
             ]
         },
         {
+            "id": "qcm10-q01",
+            "qcm": "EN-QCM10",
+            "theme": "Deep Learning",
+            "question": "A training set contains 1000 samples and the mini-batch size is 50. How many parameter updates happen during one epoch?",
+            "choices": [
+                "1",
+                "20",
+                "50",
+                "1000"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une époque est un passage complet sur le jeu : 1000 / 50 = 20 mini-batchs, donc 20 mises à jour.\n\n---\n\n**🇫🇷 Traduction**\n\nUn jeu d’entraînement contient 1000 échantillons et la taille du mini-batch (mini-batch size) est de 50. Combien de mises à jour des paramètres a-t-on pendant une époque (epoch) ?\n\n- (a) 1\n- (b) 20\n- (c) 50\n- (d) 1000",
+            "tags": [
+                "epoch",
+                "mini-batch"
+            ]
+        },
+        {
+            "id": "qcm10-q02",
+            "qcm": "EN-QCM10",
+            "theme": "Deep Learning",
+            "question": "Why do we put a non-linear activation function between linear layers?",
+            "choices": [
+                "To make the network run faster on a GPU",
+                "To reduce the number of parameters",
+                "Without it, stacking several linear layers is equivalent to a single linear layer",
+                "To normalize the outputs between 0 and 1"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "W₂(W₁x + b₁) + b₂ reste de la forme Wx + b : le réseau n’apprendrait pas de fonctions complexes.\n\n---\n\n**🇫🇷 Traduction**\n\nPourquoi place-t-on une fonction d’activation (activation function) non linéaire entre les couches linéaires ?\n\n- (a) Pour que le réseau s’exécute plus vite sur GPU\n- (b) Pour réduire le nombre de paramètres (parameters)\n- (c) Sans elle, empiler plusieurs couches linéaires (linear layers) équivaut à une seule couche linéaire\n- (d) Pour normaliser les sorties entre 0 et 1",
+            "tags": [
+                "activation",
+                "non-linéarité"
+            ]
+        },
+        {
+            "id": "qcm10-q03",
+            "qcm": "EN-QCM10",
+            "theme": "Deep Learning",
+            "question": "In PyTorch, nn.CrossEntropyLoss expects the model output to be:",
+            "choices": [
+                "Raw scores (logits), without softmax",
+                "Probabilities obtained after a softmax",
+                "One-hot vectors",
+                "Values between 0 and 1 obtained after a sigmoid"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Elle applique le log-softmax elle-même : ajouter un softmax avant est une erreur classique.\n\n---\n\n**🇫🇷 Traduction**\n\nEn PyTorch, nn.CrossEntropyLoss attend en entrée de la part du modèle :\n\n- (a) Des scores bruts (logits), sans softmax\n- (b) Des probabilités obtenues après un softmax\n- (c) Des vecteurs one-hot\n- (d) Des valeurs entre 0 et 1 obtenues après une sigmoïde (sigmoid)",
+            "tags": [
+                "PyTorch",
+                "CrossEntropyLoss",
+                "logits"
+            ]
+        },
+        {
+            "id": "qcm10-q04",
+            "qcm": "EN-QCM10",
+            "theme": "Deep Learning",
+            "question": "During training, the training loss keeps decreasing but the validation loss starts to increase. This indicates:",
+            "choices": [
+                "Underfitting",
+                "A learning rate equal to zero",
+                "Vanishing gradients",
+                "Overfitting"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le modèle colle aux données d’entraînement (même au bruit) mais généralise moins bien.\n\n---\n\n**🇫🇷 Traduction**\n\nPendant l’entraînement, la perte d’entraînement (training loss) diminue toujours mais la perte de validation (validation loss) se met à augmenter. Cela indique :\n\n- (a) Du sous-apprentissage (underfitting)\n- (b) Un taux d’apprentissage (learning rate) égal à zéro\n- (c) Des gradients qui disparaissent (vanishing gradients)\n- (d) Du surapprentissage (overfitting)",
+            "tags": [
+                "overfitting",
+                "validation"
+            ]
+        },
+        {
+            "id": "qcm10-q05",
+            "qcm": "EN-QCM10",
+            "theme": "Deep Learning",
+            "question": "Which of the following is NOT a way to reduce overfitting?",
+            "choices": [
+                "Dropout",
+                "Early stopping",
+                "Training for many more epochs on the same data without any regularization",
+                "Data augmentation"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Entraîner plus longtemps sans régularisation aggrave le surapprentissage.\n\n---\n\n**🇫🇷 Traduction**\n\nLaquelle de ces propositions n’est PAS un moyen de réduire le surapprentissage (overfitting) ?\n\n- (a) Le dropout\n- (b) L’arrêt précoce (early stopping)\n- (c) Entraîner beaucoup plus longtemps sur les mêmes données sans aucune régularisation (regularization)\n- (d) L’augmentation de données (data augmentation)",
+            "tags": [
+                "overfitting",
+                "régularisation"
+            ]
+        },
+        {
+            "id": "qcm11-q01",
+            "qcm": "EN-QCM11",
+            "theme": "Deep Learning",
+            "question": "Compared with gradient descent (GD), stochastic gradient descent (SGD):",
+            "choices": [
+                "Always converges in fewer iterations",
+                "Uses the whole dataset at every update",
+                "Does not need a learning rate",
+                "Estimates the gradient from a random sample or mini-batch: cheaper but noisier"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La GD utilise tout le jeu ; le SGD un échantillon, moins coûteux mais plus bruité.\n\n---\n\n**🇫🇷 Traduction**\n\nPar rapport à la descente de gradient (gradient descent, GD), la descente de gradient stochastique (stochastic gradient descent, SGD) :\n\n- (a) Converge toujours en moins d’itérations\n- (b) Utilise tout le jeu de données à chaque mise à jour\n- (c) N’a pas besoin de taux d’apprentissage (learning rate)\n- (d) Estime le gradient à partir d’un échantillon aléatoire ou d’un mini-batch : moins coûteux mais plus bruité",
+            "tags": [
+                "SGD",
+                "descente de gradient"
+            ]
+        },
+        {
+            "id": "qcm11-q02",
+            "qcm": "EN-QCM11",
+            "theme": "Deep Learning",
+            "question": "Which statement about Adam is correct?",
+            "choices": [
+                "It adapts the step of each parameter using running estimates of the first and second moments of the gradient",
+                "It needs the Hessian matrix (second derivatives of the loss)",
+                "It uses a single global learning rate that never adapts",
+                "It cannot be used with mini-batches"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Adam garde des moyennes mobiles du gradient et de son carré, sans hessienne.\n\n---\n\n**🇫🇷 Traduction**\n\nQuelle affirmation sur Adam est correcte ?\n\n- (a) Il adapte le pas de chaque paramètre grâce à des estimations des moments d’ordre 1 et 2 du gradient\n- (b) Il nécessite la matrice hessienne (Hessian matrix, dérivées secondes de la perte)\n- (c) Il utilise un seul taux d’apprentissage global qui ne s’adapte jamais\n- (d) Il ne peut pas être utilisé avec des mini-batchs",
+            "tags": [
+                "Adam",
+                "optimiseur",
+                "moments"
+            ]
+        },
+        {
+            "id": "qcm11-q03",
+            "qcm": "EN-QCM11",
+            "theme": "Deep Learning",
+            "question": "Why do we call optimizer.zero_grad() at each iteration of the training loop?",
+            "choices": [
+                "To reset the model weights to zero",
+                "Because PyTorch accumulates gradients by default, so old gradients would be added to the new ones",
+                "To empty the DataLoader",
+                "To switch the model to evaluation mode"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Sans cela, les gradients des itérations précédentes s’accumulent.\n\n---\n\n**🇫🇷 Traduction**\n\nPourquoi appelle-t-on optimizer.zero_grad() à chaque itération de la boucle d’entraînement (training loop) ?\n\n- (a) Pour remettre les poids (weights) du modèle à zéro\n- (b) Parce que PyTorch accumule les gradients par défaut : les anciens s’ajouteraient aux nouveaux\n- (c) Pour vider le DataLoader\n- (d) Pour passer le modèle en mode évaluation (evaluation mode)",
+            "tags": [
+                "PyTorch",
+                "zero_grad",
+                "boucle d’entraînement"
+            ]
+        },
+        {
+            "id": "qcm11-q04",
+            "qcm": "EN-QCM11",
+            "theme": "Deep Learning",
+            "question": "In a custom PyTorch Dataset, which method returns the sample (input, label) at a given index?",
+            "choices": [
+                "forward(self, idx)",
+                "step(self, idx)",
+                "__getitem__(self, idx)",
+                "backward(self, idx)"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "__getitem__ renvoie l’échantillon d’indice idx, __len__ la taille ; le DataLoader s’en sert pour construire les mini-batchs.\n\n---\n\n**🇫🇷 Traduction**\n\nDans un Dataset PyTorch personnalisé, quelle méthode renvoie l’échantillon (entrée, étiquette (label)) d’indice donné ?\n\n- (a) forward(self, idx)\n- (b) step(self, idx)\n- (c) __getitem__(self, idx)\n- (d) backward(self, idx)",
+            "tags": [
+                "PyTorch",
+                "Dataset",
+                "DataLoader"
+            ]
+        },
+        {
+            "id": "qcm11-q05",
+            "qcm": "EN-QCM11",
+            "theme": "Deep Learning",
+            "question": "What happens to dropout when we evaluate the model on the test set (model.eval())?",
+            "choices": [
+                "It is turned off: all units are used",
+                "It is still applied, with a higher probability",
+                "It is applied only to the first layer",
+                "It replaces the activation function"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le dropout n’est actif qu’à l’entraînement.\n\n---\n\n**🇫🇷 Traduction**\n\nQue devient le dropout quand on évalue le modèle sur le jeu de test (model.eval()) ?\n\n- (a) Il est désactivé : toutes les unités sont utilisées\n- (b) Il est toujours appliqué, avec une probabilité plus grande\n- (c) Il est appliqué seulement à la première couche\n- (d) Il remplace la fonction d’activation (activation function)",
+            "tags": [
+                "dropout",
+                "évaluation",
+                "PyTorch"
+            ]
+        },
+        {
+            "id": "qcm12-q01",
+            "qcm": "EN-QCM12",
+            "theme": "Deep Learning",
+            "question": "An input image is 32×32. A convolution has kernel size 3, stride 2 and padding 1. What is the output size?",
+            "choices": [
+                "15×15",
+                "16×16",
+                "17×17",
+                "32×32"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "⌊(32 + 2 − 3) / 2⌋ + 1 = ⌊15,5⌋ + 1 = 16.\n\n---\n\n**🇫🇷 Traduction**\n\nUne image d’entrée fait 32×32. Une convolution a un noyau (kernel) de taille 3, un pas (stride) de 2 et un remplissage (padding) de 1. Quelle est la taille de sortie ?\n\n- (a) 15×15\n- (b) 16×16\n- (c) 17×17\n- (d) 32×32",
+            "tags": [
+                "convolution",
+                "stride",
+                "padding",
+                "taille de sortie"
+            ]
+        },
+        {
+            "id": "qcm12-q02",
+            "qcm": "EN-QCM12",
+            "theme": "Deep Learning",
+            "question": "A convolutional layer has 3 input channels, 16 output channels, a 3×3 kernel and a bias. How many parameters does it have?",
+            "choices": [
+                "48",
+                "144",
+                "432",
+                "448"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "16 × (3 × 3 × 3 + 1) = 16 × 28 = 448 (432 si on oublie le biais).\n\n---\n\n**🇫🇷 Traduction**\n\nUne couche de convolution a 3 canaux d’entrée (channels), 16 canaux de sortie, un noyau 3×3 et un biais (bias). Combien a-t-elle de paramètres ?\n\n- (a) 48\n- (b) 144\n- (c) 432\n- (d) 448",
+            "tags": [
+                "convolution",
+                "nombre de paramètres"
+            ]
+        },
+        {
+            "id": "qcm12-q03",
+            "qcm": "EN-QCM12",
+            "theme": "Deep Learning",
+            "question": "A CNN raises: RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x400 and 256x10). The batch has 32 images and the last layer is nn.Linear(256, 10). What is the fix?",
+            "choices": [
+                "Change the batch size to 256",
+                "Add a ReLU after Flatten",
+                "Change the layer to nn.Linear(400, 10)",
+                "Transpose the input images"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Après Flatten il y a 400 valeurs par image, donc in_features doit valoir 400.\n\n---\n\n**🇫🇷 Traduction**\n\nUn CNN lève l’erreur RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x400 and 256x10). Le batch contient 32 images et la dernière couche est nn.Linear(256, 10). Quelle est la correction ?\n\n- (a) Passer la taille du batch (batch size) à 256\n- (b) Ajouter une ReLU après le Flatten\n- (c) Remplacer la couche par nn.Linear(400, 10)\n- (d) Transposer les images d’entrée",
+            "tags": [
+                "PyTorch",
+                "Linear",
+                "Flatten",
+                "dimensions"
+            ]
+        },
+        {
+            "id": "qcm12-q04",
+            "qcm": "EN-QCM12",
+            "theme": "Deep Learning",
+            "question": "Which statement about max pooling is INCORRECT?",
+            "choices": [
+                "It increases the number of channels (feature maps)",
+                "It reduces the spatial size",
+                "It has no learnable parameters",
+                "It keeps the number of channels"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le pooling réduit la taille spatiale et ne change jamais le nombre de canaux.\n\n---\n\n**🇫🇷 Traduction**\n\nQuelle affirmation sur le max pooling est INCORRECTE ?\n\n- (a) Il augmente le nombre de canaux (feature maps)\n- (b) Il réduit la taille spatiale\n- (c) Il n’a aucun paramètre apprenable (learnable parameter)\n- (d) Il conserve le nombre de canaux",
+            "tags": [
+                "pooling",
+                "CNN"
+            ]
+        },
+        {
+            "id": "qcm12-q05",
+            "qcm": "EN-QCM12",
+            "theme": "Deep Learning",
+            "question": "What is the purpose of skip connections in a ResNet?",
+            "choices": [
+                "To reduce the size of the image",
+                "To add dropout inside each block",
+                "To turn the CNN into a recurrent network",
+                "To let a block learn a residual F(x) added to its input x, which makes very deep networks easier to train"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La sortie du bloc est F(x) + x, ce qui aide le gradient à circuler dans les réseaux très profonds.\n\n---\n\n**🇫🇷 Traduction**\n\nÀ quoi servent les connexions raccourcis (skip connections) dans un ResNet ?\n\n- (a) À réduire la taille de l’image\n- (b) À ajouter du dropout dans chaque bloc\n- (c) À transformer le CNN en réseau récurrent (recurrent network)\n- (d) À laisser un bloc apprendre un résidu (residual) F(x) ajouté à son entrée x, ce qui facilite l’entraînement des réseaux très profonds",
+            "tags": [
+                "ResNet",
+                "skip connection"
+            ]
+        },
+        {
+            "id": "qcm13-q01",
+            "qcm": "EN-QCM13",
+            "theme": "Deep Learning",
+            "question": "Which statement about an RNN is correct?",
+            "choices": [
+                "A different set of weights is used at each time step",
+                "The same weights are used at every time step",
+                "Weights are used only at the first time step",
+                "It has no weights, only a hidden state"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les poids sont partagés à tous les pas de temps, ce qui permet de traiter des séquences de longueur variable.\n\n---\n\n**🇫🇷 Traduction**\n\nQuelle affirmation sur un RNN est correcte ?\n\n- (a) Un ensemble de poids différent est utilisé à chaque pas de temps (time step)\n- (b) Les mêmes poids (weights) sont utilisés à chaque pas de temps\n- (c) Les poids ne sont utilisés qu’au premier pas de temps\n- (d) Il n’a pas de poids, seulement un état caché (hidden state)",
+            "tags": [
+                "RNN",
+                "partage de poids"
+            ]
+        },
+        {
+            "id": "qcm13-q02",
+            "qcm": "EN-QCM13",
+            "theme": "Deep Learning",
+            "question": "Why do standard RNNs struggle with long-term dependencies?",
+            "choices": [
+                "The hidden state is too small",
+                "They cannot process sequences of variable length",
+                "The loss function is not differentiable",
+                "Gradients shrink as they are backpropagated through many time steps, so early inputs have little influence"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "C’est le problème du gradient qui disparaît (vanishing gradient), atténué par LSTM et GRU.\n\n---\n\n**🇫🇷 Traduction**\n\nPourquoi les RNN standards ont-ils du mal avec les dépendances à long terme (long-term dependencies) ?\n\n- (a) L’état caché (hidden state) est trop petit\n- (b) Ils ne savent pas traiter des séquences de longueur variable\n- (c) La fonction de perte (loss function) n’est pas dérivable\n- (d) Les gradients diminuent quand on les rétropropage (backpropagation) sur beaucoup de pas de temps, donc les premières entrées ont peu d’influence",
+            "tags": [
+                "RNN",
+                "vanishing gradient",
+                "dépendances longues"
+            ]
+        },
+        {
+            "id": "qcm13-q03",
+            "qcm": "EN-QCM13",
+            "theme": "Deep Learning",
+            "question": "What do the gates of an LSTM do?",
+            "choices": [
+                "They control what information is forgotten, written and output by the memory cell",
+                "They normalize the inputs of each layer",
+                "They randomly set activations to zero",
+                "They compute the attention between all tokens"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les portes d’oubli, d’entrée et de sortie gèrent la cellule mémoire.\n\n---\n\n**🇫🇷 Traduction**\n\nQue font les portes (gates) d’un LSTM ?\n\n- (a) Elles contrôlent ce que la cellule mémoire (memory cell) oublie, écrit et renvoie\n- (b) Elles normalisent les entrées de chaque couche\n- (c) Elles mettent aléatoirement des activations à zéro\n- (d) Elles calculent l’attention (attention) entre tous les tokens",
+            "tags": [
+                "LSTM",
+                "portes"
+            ]
+        },
+        {
+            "id": "qcm13-q04",
+            "qcm": "EN-QCM13",
+            "theme": "Deep Learning",
+            "question": "In a Transformer, the self-attention output is computed as:",
+            "choices": [
+                "softmax(Q + K) V",
+                "ReLU(QKᵀ) V",
+                "softmax(QKᵀ / √d_k) V",
+                "softmax(VKᵀ / √d_k) Q"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les scores QKᵀ sont divisés par √d_k, passés dans un softmax, puis pondèrent V.\n\n---\n\n**🇫🇷 Traduction**\n\nDans un Transformer, la sortie de l’auto-attention (self-attention) se calcule comme :\n\n- (a) softmax(Q + K) V\n- (b) ReLU(QKᵀ) V\n- (c) softmax(QKᵀ / √d_k) V\n- (d) softmax(VKᵀ / √d_k) Q",
+            "tags": [
+                "Transformer",
+                "self-attention"
+            ]
+        },
+        {
+            "id": "qcm13-q05",
+            "qcm": "EN-QCM13",
+            "theme": "Deep Learning",
+            "question": "Why do Transformers need positional encoding?",
+            "choices": [
+                "To reduce the number of attention heads",
+                "Because attention alone does not know the order of the tokens",
+                "To make the model bidirectional",
+                "To compress the sequence"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’attention voit les tokens comme un ensemble : il faut donc ajouter la position.\n\n---\n\n**🇫🇷 Traduction**\n\nPourquoi les Transformers ont-ils besoin d’un encodage positionnel (positional encoding) ?\n\n- (a) Pour réduire le nombre de têtes d’attention (attention heads)\n- (b) Parce que l’attention seule ne connaît pas l’ordre des tokens\n- (c) Pour rendre le modèle bidirectionnel (bidirectional)\n- (d) Pour compresser la séquence",
+            "tags": [
+                "Transformer",
+                "encodage positionnel"
+            ]
+        },
+        {
+            "id": "qcm14-q01",
+            "qcm": "EN-QCM14",
+            "theme": "Deep Learning",
+            "question": "How do we usually fine-tune a pretrained CNN on a small new dataset?",
+            "choices": [
+                "Train from scratch with random weights and a very large learning rate",
+                "Remove all convolutional layers of the pretrained model",
+                "Train on the test set to adapt faster",
+                "Replace the last layer to match the new classes and train it (and possibly some earlier layers) with a small learning rate"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "On réutilise les caractéristiques apprises et on adapte la fin du réseau avec un petit learning rate.\n\n---\n\n**🇫🇷 Traduction**\n\nComment affine-t-on (fine-tuning) généralement un CNN pré-entraîné (pretrained) sur un petit nouveau jeu de données ?\n\n- (a) On entraîne depuis zéro avec des poids aléatoires et un très grand taux d’apprentissage (learning rate)\n- (b) On supprime toutes les couches de convolution du modèle pré-entraîné\n- (c) On entraîne sur le jeu de test pour s’adapter plus vite\n- (d) On remplace la dernière couche pour correspondre aux nouvelles classes et on l’entraîne (éventuellement avec quelques couches précédentes) avec un petit taux d’apprentissage",
+            "tags": [
+                "fine-tuning",
+                "transfer learning"
+            ]
+        },
+        {
+            "id": "qcm14-q02",
+            "qcm": "EN-QCM14",
+            "theme": "Deep Learning",
+            "question": "Which task and model pair is correct?",
+            "choices": [
+                "YOLO: semantic segmentation",
+                "ResNet: generating text",
+                "U-Net: predicting a class for each pixel",
+                "GPT: object detection"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "U-Net et FCN font de la segmentation ; YOLO fait de la détection d’objets.\n\n---\n\n**🇫🇷 Traduction**\n\nQuelle association tâche–modèle est correcte ?\n\n- (a) YOLO : segmentation sémantique (semantic segmentation)\n- (b) ResNet : génération de texte\n- (c) U-Net : prédire une classe pour chaque pixel\n- (d) GPT : détection d’objets (object detection)",
+            "tags": [
+                "U-Net",
+                "segmentation",
+                "YOLO"
+            ]
+        },
+        {
+            "id": "qcm14-q03",
+            "qcm": "EN-QCM14",
+            "theme": "Deep Learning",
+            "question": "What distinguishes a VAE from a standard autoencoder?",
+            "choices": [
+                "The encoder outputs a distribution (mean and variance) and a KL term regularizes the latent space, so we can sample new data",
+                "A VAE has no decoder",
+                "A VAE needs labels for every image",
+                "A VAE is trained with a discriminator network"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L’espace latent est une distribution régularisée : on peut y échantillonner pour générer de nouvelles données.\n\n---\n\n**🇫🇷 Traduction**\n\nQu’est-ce qui distingue un VAE (variational autoencoder) d’un autoencodeur (autoencoder) standard ?\n\n- (a) L’encodeur (encoder) produit une distribution (moyenne et variance) et un terme KL régularise l’espace latent (latent space), ce qui permet d’échantillonner de nouvelles données\n- (b) Un VAE n’a pas de décodeur (decoder)\n- (c) Un VAE a besoin d’étiquettes (labels) pour chaque image\n- (d) Un VAE est entraîné avec un réseau discriminateur (discriminator)",
+            "tags": [
+                "VAE",
+                "autoencodeur",
+                "espace latent"
+            ]
+        },
+        {
+            "id": "qcm14-q04",
+            "qcm": "EN-QCM14",
+            "theme": "Deep Learning",
+            "question": "In a GAN, what are the roles of the two networks?",
+            "choices": [
+                "The generator classifies real vs fake images; the discriminator generates images from noise",
+                "The generator tries to produce samples that fool the discriminator; the discriminator tries to tell real from generated samples",
+                "Both networks cooperate to minimize the same reconstruction error",
+                "Only the generator is trained; the discriminator stays fixed with random weights"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les deux réseaux sont entraînés l’un contre l’autre (entraînement adversarial, adversarial training).\n\n---\n\n**🇫🇷 Traduction**\n\nDans un GAN, quels sont les rôles des deux réseaux ?\n\n- (a) Le générateur (generator) classe les images vraies et fausses ; le discriminateur (discriminator) génère des images à partir de bruit\n- (b) Le générateur cherche à produire des échantillons qui trompent le discriminateur ; le discriminateur cherche à distinguer le vrai du généré\n- (c) Les deux réseaux coopèrent pour minimiser la même erreur de reconstruction (reconstruction error)\n- (d) Seul le générateur est entraîné ; le discriminateur reste fixe avec des poids aléatoires",
+            "tags": [
+                "GAN",
+                "générateur",
+                "discriminateur"
+            ]
+        },
+        {
+            "id": "qcm14-q05",
+            "qcm": "EN-QCM14",
+            "theme": "Deep Learning",
+            "question": "What is a diffusion model typically trained to do?",
+            "choices": [
+                "Classify whether an image is real or fake",
+                "Compress images into a small latent vector",
+                "Predict the noise added to a noisy image (mean squared error between true and predicted noise)",
+                "Translate images from one domain to another without paired data"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L’entraînement consiste à prédire le bruit ; l’option D décrit CycleGAN.\n\n---\n\n**🇫🇷 Traduction**\n\nÀ quoi un modèle de diffusion (diffusion model) est-il typiquement entraîné ?\n\n- (a) À classer une image comme vraie ou fausse\n- (b) À compresser les images en un petit vecteur latent\n- (c) À prédire le bruit ajouté à une image bruitée (erreur quadratique moyenne (MSE) entre le vrai bruit et le bruit prédit)\n- (d) À traduire des images d’un domaine à un autre sans données appariées (CycleGAN)",
+            "tags": [
+                "modèle de diffusion",
+                "prédiction du bruit"
+            ]
+        },
+        {
             "id": "fr-qcm1-q01",
             "qcm": "FR-QCM1",
             "theme": "Deep Learning",
@@ -2168,6 +2681,519 @@
             "tags": [
                 "ResNet",
                 "skip connection"
+            ]
+        },
+        {
+            "id": "fr-qcm10-q01",
+            "qcm": "FR-QCM10",
+            "theme": "Deep Learning",
+            "question": "Un jeu d’entraînement contient 1000 échantillons et la taille du mini-batch (mini-batch size) est de 50. Combien de mises à jour des paramètres a-t-on pendant une époque (epoch) ?",
+            "choices": [
+                "1",
+                "20",
+                "50",
+                "1000"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une époque est un passage complet sur le jeu : 1000 / 50 = 20 mini-batchs, donc 20 mises à jour.",
+            "tags": [
+                "epoch",
+                "mini-batch"
+            ]
+        },
+        {
+            "id": "fr-qcm10-q02",
+            "qcm": "FR-QCM10",
+            "theme": "Deep Learning",
+            "question": "Pourquoi place-t-on une fonction d’activation (activation function) non linéaire entre les couches linéaires ?",
+            "choices": [
+                "Pour que le réseau s’exécute plus vite sur GPU",
+                "Pour réduire le nombre de paramètres (parameters)",
+                "Sans elle, empiler plusieurs couches linéaires (linear layers) équivaut à une seule couche linéaire",
+                "Pour normaliser les sorties entre 0 et 1"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "W₂(W₁x + b₁) + b₂ reste de la forme Wx + b : le réseau n’apprendrait pas de fonctions complexes.",
+            "tags": [
+                "activation",
+                "non-linéarité"
+            ]
+        },
+        {
+            "id": "fr-qcm10-q03",
+            "qcm": "FR-QCM10",
+            "theme": "Deep Learning",
+            "question": "En PyTorch, nn.CrossEntropyLoss attend en entrée de la part du modèle :",
+            "choices": [
+                "Des scores bruts (logits), sans softmax",
+                "Des probabilités obtenues après un softmax",
+                "Des vecteurs one-hot",
+                "Des valeurs entre 0 et 1 obtenues après une sigmoïde (sigmoid)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Elle applique le log-softmax elle-même : ajouter un softmax avant est une erreur classique.",
+            "tags": [
+                "PyTorch",
+                "CrossEntropyLoss",
+                "logits"
+            ]
+        },
+        {
+            "id": "fr-qcm10-q04",
+            "qcm": "FR-QCM10",
+            "theme": "Deep Learning",
+            "question": "Pendant l’entraînement, la perte d’entraînement (training loss) diminue toujours mais la perte de validation (validation loss) se met à augmenter. Cela indique :",
+            "choices": [
+                "Du sous-apprentissage (underfitting)",
+                "Un taux d’apprentissage (learning rate) égal à zéro",
+                "Des gradients qui disparaissent (vanishing gradients)",
+                "Du surapprentissage (overfitting)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le modèle colle aux données d’entraînement (même au bruit) mais généralise moins bien.",
+            "tags": [
+                "overfitting",
+                "validation"
+            ]
+        },
+        {
+            "id": "fr-qcm10-q05",
+            "qcm": "FR-QCM10",
+            "theme": "Deep Learning",
+            "question": "Laquelle de ces propositions n’est PAS un moyen de réduire le surapprentissage (overfitting) ?",
+            "choices": [
+                "Le dropout",
+                "L’arrêt précoce (early stopping)",
+                "Entraîner beaucoup plus longtemps sur les mêmes données sans aucune régularisation (regularization)",
+                "L’augmentation de données (data augmentation)"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Entraîner plus longtemps sans régularisation aggrave le surapprentissage.",
+            "tags": [
+                "overfitting",
+                "régularisation"
+            ]
+        },
+        {
+            "id": "fr-qcm11-q01",
+            "qcm": "FR-QCM11",
+            "theme": "Deep Learning",
+            "question": "Par rapport à la descente de gradient (gradient descent, GD), la descente de gradient stochastique (stochastic gradient descent, SGD) :",
+            "choices": [
+                "Converge toujours en moins d’itérations",
+                "Utilise tout le jeu de données à chaque mise à jour",
+                "N’a pas besoin de taux d’apprentissage (learning rate)",
+                "Estime le gradient à partir d’un échantillon aléatoire ou d’un mini-batch : moins coûteux mais plus bruité"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La GD utilise tout le jeu ; le SGD un échantillon, moins coûteux mais plus bruité.",
+            "tags": [
+                "SGD",
+                "descente de gradient"
+            ]
+        },
+        {
+            "id": "fr-qcm11-q02",
+            "qcm": "FR-QCM11",
+            "theme": "Deep Learning",
+            "question": "Quelle affirmation sur Adam est correcte ?",
+            "choices": [
+                "Il adapte le pas de chaque paramètre grâce à des estimations des moments d’ordre 1 et 2 du gradient",
+                "Il nécessite la matrice hessienne (Hessian matrix, dérivées secondes de la perte)",
+                "Il utilise un seul taux d’apprentissage global qui ne s’adapte jamais",
+                "Il ne peut pas être utilisé avec des mini-batchs"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Adam garde des moyennes mobiles du gradient et de son carré, sans hessienne.",
+            "tags": [
+                "Adam",
+                "optimiseur",
+                "moments"
+            ]
+        },
+        {
+            "id": "fr-qcm11-q03",
+            "qcm": "FR-QCM11",
+            "theme": "Deep Learning",
+            "question": "Pourquoi appelle-t-on optimizer.zero_grad() à chaque itération de la boucle d’entraînement (training loop) ?",
+            "choices": [
+                "Pour remettre les poids (weights) du modèle à zéro",
+                "Parce que PyTorch accumule les gradients par défaut : les anciens s’ajouteraient aux nouveaux",
+                "Pour vider le DataLoader",
+                "Pour passer le modèle en mode évaluation (evaluation mode)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Sans cela, les gradients des itérations précédentes s’accumulent.",
+            "tags": [
+                "PyTorch",
+                "zero_grad",
+                "boucle d’entraînement"
+            ]
+        },
+        {
+            "id": "fr-qcm11-q04",
+            "qcm": "FR-QCM11",
+            "theme": "Deep Learning",
+            "question": "Dans un Dataset PyTorch personnalisé, quelle méthode renvoie l’échantillon (entrée, étiquette (label)) d’indice donné ?",
+            "choices": [
+                "forward(self, idx)",
+                "step(self, idx)",
+                "__getitem__(self, idx)",
+                "backward(self, idx)"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "__getitem__ renvoie l’échantillon d’indice idx, __len__ la taille ; le DataLoader s’en sert pour construire les mini-batchs.",
+            "tags": [
+                "PyTorch",
+                "Dataset",
+                "DataLoader"
+            ]
+        },
+        {
+            "id": "fr-qcm11-q05",
+            "qcm": "FR-QCM11",
+            "theme": "Deep Learning",
+            "question": "Que devient le dropout quand on évalue le modèle sur le jeu de test (model.eval()) ?",
+            "choices": [
+                "Il est désactivé : toutes les unités sont utilisées",
+                "Il est toujours appliqué, avec une probabilité plus grande",
+                "Il est appliqué seulement à la première couche",
+                "Il remplace la fonction d’activation (activation function)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le dropout n’est actif qu’à l’entraînement.",
+            "tags": [
+                "dropout",
+                "évaluation",
+                "PyTorch"
+            ]
+        },
+        {
+            "id": "fr-qcm12-q01",
+            "qcm": "FR-QCM12",
+            "theme": "Deep Learning",
+            "question": "Une image d’entrée fait 32×32. Une convolution a un noyau (kernel) de taille 3, un pas (stride) de 2 et un remplissage (padding) de 1. Quelle est la taille de sortie ?",
+            "choices": [
+                "15×15",
+                "16×16",
+                "17×17",
+                "32×32"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "⌊(32 + 2 − 3) / 2⌋ + 1 = ⌊15,5⌋ + 1 = 16.",
+            "tags": [
+                "convolution",
+                "stride",
+                "padding",
+                "taille de sortie"
+            ]
+        },
+        {
+            "id": "fr-qcm12-q02",
+            "qcm": "FR-QCM12",
+            "theme": "Deep Learning",
+            "question": "Une couche de convolution a 3 canaux d’entrée (channels), 16 canaux de sortie, un noyau 3×3 et un biais (bias). Combien a-t-elle de paramètres ?",
+            "choices": [
+                "48",
+                "144",
+                "432",
+                "448"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "16 × (3 × 3 × 3 + 1) = 16 × 28 = 448 (432 si on oublie le biais).",
+            "tags": [
+                "convolution",
+                "nombre de paramètres"
+            ]
+        },
+        {
+            "id": "fr-qcm12-q03",
+            "qcm": "FR-QCM12",
+            "theme": "Deep Learning",
+            "question": "Un CNN lève l’erreur RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x400 and 256x10). Le batch contient 32 images et la dernière couche est nn.Linear(256, 10). Quelle est la correction ?",
+            "choices": [
+                "Passer la taille du batch (batch size) à 256",
+                "Ajouter une ReLU après le Flatten",
+                "Remplacer la couche par nn.Linear(400, 10)",
+                "Transposer les images d’entrée"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Après Flatten il y a 400 valeurs par image, donc in_features doit valoir 400.",
+            "tags": [
+                "PyTorch",
+                "Linear",
+                "Flatten",
+                "dimensions"
+            ]
+        },
+        {
+            "id": "fr-qcm12-q04",
+            "qcm": "FR-QCM12",
+            "theme": "Deep Learning",
+            "question": "Quelle affirmation sur le max pooling est INCORRECTE ?",
+            "choices": [
+                "Il augmente le nombre de canaux (feature maps)",
+                "Il réduit la taille spatiale",
+                "Il n’a aucun paramètre apprenable (learnable parameter)",
+                "Il conserve le nombre de canaux"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le pooling réduit la taille spatiale et ne change jamais le nombre de canaux.",
+            "tags": [
+                "pooling",
+                "CNN"
+            ]
+        },
+        {
+            "id": "fr-qcm12-q05",
+            "qcm": "FR-QCM12",
+            "theme": "Deep Learning",
+            "question": "À quoi servent les connexions raccourcis (skip connections) dans un ResNet ?",
+            "choices": [
+                "À réduire la taille de l’image",
+                "À ajouter du dropout dans chaque bloc",
+                "À transformer le CNN en réseau récurrent (recurrent network)",
+                "À laisser un bloc apprendre un résidu (residual) F(x) ajouté à son entrée x, ce qui facilite l’entraînement des réseaux très profonds"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "La sortie du bloc est F(x) + x, ce qui aide le gradient à circuler dans les réseaux très profonds.",
+            "tags": [
+                "ResNet",
+                "skip connection"
+            ]
+        },
+        {
+            "id": "fr-qcm13-q01",
+            "qcm": "FR-QCM13",
+            "theme": "Deep Learning",
+            "question": "Quelle affirmation sur un RNN est correcte ?",
+            "choices": [
+                "Un ensemble de poids différent est utilisé à chaque pas de temps (time step)",
+                "Les mêmes poids (weights) sont utilisés à chaque pas de temps",
+                "Les poids ne sont utilisés qu’au premier pas de temps",
+                "Il n’a pas de poids, seulement un état caché (hidden state)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les poids sont partagés à tous les pas de temps, ce qui permet de traiter des séquences de longueur variable.",
+            "tags": [
+                "RNN",
+                "partage de poids"
+            ]
+        },
+        {
+            "id": "fr-qcm13-q02",
+            "qcm": "FR-QCM13",
+            "theme": "Deep Learning",
+            "question": "Pourquoi les RNN standards ont-ils du mal avec les dépendances à long terme (long-term dependencies) ?",
+            "choices": [
+                "L’état caché (hidden state) est trop petit",
+                "Ils ne savent pas traiter des séquences de longueur variable",
+                "La fonction de perte (loss function) n’est pas dérivable",
+                "Les gradients diminuent quand on les rétropropage (backpropagation) sur beaucoup de pas de temps, donc les premières entrées ont peu d’influence"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "C’est le problème du gradient qui disparaît (vanishing gradient), atténué par LSTM et GRU.",
+            "tags": [
+                "RNN",
+                "vanishing gradient",
+                "dépendances longues"
+            ]
+        },
+        {
+            "id": "fr-qcm13-q03",
+            "qcm": "FR-QCM13",
+            "theme": "Deep Learning",
+            "question": "Que font les portes (gates) d’un LSTM ?",
+            "choices": [
+                "Elles contrôlent ce que la cellule mémoire (memory cell) oublie, écrit et renvoie",
+                "Elles normalisent les entrées de chaque couche",
+                "Elles mettent aléatoirement des activations à zéro",
+                "Elles calculent l’attention (attention) entre tous les tokens"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les portes d’oubli, d’entrée et de sortie gèrent la cellule mémoire.",
+            "tags": [
+                "LSTM",
+                "portes"
+            ]
+        },
+        {
+            "id": "fr-qcm13-q04",
+            "qcm": "FR-QCM13",
+            "theme": "Deep Learning",
+            "question": "Dans un Transformer, la sortie de l’auto-attention (self-attention) se calcule comme :",
+            "choices": [
+                "softmax(Q + K) V",
+                "ReLU(QKᵀ) V",
+                "softmax(QKᵀ / √d_k) V",
+                "softmax(VKᵀ / √d_k) Q"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les scores QKᵀ sont divisés par √d_k, passés dans un softmax, puis pondèrent V.",
+            "tags": [
+                "Transformer",
+                "self-attention"
+            ]
+        },
+        {
+            "id": "fr-qcm13-q05",
+            "qcm": "FR-QCM13",
+            "theme": "Deep Learning",
+            "question": "Pourquoi les Transformers ont-ils besoin d’un encodage positionnel (positional encoding) ?",
+            "choices": [
+                "Pour réduire le nombre de têtes d’attention (attention heads)",
+                "Parce que l’attention seule ne connaît pas l’ordre des tokens",
+                "Pour rendre le modèle bidirectionnel (bidirectional)",
+                "Pour compresser la séquence"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’attention voit les tokens comme un ensemble : il faut donc ajouter la position.",
+            "tags": [
+                "Transformer",
+                "encodage positionnel"
+            ]
+        },
+        {
+            "id": "fr-qcm14-q01",
+            "qcm": "FR-QCM14",
+            "theme": "Deep Learning",
+            "question": "Comment affine-t-on (fine-tuning) généralement un CNN pré-entraîné (pretrained) sur un petit nouveau jeu de données ?",
+            "choices": [
+                "On entraîne depuis zéro avec des poids aléatoires et un très grand taux d’apprentissage (learning rate)",
+                "On supprime toutes les couches de convolution du modèle pré-entraîné",
+                "On entraîne sur le jeu de test pour s’adapter plus vite",
+                "On remplace la dernière couche pour correspondre aux nouvelles classes et on l’entraîne (éventuellement avec quelques couches précédentes) avec un petit taux d’apprentissage"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "On réutilise les caractéristiques apprises et on adapte la fin du réseau avec un petit learning rate.",
+            "tags": [
+                "fine-tuning",
+                "transfer learning"
+            ]
+        },
+        {
+            "id": "fr-qcm14-q02",
+            "qcm": "FR-QCM14",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est correcte ?",
+            "choices": [
+                "YOLO : segmentation sémantique (semantic segmentation)",
+                "ResNet : génération de texte",
+                "U-Net : prédire une classe pour chaque pixel",
+                "GPT : détection d’objets (object detection)"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "U-Net et FCN font de la segmentation ; YOLO fait de la détection d’objets.",
+            "tags": [
+                "U-Net",
+                "segmentation",
+                "YOLO"
+            ]
+        },
+        {
+            "id": "fr-qcm14-q03",
+            "qcm": "FR-QCM14",
+            "theme": "Deep Learning",
+            "question": "Qu’est-ce qui distingue un VAE (variational autoencoder) d’un autoencodeur (autoencoder) standard ?",
+            "choices": [
+                "L’encodeur (encoder) produit une distribution (moyenne et variance) et un terme KL régularise l’espace latent (latent space), ce qui permet d’échantillonner de nouvelles données",
+                "Un VAE n’a pas de décodeur (decoder)",
+                "Un VAE a besoin d’étiquettes (labels) pour chaque image",
+                "Un VAE est entraîné avec un réseau discriminateur (discriminator)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L’espace latent est une distribution régularisée : on peut y échantillonner pour générer de nouvelles données.",
+            "tags": [
+                "VAE",
+                "autoencodeur",
+                "espace latent"
+            ]
+        },
+        {
+            "id": "fr-qcm14-q04",
+            "qcm": "FR-QCM14",
+            "theme": "Deep Learning",
+            "question": "Dans un GAN, quels sont les rôles des deux réseaux ?",
+            "choices": [
+                "Le générateur (generator) classe les images vraies et fausses ; le discriminateur (discriminator) génère des images à partir de bruit",
+                "Le générateur cherche à produire des échantillons qui trompent le discriminateur ; le discriminateur cherche à distinguer le vrai du généré",
+                "Les deux réseaux coopèrent pour minimiser la même erreur de reconstruction (reconstruction error)",
+                "Seul le générateur est entraîné ; le discriminateur reste fixe avec des poids aléatoires"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les deux réseaux sont entraînés l’un contre l’autre (entraînement adversarial, adversarial training).",
+            "tags": [
+                "GAN",
+                "générateur",
+                "discriminateur"
+            ]
+        },
+        {
+            "id": "fr-qcm14-q05",
+            "qcm": "FR-QCM14",
+            "theme": "Deep Learning",
+            "question": "À quoi un modèle de diffusion (diffusion model) est-il typiquement entraîné ?",
+            "choices": [
+                "À classer une image comme vraie ou fausse",
+                "À compresser les images en un petit vecteur latent",
+                "À prédire le bruit ajouté à une image bruitée (erreur quadratique moyenne (MSE) entre le vrai bruit et le bruit prédit)",
+                "À traduire des images d’un domaine à un autre sans données appariées (CycleGAN)"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L’entraînement consiste à prédire le bruit ; l’option D décrit CycleGAN.",
+            "tags": [
+                "modèle de diffusion",
+                "prédiction du bruit"
             ]
         }
     ]
