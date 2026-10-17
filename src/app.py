@@ -808,7 +808,12 @@ df = load_questions_json(QUESTIONS_FILE)
 available_qcms = sorted({q for q in df.get("qcm", pd.Series()).dropna().unique()})
 if available_qcms:
     with st.sidebar:
-        selected_qcm = st.selectbox("Filtrer par QCM", ["(Tous)"] + available_qcms)
+        selected_list = st.multiselect(
+            "Filtrer par QCM (un ou plusieurs)", available_qcms,
+            help="Vide = tous les QCM. Sélectionne plusieurs QCM pour les enchaîner dans une même session.",
+        )
+    # Libellé stable (utilisé pour les lots figés et les clés de session)
+    selected_qcm = " + ".join(sorted(selected_list)) if selected_list else "(Tous)"
 
     prev_qcm = st.session_state.get("selected_qcm")
     if prev_qcm is not None and prev_qcm != selected_qcm:
@@ -821,7 +826,7 @@ if available_qcms:
     st.session_state.selected_qcm = selected_qcm
 
     if selected_qcm != "(Tous)":
-        df = df[df["qcm"] == selected_qcm].reset_index(drop=True)
+        df = df[df["qcm"].isin(selected_list)].reset_index(drop=True)
 else:
     selected_qcm = None
 
