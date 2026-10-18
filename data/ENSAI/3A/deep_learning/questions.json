@@ -2745,6 +2745,306 @@
             }
         },
         {
+            "id": "qcm17-q01",
+            "qcm": "EN-QCM17",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is correct?",
+            "choices": [
+                "LSTM: object detection",
+                "R-CNN: object detection",
+                "BERT: image generation",
+                "ResNet: text generation"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "R-CNN trouve et classe les objets dans des régions de l’image.",
+            "tags": [
+                "tâches et modèles",
+                "R-CNN"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle association tâche–modèle est correcte ?",
+                "choices": [
+                    "LSTM : détection d’objets (object detection)",
+                    "R-CNN : détection d’objets",
+                    "BERT : génération d’images",
+                    "ResNet : génération de texte"
+                ]
+            }
+        },
+        {
+            "id": "qcm17-q02",
+            "qcm": "EN-QCM17",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is INCORRECT?",
+            "choices": [
+                "U-Net: segmentation",
+                "GPT: text generation",
+                "BERT: object detection",
+                "CycleGAN: unpaired image translation"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "BERT construit des représentations de texte ; la détection d’objets utilise R-CNN ou YOLO.",
+            "tags": [
+                "tâches et modèles",
+                "BERT"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle association tâche–modèle est INCORRECTE ?",
+                "choices": [
+                    "U-Net : segmentation (segmentation)",
+                    "GPT : génération de texte",
+                    "BERT : détection d’objets (object detection)",
+                    "CycleGAN : traduction d’images sans paires (unpaired image translation)"
+                ]
+            }
+        },
+        {
+            "id": "qcm17-q03",
+            "qcm": "EN-QCM17",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is correct?",
+            "choices": [
+                "Autoencoder: compress and reconstruct the input",
+                "GPT: image segmentation",
+                "YOLO: translating text",
+                "LSTM: image generation"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un autoencodeur apprend un code compressé en reconstruisant son entrée.",
+            "tags": [
+                "tâches et modèles",
+                "autoencodeur"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle association tâche–modèle est correcte ?",
+                "choices": [
+                    "Autoencodeur (autoencoder) : compresser et reconstruire l’entrée",
+                    "GPT : segmentation d’images",
+                    "YOLO : traduction de texte",
+                    "LSTM : génération d’images"
+                ]
+            }
+        },
+        {
+            "id": "qcm17-q04",
+            "qcm": "EN-QCM17",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is INCORRECT?",
+            "choices": [
+                "cGAN: generate an image of a chosen class",
+                "Diffusion model: generate images by denoising",
+                "VAE: generate new data by sampling the latent space",
+                "FCN: predict the next word"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "FCN fait de la segmentation (une classe par pixel) ; prédire le mot suivant, c’est GPT.",
+            "tags": [
+                "tâches et modèles",
+                "FCN"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle association tâche–modèle est INCORRECTE ?",
+                "choices": [
+                    "cGAN : générer une image d’une classe choisie",
+                    "Modèle de diffusion (diffusion model) : générer des images par débruitage (denoising)",
+                    "VAE : générer de nouvelles données en échantillonnant l’espace latent (latent space)",
+                    "FCN : prédire le mot suivant"
+                ]
+            }
+        },
+        {
+            "id": "qcm17-q05",
+            "qcm": "EN-QCM17",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is correct?",
+            "choices": [
+                "R-CNN: speech recognition",
+                "ViT: classify images using patches and a Transformer",
+                "LSTM: image segmentation",
+                "GAN: object detection"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "ViT découpe l’image en patchs traités comme des tokens.",
+            "tags": [
+                "tâches et modèles",
+                "ViT"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle association tâche–modèle est correcte ?",
+                "choices": [
+                    "R-CNN : reconnaissance vocale (speech recognition)",
+                    "ViT : classer des images à l’aide de patchs (patches) et d’un Transformer",
+                    "LSTM : segmentation d’images",
+                    "GAN : détection d’objets"
+                ]
+            }
+        },
+        {
+            "id": "qcm17-q06",
+            "qcm": "EN-QCM17",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is INCORRECT?",
+            "choices": [
+                "U-Net: language modelling",
+                "BERT: text representations",
+                "LSTM: sequences with long-term dependencies",
+                "GAN: generate realistic images"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "U-Net prédit une classe par pixel dans des images ; ce n’est pas un modèle de langage.",
+            "tags": [
+                "tâches et modèles",
+                "U-Net"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle association tâche–modèle est INCORRECTE ?",
+                "choices": [
+                    "U-Net : modélisation du langage (language modelling)",
+                    "BERT : représentations de texte",
+                    "LSTM : séquences avec dépendances à long terme (long-term dependencies)",
+                    "GAN : générer des images réalistes"
+                ]
+            }
+        },
+        {
+            "id": "qcm17-q07",
+            "qcm": "EN-QCM17",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is correct?",
+            "choices": [
+                "VAE: detect objects",
+                "GPT: segment images",
+                "YOLO: detect objects in a single pass",
+                "ResNet: translate text"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "YOLO prédit les boîtes (bounding boxes) et les classes en une seule passe.",
+            "tags": [
+                "tâches et modèles",
+                "YOLO"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle association tâche–modèle est correcte ?",
+                "choices": [
+                    "VAE : détecter des objets",
+                    "GPT : segmenter des images",
+                    "YOLO : détecter des objets en une seule passe",
+                    "ResNet : traduire du texte"
+                ]
+            }
+        },
+        {
+            "id": "qcm17-q08",
+            "qcm": "EN-QCM17",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is correct?",
+            "choices": [
+                "LSTM: image segmentation",
+                "BERT: image generation",
+                "Diffusion model: object detection",
+                "cGAN: generate an image conditioned on a label"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un cGAN reçoit une étiquette en entrée supplémentaire pour contrôler ce qu’il génère.",
+            "tags": [
+                "tâches et modèles",
+                "cGAN"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle association tâche–modèle est correcte ?",
+                "choices": [
+                    "LSTM : segmentation d’images",
+                    "BERT : génération d’images",
+                    "Modèle de diffusion : détection d’objets",
+                    "cGAN : générer une image conditionnée par une étiquette (label)"
+                ]
+            }
+        },
+        {
+            "id": "qcm17-q09",
+            "qcm": "EN-QCM17",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is INCORRECT?",
+            "choices": [
+                "ResNet: text generation",
+                "R-CNN: object detection",
+                "GPT: text generation",
+                "U-Net: pixel-wise segmentation"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "ResNet est un CNN pour les images (par exemple la classification), pas un générateur de texte.",
+            "tags": [
+                "tâches et modèles",
+                "ResNet"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle association tâche–modèle est INCORRECTE ?",
+                "choices": [
+                    "ResNet : génération de texte",
+                    "R-CNN : détection d’objets",
+                    "GPT : génération de texte",
+                    "U-Net : segmentation pixel par pixel (pixel-wise)"
+                ]
+            }
+        },
+        {
+            "id": "qcm17-q10",
+            "qcm": "EN-QCM17",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is correct?",
+            "choices": [
+                "GPT: segmentation",
+                "FCN: language translation",
+                "CycleGAN: translating images between two domains without pairs",
+                "BERT: image generation"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "CycleGAN utilise une perte de cohérence cyclique (cycle-consistency loss), donc il n’a pas besoin d’images appariées.",
+            "tags": [
+                "tâches et modèles",
+                "CycleGAN"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle association tâche–modèle est correcte ?",
+                "choices": [
+                    "GPT : segmentation",
+                    "FCN : traduction de langues",
+                    "CycleGAN : traduire des images entre deux domaines sans paires",
+                    "BERT : génération d’images"
+                ]
+            }
+        },
+        {
             "id": "fr-qcm1-q01",
             "qcm": "FR-QCM1",
             "theme": "Deep Learning",
@@ -5485,6 +5785,306 @@
                     "GPT",
                     "VAE",
                     "R-CNN"
+                ]
+            }
+        },
+        {
+            "id": "fr-qcm17-q01",
+            "qcm": "FR-QCM17",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est correcte ?",
+            "choices": [
+                "LSTM : détection d’objets (object detection)",
+                "R-CNN : détection d’objets",
+                "BERT : génération d’images",
+                "ResNet : génération de texte"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "R-CNN trouve et classe les objets dans des régions de l’image.",
+            "tags": [
+                "tâches et modèles",
+                "R-CNN"
+            ],
+            "translation": {
+                "label": "🇬🇧 English version",
+                "question": "Which task–model pair is correct?",
+                "choices": [
+                    "LSTM: object detection",
+                    "R-CNN: object detection",
+                    "BERT: image generation",
+                    "ResNet: text generation"
+                ]
+            }
+        },
+        {
+            "id": "fr-qcm17-q02",
+            "qcm": "FR-QCM17",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est INCORRECTE ?",
+            "choices": [
+                "U-Net : segmentation (segmentation)",
+                "GPT : génération de texte",
+                "BERT : détection d’objets (object detection)",
+                "CycleGAN : traduction d’images sans paires (unpaired image translation)"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "BERT construit des représentations de texte ; la détection d’objets utilise R-CNN ou YOLO.",
+            "tags": [
+                "tâches et modèles",
+                "BERT"
+            ],
+            "translation": {
+                "label": "🇬🇧 English version",
+                "question": "Which task–model pair is INCORRECT?",
+                "choices": [
+                    "U-Net: segmentation",
+                    "GPT: text generation",
+                    "BERT: object detection",
+                    "CycleGAN: unpaired image translation"
+                ]
+            }
+        },
+        {
+            "id": "fr-qcm17-q03",
+            "qcm": "FR-QCM17",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est correcte ?",
+            "choices": [
+                "Autoencodeur (autoencoder) : compresser et reconstruire l’entrée",
+                "GPT : segmentation d’images",
+                "YOLO : traduction de texte",
+                "LSTM : génération d’images"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un autoencodeur apprend un code compressé en reconstruisant son entrée.",
+            "tags": [
+                "tâches et modèles",
+                "autoencodeur"
+            ],
+            "translation": {
+                "label": "🇬🇧 English version",
+                "question": "Which task–model pair is correct?",
+                "choices": [
+                    "Autoencoder: compress and reconstruct the input",
+                    "GPT: image segmentation",
+                    "YOLO: translating text",
+                    "LSTM: image generation"
+                ]
+            }
+        },
+        {
+            "id": "fr-qcm17-q04",
+            "qcm": "FR-QCM17",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est INCORRECTE ?",
+            "choices": [
+                "cGAN : générer une image d’une classe choisie",
+                "Modèle de diffusion (diffusion model) : générer des images par débruitage (denoising)",
+                "VAE : générer de nouvelles données en échantillonnant l’espace latent (latent space)",
+                "FCN : prédire le mot suivant"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "FCN fait de la segmentation (une classe par pixel) ; prédire le mot suivant, c’est GPT.",
+            "tags": [
+                "tâches et modèles",
+                "FCN"
+            ],
+            "translation": {
+                "label": "🇬🇧 English version",
+                "question": "Which task–model pair is INCORRECT?",
+                "choices": [
+                    "cGAN: generate an image of a chosen class",
+                    "Diffusion model: generate images by denoising",
+                    "VAE: generate new data by sampling the latent space",
+                    "FCN: predict the next word"
+                ]
+            }
+        },
+        {
+            "id": "fr-qcm17-q05",
+            "qcm": "FR-QCM17",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est correcte ?",
+            "choices": [
+                "R-CNN : reconnaissance vocale (speech recognition)",
+                "ViT : classer des images à l’aide de patchs (patches) et d’un Transformer",
+                "LSTM : segmentation d’images",
+                "GAN : détection d’objets"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "ViT découpe l’image en patchs traités comme des tokens.",
+            "tags": [
+                "tâches et modèles",
+                "ViT"
+            ],
+            "translation": {
+                "label": "🇬🇧 English version",
+                "question": "Which task–model pair is correct?",
+                "choices": [
+                    "R-CNN: speech recognition",
+                    "ViT: classify images using patches and a Transformer",
+                    "LSTM: image segmentation",
+                    "GAN: object detection"
+                ]
+            }
+        },
+        {
+            "id": "fr-qcm17-q06",
+            "qcm": "FR-QCM17",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est INCORRECTE ?",
+            "choices": [
+                "U-Net : modélisation du langage (language modelling)",
+                "BERT : représentations de texte",
+                "LSTM : séquences avec dépendances à long terme (long-term dependencies)",
+                "GAN : générer des images réalistes"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "U-Net prédit une classe par pixel dans des images ; ce n’est pas un modèle de langage.",
+            "tags": [
+                "tâches et modèles",
+                "U-Net"
+            ],
+            "translation": {
+                "label": "🇬🇧 English version",
+                "question": "Which task–model pair is INCORRECT?",
+                "choices": [
+                    "U-Net: language modelling",
+                    "BERT: text representations",
+                    "LSTM: sequences with long-term dependencies",
+                    "GAN: generate realistic images"
+                ]
+            }
+        },
+        {
+            "id": "fr-qcm17-q07",
+            "qcm": "FR-QCM17",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est correcte ?",
+            "choices": [
+                "VAE : détecter des objets",
+                "GPT : segmenter des images",
+                "YOLO : détecter des objets en une seule passe",
+                "ResNet : traduire du texte"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "YOLO prédit les boîtes (bounding boxes) et les classes en une seule passe.",
+            "tags": [
+                "tâches et modèles",
+                "YOLO"
+            ],
+            "translation": {
+                "label": "🇬🇧 English version",
+                "question": "Which task–model pair is correct?",
+                "choices": [
+                    "VAE: detect objects",
+                    "GPT: segment images",
+                    "YOLO: detect objects in a single pass",
+                    "ResNet: translate text"
+                ]
+            }
+        },
+        {
+            "id": "fr-qcm17-q08",
+            "qcm": "FR-QCM17",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est correcte ?",
+            "choices": [
+                "LSTM : segmentation d’images",
+                "BERT : génération d’images",
+                "Modèle de diffusion : détection d’objets",
+                "cGAN : générer une image conditionnée par une étiquette (label)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Un cGAN reçoit une étiquette en entrée supplémentaire pour contrôler ce qu’il génère.",
+            "tags": [
+                "tâches et modèles",
+                "cGAN"
+            ],
+            "translation": {
+                "label": "🇬🇧 English version",
+                "question": "Which task–model pair is correct?",
+                "choices": [
+                    "LSTM: image segmentation",
+                    "BERT: image generation",
+                    "Diffusion model: object detection",
+                    "cGAN: generate an image conditioned on a label"
+                ]
+            }
+        },
+        {
+            "id": "fr-qcm17-q09",
+            "qcm": "FR-QCM17",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est INCORRECTE ?",
+            "choices": [
+                "ResNet : génération de texte",
+                "R-CNN : détection d’objets",
+                "GPT : génération de texte",
+                "U-Net : segmentation pixel par pixel (pixel-wise)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "ResNet est un CNN pour les images (par exemple la classification), pas un générateur de texte.",
+            "tags": [
+                "tâches et modèles",
+                "ResNet"
+            ],
+            "translation": {
+                "label": "🇬🇧 English version",
+                "question": "Which task–model pair is INCORRECT?",
+                "choices": [
+                    "ResNet: text generation",
+                    "R-CNN: object detection",
+                    "GPT: text generation",
+                    "U-Net: pixel-wise segmentation"
+                ]
+            }
+        },
+        {
+            "id": "fr-qcm17-q10",
+            "qcm": "FR-QCM17",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est correcte ?",
+            "choices": [
+                "GPT : segmentation",
+                "FCN : traduction de langues",
+                "CycleGAN : traduire des images entre deux domaines sans paires",
+                "BERT : génération d’images"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "CycleGAN utilise une perte de cohérence cyclique (cycle-consistency loss), donc il n’a pas besoin d’images appariées.",
+            "tags": [
+                "tâches et modèles",
+                "CycleGAN"
+            ],
+            "translation": {
+                "label": "🇬🇧 English version",
+                "question": "Which task–model pair is correct?",
+                "choices": [
+                    "GPT: segmentation",
+                    "FCN: language translation",
+                    "CycleGAN: translating images between two domains without pairs",
+                    "BERT: image generation"
                 ]
             }
         }
