@@ -1267,6 +1267,7 @@ if current_pos >= total_questions:
     order_map = {idx: pos for pos, idx in enumerate(presented_order)}
 
     recap_rows = []
+    wrong_ids = []  # indices (df) des questions ratées, pour les refaire
     answered_set = set(st.session_state.answers.keys())
     iter_indices = [i for i in presented_order if i in answered_set] if answered < total else list(presented_order)
 
@@ -1309,6 +1310,7 @@ if current_pos >= total_questions:
         st.divider()
 
         if not ok:
+            wrong_ids.append(i)
             recap_rows.append({
                 "question": row["question"],
                 "choices": "||".join(disp_choices),
@@ -1318,6 +1320,12 @@ if current_pos >= total_questions:
                 "qcm": row.get("qcm", None),
                 "theme": row.get("theme", None),
             })
+
+    if wrong_ids:
+        if st.button(f"🔁 Refaire uniquement mes erreurs ({len(wrong_ids)})", type="primary"):
+            _apply_subset(wrong_ids, shuffle=True)
+            st.session_state.current_lot_id = None
+            st.rerun()
 
     if recap_rows:
         if st.button("Enregistrer ces erreurs"):
