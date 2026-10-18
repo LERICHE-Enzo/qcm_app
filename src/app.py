@@ -562,6 +562,32 @@ with st.sidebar:
             st.session_state.step_id = 0  # on repart au début de l'exercice choisi
 
 
+# ===================== FICHES DE RÉVISION =====================
+FICHES_REVISION = {
+    "deep_learning": {
+        "titre": "📋 Tableau de révision : tâches ↔ modèles",
+        "colonnes": ["Tâche", "Modèles"],
+        "lignes": [
+            ("Classification d’images", "CNN, ResNet, ViT"),
+            ("Détection d’objets", "R-CNN, YOLO"),
+            ("Segmentation", "FCN, U-Net"),
+            ("Séquences (texte, temps)", "RNN, LSTM/GRU, Transformer"),
+            ("Texte : générer / représenter", "GPT / BERT"),
+            ("Génération d’images", "GAN, cGAN, VAE, diffusion"),
+            ("Traduction d’images sans paires", "CycleGAN"),
+        ],
+    },
+}
+
+_fiche = FICHES_REVISION.get(subject)
+if _fiche:
+    with st.expander(_fiche["titre"], expanded=False):
+        _md = "| " + " | ".join(_fiche["colonnes"]) + " |\n"
+        _md += "|" + "---|" * len(_fiche["colonnes"]) + "\n"
+        _md += "\n".join("| " + " | ".join(r) + " |" for r in _fiche["lignes"])
+        st.markdown(_md)
+
+
 # ===================== MODE EXERCICES GUIDÉS =====================
 if st.session_state.get("content_type_radio") == "Exercices":
     exercices = exercices_sidebar if exercices_sidebar is not None else load_exercices_json(EXERCICES_FILE, EXERCICES_FILE.stat().st_mtime if EXERCICES_FILE.exists() else 0.0)
