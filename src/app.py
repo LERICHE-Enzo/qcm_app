@@ -30,7 +30,7 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
         # tolérés
         "tags": "tags", "tag": "tags",
         "qcm": "qcm", "theme": "theme", "thème": "theme", "id": "id",
-        "id_gen": "id_gen", "image": "image",
+        "id_gen": "id_gen", "image": "image", "translation": "translation",
     }
     df.rename(columns={c: alias.get(c, c) for c in df.columns}, inplace=True)
 
@@ -83,7 +83,7 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
 
     df["answer_parsed"] = df["answer"].apply(parse_answer)
 
-    for col in ["explanation", "tags", "qcm", "theme", "id", "id_gen", "image"]:
+    for col in ["explanation", "tags", "qcm", "theme", "id", "id_gen", "image", "translation"]:
         if col not in df.columns:
             df[col] = None
 
@@ -298,6 +298,19 @@ def validate_answers_and_choices(df_: pd.DataFrame):
             })
 
     return errors
+
+
+def _translation_md(row, perm) -> str:
+    """Traduction (question + choix) dans le MÊME ordre/lettres que l'affichage mélangé."""
+    tr = row.get("translation") if hasattr(row, "get") else None
+    if not isinstance(tr, dict):
+        return ""
+    ch = tr.get("choices") or []
+    if len(ch) != len(perm):
+        return ""
+    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    lines = [f"- **{letters[i]}**. {ch[k]}" for i, k in enumerate(perm)]
+    return f"**{tr.get('label', 'Traduction')}**\n\n{tr.get('question', '')}\n\n" + "\n".join(lines)
 
 
 def _freeze_order(df_: pd.DataFrame, shuffle_flag: bool):
@@ -1206,6 +1219,9 @@ def _current_qcm_question_block():
         st.info(f"Bonne(s) réponse(s) : **{correct_letters_local}**")
         if str(row.get("explanation", "")).strip():
             st.info(row.get("explanation"))
+        tr_md = _translation_md(row, perm_local)
+        if tr_md:
+            st.info(tr_md)
 
     return shuffled_answer_list
 
@@ -1259,6 +1275,10 @@ if current_pos >= total_questions:
         if str(row.get("explanation", "") or "").strip():
             with st.expander("Explication"):
                 st.markdown(row["explanation"])
+        tr_md_g = _translation_md(row, perm_disp)
+        if tr_md_g:
+            with st.expander("Traduction / Translation"):
+                st.markdown(tr_md_g)
 
         st.divider()
 
