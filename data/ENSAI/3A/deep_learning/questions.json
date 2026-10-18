@@ -3625,6 +3625,765 @@
             }
         },
         {
+            "id": "qcm19-q01",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "In a PyTorch training loop, a student forgets to call optimizer.zero_grad() at each iteration. What happens?",
+            "choices": [
+                "The weights are never updated during training.",
+                "The gradients accumulate over iterations and the updates become wrong.",
+                "The loss is automatically set to zero at each step.",
+                "The model switches to evaluation mode."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "backward() ajoute les gradients aux anciens.",
+            "tags": [
+                "PyTorch",
+                "zero_grad"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans une boucle d’entraînement PyTorch, un étudiant oublie d’appeler optimizer.zero_grad() à chaque itération. Que se passe-t-il ?",
+                "choices": [
+                    "Les poids ne sont jamais mis à jour pendant l’entraînement.",
+                    "Les gradients s’accumulent au fil des itérations et les mises à jour deviennent fausses.",
+                    "La perte est automatiquement mise à zéro à chaque étape.",
+                    "Le modèle passe en mode évaluation."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q02",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "A feature map of size 8×8 goes through nn.MaxPool2d(kernel_size=2) (stride 2 by default). What is the output size?",
+            "choices": [
+                "2×2",
+                "6×6",
+                "8×8",
+                "4×4"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le pooling 2×2 divise H et W par 2.",
+            "tags": [
+                "pooling",
+                "taille de sortie"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Une carte de caractéristiques de taille 8×8 passe dans nn.MaxPool2d(kernel_size=2) (stride 2 par défaut). Quelle est la taille de sortie ?",
+                "choices": [
+                    "2×2",
+                    "6×6",
+                    "8×8",
+                    "4×4"
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q03",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "The training loss suddenly becomes NaN after a few iterations. Which cause is the most likely?",
+            "choices": [
+                "The batch size is a power of two.",
+                "The learning rate is far too large, so the weights diverge.",
+                "The model has too few parameters.",
+                "The validation set is too small."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Avec des pas trop grands, les poids explosent.",
+            "tags": [
+                "learning rate",
+                "divergence",
+                "NaN"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "La perte d’entraînement devient soudainement NaN après quelques itérations. Quelle cause est la plus probable ?",
+                "choices": [
+                    "La taille du batch est une puissance de deux.",
+                    "Le taux d’apprentissage est beaucoup trop grand, donc les poids divergent.",
+                    "Le modèle a trop peu de paramètres.",
+                    "Le jeu de validation est trop petit."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q04",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "In a custom PyTorch Dataset, what should __len__ return?",
+            "choices": [
+                "The number of pixels in the first image.",
+                "The number of epochs used for training.",
+                "The total number of samples in the dataset.",
+                "The batch size used by the DataLoader."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "__len__ renvoie la taille du jeu de données ; le DataLoader s’en sert avec __getitem__.",
+            "tags": [
+                "PyTorch",
+                "Dataset"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans un Dataset PyTorch personnalisé, que doit renvoyer __len__ ?",
+                "choices": [
+                    "Le nombre de pixels de la première image.",
+                    "Le nombre d’époques utilisées pour l’entraînement.",
+                    "Le nombre total d’échantillons du jeu de données.",
+                    "La taille de batch utilisée par le DataLoader."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q05",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "A model contains dropout layers. What does model.eval() do to them?",
+            "choices": [
+                "It turns dropout off, so all neurons are used.",
+                "It doubles the dropout rate to be safer.",
+                "It stops gradient computation for the whole model.",
+                "It resets all the weights of the model."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Arrêter les gradients, c’est torch.no_grad().",
+            "tags": [
+                "dropout",
+                "eval",
+                "PyTorch"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Un modèle contient des couches de dropout. Que fait model.eval() sur elles ?",
+                "choices": [
+                    "Il désactive le dropout, donc tous les neurones sont utilisés.",
+                    "Il double le taux de dropout par sécurité.",
+                    "Il arrête le calcul des gradients pour tout le modèle.",
+                    "Il réinitialise tous les poids du modèle."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q06",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "In a convolution layer, you change the stride from 1 to 2 (same kernel size, no padding). What is the main effect?",
+            "choices": [
+                "The output becomes larger.",
+                "The number of parameters doubles.",
+                "The number of channels is halved.",
+                "The output becomes about half as large."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le stride agit sur la taille de la sortie, pas sur les paramètres.",
+            "tags": [
+                "stride",
+                "convolution"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans une couche de convolution, tu passes le stride de 1 à 2 (même taille de noyau, pas de padding). Quel est l’effet principal ?",
+                "choices": [
+                    "La sortie devient plus grande.",
+                    "Le nombre de paramètres double.",
+                    "Le nombre de canaux est divisé par deux.",
+                    "La sortie devient environ deux fois plus petite."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q07",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "You train a 5-class classifier with a batch of 16 images and nn.CrossEntropyLoss. Which shapes are expected?",
+            "choices": [
+                "Predictions [16] and targets [16, 5].",
+                "Predictions [16, 5] and targets [16, 5], one-hot only.",
+                "Predictions [16, 5] and targets [16], class indices.",
+                "Predictions [5] and targets [16]."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les logits ont la forme [batch, classes] et les cibles sont les indices de classe, de forme [batch].",
+            "tags": [
+                "PyTorch",
+                "CrossEntropyLoss",
+                "dimensions"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Tu entraînes un classifieur à 5 classes avec un batch de 16 images et nn.CrossEntropyLoss. Quelles dimensions sont attendues ?",
+                "choices": [
+                    "Prédictions [16] et cibles [16, 5].",
+                    "Prédictions [16, 5] et cibles [16, 5], uniquement en one-hot.",
+                    "Prédictions [16, 5] et cibles [16], indices de classes.",
+                    "Prédictions [5] et cibles [16]."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q08",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "Why are convolution layers often preferred to fully connected layers for images?",
+            "choices": [
+                "They need no training because their kernels are fixed by hand.",
+                "They reuse the same small kernel at every position, so they need fewer parameters.",
+                "They work only if the image is flattened into a vector first.",
+                "They can only process grayscale images with a single channel."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Poids partagés.",
+            "tags": [
+                "CNN",
+                "partage de poids"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi préfère-t-on souvent les couches de convolution aux couches entièrement connectées pour les images ?",
+                "choices": [
+                    "Elles n’ont pas besoin d’entraînement car leurs noyaux sont fixés à la main.",
+                    "Elles réutilisent le même petit noyau à chaque position, donc elles ont besoin de moins de paramètres.",
+                    "Elles ne fonctionnent que si l’image est d’abord aplatie en vecteur.",
+                    "Elles ne peuvent traiter que des images en niveaux de gris à un seul canal."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q09",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "You fine-tune a CNN pretrained on 1000 classes for a task with 3 classes. What do you do with its last layer?",
+            "choices": [
+                "Replace it with a new linear layer that has 3 outputs.",
+                "Keep it unchanged, with its 1000 outputs.",
+                "Remove all the convolution layers of the network.",
+                "Add a softmax layer that takes 1000 inputs."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "On remplace la dernière couche pour qu’elle corresponde au nombre de nouvelles classes.",
+            "tags": [
+                "fine-tuning",
+                "transfer learning"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Tu affines (fine-tuning) un CNN pré-entraîné sur 1000 classes pour une tâche à 3 classes. Que fais-tu de sa dernière couche ?",
+                "choices": [
+                    "La remplacer par une nouvelle couche linéaire à 3 sorties.",
+                    "La garder inchangée, avec ses 1000 sorties.",
+                    "Supprimer toutes les couches de convolution du réseau.",
+                    "Ajouter une couche softmax qui prend 1000 entrées."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q10",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "Both training and validation accuracy are low (around 40%) and stay low. Which action is the most likely to help?",
+            "choices": [
+                "Add dropout to the model.",
+                "Stop the training earlier.",
+                "Use stronger data augmentation.",
+                "Use a larger model or train for more epochs."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "C’est du sous-apprentissage (underfitting). Le dropout et l’augmentation de données luttent contre le surapprentissage.",
+            "tags": [
+                "underfitting",
+                "capacité du modèle"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "L’exactitude d’entraînement et de validation est faible (environ 40 %) et le reste. Quelle action a le plus de chances d’aider ?",
+                "choices": [
+                    "Ajouter du dropout au modèle.",
+                    "Arrêter l’entraînement plus tôt.",
+                    "Utiliser une augmentation de données plus forte.",
+                    "Utiliser un modèle plus grand ou entraîner plus d’époques."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q11",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "A 3×3 convolution kernel is applied to an RGB image. How many weights does one kernel have, bias excluded?",
+            "choices": [
+                "9",
+                "3",
+                "27",
+                "18"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "3 × 3 × 3 = 27.",
+            "tags": [
+                "convolution",
+                "nombre de paramètres"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Un noyau de convolution 3×3 est appliqué à une image RGB. Combien de poids possède un noyau, biais exclu ?",
+                "choices": [
+                    "9",
+                    "3",
+                    "27",
+                    "18"
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q12",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "In an RNN, the same weights are used at every time step. What is the benefit?",
+            "choices": [
+                "The network processes each step independently of the others.",
+                "The network handles sequences of any length with a fixed number of parameters.",
+                "The network no longer needs a hidden state.",
+                "The network trains without any loss function."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le partage des poids permet de traiter des séquences de longueur variable avec un nombre fixe de paramètres.",
+            "tags": [
+                "RNN",
+                "partage de poids"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans un RNN, les mêmes poids sont utilisés à chaque pas de temps. Quel est l’avantage ?",
+                "choices": [
+                    "Le réseau traite chaque pas indépendamment des autres.",
+                    "Le réseau gère des séquences de n’importe quelle longueur avec un nombre fixe de paramètres.",
+                    "Le réseau n’a plus besoin d’état caché.",
+                    "Le réseau s’entraîne sans aucune fonction de perte."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q13",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "Why do we usually normalize the input images (for example, scale pixels from 0–255 to 0–1)?",
+            "choices": [
+                "To reduce the number of classes in the dataset.",
+                "To increase the resolution of the images.",
+                "To make the labels one-hot encoded.",
+                "To keep input values in a small range for stable training."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Des entrées dans une plage réduite rendent l’optimisation plus stable.",
+            "tags": [
+                "normalisation",
+                "prétraitement"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi normalise-t-on généralement les images d’entrée (par exemple en ramenant les pixels de 0–255 à 0–1) ?",
+                "choices": [
+                    "Pour réduire le nombre de classes du jeu de données.",
+                    "Pour augmenter la résolution des images.",
+                    "Pour encoder les étiquettes en one-hot.",
+                    "Pour garder les valeurs d’entrée dans une petite plage, pour un entraînement stable."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q14",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "In the self-attention of a Transformer encoder, how is the output for one token computed?",
+            "choices": [
+                "It only looks at the token just before it.",
+                "It looks only at itself and ignores the others.",
+                "It takes a weighted average of the values of all tokens.",
+                "It multiplies each token by a fixed constant."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les poids d’attention pondèrent les valeurs V de tous les tokens de la séquence.",
+            "tags": [
+                "Transformer",
+                "self-attention"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans l’auto-attention d’un encodeur de Transformer, comment la sortie d’un token est-elle calculée ?",
+                "choices": [
+                    "Elle ne regarde que le token juste avant.",
+                    "Elle ne regarde que lui-même et ignore les autres.",
+                    "Elle prend une moyenne pondérée des valeurs de tous les tokens.",
+                    "Elle multiplie chaque token par une constante fixe."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q15",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "Which method computes the gradient on the entire training set for each parameter update?",
+            "choices": [
+                "Full-batch gradient descent.",
+                "SGD with one sample per update.",
+                "Mini-batch GD with 32 samples.",
+                "Early stopping on the validation set."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le full-batch utilise tout le jeu à chaque mise à jour ; l’early stopping n’est pas une méthode d’optimisation du gradient.",
+            "tags": [
+                "descente de gradient",
+                "full-batch"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle méthode calcule le gradient sur tout le jeu d’entraînement à chaque mise à jour des paramètres ?",
+                "choices": [
+                    "La descente de gradient sur le batch complet.",
+                    "Le SGD avec un échantillon par mise à jour.",
+                    "La GD par mini-batch de 32 échantillons.",
+                    "L’arrêt précoce sur le jeu de validation."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q16",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "What is the role of a pooling layer in a CNN?",
+            "choices": [
+                "It adds trainable filters to detect new patterns.",
+                "It converts the feature maps into class probabilities.",
+                "It increases the number of channels of the feature maps.",
+                "It reduces the spatial size and the computation, with no parameters."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le pooling réduit la taille spatiale, sans paramètres entraînables.",
+            "tags": [
+                "pooling",
+                "CNN"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le rôle d’une couche de pooling dans un CNN ?",
+                "choices": [
+                    "Elle ajoute des filtres entraînables pour détecter de nouveaux motifs.",
+                    "Elle convertit les cartes de caractéristiques en probabilités de classes.",
+                    "Elle augmente le nombre de canaux des cartes de caractéristiques.",
+                    "Elle réduit la taille spatiale et le calcul, sans paramètres."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q17",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "Feature maps of shape [32, 8, 14, 14] go through nn.Flatten(), then nn.Linear(784, 10), and you get a shape error. What should the input size of the linear layer be?",
+            "choices": [
+                "112",
+                "1568",
+                "784",
+                "8"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "8 × 14 × 14 = 1568.",
+            "tags": [
+                "PyTorch",
+                "Flatten",
+                "Linear",
+                "dimensions"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Des cartes de caractéristiques de forme [32, 8, 14, 14] passent dans nn.Flatten(), puis nn.Linear(784, 10), et tu obtiens une erreur de dimensions. Quelle doit être la taille d’entrée de la couche linéaire ?",
+                "choices": [
+                    "112",
+                    "1568",
+                    "784",
+                    "8"
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q18",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "What is a logit in a classification network?",
+            "choices": [
+                "A probability between 0 and 1 for one class.",
+                "The true label of the image.",
+                "A raw score from the last layer, before the softmax.",
+                "The value of the loss for one batch."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un logit est un score brut, avant softmax.",
+            "tags": [
+                "logits",
+                "softmax"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu’est-ce qu’un logit dans un réseau de classification ?",
+                "choices": [
+                    "Une probabilité entre 0 et 1 pour une classe.",
+                    "L’étiquette réelle de l’image.",
+                    "Un score brut de la dernière couche, avant le softmax.",
+                    "La valeur de la perte pour un batch."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q19",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "Why do we need a non-linear activation function between linear layers?",
+            "choices": [
+                "Without it, stacked linear layers would collapse into one linear layer.",
+                "It increases the number of trainable parameters of each layer.",
+                "It guarantees that the training loss reaches zero.",
+                "It makes the network faster by removing the bias terms."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Une composition de fonctions linéaires reste linéaire : l’activation non linéaire apporte l’expressivité.",
+            "tags": [
+                "activation",
+                "non-linéarité"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi a-t-on besoin d’une fonction d’activation non linéaire entre les couches linéaires ?",
+                "choices": [
+                    "Sans elle, des couches linéaires empilées se réduiraient à une seule couche linéaire.",
+                    "Elle augmente le nombre de paramètres entraînables de chaque couche.",
+                    "Elle garantit que la perte d’entraînement atteint zéro.",
+                    "Elle accélère le réseau en supprimant les termes de biais."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q20",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "A convolution uses a 5×5 kernel with stride 1. Which padding keeps the output the same size as the input?",
+            "choices": [
+                "0",
+                "1",
+                "3",
+                "2"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "p = (k − 1)/2 = 2.",
+            "tags": [
+                "padding",
+                "convolution"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Une convolution utilise un noyau 5×5 avec un stride de 1. Quel padding conserve la taille de la sortie identique à celle de l’entrée ?",
+                "choices": [
+                    "0",
+                    "1",
+                    "3",
+                    "2"
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q21",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "The model outputs logits of shape [64, 10]. How do you get the predicted class of each image?",
+            "choices": [
+                "logits.mean(dim=1)",
+                "logits.sum(dim=1)",
+                "logits.argmax(dim=1)",
+                "logits.softmax(dim=0)"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "On prend l’argmax sur la dimension des classes (dim=1).",
+            "tags": [
+                "PyTorch",
+                "argmax",
+                "logits"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le modèle sort des logits de forme [64, 10]. Comment obtient-on la classe prédite de chaque image ?",
+                "choices": [
+                    "logits.mean(dim=1)",
+                    "logits.sum(dim=1)",
+                    "logits.argmax(dim=1)",
+                    "logits.softmax(dim=0)"
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q22",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "How do you freeze the weights of a pretrained layer in PyTorch?",
+            "choices": [
+                "Set requires_grad = False on its parameters.",
+                "Call layer.eval() on it.",
+                "Call optimizer.zero_grad() once.",
+                "Move it to the CPU with layer.to('cpu')."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "requires_grad = False empêche le calcul des gradients des paramètres, donc leur mise à jour.",
+            "tags": [
+                "PyTorch",
+                "freeze",
+                "fine-tuning"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Comment gèle-t-on les poids d’une couche pré-entraînée en PyTorch ?",
+                "choices": [
+                    "Mettre requires_grad = False sur ses paramètres.",
+                    "Appeler layer.eval() dessus.",
+                    "Appeler optimizer.zero_grad() une fois.",
+                    "La déplacer sur le CPU avec layer.to('cpu')."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q23",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "An input of shape [3, 32, 32] goes through nn.Conv2d(3, 16, kernel_size=3, padding=1) then nn.MaxPool2d(2). What is the output shape?",
+            "choices": [
+                "[3, 16, 16]",
+                "[16, 16, 16]",
+                "[16, 32, 32]",
+                "[16, 15, 15]"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Conv : [16, 32, 32], puis pooling : [16, 16, 16].",
+            "tags": [
+                "convolution",
+                "pooling",
+                "dimensions"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Une entrée de forme [3, 32, 32] passe dans nn.Conv2d(3, 16, kernel_size=3, padding=1) puis nn.MaxPool2d(2). Quelle est la forme de sortie ?",
+                "choices": [
+                    "[3, 16, 16]",
+                    "[16, 16, 16]",
+                    "[16, 32, 32]",
+                    "[16, 15, 15]"
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q24",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "Compared with an RNN, why can a Transformer usually be trained faster on GPUs?",
+            "choices": [
+                "It has no trainable parameters.",
+                "It uses a smaller vocabulary.",
+                "It processes all tokens of a sequence in parallel, not one by one.",
+                "It does not need a loss function."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Pas de dépendance séquentielle entre les pas : le calcul se parallélise sur toute la séquence.",
+            "tags": [
+                "Transformer",
+                "RNN",
+                "parallélisation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Par rapport à un RNN, pourquoi un Transformer peut-il généralement être entraîné plus vite sur GPU ?",
+                "choices": [
+                    "Il n’a aucun paramètre entraînable.",
+                    "Il utilise un vocabulaire plus petit.",
+                    "Il traite tous les tokens d’une séquence en parallèle, et non un par un.",
+                    "Il n’a pas besoin de fonction de perte."
+                ]
+            }
+        },
+        {
+            "id": "qcm19-q25",
+            "qcm": "EN-QCM19",
+            "theme": "Deep Learning",
+            "question": "In a linear layer y = Wx + b, what is the role of the bias b?",
+            "choices": [
+                "It scales the input before the layer.",
+                "It normalizes the output so that it sums to 1.",
+                "It selects which neurons are dropped.",
+                "It lets the output be shifted, even when the input is zero."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le biais décale la sortie : pour x = 0, y = b.",
+            "tags": [
+                "couche linéaire",
+                "biais"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans une couche linéaire y = Wx + b, quel est le rôle du biais b ?",
+                "choices": [
+                    "Il met à l’échelle l’entrée avant la couche.",
+                    "Il normalise la sortie pour qu’elle somme à 1.",
+                    "Il sélectionne quels neurones sont supprimés.",
+                    "Il permet de décaler la sortie, même quand l’entrée est nulle."
+                ]
+            }
+        },
+        {
             "id": "fr-qcm1-q01",
             "qcm": "FR-QCM1",
             "theme": "Deep Learning",
