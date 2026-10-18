@@ -1599,6 +1599,245 @@
             ]
         },
         {
+            "id": "qcm15-q01",
+            "qcm": "EN-QCM15",
+            "theme": "Deep Learning",
+            "question": "Which model detects and localizes several objects in an image with bounding boxes, in a single pass?",
+            "choices": [
+                "U-Net",
+                "LSTM",
+                "YOLO",
+                "VAE"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "YOLO prédit les boîtes et les classes en une seule passe sur l’image.\n\n---\n\n**🇫🇷 Traduction**\n\nQuel modèle détecte et localise plusieurs objets dans une image avec des boîtes englobantes (bounding boxes), en une seule passe ?\n\n- (a) U-Net\n- (b) LSTM\n- (c) YOLO\n- (d) VAE",
+            "tags": [
+                "YOLO",
+                "détection d’objets"
+            ]
+        },
+        {
+            "id": "qcm15-q02",
+            "qcm": "EN-QCM15",
+            "theme": "Deep Learning",
+            "question": "Which model can translate photos of horses into zebras without paired training images?",
+            "choices": [
+                "cGAN",
+                "CycleGAN",
+                "ResNet",
+                "GPT"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "CycleGAN utilise une perte de cohérence cyclique (cycle-consistency loss), donc pas besoin de paires.\n\n---\n\n**🇫🇷 Traduction**\n\nQuel modèle peut transformer des photos de chevaux en zèbres sans images d’entraînement appariées (paired) ?\n\n- (a) cGAN\n- (b) CycleGAN\n- (c) ResNet\n- (d) GPT",
+            "tags": [
+                "CycleGAN",
+                "GAN"
+            ]
+        },
+        {
+            "id": "qcm15-q03",
+            "qcm": "EN-QCM15",
+            "theme": "Deep Learning",
+            "question": "Which model can generate an image of a digit chosen by the user (for example “7”)?",
+            "choices": [
+                "Conditional GAN (cGAN)",
+                "Standard GAN (no conditioning)",
+                "YOLO",
+                "Autoencoder"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un cGAN reçoit l’étiquette (label) en entrée supplémentaire ; un GAN standard ne peut pas choisir la classe.\n\n---\n\n**🇫🇷 Traduction**\n\nQuel modèle peut générer une image d’un chiffre choisi par l’utilisateur (par exemple « 7 ») ?\n\n- (a) GAN conditionnel (conditional GAN, cGAN)\n- (b) GAN standard (sans conditionnement)\n- (c) YOLO\n- (d) Autoencodeur (autoencoder)",
+            "tags": [
+                "cGAN",
+                "GAN"
+            ]
+        },
+        {
+            "id": "qcm15-q04",
+            "qcm": "EN-QCM15",
+            "theme": "Deep Learning",
+            "question": "Which model generates text one token at a time by predicting the next token?",
+            "choices": [
+                "ResNet",
+                "U-Net",
+                "YOLO",
+                "GPT"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "GPT est un décodeur (decoder) de Transformer avec masquage causal (causal masking).\n\n---\n\n**🇫🇷 Traduction**\n\nQuel modèle génère du texte un token à la fois en prédisant le token suivant ?\n\n- (a) ResNet\n- (b) U-Net\n- (c) YOLO\n- (d) GPT",
+            "tags": [
+                "GPT",
+                "Transformer"
+            ]
+        },
+        {
+            "id": "qcm15-q05",
+            "qcm": "EN-QCM15",
+            "theme": "Deep Learning",
+            "question": "Which model is a Transformer encoder used to build representations of text?",
+            "choices": [
+                "BERT",
+                "GPT",
+                "U-Net",
+                "CycleGAN"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "BERT est uniquement encodeur ; GPT est uniquement décodeur.\n\n---\n\n**🇫🇷 Traduction**\n\nQuel modèle est un encodeur (encoder) de Transformer utilisé pour construire des représentations de texte ?\n\n- (a) BERT\n- (b) GPT\n- (c) U-Net\n- (d) CycleGAN",
+            "tags": [
+                "BERT",
+                "Transformer"
+            ]
+        },
+        {
+            "id": "qcm15-q06",
+            "qcm": "EN-QCM15",
+            "theme": "Deep Learning",
+            "question": "Which model applies a Transformer to an image split into patches?",
+            "choices": [
+                "R-CNN",
+                "ViT (Vision Transformer)",
+                "LSTM",
+                "VAE"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "ViT traite les patchs de l’image comme des tokens.\n\n---\n\n**🇫🇷 Traduction**\n\nQuel modèle applique un Transformer à une image découpée en patchs (patches) ?\n\n- (a) R-CNN\n- (b) ViT (Vision Transformer)\n- (c) LSTM\n- (d) VAE",
+            "tags": [
+                "ViT",
+                "Transformer"
+            ]
+        },
+        {
+            "id": "qcm16-q01",
+            "qcm": "EN-QCM16",
+            "theme": "Deep Learning",
+            "question": "Which model is a recurrent network with gates designed to handle long-term dependencies?",
+            "choices": [
+                "FCN",
+                "YOLO",
+                "LSTM",
+                "ResNet"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les portes du LSTM atténuent le problème du gradient qui disparaît (vanishing gradient) dans les séquences.\n\n---\n\n**🇫🇷 Traduction**\n\nQuel modèle est un réseau récurrent (recurrent network) à portes (gates) conçu pour gérer les dépendances à long terme (long-term dependencies) ?\n\n- (a) FCN\n- (b) YOLO\n- (c) LSTM\n- (d) ResNet",
+            "tags": [
+                "LSTM",
+                "RNN"
+            ]
+        },
+        {
+            "id": "qcm16-q02",
+            "qcm": "EN-QCM16",
+            "theme": "Deep Learning",
+            "question": "Which model learns a compressed code of its input by reconstructing it, without labels?",
+            "choices": [
+                "GAN",
+                "Autoencoder",
+                "ResNet",
+                "YOLO"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un autoencodeur est entraîné à reconstruire son entrée à travers un petit code latent (latent code).\n\n---\n\n**🇫🇷 Traduction**\n\nQuel modèle apprend un code compressé de son entrée en la reconstruisant, sans étiquettes ?\n\n- (a) GAN\n- (b) Autoencodeur (autoencoder)\n- (c) ResNet\n- (d) YOLO",
+            "tags": [
+                "autoencodeur",
+                "espace latent"
+            ]
+        },
+        {
+            "id": "qcm16-q03",
+            "qcm": "EN-QCM16",
+            "theme": "Deep Learning",
+            "question": "Which model generates images by gradually removing noise, step by step?",
+            "choices": [
+                "Diffusion model",
+                "LSTM",
+                "YOLO",
+                "ResNet"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un modèle de diffusion apprend à prédire puis retirer le bruit.\n\n---\n\n**🇫🇷 Traduction**\n\nQuel modèle génère des images en retirant progressivement du bruit, étape par étape ?\n\n- (a) Modèle de diffusion (diffusion model)\n- (b) LSTM\n- (c) YOLO\n- (d) ResNet",
+            "tags": [
+                "modèle de diffusion"
+            ]
+        },
+        {
+            "id": "qcm16-q04",
+            "qcm": "EN-QCM16",
+            "theme": "Deep Learning",
+            "question": "Which task–model pair is INCORRECT?",
+            "choices": [
+                "Time series: LSTM",
+                "Image classification: ResNet",
+                "Object detection: GPT",
+                "Image generation: diffusion model"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La détection d’objets utilise R-CNN ou YOLO ; GPT génère du texte.\n\n---\n\n**🇫🇷 Traduction**\n\nQuelle association tâche–modèle est INCORRECTE ?\n\n- (a) Séries temporelles (time series) : LSTM\n- (b) Classification d’images (image classification) : ResNet\n- (c) Détection d’objets (object detection) : GPT\n- (d) Génération d’images : modèle de diffusion",
+            "tags": [
+                "tâches et modèles",
+                "GPT"
+            ]
+        },
+        {
+            "id": "qcm16-q05",
+            "qcm": "EN-QCM16",
+            "theme": "Deep Learning",
+            "question": "Which architecture uses an encoder–decoder with skip connections (concatenation) to predict a class for each pixel?",
+            "choices": [
+                "YOLO",
+                "LSTM",
+                "BERT",
+                "U-Net"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "U-Net fait de la segmentation (segmentation), et ses skip connections restituent les détails spatiaux.\n\n---\n\n**🇫🇷 Traduction**\n\nQuelle architecture utilise un encodeur–décodeur avec des connexions raccourcis (skip connections, par concaténation) pour prédire une classe pour chaque pixel ?\n\n- (a) YOLO\n- (b) LSTM\n- (c) BERT\n- (d) U-Net",
+            "tags": [
+                "U-Net",
+                "segmentation"
+            ]
+        },
+        {
+            "id": "qcm16-q06",
+            "qcm": "EN-QCM16",
+            "theme": "Deep Learning",
+            "question": "Which detector extracts about 2000 region proposals and runs a CNN on each one?",
+            "choices": [
+                "U-Net",
+                "GPT",
+                "VAE",
+                "R-CNN"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "R-CNN classe chaque région séparément, ce qui le rend lent ; YOLO est plus rapide.\n\n---\n\n**🇫🇷 Traduction**\n\nQuel détecteur extrait environ 2000 régions candidates (region proposals) et passe chacune dans un CNN ?\n\n- (a) U-Net\n- (b) GPT\n- (c) VAE\n- (d) R-CNN",
+            "tags": [
+                "R-CNN",
+                "détection d’objets"
+            ]
+        },
+        {
             "id": "fr-qcm1-q01",
             "qcm": "FR-QCM1",
             "theme": "Deep Learning",
@@ -3194,6 +3433,245 @@
             "tags": [
                 "modèle de diffusion",
                 "prédiction du bruit"
+            ]
+        },
+        {
+            "id": "fr-qcm15-q01",
+            "qcm": "FR-QCM15",
+            "theme": "Deep Learning",
+            "question": "Quel modèle détecte et localise plusieurs objets dans une image avec des boîtes englobantes (bounding boxes), en une seule passe ?",
+            "choices": [
+                "U-Net",
+                "LSTM",
+                "YOLO",
+                "VAE"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "YOLO prédit les boîtes et les classes en une seule passe sur l’image.",
+            "tags": [
+                "YOLO",
+                "détection d’objets"
+            ]
+        },
+        {
+            "id": "fr-qcm15-q02",
+            "qcm": "FR-QCM15",
+            "theme": "Deep Learning",
+            "question": "Quel modèle peut transformer des photos de chevaux en zèbres sans images d’entraînement appariées (paired) ?",
+            "choices": [
+                "cGAN",
+                "CycleGAN",
+                "ResNet",
+                "GPT"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "CycleGAN utilise une perte de cohérence cyclique (cycle-consistency loss), donc pas besoin de paires.",
+            "tags": [
+                "CycleGAN",
+                "GAN"
+            ]
+        },
+        {
+            "id": "fr-qcm15-q03",
+            "qcm": "FR-QCM15",
+            "theme": "Deep Learning",
+            "question": "Quel modèle peut générer une image d’un chiffre choisi par l’utilisateur (par exemple « 7 ») ?",
+            "choices": [
+                "GAN conditionnel (conditional GAN, cGAN)",
+                "GAN standard (sans conditionnement)",
+                "YOLO",
+                "Autoencodeur (autoencoder)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un cGAN reçoit l’étiquette (label) en entrée supplémentaire ; un GAN standard ne peut pas choisir la classe.",
+            "tags": [
+                "cGAN",
+                "GAN"
+            ]
+        },
+        {
+            "id": "fr-qcm15-q04",
+            "qcm": "FR-QCM15",
+            "theme": "Deep Learning",
+            "question": "Quel modèle génère du texte un token à la fois en prédisant le token suivant ?",
+            "choices": [
+                "ResNet",
+                "U-Net",
+                "YOLO",
+                "GPT"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "GPT est un décodeur (decoder) de Transformer avec masquage causal (causal masking).",
+            "tags": [
+                "GPT",
+                "Transformer"
+            ]
+        },
+        {
+            "id": "fr-qcm15-q05",
+            "qcm": "FR-QCM15",
+            "theme": "Deep Learning",
+            "question": "Quel modèle est un encodeur (encoder) de Transformer utilisé pour construire des représentations de texte ?",
+            "choices": [
+                "BERT",
+                "GPT",
+                "U-Net",
+                "CycleGAN"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "BERT est uniquement encodeur ; GPT est uniquement décodeur.",
+            "tags": [
+                "BERT",
+                "Transformer"
+            ]
+        },
+        {
+            "id": "fr-qcm15-q06",
+            "qcm": "FR-QCM15",
+            "theme": "Deep Learning",
+            "question": "Quel modèle applique un Transformer à une image découpée en patchs (patches) ?",
+            "choices": [
+                "R-CNN",
+                "ViT (Vision Transformer)",
+                "LSTM",
+                "VAE"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "ViT traite les patchs de l’image comme des tokens.",
+            "tags": [
+                "ViT",
+                "Transformer"
+            ]
+        },
+        {
+            "id": "fr-qcm16-q01",
+            "qcm": "FR-QCM16",
+            "theme": "Deep Learning",
+            "question": "Quel modèle est un réseau récurrent (recurrent network) à portes (gates) conçu pour gérer les dépendances à long terme (long-term dependencies) ?",
+            "choices": [
+                "FCN",
+                "YOLO",
+                "LSTM",
+                "ResNet"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les portes du LSTM atténuent le problème du gradient qui disparaît (vanishing gradient) dans les séquences.",
+            "tags": [
+                "LSTM",
+                "RNN"
+            ]
+        },
+        {
+            "id": "fr-qcm16-q02",
+            "qcm": "FR-QCM16",
+            "theme": "Deep Learning",
+            "question": "Quel modèle apprend un code compressé de son entrée en la reconstruisant, sans étiquettes ?",
+            "choices": [
+                "GAN",
+                "Autoencodeur (autoencoder)",
+                "ResNet",
+                "YOLO"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Un autoencodeur est entraîné à reconstruire son entrée à travers un petit code latent (latent code).",
+            "tags": [
+                "autoencodeur",
+                "espace latent"
+            ]
+        },
+        {
+            "id": "fr-qcm16-q03",
+            "qcm": "FR-QCM16",
+            "theme": "Deep Learning",
+            "question": "Quel modèle génère des images en retirant progressivement du bruit, étape par étape ?",
+            "choices": [
+                "Modèle de diffusion (diffusion model)",
+                "LSTM",
+                "YOLO",
+                "ResNet"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un modèle de diffusion apprend à prédire puis retirer le bruit.",
+            "tags": [
+                "modèle de diffusion"
+            ]
+        },
+        {
+            "id": "fr-qcm16-q04",
+            "qcm": "FR-QCM16",
+            "theme": "Deep Learning",
+            "question": "Quelle association tâche–modèle est INCORRECTE ?",
+            "choices": [
+                "Séries temporelles (time series) : LSTM",
+                "Classification d’images (image classification) : ResNet",
+                "Détection d’objets (object detection) : GPT",
+                "Génération d’images : modèle de diffusion"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La détection d’objets utilise R-CNN ou YOLO ; GPT génère du texte.",
+            "tags": [
+                "tâches et modèles",
+                "GPT"
+            ]
+        },
+        {
+            "id": "fr-qcm16-q05",
+            "qcm": "FR-QCM16",
+            "theme": "Deep Learning",
+            "question": "Quelle architecture utilise un encodeur–décodeur avec des connexions raccourcis (skip connections, par concaténation) pour prédire une classe pour chaque pixel ?",
+            "choices": [
+                "YOLO",
+                "LSTM",
+                "BERT",
+                "U-Net"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "U-Net fait de la segmentation (segmentation), et ses skip connections restituent les détails spatiaux.",
+            "tags": [
+                "U-Net",
+                "segmentation"
+            ]
+        },
+        {
+            "id": "fr-qcm16-q06",
+            "qcm": "FR-QCM16",
+            "theme": "Deep Learning",
+            "question": "Quel détecteur extrait environ 2000 régions candidates (region proposals) et passe chacune dans un CNN ?",
+            "choices": [
+                "U-Net",
+                "GPT",
+                "VAE",
+                "R-CNN"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "R-CNN classe chaque région séparément, ce qui le rend lent ; YOLO est plus rapide.",
+            "tags": [
+                "R-CNN",
+                "détection d’objets"
             ]
         }
     ]

@@ -1,6 +1,7 @@
 import ast
 import json
 import random
+import re
 from datetime import datetime
 from pathlib import Path
 from typing import Optional, Union, List, Dict, Any
@@ -805,7 +806,12 @@ if st.session_state.get("content_type_radio") == "Exercices":
 df = load_questions_json(QUESTIONS_FILE, QUESTIONS_FILE.stat().st_mtime if QUESTIONS_FILE.exists() else 0.0)
 
 # Filtre QCM (si champ 'qcm' existe)
-available_qcms = sorted({q for q in df.get("qcm", pd.Series()).dropna().unique()})
+def _natural_key(s: str):
+    """Tri naturel : QCM2 avant QCM10."""
+    return [int(t) if t.isdigit() else t.lower() for t in re.split(r"(\d+)", str(s))]
+
+
+available_qcms = sorted({q for q in df.get("qcm", pd.Series()).dropna().unique()}, key=_natural_key)
 if available_qcms:
     with st.sidebar:
         selected_list = st.multiselect(
@@ -813,7 +819,7 @@ if available_qcms:
             help="Vide = tous les QCM. Sélectionne plusieurs QCM pour les enchaîner dans une même session.",
         )
     # Libellé stable (utilisé pour les lots figés et les clés de session)
-    selected_qcm = " + ".join(sorted(selected_list)) if selected_list else "(Tous)"
+    selected_qcm = " + ".join(sorted(selected_list, key=_natural_key)) if selected_list else "(Tous)"
 
     prev_qcm = st.session_state.get("selected_qcm")
     if prev_qcm is not None and prev_qcm != selected_qcm:
