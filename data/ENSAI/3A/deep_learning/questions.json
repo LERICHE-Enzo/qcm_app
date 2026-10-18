@@ -2143,36 +2143,6 @@
             }
         },
         {
-            "id": "qcm13-q03",
-            "qcm": "EN-QCM13",
-            "theme": "Deep Learning",
-            "question": "What do the gates of an LSTM do?",
-            "choices": [
-                "They control what information is forgotten, written and output by the memory cell",
-                "They normalize the inputs of each layer",
-                "They randomly set activations to zero",
-                "They compute the attention between all tokens"
-            ],
-            "answer": [
-                0
-            ],
-            "explanation": "Les portes d’oubli, d’entrée et de sortie gèrent la cellule mémoire.",
-            "tags": [
-                "LSTM",
-                "portes"
-            ],
-            "translation": {
-                "label": "🇫🇷 Traduction",
-                "question": "Que font les portes (gates) d’un LSTM ?",
-                "choices": [
-                    "Elles contrôlent ce que la cellule mémoire (memory cell) oublie, écrit et renvoie",
-                    "Elles normalisent les entrées de chaque couche",
-                    "Elles mettent aléatoirement des activations à zéro",
-                    "Elles calculent l’attention (attention) entre tous les tokens"
-                ]
-            }
-        },
-        {
             "id": "qcm13-q04",
             "qcm": "EN-QCM13",
             "theme": "Deep Learning",
@@ -2416,36 +2386,6 @@
             }
         },
         {
-            "id": "qcm15-q02",
-            "qcm": "EN-QCM15",
-            "theme": "Deep Learning",
-            "question": "Which model can translate photos of horses into zebras without paired training images?",
-            "choices": [
-                "cGAN",
-                "CycleGAN",
-                "ResNet",
-                "GPT"
-            ],
-            "answer": [
-                1
-            ],
-            "explanation": "CycleGAN utilise une perte de cohérence cyclique (cycle-consistency loss), donc pas besoin de paires.",
-            "tags": [
-                "CycleGAN",
-                "GAN"
-            ],
-            "translation": {
-                "label": "🇫🇷 Traduction",
-                "question": "Quel modèle peut transformer des photos de chevaux en zèbres sans images d’entraînement appariées (paired) ?",
-                "choices": [
-                    "cGAN",
-                    "CycleGAN",
-                    "ResNet",
-                    "GPT"
-                ]
-            }
-        },
-        {
             "id": "qcm15-q03",
             "qcm": "EN-QCM15",
             "theme": "Deep Learning",
@@ -2532,66 +2472,6 @@
                     "GPT",
                     "U-Net",
                     "CycleGAN"
-                ]
-            }
-        },
-        {
-            "id": "qcm15-q06",
-            "qcm": "EN-QCM15",
-            "theme": "Deep Learning",
-            "question": "Which model applies a Transformer to an image split into patches?",
-            "choices": [
-                "R-CNN",
-                "ViT (Vision Transformer)",
-                "LSTM",
-                "VAE"
-            ],
-            "answer": [
-                1
-            ],
-            "explanation": "ViT traite les patchs de l’image comme des tokens.",
-            "tags": [
-                "ViT",
-                "Transformer"
-            ],
-            "translation": {
-                "label": "🇫🇷 Traduction",
-                "question": "Quel modèle applique un Transformer à une image découpée en patchs (patches) ?",
-                "choices": [
-                    "R-CNN",
-                    "ViT (Vision Transformer)",
-                    "LSTM",
-                    "VAE"
-                ]
-            }
-        },
-        {
-            "id": "qcm16-q01",
-            "qcm": "EN-QCM16",
-            "theme": "Deep Learning",
-            "question": "Which model is a recurrent network with gates designed to handle long-term dependencies?",
-            "choices": [
-                "FCN",
-                "YOLO",
-                "LSTM",
-                "ResNet"
-            ],
-            "answer": [
-                2
-            ],
-            "explanation": "Les portes du LSTM atténuent le problème du gradient qui disparaît (vanishing gradient) dans les séquences.",
-            "tags": [
-                "LSTM",
-                "RNN"
-            ],
-            "translation": {
-                "label": "🇫🇷 Traduction",
-                "question": "Quel modèle est un réseau récurrent (recurrent network) à portes (gates) conçu pour gérer les dépendances à long terme (long-term dependencies) ?",
-                "choices": [
-                    "FCN",
-                    "YOLO",
-                    "LSTM",
-                    "ResNet"
                 ]
             }
         },
@@ -2865,36 +2745,6 @@
             }
         },
         {
-            "id": "qcm17-q05",
-            "qcm": "EN-QCM17",
-            "theme": "Deep Learning",
-            "question": "Which task–model pair is correct?",
-            "choices": [
-                "R-CNN: speech recognition",
-                "ViT: classify images using patches and a Transformer",
-                "LSTM: image segmentation",
-                "GAN: object detection"
-            ],
-            "answer": [
-                1
-            ],
-            "explanation": "ViT découpe l’image en patchs traités comme des tokens.",
-            "tags": [
-                "tâches et modèles",
-                "ViT"
-            ],
-            "translation": {
-                "label": "🇫🇷 Traduction",
-                "question": "Quelle association tâche–modèle est correcte ?",
-                "choices": [
-                    "R-CNN : reconnaissance vocale (speech recognition)",
-                    "ViT : classer des images à l’aide de patchs (patches) et d’un Transformer",
-                    "LSTM : segmentation d’images",
-                    "GAN : détection d’objets"
-                ]
-            }
-        },
-        {
             "id": "qcm17-q06",
             "qcm": "EN-QCM17",
             "theme": "Deep Learning",
@@ -3015,32 +2865,762 @@
             }
         },
         {
-            "id": "qcm17-q10",
-            "qcm": "EN-QCM17",
+            "id": "qcm18-q01",
+            "qcm": "EN-QCM18",
             "theme": "Deep Learning",
-            "question": "Which task–model pair is correct?",
+            "question": "You want to train a neural network to predict the price of a house, which is a real number. Which loss function is the most appropriate?",
             "choices": [
-                "GPT: segmentation",
-                "FCN: language translation",
-                "CycleGAN: translating images between two domains without pairs",
-                "BERT: image generation"
+                "Accuracy",
+                "Cross-entropy loss",
+                "Mean squared error (MSE)",
+                "Softmax"
             ],
             "answer": [
                 2
             ],
-            "explanation": "CycleGAN utilise une perte de cohérence cyclique (cycle-consistency loss), donc il n’a pas besoin d’images appariées.",
+            "explanation": "Prix = nombre réel, donc régression, donc MSE. La cross-entropy sert à la classification.",
             "tags": [
-                "tâches et modèles",
-                "CycleGAN"
+                "fonction de perte",
+                "régression",
+                "MSE"
             ],
             "translation": {
                 "label": "🇫🇷 Traduction",
-                "question": "Quelle association tâche–modèle est correcte ?",
+                "question": "Tu veux entraîner un réseau de neurones à prédire le prix d’une maison, qui est un nombre réel. Quelle fonction de perte est la plus appropriée ?",
                 "choices": [
-                    "GPT : segmentation",
-                    "FCN : traduction de langues",
-                    "CycleGAN : traduire des images entre deux domaines sans paires",
-                    "BERT : génération d’images"
+                    "L’exactitude (accuracy)",
+                    "La perte d’entropie croisée (cross-entropy loss)",
+                    "L’erreur quadratique moyenne (MSE)",
+                    "Softmax"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q02",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "Your classifier outputs 10 raw scores per image, and you apply nn.Softmax as the last layer before nn.CrossEntropyLoss. What is the problem?",
+            "choices": [
+                "Nothing is wrong: this is the recommended way to do it",
+                "nn.CrossEntropyLoss already applies a softmax (log-softmax) internally, so softmax is applied twice",
+                "Softmax makes the gradient exactly zero for every input",
+                "nn.CrossEntropyLoss only works with outputs between −1 and 1"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "CrossEntropyLoss attend des logits bruts et applique déjà le log-softmax.",
+            "tags": [
+                "PyTorch",
+                "CrossEntropyLoss",
+                "softmax"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Ton classifieur sort 10 scores bruts par image, et tu appliques nn.Softmax comme dernière couche avant nn.CrossEntropyLoss. Quel est le problème ?",
+                "choices": [
+                    "Il n’y a aucun problème : c’est la méthode recommandée",
+                    "nn.CrossEntropyLoss applique déjà un softmax (log-softmax) en interne, donc le softmax est appliqué deux fois",
+                    "Le softmax rend le gradient exactement nul pour toute entrée",
+                    "nn.CrossEntropyLoss ne fonctionne qu’avec des sorties comprises entre −1 et 1"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q03",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "You choose the learning rate by comparing the accuracy of several runs on the test set, then report the best test accuracy. What is the problem?",
+            "choices": [
+                "Nothing is wrong: the test set is meant to be used for choosing hyperparameters",
+                "The training will crash because the test set cannot be used before training ends",
+                "The test accuracy is no longer an unbiased estimate of the performance on new data, because the test set was used to make a choice",
+                "The learning rate cannot be tuned: it must always be set to 0.01"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les hyperparamètres se choisissent sur la validation. Le test sert une seule fois, à la fin.",
+            "tags": [
+                "jeu de test",
+                "validation",
+                "hyperparamètres"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Tu choisis le taux d’apprentissage en comparant l’exactitude de plusieurs essais sur le jeu de test, puis tu rapportes la meilleure exactitude de test. Quel est le problème ?",
+                "choices": [
+                    "Il n’y a aucun problème : le jeu de test sert à choisir les hyperparamètres",
+                    "L’entraînement va planter car le jeu de test ne peut pas être utilisé avant la fin de l’entraînement",
+                    "L’exactitude de test n’est plus une estimation non biaisée de la performance sur de nouvelles données, car le jeu de test a servi à faire un choix",
+                    "Le taux d’apprentissage ne peut pas être réglé : il doit toujours valoir 0,01"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q04",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "What does the softmax function do when it is applied to a vector of logits?",
+            "choices": [
+                "It converts them into positive values that sum to 1, which can be read as class probabilities",
+                "It sets all the negative values to zero and keeps the positive ones unchanged",
+                "It normalizes them to have a mean of zero and a variance of one",
+                "It selects the largest logit and sets all the others to zero"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "B décrit ReLU, C décrit la normalisation, D décrit un argmax.",
+            "tags": [
+                "softmax",
+                "logits"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Que fait la fonction softmax lorsqu’elle est appliquée à un vecteur de logits ?",
+                "choices": [
+                    "Elle les convertit en valeurs positives de somme 1, interprétables comme des probabilités de classes",
+                    "Elle met à zéro toutes les valeurs négatives et garde les positives inchangées",
+                    "Elle les normalise pour avoir une moyenne nulle et une variance de un",
+                    "Elle sélectionne le plus grand logit et met tous les autres à zéro"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q05",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "You train a CNN on a small image dataset and it overfits. You use data augmentation. Which statement is correct?",
+            "choices": [
+                "It must also be applied to the test set",
+                "It permanently increases the number of parameters of the model",
+                "It replaces the need for a validation set",
+                "It creates varied versions of the training images, which helps the model generalize, and it is applied to the training set only"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L’augmentation ne s’applique qu’au train. Seule la normalisation s’applique à tous les sets.",
+            "tags": [
+                "data augmentation",
+                "overfitting"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Tu entraînes un CNN sur un petit jeu d’images et il fait du surapprentissage. Tu utilises l’augmentation de données. Quelle affirmation est correcte ?",
+                "choices": [
+                    "Elle doit aussi être appliquée au jeu de test",
+                    "Elle augmente définitivement le nombre de paramètres du modèle",
+                    "Elle remplace le besoin d’un jeu de validation",
+                    "Elle crée des versions variées des images d’entraînement, ce qui aide le modèle à généraliser, et elle n’est appliquée qu’au jeu d’entraînement"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q06",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! What is the most likely cause and fix?",
+            "choices": [
+                "The batch size is too large: reduce it",
+                "The learning rate is too high: lower it",
+                "The model is on the GPU but the input batch is still on the CPU: move the batch with X = X.to(device)",
+                "A softmax layer is missing at the end of the model: add one"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Modèle et données doivent être sur le même device.",
+            "tags": [
+                "PyTorch",
+                "GPU",
+                "device"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! Quelle est la cause la plus probable et la correction ?",
+                "choices": [
+                    "La taille du batch est trop grande : la réduire",
+                    "Le taux d’apprentissage est trop élevé : le baisser",
+                    "Le modèle est sur le GPU mais le batch d’entrée est encore sur le CPU : déplacer le batch avec X = X.to(device)",
+                    "Il manque une couche softmax à la fin du modèle : en ajouter une"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q07",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "In an RNN, what is the hidden state?",
+            "choices": [
+                "A set of weights that is different at each time step",
+                "A vector that summarizes what the network has seen so far in the sequence and is passed to the next time step",
+                "The final prediction of the network, compared with the target to compute the loss",
+                "A copy of the whole input sequence stored in memory"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "C’est la « mémoire » du réseau. Les poids sont partagés entre les pas de temps.",
+            "tags": [
+                "RNN",
+                "état caché"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans un RNN, qu’est-ce que l’état caché (hidden state) ?",
+                "choices": [
+                    "Un ensemble de poids différent à chaque pas de temps",
+                    "Un vecteur qui résume ce que le réseau a vu jusqu’ici dans la séquence et qui est transmis au pas de temps suivant",
+                    "La prédiction finale du réseau, comparée à la cible pour calculer la perte",
+                    "Une copie de toute la séquence d’entrée stockée en mémoire"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q08",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "Why does the decoder of a Transformer use masked (causal) self-attention when it generates text?",
+            "choices": [
+                "To prevent each position from attending to future tokens, which are not available when generating the text one token at a time",
+                "To make the model run faster on a GPU",
+                "To reduce the number of parameters of the model",
+                "To ignore the padding tokens added at the end of each sentence"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "À la génération, les tokens futurs n’existent pas encore.",
+            "tags": [
+                "Transformer",
+                "attention masquée"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi le décodeur d’un Transformer utilise-t-il une auto-attention masquée (causale) lorsqu’il génère du texte ?",
+                "choices": [
+                    "Pour empêcher chaque position de regarder les tokens futurs, qui ne sont pas disponibles quand on génère le texte un token à la fois",
+                    "Pour que le modèle s’exécute plus vite sur GPU",
+                    "Pour réduire le nombre de paramètres du modèle",
+                    "Pour ignorer les tokens de remplissage (padding) ajoutés à la fin de chaque phrase"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q09",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "How many trainable parameters does nn.Linear(784, 64) have (with the default bias)?",
+            "choices": [
+                "50,176",
+                "848",
+                "50,240",
+                "50,241"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "(784 + 1) × 64 = 50 240. Le choix à 50 176 oublie les biais.",
+            "tags": [
+                "nombre de paramètres",
+                "couche linéaire"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Combien de paramètres entraînables nn.Linear(784, 64) possède-t-elle (avec le biais par défaut) ?",
+                "choices": [
+                    "50 176",
+                    "848",
+                    "50 240",
+                    "50 241"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q10",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "You fine-tune a pretrained CNN on a small new dataset and freeze the early layers. Why is this reasonable?",
+            "choices": [
+                "Because the early layers only work on images of the same size as the new dataset",
+                "Because freezing layers increases the number of trainable parameters",
+                "Because the pretrained weights are random until the model is fine-tuned",
+                "Because the early layers learn generic features (edges, textures) that transfer well, and freezing them reduces the risk of overfitting on a small dataset"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les premières couches apprennent des motifs génériques, qui se réutilisent bien.",
+            "tags": [
+                "fine-tuning",
+                "transfer learning"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Tu affines (fine-tuning) un CNN pré-entraîné sur un petit nouveau jeu de données et tu gèles les premières couches. Pourquoi est-ce raisonnable ?",
+                "choices": [
+                    "Parce que les premières couches ne fonctionnent que sur des images de même taille que le nouveau jeu de données",
+                    "Parce que geler des couches augmente le nombre de paramètres entraînables",
+                    "Parce que les poids pré-entraînés sont aléatoires tant que le modèle n’est pas affiné",
+                    "Parce que les premières couches apprennent des caractéristiques génériques (bords, textures) qui se transfèrent bien, et les geler réduit le risque de surapprentissage sur un petit jeu de données"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q11",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "In a ResNet, output = F(x) + x. What happens if F(x) becomes zero?",
+            "choices": [
+                "The shortcut connection is removed from the block automatically.",
+                "The block passes its input through unchanged, like an identity.",
+                "The block outputs zero, so the signal is lost and training stops.",
+                "PyTorch raises a shape mismatch error because F(x) is empty."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "0 + x = x : le bloc est une identité.",
+            "tags": [
+                "ResNet",
+                "skip connection"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans un ResNet, sortie = F(x) + x. Que se passe-t-il si F(x) devient nul ?",
+                "choices": [
+                    "La connexion raccourci est automatiquement retirée du bloc.",
+                    "Le bloc transmet son entrée inchangée, comme une identité.",
+                    "Le bloc renvoie zéro, donc le signal est perdu et l’entraînement s’arrête.",
+                    "PyTorch lève une erreur de dimensions car F(x) est vide."
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q12",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "At the very beginning of training (during the first epochs), the training loss goes down very slowly. Which change is the most likely to help?",
+            "choices": [
+                "Add a softmax layer before the loss function.",
+                "Evaluate the model on the test set more often.",
+                "Reduce the number of training epochs.",
+                "Increase the learning rate somewhat."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Au début de l’entraînement, un pas trop petit ralentit la descente : augmenter un peu le taux d’apprentissage accélère la convergence.",
+            "tags": [
+                "learning rate",
+                "optimisation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Tout au début de l’entraînement (pendant les premières époques), la perte d’entraînement diminue très lentement. Quel changement a le plus de chances d’aider ?",
+                "choices": [
+                    "Ajouter une couche softmax avant la fonction de perte.",
+                    "Évaluer le modèle plus souvent sur le jeu de test.",
+                    "Réduire le nombre d’époques d’entraînement.",
+                    "Augmenter un peu le taux d’apprentissage."
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q13",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "Error: expected input[64, 1, 28, 28] to have 3 channels, but got 1 channels instead. The first layer is nn.Conv2d(in_channels=3, ...). What is the fix?",
+            "choices": [
+                "Change the batch size from 64 to 3.",
+                "Add a Flatten layer before the convolution.",
+                "Set in_channels=1 in the first convolution layer.",
+                "Increase the kernel size to 28."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "in_channels doit être égal au nombre de canaux de l’entrée (image en niveaux de gris = 1).",
+            "tags": [
+                "PyTorch",
+                "Conv2d",
+                "canaux"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Erreur : expected input[64, 1, 28, 28] to have 3 channels, but got 1 channels instead. La première couche est nn.Conv2d(in_channels=3, ...). Quelle est la correction ?",
+                "choices": [
+                    "Passer la taille du batch de 64 à 3.",
+                    "Ajouter une couche Flatten avant la convolution.",
+                    "Mettre in_channels=1 dans la première couche de convolution.",
+                    "Augmenter la taille du noyau à 28."
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q14",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "Which activation function outputs values strictly between −1 and 1?",
+            "choices": [
+                "tanh",
+                "Sigmoid",
+                "ReLU",
+                "Softmax"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sigmoid : (0, 1). ReLU : [0, +∞[. Softmax : somme égale à 1.",
+            "tags": [
+                "activation",
+                "tanh"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle fonction d’activation renvoie des valeurs strictement comprises entre −1 et 1 ?",
+                "choices": [
+                    "tanh",
+                    "Sigmoïde (Sigmoid)",
+                    "ReLU",
+                    "Softmax"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q15",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "During validation, a student calls loss.backward() and optimizer.step() on the validation batches. What is the problem?",
+            "choices": [
+                "Nothing is wrong: validation batches should also update the model.",
+                "The model learns from the validation data, so it no longer measures generalization.",
+                "The GPU memory is freed, so the loss becomes zero.",
+                "The learning rate is reset to zero after each validation batch."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "En validation : model.eval(), torch.no_grad(), pas de backward() ni de step().",
+            "tags": [
+                "validation",
+                "PyTorch",
+                "no_grad"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pendant la validation, un étudiant appelle loss.backward() et optimizer.step() sur les batchs de validation. Quel est le problème ?",
+                "choices": [
+                    "Il n’y a aucun problème : les batchs de validation doivent aussi mettre à jour le modèle.",
+                    "Le modèle apprend à partir des données de validation, il ne mesure donc plus la généralisation.",
+                    "La mémoire du GPU est libérée, donc la perte devient nulle.",
+                    "Le taux d’apprentissage est remis à zéro après chaque batch de validation."
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q16",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "Which of the following layers has trainable parameters?",
+            "choices": [
+                "nn.MaxPool2d",
+                "nn.Flatten",
+                "nn.Conv2d",
+                "nn.ReLU"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Seules Conv2d, Linear (et BatchNorm) ont des paramètres.",
+            "tags": [
+                "PyTorch",
+                "paramètres entraînables"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Laquelle de ces couches possède des paramètres entraînables ?",
+                "choices": [
+                    "nn.MaxPool2d",
+                    "nn.Flatten",
+                    "nn.Conv2d",
+                    "nn.ReLU"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q17",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "A model gets 99% accuracy on the training set but only 70% on the validation set. Which action is the most likely to help?",
+            "choices": [
+                "Train for many more epochs.",
+                "Use a larger model with more layers.",
+                "Remove the validation set.",
+                "Add dropout or apply data augmentation."
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "C’est de l’overfitting. Entraîner plus et agrandir le modèle l’aggravent, et supprimer la validation cache le problème.",
+            "tags": [
+                "overfitting",
+                "régularisation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Un modèle atteint 99 % d’exactitude sur le jeu d’entraînement mais seulement 70 % sur le jeu de validation. Quelle action a le plus de chances d’aider ?",
+                "choices": [
+                    "Entraîner beaucoup plus d’époques.",
+                    "Utiliser un modèle plus grand avec plus de couches.",
+                    "Supprimer le jeu de validation.",
+                    "Ajouter du dropout ou appliquer de l’augmentation de données."
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q18",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "Which task is the most natural fit for a Transformer with both an encoder and a decoder?",
+            "choices": [
+                "Classifying an image into 10 classes.",
+                "Translating a sentence from French to English.",
+                "Predicting the price of a house.",
+                "Segmenting an image pixel by pixel."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "L’encodeur lit la phrase source, le décodeur génère la phrase cible (seq2seq).",
+            "tags": [
+                "Transformer",
+                "seq2seq",
+                "traduction"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle tâche convient le plus naturellement à un Transformer avec à la fois un encodeur et un décodeur ?",
+                "choices": [
+                    "Classer une image en 10 classes.",
+                    "Traduire une phrase du français vers l’anglais.",
+                    "Prédire le prix d’une maison.",
+                    "Segmenter une image pixel par pixel."
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q19",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "An MLP has 3 inputs, one hidden layer with 4 neurons, and an output layer with 2 neurons (linear layers with bias). How many trainable parameters?",
+            "choices": [
+                "20",
+                "24",
+                "26",
+                "9"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Couche 1 : (3+1)×4 = 16. Couche 2 : (4+1)×2 = 10. Total 26.",
+            "tags": [
+                "MLP",
+                "nombre de paramètres"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Un MLP a 3 entrées, une couche cachée de 4 neurones et une couche de sortie de 2 neurones (couches linéaires avec biais). Combien de paramètres entraînables ?",
+                "choices": [
+                    "20",
+                    "24",
+                    "26",
+                    "9"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q20",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "A convolution has a 3×3 kernel, stride 2, no padding, on a 7×7 input. What is the output size?",
+            "choices": [
+                "2×2",
+                "5×5",
+                "4×4",
+                "3×3"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "⌊(7 + 0 − 3)/2⌋ + 1 = 2 + 1 = 3.",
+            "tags": [
+                "convolution",
+                "taille de sortie"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Une convolution a un noyau 3×3, un stride de 2, pas de padding, sur une entrée 7×7. Quelle est la taille de sortie ?",
+                "choices": [
+                    "2×2",
+                    "5×5",
+                    "4×4",
+                    "3×3"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q21",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "A 3-class classifier outputs the logits [0.5, 1.0, 3.0]. Which class does it predict?",
+            "choices": [
+                "Class 0",
+                "Class 1",
+                "Class 2",
+                "It cannot be known before applying a softmax"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La classe prédite est l’argmax des logits (3,0, indice 2). Le softmax ne change pas l’ordre.",
+            "tags": [
+                "logits",
+                "argmax",
+                "softmax"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Un classifieur à 3 classes sort les logits [0,5 ; 1,0 ; 3,0]. Quelle classe prédit-il ?",
+                "choices": [
+                    "Classe 0",
+                    "Classe 1",
+                    "Classe 2",
+                    "On ne peut pas le savoir avant d’appliquer un softmax"
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q22",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "Why is shuffle=True commonly used in the DataLoader of the training set?",
+            "choices": [
+                "To vary the batches at each epoch, so the order is not learned.",
+                "To load the data faster from the disk.",
+                "To remove duplicate samples from the dataset.",
+                "To split the data into training and test sets."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "shuffle mélange seulement l’ordre. Le découpage train/test se fait avec random_split.",
+            "tags": [
+                "DataLoader",
+                "shuffle",
+                "PyTorch"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi utilise-t-on couramment shuffle=True dans le DataLoader du jeu d’entraînement ?",
+                "choices": [
+                    "Pour varier les batchs à chaque époque, afin que l’ordre ne soit pas appris.",
+                    "Pour charger les données plus vite depuis le disque.",
+                    "Pour supprimer les échantillons en double du jeu de données.",
+                    "Pour séparer les données en jeux d’entraînement et de test."
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q23",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "Compared with a sigmoid, what is an advantage of ReLU in deep networks?",
+            "choices": [
+                "Its output is always between 0 and 1.",
+                "It makes the whole network linear.",
+                "It is cheap and has a gradient of 1 for positive inputs.",
+                "It adds trainable parameters to each neuron."
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le premier choix décrit la sigmoïde. ReLU est non linéaire et n’a aucun paramètre.",
+            "tags": [
+                "ReLU",
+                "sigmoïde",
+                "gradient"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Par rapport à une sigmoïde, quel est un avantage de ReLU dans les réseaux profonds ?",
+                "choices": [
+                    "Sa sortie est toujours comprise entre 0 et 1.",
+                    "Elle rend tout le réseau linéaire.",
+                    "Elle est peu coûteuse et a un gradient de 1 pour les entrées positives.",
+                    "Elle ajoute des paramètres entraînables à chaque neurone."
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q24",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "Compared with a small mini-batch, what does a very large mini-batch typically give?",
+            "choices": [
+                "Less memory usage and a noisier gradient estimate.",
+                "More memory usage and a less noisy gradient estimate.",
+                "The same memory usage and an always exact gradient.",
+                "Less overfitting because the model sees more data per update."
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Plus d’exemples en mémoire, et un gradient moyenné donc plus stable.",
+            "tags": [
+                "mini-batch",
+                "gradient"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Par rapport à un petit mini-batch, que donne typiquement un très grand mini-batch ?",
+                "choices": [
+                    "Moins de mémoire utilisée et une estimation du gradient plus bruitée.",
+                    "Plus de mémoire utilisée et une estimation du gradient moins bruitée.",
+                    "La même mémoire utilisée et un gradient toujours exact.",
+                    "Moins de surapprentissage car le modèle voit plus de données par mise à jour."
+                ]
+            }
+        },
+        {
+            "id": "qcm18-q25",
+            "qcm": "EN-QCM18",
+            "theme": "Deep Learning",
+            "question": "The training loss keeps decreasing, but the validation loss starts to increase after epoch 10. What is the best action?",
+            "choices": [
+                "Stop training around epoch 10 and keep that model (early stopping).",
+                "Keep training until the validation loss reaches zero.",
+                "Increase the learning rate to make training faster.",
+                "Evaluate the model on the test set after each epoch."
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Train ↓ et val ↑ = overfitting, donc early stopping.",
+            "tags": [
+                "early stopping",
+                "overfitting"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "La perte d’entraînement continue de diminuer, mais la perte de validation commence à augmenter après l’époque 10. Quelle est la meilleure action ?",
+                "choices": [
+                    "Arrêter l’entraînement vers l’époque 10 et garder ce modèle (arrêt précoce).",
+                    "Continuer l’entraînement jusqu’à ce que la perte de validation atteigne zéro.",
+                    "Augmenter le taux d’apprentissage pour accélérer l’entraînement.",
+                    "Évaluer le modèle sur le jeu de test après chaque époque."
                 ]
             }
         },
@@ -5187,36 +5767,6 @@
             }
         },
         {
-            "id": "fr-qcm13-q03",
-            "qcm": "FR-QCM13",
-            "theme": "Deep Learning",
-            "question": "Que font les portes (gates) d’un LSTM ?",
-            "choices": [
-                "Elles contrôlent ce que la cellule mémoire (memory cell) oublie, écrit et renvoie",
-                "Elles normalisent les entrées de chaque couche",
-                "Elles mettent aléatoirement des activations à zéro",
-                "Elles calculent l’attention (attention) entre tous les tokens"
-            ],
-            "answer": [
-                0
-            ],
-            "explanation": "Les portes d’oubli, d’entrée et de sortie gèrent la cellule mémoire.",
-            "tags": [
-                "LSTM",
-                "portes"
-            ],
-            "translation": {
-                "label": "🇬🇧 English version",
-                "question": "What do the gates of an LSTM do?",
-                "choices": [
-                    "They control what information is forgotten, written and output by the memory cell",
-                    "They normalize the inputs of each layer",
-                    "They randomly set activations to zero",
-                    "They compute the attention between all tokens"
-                ]
-            }
-        },
-        {
             "id": "fr-qcm13-q04",
             "qcm": "FR-QCM13",
             "theme": "Deep Learning",
@@ -5460,36 +6010,6 @@
             }
         },
         {
-            "id": "fr-qcm15-q02",
-            "qcm": "FR-QCM15",
-            "theme": "Deep Learning",
-            "question": "Quel modèle peut transformer des photos de chevaux en zèbres sans images d’entraînement appariées (paired) ?",
-            "choices": [
-                "cGAN",
-                "CycleGAN",
-                "ResNet",
-                "GPT"
-            ],
-            "answer": [
-                1
-            ],
-            "explanation": "CycleGAN utilise une perte de cohérence cyclique (cycle-consistency loss), donc pas besoin de paires.",
-            "tags": [
-                "CycleGAN",
-                "GAN"
-            ],
-            "translation": {
-                "label": "🇬🇧 English version",
-                "question": "Which model can translate photos of horses into zebras without paired training images?",
-                "choices": [
-                    "cGAN",
-                    "CycleGAN",
-                    "ResNet",
-                    "GPT"
-                ]
-            }
-        },
-        {
             "id": "fr-qcm15-q03",
             "qcm": "FR-QCM15",
             "theme": "Deep Learning",
@@ -5576,66 +6096,6 @@
                     "GPT",
                     "U-Net",
                     "CycleGAN"
-                ]
-            }
-        },
-        {
-            "id": "fr-qcm15-q06",
-            "qcm": "FR-QCM15",
-            "theme": "Deep Learning",
-            "question": "Quel modèle applique un Transformer à une image découpée en patchs (patches) ?",
-            "choices": [
-                "R-CNN",
-                "ViT (Vision Transformer)",
-                "LSTM",
-                "VAE"
-            ],
-            "answer": [
-                1
-            ],
-            "explanation": "ViT traite les patchs de l’image comme des tokens.",
-            "tags": [
-                "ViT",
-                "Transformer"
-            ],
-            "translation": {
-                "label": "🇬🇧 English version",
-                "question": "Which model applies a Transformer to an image split into patches?",
-                "choices": [
-                    "R-CNN",
-                    "ViT (Vision Transformer)",
-                    "LSTM",
-                    "VAE"
-                ]
-            }
-        },
-        {
-            "id": "fr-qcm16-q01",
-            "qcm": "FR-QCM16",
-            "theme": "Deep Learning",
-            "question": "Quel modèle est un réseau récurrent (recurrent network) à portes (gates) conçu pour gérer les dépendances à long terme (long-term dependencies) ?",
-            "choices": [
-                "FCN",
-                "YOLO",
-                "LSTM",
-                "ResNet"
-            ],
-            "answer": [
-                2
-            ],
-            "explanation": "Les portes du LSTM atténuent le problème du gradient qui disparaît (vanishing gradient) dans les séquences.",
-            "tags": [
-                "LSTM",
-                "RNN"
-            ],
-            "translation": {
-                "label": "🇬🇧 English version",
-                "question": "Which model is a recurrent network with gates designed to handle long-term dependencies?",
-                "choices": [
-                    "FCN",
-                    "YOLO",
-                    "LSTM",
-                    "ResNet"
                 ]
             }
         },
@@ -5909,36 +6369,6 @@
             }
         },
         {
-            "id": "fr-qcm17-q05",
-            "qcm": "FR-QCM17",
-            "theme": "Deep Learning",
-            "question": "Quelle association tâche–modèle est correcte ?",
-            "choices": [
-                "R-CNN : reconnaissance vocale (speech recognition)",
-                "ViT : classer des images à l’aide de patchs (patches) et d’un Transformer",
-                "LSTM : segmentation d’images",
-                "GAN : détection d’objets"
-            ],
-            "answer": [
-                1
-            ],
-            "explanation": "ViT découpe l’image en patchs traités comme des tokens.",
-            "tags": [
-                "tâches et modèles",
-                "ViT"
-            ],
-            "translation": {
-                "label": "🇬🇧 English version",
-                "question": "Which task–model pair is correct?",
-                "choices": [
-                    "R-CNN: speech recognition",
-                    "ViT: classify images using patches and a Transformer",
-                    "LSTM: image segmentation",
-                    "GAN: object detection"
-                ]
-            }
-        },
-        {
             "id": "fr-qcm17-q06",
             "qcm": "FR-QCM17",
             "theme": "Deep Learning",
@@ -6055,36 +6485,6 @@
                     "R-CNN: object detection",
                     "GPT: text generation",
                     "U-Net: pixel-wise segmentation"
-                ]
-            }
-        },
-        {
-            "id": "fr-qcm17-q10",
-            "qcm": "FR-QCM17",
-            "theme": "Deep Learning",
-            "question": "Quelle association tâche–modèle est correcte ?",
-            "choices": [
-                "GPT : segmentation",
-                "FCN : traduction de langues",
-                "CycleGAN : traduire des images entre deux domaines sans paires",
-                "BERT : génération d’images"
-            ],
-            "answer": [
-                2
-            ],
-            "explanation": "CycleGAN utilise une perte de cohérence cyclique (cycle-consistency loss), donc il n’a pas besoin d’images appariées.",
-            "tags": [
-                "tâches et modèles",
-                "CycleGAN"
-            ],
-            "translation": {
-                "label": "🇬🇧 English version",
-                "question": "Which task–model pair is correct?",
-                "choices": [
-                    "GPT: segmentation",
-                    "FCN: language translation",
-                    "CycleGAN: translating images between two domains without pairs",
-                    "BERT: image generation"
                 ]
             }
         }
