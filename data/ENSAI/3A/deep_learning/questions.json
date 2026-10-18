@@ -1851,7 +1851,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Une epoch correspond à un passage complet sur l’ensemble du jeu d’entraînement (toutes les mini-batchs ont été vues une fois).",
+            "explanation": "Une epoch correspond à un passage complet sur l’ensemble du jeu d’entraînement (toutes les mini-batchs ont été vues une fois).\n\n---\n\n**🇬🇧 English version**\n\nWhat does the term epoch refer to in deep learning?\n\n- (a) A single cycle of updates through the entire training dataset.\n- (b) The number of hidden states in the unfolded Recurrent Neural Networks (RNNs).\n- (c) The number of layers between the input layer and the final output layer of a neural network.\n- (d) The number of nodes in a hidden layer.",
             "tags": [
                 "epoch",
                 "entraînement"
@@ -1871,7 +1871,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Le pooling (moyen ou max) résume chaque région locale par une valeur : il réduit la taille spatiale des feature maps, sans en changer le nombre ni avoir de poids à apprendre. L’average pooling est de plus linéaire.",
+            "explanation": "Le pooling (moyen ou max) résume chaque région locale par une valeur : il réduit la taille spatiale des feature maps, sans en changer le nombre ni avoir de poids à apprendre. L’average pooling est de plus linéaire.\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following is true concerning the impact of an average pooling layer?\n\n- (a) It introduces non-linearity to the model.\n- (b) It reduces the dimensions of the feature maps.\n- (c) It increases the number of feature maps.\n- (d) It optimizes the weights of the model on average.",
             "tags": [
                 "pooling",
                 "CNN"
@@ -1890,7 +1890,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Un RNN partage les mêmes paramètres (même fonction de transition) à tous les pas de temps ; l’état caché dépend de l’entrée courante et de l’état précédent. L’affirmation (c) est donc fausse.",
+            "explanation": "Un RNN partage les mêmes paramètres (même fonction de transition) à tous les pas de temps ; l’état caché dépend de l’entrée courante et de l’état précédent. L’affirmation (c) est donc fausse.\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following descriptions is INCORRECT concerning Recurrent Neural Networks (RNNs)?\n\n- (a) The transition of the hidden state of an RNN is determined by a function shared by all positions of the input sequence.\n- (b) The hidden state of an RNN makes a transition based on the input and the previous hidden state.\n- (c) The transition of the hidden state of an RNN are determined by different functions at different positions of the input sequence.",
             "tags": [
                 "RNN",
                 "partage de paramètres"
@@ -1910,7 +1910,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Une couche de convolution applique un filtre sur des régions locales de l’entrée afin d’en extraire des caractéristiques (bords, textures…). Les dépendances à longue distance ne sont captées qu’en empilant des couches.",
+            "explanation": "Une couche de convolution applique un filtre sur des régions locales de l’entrée afin d’en extraire des caractéristiques (bords, textures…). Les dépendances à longue distance ne sont captées qu’en empilant des couches.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the primary purpose of a convolutional layer in a Convolutional Neural Network (CNN)?\n\n- (a) To normalize the input data according the mean and the standard deviation.\n- (b) To model a general matrix multiplication in a computationally efficient way.\n- (c) To extract features of each local region of the input image or feature map.\n- (d) To extract features according to correlation between pixels located far apart.",
             "tags": [
                 "convolution",
                 "CNN"
@@ -1930,7 +1930,7 @@
             "answer": [
                 2
             ],
-            "explanation": "DataLoader permet d’itérer sur un Dataset par mini-batchs (avec mélange, chargement parallèle, etc.).",
+            "explanation": "DataLoader permet d’itérer sur un Dataset par mini-batchs (avec mélange, chargement parallèle, etc.).\n\n---\n\n**🇬🇧 English version**\n\nWhat is the purpose of the DataLoader class in PyTorch?\n\n- (a) To define model architecture\n- (b) To save model checkpoints\n- (c) To iterate over a dataset\n- (d) To visualize training progress",
             "tags": [
                 "PyTorch",
                 "DataLoader"
@@ -1948,7 +1948,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Faux : un réseau de neurones contient des fonctions d’activation non linéaires, c’est précisément ce qui lui donne sa capacité d’expression. Son calcul est efficace grâce à la structure en produits matriciels et à la parallélisation (GPU), pas parce qu’il serait linéaire.",
+            "explanation": "Faux : un réseau de neurones contient des fonctions d’activation non linéaires, c’est précisément ce qui lui donne sa capacité d’expression. Son calcul est efficace grâce à la structure en produits matriciels et à la parallélisation (GPU), pas parce qu’il serait linéaire.\n\n---\n\n**🇬🇧 English version**\n\nIs the following sentence true or false?: We can calculate outputs of an artificial neural network efficiently using a computer because it has only linear functions as components except the bias term.\n\n- (a) True\n- (b) False",
             "tags": [
                 "non-linéarité",
                 "réseau de neurones"
@@ -1969,7 +1969,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Le dropout met aléatoirement à zéro certaines entrées/neurones d’une couche pendant l’entraînement, ce qui joue le rôle de régularisation et réduit le surapprentissage. Il ne s’agit pas d’ignorer des données d’entraînement.",
+            "explanation": "Le dropout met aléatoirement à zéro certaines entrées/neurones d’une couche pendant l’entraînement, ce qui joue le rôle de régularisation et réduit le surapprentissage. Il ne s’agit pas d’ignorer des données d’entraînement.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the main purpose of using dropout in a neural network?\n\n- (a) To speed up the training process by randomly choosing some of the training data and ignoring them during training.\n- (b) To reduce overfitting by randomly choosing some of the training data and ignoring them during training.\n- (c) To reduce overfitting by randomly choosing some inputs to a layer and setting them to zero during training.\n- (d) To normalize the input data by removing outliers of the training data during training.\n- (e) To speed up the training process by randomly choosing some of the channels and ignoring them during training.",
             "tags": [
                 "dropout",
                 "régularisation",
@@ -1990,7 +1990,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Le learning rate est le pas de la mise à jour : θ ← θ − η∇L. Il contrôle l’amplitude de la modification des paramètres à chaque itération.",
+            "explanation": "Le learning rate est le pas de la mise à jour : θ ← θ − η∇L. Il contrôle l’amplitude de la modification des paramètres à chaque itération.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the role of a learning rate in training a neural network?\n\n- (a) It selects how many optimization steps we perform per epoch.\n- (b) It decides the size of the neural network in relation to the sample size.\n- (c) It controls how much the model parameters are updated in each optimization step.\n- (d) It determines the ratio between the coefficients of the loss and the regularization terms.",
             "tags": [
                 "learning rate",
                 "optimisation"
@@ -2010,7 +2010,7 @@
             "answer": [
                 2
             ],
-            "explanation": "L’entraînement des réseaux de neurones repose sur la descente de gradient stochastique (SGD) et ses variantes (Adam, etc.).",
+            "explanation": "L’entraînement des réseaux de neurones repose sur la descente de gradient stochastique (SGD) et ses variantes (Adam, etc.).\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following algorithms is commonly used for optimizing the parameters of a neural network in training?\n\n- (a) Genetic Algorithm\n- (b) K-Nearest Neighbors\n- (c) Stochastic Gradient Descent\n- (d) Simulated Annealing",
             "tags": [
                 "SGD",
                 "optimisation"
@@ -2028,7 +2028,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Faux : le deep learning est très important, mais d’autres approches (méthodes à noyaux, arbres/boosting, méthodes probabilistes, symboliques…) restent pertinentes, notamment sur données tabulaires.",
+            "explanation": "Faux : le deep learning est très important, mais d’autres approches (méthodes à noyaux, arbres/boosting, méthodes probabilistes, symboliques…) restent pertinentes, notamment sur données tabulaires.\n\n---\n\n**🇬🇧 English version**\n\nIs the following sentence true or false?: As of 2024, deep learning is the only relevant approach to artificial intelligence.\n\n- (a) False\n- (b) True",
             "tags": [
                 "IA",
                 "culture générale"
@@ -2048,7 +2048,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Le champ réceptif d’une unité est la zone de l’entrée qui influence sa valeur ; il grandit avec la profondeur du réseau. Il ne se confond pas avec la taille du noyau, qui n’en est que la contribution d’une seule couche.",
+            "explanation": "Le champ réceptif d’une unité est la zone de l’entrée qui influence sa valeur ; il grandit avec la profondeur du réseau. Il ne se confond pas avec la taille du noyau, qui n’en est que la contribution d’une seule couche.\n\n---\n\n**🇬🇧 English version**\n\nIn CNNs, what does the term “receptive field” refer to?\n\n- (a) The number of layers in a Convolutional Neural Network (CNN).\n- (b) The region of the input data that influences a particular feature in the output.\n- (c) The output size after convolution.\n- (d) The size of the convolutional filter (or kernel).",
             "tags": [
                 "receptive field",
                 "CNN"
@@ -2068,7 +2068,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Connexions locales et partage des poids exploitent la structure spatiale des images, avec bien moins de paramètres qu’un réseau entièrement connecté.",
+            "explanation": "Connexions locales et partage des poids exploitent la structure spatiale des images, avec bien moins de paramètres qu’un réseau entièrement connecté.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the main advantage of using a Convolutional Neural Network (CNN) over a fully connected network for image data?\n\n- (a) CNNs do not require any data preprocessing.\n- (b) CNNs are faster because there is no convolution operation.\n- (c) CNNs take advantage of the spatial structure of the data, making them more effective for image processing with less parameters.\n- (d) CNNs are trained faster on CPUs than on GPUs.",
             "tags": [
                 "CNN",
                 "partage de poids",
@@ -2089,7 +2089,7 @@
             "answer": [
                 1
             ],
-            "explanation": "LSTM et GRU sont des variantes de RNN à portes (gates) qui atténuent le problème de disparition du gradient et gèrent mieux les dépendances longues.",
+            "explanation": "LSTM et GRU sont des variantes de RNN à portes (gates) qui atténuent le problème de disparition du gradient et gèrent mieux les dépendances longues.\n\n---\n\n**🇬🇧 English version**\n\nLong Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) are types of\n\n- (a) Convolutional Neural Networks (CNNs)\n- (b) Recurrent Neural Networks (RNNs)\n- (c) Multi-Layer Perceptrons (MLPs)\n- (d) Residual Networks (ResNets)",
             "tags": [
                 "LSTM",
                 "GRU",
@@ -2110,7 +2110,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Sans fonction d’activation non linéaire, un empilement de couches linéaires resterait une application linéaire. L’activation introduit la non-linéarité.",
+            "explanation": "Sans fonction d’activation non linéaire, un empilement de couches linéaires resterait une application linéaire. L’activation introduit la non-linéarité.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the primary role of an activation function in a neural network?\n\n- (a) Introduce non-linearity into the model.\n- (b) Increase the learning rate of the training process.\n- (c) Reduce overfitting.\n- (d) Normalize the input data.",
             "tags": [
                 "activation",
                 "non-linéarité"
@@ -2130,7 +2130,7 @@
             "answer": [
                 3
             ],
-            "explanation": "Le padding ajoute des bords à l’entrée : les dimensions spatiales de la sortie sont plus grandes que sans padding (avec k, s fixés : ⌊(n+2p−k)/s⌋+1). Le nombre de canaux dépend du nombre de filtres, pas du padding. (Les propositions (a) et (c) sont identiques dans l’énoncé.)",
+            "explanation": "Le padding ajoute des bords à l’entrée : les dimensions spatiales de la sortie sont plus grandes que sans padding (avec k, s fixés : ⌊(n+2p−k)/s⌋+1). Le nombre de canaux dépend du nombre de filtres, pas du padding. (Les propositions (a) et (c) sont identiques dans l’énoncé.)\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following is true concerning padding in a convolutional layer?\n\n- (a) The number of channels in the output of the layer will be larger than that without padding.\n- (b) The output dimensions of the layer will be smaller than those without padding.\n- (c) The number of channels in the output of the layer will be larger than that without padding.\n- (d) The output dimensions of the layer will be larger than those without padding.",
             "tags": [
                 "padding",
                 "convolution",
@@ -2152,7 +2152,7 @@
             "answer": [
                 2
             ],
-            "explanation": "ReLU(x) = max(0, x) renvoie 0 pour tout x négatif. Sigmoid et Tanh sont strictement non nulles en dehors de la limite, Softmax produit des probabilités positives, et ZeroGrad n’est pas une fonction d’activation.",
+            "explanation": "ReLU(x) = max(0, x) renvoie 0 pour tout x négatif. Sigmoid et Tanh sont strictement non nulles en dehors de la limite, Softmax produit des probabilités positives, et ZeroGrad n’est pas une fonction d’activation.\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following functions outputs zero for negative inputs?\n\n- (a) Softmax\n- (b) ZeroGrad\n- (c) ReLU (Rectified Linear Unit)\n- (d) Tanh (hyperbolic tangent)\n- (e) Sigmoid",
             "tags": [
                 "ReLU",
                 "activation"
@@ -2172,7 +2172,7 @@
             "answer": [
                 3
             ],
-            "explanation": "to('cuda') transfère le tenseur sur le GPU (CUDA). Ce n’est pas un changement de dtype ni de dimension.",
+            "explanation": "to('cuda') transfère le tenseur sur le GPU (CUDA). Ce n’est pas un changement de dtype ni de dimension.\n\n---\n\n**🇬🇧 English version**\n\nWhat does tensor.to(‘cuda’) do, where tensor is a torch.Tensor object.\n\n- (a) It copies the content of tensor to the CPU device.\n- (b) It changes the dtype of tensor to cuda.\n- (c) It creates a three dimensional array (of CUbic Data Array, CUDA).\n- (d) It copies the content of tensor to the GPU device.",
             "tags": [
                 "PyTorch",
                 "GPU",
@@ -2193,7 +2193,7 @@
             "answer": [
                 0
             ],
-            "explanation": "La cross-entropie est la perte usuelle en classification (vraisemblance négative). La perte 0-1 n’est pas différentiable, donc inutilisable avec la descente de gradient.",
+            "explanation": "La cross-entropie est la perte usuelle en classification (vraisemblance négative). La perte 0-1 n’est pas différentiable, donc inutilisable avec la descente de gradient.\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following is a common loss function used in training a classifier using a neural network?\n\n- (a) Cross-Entropy Loss.\n- (b) Zero-one Loss.\n- (c) Mean Absolute Error.\n- (d) ℓ1 Loss.",
             "tags": [
                 "cross-entropy",
                 "fonction de perte",
@@ -2214,7 +2214,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Le stride est le pas de déplacement du filtre : avec un stride de 2, il avance de 2 pixels à chaque fois, ce qui réduit environ de moitié les dimensions de sortie.",
+            "explanation": "Le stride est le pas de déplacement du filtre : avec un stride de 2, il avance de 2 pixels à chaque fois, ce qui réduit environ de moitié les dimensions de sortie.\n\n---\n\n**🇬🇧 English version**\n\nWhat does a stride of 2 in a convolutional layer indicate when applied to images?\n\n- (a) It adds margins of 2 pixels around the boundary of the input image.\n- (b) The output dimensions will be increased by a factor of 2.\n- (c) The filter moves by 2 pixels across the input image.\n- (d) The filter size is 2 × 2.",
             "tags": [
                 "stride",
                 "convolution"
@@ -2234,7 +2234,7 @@
             "answer": [
                 3
             ],
-            "explanation": "Le surapprentissage (overfitting) : bonne performance sur l’entraînement mais mauvaise généralisation sur le test. Les cas (b) et (c) relèvent plutôt du sous-apprentissage.",
+            "explanation": "Le surapprentissage (overfitting) : bonne performance sur l’entraînement mais mauvaise généralisation sur le test. Les cas (b) et (c) relèvent plutôt du sous-apprentissage.\n\n---\n\n**🇬🇧 English version**\n\nWhat is overfitting in the context of deep learning?\n\n- (a) The model performs well on the test data but poorly on the training data.\n- (b) The model performs poorly on both training and test data.\n- (c) The model has too few parameters.\n- (d) The model performs well on the training data but poorly on the test data.",
             "tags": [
                 "overfitting",
                 "généralisation"
@@ -2254,7 +2254,7 @@
             "answer": [
                 3
             ],
-            "explanation": "Le noyau glisse sur l’entrée et calcule des produits scalaires locaux, ce qui détecte des motifs (bords, textures).",
+            "explanation": "Le noyau glisse sur l’entrée et calcule des produits scalaires locaux, ce qui détecte des motifs (bords, textures).\n\n---\n\n**🇬🇧 English version**\n\nWhat does a kernel (or filter) in a convolutional layer do?\n\n- (a) It fully connects the input to the output layer.\n- (b) It normalizes the input data.\n- (c) It reduces the input size by pooling.\n- (d) It slides over the input to compute inner products, extracting features such as edges or textures.",
             "tags": [
                 "kernel",
                 "filtre",
@@ -2273,7 +2273,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Vrai : θ ← θ − η∇L(θ). On se déplace dans la direction opposée au gradient, celle de plus forte décroissance locale de la fonction de coût.",
+            "explanation": "Vrai : θ ← θ − η∇L(θ). On se déplace dans la direction opposée au gradient, celle de plus forte décroissance locale de la fonction de coût.\n\n---\n\n**🇬🇧 English version**\n\nIs the following sentence true or false?: the Gradient Descent (GD) method performs optimization by updating the parameters in the opposite directions of the gradients of the cost function.\n\n- (a) False\n- (b) True",
             "tags": [
                 "descente de gradient",
                 "optimisation"
@@ -2293,7 +2293,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Le dropout n’est actif que pendant l’entraînement ; à l’évaluation (model.eval()), on le désactive et on utilise le réseau complet.",
+            "explanation": "Le dropout n’est actif que pendant l’entraînement ; à l’évaluation (model.eval()), on le désactive et on utilise le réseau complet.\n\n---\n\n**🇬🇧 English version**\n\nYour friend is using dropout for training his neural network. Which of the following descriptions is the most accurate in this situation?\n\n- (a) He should apply dropout with the same probability of dropping connections, for training and testing.\n- (b) He should apply dropout with different probabilities of dropping connections, for training and testing.\n- (c) He should not apply dropout when he evaluates the trained model with test data.\n- (d) He should not use dropout in training a neural network.",
             "tags": [
                 "dropout",
                 "évaluation"
@@ -2314,7 +2314,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Les CNN sont conçus pour des données à structure en grille, en premier lieu les images : c’est le domaine de la vision par ordinateur.",
+            "explanation": "Les CNN sont conçus pour des données à structure en grille, en premier lieu les images : c’est le domaine de la vision par ordinateur.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the primary application of Convolutional Neural Networks (CNNs)?\n\n- (a) Generative models for arbitrary types of data.\n- (b) Computer vision tasks.\n- (c) Fourier transform.\n- (d) Matrix factorization.\n- (e) Bayesian neural networks.",
             "tags": [
                 "CNN",
                 "vision par ordinateur"
@@ -2334,7 +2334,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Les couches entièrement connectées finales combinent les caractéristiques extraites par les convolutions pour produire la sortie (scores de classes). Elles ont plutôt beaucoup de paramètres.",
+            "explanation": "Les couches entièrement connectées finales combinent les caractéristiques extraites par les convolutions pour produire la sortie (scores de classes). Elles ont plutôt beaucoup de paramètres.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the purpose of having fully connected layers in the last layers in a Convolutional Neural Network (CNN)?\n\n- (a) To incorporate convolution operation into the feature extraction.\n- (b) To incorporate the batch normalization to the architecture for stable optimization.\n- (c) To combine features extracted by convolution layers and produce the final output.\n- (d) To reduce the number of parameters.",
             "tags": [
                 "CNN",
                 "couche entièrement connectée"
@@ -2354,7 +2354,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Un ResNet ajoute une connexion de raccourci (skip connection) : y = x + F(x). Le bloc n’apprend que le résidu F(x), ce qui facilite l’entraînement de réseaux très profonds. Ce sont des CNN, pas des MLP ni des RNN.",
+            "explanation": "Un ResNet ajoute une connexion de raccourci (skip connection) : y = x + F(x). Le bloc n’apprend que le résidu F(x), ce qui facilite l’entraînement de réseaux très profonds. Ce sont des CNN, pas des MLP ni des RNN.\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following descriptions is correct concerning Residual Networks (ResNets)?\n\n- (a) A ResNets is trained to predict the residuals of the ordinary least square estimates, which has proven effective for mitigating overfitting.\n- (b) A ResNet uses a shortcut connection added to the output of the skipped convolution block so that the convolution block will be only responsible for the residual of the total output.\n- (c) ResNets are multi-layer perceptrons with a very deep architecture.\n- (d) ResNets are a type of Recurrent Neural Networks (RNNs) with a very deep architecture.",
             "tags": [
                 "ResNet",
                 "skip connection"
@@ -2376,7 +2376,7 @@
             "answer": [
                 5
             ],
-            "explanation": "Adam estime à la fois le moment d’ordre 1 (moyenne mobile du gradient) et le moment d’ordre 2 (moyenne mobile du gradient au carré) pour adapter le pas de chaque paramètre. Forward et back propagation ne sont pas des optimiseurs.",
+            "explanation": "Adam estime à la fois le moment d’ordre 1 (moyenne mobile du gradient) et le moment d’ordre 2 (moyenne mobile du gradient au carré) pour adapter le pas de chaque paramètre. Forward et back propagation ne sont pas des optimiseurs.\n\n---\n\n**🇬🇧 English version**\n\nWhich optimizer estimates the second-order moment of the momentum?\n\n- (a) Gradient Descent\n- (b) Mini-batch Gradient Descent\n- (c) Stochastic Gradient Descent (SGD)\n- (d) Forward Propagation\n- (e) Back Propagation\n- (f) Adam",
             "tags": [
                 "Adam",
                 "optimiseur",
@@ -2398,7 +2398,7 @@
             "answer": [
                 0
             ],
-            "explanation": "autograd construit le graphe de calcul de f et applique la règle de la chaîne (rétropropagation) : il suffit d’implémenter f avec des opérations PyTorch, sans coder ∇f. Ce n’est ni de la différence finie, ni du développement de Taylor, ni de la descente de gradient. (La correction du cours indiquait (d), mais c’est une erreur.)",
+            "explanation": "autograd construit le graphe de calcul de f et applique la règle de la chaîne (rétropropagation) : il suffit d’implémenter f avec des opérations PyTorch, sans coder ∇f. Ce n’est ni de la différence finie, ni du développement de Taylor, ni de la descente de gradient. (La correction du cours indiquait (d), mais c’est une erreur.)\n\n---\n\n**🇬🇧 English version**\n\nYou are developping a neural network using PyTorch. You decided to use some differentiable but uncommon activation function f that cannot be expressed with those already implemented in the PyTorch package. Which of the following descriptions is the most accurate in this situation?\n\n- (a) Automatic differentiation (torch.autograd) calculates gradients of a function f using the Back Propagation, and thus it only requires us to implement the function f.\n- (b) Automatic differentiation (torch.autograd) calculates gradients of a function f using the Gradient Descent, and thus it only requires us to implement the function f.\n- (c) Automatic differentiation (torch.autograd) calculates gradients of a function f using the Taylor approximation calculated numerically, and thus it only requires us to implement the function f.\n- (d) Automatic differentiation (torch.autograd) calculates gradients of a function f by automatically referring to the code for calculating the derivative ∇f, and thus it still requires us to implement ∇f along with f.\n- (e) Automatic differentiation (torch.autograd) calculates gradients of a function f by an approximate, finite differentiation of the form (f(x+ϵ) − f(x)) / ϵ or its variants, where x is the input and ϵ > 0 is a small real number controlling the precision of discretization.",
             "tags": [
                 "autograd",
                 "PyTorch",
@@ -2417,7 +2417,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Faux : un MLP est inspiré très librement des neurones biologiques mais ne reproduit pas la structure du cerveau ; c’est une composition de transformations affines et d’activations non linéaires.",
+            "explanation": "Faux : un MLP est inspiré très librement des neurones biologiques mais ne reproduit pas la structure du cerveau ; c’est une composition de transformations affines et d’activations non linéaires.\n\n---\n\n**🇬🇧 English version**\n\nIs the following sentence true or false?: A Multi-Layer Perceptron (MLP) is a model precisely imitating the structure of a human brain in the biological sense.\n\n- (a) False\n- (b) True",
             "tags": [
                 "MLP",
                 "culture générale"
@@ -2437,7 +2437,7 @@
             "answer": [
                 3
             ],
-            "explanation": "Dans le Transformer, l’encodeur lit la séquence d’entrée et en produit des représentations utiles ; le décodeur les utilise (via l’attention croisée) pour générer la séquence de sortie. Il n’y a pas de convolutions dans cette architecture.",
+            "explanation": "Dans le Transformer, l’encodeur lit la séquence d’entrée et en produit des représentations utiles ; le décodeur les utilise (via l’attention croisée) pour générer la séquence de sortie. Il n’y a pas de convolutions dans cette architecture.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the main difference between the roles of the encoder and the decoder in the Transformer model (Vaswani et al., 2017)?\n\n- (a) The encoder uses convolution layers to produce lower-dimensional codes, while the decoder uses transposed convolution layers to convert codes to produce the output sequence.\n- (b) The decoder reads the input sequence and produces useful features, while the encoder uses them to generate the output sequence.\n- (c) The decoder uses convolution layers to produce lower-dimensional codes, while the encoder uses transposed convolution layers to convert codes to produce the output sequence.\n- (d) The encoder reads the input sequence and produces useful features, while the decoder uses them to generate the output sequence.",
             "tags": [
                 "Transformer",
                 "encodeur",
@@ -2458,7 +2458,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Sans padding, chaque convolution rétrécit la carte de caractéristiques. Le padding ajoute des bords (souvent des zéros) et limite cette réduction. Il ne change ni le nombre de noyaux ni leurs paramètres.",
+            "explanation": "Sans padding, chaque convolution rétrécit la carte de caractéristiques. Le padding ajoute des bords (souvent des zéros) et limite cette réduction. Il ne change ni le nombre de noyaux ni leurs paramètres.\n\n---\n\n**🇬🇧 English version**\n\nIn a convolution layer, padding:\n\n- (a) Reduces the extent of spatial size reduction caused by convolution.\n- (b) Decreases the number of kernels used.\n- (c) Increases the number of learnable parameters of the kernel.\n- (d) Drops randomly chosen pixels (by setting them to zero).",
             "tags": [
                 "padding",
                 "convolution"
@@ -2478,7 +2478,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Un minibatch est un sous-ensemble du jeu de données sur lequel on calcule le gradient pour une mise à jour. Le jeu complet correspond au batch GD, un seul exemple au SGD pur, et un passage complet à une epoch.",
+            "explanation": "Un minibatch est un sous-ensemble du jeu de données sur lequel on calcule le gradient pour une mise à jour. Le jeu complet correspond au batch GD, un seul exemple au SGD pur, et un passage complet à une epoch.\n\n---\n\n**🇬🇧 English version**\n\nIn minibatch gradient descent, a minibatch refers to:\n\n- (a) A subset of the dataset.\n- (b) The entire dataset.\n- (c) A single example from the dataset.\n- (d) One complete pass through the dataset.",
             "tags": [
                 "minibatch",
                 "descente de gradient"
@@ -2498,7 +2498,7 @@
             "answer": [
                 1
             ],
-            "explanation": "La fonction d’activation introduit de la non-linéarité ; sans elle, un empilement de couches linéaires resterait linéaire.",
+            "explanation": "La fonction d’activation introduit de la non-linéarité ; sans elle, un empilement de couches linéaires resterait linéaire.\n\n---\n\n**🇬🇧 English version**\n\nAn activation function introduces:\n\n- (a) Weight initialization.\n- (b) Non-linearity.\n- (c) Gradient vanishing.\n- (d) Linearity.",
             "tags": [
                 "activation",
                 "non-linéarité"
@@ -2518,7 +2518,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Un RNN bidirectionnel parcourt la séquence dans les deux sens (passé→futur et futur→passé) et combine les deux états cachés.",
+            "explanation": "Un RNN bidirectionnel parcourt la séquence dans les deux sens (passé→futur et futur→passé) et combine les deux états cachés.\n\n---\n\n**🇬🇧 English version**\n\nA bidirectional Recurrent Neural Network (RNN):\n\n- (a) Produces positive and negative gradients simultaneously.\n- (b) Processes sequences both forward and backward.\n- (c) Performs the gradient descent using two random directions.\n- (d) Performs the forward pass calculation and the back-propagation simultaneously.",
             "tags": [
                 "RNN",
                 "bidirectionnel"
@@ -2538,7 +2538,7 @@
             "answer": [
                 3
             ],
-            "explanation": "Une couche de convolution calcule le produit scalaire entre le noyau et chaque région locale de l’entrée. La normalisation, le dropout et les connexions raccourcis sont d’autres mécanismes.",
+            "explanation": "Une couche de convolution calcule le produit scalaire entre le noyau et chaque région locale de l’entrée. La normalisation, le dropout et les connexions raccourcis sont d’autres mécanismes.\n\n---\n\n**🇬🇧 English version**\n\nA convolution layer:\n\n- (a) Normalizes each local region of the input.\n- (b) Applies random dropout to the input neurons to reduce the number of connections.\n- (c) Has a shortcut (skip) connection by design.\n- (d) Applies the dot product between the kernel and each local region of the input.",
             "tags": [
                 "convolution",
                 "noyau"
@@ -2558,7 +2558,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Le stride est le pas de déplacement du noyau sur l’entrée.",
+            "explanation": "Le stride est le pas de déplacement du noyau sur l’entrée.\n\n---\n\n**🇬🇧 English version**\n\nThe stride of a convolution layer defines:\n\n- (a) The step (skip) size of the kernel movement.\n- (b) The size of the matrix used by the kernel.\n- (c) The activation function applied after the convolution.\n- (d) The number of channels of the layer.",
             "tags": [
                 "stride",
                 "convolution"
@@ -2578,7 +2578,7 @@
             "answer": [
                 3
             ],
-            "explanation": "La fonction de perte mesure l’écart entre les prédictions et les cibles ; c’est ce que l’optimisation cherche à minimiser.",
+            "explanation": "La fonction de perte mesure l’écart entre les prédictions et les cibles ; c’est ce que l’optimisation cherche à minimiser.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the main purpose of a loss function?\n\n- (a) Introduce non-linearity to a neural network.\n- (b) Implement the forward pass calculation.\n- (c) Implement weight decay.\n- (d) Measure model performance.",
             "tags": [
                 "fonction de perte"
             ]
@@ -2597,7 +2597,7 @@
             "answer": [
                 3
             ],
-            "explanation": "Les modèles de diffusion produisent des images de très haute qualité, mais leur entraînement et surtout leur génération (nombreuses étapes de débruitage) sont coûteux en calcul et en énergie.",
+            "explanation": "Les modèles de diffusion produisent des images de très haute qualité, mais leur entraînement et surtout leur génération (nombreuses étapes de débruitage) sont coûteux en calcul et en énergie.\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following best describes the main weakness of diffusion models?\n\n- (a) They rely on small datasets that limit their efficiency.\n- (b) They are less effective for generating higher-resolution images compared to other existing generative models.\n- (c) They produce low-quality images that need to be regenerated multiple times.\n- (d) They require extensive computational resources, leading to high energy consumption.",
             "tags": [
                 "modèles de diffusion",
                 "coût de calcul"
@@ -2617,7 +2617,7 @@
             "answer": [
                 0
             ],
-            "explanation": "L’early stopping arrête l’entraînement quand la performance sur un jeu de validation cesse de s’améliorer, pour éviter le surapprentissage dû à un entraînement trop long.",
+            "explanation": "L’early stopping arrête l’entraînement quand la performance sur un jeu de validation cesse de s’améliorer, pour éviter le surapprentissage dû à un entraînement trop long.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the primary purpose of early stopping in training neural networks?\n\n- (a) To avoid using a model that has been overfitted by long training.\n- (b) To randomly drop neurons during training.\n- (c) To increase the learning rate over time.\n- (d) To initialize weights more effectively.",
             "tags": [
                 "early stopping",
                 "surapprentissage"
@@ -2637,7 +2637,7 @@
             "answer": [
                 3
             ],
-            "explanation": "Avec un pas trop grand, les mises à jour dépassent le minimum : la perte oscille ou diverge.",
+            "explanation": "Avec un pas trop grand, les mises à jour dépassent le minimum : la perte oscille ou diverge.\n\n---\n\n**🇬🇧 English version**\n\nA too large learning rate can cause:\n\n- (a) Early stopping.\n- (b) Overfitting.\n- (c) Overconfident predictions.\n- (d) Oscillation or divergence.",
             "tags": [
                 "learning rate",
                 "divergence"
@@ -2657,7 +2657,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Le surapprentissage : bon sur l’entraînement, mauvais sur des données non vues.",
+            "explanation": "Le surapprentissage : bon sur l’entraînement, mauvais sur des données non vues.\n\n---\n\n**🇬🇧 English version**\n\nOverfitting is a situation where:\n\n- (a) The model performs poorly on both the training data and unseen test data.\n- (b) The model performs well on the training data, but poorly on unseen test data.\n- (c) The model performs well both on the training data and unseen test data.\n- (d) The model performs well on unseen test data, but poorly on the training data.",
             "tags": [
                 "overfitting",
                 "généralisation"
@@ -2677,7 +2677,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Le pooling résume des régions locales et réduit la résolution spatiale. Le document source indiquait (b) par erreur, en précisant lui-même que la bonne réponse est (a).",
+            "explanation": "Le pooling résume des régions locales et réduit la résolution spatiale. Le document source indiquait (b) par erreur, en précisant lui-même que la bonne réponse est (a).\n\n---\n\n**🇬🇧 English version**\n\nA pooling layer:\n\n- (a) Reduces the dimensions (resolution) of the input array.\n- (b) Increases the dimensions (resolution) of the input array.\n- (c) Accumulates the output values from the previous layers.\n- (d) Accumulates the gradients of the previous layers.",
             "tags": [
                 "pooling",
                 "CNN"
@@ -2697,7 +2697,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Une epoch est un passage complet sur le jeu d’entraînement ; une mise à jour correspond à une itération sur un minibatch.",
+            "explanation": "Une epoch est un passage complet sur le jeu d’entraînement ; une mise à jour correspond à une itération sur un minibatch.\n\n---\n\n**🇬🇧 English version**\n\nAn epoch means:\n\n- (a) One gradient descent update.\n- (b) One training pass through a training dataset.\n- (c) One iteration of any for loop in Python.\n- (d) One training pass through a minibatch.",
             "tags": [
                 "epoch",
                 "entraînement"
@@ -2717,7 +2717,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Le dropout met aléatoirement à zéro des neurones pendant l’entraînement, ce qui régularise le réseau.",
+            "explanation": "Le dropout met aléatoirement à zéro des neurones pendant l’entraînement, ce qui régularise le réseau.\n\n---\n\n**🇬🇧 English version**\n\nDropout helps prevent overfitting by:\n\n- (a) Adding noise to the inputs.\n- (b) Stopping training at a random point in time.\n- (c) Dropping randomly selected neurons (forcing their values to be zero).\n- (d) Freezing weights of the feature extractor.",
             "tags": [
                 "dropout",
                 "régularisation"
@@ -2737,7 +2737,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Les Transformers reposent sur le mécanisme d’attention et non sur une transition d’état récurrente, ce qui permet de paralléliser le calcul sur la séquence.",
+            "explanation": "Les Transformers reposent sur le mécanisme d’attention et non sur une transition d’état récurrente, ce qui permet de paralléliser le calcul sur la séquence.\n\n---\n\n**🇬🇧 English version**\n\nIn contrast to Recurrent Neural Networks, Transformers rely on:\n\n- (a) Attention mechanism.\n- (b) Diffusion processes.\n- (c) Convolution layers.\n- (d) Recurrent state transition.",
             "tags": [
                 "Transformer",
                 "attention"
@@ -2757,7 +2757,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Une itération : passe avant (forward), calcul de la perte, passe arrière (backward, loss.backward()), puis mise à jour des paramètres (optimizer.step()).",
+            "explanation": "Une itération : passe avant (forward), calcul de la perte, passe arrière (backward, loss.backward()), puis mise à jour des paramètres (optimizer.step()).\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following correctly describes the main steps of one iteration of a typical training loop implemented in PyTorch?\n\n- (a) Randomly propose a prediction label → Compute the loss → Reject or accept the proposed label → Repeat until the proposed label converges.\n- (b) Backward pass calculation → Compute the loss → Forward pass calculation → Update the parameters using the gradients.\n- (c) Forward pass calculation → Compute loss → Backward pass calculation → Update the parameters using the gradients.\n- (d) Randomly propose a prediction label → Compute the loss → Reject or accept the proposed label → Repeat until convergence to the stationary distribution.",
             "tags": [
                 "PyTorch",
                 "boucle d’entraînement"
@@ -2777,7 +2777,7 @@
             "answer": [
                 1
             ],
-            "explanation": "θ ← θ − η∇L : on se déplace dans la direction opposée au gradient.",
+            "explanation": "θ ← θ − η∇L : on se déplace dans la direction opposée au gradient.\n\n---\n\n**🇬🇧 English version**\n\nThe gradient descent algorithm updates parameters by:\n\n- (a) Moving them in the direction of the gradient.\n- (b) Moving them in the opposite direction of the gradient.\n- (c) Multiplying the gradient.\n- (d) Reducing the gradient.",
             "tags": [
                 "descente de gradient"
             ]
@@ -2796,7 +2796,7 @@
             "answer": [
                 3
             ],
-            "explanation": "À chaque mise à jour, GD calcule le gradient sur tout le jeu de données, SGD sur un sous-échantillon aléatoire (exemple ou minibatch). Les deux utilisent des gradients et itèrent.",
+            "explanation": "À chaque mise à jour, GD calcule le gradient sur tout le jeu de données, SGD sur un sous-échantillon aléatoire (exemple ou minibatch). Les deux utilisent des gradients et itèrent.\n\n---\n\n**🇬🇧 English version**\n\nThe stochastic gradient descent (SGD) differs from the gradient descent (GD) because:\n\n- (a) GD uses gradients, while SGD uses no gradients.\n- (b) GD uses a fixed step size, while SGD uses an uniformly random step size.\n- (c) GD updates weights only once, while SGD updates them repeatedly across iterations.\n- (d) For each update, GD uses the entire dataset, while SGD uses a random subsample.",
             "tags": [
                 "SGD",
                 "descente de gradient"
@@ -2816,7 +2816,7 @@
             "answer": [
                 1
             ],
-            "explanation": "La détection d’objets consiste à identifier les objets présents et à les localiser (typiquement par des boîtes englobantes).",
+            "explanation": "La détection d’objets consiste à identifier les objets présents et à les localiser (typiquement par des boîtes englobantes).\n\n---\n\n**🇬🇧 English version**\n\nObject detection involves:\n\n- (a) Clustering objects of an image.\n- (b) Identifying objects and recognizing their locations.\n- (c) Textually describing an input image as a whole.\n- (d) Detecting common visual patterns in an image dataset.",
             "tags": [
                 "détection d’objets",
                 "vision par ordinateur"
@@ -2836,7 +2836,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Une couche linéaire calcule Wx + b, une fonction affine (linéaire plus biais).",
+            "explanation": "Une couche linéaire calcule Wx + b, une fonction affine (linéaire plus biais).\n\n---\n\n**🇬🇧 English version**\n\nA linear layer represents:\n\n- (a) A linear function with no bias term.\n- (b) An activation function.\n- (c) An affine function.\n- (d) A loss function.",
             "tags": [
                 "couche linéaire",
                 "affine"
@@ -2856,7 +2856,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Chaque état caché dépend du précédent : le calcul est séquentiel et ne peut pas être entièrement parallélisé sur la séquence. Les RNN gèrent bien les longueurs variables et les dépendances à court terme.",
+            "explanation": "Chaque état caché dépend du précédent : le calcul est séquentiel et ne peut pas être entièrement parallélisé sur la séquence. Les RNN gèrent bien les longueurs variables et les dépendances à court terme.\n\n---\n\n**🇬🇧 English version**\n\nWhat is a fundamental limitation of standard RNNs?\n\n- (a) They always require batch normalization layers to function properly.\n- (b) They cannot handle sequences of variable length.\n- (c) The calculation of hidden states for a long sequence cannot be fully parallelized.\n- (d) They cannot learn short-term dependencies.",
             "tags": [
                 "RNN",
                 "parallélisation"
@@ -2876,7 +2876,7 @@
             "answer": [
                 3
             ],
-            "explanation": "La classification d’images attribue une seule étiquette de classe à une image entière.",
+            "explanation": "La classification d’images attribue une seule étiquette de classe à une image entière.\n\n---\n\n**🇬🇧 English version**\n\nImage classification:\n\n- (a) Predicts the ranking of the images of a given dataset.\n- (b) Produces segmentation maps of a given input.\n- (c) Finds multiple objects in a given image.\n- (d) Assigns a single class label to a given image.",
             "tags": [
                 "classification d’images",
                 "vision par ordinateur"
@@ -2896,7 +2896,7 @@
             "answer": [
                 2
             ],
-            "explanation": "La régression ridge à noyau est une méthode à noyaux classique, pas un réseau de neurones profond.",
+            "explanation": "La régression ridge à noyau est une méthode à noyaux classique, pas un réseau de neurones profond.\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following does NOT use a deep learning approach?\n\n- (a) Convolutional Neural Networks\n- (b) Recurrent Neural Networks\n- (c) Kernel Ridge Regression\n- (d) Transformers",
             "tags": [
                 "deep learning",
                 "méthodes à noyaux"
@@ -2916,7 +2916,7 @@
             "answer": [
                 3
             ],
-            "explanation": "Les ResNets reposent sur des connexions raccourcis y = x + F(x), qui facilitent l’entraînement de réseaux très profonds.",
+            "explanation": "Les ResNets reposent sur des connexions raccourcis y = x + F(x), qui facilitent l’entraînement de réseaux très profonds.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the main characteristic of Residual Networks (ResNets)?\n\n- (a) Regression performed at each layer.\n- (b) Prediction of bounding boxes around the objects.\n- (c) Use of memory cells along with hidden states.\n- (d) Use of shortcut (skip) connections.",
             "tags": [
                 "ResNet",
                 "skip connection"
@@ -2936,7 +2936,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Une époque est un passage complet sur le jeu : 1000 / 50 = 20 mini-batchs, donc 20 mises à jour.",
+            "explanation": "Une époque est un passage complet sur le jeu : 1000 / 50 = 20 mini-batchs, donc 20 mises à jour.\n\n---\n\n**🇬🇧 English version**\n\nA training set contains 1000 samples and the mini-batch size is 50. How many parameter updates happen during one epoch?\n\n- (a) 1\n- (b) 20\n- (c) 50\n- (d) 1000",
             "tags": [
                 "epoch",
                 "mini-batch"
@@ -2956,7 +2956,7 @@
             "answer": [
                 2
             ],
-            "explanation": "W₂(W₁x + b₁) + b₂ reste de la forme Wx + b : le réseau n’apprendrait pas de fonctions complexes.",
+            "explanation": "W₂(W₁x + b₁) + b₂ reste de la forme Wx + b : le réseau n’apprendrait pas de fonctions complexes.\n\n---\n\n**🇬🇧 English version**\n\nWhy do we put a non-linear activation function between linear layers?\n\n- (a) To make the network run faster on a GPU\n- (b) To reduce the number of parameters\n- (c) Without it, stacking several linear layers is equivalent to a single linear layer\n- (d) To normalize the outputs between 0 and 1",
             "tags": [
                 "activation",
                 "non-linéarité"
@@ -2976,7 +2976,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Elle applique le log-softmax elle-même : ajouter un softmax avant est une erreur classique.",
+            "explanation": "Elle applique le log-softmax elle-même : ajouter un softmax avant est une erreur classique.\n\n---\n\n**🇬🇧 English version**\n\nIn PyTorch, nn.CrossEntropyLoss expects the model output to be:\n\n- (a) Raw scores (logits), without softmax\n- (b) Probabilities obtained after a softmax\n- (c) One-hot vectors\n- (d) Values between 0 and 1 obtained after a sigmoid",
             "tags": [
                 "PyTorch",
                 "CrossEntropyLoss",
@@ -2997,7 +2997,7 @@
             "answer": [
                 3
             ],
-            "explanation": "Le modèle colle aux données d’entraînement (même au bruit) mais généralise moins bien.",
+            "explanation": "Le modèle colle aux données d’entraînement (même au bruit) mais généralise moins bien.\n\n---\n\n**🇬🇧 English version**\n\nDuring training, the training loss keeps decreasing but the validation loss starts to increase. This indicates:\n\n- (a) Underfitting\n- (b) A learning rate equal to zero\n- (c) Vanishing gradients\n- (d) Overfitting",
             "tags": [
                 "overfitting",
                 "validation"
@@ -3017,7 +3017,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Entraîner plus longtemps sans régularisation aggrave le surapprentissage.",
+            "explanation": "Entraîner plus longtemps sans régularisation aggrave le surapprentissage.\n\n---\n\n**🇬🇧 English version**\n\nWhich of the following is NOT a way to reduce overfitting?\n\n- (a) Dropout\n- (b) Early stopping\n- (c) Training for many more epochs on the same data without any regularization\n- (d) Data augmentation",
             "tags": [
                 "overfitting",
                 "régularisation"
@@ -3037,7 +3037,7 @@
             "answer": [
                 3
             ],
-            "explanation": "La GD utilise tout le jeu ; le SGD un échantillon, moins coûteux mais plus bruité.",
+            "explanation": "La GD utilise tout le jeu ; le SGD un échantillon, moins coûteux mais plus bruité.\n\n---\n\n**🇬🇧 English version**\n\nCompared with gradient descent (GD), stochastic gradient descent (SGD):\n\n- (a) Always converges in fewer iterations\n- (b) Uses the whole dataset at every update\n- (c) Does not need a learning rate\n- (d) Estimates the gradient from a random sample or mini-batch: cheaper but noisier",
             "tags": [
                 "SGD",
                 "descente de gradient"
@@ -3057,7 +3057,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Adam garde des moyennes mobiles du gradient et de son carré, sans hessienne.",
+            "explanation": "Adam garde des moyennes mobiles du gradient et de son carré, sans hessienne.\n\n---\n\n**🇬🇧 English version**\n\nWhich statement about Adam is correct?\n\n- (a) It adapts the step of each parameter using running estimates of the first and second moments of the gradient\n- (b) It needs the Hessian matrix (second derivatives of the loss)\n- (c) It uses a single global learning rate that never adapts\n- (d) It cannot be used with mini-batches",
             "tags": [
                 "Adam",
                 "optimiseur",
@@ -3078,7 +3078,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Sans cela, les gradients des itérations précédentes s’accumulent.",
+            "explanation": "Sans cela, les gradients des itérations précédentes s’accumulent.\n\n---\n\n**🇬🇧 English version**\n\nWhy do we call optimizer.zero_grad() at each iteration of the training loop?\n\n- (a) To reset the model weights to zero\n- (b) Because PyTorch accumulates gradients by default, so old gradients would be added to the new ones\n- (c) To empty the DataLoader\n- (d) To switch the model to evaluation mode",
             "tags": [
                 "PyTorch",
                 "zero_grad",
@@ -3099,7 +3099,7 @@
             "answer": [
                 2
             ],
-            "explanation": "__getitem__ renvoie l’échantillon d’indice idx, __len__ la taille ; le DataLoader s’en sert pour construire les mini-batchs.",
+            "explanation": "__getitem__ renvoie l’échantillon d’indice idx, __len__ la taille ; le DataLoader s’en sert pour construire les mini-batchs.\n\n---\n\n**🇬🇧 English version**\n\nIn a custom PyTorch Dataset, which method returns the sample (input, label) at a given index?\n\n- (a) forward(self, idx)\n- (b) step(self, idx)\n- (c) __getitem__(self, idx)\n- (d) backward(self, idx)",
             "tags": [
                 "PyTorch",
                 "Dataset",
@@ -3120,7 +3120,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Le dropout n’est actif qu’à l’entraînement.",
+            "explanation": "Le dropout n’est actif qu’à l’entraînement.\n\n---\n\n**🇬🇧 English version**\n\nWhat happens to dropout when we evaluate the model on the test set (model.eval())?\n\n- (a) It is turned off: all units are used\n- (b) It is still applied, with a higher probability\n- (c) It is applied only to the first layer\n- (d) It replaces the activation function",
             "tags": [
                 "dropout",
                 "évaluation",
@@ -3141,7 +3141,7 @@
             "answer": [
                 1
             ],
-            "explanation": "⌊(32 + 2 − 3) / 2⌋ + 1 = ⌊15,5⌋ + 1 = 16.",
+            "explanation": "⌊(32 + 2 − 3) / 2⌋ + 1 = ⌊15,5⌋ + 1 = 16.\n\n---\n\n**🇬🇧 English version**\n\nAn input image is 32×32. A convolution has kernel size 3, stride 2 and padding 1. What is the output size?\n\n- (a) 15×15\n- (b) 16×16\n- (c) 17×17\n- (d) 32×32",
             "tags": [
                 "convolution",
                 "stride",
@@ -3163,7 +3163,7 @@
             "answer": [
                 3
             ],
-            "explanation": "16 × (3 × 3 × 3 + 1) = 16 × 28 = 448 (432 si on oublie le biais).",
+            "explanation": "16 × (3 × 3 × 3 + 1) = 16 × 28 = 448 (432 si on oublie le biais).\n\n---\n\n**🇬🇧 English version**\n\nA convolutional layer has 3 input channels, 16 output channels, a 3×3 kernel and a bias. How many parameters does it have?\n\n- (a) 48\n- (b) 144\n- (c) 432\n- (d) 448",
             "tags": [
                 "convolution",
                 "nombre de paramètres"
@@ -3183,7 +3183,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Après Flatten il y a 400 valeurs par image, donc in_features doit valoir 400.",
+            "explanation": "Après Flatten il y a 400 valeurs par image, donc in_features doit valoir 400.\n\n---\n\n**🇬🇧 English version**\n\nA CNN raises: RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x400 and 256x10). The batch has 32 images and the last layer is nn.Linear(256, 10). What is the fix?\n\n- (a) Change the batch size to 256\n- (b) Add a ReLU after Flatten\n- (c) Change the layer to nn.Linear(400, 10)\n- (d) Transpose the input images",
             "tags": [
                 "PyTorch",
                 "Linear",
@@ -3205,7 +3205,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Le pooling réduit la taille spatiale et ne change jamais le nombre de canaux.",
+            "explanation": "Le pooling réduit la taille spatiale et ne change jamais le nombre de canaux.\n\n---\n\n**🇬🇧 English version**\n\nWhich statement about max pooling is INCORRECT?\n\n- (a) It increases the number of channels (feature maps)\n- (b) It reduces the spatial size\n- (c) It has no learnable parameters\n- (d) It keeps the number of channels",
             "tags": [
                 "pooling",
                 "CNN"
@@ -3225,7 +3225,7 @@
             "answer": [
                 3
             ],
-            "explanation": "La sortie du bloc est F(x) + x, ce qui aide le gradient à circuler dans les réseaux très profonds.",
+            "explanation": "La sortie du bloc est F(x) + x, ce qui aide le gradient à circuler dans les réseaux très profonds.\n\n---\n\n**🇬🇧 English version**\n\nWhat is the purpose of skip connections in a ResNet?\n\n- (a) To reduce the size of the image\n- (b) To add dropout inside each block\n- (c) To turn the CNN into a recurrent network\n- (d) To let a block learn a residual F(x) added to its input x, which makes very deep networks easier to train",
             "tags": [
                 "ResNet",
                 "skip connection"
@@ -3245,7 +3245,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Les poids sont partagés à tous les pas de temps, ce qui permet de traiter des séquences de longueur variable.",
+            "explanation": "Les poids sont partagés à tous les pas de temps, ce qui permet de traiter des séquences de longueur variable.\n\n---\n\n**🇬🇧 English version**\n\nWhich statement about an RNN is correct?\n\n- (a) A different set of weights is used at each time step\n- (b) The same weights are used at every time step\n- (c) Weights are used only at the first time step\n- (d) It has no weights, only a hidden state",
             "tags": [
                 "RNN",
                 "partage de poids"
@@ -3265,7 +3265,7 @@
             "answer": [
                 3
             ],
-            "explanation": "C’est le problème du gradient qui disparaît (vanishing gradient), atténué par LSTM et GRU.",
+            "explanation": "C’est le problème du gradient qui disparaît (vanishing gradient), atténué par LSTM et GRU.\n\n---\n\n**🇬🇧 English version**\n\nWhy do standard RNNs struggle with long-term dependencies?\n\n- (a) The hidden state is too small\n- (b) They cannot process sequences of variable length\n- (c) The loss function is not differentiable\n- (d) Gradients shrink as they are backpropagated through many time steps, so early inputs have little influence",
             "tags": [
                 "RNN",
                 "vanishing gradient",
@@ -3286,7 +3286,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Les portes d’oubli, d’entrée et de sortie gèrent la cellule mémoire.",
+            "explanation": "Les portes d’oubli, d’entrée et de sortie gèrent la cellule mémoire.\n\n---\n\n**🇬🇧 English version**\n\nWhat do the gates of an LSTM do?\n\n- (a) They control what information is forgotten, written and output by the memory cell\n- (b) They normalize the inputs of each layer\n- (c) They randomly set activations to zero\n- (d) They compute the attention between all tokens",
             "tags": [
                 "LSTM",
                 "portes"
@@ -3306,7 +3306,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Les scores QKᵀ sont divisés par √d_k, passés dans un softmax, puis pondèrent V.",
+            "explanation": "Les scores QKᵀ sont divisés par √d_k, passés dans un softmax, puis pondèrent V.\n\n---\n\n**🇬🇧 English version**\n\nIn a Transformer, the self-attention output is computed as:\n\n- (a) softmax(Q + K) V\n- (b) ReLU(QKᵀ) V\n- (c) softmax(QKᵀ / √d_k) V\n- (d) softmax(VKᵀ / √d_k) Q",
             "tags": [
                 "Transformer",
                 "self-attention"
@@ -3326,7 +3326,7 @@
             "answer": [
                 1
             ],
-            "explanation": "L’attention voit les tokens comme un ensemble : il faut donc ajouter la position.",
+            "explanation": "L’attention voit les tokens comme un ensemble : il faut donc ajouter la position.\n\n---\n\n**🇬🇧 English version**\n\nWhy do Transformers need positional encoding?\n\n- (a) To reduce the number of attention heads\n- (b) Because attention alone does not know the order of the tokens\n- (c) To make the model bidirectional\n- (d) To compress the sequence",
             "tags": [
                 "Transformer",
                 "encodage positionnel"
@@ -3346,7 +3346,7 @@
             "answer": [
                 3
             ],
-            "explanation": "On réutilise les caractéristiques apprises et on adapte la fin du réseau avec un petit learning rate.",
+            "explanation": "On réutilise les caractéristiques apprises et on adapte la fin du réseau avec un petit learning rate.\n\n---\n\n**🇬🇧 English version**\n\nHow do we usually fine-tune a pretrained CNN on a small new dataset?\n\n- (a) Train from scratch with random weights and a very large learning rate\n- (b) Remove all convolutional layers of the pretrained model\n- (c) Train on the test set to adapt faster\n- (d) Replace the last layer to match the new classes and train it (and possibly some earlier layers) with a small learning rate",
             "tags": [
                 "fine-tuning",
                 "transfer learning"
@@ -3366,7 +3366,7 @@
             "answer": [
                 2
             ],
-            "explanation": "U-Net et FCN font de la segmentation ; YOLO fait de la détection d’objets.",
+            "explanation": "U-Net et FCN font de la segmentation ; YOLO fait de la détection d’objets.\n\n---\n\n**🇬🇧 English version**\n\nWhich task and model pair is correct?\n\n- (a) YOLO: semantic segmentation\n- (b) ResNet: generating text\n- (c) U-Net: predicting a class for each pixel\n- (d) GPT: object detection",
             "tags": [
                 "U-Net",
                 "segmentation",
@@ -3387,7 +3387,7 @@
             "answer": [
                 0
             ],
-            "explanation": "L’espace latent est une distribution régularisée : on peut y échantillonner pour générer de nouvelles données.",
+            "explanation": "L’espace latent est une distribution régularisée : on peut y échantillonner pour générer de nouvelles données.\n\n---\n\n**🇬🇧 English version**\n\nWhat distinguishes a VAE from a standard autoencoder?\n\n- (a) The encoder outputs a distribution (mean and variance) and a KL term regularizes the latent space, so we can sample new data\n- (b) A VAE has no decoder\n- (c) A VAE needs labels for every image\n- (d) A VAE is trained with a discriminator network",
             "tags": [
                 "VAE",
                 "autoencodeur",
@@ -3408,7 +3408,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Les deux réseaux sont entraînés l’un contre l’autre (entraînement adversarial, adversarial training).",
+            "explanation": "Les deux réseaux sont entraînés l’un contre l’autre (entraînement adversarial, adversarial training).\n\n---\n\n**🇬🇧 English version**\n\nIn a GAN, what are the roles of the two networks?\n\n- (a) The generator classifies real vs fake images; the discriminator generates images from noise\n- (b) The generator tries to produce samples that fool the discriminator; the discriminator tries to tell real from generated samples\n- (c) Both networks cooperate to minimize the same reconstruction error\n- (d) Only the generator is trained; the discriminator stays fixed with random weights",
             "tags": [
                 "GAN",
                 "générateur",
@@ -3429,7 +3429,7 @@
             "answer": [
                 2
             ],
-            "explanation": "L’entraînement consiste à prédire le bruit ; l’option D décrit CycleGAN.",
+            "explanation": "L’entraînement consiste à prédire le bruit ; l’option D décrit CycleGAN.\n\n---\n\n**🇬🇧 English version**\n\nWhat is a diffusion model typically trained to do?\n\n- (a) Classify whether an image is real or fake\n- (b) Compress images into a small latent vector\n- (c) Predict the noise added to a noisy image (mean squared error between true and predicted noise)\n- (d) Translate images from one domain to another without paired data",
             "tags": [
                 "modèle de diffusion",
                 "prédiction du bruit"
@@ -3449,7 +3449,7 @@
             "answer": [
                 2
             ],
-            "explanation": "YOLO prédit les boîtes et les classes en une seule passe sur l’image.",
+            "explanation": "YOLO prédit les boîtes et les classes en une seule passe sur l’image.\n\n---\n\n**🇬🇧 English version**\n\nWhich model detects and localizes several objects in an image with bounding boxes, in a single pass?\n\n- (a) U-Net\n- (b) LSTM\n- (c) YOLO\n- (d) VAE",
             "tags": [
                 "YOLO",
                 "détection d’objets"
@@ -3469,7 +3469,7 @@
             "answer": [
                 1
             ],
-            "explanation": "CycleGAN utilise une perte de cohérence cyclique (cycle-consistency loss), donc pas besoin de paires.",
+            "explanation": "CycleGAN utilise une perte de cohérence cyclique (cycle-consistency loss), donc pas besoin de paires.\n\n---\n\n**🇬🇧 English version**\n\nWhich model can translate photos of horses into zebras without paired training images?\n\n- (a) cGAN\n- (b) CycleGAN\n- (c) ResNet\n- (d) GPT",
             "tags": [
                 "CycleGAN",
                 "GAN"
@@ -3489,7 +3489,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Un cGAN reçoit l’étiquette (label) en entrée supplémentaire ; un GAN standard ne peut pas choisir la classe.",
+            "explanation": "Un cGAN reçoit l’étiquette (label) en entrée supplémentaire ; un GAN standard ne peut pas choisir la classe.\n\n---\n\n**🇬🇧 English version**\n\nWhich model can generate an image of a digit chosen by the user (for example “7”)?\n\n- (a) Conditional GAN (cGAN)\n- (b) Standard GAN (no conditioning)\n- (c) YOLO\n- (d) Autoencoder",
             "tags": [
                 "cGAN",
                 "GAN"
@@ -3509,7 +3509,7 @@
             "answer": [
                 3
             ],
-            "explanation": "GPT est un décodeur (decoder) de Transformer avec masquage causal (causal masking).",
+            "explanation": "GPT est un décodeur (decoder) de Transformer avec masquage causal (causal masking).\n\n---\n\n**🇬🇧 English version**\n\nWhich model generates text one token at a time by predicting the next token?\n\n- (a) ResNet\n- (b) U-Net\n- (c) YOLO\n- (d) GPT",
             "tags": [
                 "GPT",
                 "Transformer"
@@ -3529,7 +3529,7 @@
             "answer": [
                 0
             ],
-            "explanation": "BERT est uniquement encodeur ; GPT est uniquement décodeur.",
+            "explanation": "BERT est uniquement encodeur ; GPT est uniquement décodeur.\n\n---\n\n**🇬🇧 English version**\n\nWhich model is a Transformer encoder used to build representations of text?\n\n- (a) BERT\n- (b) GPT\n- (c) U-Net\n- (d) CycleGAN",
             "tags": [
                 "BERT",
                 "Transformer"
@@ -3549,7 +3549,7 @@
             "answer": [
                 1
             ],
-            "explanation": "ViT traite les patchs de l’image comme des tokens.",
+            "explanation": "ViT traite les patchs de l’image comme des tokens.\n\n---\n\n**🇬🇧 English version**\n\nWhich model applies a Transformer to an image split into patches?\n\n- (a) R-CNN\n- (b) ViT (Vision Transformer)\n- (c) LSTM\n- (d) VAE",
             "tags": [
                 "ViT",
                 "Transformer"
@@ -3569,7 +3569,7 @@
             "answer": [
                 2
             ],
-            "explanation": "Les portes du LSTM atténuent le problème du gradient qui disparaît (vanishing gradient) dans les séquences.",
+            "explanation": "Les portes du LSTM atténuent le problème du gradient qui disparaît (vanishing gradient) dans les séquences.\n\n---\n\n**🇬🇧 English version**\n\nWhich model is a recurrent network with gates designed to handle long-term dependencies?\n\n- (a) FCN\n- (b) YOLO\n- (c) LSTM\n- (d) ResNet",
             "tags": [
                 "LSTM",
                 "RNN"
@@ -3589,7 +3589,7 @@
             "answer": [
                 1
             ],
-            "explanation": "Un autoencodeur est entraîné à reconstruire son entrée à travers un petit code latent (latent code).",
+            "explanation": "Un autoencodeur est entraîné à reconstruire son entrée à travers un petit code latent (latent code).\n\n---\n\n**🇬🇧 English version**\n\nWhich model learns a compressed code of its input by reconstructing it, without labels?\n\n- (a) GAN\n- (b) Autoencoder\n- (c) ResNet\n- (d) YOLO",
             "tags": [
                 "autoencodeur",
                 "espace latent"
@@ -3609,7 +3609,7 @@
             "answer": [
                 0
             ],
-            "explanation": "Un modèle de diffusion apprend à prédire puis retirer le bruit.",
+            "explanation": "Un modèle de diffusion apprend à prédire puis retirer le bruit.\n\n---\n\n**🇬🇧 English version**\n\nWhich model generates images by gradually removing noise, step by step?\n\n- (a) Diffusion model\n- (b) LSTM\n- (c) YOLO\n- (d) ResNet",
             "tags": [
                 "modèle de diffusion"
             ]
@@ -3628,7 +3628,7 @@
             "answer": [
                 2
             ],
-            "explanation": "La détection d’objets utilise R-CNN ou YOLO ; GPT génère du texte.",
+            "explanation": "La détection d’objets utilise R-CNN ou YOLO ; GPT génère du texte.\n\n---\n\n**🇬🇧 English version**\n\nWhich task–model pair is INCORRECT?\n\n- (a) Time series: LSTM\n- (b) Image classification: ResNet\n- (c) Object detection: GPT\n- (d) Image generation: diffusion model",
             "tags": [
                 "tâches et modèles",
                 "GPT"
@@ -3648,7 +3648,7 @@
             "answer": [
                 3
             ],
-            "explanation": "U-Net fait de la segmentation (segmentation), et ses skip connections restituent les détails spatiaux.",
+            "explanation": "U-Net fait de la segmentation (segmentation), et ses skip connections restituent les détails spatiaux.\n\n---\n\n**🇬🇧 English version**\n\nWhich architecture uses an encoder–decoder with skip connections (concatenation) to predict a class for each pixel?\n\n- (a) YOLO\n- (b) LSTM\n- (c) BERT\n- (d) U-Net",
             "tags": [
                 "U-Net",
                 "segmentation"
@@ -3668,7 +3668,7 @@
             "answer": [
                 3
             ],
-            "explanation": "R-CNN classe chaque région séparément, ce qui le rend lent ; YOLO est plus rapide.",
+            "explanation": "R-CNN classe chaque région séparément, ce qui le rend lent ; YOLO est plus rapide.\n\n---\n\n**🇬🇧 English version**\n\nWhich detector extracts about 2000 region proposals and runs a CNN on each one?\n\n- (a) U-Net\n- (b) GPT\n- (c) VAE\n- (d) R-CNN",
             "tags": [
                 "R-CNN",
                 "détection d’objets"
