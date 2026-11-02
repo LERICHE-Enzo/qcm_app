@@ -1,0 +1,733 @@
+{
+    "questions": [
+        {
+            "id": "ml-2023-q01",
+            "qcm": "2023-2024",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2023-24, Q1] In SVM, the decision boundary is defined by:",
+            "choices": [
+                "All the data points",
+                "Only the features",
+                "Only the support vectors",
+                "The kernel function"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Seuls les vecteurs supports (points avec α_i > 0) déterminent l'hyperplan ; les autres points peuvent être supprimés sans changer la frontière.",
+            "tags": [
+                "SVM",
+                "vecteurs supports"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans un SVM, la frontière de décision (decision boundary) est définie par :",
+                "choices": [
+                    "Tous les points de données (data points)",
+                    "Uniquement les variables (features)",
+                    "Uniquement les vecteurs supports (support vectors)",
+                    "La fonction noyau (kernel function)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q02",
+            "qcm": "2023-2024",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2023-24, Q2] The concept of the \"kernel trick\" in SVMs:",
+            "choices": [
+                "Allows for linear separation in the original feature space",
+                "Is only applicable to polynomial kernels",
+                "Enables computation in higher-dimensional spaces without explicitly mapping data points",
+                "Reduces the computation time for large datasets"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le dual n'utilise que les produits scalaires x_i^T x_j : on les remplace par k(x_i, x_j), sans jamais calculer la projection φ(x).",
+            "tags": [
+                "SVM",
+                "astuce du noyau"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le concept d'« astuce du noyau » (kernel trick) dans les SVM :",
+                "choices": [
+                    "Permet une séparation linéaire dans l'espace des variables d'origine (original feature space)",
+                    "Ne s'applique qu'aux noyaux polynomiaux (polynomial kernels)",
+                    "Permet de calculer dans des espaces de plus grande dimension sans projeter explicitement les points de données",
+                    "Réduit le temps de calcul pour les grands jeux de données"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q03",
+            "qcm": "2023-2024",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Examen 2023-24, Q3] The kernel in RKHS can be viewed as:",
+            "choices": [
+                "A distance metric",
+                "A similarity measure",
+                "A feature selector",
+                "A linear operator"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "k(x,y) = <φ(x), φ(y)> est un produit scalaire : grand quand x et y se ressemblent. C'est une mesure de similarité, pas une distance.",
+            "tags": [
+                "RKHS",
+                "noyau",
+                "similarité"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le noyau (kernel) d'un RKHS peut être vu comme :",
+                "choices": [
+                    "Une métrique de distance (distance metric)",
+                    "Une mesure de similarité (similarity measure)",
+                    "Un sélecteur de variables (feature selector)",
+                    "Un opérateur linéaire (linear operator)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q04",
+            "qcm": "2023-2024",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Examen 2023-24, Q4] The importance of the Moore-Aronszajn theorem in the context of RKHS is that it:",
+            "choices": [
+                "Provides a condition for kernels to be linear",
+                "Establishes that every positive definite kernel has an associated RKHS",
+                "Dictates the shape of the kernel function",
+                "Simplifies the computation of the kernel matrix"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Moore-Aronszajn : à tout noyau symétrique défini positif correspond un unique RKHS. On peut donc partir d'un noyau pour construire l'espace de fonctions.",
+            "tags": [
+                "RKHS",
+                "Moore-Aronszajn"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "L'importance du théorème de Moore-Aronszajn dans le contexte des RKHS est qu'il :",
+                "choices": [
+                    "Fournit une condition pour que les noyaux soient linéaires",
+                    "Établit que tout noyau défini positif (positive definite kernel) possède un RKHS associé",
+                    "Dicte la forme de la fonction noyau",
+                    "Simplifie le calcul de la matrice de noyau (kernel matrix)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q05",
+            "qcm": "2023-2024",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2023-24, Q5] The concept of 'elastic net' regularization combines the properties of:",
+            "choices": [
+                "Linear and logistic regression",
+                "Lasso and Ridge regression",
+                "Bagging and boosting",
+                "Linear regression and SVM"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La pénalité de l'elastic net est une combinaison de ||w||_1 (Lasso, parcimonie) et de ||w||_2^2 (Ridge, stabilité quand les variables sont corrélées).",
+            "tags": [
+                "elastic net",
+                "Lasso",
+                "Ridge"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le concept de régularisation « elastic net » combine les propriétés de :",
+                "choices": [
+                    "La régression linéaire et la régression logistique",
+                    "Les régressions Lasso et Ridge",
+                    "Le bagging et le boosting",
+                    "La régression linéaire et le SVM"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q06",
+            "qcm": "2023-2024",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2023-24, Q6] In the context of ensemble learning, \"bagging\" stands for:",
+            "choices": [
+                "Balanced Aggregation",
+                "Bootstrap Aggregating",
+                "Binary Aggregation",
+                "Bayesian Aggregation"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Bagging = Bootstrap Aggregating : chaque modèle est entraîné sur un échantillon bootstrap, puis les prédictions sont agrégées.",
+            "tags": [
+                "bagging",
+                "bootstrap"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans le contexte de l'apprentissage ensembliste (ensemble learning), « bagging » signifie :",
+                "choices": [
+                    "Balanced Aggregation (agrégation équilibrée)",
+                    "Bootstrap Aggregating (agrégation de bootstrap)",
+                    "Binary Aggregation (agrégation binaire)",
+                    "Bayesian Aggregation (agrégation bayésienne)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q07",
+            "qcm": "2023-2024",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2023-24, Q7 (aussi 2024-25 Q9)] Bagging is particularly effective in reducing:",
+            "choices": [
+                "Bias in high-variance models",
+                "Variance in high-variance models",
+                "Bias in low-variance models",
+                "Variance in high-bias models"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Moyenner des modèles instables (forte variance) réduit la variance ; cela ne corrige pas un biais. (Même question qu'en 2024-25, Q9.)",
+            "tags": [
+                "bagging",
+                "variance"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le bagging est particulièrement efficace pour réduire :",
+                "choices": [
+                    "Le biais des modèles à forte variance",
+                    "La variance des modèles à forte variance",
+                    "Le biais des modèles à faible variance",
+                    "La variance des modèles à fort biais"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q08",
+            "qcm": "2023-2024",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2023-24, Q8] Random Forests are an example of:",
+            "choices": [
+                "Boosting",
+                "Bagging",
+                "Stacking",
+                "Singular learning"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Une forêt aléatoire est un bagging d'arbres, avec en plus un tirage aléatoire de variables à chaque coupure.",
+            "tags": [
+                "forêt aléatoire",
+                "bagging"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Les forêts aléatoires (Random Forests) sont un exemple de :",
+                "choices": [
+                    "Boosting",
+                    "Bagging",
+                    "Stacking",
+                    "Apprentissage singulier (singular learning)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q09",
+            "qcm": "2023-2024",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2023-24, Q9] In a Random Forest, the 'randomness' is introduced by:",
+            "choices": [
+                "Using a random subset of features for each split",
+                "Both using a random subset of features for each split and bootstrapping the data",
+                "Bootstrapping the data",
+                "Randomly initializing the trees"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Il y a deux sources d'aléa : l'échantillon bootstrap de chaque arbre et le sous-ensemble de variables tiré à chaque coupure.",
+            "tags": [
+                "forêt aléatoire",
+                "bootstrap",
+                "sous-ensemble de variables"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans une forêt aléatoire (Random Forest), l'« aléa » (randomness) est introduit par :",
+                "choices": [
+                    "L'utilisation d'un sous-ensemble aléatoire de variables à chaque coupure (split)",
+                    "À la fois l'utilisation d'un sous-ensemble aléatoire de variables à chaque coupure et le bootstrap des données",
+                    "Le bootstrap des données",
+                    "L'initialisation aléatoire des arbres"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q10",
+            "qcm": "2023-2024",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2023-24, Q10] The interaction between trees in a Random Forest during the training process is:",
+            "choices": [
+                "High, as trees depend on each other's outcomes",
+                "Non-existent, as each tree is built independently",
+                "Necessary to compute the out-of-bag error",
+                "Required for feature selection"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les arbres sont construits indépendamment les uns des autres (contrairement au boosting où chaque arbre corrige le précédent).",
+            "tags": [
+                "forêt aléatoire",
+                "indépendance des arbres"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "L'interaction entre les arbres d'une forêt aléatoire pendant l'entraînement est :",
+                "choices": [
+                    "Forte, car les arbres dépendent des résultats des autres",
+                    "Inexistante, car chaque arbre est construit indépendamment",
+                    "Nécessaire pour calculer l'erreur out-of-bag",
+                    "Requise pour la sélection de variables"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q11",
+            "qcm": "2023-2024",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Examen 2023-24, Q11] Gradient boosting is a technique that:",
+            "choices": [
+                "Uses a single decision tree",
+                "Builds trees sequentially, with each tree trying to correct the errors of its predecessor",
+                "Builds trees in parallel",
+                "Focuses only on the most important features"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Chaque nouvel arbre est ajusté sur les résidus (opposé du gradient de la perte) du modèle courant ; des arbres en parallèle et indépendants, ce serait du bagging.",
+            "tags": [
+                "gradient boosting",
+                "séquentiel"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le gradient boosting est une technique qui :",
+                "choices": [
+                    "Utilise un seul arbre de décision (decision tree)",
+                    "Construit les arbres séquentiellement, chaque arbre essayant de corriger les erreurs de son prédécesseur",
+                    "Construit les arbres en parallèle",
+                    "Se concentre uniquement sur les variables les plus importantes"
+                ]
+            }
+        },
+        {
+            "id": "ml-2023-q12",
+            "qcm": "2023-2024",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Examen 2023-24, Q12] In ensemble learning, 'stacking' refers to:",
+            "choices": [
+                "A method of reducing bias",
+                "Combining predictions from multiple models using another model",
+                "An approach to prevent overfitting",
+                "A technique to speed up training"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les prédictions des modèles de premier niveau servent d'entrées à un méta-modèle entraîné à les combiner.",
+            "tags": [
+                "stacking",
+                "méta-modèle"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "En apprentissage ensembliste, le « stacking » désigne :",
+                "choices": [
+                    "Une méthode de réduction du biais (bias)",
+                    "La combinaison des prédictions de plusieurs modèles à l'aide d'un autre modèle",
+                    "Une approche pour prévenir le sur-apprentissage (overfitting)",
+                    "Une technique pour accélérer l'entraînement"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q01",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Examen 2022-23 Ingénieur, Q1] The sample splitting technique (used in cross validation) allows",
+            "choices": [
+                "to estimate the risk of a predictor without bias",
+                "to diminish the variance of the estimated predictor"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Évaluer sur des données non utilisées pour l'entraînement donne une estimation sans biais du risque ; cela ne réduit pas la variance du prédicteur.",
+            "tags": [
+                "validation croisée",
+                "séparation d'échantillon"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "La technique de séparation d'échantillon (sample splitting, utilisée en validation croisée) permet",
+                "choices": [
+                    "d'estimer sans biais le risque d'un prédicteur",
+                    "de diminuer la variance du prédicteur estimé"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q02",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2022-23 Ingénieur, Q2] The random forest algorithm consists in averaging the prediction of several trees each having",
+            "choices": [
+                "a too large variance (to be consider on its own)",
+                "a too large bias (to be consider on its own)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un arbre profond a un faible biais mais une forte variance : moyenner plusieurs arbres réduit cette variance.",
+            "tags": [
+                "forêt aléatoire",
+                "variance"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "L'algorithme de forêt aléatoire consiste à moyenner les prédictions de plusieurs arbres ayant chacun",
+                "choices": [
+                    "une variance trop grande (à considérer isolément)",
+                    "un biais trop grand (à considérer isolément)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q03",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Examen 2022-23 Ingénieur, Q3] Suppose you are running an ordinary least square procedure with n = 1000 observations and p = 2000 covariates. The resulting estimated coefficient vector",
+            "choices": [
+                "is not unique",
+                "is unique"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "XᵀX (p × p) a un rang au plus n < p : elle n'est pas inversible, donc il y a une infinité de solutions.",
+            "tags": [
+                "MCO",
+                "p > n",
+                "non unicité"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "On fait tourner les moindres carrés ordinaires avec n = 1000 observations et p = 2000 covariables. Le vecteur de coefficients estimé",
+                "choices": [
+                    "n'est pas unique",
+                    "est unique"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q04",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Examen 2022-23 Ingénieur, Q4] Context (Q3): ordinary least squares with n = 1000 observations and p = 2000 covariates. (same framework as before) The estimated coefficient vector will have",
+            "choices": [
+                "a large bias",
+                "a large variance"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Avec p > n le modèle s'ajuste au bruit (sur-apprentissage) : les coefficients changent beaucoup d'un échantillon à l'autre, la variance est élevée.",
+            "tags": [
+                "MCO",
+                "p > n",
+                "variance"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Contexte (Q3) : moindres carrés ordinaires avec n = 1000 observations et p = 2000 covariables. (même cadre que précédemment) Le vecteur de coefficients estimé aura",
+                "choices": [
+                    "un biais important",
+                    "une variance importante"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q05",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2022-23 Ingénieur, Q5] Context (Q3): ordinary least squares with n = 1000 observations and p = 2000 covariates. (same framework as before) Running the LASSO",
+            "choices": [
+                "will allow to reduce the bias error",
+                "will allow to select only the most important variables"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le Lasso donne une solution parcimonieuse (très utile quand p > n) ; il ajoute du biais, il ne le réduit pas.",
+            "tags": [
+                "Lasso",
+                "sélection de variables"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Contexte (Q3) : moindres carrés ordinaires avec n = 1000 observations et p = 2000 covariables. (même cadre que précédemment) Utiliser le LASSO",
+                "choices": [
+                    "permettra de réduire l'erreur de biais",
+                    "permettra de ne sélectionner que les variables les plus importantes"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q06",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2022-23 Ingénieur, Q6] Suppose that g1, . . . , gK are K real valued estimators each being based on different part of an i.i.d. (independent and identically distribution) sample. For each k, let var(gk) = σk and suppose that each gk are unbiased estimate of g ∈ ℝ (which is the quantity of interest).",
+            "choices": [
+                "A standard bagging procedure consists in randomly choose k among {1, . . . , K}. The associated gk will serve to predict",
+                "A standard bagging procedure consists in averaging the gk to build the predictor"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le bagging moyenne les estimateurs ; en choisir un au hasard ne réduirait pas la variance.",
+            "tags": [
+                "bagging",
+                "moyenne d'estimateurs"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Supposons que g₁, …, g_K sont K estimateurs réels (à valeurs dans ℝ), chacun basé sur une partie différente d'un échantillon i.i.d., avec var(g_k) = σ_k et sans biais pour g ∈ ℝ (la quantité d'intérêt).",
+                "choices": [
+                    "Une procédure de bagging standard consiste à choisir k au hasard parmi {1, …, K} ; le g_k associé sert à prédire",
+                    "Une procédure de bagging standard consiste à moyenner les g_k pour construire le prédicteur"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q07",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2022-23 Ingénieur, Q7] Context (Q6): g1, ..., gK are K real valued estimators, each based on a different part of an i.i.d. sample, with var(gk) = σk, each gk being an unbiased estimate of g. (same framework as before) Consider the estimate ĝ = Σ_{k=1}^{K} λ_k g_k where λ_k's are parameters (to be selected). The constraint Σ_{k=1}^{K} λ_k = 1 allows",
+            "choices": [
+                "to give each predictor gk the same weight",
+                "to produce an unbiased estimate"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "E[ĝ] = Σ λ_k E[g_k] = (Σ λ_k) g = g : l'estimateur est sans biais. La contrainte n'impose pas des poids égaux.",
+            "tags": [
+                "bagging",
+                "estimateur sans biais"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Contexte (Q6) : g1, ..., gK sont K estimateurs réels, chacun basé sur une partie différente d'un échantillon i.i.d., avec var(gk) = σk, chaque gk étant sans biais pour g. (même cadre que précédemment) On considère l'estimateur ĝ = Σ_{k=1}^{K} λ_k g_k où les λ_k sont des paramètres (à choisir). La contrainte Σ_{k=1}^{K} λ_k = 1 permet",
+                "choices": [
+                    "de donner à chaque prédicteur g_k le même poids",
+                    "de produire un estimateur sans biais"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q08",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2022-23 Ingénieur, Q8] Context (Q6): g1, ..., gK are K real valued estimators, each based on a different part of an i.i.d. sample, with var(gk) = σk, each gk being an unbiased estimate of g. (same framework as before) The variance of ĝ is given by",
+            "choices": [
+                "Σ_{k=1}^{K} λ_k² σ_k² + Σ_{k≠j} λ_k λ_j σ_k σ_j",
+                "Σ_{k=1}^{K} λ_k² σ_k²"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les g_k sont indépendants (parties différentes de l'échantillon) : les covariances sont nulles, il n'y a pas de terme croisé.",
+            "tags": [
+                "variance",
+                "indépendance"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Contexte (Q6) : g1, ..., gK sont K estimateurs réels, chacun basé sur une partie différente d'un échantillon i.i.d., avec var(gk) = σk, chaque gk étant sans biais pour g. (même cadre que précédemment) La variance de ĝ est donnée par",
+                "choices": [
+                    "Σ_{k=1}^{K} λ_k² σ_k² + Σ_{k≠j} λ_k λ_j σ_k σ_j",
+                    "Σ_{k=1}^{K} λ_k² σ_k²"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q09",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Examen 2022-23 Ingénieur, Q9] Let W ∈ ℝ^{p×p}. The gradient of x ∈ ℝ^p ↦ ‖Wx‖₂² + ‖x − y‖₂² is",
+            "choices": [
+                "x ↦ 2Wᵀx + 2x",
+                "x ↦ 2WᵀWx + 2(x − y)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "∇‖Wx‖² = 2WᵀWx et ∇‖x − y‖² = 2(x − y) : on dérive par rapport à x, donc y reste dans le terme.",
+            "tags": [
+                "gradient",
+                "forme quadratique"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Soit W ∈ ℝ^{p×p}. Le gradient de x ∈ ℝ^p ↦ ‖Wx‖₂² + ‖x − y‖₂² est",
+                "choices": [
+                    "x ↦ 2Wᵀx + 2x",
+                    "x ↦ 2WᵀWx + 2(x − y)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q10",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2022-23 Ingénieur, Q10] In the perspective of applying the SVM algorithm, consider the following sample made of pairs y and x such that (Y1, X1) = (1, (−1, 0)), (Y2, X2) = (−1, (1, −1)) and (Y3, X3) = (−1, (1, 1)) (Y is the label and can be either 1 or −1; X is the covariate and is lying in the plan).",
+            "choices": [
+                "The data is not linearly separable",
+                "The data is linearly separable"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La droite z₁ = 0 sépare les classes : X₁ est à gauche (z₁ = −1), X₂ et X₃ sont à droite (z₁ = 1).",
+            "tags": [
+                "SVM",
+                "séparabilité linéaire"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pour appliquer l'algorithme SVM, on considère l'échantillon de trois couples (Y_i, X_i) : (Y₁, X₁) = (1, (−1, 0)), (Y₂, X₂) = (−1, (1, −1)) et (Y₃, X₃) = (−1, (1, 1)) (Y est l'étiquette, égale à 1 ou −1 ; X est la covariable, dans le plan).",
+                "choices": [
+                    "Les données ne sont pas linéairement séparables",
+                    "Les données sont linéairement séparables"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q11",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2022-23 Ingénieur, Q11] Context (Q10): SVM sample (Y1, X1) = (1, (−1, 0)), (Y2, X2) = (−1, (1, −1)), (Y3, X3) = (−1, (1, 1)). (same framework as before)",
+            "choices": [
+                "The margin is equal to 1",
+                "The margin is equal to 1/2"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'hyperplan de marge maximale est z₁ = 0 et les trois points sont à distance 1 de lui ; avec β = (−1, 0), ‖β‖ = 1 et la marge est 1/‖β‖ = 1.",
+            "tags": [
+                "SVM",
+                "marge"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Contexte (Q10) : échantillon SVM (Y1, X1) = (1, (−1, 0)), (Y2, X2) = (−1, (1, −1)), (Y3, X3) = (−1, (1, 1)). (même cadre que précédemment, les trois points du SVM) Quelle est la marge ?",
+                "choices": [
+                    "La marge est égale à 1",
+                    "La marge est égale à 1/2"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q12",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2022-23 Ingénieur, Q12] Context (Q10): SVM sample (Y1, X1) = (1, (−1, 0)), (Y2, X2) = (−1, (1, −1)), (Y3, X3) = (−1, (1, 1)). (same framework as before) The hyperplan with highest margin is given by",
+            "choices": [
+                "{(z1, z2) ∈ ℝ² : z1 = 0}",
+                "{(z1, z2) ∈ ℝ² : z2 = 0}"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "C'est la médiatrice entre X₁ = (−1, 0) et le point (1, 0) du segment qui joint X₂ et X₃ : la droite verticale z₁ = 0.",
+            "tags": [
+                "SVM",
+                "hyperplan de marge maximale"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Contexte (Q10) : échantillon SVM (Y1, X1) = (1, (−1, 0)), (Y2, X2) = (−1, (1, −1)), (Y3, X3) = (−1, (1, 1)). (même cadre que précédemment) L'hyperplan de marge maximale est donné par",
+                "choices": [
+                    "{(z₁, z₂) ∈ ℝ² : z₁ = 0}",
+                    "{(z₁, z₂) ∈ ℝ² : z₂ = 0}"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q13",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Examen 2022-23 Ingénieur, Q13] The RKHS regression predictor is obtained by",
+            "choices": [
+                "minimizing the empirical risk over a certain Hilbert space",
+                "averaging the responses for which the inputs are lying in a specific part of the space"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le prédicteur de la régression RKHS minimise le risque empirique (pénalisé) sur un espace de Hilbert à noyau. Moyenner les réponses locales, c'est du lissage (k-NN, noyau). (Question aussi posée en 2020-21, Q8 : on ne garde que la version la plus récente.)",
+            "tags": [
+                "RKHS",
+                "régression à noyau"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le prédicteur de la régression RKHS est obtenu en",
+                "choices": [
+                    "minimisant le risque empirique sur un certain espace de Hilbert",
+                    "moyennant les réponses dont les entrées se trouvent dans une certaine partie de l'espace"
+                ]
+            }
+        },
+        {
+            "id": "ml-2022ing-q14",
+            "qcm": "2022-2023 Ingénieur",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Examen 2022-23 Ingénieur, Q14] The representer theorem asserts that",
+            "choices": [
+                "the empirical risk minimization procedure can be done over a finite dimensional space rather than over the RKHS",
+                "any representer of the RKHS is a minimizer of the risk"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Théorème de représentation : le minimiseur s'écrit f = Σ α_i k(x_i,·), donc la minimisation se fait sur n coefficients (dimension finie). (Question aussi posée en 2020-21, Q9 : on ne garde que la version la plus récente.)",
+            "tags": [
+                "RKHS",
+                "théorème de représentation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le théorème de représentation (representer theorem) affirme que",
+                "choices": [
+                    "la minimisation du risque empirique peut se faire sur un espace de dimension finie plutôt que sur le RKHS",
+                    "tout représentant du RKHS est un minimiseur du risque"
+                ]
+            }
+        }
+    ]
+}
