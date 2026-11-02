@@ -1,0 +1,1302 @@
+{
+    "questions": [
+        {
+            "id": "ml-2024-q01",
+            "qcm": "2024-2025",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2024-25, Q1] In ridge regression, the penalty term added to the cost function is proportional to:",
+            "choices": [
+                "The sum of the absolute values of the coefficients",
+                "The square of each coefficient",
+                "The maximum value of the coefficients",
+                "The product of coefficients and data points"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La pénalité Ridge est λ Σ β_j² = λ||β||_2² ; la somme des valeurs absolues est la pénalité du Lasso.",
+            "tags": [
+                "Ridge",
+                "pénalité"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "En régression Ridge (ridge regression), le terme de pénalité ajouté à la fonction de coût est proportionnel à :",
+                "choices": [
+                    "La somme des valeurs absolues des coefficients",
+                    "Le carré de chaque coefficient",
+                    "La valeur maximale des coefficients",
+                    "Le produit des coefficients et des points de données"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q02",
+            "qcm": "2024-2025",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2024-25, Q2] When the regularization parameter tends to infinity, the ridge regression estimator:",
+            "choices": [
+                "has bias decreasing and variance increasing",
+                "has bias decreasing and variance decreasing",
+                "has bias increasing and variance decreasing",
+                "has bias increasing and variance increasing"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Quand λ → ∞, β̂_λ → 0 : la variance tend vers 0 et le biais −λ(XᵀX+λI)⁻¹β* tend vers −β*. Le biais augmente, la variance diminue.",
+            "tags": [
+                "Ridge",
+                "biais-variance",
+                "λ"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quand le paramètre de régularisation tend vers l'infini, l'estimateur Ridge :",
+                "choices": [
+                    "a un biais qui diminue et une variance qui augmente",
+                    "a un biais qui diminue et une variance qui diminue",
+                    "a un biais qui augmente et une variance qui diminue",
+                    "a un biais qui augmente et une variance qui augmente"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q03",
+            "qcm": "2024-2025",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2024-25, Q3] Which of the following best describes the difference between lasso and ridge regression?",
+            "choices": [
+                "Lasso encourages smaller coefficients, while ridge does not penalize them",
+                "Lasso promotes sparsity by setting some coefficients to zero, while ridge penalizes large coefficients without setting any to zero",
+                "Ridge encourages sparsity, while lasso encourages smaller coefficients",
+                "Lasso penalizes all features equally, while ridge penalizes large features more"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Lasso : seuillage doux (coefficient nul si |y| ≤ λ/2). Ridge : division par 1+λ, donc aucun coefficient exactement nul.",
+            "tags": [
+                "Lasso",
+                "Ridge",
+                "parcimonie"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Laquelle de ces affirmations décrit le mieux la différence entre la régression Lasso et la régression Ridge ?",
+                "choices": [
+                    "Le Lasso encourage des coefficients plus petits, alors que le Ridge ne les pénalise pas",
+                    "Le Lasso favorise la parcimonie (sparsity) en mettant certains coefficients à zéro, alors que le Ridge pénalise les grands coefficients sans en mettre aucun à zéro",
+                    "Le Ridge encourage la parcimonie, alors que le Lasso encourage des coefficients plus petits",
+                    "Le Lasso pénalise toutes les variables de la même façon, alors que le Ridge pénalise davantage les grandes variables"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q04",
+            "qcm": "2024-2025",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2024-25, Q4] In which scenario might elastic-net be preferred over ridge or lasso regression alone?",
+            "choices": [
+                "When the number of features is much smaller than the number of observations",
+                "When features are highly correlated, and sparsity is desired",
+                "When the features are uncorrelated and all coefficients need to be non-zero",
+                "When only a small number of observations are available"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le Lasso seul choisit arbitrairement une variable parmi plusieurs corrélées ; le terme Ridge de l'elastic net stabilise la sélection tout en gardant la parcimonie.",
+            "tags": [
+                "elastic net",
+                "variables corrélées"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans quel scénario l'elastic net peut-il être préféré au Ridge ou au Lasso seuls ?",
+                "choices": [
+                    "Quand le nombre de variables est très inférieur au nombre d'observations",
+                    "Quand les variables sont fortement corrélées et qu'on souhaite de la parcimonie",
+                    "Quand les variables sont non corrélées et que tous les coefficients doivent être non nuls",
+                    "Quand on ne dispose que de peu d'observations"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q05",
+            "qcm": "2024-2025",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2024-25, Q5] In SVM, the margin is defined as:",
+            "choices": [
+                "The distance between any two support vectors",
+                "The sum of distances from the support vectors to the decision boundary",
+                "The width of the region that separates the classes and is maximized by SVM",
+                "The distance between all data points and the decision boundary"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "La marge est la largeur de la bande qui sépare les classes, bande entre les hyperplans x^Tβ+β0 = ±1 (largeur 2/||β||) que le SVM rend maximale.",
+            "tags": [
+                "SVM",
+                "marge"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans un SVM, la marge (margin) est définie comme :",
+                "choices": [
+                    "La distance entre deux vecteurs supports quelconques",
+                    "La somme des distances entre les vecteurs supports et la frontière de décision",
+                    "La largeur de la région qui sépare les classes et que le SVM rend maximale",
+                    "La distance entre tous les points de données et la frontière de décision"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q06",
+            "qcm": "2024-2025",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2024-25, Q6] What is the primary benefit of using the “kernel trick” in algorithms like SVM?",
+            "choices": [
+                "It reduces the computational complexity of the algorithm",
+                "It allows non-linear decision boundaries without explicitly transforming the feature space",
+                "It enforces linearity in all feature transformations",
+                "It minimizes the number of support vectors needed"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le calcul reste celui d'un SVM linéaire, avec k(x_i, x_j) à la place de x_i^T x_j ; on obtient une frontière non linéaire sans transformer explicitement les variables.",
+            "tags": [
+                "SVM",
+                "astuce du noyau"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le principal avantage de l'« astuce du noyau » (kernel trick) dans des algorithmes comme le SVM ?",
+                "choices": [
+                    "Elle réduit la complexité de calcul de l'algorithme",
+                    "Elle permet des frontières de décision non linéaires sans transformer explicitement l'espace des variables",
+                    "Elle impose la linéarité dans toutes les transformations de variables",
+                    "Elle minimise le nombre de vecteurs supports nécessaires"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q07",
+            "qcm": "2024-2025",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Examen 2024-25, Q7] Which property of a function k(x, x') must hold for it to be considered a valid kernel in the context of RKHS?",
+            "choices": [
+                "k(x, x') must be differentiable",
+                "k(x, x') must satisfy the Cauchy-Schwarz inequality",
+                "k(x, x') must be symmetric and positive semi-definite",
+                "k(x, x') must be strictly increasing"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un noyau valide est symétrique (k(x,x') = k(x',x)) et semi-défini positif : toute matrice de Gram vérifie w^T K w ≥ 0.",
+            "tags": [
+                "RKHS",
+                "noyau valide"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle propriété d'une fonction k(x, x′) doit être vérifiée pour que ce soit un noyau valide dans le cadre des RKHS ?",
+                "choices": [
+                    "k(x, x′) doit être dérivable",
+                    "k(x, x′) doit vérifier l'inégalité de Cauchy-Schwarz",
+                    "k(x, x′) doit être symétrique et semi-définie positive",
+                    "k(x, x′) doit être strictement croissante"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q08",
+            "qcm": "2024-2025",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Examen 2024-25, Q8] In the context of RKHS, what does the “reproducing property” of a kernel imply?",
+            "choices": [
+                "The kernel can reproduce any polynomial function exactly",
+                "Evaluating the inner product of a function with the kernel at a specific point yields the function's value at that point",
+                "The kernel is invariant to scaling transformations",
+                "The kernel function is symmetric for any two points"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Propriété de reproduction : f(x) = <f, k(x,·)>. Évaluer le produit scalaire de f avec le noyau en x redonne la valeur f(x).",
+            "tags": [
+                "RKHS",
+                "propriété de reproduction"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans le cadre des RKHS, qu'implique la « propriété de reproduction » (reproducing property) d'un noyau ?",
+                "choices": [
+                    "Le noyau peut reproduire exactement n'importe quelle fonction polynomiale",
+                    "Évaluer le produit scalaire d'une fonction avec le noyau en un point donné fournit la valeur de la fonction en ce point",
+                    "Le noyau est invariant par transformation d'échelle",
+                    "La fonction noyau est symétrique pour deux points quelconques"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q09",
+            "qcm": "2024-2025",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2024-25, Q9 (aussi 2023-24 Q7)] Bagging is particularly effective in reducing:",
+            "choices": [
+                "Bias in high-variance models",
+                "Variance in high-variance models",
+                "Bias in low-variance models",
+                "Variance in high-bias models"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Moyenner des modèles instables (forte variance) réduit la variance ; cela ne corrige pas un biais. (Question aussi posée en 2023-24, Q7 : on ne la garde qu'une fois.)",
+            "tags": [
+                "bagging",
+                "variance"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le bagging est particulièrement efficace pour réduire :",
+                "choices": [
+                    "Le biais des modèles à forte variance",
+                    "La variance des modèles à forte variance",
+                    "Le biais des modèles à faible variance",
+                    "La variance des modèles à fort biais"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q10",
+            "qcm": "2024-2025",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Examen 2024-25, Q10] What is the main goal of the AdaBoost algorithm?",
+            "choices": [
+                "Minimize the variance in predictions",
+                "Minimize the error rate by focusing on difficult-to-classify samples",
+                "Maximize the number of correctly classified samples at each step",
+                "Ensure each classifier contributes equally"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "À chaque étape, AdaBoost augmente le poids des observations mal classées pour se concentrer sur les cas difficiles.",
+            "tags": [
+                "AdaBoost",
+                "poids"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le but principal de l'algorithme AdaBoost ?",
+                "choices": [
+                    "Minimiser la variance des prédictions",
+                    "Minimiser le taux d'erreur en se concentrant sur les observations difficiles à classer",
+                    "Maximiser le nombre d'observations correctement classées à chaque étape",
+                    "Garantir que chaque classifieur contribue de façon égale"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q11",
+            "qcm": "2024-2025",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Examen 2024-25, Q11] How does AdaBoost differ from Gradient Boosting in terms of loss minimization?",
+            "choices": [
+                "AdaBoost uses the exponential loss, whereas Gradient Boosting allows any differentiable loss",
+                "Both use exponential loss by default",
+                "Gradient Boosting uses an exponential loss, whereas AdaBoost uses the mean squared error",
+                "AdaBoost and Gradient Boosting minimize the same loss function"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "AdaBoost = modélisation additive par étapes avec la perte exponentielle exp(−y f(x)) ; le gradient boosting ajuste les pseudo-résidus de n'importe quelle perte dérivable.",
+            "tags": [
+                "AdaBoost",
+                "gradient boosting",
+                "perte exponentielle"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "En quoi AdaBoost diffère-t-il du Gradient Boosting du point de vue de la minimisation de la perte ?",
+                "choices": [
+                    "AdaBoost utilise la perte exponentielle, alors que le Gradient Boosting accepte n'importe quelle perte différentiable",
+                    "Les deux utilisent la perte exponentielle par défaut",
+                    "Le Gradient Boosting utilise une perte exponentielle, alors qu'AdaBoost utilise l'erreur quadratique moyenne",
+                    "AdaBoost et le Gradient Boosting minimisent la même fonction de perte"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q12",
+            "qcm": "2024-2025",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Examen 2024-25, Q12] Which type of weak learner is commonly used in boosting algorithms like AdaBoost and Gradient Boosting?",
+            "choices": [
+                "Linear regression models",
+                "Support Vector Machines",
+                "Decision trees with only a few nodes",
+                "K-Nearest Neighbors"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un apprenant faible est à peine meilleur que le hasard : petit arbre (faible variance, fort biais). Avec un modèle linéaire, le boosting n'apporterait rien.",
+            "tags": [
+                "boosting",
+                "apprenant faible",
+                "arbres"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel type d'apprenant faible (weak learner) est couramment utilisé dans les algorithmes de boosting comme AdaBoost et le Gradient Boosting ?",
+                "choices": [
+                    "Les modèles de régression linéaire",
+                    "Les machines à vecteurs de support (SVM)",
+                    "Les arbres de décision avec seulement quelques nœuds",
+                    "Les k plus proches voisins (K-Nearest Neighbors)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q13",
+            "qcm": "2024-2025",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Examen 2024-25, Q13] What is the main purpose of using shrinkage in gradient boosting?",
+            "choices": [
+                "To prevent overfitting by limiting the step size in each iteration",
+                "To reduce the size of the training data at each step",
+                "To control the number of weak learners added to the model",
+                "To amplify the influence of stronger predictors"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Chaque arbre est multiplié par un petit coefficient ν (learning rate) : on avance plus lentement, ce qui demande plus d'arbres mais généralise mieux.",
+            "tags": [
+                "gradient boosting",
+                "shrinkage"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le but principal du shrinkage (rétrécissement) dans le gradient boosting ?",
+                "choices": [
+                    "Éviter le sur-apprentissage en limitant la taille du pas à chaque itération",
+                    "Réduire la taille des données d'entraînement à chaque étape",
+                    "Contrôler le nombre d'apprenants faibles ajoutés au modèle",
+                    "Amplifier l'influence des prédicteurs les plus forts"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q14",
+            "qcm": "2024-2025",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Examen 2024-25, Q14] In feature selection, when would mutual information be more suitable than Pearson correlation?",
+            "choices": [
+                "When relationships are strictly linear",
+                "When the features are categorical or the relationship is nonlinear",
+                "When data is normally distributed",
+                "When measuring only monotonic relationships"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Pearson ne mesure que la dépendance linéaire ; l'information mutuelle détecte toute dépendance et s'applique aussi aux variables catégorielles.",
+            "tags": [
+                "information mutuelle",
+                "corrélation de Pearson"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "En sélection de variables (feature selection), quand l'information mutuelle (mutual information) est-elle plus adaptée que la corrélation de Pearson ?",
+                "choices": [
+                    "Quand les relations sont strictement linéaires",
+                    "Quand les variables sont catégorielles ou que la relation est non linéaire",
+                    "Quand les données suivent une loi normale",
+                    "Quand on ne mesure que des dépendances monotones"
+                ]
+            }
+        },
+        {
+            "id": "ml-2024-q15",
+            "qcm": "2024-2025",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Examen 2024-25, Q15] Which of the following statements correctly differentiates between mutual information and HSIC?",
+            "choices": [
+                "Mutual information is only applicable to continuous data, while HSIC requires categorical data",
+                "Mutual information captures both linear and nonlinear dependencies, whereas HSIC is restricted to linear relationships",
+                "HSIC utilizes kernel-based methods, making it suitable for complex, high-dimensional dependency detection, while mutual information does not",
+                "Mutual information and HSIC are equivalent in detecting linear dependencies"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le HSIC est un MMD² calculé avec des noyaux : il détecte des dépendances complexes en grande dimension sans estimer de densité. Les trois autres choix sont faux.",
+            "tags": [
+                "HSIC",
+                "information mutuelle",
+                "noyaux"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Laquelle des affirmations suivantes distingue correctement l'information mutuelle du HSIC ?",
+                "choices": [
+                    "L'information mutuelle ne s'applique qu'aux données continues, alors que le HSIC exige des données catégorielles",
+                    "L'information mutuelle capte les dépendances linéaires et non linéaires, alors que le HSIC est limité aux relations linéaires",
+                    "Le HSIC utilise des méthodes à noyaux, ce qui le rend adapté à la détection de dépendances complexes en grande dimension, contrairement à l'information mutuelle",
+                    "L'information mutuelle et le HSIC sont équivalents pour détecter les dépendances linéaires"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q01",
+            "qcm": "2025-2026",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2025-26, Q1] Which of the following terms describes the penalty used in Ridge Regression?",
+            "choices": [
+                "Σ |β_j|",
+                "Σ β_j²",
+                "Σ log(|β_j|)",
+                "Σ β_j³"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "(a) Σ|β_j| est la pénalité du Lasso ; Ridge pénalise la norme ℓ2 au carré, Σ β_j².",
+            "tags": [
+                "Ridge",
+                "pénalité"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Lequel des termes suivants décrit la pénalité utilisée en régression Ridge ?",
+                "choices": [
+                    "Σ|β_j|",
+                    "Σ β_j²",
+                    "Σ log(|β_j|)",
+                    "Σ β_j³"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q02",
+            "qcm": "2025-2026",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2025-26, Q2] What is the primary advantage of Lasso over Ridge Regression?",
+            "choices": [
+                "Lasso performs feature selection by setting some coefficients to zero",
+                "Lasso always leads to lower test error",
+                "Lasso is less sensitive to the choice of hyperparameters",
+                "Lasso is computationally cheaper than Ridge Regression"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La pénalité ℓ1 donne des solutions parcimonieuses (coefficients exactement nuls). Le Lasso n'est ni toujours meilleur en test ni moins sensible aux hyperparamètres.",
+            "tags": [
+                "Lasso",
+                "sélection de variables"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le principal avantage du Lasso par rapport à la régression Ridge ?",
+                "choices": [
+                    "Le Lasso fait de la sélection de variables en mettant certains coefficients à zéro",
+                    "Le Lasso conduit toujours à une erreur de test plus faible",
+                    "Le Lasso est moins sensible au choix des hyperparamètres",
+                    "Le Lasso est moins coûteux en calcul que la régression Ridge"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q03",
+            "qcm": "2025-2026",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2025-26, Q3] What does the regularization parameter (λ) control in Lasso and Ridge Regression?",
+            "choices": [
+                "The trade-off between model complexity and goodness of fit",
+                "The number of observations in the dataset",
+                "The step size in gradient descent",
+                "The number of iterations during optimization"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "λ pondère la pénalité contre l'erreur d'ajustement : c'est le compromis complexité / qualité d'ajustement (ce n'est ni un pas de gradient ni un nombre d'itérations).",
+            "tags": [
+                "régularisation",
+                "λ"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Que contrôle le paramètre de régularisation (λ) dans le Lasso et la régression Ridge ?",
+                "choices": [
+                    "Le compromis entre la complexité du modèle et la qualité de l'ajustement (goodness of fit)",
+                    "Le nombre d'observations du jeu de données",
+                    "Le pas (step size) de la descente de gradient",
+                    "Le nombre d'itérations pendant l'optimisation"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q04",
+            "qcm": "2025-2026",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2025-26, Q4] What is the effect of increasing λ in Ridge Regression?",
+            "choices": [
+                "It shrinks the regression coefficients towards zero",
+                "It increases the number of nonzero coefficients",
+                "It improves model interpretability by setting coefficients to zero",
+                "It makes the model overfit the training data"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "β̂_λ = (XᵀX+λI)⁻¹XᵀY → 0 quand λ → ∞, sans jamais annuler exactement les coefficients.",
+            "tags": [
+                "Ridge",
+                "λ",
+                "rétrécissement"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est l'effet d'augmenter λ en régression Ridge ?",
+                "choices": [
+                    "Il rétrécit les coefficients de régression vers zéro",
+                    "Il augmente le nombre de coefficients non nuls",
+                    "Il améliore l'interprétabilité du modèle en mettant des coefficients à zéro",
+                    "Il fait sur-apprendre le modèle aux données d'entraînement"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q05",
+            "qcm": "2025-2026",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2025-26, Q5] What happens when λ = 0 in Lasso Regression?",
+            "choices": [
+                "The model reduces to Ordinary Least Squares (OLS)",
+                "All coefficients are set to zero",
+                "The model always performs worse than Ridge Regression",
+                "The model performs feature selection"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Sans pénalité (λ = 0), il ne reste que ||Y − Xβ||² : on retrouve les moindres carrés ordinaires.",
+            "tags": [
+                "Lasso",
+                "MCO",
+                "λ"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Que se passe-t-il quand λ = 0 en régression Lasso ?",
+                "choices": [
+                    "Le modèle se réduit aux moindres carrés ordinaires (OLS)",
+                    "Tous les coefficients sont mis à zéro",
+                    "Le modèle est toujours moins bon que la régression Ridge",
+                    "Le modèle fait de la sélection de variables"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q06",
+            "qcm": "2025-2026",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Examen 2025-26, Q6] What is the update rule for standard (batch) gradient descent?",
+            "choices": [
+                "θt = θt−1 − γt ∇F(θt−1)",
+                "θt = θt−1 + γt ∇F(θt−1)",
+                "θt = γt θt−1",
+                "θt = θt−1 − ∇F(θt−1)"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "On va dans la direction opposée au gradient avec un pas γ_t. (b) monte au lieu de descendre ; (d) oublie le pas.",
+            "tags": [
+                "descente de gradient",
+                "mise à jour"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle est la règle de mise à jour de la descente de gradient standard (batch) ?",
+                "choices": [
+                    "θ_t = θ_{t−1} − γ_t ∇F(θ_{t−1})",
+                    "θ_t = θ_{t−1} + γ_t ∇F(θ_{t−1})",
+                    "θ_t = γ_t θ_{t−1}",
+                    "θ_t = θ_{t−1} − ∇F(θ_{t−1})"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q07",
+            "qcm": "2025-2026",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Examen 2025-26, Q7] What is the role of the learning rate (stepsize) in gradient descent?",
+            "choices": [
+                "It determines how large the parameter updates are in each step",
+                "It defines the number of features to be used in the model",
+                "It prevents overfitting in linear regression",
+                "It is used to determine the number of training samples"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le pas détermine l'amplitude de chaque mise à jour : trop grand, l'algorithme diverge ou oscille ; trop petit, il converge lentement.",
+            "tags": [
+                "descente de gradient",
+                "pas d'apprentissage"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le rôle du pas d'apprentissage (learning rate, stepsize) dans la descente de gradient ?",
+                "choices": [
+                    "Il détermine l'amplitude des mises à jour des paramètres à chaque étape",
+                    "Il définit le nombre de variables utilisées dans le modèle",
+                    "Il empêche le sur-apprentissage en régression linéaire",
+                    "Il sert à déterminer le nombre d'exemples d'entraînement"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q08",
+            "qcm": "2025-2026",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Examen 2025-26, Q8] Which property allows gradient descent to converge to a global minimum in machine learning optimization problems?",
+            "choices": [
+                "Convexity of the loss function",
+                "The use of stochastic updates",
+                "The choice of the regularization parameter",
+                "The number of features in the dataset"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Pour une fonction convexe, tout point critique est un minimum global : la descente de gradient y converge.",
+            "tags": [
+                "convexité",
+                "minimum global"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle propriété permet à la descente de gradient de converger vers un minimum global dans les problèmes d'optimisation en apprentissage automatique ?",
+                "choices": [
+                    "La convexité de la fonction de perte",
+                    "L'utilisation de mises à jour stochastiques",
+                    "Le choix du paramètre de régularisation",
+                    "Le nombre de variables du jeu de données"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q09",
+            "qcm": "2025-2026",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Examen 2025-26, Q9] Which optimization algorithm is best suited for large datasets?",
+            "choices": [
+                "Stochastic Gradient Descent",
+                "Newton's Method",
+                "Batch Gradient Descent",
+                "Least Squares Estimation"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Chaque mise à jour de la SGD n'utilise qu'un ou quelques exemples : son coût ne dépend pas de n.",
+            "tags": [
+                "SGD",
+                "grands jeux de données"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel algorithme d'optimisation convient le mieux aux grands jeux de données ?",
+                "choices": [
+                    "La descente de gradient stochastique (Stochastic Gradient Descent)",
+                    "La méthode de Newton",
+                    "La descente de gradient batch (Batch Gradient Descent)",
+                    "L'estimation par moindres carrés (Least Squares Estimation)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q10",
+            "qcm": "2025-2026",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Examen 2025-26, Q10] What is the main advantage of using subgradient descent?",
+            "choices": [
+                "It can be used for non-differentiable functions",
+                "It is always faster than gradient descent",
+                "It requires no tuning of the learning rate",
+                "It guarantees convergence to the exact minimum"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "On utilise un sous-gradient là où le gradient n'existe pas (par exemple |·| en 0). Elle n'est ni plus rapide ni exacte.",
+            "tags": [
+                "sous-gradient",
+                "non différentiable"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le principal avantage de la descente de sous-gradient (subgradient descent) ?",
+                "choices": [
+                    "Elle peut être utilisée pour des fonctions non différentiables",
+                    "Elle est toujours plus rapide que la descente de gradient",
+                    "Elle ne demande aucun réglage du pas d'apprentissage",
+                    "Elle garantit la convergence vers le minimum exact"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q11",
+            "qcm": "2025-2026",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Examen 2025-26, Q11] What is the main difference between batch gradient descent and stochastic gradient descent (SGD)?",
+            "choices": [
+                "SGD updates the parameters using only some samples at a time, whereas batch gradient descent uses the entire dataset",
+                "Batch gradient descent is always faster than SGD",
+                "SGD guarantees convergence to the global minimum",
+                "Batch gradient descent never overfits"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le batch utilise tout le jeu de données à chaque pas, la SGD seulement quelques exemples. Le batch n'est pas toujours plus rapide et la SGD ne garantit pas le minimum global.",
+            "tags": [
+                "SGD",
+                "batch"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle est la principale différence entre la descente de gradient batch et la descente de gradient stochastique (SGD) ?",
+                "choices": [
+                    "La SGD met à jour les paramètres avec seulement quelques exemples à la fois, alors que le batch utilise tout le jeu de données",
+                    "La descente de gradient batch est toujours plus rapide que la SGD",
+                    "La SGD garantit la convergence vers le minimum global",
+                    "La descente de gradient batch ne sur-apprend jamais"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q12",
+            "qcm": "2025-2026",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2025-26, Q12] What is the primary goal of Support Vector Machines (SVM)?",
+            "choices": [
+                "To find a hyperplane that maximizes the margin between classes",
+                "To reduce dimensionality using principal components",
+                "To cluster data into multiple groups",
+                "To approximate probability densities"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le SVM cherche l'hyperplan de marge maximale. Réduire la dimension (ACP), regrouper (clustering) ou estimer des densités sont d'autres méthodes.",
+            "tags": [
+                "SVM",
+                "marge maximale"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est l'objectif principal des machines à vecteurs de support (SVM) ?",
+                "choices": [
+                    "Trouver un hyperplan qui maximise la marge entre les classes",
+                    "Réduire la dimension à l'aide des composantes principales",
+                    "Regrouper les données en plusieurs groupes (clusters)",
+                    "Approcher des densités de probabilité"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q13",
+            "qcm": "2025-2026",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2025-26, Q13] In an SVM, what is the margin?",
+            "choices": [
+                "The distance between two data points",
+                "The sum of distances from support vectors to the hyperplane",
+                "The distance between the closest support vectors and the decision boundary",
+                "The number of misclassified points"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Dans cet énoncé la marge est 1/||β|| (demi-largeur de la bande) : c'est la seule proposition qui s'en approche (même convention que 2022 Ing, Q11).",
+            "tags": [
+                "SVM",
+                "marge"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans un SVM, qu'est-ce que la marge ?",
+                "choices": [
+                    "La distance entre deux points de données",
+                    "La somme des distances entre les vecteurs supports et l'hyperplan",
+                    "La distance entre les vecteurs supports les plus proches et la frontière de décision",
+                    "Le nombre de points mal classés"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q14",
+            "qcm": "2025-2026",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2025-26, Q14] What is the role of support vectors in SVM?",
+            "choices": [
+                "They define the optimal hyperplane",
+                "They are removed from training to avoid overfitting",
+                "They have no impact on classification",
+                "They determine the number of features to use"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Seuls les points avec α_i > 0 (vecteurs supports) déterminent β = Σ α_i y_i x_i ; retirer les autres ne change rien.",
+            "tags": [
+                "SVM",
+                "vecteurs supports"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le rôle des vecteurs supports (support vectors) dans un SVM ?",
+                "choices": [
+                    "Ils définissent l'hyperplan optimal",
+                    "Ils sont retirés de l'entraînement pour éviter le sur-apprentissage",
+                    "Ils n'ont aucun impact sur la classification",
+                    "Ils déterminent le nombre de variables à utiliser"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q15",
+            "qcm": "2025-2026",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2025-26, Q15] What is the purpose of the kernel trick in SVM?",
+            "choices": [
+                "To transform non-linearly separable data into a higher-dimensional space",
+                "To reduce the number of support vectors",
+                "To compute feature importance",
+                "To speed up training by reducing data size"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "On sépare linéairement dans l'espace de redescription sans calculer φ, grâce à k(x,x') = <φ(x), φ(x')>. L'astuce ne réduit pas le nombre de vecteurs supports.",
+            "tags": [
+                "SVM",
+                "astuce du noyau"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "À quoi sert l'astuce du noyau (kernel trick) dans un SVM ?",
+                "choices": [
+                    "À transformer des données non linéairement séparables en les plongeant dans un espace de plus grande dimension",
+                    "À réduire le nombre de vecteurs supports",
+                    "À calculer l'importance des variables",
+                    "À accélérer l'entraînement en réduisant la taille des données"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q16",
+            "qcm": "2025-2026",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2025-26, Q16] What is the dual representation in SVM optimization?",
+            "choices": [
+                "It reformulates the optimization problem to depend only on dot products",
+                "It trains two SVMs simultaneously",
+                "It ensures the SVM works in high-dimensional spaces",
+                "It is used for solving classification and regression together"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le dual en α ne contient que les produits scalaires x_i^T x_j, que l'on remplace par k(x_i, x_j).",
+            "tags": [
+                "SVM",
+                "dual"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'est-ce que la représentation duale (dual representation) en optimisation SVM ?",
+                "choices": [
+                    "Elle reformule le problème d'optimisation pour qu'il ne dépende que de produits scalaires",
+                    "Elle entraîne deux SVM simultanément",
+                    "Elle garantit que le SVM fonctionne dans des espaces de grande dimension",
+                    "Elle sert à résoudre ensemble la classification et la régression"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q17",
+            "qcm": "2025-2026",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Examen 2025-26, Q17] What does it mean if an SVM solution has a \"soft margin\"?",
+            "choices": [
+                "Some misclassified points are allowed",
+                "The decision boundary is always curved",
+                "The model does not use support vectors",
+                "The margin is infinitely wide"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les variables d'écart ξ_i ≥ 0 tolèrent des violations de marge, pénalisées par C Σ ξ_i : certains points mal classés sont autorisés.",
+            "tags": [
+                "SVM",
+                "marge souple"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Que signifie le fait qu'une solution SVM ait une « marge souple » (soft margin) ?",
+                "choices": [
+                    "Certains points mal classés sont autorisés",
+                    "La frontière de décision est toujours courbe",
+                    "Le modèle n'utilise pas de vecteurs supports",
+                    "La marge est infiniment large"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q18",
+            "qcm": "2025-2026",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Examen 2025-26, Q18] In the context of RKHS, what is a feature map?",
+            "choices": [
+                "A transformation that maps input data to a higher-dimensional space",
+                "The loss function used in SVM",
+                "The inverse of the kernel function",
+                "The number of support vectors used in an SVM"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La feature map est φ avec k(x,y) = <φ(x), φ(y)> ; par exemple φ(x) = k(x,·) dans le RKHS.",
+            "tags": [
+                "RKHS",
+                "feature map"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans le cadre d'un RKHS, qu'est-ce qu'une feature map ?",
+                "choices": [
+                    "Une transformation qui envoie les données d'entrée dans un espace de plus grande dimension",
+                    "La fonction de perte utilisée dans les SVM",
+                    "L'inverse de la fonction noyau",
+                    "Le nombre de vecteurs supports utilisés dans un SVM"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q19",
+            "qcm": "2025-2026",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Examen 2025-26, Q19] What is the main limitation of kernelized SVMs or kernel ridge regression?",
+            "choices": [
+                "They scale poorly with large datasets due to computational complexity",
+                "They only work with categorical data",
+                "They cannot be used for non-separable data",
+                "They require deep learning for optimal performance"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les méthodes à noyau manipulent la matrice de Gram n×n : O(n²) en mémoire, O(n³) pour l'inverser.",
+            "tags": [
+                "RKHS",
+                "matrice de Gram",
+                "complexité"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle est la principale limite des SVM à noyau (kernelized SVMs) ou de la régression ridge à noyau ?",
+                "choices": [
+                    "Ils passent mal à l'échelle sur de grands jeux de données à cause de leur complexité de calcul",
+                    "Ils ne fonctionnent qu'avec des données catégorielles",
+                    "Ils ne peuvent pas être utilisés pour des données non séparables",
+                    "Ils nécessitent du deep learning pour des performances optimales"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q20",
+            "qcm": "2025-2026",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Examen 2025-26, Q20] Which of the following is NOT a characteristic of boosting?",
+            "choices": [
+                "Models are trained sequentially",
+                "Weak learners are combined to form a strong learner",
+                "Each weak learner is trained independently",
+                "Boosting can be applied to both classification and regression"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "C'est le bagging qui entraîne ses modèles indépendamment ; le boosting est séquentiel.",
+            "tags": [
+                "boosting",
+                "séquentiel"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Laquelle de ces propositions n'est PAS une caractéristique du boosting ?",
+                "choices": [
+                    "Les modèles sont entraînés séquentiellement",
+                    "Des apprenants faibles sont combinés pour former un apprenant fort",
+                    "Chaque apprenant faible est entraîné indépendamment",
+                    "Le boosting peut s'appliquer à la classification comme à la régression"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q21",
+            "qcm": "2025-2026",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Examen 2025-26, Q21] In AdaBoost, how are weak learners trained sequentially?",
+            "choices": [
+                "Each weak learner is trained independently on the entire dataset",
+                "Each weak learner is trained with increasing depth",
+                "Each weak learner focuses more on misclassified points from the previous learner",
+                "Each weak learner is trained using a different subset of features"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Dans AdaBoost, les poids des points mal classés augmentent d'un tour à l'autre : le suivant se concentre sur eux.",
+            "tags": [
+                "AdaBoost",
+                "séquentiel"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans AdaBoost, comment les apprenants faibles sont-ils entraînés séquentiellement ?",
+                "choices": [
+                    "Chaque apprenant faible est entraîné indépendamment sur tout le jeu de données",
+                    "Chaque apprenant faible est entraîné avec une profondeur croissante",
+                    "Chaque apprenant faible se concentre davantage sur les points mal classés par l'apprenant précédent",
+                    "Chaque apprenant faible est entraîné avec un sous-ensemble de variables différent"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q22",
+            "qcm": "2025-2026",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Examen 2025-26, Q22] What is the key difference between AdaBoost and Gradient Boosting?",
+            "choices": [
+                "AdaBoost uses exponential loss, while Gradient Boosting minimizes any differentiable loss",
+                "AdaBoost builds trees in parallel, while Gradient Boosting builds them sequentially",
+                "Gradient Boosting assigns weights to samples, while AdaBoost does not",
+                "AdaBoost works only for classification, while Gradient Boosting works only for regression"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les deux sont séquentiels et servent à la classification comme à la régression. AdaBoost = perte exponentielle ; Gradient Boosting = toute perte dérivable.",
+            "tags": [
+                "AdaBoost",
+                "gradient boosting"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle est la différence clé entre AdaBoost et le Gradient Boosting ?",
+                "choices": [
+                    "AdaBoost utilise la perte exponentielle, tandis que le Gradient Boosting minimise n'importe quelle perte différentiable",
+                    "AdaBoost construit les arbres en parallèle, tandis que le Gradient Boosting les construit séquentiellement",
+                    "Le Gradient Boosting attribue des poids aux observations, alors qu'AdaBoost n'en attribue pas",
+                    "AdaBoost ne fonctionne que pour la classification, alors que le Gradient Boosting ne fonctionne que pour la régression"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q23",
+            "qcm": "2025-2026",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Examen 2025-26, Q23] What role does the learning rate (shrinkage) play in Gradient Boosting?",
+            "choices": [
+                "It amplifies the influence of stronger predictors",
+                "It controls how much each weak learner contributes to the final model",
+                "It determines the depth of the decision trees",
+                "It makes boosting models train faster"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "On ajoute ν f̂_b avec ν petit : le learning rate contrôle la contribution de chaque apprenant faible, ce qui limite le sur-apprentissage (et ralentit l'apprentissage, contrairement à (d)).",
+            "tags": [
+                "gradient boosting",
+                "shrinkage"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel rôle joue le pas d'apprentissage (learning rate, shrinkage) dans le Gradient Boosting ?",
+                "choices": [
+                    "Il amplifie l'influence des prédicteurs les plus forts",
+                    "Il contrôle la contribution de chaque apprenant faible au modèle final",
+                    "Il détermine la profondeur des arbres de décision",
+                    "Il accélère l'entraînement des modèles de boosting"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q24",
+            "qcm": "2025-2026",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Examen 2025-26, Q24] What is the goal of feature selection in machine learning?",
+            "choices": [
+                "To remove irrelevant or redundant features",
+                "To increase the dimensionality of the dataset",
+                "To make the model deeper",
+                "To generate new features from existing ones"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La sélection de variables réduit la dimension en gardant les variables utiles, sans en créer de nouvelles.",
+            "tags": [
+                "sélection de variables"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le but de la sélection de variables (feature selection) en apprentissage automatique ?",
+                "choices": [
+                    "Retirer les variables non pertinentes ou redondantes",
+                    "Augmenter la dimension du jeu de données",
+                    "Rendre le modèle plus profond",
+                    "Générer de nouvelles variables à partir des variables existantes"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q25",
+            "qcm": "2025-2026",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Examen 2025-26, Q25] What does a mutual information value of 0 between two features indicate?",
+            "choices": [
+                "The features are highly dependent",
+                "The features are independent",
+                "The features are redundant",
+                "The features are categorical"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "I(X;Y) = KL(P_XY || P_X ⊗ P_Y) = 0 si et seulement si P_XY = P_X P_Y, c'est-à-dire X et Y indépendantes.",
+            "tags": [
+                "information mutuelle",
+                "indépendance"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'indique une valeur d'information mutuelle égale à 0 entre deux variables ?",
+                "choices": [
+                    "Les variables sont fortement dépendantes",
+                    "Les variables sont indépendantes",
+                    "Les variables sont redondantes",
+                    "Les variables sont catégorielles"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q26",
+            "qcm": "2025-2026",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Examen 2025-26, Q26] Which of the following is a key difference between Pearson correlation and mutual information?",
+            "choices": [
+                "Pearson correlation captures linear relationships, while mutual information captures both linear and nonlinear relationships",
+                "Pearson correlation captures nonlinear relationships, while mutual information captures only linear relationships",
+                "Mutual information is always between -1 and 1, while Pearson correlation is always positive",
+                "Pearson correlation measures feature importance, while mutual information does not"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Pearson ne capte que le linéaire ; l'information mutuelle capte linéaire et non linéaire. Pearson est dans [−1, 1], l'information mutuelle est ≥ 0.",
+            "tags": [
+                "information mutuelle",
+                "corrélation de Pearson"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Laquelle de ces propositions est une différence clé entre la corrélation de Pearson et l'information mutuelle ?",
+                "choices": [
+                    "La corrélation de Pearson capte les relations linéaires, alors que l'information mutuelle capte les relations linéaires et non linéaires",
+                    "La corrélation de Pearson capte les relations non linéaires, alors que l'information mutuelle ne capte que les relations linéaires",
+                    "L'information mutuelle est toujours comprise entre −1 et 1, alors que la corrélation de Pearson est toujours positive",
+                    "La corrélation de Pearson mesure l'importance des variables, alors que l'information mutuelle ne la mesure pas"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q27",
+            "qcm": "2025-2026",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Examen 2025-26, Q27] What is the main limitation of mutual information in feature selection?",
+            "choices": [
+                "It cannot handle high-dimensional data efficiently",
+                "It cannot capture nonlinear relationships",
+                "It only works for classification problems",
+                "It is always equal to zero for independent features"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Estimer l'information mutuelle demande d'estimer des densités, ce qui devient très difficile en grande dimension. Elle capte pourtant bien le non linéaire et vaut 0 pour des variables indépendantes.",
+            "tags": [
+                "information mutuelle",
+                "grande dimension"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle est la principale limite de l'information mutuelle en sélection de variables ?",
+                "choices": [
+                    "Elle gère mal les données de grande dimension",
+                    "Elle ne peut pas capter les relations non linéaires",
+                    "Elle ne fonctionne que pour les problèmes de classification",
+                    "Elle est toujours égale à zéro pour des variables indépendantes"
+                ]
+            }
+        },
+        {
+            "id": "ml-2025-q28",
+            "qcm": "2025-2026",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Examen 2025-26, Q28] How does HSIC differ from mutual information in high-dimensional spaces?",
+            "choices": [
+                "HSIC operates in an infinite-dimensional RKHS, while mutual information relies on probability density estimation",
+                "HSIC measures linear dependencies, while mutual information measures nonlinear dependencies",
+                "HSIC works only for classification, while mutual information works for both regression and classification",
+                "HSIC is always faster than mutual information"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le HSIC se calcule avec des noyaux dans un RKHS (dimension infinie), sans estimer de densité ; l'information mutuelle repose sur l'estimation de densités.",
+            "tags": [
+                "HSIC",
+                "information mutuelle",
+                "RKHS"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "En quoi le HSIC diffère-t-il de l'information mutuelle en grande dimension ?",
+                "choices": [
+                    "Le HSIC opère dans un RKHS de dimension infinie, alors que l'information mutuelle repose sur l'estimation de densités de probabilité",
+                    "Le HSIC mesure les dépendances linéaires, alors que l'information mutuelle mesure les dépendances non linéaires",
+                    "Le HSIC ne fonctionne que pour la classification, alors que l'information mutuelle fonctionne en régression comme en classification",
+                    "Le HSIC est toujours plus rapide que l'information mutuelle"
+                ]
+            }
+        }
+    ]
+}
