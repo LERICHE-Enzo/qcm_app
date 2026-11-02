@@ -7110,6 +7110,294 @@
                     "tout représentant du RKHS est un minimiseur du risque"
                 ]
             }
+        },
+        {
+            "id": "ml-2020-q01-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Examen 2020-21, Q1] Cross validation allows",
+            "choices": [
+                "to assess the performance of a predictor",
+                "to minimize the empirical risk"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La validation croisée estime l'erreur sur des données non utilisées pour l'entraînement. Minimiser le risque empirique est l'objectif d'entraînement, pas celui de la validation croisée.",
+            "tags": [
+                "validation croisée",
+                "risque empirique"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "La validation croisée (cross validation) permet",
+                "choices": [
+                    "d'évaluer la performance d'un prédicteur",
+                    "de minimiser le risque empirique"
+                ]
+            }
+        },
+        {
+            "id": "ml-2020-q02-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Examen 2020-21, Q2] Centering the variables before doing OLS allows to",
+            "choices": [
+                "reduce the variance of the prediction",
+                "remove the intercept from the regression model"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Avec variables et réponse centrées, l'intercept estimé vaut 0 : on peut le retirer du modèle. Le centrage ne réduit pas la variance de la prédiction.",
+            "tags": [
+                "MCO",
+                "centrage",
+                "intercept"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Centrer les variables avant de faire les MCO (OLS) permet de",
+                "choices": [
+                    "réduire la variance de la prédiction",
+                    "supprimer l'intercept du modèle de régression"
+                ]
+            }
+        },
+        {
+            "id": "ml-2020-q03-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Examen 2020-21, Q3] PCA allows",
+            "choices": [
+                "to reduce the dimension of a sample while keeping high its variability",
+                "to summarize the information of a sample with the help of several clusters"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'ACP projette sur les directions de plus grande variance. Résumer par des groupes (clusters), c'est du clustering.",
+            "tags": [
+                "ACP",
+                "réduction de dimension"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "L'ACP (PCA) permet",
+                "choices": [
+                    "de réduire la dimension d'un échantillon tout en gardant une forte variabilité",
+                    "de résumer l'information d'un échantillon à l'aide de plusieurs groupes (clusters)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2020-q04-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Examen 2020-21, Q4] When making a PCA before OLS and keeping all the directions of the PCA",
+            "choices": [
+                "the model prediction stays the same as the standard OLS procedure (without PCA)",
+                "the model prediction has a smaller L2-risk"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "L'ACP est un simple changement de base : toutes les directions engendrent le même espace, donc les mêmes prédictions que les MCO.",
+            "tags": [
+                "ACP",
+                "MCO"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quand on fait une ACP avant les MCO en gardant toutes les directions de l'ACP",
+                "choices": [
+                    "la prédiction du modèle reste la même que celle des MCO standard (sans ACP)",
+                    "la prédiction du modèle a un risque L2 plus petit"
+                ]
+            }
+        },
+        {
+            "id": "ml-2020-q05-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Examen 2020-21, Q5] By choosing the regularization parameter in Ridge, aim is to",
+            "choices": [
+                "minimize the empirical risk (prediction error on the train set)",
+                "decrease variance without increasing too much the bias of OLS"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Minimiser l'erreur d'entraînement donnerait λ = 0 (les MCO). Le choix de λ sert à trouver le bon compromis biais-variance.",
+            "tags": [
+                "Ridge",
+                "biais-variance",
+                "λ"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "En choisissant le paramètre de régularisation du Ridge, le but est de",
+                "choices": [
+                    "minimiser le risque empirique (erreur de prédiction sur l'échantillon d'entraînement)",
+                    "diminuer la variance sans trop augmenter le biais des MCO"
+                ]
+            }
+        },
+        {
+            "id": "ml-2020-q06-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Examen 2020-21, Q6] Let A ∈ ℝ^{p×p} and b ∈ ℝ^p. The function L : x ↦ ‖Ax − b‖₂², defined on ℝ^p, is",
+            "choices": [
+                "strictly convex",
+                "convex (not strictly)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Son Hessien 2AᵀA est semi-défini positif mais pas forcément défini positif : si A est singulière il existe u ≠ 0 avec Au = 0. La fonction est convexe, pas strictement.",
+            "tags": [
+                "convexité",
+                "Hessien"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Soit A ∈ ℝ^{p×p} et b ∈ ℝ^p. La fonction L : x ↦ ‖Ax − b‖₂², définie sur ℝ^p, est",
+                "choices": [
+                    "strictement convexe",
+                    "convexe (pas strictement)"
+                ]
+            }
+        },
+        {
+            "id": "ml-2020-q07-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Examen 2020-21, Q7] Let W ∈ ℝ^{p×p}. The gradient of x ∈ ℝ^p ↦ ‖Wx‖₂² + ‖x‖₂²/2 is",
+            "choices": [
+                "x ↦ 2Wᵀx + x",
+                "x ↦ 2WᵀWx + x"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "∇‖Wx‖² = 2WᵀWx (et non 2Wᵀx) et ∇(‖x‖²/2) = x.",
+            "tags": [
+                "gradient",
+                "forme quadratique"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Soit W ∈ ℝ^{p×p}. Le gradient de x ∈ ℝ^p ↦ ‖Wx‖₂² + ‖x‖₂²/2 est",
+                "choices": [
+                    "x ↦ 2Wᵀx + x",
+                    "x ↦ 2WᵀWx + x"
+                ]
+            }
+        },
+        {
+            "id": "ml-2020-q08-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Examen 2020-21, Q8] The RKHS regression predictor is obtained by",
+            "choices": [
+                "averaging the responses for which the inputs are lying in a specific part of the space",
+                "minimizing the empirical risk over a certain Hilbert space"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Le prédicteur de la régression RKHS minimise le risque empirique (pénalisé) sur un espace de Hilbert à noyau. Moyenner les réponses locales, c'est du lissage (k-NN, noyau). (Aussi posée en 2022-23 Ingénieur, Q13.)",
+            "tags": [
+                "RKHS",
+                "régression à noyau"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le prédicteur de la régression RKHS est obtenu en",
+                "choices": [
+                    "moyennant les réponses dont les entrées se trouvent dans une certaine partie de l'espace",
+                    "minimisant le risque empirique sur un certain espace de Hilbert"
+                ]
+            }
+        },
+        {
+            "id": "ml-2020-q09-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Examen 2020-21, Q9] The representer theorem asserts that",
+            "choices": [
+                "the empirical risk minimization procedure can be done over a finite dimensional space rather than over the RKHS",
+                "any element of the RKHS is a minimizer of the risk"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Théorème de représentation : le minimiseur s'écrit f = Σ α_i k(x_i,·), donc la minimisation se fait sur n coefficients (dimension finie). Tous les éléments du RKHS ne sont pas des minimiseurs. (Aussi posée en 2022-23 Ingénieur, Q14.)",
+            "tags": [
+                "RKHS",
+                "théorème de représentation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le théorème de représentation (representer theorem) affirme que",
+                "choices": [
+                    "la minimisation du risque empirique peut se faire sur un espace de dimension finie plutôt que sur le RKHS",
+                    "tout élément du RKHS est un minimiseur du risque"
+                ]
+            }
+        },
+        {
+            "id": "ml-2020-q10-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2020-21, Q10] Let (I_k)_{k=1,...,K} a partition of the sample index set {1, . . . , n} such that each I_k contains exactly N points (therefore NK = n). A k-NN predictor is trained over each sample. The k-NN trained on I_k is denoted ĝ_k(x). The bagging procedure",
+            "choices": [
+                "consists in averaging the different predictors",
+                "consists in taking the best prediction over the different predictors"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le bagging agrège en moyennant les prédicteurs, et non en gardant le meilleur.",
+            "tags": [
+                "bagging",
+                "k-NN"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Soit (I_k) une partition des indices de l'échantillon, chaque I_k contenant exactement N points (NK = n). Un prédicteur k-NN (k plus proches voisins) est entraîné sur chaque sous-échantillon ; celui entraîné sur I_k est noté ĝ_k(x). La procédure de bagging",
+                "choices": [
+                    "consiste à moyenner les différents prédicteurs",
+                    "consiste à prendre la meilleure prédiction parmi les différents prédicteurs"
+                ]
+            }
+        },
+        {
+            "id": "ml-2020-q11-annale",
+            "qcm": "2020-2021",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Examen 2020-21, Q11] Context (Q10): (I_k) is a partition of the sample index set {1, ..., n}, each I_k contains exactly N points (NK = n), and a k-NN predictor ĝ_k(x) is trained on each I_k. In the context of previous question. The variance of the bagging procedure is",
+            "choices": [
+                "(1/K) Σ_{k=1}^{K} Var(ĝ_k(x))",
+                "(1/K)² Σ_{k=1}^{K} Var(ĝ_k(x))"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Les ĝ_k sont indépendants (parties disjointes de l'échantillon), donc Var((1/K) Σ ĝ_k) = (1/K²) Σ Var(ĝ_k).",
+            "tags": [
+                "bagging",
+                "variance d'une moyenne"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Contexte (Q10) : (I_k) est une partition des indices de l'échantillon, chaque I_k contient N points (NK = n), et un prédicteur k-NN ĝ_k(x) est entraîné sur chaque I_k. Dans le contexte de la question précédente, la variance de la procédure de bagging est",
+                "choices": [
+                    "(1/K) Σ_{k=1}^{K} Var(ĝ_k(x))",
+                    "(1/K)² Σ_{k=1}^{K} Var(ĝ_k(x))"
+                ]
+            }
         }
     ]
 }
