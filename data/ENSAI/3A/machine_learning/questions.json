@@ -7398,6 +7398,1856 @@
                     "(1/K)² Σ_{k=1}^{K} Var(ĝ_k(x))"
                 ]
             }
+        },
+        {
+            "id": "ml-cours-q01-gpt",
+            "qcm": "GPT1",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Cours GPT1] In a random forest, what is the out-of-bag (OOB) error?",
+            "choices": [
+                "The error of the forest on an independent test set",
+                "The error of the first tree grown in the forest",
+                "The training error of the forest on all the observations",
+                "For each observation, the prediction error of the average of the trees whose bootstrap sample did not contain it"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Chaque arbre laisse environ 1/3 des observations hors de son échantillon bootstrap. L'erreur OOB donne une estimation de l'erreur de validation sans jeu de validation séparé.",
+            "tags": [
+                "forêt aléatoire",
+                "erreur OOB"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans une forêt aléatoire, qu'est-ce que l'erreur out-of-bag (OOB) ?",
+                "choices": [
+                    "L'erreur de la forêt sur un jeu de test indépendant",
+                    "L'erreur du premier arbre construit dans la forêt",
+                    "L'erreur d'entraînement de la forêt sur toutes les observations",
+                    "Pour chaque observation, l'erreur de prédiction de la moyenne des arbres dont l'échantillon bootstrap ne la contenait pas"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q02-gpt",
+            "qcm": "GPT1",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Cours GPT2] Why does a random forest draw a random subset of features at each split?",
+            "choices": [
+                "To decorrelate the trees, so that averaging them reduces the variance more",
+                "To reduce the bias of each tree",
+                "To make each tree faster to prune",
+                "To guarantee that every feature is used in every tree"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La variance d'une moyenne de variables corrélées est limitée par leur corrélation : décorréler les arbres permet de réduire davantage la variance.",
+            "tags": [
+                "forêt aléatoire",
+                "décorrélation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi une forêt aléatoire tire-t-elle un sous-ensemble aléatoire de variables à chaque coupure ?",
+                "choices": [
+                    "Pour décorréler les arbres, afin que leur moyenne réduise davantage la variance",
+                    "Pour réduire le biais de chaque arbre",
+                    "Pour rendre chaque arbre plus rapide à élaguer",
+                    "Pour garantir que chaque variable est utilisée dans chaque arbre"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q03-gpt",
+            "qcm": "GPT1",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT3] Is the sigmoid kernel k(x, x') = tanh(a + <x, x'>) always a valid kernel?",
+            "choices": [
+                "Yes, because it is symmetric",
+                "Yes, because tanh is increasing",
+                "No, it is not positive definite in general",
+                "No, because it is not symmetric"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un noyau valide doit être symétrique et semi-défini positif. Le noyau sigmoïde est symétrique mais n'est pas semi-défini positif pour tous les paramètres.",
+            "tags": [
+                "noyau valide",
+                "noyau sigmoïde"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Le noyau sigmoïde k(x, x') = tanh(a + <x, x'>) est-il toujours un noyau valide ?",
+                "choices": [
+                    "Oui, car il est symétrique",
+                    "Oui, car tanh est croissante",
+                    "Non, il n'est pas défini positif en général",
+                    "Non, car il n'est pas symétrique"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q04-gpt",
+            "qcm": "GPT1",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT4] What is the difference between the polynomial and the Gaussian kernel for the dimension of their feature space?",
+            "choices": [
+                "Both have an infinite-dimensional feature space",
+                "The polynomial kernel has an infinite-dimensional feature space, the Gaussian kernel a finite-dimensional one",
+                "The polynomial kernel has a finite-dimensional feature space, the Gaussian kernel an infinite-dimensional one",
+                "Both have a feature space of dimension equal to the number of observations"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le noyau gaussien se développe en une série infinie de monômes ; le noyau polynomial de degré fixé n'engendre qu'un nombre fini de monômes.",
+            "tags": [
+                "noyaux",
+                "espace de redescription"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle différence entre le noyau polynomial et le noyau gaussien pour la dimension de leur espace de redescription (feature space) ?",
+                "choices": [
+                    "Les deux ont un espace de dimension infinie",
+                    "Le noyau polynomial a un espace de dimension infinie, le noyau gaussien un espace de dimension finie",
+                    "Le noyau polynomial a un espace de dimension finie, le noyau gaussien un espace de dimension infinie",
+                    "Les deux ont un espace de dimension égale au nombre d'observations"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q05-gpt",
+            "qcm": "GPT1",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT5] What does the representer theorem state for a regularized empirical risk minimized in an RKHS?",
+            "choices": [
+                "The minimizer can be written f(x) = Σ_i α_i k(x_i, x)",
+                "The minimizer is always the zero function",
+                "The minimizer does not depend on the observations",
+                "The minimizer is always a polynomial"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "On cherche donc n coefficients α_i au lieu d'une fonction dans un espace de dimension infinie.",
+            "tags": [
+                "théorème de représentation",
+                "RKHS"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Que dit le théorème de représentation pour un risque empirique régularisé minimisé dans un RKHS ?",
+                "choices": [
+                    "Le minimiseur s'écrit f(x) = Σ_i α_i k(x_i, x)",
+                    "Le minimiseur est toujours la fonction nulle",
+                    "Le minimiseur ne dépend pas des observations",
+                    "Le minimiseur est toujours un polynôme"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q06-gpt",
+            "qcm": "GPT2",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT6] In k-nearest-neighbors regression, what happens when k is very small?",
+            "choices": [
+                "High bias but low variance (the model underfits)",
+                "Both bias and variance are low",
+                "Both bias and variance are high",
+                "Low bias but high variance (the model overfits)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Avec k = 1 la prédiction suit chaque point d'apprentissage, bruit compris : faible biais, forte variance.",
+            "tags": [
+                "k-NN",
+                "biais-variance"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "En régression par k plus proches voisins, que se passe-t-il quand k est très petit ?",
+                "choices": [
+                    "Biais élevé mais variance faible (sous-apprentissage)",
+                    "Biais et variance sont tous deux faibles",
+                    "Biais et variance sont tous deux élevés",
+                    "Biais faible mais variance élevée (sur-apprentissage)"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q07-gpt",
+            "qcm": "GPT2",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT7] In smoothing splines, which minimize Σ(y_i − f(x_i))² + λ ∫ f''(t)² dt, what happens when λ → ∞?",
+            "choices": [
+                "The fit interpolates all the points",
+                "The fit tends to a straight line",
+                "The fit tends to a constant equal to zero",
+                "The fit tends to a parabola"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La pénalité impose f'' = 0, donc f affine (la droite des moindres carrés).",
+            "tags": [
+                "splines de lissage",
+                "régularisation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pour les splines de lissage (smoothing splines), qui minimisent Σ(y_i − f(x_i))² + λ ∫ f''(t)² dt, que se passe-t-il quand λ → ∞ ?",
+                "choices": [
+                    "L'ajustement interpole tous les points",
+                    "L'ajustement tend vers une droite",
+                    "L'ajustement tend vers la constante nulle",
+                    "L'ajustement tend vers une parabole"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q08-gpt",
+            "qcm": "GPT2",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Cours GPT8] What is the constrained form (Lagrangian formulation) of Ridge regression?",
+            "choices": [
+                "Minimize ‖Y − Xβ‖² subject to ‖β‖₁ ≤ τ; a larger λ corresponds to a smaller τ",
+                "Minimize ‖Y − Xβ‖² subject to ‖β‖₂² ≤ τ; a larger λ corresponds to a smaller τ",
+                "Minimize ‖β‖₂² subject to ‖Y − Xβ‖² ≤ τ; a larger λ corresponds to a larger τ",
+                "Minimize ‖Y − Xβ‖² subject to ‖β‖₂² ≤ τ; a larger λ corresponds to a larger τ"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La contrainte est une boule euclidienne centrée en 0 : plus λ est grand, plus la boule est petite.",
+            "tags": [
+                "Ridge",
+                "formulation lagrangienne"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle est la forme sous contrainte (formulation lagrangienne) de la régression Ridge ?",
+                "choices": [
+                    "Minimiser ‖Y − Xβ‖² sous ‖β‖₁ ≤ τ ; un λ plus grand correspond à un τ plus petit",
+                    "Minimiser ‖Y − Xβ‖² sous ‖β‖₂² ≤ τ ; un λ plus grand correspond à un τ plus petit",
+                    "Minimiser ‖β‖₂² sous ‖Y − Xβ‖² ≤ τ ; un λ plus grand correspond à un τ plus grand",
+                    "Minimiser ‖Y − Xβ‖² sous ‖β‖₂² ≤ τ ; un λ plus grand correspond à un τ plus grand"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q09-gpt",
+            "qcm": "GPT2",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Cours GPT9] Geometrically, why does the Lasso give sparse solutions?",
+            "choices": [
+                "The ℓ1 ball is a smooth sphere without corners",
+                "The level sets of the loss are always aligned with the axes",
+                "The ℓ1 ball is larger than the ℓ2 ball",
+                "The ℓ1 ball has corners on the axes, and the level sets of the loss often touch it at such a corner"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "En un coin, certains coefficients sont exactement nuls ; la boule ℓ2 n'a pas de coins.",
+            "tags": [
+                "Lasso",
+                "géométrie",
+                "parcimonie"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Géométriquement, pourquoi le Lasso donne-t-il des solutions parcimonieuses ?",
+                "choices": [
+                    "La boule ℓ1 est une sphère lisse sans coins",
+                    "Les lignes de niveau de la perte sont toujours alignées avec les axes",
+                    "La boule ℓ1 est plus grande que la boule ℓ2",
+                    "La boule ℓ1 a des coins sur les axes, et les lignes de niveau de la perte la touchent souvent en un coin"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q10-gpt",
+            "qcm": "GPT2",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Cours GPT10] In the fixed-design model, is the Ridge estimator biased?",
+            "choices": [
+                "Yes for λ > 0, with bias −λ(XᵀX + λI)⁻¹β*, but its variance is smaller than that of OLS",
+                "No, it is unbiased for every λ",
+                "Yes, and its variance is larger than that of OLS",
+                "No, it is unbiased but its variance is larger than that of OLS"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "C'est le compromis biais-variance : on accepte un peu de biais pour réduire la variance.",
+            "tags": [
+                "Ridge",
+                "biais",
+                "design fixe"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans le modèle à design fixe (fixed design), l'estimateur Ridge est-il biaisé ?",
+                "choices": [
+                    "Oui pour λ > 0, avec un biais −λ(XᵀX + λI)⁻¹β*, mais sa variance est plus petite que celle des MCO",
+                    "Non, il est sans biais pour tout λ",
+                    "Oui, et sa variance est plus grande que celle des MCO",
+                    "Non, il est sans biais mais sa variance est plus grande que celle des MCO"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q11-gpt",
+            "qcm": "GPT3",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Cours GPT11] For a problem with M = 10 classes, how many binary classifiers does the one-versus-one approach train?",
+            "choices": [
+                "M = 10",
+                "M² = 100",
+                "M(M−1)/2 = 45",
+                "M−1 = 9"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un-contre-tous n'en entraîne que M = 10.",
+            "tags": [
+                "SVM",
+                "multi-classe",
+                "un-contre-un"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pour un problème à M = 10 classes, combien de classifieurs binaires l'approche un-contre-un (one-versus-one) entraîne-t-elle ?",
+                "choices": [
+                    "M = 10",
+                    "M² = 100",
+                    "M(M−1)/2 = 45",
+                    "M−1 = 9"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q12-gpt",
+            "qcm": "GPT3",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Cours GPT12] What is the hinge loss of a prediction f(x) with label y ∈ {−1, +1}?",
+            "choices": [
+                "max(0, −y f(x))",
+                "log(1 + exp(−y f(x)))",
+                "max(0, 1 − y f(x))",
+                "(y − f(x))²"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Elle est nulle si le point est du bon côté, au-delà de la marge.",
+            "tags": [
+                "SVM",
+                "perte charnière"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle est la perte charnière (hinge loss) d'une prédiction f(x) d'étiquette y ∈ {−1, +1} ?",
+                "choices": [
+                    "max(0, −y f(x))",
+                    "log(1 + exp(−y f(x)))",
+                    "max(0, 1 − y f(x))",
+                    "(y − f(x))²"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q13-gpt",
+            "qcm": "GPT3",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Cours GPT13] Why should the features be normalized before using an SVM with a Gaussian kernel?",
+            "choices": [
+                "The kernel has a single bandwidth shared by all features (isotropic), so features with a large scale would dominate the distance",
+                "The Gaussian kernel is only defined for features in [0, 1]",
+                "Normalization makes the data linearly separable",
+                "Normalization reduces the number of support vectors to zero"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le noyau gaussien dépend seulement de ‖x − x'‖₂.",
+            "tags": [
+                "SVM",
+                "noyau gaussien",
+                "normalisation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi normaliser les variables avant un SVM à noyau gaussien ?",
+                "choices": [
+                    "Le noyau a une seule largeur commune à toutes les variables (isotrope), donc les variables de grande échelle dominent la distance",
+                    "Le noyau gaussien n'est défini que pour des variables dans [0, 1]",
+                    "La normalisation rend les données linéairement séparables",
+                    "La normalisation ramène le nombre de vecteurs supports à zéro"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q14-gpt",
+            "qcm": "GPT3",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Cours GPT14] In the soft-margin SVM, what is the effect of a very large C?",
+            "choices": [
+                "Margin violations are ignored: the margin becomes very wide and the model underfits",
+                "The number of support vectors is forced to be zero",
+                "The kernel becomes linear",
+                "Margin violations are heavily penalized: the margin becomes narrow and the model tends to overfit"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "À l'inverse, un C petit donne une marge large et plus d'erreurs tolérées.",
+            "tags": [
+                "SVM",
+                "marge souple",
+                "paramètre C"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans le SVM à marge souple (soft-margin), quel est l'effet d'un C très grand ?",
+                "choices": [
+                    "Les violations de marge sont ignorées : la marge devient très large et le modèle sous-apprend",
+                    "Le nombre de vecteurs supports est forcé à zéro",
+                    "Le noyau devient linéaire",
+                    "Les violations de marge sont très pénalisées : la marge devient étroite et le modèle tend à sur-apprendre"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q15-gpt",
+            "qcm": "GPT3",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Cours GPT15] For two Gaussian classes with the same covariance matrix, what is the shape of the Bayes decision boundary?",
+            "choices": [
+                "Quadratic (QDA)",
+                "Linear (LDA)",
+                "Circular",
+                "Piecewise constant"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Avec des covariances différentes elle est quadratique (QDA).",
+            "tags": [
+                "LDA",
+                "QDA",
+                "frontière de Bayes"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pour deux classes gaussiennes de même matrice de covariance, quelle est la forme de la frontière de décision de Bayes ?",
+                "choices": [
+                    "Quadratique (QDA)",
+                    "Linéaire (LDA)",
+                    "Circulaire",
+                    "Constante par morceaux"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q16-gpt",
+            "qcm": "GPT4",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Cours GPT16] What does it mean for a differentiable function F to be L-smooth?",
+            "choices": [
+                "F itself is L-Lipschitz: |F(θ) − F(θ')| ≤ L‖θ − θ'‖",
+                "Its gradient is L-Lipschitz: ‖∇F(θ) − ∇F(θ')‖ ≤ L‖θ − θ'‖",
+                "F is L times continuously differentiable",
+                "F is bounded above by L"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Pour F deux fois différentiable, cela revient à −L·I ⪯ ∇²F ⪯ L·I.",
+            "tags": [
+                "L-lisse",
+                "gradient lipschitzien"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Que signifie qu'une fonction différentiable F soit L-lisse (L-smooth) ?",
+                "choices": [
+                    "F elle-même est L-lipschitzienne : |F(θ) − F(θ')| ≤ L‖θ − θ'‖",
+                    "Son gradient est L-lipschitzien : ‖∇F(θ) − ∇F(θ')‖ ≤ L‖θ − θ'‖",
+                    "F est L fois continûment dérivable",
+                    "F est majorée par L"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q17-gpt",
+            "qcm": "GPT4",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Cours GPT17] For a convex L-smooth function and a constant step γ ≤ 1/L, how fast does gradient descent converge?",
+            "choices": [
+                "Linearly, at a geometric rate (1 − γ)^t",
+                "In a single iteration",
+                "It does not converge in general",
+                "F(θ_t) − F(θ*) ≤ ‖θ_0 − θ*‖² / (2γt), a sublinear rate in O(1/t)"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Il faut donc O(1/ε) itérations pour atteindre la précision ε.",
+            "tags": [
+                "descente de gradient",
+                "vitesse de convergence"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pour une fonction convexe L-lisse et un pas constant γ ≤ 1/L, quelle est la vitesse de la descente de gradient ?",
+                "choices": [
+                    "Linéaire, à vitesse géométrique (1 − γ)^t",
+                    "En une seule itération",
+                    "Elle ne converge pas en général",
+                    "F(θ_t) − F(θ*) ≤ ‖θ_0 − θ*‖² / (2γt), vitesse sous-linéaire en O(1/t)"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q18-gpt",
+            "qcm": "GPT4",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Cours GPT18] If F is μ-strongly convex and L-smooth, what is the convergence rate of gradient descent and what slows it down?",
+            "choices": [
+                "Linear convergence (O(log(1/ε)) iterations), slowed down by a large condition number L/μ",
+                "Sublinear convergence in O(1/t), slowed down by a large step size",
+                "Linear convergence, slowed down by a small number of observations",
+                "Quadratic convergence, slowed down by the Lipschitz constant L alone"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La contraction par itération est 1 − μ/L pour γ = 1/L.",
+            "tags": [
+                "descente de gradient",
+                "forte convexité",
+                "conditionnement"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Si F est μ-fortement convexe et L-lisse, quelle est la vitesse de convergence de la descente de gradient et qu'est-ce qui la ralentit ?",
+                "choices": [
+                    "Convergence linéaire (O(log(1/ε)) itérations), ralentie par un grand conditionnement L/μ",
+                    "Convergence sous-linéaire en O(1/t), ralentie par un grand pas",
+                    "Convergence linéaire, ralentie par un petit nombre d'observations",
+                    "Convergence quadratique, ralentie par la seule constante de Lipschitz L"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q19-gpt",
+            "qcm": "GPT4",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Cours GPT19] Which of the Ridge and Lasso objectives is strongly convex?",
+            "choices": [
+                "Lasso, because the ℓ1 penalty is strongly convex",
+                "Both of them, for every λ ≥ 0",
+                "Ridge, because the penalty λ‖β‖₂² makes the objective strongly convex",
+                "Neither of them"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "L'objectif du Lasso est seulement convexe.",
+            "tags": [
+                "Ridge",
+                "Lasso",
+                "forte convexité"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Lequel des objectifs Ridge et Lasso est fortement convexe ?",
+                "choices": [
+                    "Lasso, car la pénalité ℓ1 est fortement convexe",
+                    "Les deux, pour tout λ ≥ 0",
+                    "Ridge, car la pénalité λ‖β‖₂² rend l'objectif fortement convexe",
+                    "Aucun des deux"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q20-gpt",
+            "qcm": "GPT4",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Cours GPT20] What is the subdifferential of |θ| at θ = 0?",
+            "choices": [
+                "The single value {0}",
+                "The two values {−1, 1}",
+                "The whole interval [−1, 1]",
+                "The empty set"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Pour θ ≠ 0 c'est le singleton {sign(θ)}.",
+            "tags": [
+                "sous-différentiel",
+                "valeur absolue"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le sous-différentiel de |θ| en θ = 0 ?",
+                "choices": [
+                    "La seule valeur {0}",
+                    "Les deux valeurs {−1, 1}",
+                    "Tout l'intervalle [−1, 1]",
+                    "L'ensemble vide"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q21-gpt",
+            "qcm": "GPT5",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Cours GPT21] In coordinate descent for the Lasso, how is each one-dimensional subproblem solved?",
+            "choices": [
+                "In closed form by soft-thresholding",
+                "By a numerical gradient descent with a decreasing step",
+                "By Newton's method",
+                "By brute-force search over a grid"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "C'est le même seuillage doux qu'avec X = I.",
+            "tags": [
+                "Lasso",
+                "descente par coordonnées",
+                "seuillage doux"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans la descente par coordonnées pour le Lasso, comment résout-on chaque sous-problème à une dimension ?",
+                "choices": [
+                    "En forme close par seuillage doux (soft-thresholding)",
+                    "Par une descente de gradient numérique à pas décroissant",
+                    "Par la méthode de Newton",
+                    "Par une recherche exhaustive sur une grille"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q22-gpt",
+            "qcm": "GPT5",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Cours GPT22] In AdaBoost, what happens to the weights of the misclassified points after each iteration?",
+            "choices": [
+                "They decrease, so the next weak learner ignores them",
+                "They are reset to 1/n",
+                "They stay unchanged",
+                "They increase, so the next weak learner focuses on them"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les points bien classés voient leur poids diminuer relativement.",
+            "tags": [
+                "AdaBoost",
+                "poids"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans AdaBoost, que deviennent les poids des points mal classés après chaque itération ?",
+                "choices": [
+                    "Ils diminuent, donc l'apprenant faible suivant les ignore",
+                    "Ils sont remis à 1/n",
+                    "Ils restent inchangés",
+                    "Ils augmentent, donc l'apprenant faible suivant se concentre sur eux"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q23-gpt",
+            "qcm": "GPT5",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Cours GPT23] In gradient boosting with the squared loss, what does each new tree fit?",
+            "choices": [
+                "The labels y_i themselves",
+                "The residuals y_i − F_{b−1}(x_i), which are the negative gradient of the loss",
+                "The residuals of a bootstrap sample",
+                "The squared residuals (y_i − F_{b−1}(x_i))²"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Pour une autre perte, on ajuste l'opposé du gradient de cette perte.",
+            "tags": [
+                "gradient boosting",
+                "résidus"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "En gradient boosting avec la perte quadratique, que chaque nouvel arbre ajuste-t-il ?",
+                "choices": [
+                    "Les étiquettes y_i elles-mêmes",
+                    "Les résidus y_i − F_{b−1}(x_i), opposé du gradient de la perte",
+                    "Les résidus d'un échantillon bootstrap",
+                    "Les résidus au carré (y_i − F_{b−1}(x_i))²"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q24-gpt",
+            "qcm": "GPT5",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Cours GPT24] What type of dependence can the Spearman coefficient detect that Pearson cannot always detect?",
+            "choices": [
+                "Any dependence, including non-monotonic ones",
+                "Monotonic (not necessarily linear) relationships",
+                "Only linear relationships",
+                "Only relationships between categorical variables"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "C'est la corrélation de Pearson calculée sur les rangs : y = exp(x) donne Spearman = 1.",
+            "tags": [
+                "Spearman",
+                "Pearson",
+                "corrélation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel type de dépendance le coefficient de Spearman détecte-t-il que Pearson ne détecte pas toujours ?",
+                "choices": [
+                    "Toute dépendance, y compris non monotone",
+                    "Les relations monotones (pas forcément linéaires)",
+                    "Seulement les relations linéaires",
+                    "Seulement les relations entre variables catégorielles"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q25-gpt",
+            "qcm": "GPT5",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Cours GPT25] Why is the Kullback-Leibler divergence not a distance?",
+            "choices": [
+                "It can be negative",
+                "It is always infinite",
+                "It does not vanish when P = Q",
+                "It is not symmetric"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "On a quand même D_KL(P‖Q) ≥ 0, avec égalité si et seulement si P = Q.",
+            "tags": [
+                "Kullback-Leibler",
+                "divergence"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi la divergence de Kullback-Leibler n'est-elle pas une distance ?",
+                "choices": [
+                    "Elle peut être négative",
+                    "Elle est toujours infinie",
+                    "Elle ne s'annule pas quand P = Q",
+                    "Elle n'est pas symétrique"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q26-gpt",
+            "qcm": "GPT6",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Cours GPT26] What does a characteristic kernel guarantee for the HSIC?",
+            "choices": [
+                "MMD(P, Q) = 0 if and only if P = Q, so HSIC(X, Y) = 0 if and only if X and Y are independent",
+                "HSIC(X, Y) is always strictly positive",
+                "HSIC(X, Y) = 0 if and only if X and Y are linearly uncorrelated",
+                "HSIC(X, Y) can be computed without any kernel matrix"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "HSIC est le MMD² entre P_XY et P_X ⊗ P_Y.",
+            "tags": [
+                "HSIC",
+                "noyau caractéristique",
+                "MMD"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'assure un noyau caractéristique (characteristic kernel) pour le HSIC ?",
+                "choices": [
+                    "MMD(P, Q) = 0 si et seulement si P = Q, donc HSIC(X, Y) = 0 si et seulement si X et Y sont indépendantes",
+                    "HSIC(X, Y) est toujours strictement positif",
+                    "HSIC(X, Y) = 0 si et seulement si X et Y sont linéairement non corrélées",
+                    "HSIC(X, Y) se calcule sans aucune matrice de noyau"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q27-gpt",
+            "qcm": "GPT6",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Cours GPT27] What is the empirical estimator of the HSIC?",
+            "choices": [
+                "tr(KL)/n, with K, L the covariance matrices of X, Y",
+                "‖K − L‖²/n",
+                "tr(KHLH)/n², with K, L the Gram matrices of X, Y and H = I − (1/n)11ᵀ the centering matrix",
+                "(1/n) Σ_i k(x_i, x_i) l(y_i, y_i)"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Il ne demande aucune estimation de densité.",
+            "tags": [
+                "HSIC",
+                "estimateur empirique"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est l'estimateur empirique du HSIC ?",
+                "choices": [
+                    "tr(KL)/n, avec K, L les matrices de covariance de X, Y",
+                    "‖K − L‖²/n",
+                    "tr(KHLH)/n², avec K, L les matrices de Gram de X, Y et H = I − (1/n)11ᵀ la matrice de centrage",
+                    "(1/n) Σ_i k(x_i, x_i) l(y_i, y_i)"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q28-gpt",
+            "qcm": "GPT6",
+            "theme": "Thème 9 : Principes de l'apprentissage : risque, sur-apprentissage, validation",
+            "question": "[Cours GPT28] What is the main drawback of the hold-out validation compared with K-fold cross-validation?",
+            "choices": [
+                "It is much more expensive in computation time",
+                "It is biased downwards for every sample size",
+                "The estimate of the risk depends strongly on the random split",
+                "It cannot be used with regression"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le K-fold fait la moyenne de K découpages, mais demande K ajustements.",
+            "tags": [
+                "hold-out",
+                "validation croisée K-fold"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le principal défaut du hold-out par rapport à la validation croisée K-fold ?",
+                "choices": [
+                    "Il est beaucoup plus coûteux en temps de calcul",
+                    "Il est biaisé vers le bas pour toute taille d'échantillon",
+                    "L'estimation du risque dépend fortement du découpage aléatoire",
+                    "Il ne peut pas être utilisé en régression"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q29-gpt",
+            "qcm": "GPT6",
+            "theme": "Thème 9 : Principes de l'apprentissage : risque, sur-apprentissage, validation",
+            "question": "[Cours GPT29] In the oracle inequality for a finite dictionary of size M, how does the gap between the risk of ĝ_ERM and the oracle behave?",
+            "choices": [
+                "It is bounded by √((2/n) log(2M/ε)): it goes to 0 when n grows and increases with M",
+                "It is bounded by M/n: it increases with n",
+                "It is bounded by √(M/n) and decreases with M",
+                "It does not depend on n nor on M"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Un dictionnaire plus grand baisse le biais mais augmente la variance.",
+            "tags": [
+                "inégalité oracle",
+                "ERM",
+                "dictionnaire fini"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans l'inégalité oracle pour un dictionnaire fini de taille M, comment se comporte l'écart entre le risque de ĝ_ERM et celui de l'oracle ?",
+                "choices": [
+                    "Il est majoré par √((2/n) log(2M/ε)) : il tend vers 0 quand n grandit et augmente avec M",
+                    "Il est majoré par M/n : il augmente avec n",
+                    "Il est majoré par √(M/n) et diminue avec M",
+                    "Il ne dépend ni de n ni de M"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q30-gpt",
+            "qcm": "GPT6",
+            "theme": "Thème 9 : Principes de l'apprentissage : risque, sur-apprentissage, validation",
+            "question": "[Cours GPT30] What is the idea of Monte-Carlo validation?",
+            "choices": [
+                "Split the data once into K fixed blocks and rotate them",
+                "Draw the training set with replacement and test on the observations drawn",
+                "Use the whole dataset for training and for validation",
+                "Repeat the random train/validation split many times (hundreds) and average the validation errors"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Cela casse les blocs fixes du K-fold, mais certaines données servent plus à l'apprentissage qu'à la validation.",
+            "tags": [
+                "validation Monte-Carlo",
+                "validation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle est l'idée de la validation Monte-Carlo ?",
+                "choices": [
+                    "Découper les données une seule fois en K blocs fixes et les faire tourner",
+                    "Tirer l'échantillon d'entraînement avec remise et tester sur les observations tirées",
+                    "Utiliser tout le jeu de données à la fois pour l'entraînement et la validation",
+                    "Répéter le découpage aléatoire apprentissage/validation un grand nombre de fois (des centaines) et moyenner les erreurs de validation"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q31-gpt",
+            "qcm": "GPT7",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT31] If k_1 and k_2 are kernels, which of k_1 + k_2, k_1 k_2, k_1 − k_2 is always a kernel?",
+            "choices": [
+                "Only k_1 + k_2",
+                "k_1 + k_2 and k_1 k_2 (also a k_1 + b k_2 with a, b ≥ 0)",
+                "k_1 + k_2 and k_1 − k_2",
+                "All three"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "La différence k_1 − k_2 n'est pas toujours semi-définie positive.",
+            "tags": [
+                "noyaux",
+                "opérations sur les noyaux"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Si k_1 et k_2 sont des noyaux, lesquels de k_1 + k_2, k_1 k_2, k_1 − k_2 sont toujours des noyaux ?",
+                "choices": [
+                    "Seulement k_1 + k_2",
+                    "k_1 + k_2 et k_1 k_2 (aussi a k_1 + b k_2 avec a, b ≥ 0)",
+                    "k_1 + k_2 et k_1 − k_2",
+                    "Les trois"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q32-gpt",
+            "qcm": "GPT7",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT32] Why is k-nearest-neighbors regression called a linear smoother?",
+            "choices": [
+                "Because the function f̂ is linear in x",
+                "The prediction is a linear combination of the training targets: f̂(x) = Σ_i w_i(x) y_i, with w_i = 1/k for the k neighbors and 0 otherwise",
+                "Because it fits a straight line through the neighbors",
+                "Because its prediction does not depend on the targets y_i"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Cela ne veut pas dire que f̂ est linéaire en x : seul le lien avec les y_i est linéaire.",
+            "tags": [
+                "k-NN",
+                "lisseur linéaire"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi la régression par k plus proches voisins est-elle appelée un lisseur linéaire (linear smoother) ?",
+                "choices": [
+                    "Parce que la fonction f̂ est linéaire en x",
+                    "La prédiction est une combinaison linéaire des y_i d'entraînement : f̂(x) = Σ_i w_i(x) y_i, avec des poids 1/k pour les k voisins et 0 sinon",
+                    "Parce qu'elle ajuste une droite passant par les voisins",
+                    "Parce que sa prédiction ne dépend pas des y_i"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q33-gpt",
+            "qcm": "GPT7",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT33] What is the difference between k-NN regression and kernel smoothing?",
+            "choices": [
+                "k-NN uses weights that decrease smoothly with the distance; kernel smoothing gives the weight 1/k to k neighbors",
+                "Kernel smoothing is for classification only, k-NN for regression only",
+                "There is no difference: they give the same prediction",
+                "k-NN gives the same weight 1/k to the neighbors and 0 to the others (weights with jumps); kernel smoothing uses weights that decrease smoothly with the distance"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "L'estimateur par noyau est donc plus régulier (noyaux usuels : gaussien, Epanechnikov).",
+            "tags": [
+                "k-NN",
+                "lissage par noyau"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle est la différence entre la régression par k-NN et le lissage par noyau (kernel smoothing) ?",
+                "choices": [
+                    "Le k-NN utilise des poids qui décroissent doucement avec la distance ; le lissage par noyau donne le poids 1/k à k voisins",
+                    "Le lissage par noyau ne sert qu'à la classification, le k-NN qu'à la régression",
+                    "Il n'y a aucune différence : ils donnent la même prédiction",
+                    "Le k-NN donne le poids 1/k aux voisins et 0 aux autres (poids discontinus) ; le lissage par noyau utilise des poids qui décroissent doucement avec la distance"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q34-gpt",
+            "qcm": "GPT7",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT34] What is a spline of order k?",
+            "choices": [
+                "A piecewise polynomial of degree k, continuous, with continuous derivatives of orders 1, …, k−1 at the knots",
+                "A polynomial of degree k on the whole real line",
+                "A piecewise constant function with k jumps",
+                "A piecewise polynomial of degree k with discontinuities at the knots"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "C'est une combinaison linéaire de fonctions de base (puissances tronquées ou B-splines).",
+            "tags": [
+                "splines",
+                "régression non paramétrique"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'est-ce qu'une spline d'ordre k ?",
+                "choices": [
+                    "Un polynôme par morceaux de degré k, continu, dont les dérivées d'ordres 1, …, k−1 sont continues aux nœuds (knots)",
+                    "Un polynôme de degré k sur toute la droite réelle",
+                    "Une fonction constante par morceaux avec k sauts",
+                    "Un polynôme par morceaux de degré k avec des discontinuités aux nœuds"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q35-gpt",
+            "qcm": "GPT7",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT35] What does the curse of dimensionality mean for k-NN regression?",
+            "choices": [
+                "The risk decreases faster as d increases",
+                "The number of neighbors k must be equal to d",
+                "Estimation becomes exponentially harder when the number of features d increases (risk of order n^{−2/(2+d)} for a Lipschitz regression function)",
+                "The risk does not depend on d"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Plus d est grand, plus le risque décroît lentement avec n.",
+            "tags": [
+                "k-NN",
+                "fléau de la dimension"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Que signifie le fléau de la dimension (curse of dimensionality) pour la régression par k-NN ?",
+                "choices": [
+                    "Le risque décroît plus vite quand d augmente",
+                    "Le nombre de voisins k doit être égal à d",
+                    "L'estimation devient exponentiellement plus difficile quand le nombre de variables d augmente (risque de l'ordre de n^{−2/(2+d)} pour une fonction de régression lipschitzienne)",
+                    "Le risque ne dépend pas de d"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q36-gpt",
+            "qcm": "GPT8",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT36] Why should the features be normalized before using k-NN?",
+            "choices": [
+                "Because k-NN requires the features to be Gaussian",
+                "Because normalization reduces the number of neighbors",
+                "The Euclidean distance would be dominated by the features of larger order of magnitude",
+                "Because k-NN cannot be computed on features with a non-zero mean"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Les voisins sont choisis avec la distance euclidienne : une variable de grande échelle dominerait le calcul.",
+            "tags": [
+                "k-NN",
+                "normalisation"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi normaliser les variables avant d'utiliser le k-NN ?",
+                "choices": [
+                    "Parce que le k-NN exige que les variables soient gaussiennes",
+                    "Parce que la normalisation réduit le nombre de voisins",
+                    "La distance euclidienne serait dominée par les variables de plus grand ordre de grandeur",
+                    "Parce que le k-NN ne peut pas être calculé sur des variables de moyenne non nulle"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q37-gpt",
+            "qcm": "GPT8",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Cours GPT37] What is the coefficient of determination R² of an OLS fit?",
+            "choices": [
+                "The ratio of the explained sum of squares to the total sum of squares: R² = ‖Ŷ − ȳ1‖² / ‖Y − ȳ1‖² = 1 − ‖Ŷ − Y‖² / ‖Y − ȳ1‖²",
+                "The ratio of the residual sum of squares to the total sum of squares",
+                "The correlation between the residuals and the fitted values",
+                "The mean of the squared residuals"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "R² = 1 si et seulement si Y = Ŷ (ajustement parfait sur l'échantillon d'apprentissage).",
+            "tags": [
+                "MCO",
+                "R²"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'est-ce que le coefficient de détermination R² d'un ajustement MCO ?",
+                "choices": [
+                    "Le rapport de la somme des carrés expliquée à la somme des carrés totale : R² = ‖Ŷ − ȳ1‖² / ‖Y − ȳ1‖² = 1 − ‖Ŷ − Y‖² / ‖Y − ȳ1‖²",
+                    "Le rapport de la somme des carrés résiduelle à la somme des carrés totale",
+                    "La corrélation entre les résidus et les valeurs ajustées",
+                    "La moyenne des carrés des résidus"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q38-gpt",
+            "qcm": "GPT8",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Cours GPT38] What is the Mallows criterion C_p and when is it used?",
+            "choices": [
+                "A penalty on the ℓ1 norm of the coefficients, used for the Lasso",
+                "A test of normality of the residuals",
+                "A criterion to choose the number of neighbors in k-NN",
+                "A bias-corrected estimate of the risk, C_p = R̂_n(θ̂_n) + 2σ̂²(d+1)/n, a much cheaper alternative to cross-validation, but only for OLS"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Le terme 2σ̂²(d+1)/n corrige l'optimisme de l'erreur d'apprentissage.",
+            "tags": [
+                "Cp de Mallows",
+                "sélection de modèle"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'est-ce que le critère C_p de Mallows et quand l'utilise-t-on ?",
+                "choices": [
+                    "Une pénalité sur la norme ℓ1 des coefficients, utilisée pour le Lasso",
+                    "Un test de normalité des résidus",
+                    "Un critère pour choisir le nombre de voisins du k-NN",
+                    "Une estimation du risque corrigée du biais, C_p = R̂_n(θ̂_n) + 2σ̂²(d+1)/n, bien moins coûteuse que la validation croisée, mais seulement pour les MCO"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q39-gpt",
+            "qcm": "GPT8",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Cours GPT39] When does PCA before OLS (PCA-OLS) help, and what is its main limit?",
+            "choices": [
+                "It always reduces the bias of OLS; its limit is the computation time",
+                "It only helps if the features are correlated or dependent; as an unsupervised method it is blind to the target (PLS is the supervised alternative)",
+                "It only helps if the features are independent; its limit is that it uses the target",
+                "It helps only for classification; its limit is that it needs labels"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Si les variables ne sont pas liées, on utilise plutôt une sélection de variables ou une contrainte de parcimonie.",
+            "tags": [
+                "ACP",
+                "PLS",
+                "MCO"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quand l'ACP avant les MCO (PCA-OLS) aide-t-elle et quelle est sa limite ?",
+                "choices": [
+                    "Elle réduit toujours le biais des MCO ; sa limite est le temps de calcul",
+                    "Elle n'aide que si les variables sont corrélées ou dépendantes ; non supervisée, elle ignore la cible (le PLS est l'alternative supervisée)",
+                    "Elle n'aide que si les variables sont indépendantes ; sa limite est qu'elle utilise la cible",
+                    "Elle n'aide que pour la classification ; sa limite est qu'elle a besoin d'étiquettes"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q40-gpt",
+            "qcm": "GPT8",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Cours GPT40] What happens to the OLS solution when XᵀX is not invertible?",
+            "choices": [
+                "It does not exist",
+                "It is not unique: the solutions are (XᵀX)⁺XᵀY + u, with u ∈ ker(X) (A⁺ = generalized inverse)",
+                "It is unique and equal to zero",
+                "It is unique but has infinite variance"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "C'est le cas par exemple quand p > n.",
+            "tags": [
+                "MCO",
+                "matrice non inversible",
+                "pseudo-inverse"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Que devient la solution des MCO quand XᵀX n'est pas inversible ?",
+                "choices": [
+                    "Elle n'existe pas",
+                    "Elle n'est pas unique : les solutions sont (XᵀX)⁺XᵀY + u, avec u ∈ ker(X) (A⁺ = inverse généralisé)",
+                    "Elle est unique et égale à zéro",
+                    "Elle est unique mais de variance infinie"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q41-gpt",
+            "qcm": "GPT9",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Cours GPT41] What decision boundary does logistic regression give, and which loss does it minimize?",
+            "choices": [
+                "A quadratic boundary; it minimizes the squared loss",
+                "A linear boundary; it minimizes the hinge loss",
+                "A circular boundary; it minimizes the 0-1 loss exactly",
+                "A linear boundary, because logit(η̂(x)) = θ_0 + xᵀθ; it minimizes the cross-entropy loss, a smooth surrogate of the 0-1 loss"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Avec logit(a) = log(a/(1 − a)), on a η̂(x) = e^{θ_0 + xᵀθ} / (1 + e^{θ_0 + xᵀθ}).",
+            "tags": [
+                "régression logistique",
+                "entropie croisée"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelle frontière de décision donne la régression logistique et quelle perte minimise-t-elle ?",
+                "choices": [
+                    "Une frontière quadratique ; elle minimise la perte quadratique",
+                    "Une frontière linéaire ; elle minimise la perte charnière",
+                    "Une frontière circulaire ; elle minimise exactement la perte 0-1",
+                    "Une frontière linéaire, car logit(η̂(x)) = θ_0 + xᵀθ ; elle minimise l'entropie croisée (cross-entropy), substitut régulier de la perte 0-1"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q42-gpt",
+            "qcm": "GPT9",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Cours GPT42] Why use a surrogate loss (cross-entropy, hinge) instead of the 0-1 loss?",
+            "choices": [
+                "The 0-1 loss is neither continuous nor differentiable, so the minimization is hard; a surrogate penalizes errors similarly but is smooth (and convex)",
+                "The 0-1 loss is convex but too slow to compute",
+                "The surrogate losses always give the same predictor as the 0-1 loss for any sample",
+                "The 0-1 loss cannot be evaluated on the training set"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "La perte charnière du SVM est un autre exemple de substitut convexe.",
+            "tags": [
+                "perte de substitution",
+                "perte 0-1"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi utiliser une perte de substitution (entropie croisée, charnière) plutôt que la perte 0-1 ?",
+                "choices": [
+                    "La perte 0-1 n'est ni continue ni dérivable, donc la minimisation est difficile ; une perte de substitution pénalise les erreurs de façon similaire mais elle est régulière (et convexe)",
+                    "La perte 0-1 est convexe mais trop lente à calculer",
+                    "Les pertes de substitution donnent toujours le même prédicteur que la perte 0-1 pour tout échantillon",
+                    "La perte 0-1 ne peut pas être évaluée sur l'échantillon d'entraînement"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q43-gpt",
+            "qcm": "GPT9",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Cours GPT43] What are the three main principles of bagging?",
+            "choices": [
+                "One strong learner, trained on the whole sample, whose predictions are corrected sequentially",
+                "Several learners trained on the same sample, each one fitting the residuals of the previous one",
+                "Several weak learners, trained on different (bootstrap) samples of the training data, whose predictions are combined by a vote (classification) or an average (regression)",
+                "Several learners of different types, combined by a meta-model trained on their predictions"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le nom vient de Bootstrap Aggregating : échantillons bootstrap, apprenants entraînés indépendamment, agrégation par vote ou moyenne.",
+            "tags": [
+                "bagging",
+                "principes"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quels sont les trois principes du bagging ?",
+                "choices": [
+                    "Un apprenant fort, entraîné sur tout l'échantillon, dont les prédictions sont corrigées séquentiellement",
+                    "Plusieurs apprenants entraînés sur le même échantillon, chacun ajustant les résidus du précédent",
+                    "Plusieurs apprenants faibles, entraînés sur des échantillons (bootstrap) différents, combinés par un vote (classification) ou une moyenne (régression)",
+                    "Plusieurs apprenants de types différents, combinés par un méta-modèle entraîné sur leurs prédictions"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q44-gpt",
+            "qcm": "GPT9",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Cours GPT44] If B base estimators g_1, …, g_B are independent and identically distributed, what are the bias and variance of their average ĝ_B?",
+            "choices": [
+                "The bias is divided by B and the variance is unchanged",
+                "Both the bias and the variance are divided by B",
+                "The bias is unchanged, E[ĝ_B(x)] = E[g_b(x)], and the variance is divided by B: Var(ĝ_B(x)) = (1/B) Var(g_b(x))",
+                "The bias is unchanged and the variance is divided by B²"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "E[(1/B) Σ g_b] = E[g_b] : même biais. Var((1/B) Σ g_b) = (1/B²)·B·Var(g_b) = Var(g_b)/B. En pratique les g_b ne sont pas indépendants : le bootstrap sert à les diversifier.",
+            "tags": [
+                "bagging",
+                "biais-variance",
+                "variance d'une moyenne"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Si B estimateurs de base g_1, …, g_B sont indépendants et de même loi, quels sont le biais et la variance de leur moyenne ĝ_B ?",
+                "choices": [
+                    "Le biais est divisé par B et la variance est inchangée",
+                    "Le biais et la variance sont tous deux divisés par B",
+                    "Le biais est inchangé, E[ĝ_B(x)] = E[g_b(x)], et la variance est divisée par B : Var(ĝ_B(x)) = (1/B) Var(g_b(x))",
+                    "Le biais est inchangé et la variance est divisée par B²"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q45-gpt",
+            "qcm": "GPT9",
+            "theme": "Thème 1 : Bagging, forêts aléatoires, variance d'une moyenne",
+            "question": "[Cours GPT45] Why does bagging use unstable learners such as unpruned trees?",
+            "choices": [
+                "An unstable learner changes a lot when the training sample changes, so the bootstrap models are diverse and averaging them reduces the variance",
+                "Unstable learners have a very large bias that averaging removes",
+                "Unstable learners are the only ones that can be trained on a bootstrap sample",
+                "Unstable learners are faster to train than stable ones"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Des modèles stables donneraient presque les mêmes prédictions sur chaque échantillon bootstrap : la moyenne n'apporterait rien.",
+            "tags": [
+                "bagging",
+                "apprenants instables",
+                "arbres"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi le bagging utilise-t-il des apprenants instables comme des arbres non élagués ?",
+                "choices": [
+                    "Un apprenant instable change beaucoup quand l'échantillon change, donc les modèles bootstrap sont diversifiés et leur moyenne réduit la variance",
+                    "Les apprenants instables ont un très grand biais que la moyenne supprime",
+                    "Seuls les apprenants instables peuvent être entraînés sur un échantillon bootstrap",
+                    "Les apprenants instables sont plus rapides à entraîner que les stables"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q46-gpt",
+            "qcm": "GPT10",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Cours GPT46] In AdaBoost, how is the weight ε_m of the m-th weak learner computed from its weighted error ω_m?",
+            "choices": [
+                "ε_m = ω_m: the larger the error, the larger the weight",
+                "ε_m = 1 − ω_m²",
+                "ε_m = 1/M for every m",
+                "ε_m = ln((1 − ω_m)/ω_m): the smaller the error, the larger the weight"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Les poids des points mal classés sont ensuite multipliés par exp(ε_m).",
+            "tags": [
+                "AdaBoost",
+                "poids d'un apprenant"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Dans AdaBoost, comment se calcule le poids ε_m du m-ième apprenant faible à partir de son erreur pondérée ω_m ?",
+                "choices": [
+                    "ε_m = ω_m : plus l'erreur est grande, plus le poids est grand",
+                    "ε_m = 1 − ω_m²",
+                    "ε_m = 1/M pour tout m",
+                    "ε_m = ln((1 − ω_m)/ω_m) : plus l'erreur est petite, plus le poids est grand"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q47-gpt",
+            "qcm": "GPT10",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Cours GPT47] What is the final classifier of AdaBoost?",
+            "choices": [
+                "ĝ_M(x) = sign(Σ_{m=1}^{M} g_m(x)), a simple majority vote",
+                "ĝ_M(x) = sign(Σ_{m=1}^{M} ε_m g_m(x)), a weighted vote of the weak learners",
+                "ĝ_M(x) = g_M(x), the last weak learner only",
+                "ĝ_M(x) = max_m g_m(x)"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "En pratique les apprenants faibles sont très souvent des arbres de décision.",
+            "tags": [
+                "AdaBoost",
+                "classifieur final"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quel est le classifieur final d'AdaBoost ?",
+                "choices": [
+                    "ĝ_M(x) = sign(Σ_{m=1}^{M} g_m(x)), un simple vote à la majorité",
+                    "ĝ_M(x) = sign(Σ_{m=1}^{M} ε_m g_m(x)), un vote pondéré des apprenants faibles",
+                    "ĝ_M(x) = g_M(x), le dernier apprenant faible seulement",
+                    "ĝ_M(x) = max_m g_m(x)"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q48-gpt",
+            "qcm": "GPT10",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Cours GPT48] In stacking, what are the level 0 and level 1 models?",
+            "choices": [
+                "Level 0: a single weak learner; level 1: the same learner trained on its own residuals",
+                "Level 0: several strong learners of different types trained on the same task; level 1: a simple model (linear or logistic regression) trained with their predictions as features",
+                "Level 0: the meta-model; level 1: the base models",
+                "Level 0: bootstrap samples; level 1: the vote of the trees"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Pour la classification, on utilise plutôt les probabilités de chaque classe que les classes prédites.",
+            "tags": [
+                "stacking",
+                "niveau 0",
+                "niveau 1"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "En stacking, que sont les modèles de niveau 0 et de niveau 1 ?",
+                "choices": [
+                    "Niveau 0 : un seul apprenant faible ; niveau 1 : le même apprenant entraîné sur ses propres résidus",
+                    "Niveau 0 : plusieurs apprenants forts de types différents sur la même tâche ; niveau 1 : un modèle simple (régression linéaire ou logistique) qui prend leurs prédictions comme variables",
+                    "Niveau 0 : le méta-modèle ; niveau 1 : les modèles de base",
+                    "Niveau 0 : les échantillons bootstrap ; niveau 1 : le vote des arbres"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q49-gpt",
+            "qcm": "GPT10",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Cours GPT49] What is blending, and why is it used?",
+            "choices": [
+                "The level 0 models are averaged with equal weights without any level 1 model",
+                "All the models are trained on bootstrap samples and then voted",
+                "The level 1 model is trained on the training predictions of the level 0 models",
+                "The training sample is split in two: the level 0 models are trained on the first part and the level 1 model on the predictions made on the second part; it limits the overfitting of stacking"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "En stacking simple, les deux niveaux sont entraînés sur le même échantillon.",
+            "tags": [
+                "blending",
+                "stacking"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'est-ce que le blending et pourquoi l'utiliser ?",
+                "choices": [
+                    "Les modèles de niveau 0 sont moyennés avec des poids égaux, sans modèle de niveau 1",
+                    "Tous les modèles sont entraînés sur des échantillons bootstrap puis votent",
+                    "Le modèle de niveau 1 est entraîné sur les prédictions d'entraînement des modèles de niveau 0",
+                    "L'échantillon est coupé en deux : les modèles de niveau 0 sont entraînés sur la première partie, le modèle de niveau 1 sur leurs prédictions sur la seconde ; cela limite le sur-apprentissage du stacking"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q50-gpt",
+            "qcm": "GPT10",
+            "theme": "Thème 7 : Boosting, gradient boosting, XGBoost, stacking",
+            "question": "[Cours GPT50] How does stacking differ from bagging and boosting?",
+            "choices": [
+                "Stacking combines a few strong learners of different types, whereas bagging and boosting combine many weak learners of the same type",
+                "Stacking combines many weak learners of the same type, whereas bagging and boosting combine a few strong learners of different types",
+                "Stacking is sequential like boosting but uses bootstrap samples like bagging",
+                "Stacking does not use a second-level model"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Les apprenants du stacking sont par exemple une forêt aléatoire, une régression ridge à noyau et un k-NN.",
+            "tags": [
+                "stacking",
+                "bagging",
+                "boosting"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "En quoi le stacking diffère-t-il du bagging et du boosting ?",
+                "choices": [
+                    "Le stacking combine quelques apprenants forts de types différents, alors que le bagging et le boosting combinent beaucoup d'apprenants faibles du même type",
+                    "Le stacking combine beaucoup d'apprenants faibles du même type, alors que le bagging et le boosting combinent quelques apprenants forts de types différents",
+                    "Le stacking est séquentiel comme le boosting mais utilise des échantillons bootstrap comme le bagging",
+                    "Le stacking n'utilise pas de modèle de second niveau"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q51-gpt",
+            "qcm": "GPT11",
+            "theme": "Thème 6 : Optimisation : gradient, sous-gradient, convexité",
+            "question": "[Cours GPT51] What is a stochastic gradient in SGD, and why is it used?",
+            "choices": [
+                "The gradient computed on the whole dataset plus a random noise",
+                "The gradient of a randomly chosen coordinate only",
+                "The average g_m(θ) = (1/m) Σ_{l=1}^{m} ∇F_{ξ_l}(θ) of the gradients of m examples drawn uniformly at random; its cost does not depend on n when m ≪ n",
+                "The gradient of the largest example in the dataset"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Son espérance est le vrai gradient ∇F(θ), et on met à jour θ_t = θ_{t−1} − γ_t g_m(θ_{t−1}).",
+            "tags": [
+                "SGD",
+                "gradient stochastique"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'est-ce qu'un gradient stochastique en SGD et pourquoi l'utiliser ?",
+                "choices": [
+                    "Le gradient calculé sur tout le jeu de données plus un bruit aléatoire",
+                    "Le gradient d'une seule coordonnée tirée au hasard",
+                    "La moyenne g_m(θ) = (1/m) Σ_{l=1}^{m} ∇F_{ξ_l}(θ) des gradients de m exemples tirés uniformément ; son coût ne dépend pas de n quand m ≪ n",
+                    "Le gradient de l'exemple le plus grand du jeu de données"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q52-gpt",
+            "qcm": "GPT11",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Cours GPT52] What does the maximum mean discrepancy (MMD) measure?",
+            "choices": [
+                "The largest difference between the means of P and Q in the original space",
+                "The Kullback-Leibler divergence between P and Q",
+                "The distance between two distributions P and Q, as the RKHS norm of the difference of their kernel mean embeddings: MMD = ‖μ_P − μ_Q‖_H",
+                "The correlation between two samples"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Le plongement moyen est μ_P = E_{X~P}[φ(X)] (la caractéristique moyenne de P).",
+            "tags": [
+                "MMD",
+                "plongement moyen"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Que mesure la discrépance moyenne maximale (maximum mean discrepancy, MMD) ?",
+                "choices": [
+                    "La plus grande différence entre les moyennes de P et Q dans l'espace d'origine",
+                    "La divergence de Kullback-Leibler entre P et Q",
+                    "La distance entre deux lois P et Q, comme la norme dans le RKHS de la différence de leurs plongements moyens : MMD = ‖μ_P − μ_Q‖_H",
+                    "La corrélation entre deux échantillons"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q53-gpt",
+            "qcm": "GPT11",
+            "theme": "Thème 8 : Sélection de variables : information mutuelle, corrélation, HSIC",
+            "question": "[Cours GPT53] Is the mutual information symmetric and non-negative?",
+            "choices": [
+                "Yes: I(X;Y) = I(Y;X) and I(X;Y) ≥ 0, with equality if and only if X and Y are independent",
+                "It is symmetric but can be negative",
+                "It is non-negative but not symmetric",
+                "It is neither symmetric nor non-negative"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Elle s'étend aux variables catégorielles ou de types différents.",
+            "tags": [
+                "information mutuelle",
+                "propriétés"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "L'information mutuelle est-elle symétrique et positive ?",
+                "choices": [
+                    "Oui : I(X;Y) = I(Y;X) et I(X;Y) ≥ 0, avec égalité si et seulement si X et Y sont indépendantes",
+                    "Elle est symétrique mais peut être négative",
+                    "Elle est positive mais pas symétrique",
+                    "Elle n'est ni symétrique ni positive"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q54-gpt",
+            "qcm": "GPT11",
+            "theme": "Thème 9 : Principes de l'apprentissage : risque, sur-apprentissage, validation",
+            "question": "[Cours GPT54] What is the Bayes classifier?",
+            "choices": [
+                "The classifier that predicts the most frequent class whatever x",
+                "The classifier obtained by maximum likelihood on the training sample",
+                "The classifier that minimizes the empirical risk over a finite dictionary",
+                "The oracle predictor for the 0-1 loss over all measurable functions: it predicts 1 when P(Y = 1 | X = x) > 1/2 and −1 (or 0) otherwise"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Son risque est le risque de Bayes, la plus petite erreur possible.",
+            "tags": [
+                "classifieur de Bayes",
+                "risque de Bayes"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'est-ce que le classifieur de Bayes ?",
+                "choices": [
+                    "Le classifieur qui prédit la classe la plus fréquente quel que soit x",
+                    "Le classifieur obtenu par maximum de vraisemblance sur l'échantillon d'entraînement",
+                    "Le classifieur qui minimise le risque empirique sur un dictionnaire fini",
+                    "Le prédicteur oracle pour la perte 0-1 sur toutes les fonctions mesurables : il prédit 1 quand P(Y = 1 | X = x) > 1/2 et −1 (ou 0) sinon"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q55-gpt",
+            "qcm": "GPT11",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Cours GPT55] After choosing the hyperparameters by cross-validation, what is the recalibration step?",
+            "choices": [
+                "The hyperparameters are re-estimated on the test set",
+                "The final predictor is trained again on all the data (except the test set) with the best hyperparameters",
+                "The predictor with the best hyperparameters is kept as it is, trained on a single fold only",
+                "The data are centered and scaled again"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Pendant la validation croisée, chaque modèle n'a vu qu'une partie des données.",
+            "tags": [
+                "validation croisée",
+                "recalibrage"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Après le choix des hyperparamètres par validation croisée, qu'est-ce que l'étape de recalibrage ?",
+                "choices": [
+                    "Les hyperparamètres sont ré-estimés sur le jeu de test",
+                    "Le prédicteur final est entraîné à nouveau sur toutes les données (sauf le jeu de test) avec les meilleurs hyperparamètres",
+                    "Le prédicteur avec les meilleurs hyperparamètres est gardé tel quel, entraîné sur un seul bloc",
+                    "Les données sont à nouveau centrées et réduites"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q56-gpt",
+            "qcm": "GPT12",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Cours GPT56] What is leave-one-out cross-validation?",
+            "choices": [
+                "K-fold cross-validation with K = 2",
+                "The extreme case of K-fold cross-validation where K is the size of the training set",
+                "Repeating a random train/validation split hundreds of times",
+                "A single hold-out split with one observation in the training set"
+            ],
+            "answer": [
+                1
+            ],
+            "explanation": "Chaque exemple sert une fois de validation, tous les autres à l'entraînement. (On prend d'habitude K = 5 ou 10 en pratique.)",
+            "tags": [
+                "validation croisée",
+                "leave-one-out"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'est-ce que la validation croisée leave-one-out ?",
+                "choices": [
+                    "La validation K-fold avec K = 2",
+                    "Le cas extrême de la validation K-fold où K est la taille de l'échantillon d'apprentissage",
+                    "La répétition d'un découpage aléatoire apprentissage/validation des centaines de fois",
+                    "Un unique découpage hold-out avec une seule observation en apprentissage"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q57-gpt",
+            "qcm": "GPT12",
+            "theme": "Thème 4 : Régression linéaire (MCO), ACP, validation croisée",
+            "question": "[Cours GPT57] Why does the bootstrap version of cross-validation have an optimistic bias?",
+            "choices": [
+                "The bootstrap samples are always smaller than the training set",
+                "The bootstrap removes the noise from the data",
+                "The validation set is always larger than the training set",
+                "The samples are drawn with replacement, so some observations can be in both the training and the validation set"
+            ],
+            "answer": [
+                3
+            ],
+            "explanation": "Une correction est le bootstrap « 0,632 ». Le Monte-Carlo, lui, tire sans remise.",
+            "tags": [
+                "validation croisée",
+                "bootstrap",
+                "biais optimiste"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi la version bootstrap de la validation croisée a-t-elle un biais optimiste ?",
+                "choices": [
+                    "Les échantillons bootstrap sont toujours plus petits que l'échantillon d'entraînement",
+                    "Le bootstrap supprime le bruit des données",
+                    "L'échantillon de validation est toujours plus grand que celui d'entraînement",
+                    "Les échantillons sont tirés avec remise, donc certaines observations sont à la fois en entraînement et en validation"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q58-gpt",
+            "qcm": "GPT12",
+            "theme": "Thème 3 : Régularisation : Ridge, Lasso, elastic net",
+            "question": "[Cours GPT58] Why does the elastic net need two hyperparameters?",
+            "choices": [
+                "One controls the global amount of regularization, the other the trade-off between the Lasso penalty ‖β‖₁ and the Ridge penalty ‖β‖₂²/2",
+                "One for the Lasso penalty and one for the number of observations",
+                "One for the intercept and one for the slope",
+                "One for the number of iterations and one for the step size"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Il se calcule par argmin ½‖y − Xβ‖² + λ(α‖β‖₁ + (1 − α)‖β‖₂²/2).",
+            "tags": [
+                "elastic net",
+                "hyperparamètres"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Pourquoi l'elastic net a-t-il deux hyperparamètres ?",
+                "choices": [
+                    "L'un règle la régularisation globale, l'autre le compromis entre la pénalité Lasso ‖β‖₁ et la pénalité Ridge ‖β‖₂²/2",
+                    "L'un pour la pénalité Lasso et l'autre pour le nombre d'observations",
+                    "L'un pour l'intercept et l'autre pour la pente",
+                    "L'un pour le nombre d'itérations et l'autre pour le pas"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q59-gpt",
+            "qcm": "GPT12",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT59] What is a reproducing kernel Hilbert space (RKHS)?",
+            "choices": [
+                "A Hilbert space of polynomials of degree at most 2",
+                "A space of functions with no inner product",
+                "A Hilbert space H of functions such that the evaluation functional h ↦ h(x) is bounded for every x; the reproducing kernel is k(x, x') = <k_x, k_{x'}>",
+                "A space of kernels equipped with the Euclidean norm"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Par le théorème de Riesz, h(x) = <h, k_x>. Chaque RKHS a un unique noyau, symétrique et défini positif.",
+            "tags": [
+                "RKHS",
+                "noyau reproduisant"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Qu'est-ce qu'un espace de Hilbert à noyau reproduisant (RKHS) ?",
+                "choices": [
+                    "Un espace de Hilbert de polynômes de degré au plus 2",
+                    "Un espace de fonctions sans produit scalaire",
+                    "Un espace de Hilbert H de fonctions où l'évaluation h ↦ h(x) est continue pour tout x ; le noyau reproduisant est k(x, x') = <k_x, k_{x'}>",
+                    "Un espace de noyaux muni de la norme euclidienne"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q60-gpt",
+            "qcm": "GPT12",
+            "theme": "Thème 5 : SVM (marge, vecteurs supports, noyau, dual)",
+            "question": "[Cours GPT60] How are the SVM hyperparameters (C and the kernel parameters) chosen?",
+            "choices": [
+                "They are computed in closed form from the data",
+                "They are fixed to C = 1 and bandwidth = 1",
+                "By cross-validation (a Gaussian kernel for example has a bandwidth parameter on top of C)",
+                "By maximizing the training accuracy"
+            ],
+            "answer": [
+                2
+            ],
+            "explanation": "Un noyau isotrope n'a qu'un paramètre pour toutes les variables, d'où la normalisation préalable.",
+            "tags": [
+                "SVM",
+                "hyperparamètres",
+                "validation croisée"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Comment choisit-on les hyperparamètres du SVM (C et les paramètres du noyau) ?",
+                "choices": [
+                    "Ils se calculent sous forme close à partir des données",
+                    "Ils sont fixés à C = 1 et largeur = 1",
+                    "Par validation croisée (un noyau gaussien a par exemple un paramètre de largeur en plus de C)",
+                    "En maximisant la précision sur l'échantillon d'entraînement"
+                ]
+            }
+        },
+        {
+            "id": "ml-cours-q61-gpt",
+            "qcm": "GPT12",
+            "theme": "Thème 2 : Noyaux, RKHS et régression non paramétrique",
+            "question": "[Cours GPT61] Which conditions must a smoothing kernel function K: ℝ → ℝ satisfy in kernel smoothing?",
+            "choices": [
+                "∫K(t)dt = 1, ∫tK(t)dt = 0 and ∫t²K(t)dt < ∞ (for example the Gaussian or the Epanechnikov kernel)",
+                "∫K(t)dt = 0 and ∫tK(t)dt = 1",
+                "K must be a polynomial of degree 2",
+                "K must be strictly increasing"
+            ],
+            "answer": [
+                0
+            ],
+            "explanation": "Le poids d'un point d'apprentissage décroît avec sa distance à x.",
+            "tags": [
+                "lissage par noyau",
+                "noyau de lissage"
+            ],
+            "translation": {
+                "label": "🇫🇷 Traduction",
+                "question": "Quelles conditions une fonction noyau de lissage K : ℝ → ℝ doit-elle vérifier en lissage par noyau ?",
+                "choices": [
+                    "∫K(t)dt = 1, ∫tK(t)dt = 0 et ∫t²K(t)dt < ∞ (par exemple le noyau gaussien ou d'Epanechnikov)",
+                    "∫K(t)dt = 0 et ∫tK(t)dt = 1",
+                    "K doit être un polynôme de degré 2",
+                    "K doit être strictement croissante"
+                ]
+            }
         }
     ]
 }
